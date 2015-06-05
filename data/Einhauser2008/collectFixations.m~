@@ -1,0 +1,18 @@
+clear all
+close all
+
+files = dir('allEyeData/*.mat');
+
+s = 1
+load(['allEyeData/' files(s).name]);
+t = 0;
+F = [];
+for i = 1:10
+    for j = 1:10
+        t = t + 1;
+        F = [imgNum
+        
+        
+        
+    end
+end

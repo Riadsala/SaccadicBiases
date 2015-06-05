@@ -1,0 +1,51 @@
+library(ggplot2)
+library(mvtnorm)
+library(gplots)
+# read in data
+
+dat <- read.table("DatabaseCode/juddFixData_TrialSubjFixNXY.txt", sep=",")
+names(dat) <- c("trial", "subject", "fix_n", "X", "Y", "imX", "imY")
+dat$trial <- factor(dat$trial)
+dat$subject <- factor(dat$subject)
+
+dat$X <- dat$X - (dat$imX/2)
+dat$Y <- dat$Y - (dat$imY/2)
+
+dat$aspectRatio <- dat$imX/dat$imY
+
+#simdata <- rmvnorm(104137, m, sigma)
+
+#dat$simX = simdata[,1]
+#dat$simY = simdata[,2]
+
+#ggplot(dat, aes(x=X)) + geom_density(colour="blue") + geom_density(data=dat, aes(x=simX), colour = "red")
+#ggsave("judd_fittedmvnX.png")
+#ggplot(dat, aes(x=Y)) + geom_density(colour="blue") + geom_density(data=dat, aes(x=simY), colour = "red")
+#ggsave("judd_fittedmvnY.png")
+
+
+# bDat = data.frame(trial=numeric(0), X=numeric(0), nFix=numeric(0))
+#for (t in 1:1003)
+#{##
+	#trialHist <- hist(dat$X[dat$trial==t], seq(-525,525, 50))
+	#bDat = rbind(bDat, t(rbind(rep(t, 21), trialHist$breaks[1:21]+25, trialHist$counts)))
+#} 
+#names(bDat) <- c("trial", "X", "count")
+#bDat$trial <- factor(bDat$trial)
+
+h <- hist2d(dat$X, dat$Y, same.scale=T, show=F)
+bDat = data.frame(X=numeric(0), Y=numeric(0), nFix=numeric(0))
+m <- (h$x[2]-h$x[1])/2
+
+for (x in 1:length(h$x))
+{
+	for (y in 1:length(h$y))
+	{
+	bDat = rbind(bDat, c(h$x[x]+m, h$y[y]+m, h$counts[x,y]))
+	}
+}
+
+
+
+
+

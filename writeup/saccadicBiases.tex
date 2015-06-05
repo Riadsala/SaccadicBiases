@@ -1,0 +1,74 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% HEADER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper, onecolumn, oneside, 11pt]{article}
+\usepackage{cmbright}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+%\usepackage[dvips]{graphics} %%graphics and normal LaTeX
+%\usepackage{amsmath}
+%\usepackage{amsthm}
+%\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{pdflscape}
+\usepackage{abstract}
+\usepackage[ table ]{ xcolor }
+\usepackage[square, comma, sort&compress, longnamesfirst]{natbib} %
+\usepackage{subfigure}
+\usepackage{setspace}
+%\singlespacing %% 1-spacing (default)s
+%\onehalfspacing
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Saccadic Biases}
+
+\author{Alasdair D. F. Clarke}
+
+
+%\date{} % Activate to display a given date or no date (if empty),
+
+% otherwise the current date is printed
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+
+\section{Saccadic Flow}
+
+\begin{figure}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y4.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y4.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y4.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y4.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y3.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y3.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y3.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y3.pdf}}
+
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y2.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y2.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y2.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y2.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y1.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y1.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y1.pdf}}
+\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y1.pdf}}
+\caption{Multivariate skew-normal distributions fitted to fixation location, by saccade start point.}
+\label{fig:exampleSkewNormal}
+\end{figure}
+
+\end{abstract}
+
+\bibliographystyle{plainnat}
+\small
+\bibliography{literature}
+\end{document}
