@@ -1,0 +1,18 @@
+\begin{thebibliography}{2}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Clarke and Tatler(2014)]{clarke-tatler2014}
+Alasdair~DF Clarke and Benjamin~W Tatler.
+\newblock Deriving an appropriate baseline for describing fixation behaviour.
+\newblock \emph{Vision research}, 102:\penalty0 41--51, 2014.
+
+\bibitem[Nuthmann and Matthias(2014)]{nuthmann-matthias2014}
+Antje Nuthmann and Ellen Matthias.
+\newblock Time course of pseudoneglect in scene viewing.
+\newblock \emph{Cortex}, 52:\penalty0 113--119, 2014.
+
+\end{thebibliography}

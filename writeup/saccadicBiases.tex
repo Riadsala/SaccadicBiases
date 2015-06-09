@@ -29,7 +29,7 @@
 
 \title{Saccadic Biases}
 
-\author{Alasdair D. F. Clarke}
+\author{Alasdair D. F. Clarke, Matt J. Stainer}
 
 
 %\date{} % Activate to display a given date or no date (if empty),
@@ -41,8 +41,25 @@
 \maketitle
 
 \begin{abstract}
+More bias modelling. Cause who can be bothered running actual experiments?
+\end{abstract}
 
-\section{Saccadic Flow}
+
+\section{Introduction}
+
+Improve on last year's \citep{clarke-tatler2014} effort. 
+
+\section{Methods}
+
+\subsection{Datasets}
+
+\subsection{Pre-processing}
+
+\section{Biases}
+
+We will model and discuss saccadic flow, coarse-to-fine, and left v right. 
+
+\subsection{Saccadic Flow}
 
 \begin{figure}
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y4.pdf}}
@@ -53,7 +70,6 @@
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y3.pdf}}
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y3.pdf}}
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y3.pdf}}
-
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y2.pdf}}
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y2.pdf}}
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y2.pdf}}
@@ -66,7 +82,43 @@
 \label{fig:exampleSkewNormal}
 \end{figure}
 
-\end{abstract}
+\subsection{Coarse-to-fine}
+
+People make shorter saccades over time. Include $1/f$ dynamics? 
+
+\subsection{Left v Right}
+
+Initially more fixations to the left half of the image \citep{nuthmann-matthias2014}.
+
+\section{Using Biases for Better Analysis}
+
+We will use the the central biase \citep{clarke-tatler2014} and \textit{saccadic flow} in some different contexts to see what biases can do for vision research. :p
+
+
+\subsection{Attentional Landscapes}
+
+Or do we call them hotspot maps?
+
+\subsection{ROC Analysis}
+
+Example of using our models rather than shuffle approaches.
+
+\subsection{Flow and Coarse to fine}
+To what extent does saccadic flow account for coarse-to-fine dynamics
+
+\subsection{Inverse Yarbus}
+
+Do these biases allow us to improve inverse yarbus performance?
+
+\subsection{Salience}
+
+Does salience explain the less likely saccades? 
+
+\section{Discussion}
+
+\section*{Acknowledgements}
+
+Thanks to Adelchi Azzalini for advice on using the \texttt{sn} package for \texttt{R}. And mention grants. 
 
 \bibliographystyle{plainnat}
 \small
