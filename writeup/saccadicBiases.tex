@@ -12,6 +12,7 @@
 %\usepackage{amsmath}
 %\usepackage{amsthm}
 %\usepackage{amsfonts}
+\usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{rotating}
 \usepackage{pdflscape}
@@ -41,13 +42,13 @@
 \maketitle
 
 \begin{abstract}
-More bias modelling. Cause who can be bothered running actual experiments?
+More bias modelling! Cause who can be bothered running actual experiments?
 \end{abstract}
 
 
 \section{Introduction}
 
-Improve on last year's \citep{clarke-tatler2014} effort. 
+Improve on last year's \citep{clarke-tatler2014} effort. More sophisticated biases. And some examples of how to use biases for improved data analysis. 
 
 \section{Methods}
 
@@ -55,11 +56,41 @@ Improve on last year's \citep{clarke-tatler2014} effort.
 
 \subsection{Pre-processing}
 
+Normalise fixation positions relative to image frame. 
+
+Boot-strapping? 
+
+Merge datasets or model individually? 
+
+What about trasforming the data so that it is unbounded: $x'=\frac{x}{1-x}$   ? 
+
 \section{Biases}
 
 We will model and discuss saccadic flow, coarse-to-fine, and left v right. 
 
 \subsection{Saccadic Flow}
+
+Saccadic flow can be thought of as a generalisation of the central bias. Instead of computing the distribution of all saccadic endpoints in a dataset, we look at the distribution of saccade endpoints given the start points. So for a saccade from $(x_0, y_0)$ to $(x_1, y1)$ we want to model $p(x_1,y_1|x_0, y0)$ This is illustrated in \ref{fig:exampleSaccadic Flow}.
+
+
+
+\begin{figure}
+[insert example image here]
+\caption{Empirical example of saccadic flow from blah dataset.}
+\label{fig:exampleSaccadic Flow}
+\end{figure}
+
+\subsubsection{Modelling}
+
+We will model saccadic flow using multivariate skew-$t$ distributions \citep{azzalini2015}. The multivariate skew-normal distribution \citep{azzalini1996} is given by:
+
+\begin{equation}
+\phi(z; \lambda) = 2\phi(z)\Phi(\lambda z) 
+\end{equation}
+
+for $z \in \mathbb{R}$. I think. 
+
+
 
 \begin{figure}
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y4.pdf}}
@@ -82,6 +113,13 @@ We will model and discuss saccadic flow, coarse-to-fine, and left v right.
 \label{fig:exampleSkewNormal}
 \end{figure}
 
+\subsubsection{Results}
+
+
+\subsubsection{Discussion}
+
+
+
 \subsection{Coarse-to-fine}
 
 People make shorter saccades over time. Include $1/f$ dynamics? 
@@ -92,7 +130,7 @@ Initially more fixations to the left half of the image \citep{nuthmann-matthias2
 
 \section{Using Biases for Better Analysis}
 
-We will use the the central biase \citep{clarke-tatler2014} and \textit{saccadic flow} in some different contexts to see what biases can do for vision research. :p
+We will use the the central bias \citep{clarke-tatler2014} and \textit{saccadic flow} in some different contexts to see what biases can do for vision research. :p
 
 
 \subsection{Attentional Landscapes}

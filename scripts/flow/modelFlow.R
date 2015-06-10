@@ -2,9 +2,19 @@ dat = read.csv('../../data/Clarke2013/ProcessedFixations.txt', header=FALSE)
 names(dat) = c('person', 'image', 'fixnum', 'onset', 'offset', 'x', 'y')
 # remove NAs
 dat = dat[which(is.finite(dat$x) & is.finite(dat$y)),]
-# normalise
-dat$x = (dat$x - 400)/400
-dat$y = (dat$y - 300)/400
+
+
+# normalise - unlike before, I am going to 
+# log transform the data so that it is unbounded.
+dat$x = (dat$x)/800
+dat$y = (dat$y)/600
+
+dat$x = log(dat$x/(1-dat$x))
+dat$y = log(dat$y/(1-dat$y))
+
+dat = dat[-which(is.infinite(dat$x)),]
+dat = dat[-which(is.infinite(dat$y)),]
+
 dat = dat[-which(dat$fixnum==1),]
 # library(ggplot2)
 
@@ -15,7 +25,7 @@ dat = dat[-which(dat$fixnum==1),]
 
 library(sn)
 
-m = (selm(data=dat, formula= cbind(x,y)~1, family='SN'))
+m = (selm(data=dat, formula= cbind(x,y)~1, family='ST'))
 centralBias = extractSECdistr(m)
 show(centralBias)
 plot(centralBias)
@@ -23,6 +33,10 @@ plot(centralBias)
 # get saccade info
 sacc = read.csv('clarke2013saccs.txt', header=FALSE)
 names(sacc) = c("x1", "y1", "x2", "y2")
+sacc = (sacc + 1)/2
+sacc = log(sacc/(1-sacc))
+sacc = sacc[-which(is.infinite(sacc$x1)),]
+sacc = sacc[-which(is.infinite(sacc$x2)),]
 # over a partition window
 n = 0.25
 ii = 0
@@ -34,11 +48,11 @@ for (x in seq(-1+n, 1-n, 2*n))
 	{	
 		jj = jj + 1
 	 	idx = which(sacc$x1>(x-n) & sacc$x1<(x+n) & sacc$y1>(y-n) & sacc$y1<(y+n))
-	 	m = (selm(data=sacc[idx,], formula= cbind(x2,y2)~1, family='SN'))
+	 	m = (selm(data=sacc[idx,], formula= cbind(x2,y2)~1, family='ST'))
 		centralBias = extractSECdistr(m)
 		
 		png(paste('flowFigures/saccEndByX', ii, 'Y', jj, '.pdf', sep=''))
-		plot(centralBias, main=NULL, xlim=c(-1,1), ylim=c(-1,1))
+		plot(centralBias, main=NULL, xlim=c(-2,2), ylim=c(-2,2))
 		dev.off()
 	}
  }
@@ -58,7 +72,7 @@ for (x in seq(-1+n, 1-n, m))
 		jj = jj + 1
 	 	idx = which(sacc$x1>(x-n) & sacc$x1<(x+n) & sacc$y1>(y-0.25) & sacc$y1<(y+.25))
 	 	
-	 	cm = (selm(data=sacc[idx,], formula= cbind(x2,y2)~1, family='SN'))
+	 	cm = (selm(data=sacc[idx,], formula= cbind(x2,y2)~1, family='ST'))
 		centralBias = extractSECdistr(cm)
 		rm(cm)
 		params = rbind(params, 

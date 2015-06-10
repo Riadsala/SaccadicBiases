@@ -1,9 +1,21 @@
-\begin{thebibliography}{2}
+\begin{thebibliography}{4}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Azzalini(2015)]{azzalini2015}
+A.~Azzalini.
+\newblock \emph{The {R} package \texttt{sn}: The skew-normal and skew-$t$
+  distributions (version 1.2-2)}.
+\newblock Universit\`a di Padova, Italia, 2015.
+\newblock URL \url{http://azzalini.stat.unipd.it/SN}.
+
+\bibitem[Azzalini and Dalla~Valle(1996)]{azzalini1996}
+Adelchi Azzalini and Alessandra Dalla~Valle.
+\newblock The multivariate skew-normal distribution.
+\newblock \emph{Biometrika}, 83\penalty0 (4):\penalty0 715--726, 1996.
 
 \bibitem[Clarke and Tatler(2014)]{clarke-tatler2014}
 Alasdair~DF Clarke and Benjamin~W Tatler.
