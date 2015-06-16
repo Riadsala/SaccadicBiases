@@ -57,14 +57,19 @@ Improve on last year's \citep{clarke-tatler2014} effort. More sophisticated bias
 \subsection{Datasets}
 
 \subsection{Pre-processing}
+Generally, there are some things we want to consider:
+\begin{itemize}
+\item Normalise fixation positions relative to image frame. 
+\item Boot-strapping? 
+\item Merge datasets or model individually? 
+\item Remove intial fixation? (from all analysis??)
+\end{itemize} 
 
-Normalise fixation positions relative to image frame. 
-
-Boot-strapping? 
-
-Merge datasets or model individually? 
-
-What about trasforming the data so that it is unbounded: $x'=\frac{x}{1-x}$   ? 
+And specifically for the Flow analysis, there are some further things we may want to do:
+\begin{itemize}
+\item What about trasforming the data so that it is unbounded: $x'=\frac{x}{1-x}$?
+\item Mirroring the data (where relevant)... left = right and up = down?
+\end{itemize} 
 
 \section{Biases}
 
@@ -92,8 +97,6 @@ We will model saccadic flow using multivariate skew-$t$ distributions \citep{azz
 
 for $z \in \mathbb{R}$. I think. 
 
-
-
 \begin{figure}
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y4.pdf}}
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y4.pdf}}
@@ -113,6 +116,14 @@ for $z \in \mathbb{R}$. I think.
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y1.pdf}}
 \caption{Multivariate skew-normal distributions fitted to fixation location, by saccade start point.}
 \label{fig:exampleSkewNormal}
+\end{figure}
+
+Trying to model how the parameters change over space is going to be tricky though (see Figure \ref{fig:smParamsOverSpace})
+
+\begin{figure}
+\includegraphics[width=10cm]{../scripts/flow/paramsChagingOverSpace.pdf}
+\caption{Multivariate skew-normal parameters over space.}
+\label{fig:smParamsOverSpace}
 \end{figure}
 
 \subsubsection{Results}
