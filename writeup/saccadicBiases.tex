@@ -57,19 +57,20 @@ Improve on last year's \citep{clarke-tatler2014} effort. More sophisticated bias
 \subsection{Datasets}
 
 \subsection{Pre-processing}
+
+\subsubsection{Overall}
 Generally, there are some things we want to consider:
 \begin{itemize}
 \item Normalise fixation positions relative to image frame. 
 \item Boot-strapping? 
 \item Merge datasets or model individually? 
-\item Remove intial fixation? (from all analysis??)
+\item Remove initial fixations? (from all analysis??)
 \end{itemize} 
 
-And specifically for the Flow analysis, there are some further things we may want to do:
-\begin{itemize}
-\item What about trasforming the data so that it is unbounded: $x'=\frac{x}{1-x}$?
-\item Mirroring the data (where relevant)... left = right and up = down?
-\end{itemize} 
+\subsubsection{Saccadic Flow analysis}
+Some further preprocessing steps were carried out for the computation of saccadic flow. First of all, we \textit{mirrored} the set of fixations, but adding in reflected copies of the data (reflected in the horizontal, vertical and both midlines). This has two advantages. (i) It is an easy way to make saccadic flow biases in the horizontal or vertical directions. This is similar to how the central bias was defined \cite{clarke-tatler2014}, but by a different mechanism (with the central bias, the model fitting procedure is much simpler and so we just enforced zero mean and 0s in the covariance matrix). (ii) It increases the amount of data available for fitting by a factor of four. This is important as (due to the central bias) there are relatively few saccades that originate from the corners of the images. By equating all corners, we can pool the data and obtain more stable estimates for the underlying distribution. 
+
+For fitting the distributions, we will work in a transformed space. First of all, fixation coords are scaled to $[0,1]$ (relative to image size). Then we do $x' = log(\frac{x}{1-x})$ and $y' = log(\frac{y}{1-y})$. We will only use the transformed space for fitting distributions. All plots and what not will show the data inverse transformed back into normal space $[-1, 1]$.
 
 \section{Biases}
 
@@ -97,7 +98,16 @@ We will model saccadic flow using multivariate skew-$t$ distributions \citep{azz
 
 for $z \in \mathbb{R}$. I think. 
 
+To characterise how the distribution of saccadic endpoints varies with the start point, we used a sliding window approach. All saccades that originated in a $n\times m$ window were taken and used to fit a distribution. This window was then moved over the stimuli in steps of $s=0.05$  Multivariate polynomial regression was then used to fit 4-th order polynomials to each of the parameters. 
+
+This process was carried out for multivariate normal, skew-normal and skew $t$ distributions. Likelihood of the data given the different distributions can then be compared. 
+
+\subsubsection{Results}
+
+An example of the the distributions vary with saccadic start point is showing in Figure \ref{fig:exampleSkewNormal}.
+
 \begin{figure}
+\centering
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y4.pdf}}
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y4.pdf}}
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y4.pdf}}
@@ -114,20 +124,43 @@ for $z \in \mathbb{R}$. I think.
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y1.pdf}}
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y1.pdf}}
 \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y1.pdf}}
-\caption{Multivariate skew-normal distributions fitted to fixation location, by saccade start point.}
+\caption{Multivariate skew-$t$ distributions fitted to fixation location, by saccade start point.}
 \label{fig:exampleSkewNormal}
 \end{figure}
 
-Trying to model how the parameters change over space is going to be tricky though (see Figure \ref{fig:smParamsOverSpace})
+Figure \ref{fig:smParamsOverSpace} shows how the parameters for the skew-$t$ distribution vary over horizontal position for a selection of vertical positions. The regression coefficients are given in Table 
+
+
 
 \begin{figure}
-\includegraphics[width=10cm]{../scripts/flow/paramsChagingOverSpace.pdf}
+\centering
+\includegraphics[width=13cm]{../scripts/flow/paramsChagingOverSpace.pdf}
 \caption{Multivariate skew-normal parameters over space.}
 \label{fig:smParamsOverSpace}
 \end{figure}
 
-\subsubsection{Results}
 
+\begin{table}
+\centering
+
+\begin{tabular}{c c}
+
+parameter & equation \\
+\hline
+$\Omega_{x,x}$	& $= 0.33+ 0.38x^2 -0.29y^2 + 0.02x^4 + 0.22y^4$ \\ 
+$\Omega_{x,y}$	& $=x + y + x^2 + y^2 + x^3 + y^3 + x^4 + y^4$ \\ 
+$\Omega_{y,x}$	& $=x + y + x^2 + y^2 + x^3 + y^3 + x^4 + y^4$ \\ 
+$\Omega_{y,y}$	& $=x + y + x^2 + y^2 + x^3 + y^3 + x^4 + y^4$ \\ 
+\hline
+$\alpha_{x^2}$		& $=x + y + x^2 + y^2 + x^3 + y^3 + x^4 + y^4$ \\ 
+$\alpha_{y^2}$		& $=x + y + x^2 + y^2 + x^3 + y^3 + x^4 + y^4$ \\ 
+\hline
+$\nu$			& $=x + y + x^2 + y^2 + x^3 + y^3 + x^4 + y^4$ \\ 
+\end{tabular}
+
+\caption{Parameter model - clearly I still have to fill in all the coefficients!}
+\label{tab:paramModel}
+\end{table}
 
 \subsubsection{Discussion}
 
