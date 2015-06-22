@@ -1,15 +1,19 @@
+<<<<<<< Updated upstream
 This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  18 JUN 2015 13:21
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.6.12)  15 JUN 2015 15:03
+>>>>>>> Stashed changes
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **saccadicBiases.tex -recorder
 (./saccadicBiases.tex
-LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -23,7 +27,7 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/cmbright.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/cmbright/cmbright.sty
 Package: cmbright 2005/04/13 v8.1 (WaS)
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -91,30 +95,30 @@ LaTeX Info: Redefining \LaTeXe on input line 139.
 LaTeX Font Info:    Try loading font information for OT1+cmbr on input line 144
 .
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/ot1cmbr.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/cmbright/ot1cmbr.fd
 File: ot1cmbr.fd 2005/04/13 v8.1 (WaS)
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 )
-LaTeX Font Info:    Try loading font information for T1+cmbr on input line 100.
+LaTeX Font Info:    Try loading font information for T1+cmbr on input line 105.
 
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/t1cmbr.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/cmbright/t1cmbr.fd
 File: t1cmbr.fd 2005/04/13 v8.1 (WaS)
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2013/05/16 v3.9f The Babel package
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2014/09/25 3.9l The Babel package
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/babel-english/english.ldf
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2013/05/16 v3.9f Babel common definitions
+(/usr/local/texlive/2015/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2014/09/25 3.9l Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
@@ -122,10 +126,10 @@ File: babel.def 2013/05/16 v3.9f Babel common definitions
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks14
 \symAMSa=\mathgroup4
@@ -133,31 +137,31 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
@@ -165,11 +169,11 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/rotating/rotating.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/rotating/rotating.sty
 Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \c@r@tfl@t=\count89
 \rotFPtop=\skip43
@@ -177,22 +181,22 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 \rot@float@box=\box26
 \rot@mess@toks=\toks16
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2008/08/11 v0.10 Display of landscape pages in PDF (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/graphics/lscape.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/abstract/abstract.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/abstract/abstract.sty
 Package: abstract 2009/06/08 v1.2a configurable abstracts
 \abstitleskip=\skip45
 \absleftindent=\skip46
@@ -200,19 +204,19 @@ Package: abstract 2009/06/08 v1.2a configurable abstracts
 \absparindent=\skip48
 \absparsep=\skip49
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/colortbl/colortbl.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty
-Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty
+Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen106
 \extrarowheight=\dimen107
 \NC@list=\toks17
@@ -233,14 +237,14 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip53
 \bibsep=\skip54
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count91
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.sty
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip55
 \subfigcapskip=\skip56
@@ -256,11 +260,11 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 ****************************************
 * Local config file subfigure.cfg used *
 ****************************************
-(/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.cfg)
 \subfig@top=\skip59
 \subfig@bottom=\skip60
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 (./saccadicBiases.aux)
@@ -279,7 +283,7 @@ LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count96
 \scratchdimen=\dimen110
@@ -292,11 +296,11 @@ LaTeX Font Info:    ... okay on input line 40.
 \MPnumerator=\count100
 \makeMPintoPDFobject=\count101
 \everyMPtoPDFconversion=\toks20
-) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
@@ -305,22 +309,22 @@ Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
 Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
 ))
-(/usr/local/texlive/2013/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
 
-(/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
 Package etexcmds Info: Could not find \expanded.
 (etexcmds)             That can mean that you are not using pdfTeX 1.50 or
@@ -332,22 +336,23 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Try loading font information for OML+cmbrm on input line 42
 .
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/omlcmbrm.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/cmbright/omlcmbrm.fd
 File: omlcmbrm.fd 2005/04/13 v8.1 (WaS)
 )
 LaTeX Font Info:    Try loading font information for OMS+cmbrs on input line 42
 .
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/omscmbrs.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/cmbright/omscmbrs.fd
 File: omscmbrs.fd 2005/04/13 v8.1 (WaS)
 )
+<<<<<<< Updated upstream
 LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 64.
 
 
@@ -362,130 +367,393 @@ LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <10.95> not available
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
 <../scripts/flow/flowFigures/saccEndByX1Y4.pdf, id=20, 481.8pt x 481.8pt>
+=======
+
+Package natbib Warning: Citation `Itti:2000te' on page 1 undefined on input lin
+e 59.
+
+
+Package natbib Warning: Citation `Baddeley:2006wq' on page 1 undefined on input
+ line 59.
+
+
+Package natbib Warning: Citation `Yarbus:1967wd' on page 1 undefined on input l
+ine 59.
+
+
+Package natbib Warning: Citation `Buswell:1935tf' on page 1 undefined on input 
+line 59.
+
+
+Package natbib Warning: Citation `Land:2001uc' on page 1 undefined on input lin
+e 59.
+
+
+Package natbib Warning: Citation `Tatler:2008uu' on page 1 undefined on input l
+ine 59.
+
+
+Package natbib Warning: Citation `Tatler:2009vp' on page 1 undefined on input l
+ine 59.
+
+
+Package natbib Warning: Citation `Foulsham:2010fj' on page 1 undefined on input
+ line 59.
+
+
+Package natbib Warning: Citation `Tatler:2007hk' on page 1 undefined on input l
+ine 59.
+
+
+Package natbib Warning: Citation `Canosa:2003tu' on page 1 undefined on input l
+ine 59.
+
+
+Package natbib Warning: Citation `Tatler:2007hk' on page 1 undefined on input l
+ine 63.
+
+
+Package natbib Warning: Citation `Tatler:2005bw' on page 1 undefined on input l
+ine 63.
+
+
+Package natbib Warning: Citation `Canosa:2003tu' on page 1 undefined on input l
+ine 63.
+
+
+Package natbib Warning: Citation `Clarke:2014km' on page 1 undefined on input l
+ine 63.
+
+
+Package natbib Warning: Citation `Tseng:2009jn' on page 1 undefined on input li
+ne 63.
+
+LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <10.95> not available
+(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 63.
+
+Package natbib Warning: Citation `Fuller:1996bx' on page 1 undefined on input l
+ine 63.
+
+
+Package natbib Warning: Citation `Stainer:2013ce' on page 1 undefined on input 
+line 63.
+
+[1
+
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+Package natbib Warning: Citation `Tatler:2007hk' on page 2 undefined on input l
+ine 65.
+
+
+Package natbib Warning: Citation `Parkhurst:2002vo' on page 2 undefined on inpu
+t line 65.
+
+
+Package natbib Warning: Citation `Birmingham:2009hl' on page 2 undefined on inp
+ut line 65.
+
+
+Package natbib Warning: Citation `Torralba:2006iq' on page 2 undefined on input
+ line 65.
+
+
+Package natbib Warning: Citation `Ehinger:2009ji' on page 2 undefined on input 
+line 65.
+
+! Misplaced alignment tab character &.
+l.74 ...blique movements (Brandt, 1945; Crundall &
+                                                   Underwood, 1998; Gilchris...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.74 ...5; Crundall & Underwood, 1998; Gilchrist &
+                                                   Harvey, 2006; Foulsham, K...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.74 ...rist & Harvey, 2006; Foulsham, Kingstone &
+                                                   Underwood, 2008; Tatler &...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.74 ...ham, Kingstone & Underwood, 2008; Tatler &
+                                                   Vincent, 2008). There are...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.74 ...ts (as discussed in Foulsham, Kingstone, &
+                                                   Underwood, 2008). Firstly...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[2]
+! Misplaced alignment tab character &.
+l.76 ... from using circular apertures (Foulsham &
+                                                   Kingstone, 2010). When a ...
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[3] <../scripts/flow/flowFigures/saccEndByX1Y4.pdf, id=21, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX1Y4.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX1Y4.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX1Y4.pdf used on 
+<<<<<<< Updated upstream
 input line 111.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX2Y4.pdf, id=22, 481.8pt x 481.8pt>
+=======
+input line 121.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX2Y4.pdf, id=23, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX2Y4.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX2Y4.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX2Y4.pdf used on 
+<<<<<<< Updated upstream
 input line 112.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX3Y4.pdf, id=23, 481.8pt x 481.8pt>
+=======
+input line 122.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX3Y4.pdf, id=24, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX3Y4.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX3Y4.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX3Y4.pdf used on 
+<<<<<<< Updated upstream
 input line 113.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX4Y4.pdf, id=24, 481.8pt x 481.8pt>
+=======
+input line 123.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX4Y4.pdf, id=25, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX4Y4.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX4Y4.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX4Y4.pdf used on 
+<<<<<<< Updated upstream
 input line 114.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX1Y3.pdf, id=25, 481.8pt x 481.8pt>
+=======
+input line 124.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX1Y3.pdf, id=26, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX1Y3.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX1Y3.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX1Y3.pdf used on 
+<<<<<<< Updated upstream
 input line 115.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX2Y3.pdf, id=26, 481.8pt x 481.8pt>
+=======
+input line 125.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX2Y3.pdf, id=27, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX2Y3.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX2Y3.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX2Y3.pdf used on 
+<<<<<<< Updated upstream
 input line 116.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX3Y3.pdf, id=27, 481.8pt x 481.8pt>
+=======
+input line 126.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX3Y3.pdf, id=28, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX3Y3.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX3Y3.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX3Y3.pdf used on 
+<<<<<<< Updated upstream
 input line 117.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX4Y3.pdf, id=28, 481.8pt x 481.8pt>
+=======
+input line 127.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX4Y3.pdf, id=29, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX4Y3.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX4Y3.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX4Y3.pdf used on 
+<<<<<<< Updated upstream
 input line 118.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX1Y2.pdf, id=29, 481.8pt x 481.8pt>
+=======
+input line 128.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX1Y2.pdf, id=30, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX1Y2.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX1Y2.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX1Y2.pdf used on 
+<<<<<<< Updated upstream
 input line 119.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX2Y2.pdf, id=30, 481.8pt x 481.8pt>
+=======
+input line 129.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX2Y2.pdf, id=31, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX2Y2.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX2Y2.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX2Y2.pdf used on 
+<<<<<<< Updated upstream
 input line 120.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX3Y2.pdf, id=31, 481.8pt x 481.8pt>
+=======
+input line 130.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX3Y2.pdf, id=32, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX3Y2.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX3Y2.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX3Y2.pdf used on 
+<<<<<<< Updated upstream
 input line 121.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX4Y2.pdf, id=32, 481.8pt x 481.8pt>
+=======
+input line 131.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX4Y2.pdf, id=33, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX4Y2.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX4Y2.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX4Y2.pdf used on 
+<<<<<<< Updated upstream
 input line 122.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX1Y1.pdf, id=33, 481.8pt x 481.8pt>
+=======
+input line 132.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX1Y1.pdf, id=34, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX1Y1.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX1Y1.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX1Y1.pdf used on 
+<<<<<<< Updated upstream
 input line 123.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX2Y1.pdf, id=34, 481.8pt x 481.8pt>
+=======
+input line 133.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX2Y1.pdf, id=35, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX2Y1.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX2Y1.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX2Y1.pdf used on 
+<<<<<<< Updated upstream
 input line 124.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX3Y1.pdf, id=35, 481.8pt x 481.8pt>
+=======
+input line 134.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX3Y1.pdf, id=36, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX3Y1.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX3Y1.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX3Y1.pdf used on 
+<<<<<<< Updated upstream
 input line 125.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
 <../scripts/flow/flowFigures/saccEndByX4Y1.pdf, id=36, 481.8pt x 481.8pt>
+=======
+input line 135.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/flow/flowFigures/saccEndByX4Y1.pdf, id=37, 481.8pt x 481.8pt>
+>>>>>>> Stashed changes
 File: ../scripts/flow/flowFigures/saccEndByX4Y1.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX4Y1.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX4Y1.pdf used on 
+<<<<<<< Updated upstream
 input line 126.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
@@ -513,9 +781,36 @@ cripts/flow/flowFigures/saccEndByX2Y1.pdf> <../scripts/flow/flowFigures/saccEnd
 ByX3Y1.pdf> <../scripts/flow/flowFigures/saccEndByX4Y1.pdf>] [4 <../scripts/flo
 w/paramsChagingOverSpace.pdf>]
 LaTeX Font Info:    Try loading font information for T1+cmtl on input line 205.
+=======
+input line 136.
+(pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
+
+<../scripts/heatmaps/centreadjustedheatmaps.pdf, id=38, 835.12pt x 532.99126pt>
+File: ../scripts/heatmaps/centreadjustedheatmaps.pdf Graphic file (type pdf)
+<use ../scripts/heatmaps/centreadjustedheatmaps.pdf>
+Package pdftex.def Info: ../scripts/heatmaps/centreadjustedheatmaps.pdf used on
+ input line 166.
+(pdftex.def)             Requested size: 360.0pt x 229.7592pt.
+ [4] [5 <../scripts/flow/flowFigures/saccEndByX1Y4.pdf> <../scripts/flow/flowFi
+gures/saccEndByX2Y4.pdf> <../scripts/flow/flowFigures/saccEndByX3Y4.pdf> <../sc
+ripts/flow/flowFigures/saccEndByX4Y4.pdf> <../scripts/flow/flowFigures/saccEndB
+yX1Y3.pdf> <../scripts/flow/flowFigures/saccEndByX2Y3.pdf> <../scripts/flow/flo
+wFigures/saccEndByX3Y3.pdf> <../scripts/flow/flowFigures/saccEndByX4Y3.pdf> <..
+/scripts/flow/flowFigures/saccEndByX1Y2.pdf> <../scripts/flow/flowFigures/saccE
+ndByX2Y2.pdf> <../scripts/flow/flowFigures/saccEndByX3Y2.pdf> <../scripts/flow/
+flowFigures/saccEndByX4Y2.pdf> <../scripts/flow/flowFigures/saccEndByX1Y1.pdf> 
+<../scripts/flow/flowFigures/saccEndByX2Y1.pdf> <../scripts/flow/flowFigures/sa
+ccEndByX3Y1.pdf> <../scripts/flow/flowFigures/saccEndByX4Y1.pdf>]
+>>>>>>> Stashed changes
+
+Package natbib Warning: Citation `Stainer:2013ce' on page 6 undefined on input 
+line 195.
+
+[6 <../scripts/heatmaps/centreadjustedheatmaps.pdf>]
+LaTeX Font Info:    Try loading font information for T1+cmtl on input line 204.
 
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/t1cmtl.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/cmbright/t1cmtl.fd
 File: t1cmtl.fd 2005/04/13 v8.1 (WaS)
 )
 (./saccadicBiases.bbl
@@ -536,6 +831,7 @@ Underfull \hbox (badness 4634) in paragraph at lines 9--14
 dova, Italia, 2015.  URL
  []
 
+<<<<<<< Updated upstream
 [5]) [6] (./saccadicBiases.aux) ) 
 Here is how much of TeX's memory you used:
  3879 strings out of 493315
@@ -563,6 +859,39 @@ Output written on saccadicBiases.pdf (6 pages, 503396 bytes).
 PDF statistics:
  120 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream
+=======
+)
+
+Package natbib Warning: There were undefined citations.
+
+[7] (./saccadicBiases.aux) ) 
+Here is how much of TeX's memory you used:
+ 3917 strings out of 493089
+ 54565 string characters out of 6134842
+ 118793 words of memory out of 5000000
+ 7292 multiletter control sequences out of 15000+600000
+ 23767 words of font info for 70 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,7n,35p,1500b,267s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips
+/cm-super/cm-super-t1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/publi
+c/hfbright/hfbr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/hf
+bright/hfbr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/hfbrigh
+t/hfbrbs10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/hfbright/
+hfbrmi10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/hfbright/hf
+brmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/hfbright/hfbrs
+y10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/hfbright/hfbrsy8
+.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pf
+b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbmr17.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbtl10.pfb></usr/loca
+l/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbto10.pfb>
+Output written on saccadicBiases.pdf (7 pages, 1017292 bytes).
+PDF statistics:
+ 125 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+>>>>>>> Stashed changes
  0 named destinations out of 1000 (max. 500000)
  86 words of extra memory for PDF output out of 10000 (max. 10000000)
 

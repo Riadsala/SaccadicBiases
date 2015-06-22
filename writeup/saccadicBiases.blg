@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013)
+This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: saccadicBiases.aux
 The style file: plainnat.bst
@@ -7,9 +7,28 @@ I was expecting an "="---line 165 of file literature.bib
  :   journal 
  :           ] {MIT tech report:  http://hdl.handle.net/1721.1/68590}
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Itti:2000te"
+Warning--I didn't find a database entry for "Baddeley:2006wq"
+Warning--I didn't find a database entry for "Yarbus:1967wd"
+Warning--I didn't find a database entry for "Buswell:1935tf"
+Warning--I didn't find a database entry for "Land:2001uc"
+Warning--I didn't find a database entry for "Tatler:2008uu"
+Warning--I didn't find a database entry for "Tatler:2009vp"
+Warning--I didn't find a database entry for "Foulsham:2010fj"
+Warning--I didn't find a database entry for "Tatler:2007hk"
+Warning--I didn't find a database entry for "Canosa:2003tu"
+Warning--I didn't find a database entry for "Tatler:2005bw"
+Warning--I didn't find a database entry for "Clarke:2014km"
+Warning--I didn't find a database entry for "Tseng:2009jn"
+Warning--I didn't find a database entry for "Fuller:1996bx"
+Warning--I didn't find a database entry for "Stainer:2013ce"
+Warning--I didn't find a database entry for "Parkhurst:2002vo"
+Warning--I didn't find a database entry for "Birmingham:2009hl"
+Warning--I didn't find a database entry for "Torralba:2006iq"
+Warning--I didn't find a database entry for "Ehinger:2009ji"
 You've used 4 entries,
             2773 wiz_defined-function locations,
-            620 strings with 5442 characters,
+            658 strings with 5958 characters,
 and the built_in function-call counts, 1665 in all, are:
 = -- 159
 > -- 73
