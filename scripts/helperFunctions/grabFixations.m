@@ -1,8 +1,6 @@
-function [R trs] = grabFixations2(dataset)
+function fix = grabFixations2(dataset)
 
-% want to return
-% [subject - nFix - fixX - fixY]
-trs = [];
+
 switch dataset
     case 'Ehinger2009TA'
         R = dlmread('../../data/Ehinger2007/ehinger2007fixationsTA.txt');
@@ -19,27 +17,13 @@ switch dataset
         % centre of image should = [0,0], and transform to a square of width 2
         R(:,4) = (R(:,4) - imX/2)/(imX/2);
         R(:,5) = (R(:,5) - (imY/2))/(imX/2);
-        trs = R(:,1);
-        R(:,1) = [];
         
-    case 'Ehinger2009TP'
-        R = dlmread('../../data/Ehinger2007/ehinger2007fixationsTP.txt');
+        fix.person = R(:,2);
+        fix.trial = R(:,1);
+        fix.x = R(:,4);
+        fix.y = R(:,5);
+                
         
-        imX = 800;
-        imY = 600;
-        % remove NaNs
-        R(isnan(R(:,4)),:) = [];
-        R(isnan(R(:,5)),:) = [];
-        R(R(:,4)<0,:) = [];
-        R(R(:,5)<0,:) = [];
-        R(R(:,4)>imX,:) = [];
-        R(R(:,5)>imY,:) = [];
-        
-        % centre of image should = [0,0], and transform to a square of width 2
-        R(:,4) = (R(:,4) - imX/2)/(imX/2);
-        R(:,5) = (R(:,5) - (imY/2))/(imX/2);
-        trs = R(:,1);
-        R(:,1) = [];
         
     case 'Einhauser2008'
         R = dlmread('../../data/Einhauser2008/fixations.txt');
@@ -49,9 +33,13 @@ switch dataset
         % centre of image should = [0,0], and transform to a square of width 2
         R(:,4) = (R(:,4) - 1024/2)/512;
         R(:,5) = (R(:,5) - 768/2)/512;
-        % remove trial, onset and offset info
-        trs = R(:,1);
-        R(:,1) = [];
+        
+        fix.trial = R(:,1);
+        fix.person = R(:,2);
+        fix.x = R(:,4);
+        fix.y = R(:,5);
+        
+        
     case 'Tatler2005'
         R = dlmread('../../data/Tatler/Tatler2005.txt');
         
@@ -109,37 +97,30 @@ switch dataset
         % centre of image should = [0,0], and transform to a square of width 2
         R(:,6) = (R(:,6) - 400)/400;
         R(:,7) = (R(:,7) - 300)/400;
-        % remove trial, onset and offset info
-        trs = R(:,2);
-        R(:,[4 5]) = [];
-    case 'Clarke2009'
-        R = dlmread('../../data/Clarke2009/clarke2009Fixations.txt');
-        R(:,2) = [];
-        R(:,3) = (R(:,3)-512)/512;
-        R(:,4) = (R(:,4)-512)/512;
-        R(:,3:4) = R(:,4:-1:3);
-        R(R(:,3)<-1,:)=[];
-        R(R(:,4)<-1,:)=[];
-        R(R(:,3)>1,:)=[];
-        R(R(:,4)>1,:)=[];
-    case 'Asher2013TP'
-        % Scene ID,Participant ID,Fixation ID,Fix X,Fix Y,Target Present,Response
-        R = dlmread('../../data/Asher2013/MFA_FixationDataNOV_2013.csv');        
-      R(R(:,6)==0,:) = [];
-      trs = R(:,1);
-        R(:,1) = [];
-        % centre of image should = [0,0], and transform to a square of width 2
-        R(:,3) = (R(:,3) - 640)/640;
-        R(:,4) = (R(:,4) - 512)/640;
+        
+       fix.person = R(:,1);
+       fix.trial = R(:,2);
+       fix.x = R(:,6);
+       fix.y = R(:,7);
+       fix.n = R(:,3);
+        
+       
+        
   case 'Asher2013TA'
         % Scene ID,Participant ID,Fixation ID,Fix X,Fix Y,Target Present,Response
-        R = dlmread('../../data/Asher2013/MFA_FixationDataNOV_2013.csv');        
-      R(R(:,6)==1,:) = [];
-      trs = R(:,1);
+        R = dlmread('../../data/Asher2013/MFA_FixationDataNOV_2013.csv');
+        R(R(:,6)==1,:) = [];
+        trs = R(:,1);
         R(:,1) = [];
         % centre of image should = [0,0], and transform to a square of width 2
         R(:,3) = (R(:,3) - 640)/640;
         R(:,4) = (R(:,4) - 512)/640;
+
+         fix.person = R(:,1);
+       fix.trial = R(:,2);
+       fix.x = R(:,3);
+       fix.y = R(:,4);
+
         
     case 'Judd2009'
         R = dlmread('../../data/Judd2009/DatabaseCode/juddFixData_TrialSubjFixNXY.txt');
@@ -206,8 +187,4 @@ switch dataset
         R(:,[1 6 7]) = [];
 end
 
-% remove initial fixation
-if ~isempty(trs)
-trs(R(:,2)==1,:) = [];
-end
-R(R(:,2)==1,:) = [];
+%

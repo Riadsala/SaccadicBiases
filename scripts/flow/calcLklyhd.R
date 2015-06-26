@@ -11,15 +11,14 @@ library(dplyr)
 # }
 
 # get saccade info
-saccades = read.csv('clarke2013saccs.txt', header=FALSE)
+saccades = read.csv('saccs/Einhauser2008saccs.txt', header=FALSE)
 
 # First transform fixations
 # saccades[,5:6] = unboundTransform(saccades[,3:4])
 names(saccades) = c("x1", "y1", "x2", "y2")
 saccades = saccades[which(is.finite(saccades$x2)),]
 saccades = saccades[which(is.finite(saccades$y2)),]
-# saccades = saccades[which(is.finite(saccades$x3)),]
-# saccades = saccades[which(is.finite(saccades$y3)),]
+saccades = filter(saccades, x2>-1, y2>-1, x2<1, y2<1)
 
 LLHresults = list()
 
@@ -38,10 +37,9 @@ LLHresults['Clarke-Tatler2014'] = sum(log(dmvnorm(fixs, mu, sigma)))
 mu = c(mean(fixs[,1]), mean(fixs[,2]))
 sigma = var(fixs)
 LLHresults['best fit normal'] = sum(log(dmvnorm(fixs, mu, sigma)))
-LLHresults['best fit LM'] = logLik(lm(c(fixs$x2, fixs$y2)~1))
-LLHresults['central SN'] = logLik(selm(data=fixs, formula= cbind(x2,y2)~1, family='SN'))
-LLHresults['central ST'] = logLik(selm(data=fixs, formula= cbind(x2,y2)~1, family='ST'))
-
+# LLHresults['best fit LM'] = logLik(lm(c(fixs$x2, fixs$y2)~1))
+# LLHresults['central SN'] = logLik(selm(data=fixs, formula= cbind(x2,y2)~1, family='SN'))
+# LLHresults['central ST'] = logLik(selm(data=fixs, formula= cbind(x2,y2)~1, family='ST'))
 
 ######################################################################################
 # now find out how much flow helps!
@@ -58,7 +56,7 @@ getParamPoly <- function(sacc)
 
 calcNormLLH <- function(sacc, v)
 {
-	fix = c(sacc$x2, sacc$y2)
+	fix = cbind(sacc$x2, sacc$y2)
 
 	mu = c(v['mu_x'], v['mu_y'])
 	sigma = array(c(v['sigma_xx'], v['sigma_xy'], v['sigma_xy'], v['sigma_yy']), dim=c(2,2))
@@ -69,8 +67,9 @@ calcNormLLH <- function(sacc, v)
 
 calcSkewNormalLLH <- function(sacc, v)
 {
-	fix = c(sacc$x2, sacc$y2)
 
+	
+fix = cbind(sacc$x2, sacc$y2)
 	# dmsn(x, xi=rep(0,length(alpha)), Omega, alpha, tau=0, dp=NULL, log=FALSE)
 	xi = c(v['xi_x'], v['xi_y'])
 	Omega = array(c(v['Omega-xx'],v['Omega-xy'],v['Omega-xy'],v['Omega-yy']), dim=c(2,2))
@@ -82,7 +81,7 @@ calcSkewNormalLLH <- function(sacc, v)
 biasParams = read.csv('flowModels.txt')
 
 # Loop over flow models
-for (flow in c('N', 'SN'))
+for (flow in c('N'))
 {
 
 	flowParams = filter(biasParams, biasModel==flow)
@@ -113,7 +112,7 @@ for (flow in c('N', 'SN'))
 		} 
 	}
 
-	LLHresults[paste('flow', flow)] = sum(llh)
+	LLHresults[paste('flow', flow)] = sum(llh[which(is.finite(llh))])
 }
 
 # now SN flow

@@ -3,24 +3,25 @@ close all
 
 addpath('../helperfunctions');
 
-fix = grabFixations('Clarke2013');
+
+datasets = {'Clarke2013', 'Einhauser2008'}
+
+for (d = datasets)
+    fix = grabFixations(d{1});
 saccs1 = convertFixToSacc(fix);
-dlmwrite('clarke2013saccs.txt', saccs1);
-fixL = fix;
-fixL(:,4) = -fixL(:,4);
-saccs2 = convertFixToSacc(fixL);
-fixU = fix;
-fixU(:,5) = -fixU(:,5);
-saccs3 = convertFixToSacc(fixU);
-fixLU = fix;
-fixLU(:,4) = -fixLU(:,4);
-fixLU(:,5) = -fixLU(:,5);
-saccs4 = convertFixToSacc(fixLU);
+dlmwrite(['saccs/' d{1} 'saccs.txt'], saccs1);
 
-
-dlmwrite('clarke2013saccsMirrored.txt', [saccs1; saccs2;saccs3;saccs4]);
-
-
-
+fixF = fix;
+fixF.x = -fixF.x;
+saccs2 = convertFixToSacc(fixF);
+fixF = fix;
+fixF.x = -fixF.y;
+saccs3 = convertFixToSacc(fixF);
+fixF = fix;
+fixF.x = -fixF.x;
+fixF.x = -fixF.y;
+saccs4 = convertFixToSacc(fixF);
+dlmwrite(['saccs/' d{1} 'saccsMirrored.txt'], [saccs1; saccs2;saccs3;saccs4]);
+end
 
 

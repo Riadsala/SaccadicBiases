@@ -2,14 +2,22 @@ function saccs = convertFixToSacc(fix)
 
 %% convert fixations to saccades
 saccs = [];
-P = unique(fix(:,1));
-T = unique(fix(:,2));
+P = unique(fix.person);
+T = unique(fix.trial);
 for p = 1:length(P)
     for t = 1:length(T)
-        tfix = fix(find((fix(:,1)==P(p)).*(fix(:,2)==T(t))),:);
+        idx = find((fix.person==P(p)).*(fix.trial==T(t)));
+        tfix = [fix.x(idx), fix.y(idx)];
+        % calculating from fixation 3 = endpoint of second saccade as we're
+        % ignoring inital fixation and first saccade.
         for f = 3:length(tfix)
-           saccs = [saccs;  tfix(f-1,4:5), tfix(f,4:5)];
+            saccs = [saccs;  tfix(f-1,:), tfix(f,:)];
         end
         clear tfix
     end
+end
+
+for r  = 1:4
+    saccs(saccs(:,r)<-1,:) = [];
+    saccs(saccs(:,1)> 1,:) = [];
 end

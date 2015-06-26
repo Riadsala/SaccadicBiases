@@ -1,0 +1,48 @@
+clear all
+close all
+
+addpath('../helperfunctions');
+
+
+datasets = {'Clarke2013', 'Einhauser2008'}
+
+for (d = datasets)
+    
+end
+
+fix = grabFixations('Clarke2013');
+saccs1 = convertFixToSacc(fix);
+dlmwrite('clarke2013saccs.txt', saccs1);
+
+fixF = fix;
+fixF.x = -fixF.x;
+saccs2 = convertFixToSacc(fixF);
+fixF = fix;
+fixF.x = -fixF.y;
+saccs3 = convertFixToSacc(fixF);
+fixF = fix;
+fixF.x = -fixF.x;
+fixF.x = -fixF.y;
+saccs4 = convertFixToSacc(fixF);
+dlmwrite('clarke2013saccsMirrored.txt', [saccs1; saccs2;saccs3;saccs4]);
+
+
+fix = grabFixations('Asher2013TA');
+saccs1 = convertFixToSacc(fix);
+dlmwrite('asher2013saccs.txt', saccs1);
+fixF = fix;
+fixF.x = -fixF.x;
+saccs2 = convertFixToSacc(fixF);
+fixF = fix;
+fixF.x = -fixF.y;
+saccs3 = convertFixToSacc(fixF);
+fixF = fix;
+fixF.x = -fixF.x;
+fixF.x = -fixF.y;
+saccs4 = convertFixToSacc(fixF);
+
+dlmwrite('asher2013saccsMirrored.txt', [saccs1; saccs2;saccs3;saccs4]);
+
+
+
+
