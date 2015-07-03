@@ -18,6 +18,8 @@ for p = 1:length(P)
 end
 
 for r  = 1:4
-    saccs(saccs(:,r)<-1,:) = [];
-    saccs(saccs(:,1)> 1,:) = [];
+    saccs(saccs(:,r)<= -1,:) = [];
+    saccs(saccs(:,r)>=  1,:) = [];
+%     remove missing data
+    saccs(isnan(saccs(:,r)),:) = [];
 end

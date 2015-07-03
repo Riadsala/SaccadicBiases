@@ -30,7 +30,6 @@ switch dataset
         R = dlmread('../../data/Einhauser2008/fixations.txt');
         R(:,4:5) = centreAndScale(R(:, 4:5),[1024, 768]);
         fix = fixArrayToStruct(R, 1,2, 4,5);
-        fix = setOutBoundsToNA(fix, 768/1024);
         
     case 'Tatler2005'
         
@@ -68,10 +67,13 @@ switch dataset
         R = dlmread('../../data/Judd2009/DatabaseCode/juddFixData_TrialSubjFixNXY.txt');
         % get fixations from most common aspect ratio only
         idx = find(~((R(:,6)==1024).*(R(:,7)==768)));
-        size(idx)
         R(idx,:) = [];
-        R(:,6:7) = centreAndScale(R(:, 6:7),[1024, 768]);        
-        fix = fixArrayToStrut(R, 2,1,6,7);
+        % dataset already centred, so uncentre bfore applying my standard
+        % function
+        R(:,4) = R(:,4) + 512;
+        R(:,5) = R(:,5) + 384;
+        R(:,4:5) = centreAndScale(R(:, 4:5),[1024, 768]);        
+        fix = fixArrayToStruct(R, 2,1,4,5);
         
     case 'Yun2013SUN'
         
@@ -79,17 +81,17 @@ switch dataset
         % get fixations from most common aspect ratio only
         idx = find(~((R(:,6)==1280).*(R(:,7)==960)));
         R(idx,:) = [];
-         R(:,6:7) = centreAndScale(R(:, 6:7),[1280, 960]);    
-        fix = fixArrayToStrut(R, 2,1,6,7);
+         R(:,4:5) = centreAndScale(R(:, 4:5),[1280, 960]);    
+        fix = fixArrayToStruct(R, 2,1,4,5);
         
     case 'Yun2013PASCAL'
         
-        R = dlmread('../../data/SBUGazeDetectionDescriptionDataset/pascalfixations.txt')        
+        R = dlmread('../../data/SBUGazeDetectionDescriptionDataset/pascalfixations.txt')        ;
         % get fixations from most common aspect ratio only
         idx = find(~((R(:,6)==500).*(R(:,7)==333)));
         R(idx,:) = [];
-        R(:,6:7) = centreAndScale(R(:, 6:7),[500, 333]);    
-        fix = fixArrayToStrut(R, 2,1,6,7);
+        R(:,4:5) = centreAndScale(R(:, 4:5),[500, 333]);    
+        fix = fixArrayToStruct(R, 2,1,4,5);
 end
 
 end

@@ -71,9 +71,9 @@ Another possibility for the central fixation bias is that it represents a \emph{
 
 
 \subsection{Behavioural biases in saccades}
-Further to the observed bias towards the centre of images, it has been revealed that there are underlying biases in the characteristics of eye movement (in terms of the directions and amplitudes of saccades). It has been noted by several researchers that when viewing scenes, there is a higher proportion of eye movements in horizontal directions than vertical or oblique movements (Brandt, 1945; Crundall & Underwood, 1998; Gilchrist & Harvey, 2006; Foulsham, Kingstone & Underwood, 2008; Tatler & Vincent, 2008). There are a number of possibilities as to why this tendency exists (as discussed in Foulsham, Kingstone, & Underwood, 2008). Firstly, there may be a muscular or neural dominance making oculomotor movements in the horizontal directions more likely. Secondly, the characteristics of photographic images may mean that content tends to be arranged horizontally by the photographer. In such situations, horizontal saccades may be the most efficient way to inspect scenes. Thirdly, using horizontal saccades in scene viewing might be a learned strategy. Observers may learn the natural characteristics of scenes based on previous experience, and therefore demonstrate an increased likelihood of moving in the horizontal direction. A final alternative explanation is that this tendency is a consequence of the aspect ratio of visual displays, which normally allow for larger amplitude saccades in the horizontal than vertical directions (Wartburg et al., 2007).
+Further to the observed bias towards the centre of images, it has been revealed that there are underlying biases in the characteristics of eye movement (in terms of the directions and amplitudes of saccades). It has been noted by several researchers that when viewing scenes, there is a higher proportion of eye movements in horizontal directions than vertical or oblique movements (Brandt, 1945; Crundall \& Underwood, 1998; Gilchrist \& Harvey, 2006; Foulsham, Kingstone \& Underwood, 2008; Tatler \& Vincent, 2008). There are a number of possibilities as to why this tendency exists (as discussed in Foulsham, Kingstone, \& Underwood, 2008). Firstly, there may be a muscular or neural dominance making oculomotor movements in the horizontal directions more likely. Secondly, the characteristics of photographic images may mean that content tends to be arranged horizontally by the photographer. In such situations, horizontal saccades may be the most efficient way to inspect scenes. Thirdly, using horizontal saccades in scene viewing might be a learned strategy. Observers may learn the natural characteristics of scenes based on previous experience, and therefore demonstrate an increased likelihood of moving in the horizontal direction. A final alternative explanation is that this tendency is a consequence of the aspect ratio of visual displays, which normally allow for larger amplitude saccades in the horizontal than vertical directions (Wartburg et al., 2007).
 
-Foulsham and colleagues have presented two interesting exceptions to the horizontal direction bias. Foulsham, Kingstone and Underwood (2008) found that when the orientation of an image is rotated, the distribution of saccade directions follows the orientation of the scene. A second exception comes from using circular apertures (Foulsham & Kingstone, 2010). When a scene is presented in a circular aperture, the tendency to make horizontal saccades disappears, being replaced by a tendency to make vertical saccades relative to the image orientation. However, when using fractal images (where images do not have an obvious orientation), observers tend make horizontal saccades, regardless of the angle that the image is presented.
+Foulsham and colleagues have presented two interesting exceptions to the horizontal direction bias. Foulsham, Kingstone and Underwood (2008) found that when the orientation of an image is rotated, the distribution of saccade directions follows the orientation of the scene. A second exception comes from using circular apertures (Foulsham \& Kingstone, 2010). When a scene is presented in a circular aperture, the tendency to make horizontal saccades disappears, being replaced by a tendency to make vertical saccades relative to the image orientation. However, when using fractal images (where images do not have an obvious orientation), observers tend make horizontal saccades, regardless of the angle that the image is presented.
 
 
 \subsection{The present study}
@@ -94,13 +94,19 @@ Generally, there are some things we want to consider:
 \item Remove initial fixations? (from all analysis??)
 \end{itemize} 
 
+\subsubsection{Training and Testing}
+
+As with \cite{clarke-tatler2014} We will train models on all available data (saccades from all datasets grouped together) and report the resulting model as the baseline we recommended using. In order to check for over fitting, we will additionally evaluate the modelling procedure by training to one single dateset and evaluating over all the others. Our pooled dataset currently consists of over 600,000 saccades over seven datasets. 
+
+When evaluating over the full dataset we will also explore the effect of window-size on the results. The smaller the window, the more accurately we can characterise the behaviour for fixations close to the edge of the image. However, due to the central bias, there are far fewer fixations in these areas and so the distributions fits for these areas are increasingly noisy as the window is moved closer to the edge and with a smaller size. 
+
+
+
 \subsubsection{Saccadic Flow analysis}
 Some further preprocessing steps were carried out for the computation of saccadic flow. First of all, we \textit{mirrored} the set of fixations, but adding in reflected copies of the data (reflected in the horizontal, vertical and both midlines). This has two advantages. (i) It is an easy way to make saccadic flow biases in the horizontal or vertical directions. This is similar to how the central bias was defined \cite{clarke-tatler2014}, but by a different mechanism (with the central bias, the model fitting procedure is much simpler and so we just enforced zero mean and 0s in the covariance matrix). (ii) It increases the amount of data available for fitting by a factor of four. This is important as (due to the central bias) there are relatively few saccades that originate from the corners of the images. By equating all corners, we can pool the data and obtain more stable estimates for the underlying distribution. 
-=======
-Boot-strapping? 
->>>>>>> Stashed changes
 
-For fitting the distributions, we will work in a transformed space. First of all, fixation coords are scaled to $[0,1]$ (relative to image size). Then we do $x' = log(\frac{x}{1-x})$ and $y' = log(\frac{y}{1-y})$. We will only use the transformed space for fitting distributions. All plots and what not will show the data inverse transformed back into normal space $[-1, 1]$.
+
+% For fitting the distributions, we will work in a transformed space. First of all, fixation coords are scaled to $[0,1]$ (relative to image size). Then we do $x' = log(\frac{x}{1-x})$ and $y' = log(\frac{y}{1-y})$. We will only use the transformed space for fitting distributions. All plots and what not will show the data inverse transformed back into normal space $[-1, 1]$.
 
 \section{Biases}
 
@@ -164,7 +170,7 @@ Figure \ref{fig:smParamsOverSpace} shows how the parameters for the skew-$t$ dis
 
 \begin{figure}
 \centering
-\includegraphics[width=13cm]{../scripts/flow/paramsChagingOverSpace.pdf}
+% \includegraphics[width=13cm]{../scripts/flow/figs/paramsChagingOverSpaceALL.pdf}
 \caption{Multivariate skew-normal parameters over space.}
 \label{fig:smParamsOverSpace}
 \end{figure}
