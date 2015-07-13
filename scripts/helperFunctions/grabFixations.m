@@ -18,7 +18,7 @@ function fix = grabFixations2(dataset)
 % % datasets no logner being used:
 % clarke2009 (square, noise, hard search, so not so useful for this type of analysis)
 %     ehringer2009 (pedestrian street scenes, Clarke & Tatler 2014 showed this dataset doesn't follow the others
-
+dataset='Clarke2009';
 
 if iscell(dataset)
     dataset = dataset{1};
@@ -54,6 +54,9 @@ switch dataset
         R = dlmread('../../data/Clarke2013/ProcessedFixations.txt');
         R(:,6:7) = centreAndScale(R(:, 6:7),[800,600]);
         fix = fixArrayToStruct(R, 1,2,6,7);
+        
+    case 'Clarke20009'
+        R = dlmread('../../data/Clarke2009/clarke2009Fixations.txt')
         
     case 'Asher2013'
         
