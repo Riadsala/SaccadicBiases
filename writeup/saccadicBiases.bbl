@@ -1,9 +1,15 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Asher et~al.(2013)Asher, Tolhurst, Troscianko, and
+  Gilchrist]{asher2013}
+Matthew~F Asher, David~J Tolhurst, Tom Troscianko, and Iain~D Gilchrist.
+\newblock Regional effects of clutter on human target detection performance.
+\newblock \emph{Journal of vision}, 13\penalty0 (5):\penalty0 25:1--15, 2013.
 
 \bibitem[Azzalini(2015)]{azzalini2015}
 A.~Azzalini.
@@ -17,14 +23,64 @@ Adelchi Azzalini and Alessandra Dalla~Valle.
 \newblock The multivariate skew-normal distribution.
 \newblock \emph{Biometrika}, 83\penalty0 (4):\penalty0 715--726, 1996.
 
+\bibitem[Clarke et~al.(2013)Clarke, Coco, and Keller]{clarke2013}
+Alasdair D.~F. Clarke, Moreno~I. Coco, and Frank Keller.
+\newblock The impact of attentional, linguistic, and visual features during
+  object naming.
+\newblock \emph{Frontiers in psychology}, 4:\penalty0 927, 2013.
+
 \bibitem[Clarke and Tatler(2014)]{clarke-tatler2014}
 Alasdair~DF Clarke and Benjamin~W Tatler.
 \newblock Deriving an appropriate baseline for describing fixation behaviour.
 \newblock \emph{Vision research}, 102:\penalty0 41--51, 2014.
 
+\bibitem[Clarke et~al.(2009)Clarke, Chantler, and Green]{clarke2009}
+Alasdair~DF Clarke, Mike~J Chantler, and Patrick~R Green.
+\newblock Modeling visual search on a rough surface.
+\newblock \emph{Journal of Vision}, 9\penalty0 (4), 2009.
+
+\bibitem[Ehinger et~al.(2009)Ehinger, Hidalgo-Sotelo, Torralba, and
+  Oliva]{ehinger2009}
+Krista~A Ehinger, Barbara Hidalgo-Sotelo, Antonio Torralba, and Aude Oliva.
+\newblock Modelling search for people in 900 scenes: A combined source model of
+  eye guidance.
+\newblock \emph{Visual Cognition}, 17\penalty0 (6-7):\penalty0 945--978, 2009.
+
+\bibitem[Einh{\"a}user et~al.(2008)Einh{\"a}user, Spain, and
+  Perona]{einhauser2008}
+Wolfgang Einh{\"a}user, Merrielle Spain, and Pietro Perona.
+\newblock Objects predict fixations better than early saliency.
+\newblock \emph{Journal of Vision}, 8\penalty0 (14):\penalty0 18: 1--26, 2008.
+
+\bibitem[Judd et~al.(2009)Judd, Ehinger, Durand, and Torralba]{judd2009}
+Tilke Judd, Krista Ehinger, Fr{\'e}do Durand, and Antonio Torralba.
+\newblock Learning to predict where humans look.
+\newblock In \emph{Computer Vision, 2009 IEEE 12th international conference
+  on}, pages 2106--2113. IEEE, 2009.
+
 \bibitem[Nuthmann and Matthias(2014)]{nuthmann-matthias2014}
 Antje Nuthmann and Ellen Matthias.
 \newblock Time course of pseudoneglect in scene viewing.
 \newblock \emph{Cortex}, 52:\penalty0 113--119, 2014.
+
+\bibitem[Tatler(2007)]{tatler2007}
+Benjamin~W Tatler.
+\newblock The central fixation bias in scene viewing: Selecting an optimal
+  viewing position independently of motor biases and image feature
+  distributions.
+\newblock \emph{Journal of Vision}, 7\penalty0 (14):\penalty0 4: 1--17, 2007.
+
+\bibitem[Tatler et~al.(2005)Tatler, Baddeley, and Gilchrist]{tatler2005}
+Benjamin~W Tatler, Roland~J Baddeley, and Iain~D Gilchrist.
+\newblock Visual correlates of fixation selection: Effects of scale and time.
+\newblock \emph{Vision research}, 45\penalty0 (5):\penalty0 643--659, 2005.
+
+\bibitem[Yun et~al.(2013)Yun, Peng, Samaras, Zelinsky, and Berg]{yun2013}
+Kiwon Yun, Yifan Peng, D.~Samaras, G.J. Zelinsky, and T.L. Berg.
+\newblock Studying relationships between human gaze, description, and computer
+  vision.
+\newblock In \emph{Computer Vision and Pattern Recognition (CVPR), 2013 IEEE
+  Conference on}, pages 739--746, 2013.
+\newblock \doi{10.1109/CVPR.2013.101}.
 
 \end{thebibliography}

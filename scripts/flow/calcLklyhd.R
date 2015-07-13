@@ -1,14 +1,7 @@
 library(mvtnorm)
 library(dplyr)
 library(ggplot2)
-# unboundTransform <- function(x)
-# {
-# 	# converts fixations in [-1,1] space to [0,1]
-# 	x = (x+1)/2
-# 	# converts [0,1] to (-inf, inf)
-# 	z = log(x/(1-x))
-# 	return(z)
-# }
+
 
 	getParamPoly <- function(sacc)
 	{   
@@ -31,10 +24,8 @@ library(ggplot2)
 	}
 
 	calcSkewNormalLLH <- function(sacc, v)
-	{
-
-		
-	fix = cbind(sacc$x2, sacc$y2)
+	{		
+		fix = cbind(sacc$x2, sacc$y2)
 		# dmsn(x, xi=rep(0,length(alpha)), Omega, alpha, tau=0, dp=NULL, log=FALSE)
 		xi = c(v['xi_x'], v['xi_y'])
 		Omega = array(c(v['Omega-xx'],v['Omega-xy'],v['Omega-xy'],v['Omega-yy']), dim=c(2,2))
@@ -45,6 +36,11 @@ library(ggplot2)
 
 datasets = c('Clarke2013', 'Einhauser2008', 'Tatler2005', 'Tatler2007freeview', 'Tatler2007search',
 	 'Judd2009', 'Yun2013SUN', 'Yun2013PASCAL')
+
+LLHresults = data.frame(
+	dataset=character(),
+	biasmodel=character(),
+	logLik=numeric())
 
 for (d in datasets)
 {
@@ -59,7 +55,7 @@ for (d in datasets)
 	# saccades = saccades[which(is.finite(saccades$y2)),]
 	# saccades = filter(saccades, x2>-1, y2>-1, x2<1, y2<1)
 
-	LLHresults = list()
+	
 
 	######################################################################################
 	# first caculate log-likelihood of dataset given Clarke-Tatler 2014 central bias
@@ -70,12 +66,18 @@ for (d in datasets)
 
 	mu = c(0,0)
 	sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))
-	LLHresults['Clarke-Tatler2014'] = sum(log(dmvnorm(fixs, mu, sigma)))
+	llh = sum(log(dmvnorm(fixs, mu, sigma)))
+	LLHresults = rbind(LLHresults, data.frame(
+		dataset=d, biasmodel='Clarke-Tatler2014', logLik = llh))
+	rm(llh, mu, sigma)
 
 
 	mu = c(mean(fixs[,1]), mean(fixs[,2]))
 	sigma = var(fixs)
-	LLHresults['best fit normal'] = sum(log(dmvnorm(fixs, mu, sigma)))
+	llh = sum(log(dmvnorm(fixs, mu, sigma)))/filter(LLHresults, dataset==d, biasmodel=='Clarke-Tatler2014')$logLik
+	LLHresults = rbind(LLHresults, data.frame(
+		dataset=d, biasmodel='re-fit', logLik = llh))
+	rm(llh, mu, sigma)
 	# LLHresults['best fit LM'] = logLik(lm(c(fixs$x2, fixs$y2)~1))
 	# LLHresults['central SN'] = logLik(selm(data=fixs, formula= cbind(x2,y2)~1, family='SN'))
 	# LLHresults['central ST'] = logLik(selm(data=fixs, formula= cbind(x2,y2)~1, family='ST'))
@@ -84,9 +86,8 @@ for (d in datasets)
 	# now find out how much flow helps!
 	#####################################################################################
  
-	 for (fm in datasets)
-	 {
-
+	for ( fm in c(datasets, 'ALL_'))
+	{
 		biasParams = read.csv(paste('models/', fm, 'flowModels.txt', sep=''))
 
 		# Loop over flow models
@@ -120,18 +121,35 @@ for (d in datasets)
 					llh[ii] = calcSkewNormalLLH(saccade, valuesForDist)
 				} 
 			}
-
-			LLHresults[paste('flow', fm, flow)] = sum(llh[which(is.finite(llh))])
-		}
+			llh = sum(llh[which(is.finite(llh))])/filter(LLHresults, dataset==d, biasmodel=='Clarke-Tatler2014')$logLik
+			LLHresults = rbind(LLHresults, data.frame(
+				dataset=d, biasmodel=paste('flow', fm, flow), logLik =llh))
+		}	
+			
+		
 	}
 
 
-
-	LLH = data.frame(unlist(LLHresults))
-	LLH$model = names(LLHresults)
-	names(LLH)[1] = 'score'
-
-	plt  = ggplot(LLH, aes(x=model, y=score)) + geom_bar(stat='identity')
-	ggsave(paste('llh_', d, '.pdf', sep=''), width=10, height=6)
-
 }
+
+LLHresults$deviance = -2*LLHresults$logLik
+
+
+plt  = ggplot(filter(LLHresults, biasmodel %in% c('re-fit', 'flow ALL_ N')), aes(x=biasmodel, y=logLik, fill=dataset))
+plt = plt + geom_bar(stat='identity', position='dodge')
+plt = plt + scale_fill_brewer(palette="Set3") + theme_bw()
+plt = plt + scale_y_continuous(name='proportion of deviance', limits=c(0,1), expand=c(0,0))
+plt = plt + scale_x_discrete(name='bias model', labels=c('re-fit central bias','normal flow (all)'))
+ggsave(paste('figs/llh_ALL.pdf', sep=''), width=10, height=6)
+
+
+plt = ggplot(filter(LLHresults, !(biasmodel %in% c('Clarke-Tatler2014', 're-fit', 'flow ALL_ N'))), aes(x=dataset, y=logLik, fill=biasmodel))
+plt = plt + geom_bar(stat='identity', position='dodge')
+plt = plt + scale_fill_brewer(palette="Set3") + theme_bw()
+plt = plt + scale_y_continuous(name='proportion of deviance', limits=c(0,3), expand=c(0,0))
+ggsave(paste('figs/llh_crossDataset.pdf', sep=''), width=10, height=6)
+
+write.csv(LLHresults, 'llhResults.txt', row.names=F)
+
+
+

@@ -5,12 +5,13 @@ library(scales)
 library(dplyr)
 
  datasets = c('Clarke2013', 'Einhauser2008', 'Tatler2005', 'Tatler2007freeview', 'Tatler2007search',
- 	 'Yun2013SUN', 'Judd2009') `#, 'Yun2013PASCAL'
+ 	 'Yun2013SUN', 'Judd2009') #, 'Yun2013PASCAL'
 
 
 source('calcFlowDists.R')
 
-
+n=0.1
+m=0.01
 
 for (d in datasets)
 {
@@ -20,103 +21,22 @@ for (d in datasets)
 	names(sacc) = c("x1", "y1", "x2", "y2")
 
 	
-	# calcualte how distribution parameters vary over a sliding window
- 
-	stFitOverSpace = data.frame(x=numeric(), y=numeric(), z=factor(levels=c('xi_x', 'xi_y', 'Omega-xx','Omega-xy','Omega-yx','Omega-yy', 'alpha-x2', 'alpha-y2', 'nu')), value=numeric())
-	snFitOverSpace = data.frame(x=numeric(), y=numeric(), z=factor(levels=c('xi_x', 'xi_y', 'Omega-xx','Omega-xy','Omega-yx','Omega-yy', 'alpha-x2', 'alpha-y2')), value=numeric())
-	nFitOverSpace =  data.frame(x=numeric(), y=numeric(), z=factor(levels=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yx', 'sigma_yy')), value=numeric())
-
-	n = 0.2
-	m = 0.05
-
-	for (x in seq(-1+n, 1-n, m))
-	{
-		print(x)
-		for (y in seq(-.75+n, .75-n, m))
-		{	
-			idx = which(sacc$x1>(x-n) & sacc$x1<(x+n) & sacc$y1>(y-n) & sacc$y1<(y+n))
-
-			if (length(idx)>500)
-			{
-				# stFitOverSpace = rbind(stFitOverSpace, 	calcSNdist(sacc[idx,], 'ST', x,y))
-				# snFitOverSpace = rbind(stFitOverSpace, 	calcSNdist(sacc[idx,], 'SN',x,y))
-				nFitOverSpace  = rbind(nFitOverSpace, 	calcNdist(sacc[idx,]))
-			}
-		}
-	}
+	nFitOverSpace = calcFlowOverSpace(n)
+	print('fitted...')
+	ys = round(sort(unique(nFitOverSpace$y)),4)
 
 
-	 ys = sort(unique(nFitOverSpace$y))
-	 ny = length(ys)
-
-	# subsetParams = rbind(
-	# 	filter(snFitOverSpace, y==ys[1]),
-	# 	filter(snFitOverSpace, y==ys[ny]),
-	# 	filter(snFitOverSpace, y==ys[4]),
-	# 	filter(snFitOverSpace, y==ys[ny-3]),
-	# 	filter(snFitOverSpace, y==ys[7]),
-	# 	filter(snFitOverSpace, y==ys[ny-6]))
-	# subsetParams$down = subsetParams$y<0
-
-	# plt = ggplot(subsetParams, aes(x=x, y=value, colour=as.factor(y)))
-	# plt = plt + geom_point() + geom_smooth(method='lm', formula=y~poly(x,4)) 
-	# plt = plt + facet_wrap(down~param, ncol=8, scales='free') + theme_minimal()
-	# ggsave('STparamsChagingOverSpace.pdf', width=14, height=6)
-
-	# subsetParams = rbind(
-	# 	filter(snFitOverSpace, y==ys[1]),
-	# 	filter(snFitOverSpace, y==ys[ny]),
-	# 	filter(snFitOverSpace, y==ys[4]),
-	# 	filter(snFitOverSpace, y==ys[ny-3]),
-	# 	filter(snFitOverSpace, y==ys[7]),
-	# 	filter(snFitOverSpace, y==ys[ny-6]))
-
-	# subsetParams$down = subsetParams$y<0
-
-	# plt = ggplot(subsetParams, aes(x=x, y=value, colour=as.factor(y)))
-	# plt = plt + geom_point() + geom_smooth(method='lm', formula=y~poly(x,4)) 
-	# plt = plt + facet_wrap(down~param, ncol=8, scales='free') + theme_minimal()
-	# ggsave('SNparamsChagingOverSpace.pdf', width=14, height=6)
-
-
-	subsetParams = rbind(
-		filter(nFitOverSpace, y==ys[1]),
-		filter(nFitOverSpace, y==ys[ny]),
-		filter(nFitOverSpace, y==ys[4]),
-		filter(nFitOverSpace, y==ys[ny-3]),
-		filter(nFitOverSpace, y==ys[7]),
-		filter(nFitOverSpace, y==ys[ny-6]))
-
-	subsetParams$down = subsetParams$y<0
+	subsetParams = filter(nFitOverSpace, y%in%quantile(ys, c(0.2,0.5,0.7)))
 
 	plt = ggplot(subsetParams, aes(x=x, y=value, colour=as.factor(y)))
-	plt = plt + geom_point() + geom_smooth(method='lm', formula=y~poly(x,4)) 
-	plt = plt + facet_wrap(down~param, ncol=5, scales='free') + theme_minimal()
-	ggsave(paste('figs/NparamsChagingOverSpace', d, '.pdf'), width=14, height=6)
-
-
+	plt = plt + geom_point() + geom_smooth(method='lm', formula=y~I(x)+I(x^2)+I(x^3)+I(x^4)) 
+	plt = plt + facet_wrap(~param, ncol=5, scales='free') + theme_minimal()
+	ggsave(paste('figs/NparamsChagingOverSpace_ALL_', n, '.pdf'), width=14, height=6)
+	rm(subsetParams)
+	print('done plotting)')
 	# Try and model how these parameters vary over space
 	paramDF = data.frame(biasModel=character(), feat=character(), z=character(), coef=numeric())
-	# for (feat in levels(stFitOverSpace$param))
-	# {
-	# 	param = filter(stFitOverSpace, param==feat)
-	# 	paramModel = lm(value ~ x + I(x^2)+ I(x^3) + I(x^4) + y + I(y^2)+ I(y^3) + I(y^4), param)
-	# 	paramDF = rbind(paramDF, 
-	# 		data.frame(
-	# 			biasModel='ST', 
-	# 			feat=feat,z=names(coef(paramModel)), 
-	# 			coef=as.numeric(coef(paramModel))))
-	# }	
-	# for (feat in levels(snFitOverSpace$param))
-	# {
-	# 	param = filter(snFitOverSpace, param==feat)
-	# 	paramModel = lm(value ~ x + I(x^2)+ I(x^3) + I(x^4) + y + I(y^2)+ I(y^3) + I(y^4), param)
-	# 	paramDF = rbind(paramDF, 
-	# 		data.frame(
-	# 			biasModel='SN', 
-	# 			feat=feat,z=names(coef(paramModel)), 
-	# 			coef=as.numeric(coef(paramModel))))
-	# }	
+
 	for (feat in levels(nFitOverSpace$param))
 	{
 		param = filter(nFitOverSpace, param==feat)

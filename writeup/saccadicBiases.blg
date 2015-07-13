@@ -26,45 +26,45 @@ Warning--I didn't find a database entry for "Parkhurst:2002vo"
 Warning--I didn't find a database entry for "Birmingham:2009hl"
 Warning--I didn't find a database entry for "Torralba:2006iq"
 Warning--I didn't find a database entry for "Ehinger:2009ji"
-You've used 4 entries,
+You've used 13 entries,
             2773 wiz_defined-function locations,
-            658 strings with 5958 characters,
-and the built_in function-call counts, 1665 in all, are:
-= -- 159
-> -- 73
-< -- 4
-+ -- 25
-- -- 21
-* -- 122
-:= -- 261
-add.period$ -- 13
-call.type$ -- 4
-change.case$ -- 18
-chr.to.int$ -- 4
-cite$ -- 8
-duplicate$ -- 77
-empty$ -- 142
-format.name$ -- 31
-if$ -- 342
+            719 strings with 7683 characters,
+and the built_in function-call counts, 6513 in all, are:
+= -- 596
+> -- 368
+< -- 7
++ -- 124
+- -- 111
+* -- 548
+:= -- 988
+add.period$ -- 42
+call.type$ -- 13
+change.case$ -- 75
+chr.to.int$ -- 13
+cite$ -- 26
+duplicate$ -- 290
+empty$ -- 526
+format.name$ -- 130
+if$ -- 1366
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 3
-newline$ -- 29
-num.names$ -- 16
-pop$ -- 30
+missing$ -- 12
+newline$ -- 75
+num.names$ -- 52
+pop$ -- 136
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 63
 quote$ -- 0
-skip$ -- 61
+skip$ -- 227
 stack$ -- 0
-substring$ -- 77
-swap$ -- 5
-text.length$ -- 0
+substring$ -- 300
+swap$ -- 36
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 44
+type$ -- 143
 warning$ -- 0
-while$ -- 18
+while$ -- 61
 width$ -- 0
-write$ -- 60
+write$ -- 180
 (There was 1 error message)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  2 JUL 2015 16:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  8 JUL 2015 15:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,308 +350,356 @@ File: omscmbrs.fd 2005/04/13 v8.1 (WaS)
 )
 
 Package natbib Warning: Citation `Itti:2000te' on page 1 undefined on input lin
-e 59.
+e 58.
 
 
 Package natbib Warning: Citation `Baddeley:2006wq' on page 1 undefined on input
- line 59.
+ line 58.
 
 
 Package natbib Warning: Citation `Yarbus:1967wd' on page 1 undefined on input l
-ine 59.
+ine 58.
 
 
 Package natbib Warning: Citation `Buswell:1935tf' on page 1 undefined on input 
-line 59.
+line 58.
 
 
 Package natbib Warning: Citation `Land:2001uc' on page 1 undefined on input lin
-e 59.
+e 58.
 
 
 Package natbib Warning: Citation `Tatler:2008uu' on page 1 undefined on input l
-ine 59.
+ine 58.
 
 
 Package natbib Warning: Citation `Tatler:2009vp' on page 1 undefined on input l
-ine 59.
+ine 58.
 
 
 Package natbib Warning: Citation `Foulsham:2010fj' on page 1 undefined on input
- line 59.
+ line 58.
 
 
 Package natbib Warning: Citation `Tatler:2007hk' on page 1 undefined on input l
-ine 59.
+ine 58.
 
 
 Package natbib Warning: Citation `Canosa:2003tu' on page 1 undefined on input l
-ine 59.
+ine 58.
 
 
 Package natbib Warning: Citation `Tatler:2007hk' on page 1 undefined on input l
-ine 63.
+ine 61.
 
 
 Package natbib Warning: Citation `Tatler:2005bw' on page 1 undefined on input l
-ine 63.
+ine 61.
 
 
 Package natbib Warning: Citation `Canosa:2003tu' on page 1 undefined on input l
-ine 63.
+ine 61.
 
 
 Package natbib Warning: Citation `Clarke:2014km' on page 1 undefined on input l
-ine 63.
+ine 61.
 
 
 Package natbib Warning: Citation `Tseng:2009jn' on page 1 undefined on input li
-ne 63.
+ne 61.
 
 LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <10.95> not available
-(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 63.
+(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 61.
 
 Package natbib Warning: Citation `Fuller:1996bx' on page 1 undefined on input l
-ine 63.
+ine 61.
 
 
 Package natbib Warning: Citation `Stainer:2013ce' on page 1 undefined on input 
-line 63.
+line 61.
 
 [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
 Package natbib Warning: Citation `Tatler:2007hk' on page 2 undefined on input l
-ine 65.
+ine 63.
 
 
 Package natbib Warning: Citation `Parkhurst:2002vo' on page 2 undefined on inpu
-t line 65.
+t line 63.
 
 
 Package natbib Warning: Citation `Birmingham:2009hl' on page 2 undefined on inp
-ut line 65.
+ut line 63.
 
 
 Package natbib Warning: Citation `Torralba:2006iq' on page 2 undefined on input
- line 65.
+ line 63.
 
 
 Package natbib Warning: Citation `Ehinger:2009ji' on page 2 undefined on input 
-line 65.
+line 63.
 
-[2]
-LaTeX Font Info:    Try loading font information for OMS+cmbr on input line 91.
+[2] <figs/saccDistExample.pdf, id=13, 465.74pt x 362.35374pt>
+File: figs/saccDistExample.pdf Graphic file (type pdf)
 
- (/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/omscmbr.fd
-File: omscmbr.fd 2005/04/13 v8.1 (WaS)
-)
-LaTeX Font Info:    Font shape `OMS/cmbr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmbrs/m/n' tried instead on input line 91.
- [3]
-[4] <../scripts/flow/flowFigures/saccEndByX1Y4.pdf, id=25, 481.8pt x 481.8pt>
+<use figs/saccDistExample.pdf>
+Package pdftex.def Info: figs/saccDistExample.pdf used on input line 77.
+(pdftex.def)             Requested size: 284.52756pt x 221.37273pt.
+ [3 <./figs/saccDistExample.pdf>]
+Overfull \hbox (145.54314pt too wide) in paragraph at lines 97--113
+ [][] 
+ []
+
+
+Overfull \hbox (117.25394pt too wide) in paragraph at lines 121--141
+ [] 
+ []
+
+[4] [5]
+<../scripts/flow/figs/NparamsChagingOverSpace_ALL_01.pdf, id=33, 1011.78pt x 43
+3.62pt>
+File: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_01.pdf Graphic file (typ
+e pdf)
+ <use ../scripts/flow/figs/NparamsChagingOverSpace_ALL_01.pdf>
+Package pdftex.def Info: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_01.pd
+f used on input line 175.
+(pdftex.def)             Requested size: 369.88582pt x 158.52472pt.
+
+Overfull \hbox (9.88582pt too wide) in paragraph at lines 175--176
+ [][] 
+ []
+
+<../scripts/flow/figs/llh_ALL.pdf, id=34, 722.7pt x 433.62pt>
+File: ../scripts/flow/figs/llh_ALL.pdf Graphic file (type pdf)
+
+<use ../scripts/flow/figs/llh_ALL.pdf>
+Package pdftex.def Info: ../scripts/flow/figs/llh_ALL.pdf used on input line 20
+9.
+(pdftex.def)             Requested size: 369.88582pt x 221.93063pt.
+
+Overfull \hbox (9.88582pt too wide) in paragraph at lines 209--210
+ [][] 
+ []
+
+[6 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_01.pdf>] [7 <../scripts/fl
+ow/figs/llh_ALL.pdf>]
+<../scripts/flow/figs/llh_crossDataset.pdf, id=60, 722.7pt x 433.62pt>
+File: ../scripts/flow/figs/llh_crossDataset.pdf Graphic file (type pdf)
+
+<use ../scripts/flow/figs/llh_crossDataset.pdf>
+Package pdftex.def Info: ../scripts/flow/figs/llh_crossDataset.pdf used on inpu
+t line 218.
+(pdftex.def)             Requested size: 369.88582pt x 221.93063pt.
+
+Overfull \hbox (9.88582pt too wide) in paragraph at lines 218--219
+ [][] 
+ []
+
+[8 <../scripts/flow/figs/llh_crossDataset.pdf>]
+<../scripts/flow/flowFigures/saccEndByX1Y4.pdf, id=71, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX1Y4.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX1Y4.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX1Y4.pdf used on 
-input line 145.
+input line 245.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX2Y4.pdf, id=27, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX2Y4.pdf, id=73, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX2Y4.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX2Y4.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX2Y4.pdf used on 
-input line 146.
+input line 246.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX3Y4.pdf, id=28, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX3Y4.pdf, id=74, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX3Y4.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX3Y4.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX3Y4.pdf used on 
-input line 147.
+input line 247.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX4Y4.pdf, id=29, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX4Y4.pdf, id=75, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX4Y4.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX4Y4.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX4Y4.pdf used on 
-input line 148.
+input line 248.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX1Y3.pdf, id=30, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX1Y3.pdf, id=76, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX1Y3.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX1Y3.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX1Y3.pdf used on 
-input line 149.
+input line 249.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX2Y3.pdf, id=31, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX2Y3.pdf, id=77, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX2Y3.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX2Y3.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX2Y3.pdf used on 
-input line 150.
+input line 250.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX3Y3.pdf, id=32, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX3Y3.pdf, id=78, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX3Y3.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX3Y3.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX3Y3.pdf used on 
-input line 151.
+input line 251.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX4Y3.pdf, id=33, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX4Y3.pdf, id=79, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX4Y3.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX4Y3.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX4Y3.pdf used on 
-input line 152.
+input line 252.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX1Y2.pdf, id=34, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX1Y2.pdf, id=80, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX1Y2.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX1Y2.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX1Y2.pdf used on 
-input line 153.
+input line 253.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX2Y2.pdf, id=35, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX2Y2.pdf, id=81, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX2Y2.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX2Y2.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX2Y2.pdf used on 
-input line 154.
+input line 254.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX3Y2.pdf, id=36, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX3Y2.pdf, id=82, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX3Y2.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX3Y2.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX3Y2.pdf used on 
-input line 155.
+input line 255.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX4Y2.pdf, id=37, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX4Y2.pdf, id=83, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX4Y2.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX4Y2.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX4Y2.pdf used on 
-input line 156.
+input line 256.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX1Y1.pdf, id=38, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX1Y1.pdf, id=84, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX1Y1.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX1Y1.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX1Y1.pdf used on 
-input line 157.
+input line 257.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX2Y1.pdf, id=39, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX2Y1.pdf, id=85, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX2Y1.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX2Y1.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX2Y1.pdf used on 
-input line 158.
+input line 258.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX3Y1.pdf, id=40, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX3Y1.pdf, id=86, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX3Y1.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX3Y1.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX3Y1.pdf used on 
-input line 159.
+input line 259.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
 
-<../scripts/flow/flowFigures/saccEndByX4Y1.pdf, id=41, 481.8pt x 481.8pt>
+<../scripts/flow/flowFigures/saccEndByX4Y1.pdf, id=87, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX4Y1.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/flowFigures/saccEndByX4Y1.pdf>
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX4Y1.pdf used on 
-input line 160.
+input line 260.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
- [5] [6 <../scripts/flow/flowFigures/saccEndByX1Y4.pdf> <../scripts/flow/flowFi
-gures/saccEndByX2Y4.pdf> <../scripts/flow/flowFigures/saccEndByX3Y4.pdf> <../sc
-ripts/flow/flowFigures/saccEndByX4Y4.pdf> <../scripts/flow/flowFigures/saccEndB
-yX1Y3.pdf> <../scripts/flow/flowFigures/saccEndByX2Y3.pdf> <../scripts/flow/flo
-wFigures/saccEndByX3Y3.pdf> <../scripts/flow/flowFigures/saccEndByX4Y3.pdf> <..
-/scripts/flow/flowFigures/saccEndByX1Y2.pdf> <../scripts/flow/flowFigures/saccE
-ndByX2Y2.pdf> <../scripts/flow/flowFigures/saccEndByX3Y2.pdf> <../scripts/flow/
-flowFigures/saccEndByX4Y2.pdf> <../scripts/flow/flowFigures/saccEndByX1Y1.pdf> 
-<../scripts/flow/flowFigures/saccEndByX2Y1.pdf> <../scripts/flow/flowFigures/sa
-ccEndByX3Y1.pdf> <../scripts/flow/flowFigures/saccEndByX4Y1.pdf>]
-<../scripts/heatmaps/centreadjustedheatmaps.pdf, id=65, 835.12pt x 532.99126pt>
+
+<../scripts/heatmaps/centreadjustedheatmaps.pdf, id=88, 835.12pt x 532.99126pt>
 File: ../scripts/heatmaps/centreadjustedheatmaps.pdf Graphic file (type pdf)
 <use ../scripts/heatmaps/centreadjustedheatmaps.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/centreadjustedheatmaps.pdf used on
- input line 221.
+ input line 285.
 (pdftex.def)             Requested size: 360.0pt x 229.7592pt.
- [7 <../scripts/heatmaps/centreadjustedheatmaps.pdf>]
+ [9] [10 <../scripts/flow/flowFigures/saccEndByX1Y4.pdf> <../scripts/flow/flowF
+igures/saccEndByX2Y4.pdf> <../scripts/flow/flowFigures/saccEndByX3Y4.pdf> <../s
+cripts/flow/flowFigures/saccEndByX4Y4.pdf> <../scripts/flow/flowFigures/saccEnd
+ByX1Y3.pdf> <../scripts/flow/flowFigures/saccEndByX2Y3.pdf> <../scripts/flow/fl
+owFigures/saccEndByX3Y3.pdf> <../scripts/flow/flowFigures/saccEndByX4Y3.pdf> <.
+./scripts/flow/flowFigures/saccEndByX1Y2.pdf> <../scripts/flow/flowFigures/sacc
+EndByX2Y2.pdf> <../scripts/flow/flowFigures/saccEndByX3Y2.pdf> <../scripts/flow
+/flowFigures/saccEndByX4Y2.pdf> <../scripts/flow/flowFigures/saccEndByX1Y1.pdf>
+ <../scripts/flow/flowFigures/saccEndByX2Y1.pdf> <../scripts/flow/flowFigures/s
+accEndByX3Y1.pdf> <../scripts/flow/flowFigures/saccEndByX4Y1.pdf>]
 
-Package natbib Warning: Citation `Stainer:2013ce' on page 8 undefined on input 
-line 250.
+Package natbib Warning: Citation `Stainer:2013ce' on page 11 undefined on input
+ line 312.
 
-LaTeX Font Info:    Try loading font information for T1+cmtl on input line 259.
+LaTeX Font Info:    Try loading font information for T1+cmtl on input line 321.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/t1cmtl.fd
 File: t1cmtl.fd 2005/04/13 v8.1 (WaS)
 )
-(./saccadicBiases.bbl
+(./saccadicBiases.bbl [11 <../scripts/heatmaps/centreadjustedheatmaps.pdf>]
 LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <10> not available
-(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 11.
+(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/cmtl/m/it' in size <10> not available
-(Font)              Font shape `T1/cmtl/m/sl' tried instead on input line 11.
+(Font)              Font shape `T1/cmtl/m/sl' tried instead on input line 17.
 
-Underfull \hbox (badness 3396) in paragraph at lines 9--14
+Underfull \hbox (badness 3396) in paragraph at lines 15--20
 []\T1/cmbr/m/n/10 A. Az-za-lini.  \T1/cmbr/m/sl/10 The R pack-age \T1/cmtl/m/sl
 /10 sn\T1/cmbr/m/sl/10 : The skew-normal and skew-$\OML/cmbrm/m/it/10 t$ \T1/cm
 br/m/sl/10 dis-tri-
  []
 
 
-Underfull \hbox (badness 4634) in paragraph at lines 9--14
+Underfull \hbox (badness 4634) in paragraph at lines 15--20
 \T1/cmbr/m/sl/10 bu-tions (ver-sion 1.2-2)\T1/cmbr/m/n/10 .  Uni-ver-sità di Pa
 dova, Italia, 2015.  URL
  []
 
-)
+[12])
 
 Package natbib Warning: There were undefined citations.
 
-[8] (./saccadicBiases.aux) ) 
+[13] (./saccadicBiases.aux) ) 
 Here is how much of TeX's memory you used:
- 3899 strings out of 493315
- 54402 string characters out of 6137905
- 118233 words of memory out of 5000000
- 7238 multiletter control sequences out of 15000+600000
+ 3953 strings out of 493315
+ 55647 string characters out of 6137905
+ 120834 words of memory out of 5000000
+ 7289 multiletter control sequences out of 15000+600000
  23767 words of font info for 70 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,11n,35p,1505b,271s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips
-/cm-super/cm-super-t1.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/publi
-c/hfbright/hfbr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hf
-bright/hfbr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbrigh
-t/hfbrbs10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/
-hfbrmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hf
-brmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbrs
-y10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbrsy8
-.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pf
-b></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb><
-/usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbmr17.pfb></usr/l
-ocal/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbtl10.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbto10.pfb>
-Output written on saccadicBiases.pdf (8 pages, 1031725 bytes).
+ 41i,11n,35p,1505b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvip
+s/cm-super/cm-super-t1.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/publ
+ic/hfbright/hfbr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/h
+fbright/hfbr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbrig
+ht/hfbrbs10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright
+/hfbrmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/h
+fbrmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbr
+sy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbrsy
+8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbbx10.p
+fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb>
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbmr17.pfb></usr/
+local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbtl10.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbto10.pfb>
+Output written on saccadicBiases.pdf (13 pages, 1107940 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 176 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 86 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

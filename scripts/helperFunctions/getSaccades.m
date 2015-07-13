@@ -20,19 +20,25 @@ for (d = datasets)
     d
     fix = grabFixations(d{1});
     saccs1 = convertFixToSacc(fix);
-    dlmwrite(['saccs/' d{1} 'saccs.txt'], saccs1);
+    figure
+    
+    dlmwrite(['../flow/saccs/' d{1} 'saccs.txt'], saccs1);
     
     fixF = fix;
     fixF.x = -fixF.x;
     saccs2 = convertFixToSacc(fixF);
     fixF = fix;
-    fixF.x = -fixF.y;
+    fixF.y = -fixF.y;
     saccs3 = convertFixToSacc(fixF);
     fixF = fix;
     fixF.x = -fixF.x;
-    fixF.x = -fixF.y;
+    fixF.y = -fixF.y;
     saccs4 = convertFixToSacc(fixF);
-    dlmwrite(['saccs/' d{1} 'saccsMirrored.txt'], [saccs1; saccs2;saccs3;saccs4]);
+    saccs = [saccs1; saccs2;saccs3;saccs4];
+    dlmwrite(['saccs/' d{1} 'saccsMirrored.txt'], saccs);
+    
+    plot(saccs(:,3), saccs(:,4), '.')
+    
 end
 
 
