@@ -15,7 +15,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{rotating}
-\usepackage{pdflscape}
+\usepackage{pdflscape} 
 \usepackage{abstract}
 \usepackage[ table ]{ xcolor }
 \usepackage[square, comma, sort&compress, longnamesfirst]{natbib} %
@@ -168,11 +168,11 @@ Saccadic flow can be thought of as a generalisation of the central bias. Instead
 
 \subsubsection{Modelling}
 
-To characterise how the distribution of saccadic endpoints varies with the start point, we used a sliding window approach. All saccades that originated in a $n\times n$ window were taken and used to fit a multivariate Gaussian distribution. This window was then moved over the stimuli in steps of $s=0.01$. Parameter sets estimated from windows containing less than 250 datapoints were removed. Multivariate polynomial regression was then used to fit 4-th order polynomials to each of the parameters. We experimented with a variety of $n\in\{0.05,0.1, 0.2\}$. However, as this parameter was found to not have a large result, we only report the results for $n=0.1$. (See discussion for more details) [NOTE need to check I actually use these values!!!]
+To characterise how the distribution of saccadic endpoints varies with the start point, we used a sliding window approach. All saccades that originated in a $n\times n$ window were taken and used to fit a multivariate Gaussian distribution. This window was then moved over the stimuli in steps of $s=0.01$. Parameter sets estimated from windows containing less than 250 datapoints were removed. Multivariate polynomial regression was then used to fit 4-th order polynomials to each of the parameters. We experimented with varying the window size ($n\in\{0.05,0.1, 0.2\}$). However, as this parameter was found to have a negligible result, we only report the results for $n=0.1$.
 
 \begin{figure}
 \centering
- \includegraphics[width=13cm]{../scripts/flow/figs/NparamsChagingOverSpace_ALL_01.pdf}
+ \includegraphics[width=13cm]{../scripts/flow/figs/NparamsChagingOverSpace_ALL.pdf}
 \caption{Flow:normal parameters over space. Note this is only a place holder for now. }
 \label{fig:nParamsOverSpace}
 \end{figure}
@@ -206,7 +206,7 @@ How well does this model account for the fixations in our datasets? Figure \ref{
 
 \begin{figure}
 \centering
- \includegraphics[width=13cm]{../scripts/flow/figs/llh_ALL.pdf}
+ \includegraphics[width=8cm]{../scripts/flow/figs/llh_ALL.pdf}
 \caption{Flow:normal deviance results. We can see that re-fitting the central-bias to each specific dataset offers little improvement over using the Clarke-Tatler model, while the flow:normal model decreases the deviance by half.}
 \label{fig:nFlowDevAll}
 \end{figure}
@@ -215,7 +215,7 @@ As the flow:normal model is significantly more complex, requiring nine times as 
 
 \begin{figure}
 \centering
- \includegraphics[width=13cm]{../scripts/flow/figs/llh_crossDataset.pdf}
+ \includegraphics[width=12cm]{../scripts/flow/figs/llh_crossDataset.pdf}
 \caption{Flow:normal deviance results over datasets. In general, we can see that bias models trained on different datasets all explain around the same amount of variance in the datasets.}
 \label{fig:nFlowDevCross}
 \end{figure}

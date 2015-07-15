@@ -86,68 +86,72 @@ for (d in datasets)
 	# now find out how much flow helps!
 	#####################################################################################
  
-	for ( fm in c(datasets, 'ALL_'))
+	for (fm in c('ALL', 'Clarke2013', 'Einhauser2008', 'Tatler2005', 'Tatler2007freeview', 'Tatler2007search',
+	 'Judd2009', 'Yun2013SUN'))
 	{
-		biasParams = read.csv(paste('models/', fm, 'flowModels.txt', sep=''))
-
-		# Loop over flow models
-		for (flow in c('N'))
+		if (fm=="ALL")
 		{
+		biasParams = read.csv(paste('models/ALL_flowModels_0.1.txt', sep=''))
+		}
+		else
+		{
+			biasParams = read.csv(paste('models/', fm, 'flowModels.txt', sep=''))	
+		}
 
-			flowParams = filter(biasParams, biasModel==flow)
-			parameters = unique(flowParams$feat)
 
-			llh = rep(0, nrow(saccades))
-			for (ii in 1:nrow(saccades))
+		flowParams = filter(biasParams, biasModel==flow)
+		parameters = unique(flowParams$feat)
+
+		llh = rep(0, nrow(saccades))
+		for (ii in 1:nrow(saccades))
+		{
+			saccade = saccades[ii,]
+
+			valuesForDist = rep(0, length(parameters))
+			names(valuesForDist) = parameters
+
+			v = getParamPoly(saccade)
+
+			for (jj in 1:length(parameters))
 			{
-				saccade = saccades[ii,]
-
-				valuesForDist = rep(0, length(parameters))
-				names(valuesForDist) = parameters
-
-				v = getParamPoly(saccade)
-
-				for (jj in 1:length(parameters))
-				{
-					parameter = parameters[jj]
-					polyCoefs = filter(flowParams, feat==parameters[jj])$coef
-					valuesForDist[as.character(parameter)] = v %*% polyCoefs
-				}
-
-				if (flow=='N') {
-					llh[ii] = calcNormLLH(saccade, valuesForDist) 
-				}
-				else if (flow=='SN') {
-					llh[ii] = calcSkewNormalLLH(saccade, valuesForDist)
-				} 
+				parameter = parameters[jj]
+				polyCoefs = filter(flowParams, feat==parameters[jj])$coef
+				valuesForDist[as.character(parameter)] = v %*% polyCoefs
 			}
-			llh = sum(llh[which(is.finite(llh))])/filter(LLHresults, dataset==d, biasmodel=='Clarke-Tatler2014')$logLik
-			LLHresults = rbind(LLHresults, data.frame(
-				dataset=d, biasmodel=paste('flow', fm, flow), logLik =llh))
-		}	
-			
+
+			if (flow=='N') {
+				llh[ii] = calcNormLLH(saccade, valuesForDist) 
+			}
+			else if (flow=='SN') {
+				llh[ii] = calcSkewNormalLLH(saccade, valuesForDist)
+			} 
+		}
+		llh = sum(llh[which(is.finite(llh))])/filter(LLHresults, dataset==d, biasmodel=='Clarke-Tatler2014')$logLik
+		LLHresults = rbind(LLHresults, data.frame(
+			dataset=d, biasmodel=paste('flow', fm, flow), logLik =llh))
+	
+		
 		
 	}
-
-
 }
 
 LLHresults$deviance = -2*LLHresults$logLik
 
 
-plt  = ggplot(filter(LLHresults, biasmodel %in% c('re-fit', 'flow ALL_ N')), aes(x=biasmodel, y=logLik, fill=dataset))
+plt  = ggplot(filter(LLHresults, biasmodel %in% c('re-fit', 'flow ALL N')), aes(x=biasmodel, y=logLik, fill=dataset))
 plt = plt + geom_bar(stat='identity', position='dodge')
 plt = plt + scale_fill_brewer(palette="Set3") + theme_bw()
 plt = plt + scale_y_continuous(name='proportion of deviance', limits=c(0,1), expand=c(0,0))
 plt = plt + scale_x_discrete(name='bias model', labels=c('re-fit central bias','normal flow (all)'))
-ggsave(paste('figs/llh_ALL.pdf', sep=''), width=10, height=6)
+ggsave(paste('figs/llh_ALL.pdf', sep=''), width=6, height=4)
 
 
-plt = ggplot(filter(LLHresults, !(biasmodel %in% c('Clarke-Tatler2014', 're-fit', 'flow ALL_ N'))), aes(x=dataset, y=logLik, fill=biasmodel))
+plt = ggplot(filter(LLHresults, !(biasmodel %in% c('Clarke-Tatler2014', 're-fit', 'flow ALL N'))), aes(x=biasmodel, y=logLik, fill=dataset))
 plt = plt + geom_bar(stat='identity', position='dodge')
 plt = plt + scale_fill_brewer(palette="Set3") + theme_bw()
-plt = plt + scale_y_continuous(name='proportion of deviance', limits=c(0,3), expand=c(0,0))
-ggsave(paste('figs/llh_crossDataset.pdf', sep=''), width=10, height=6)
+plt = plt + scale_y_continuous(name='proportion of deviance', limits=c(0,1), expand=c(0,0))
+plt = plt + theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))
+ggsave(paste('figs/llh_crossDataset.pdf', sep=''), width=8, height=4)
 
 write.csv(LLHresults, 'llhResults.txt', row.names=F)
 

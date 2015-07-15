@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  8 JUL 2015 15:36
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  14 JUL 2015 09:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -458,46 +458,36 @@ Overfull \hbox (117.25394pt too wide) in paragraph at lines 121--141
  []
 
 [4] [5]
-<../scripts/flow/figs/NparamsChagingOverSpace_ALL_01.pdf, id=33, 1011.78pt x 43
-3.62pt>
-File: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_01.pdf Graphic file (typ
-e pdf)
- <use ../scripts/flow/figs/NparamsChagingOverSpace_ALL_01.pdf>
-Package pdftex.def Info: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_01.pd
-f used on input line 175.
+<../scripts/flow/figs/NparamsChagingOverSpace_ALL.pdf, id=33, 1011.78pt x 433.6
+2pt>
+File: ../scripts/flow/figs/NparamsChagingOverSpace_ALL.pdf Graphic file (type p
+df)
+ <use ../scripts/flow/figs/NparamsChagingOverSpace_ALL.pdf>
+Package pdftex.def Info: ../scripts/flow/figs/NparamsChagingOverSpace_ALL.pdf u
+sed on input line 175.
 (pdftex.def)             Requested size: 369.88582pt x 158.52472pt.
 
 Overfull \hbox (9.88582pt too wide) in paragraph at lines 175--176
  [][] 
  []
 
-<../scripts/flow/figs/llh_ALL.pdf, id=34, 722.7pt x 433.62pt>
+<../scripts/flow/figs/llh_ALL.pdf, id=34, 433.62pt x 289.08pt>
 File: ../scripts/flow/figs/llh_ALL.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_ALL.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_ALL.pdf used on input line 20
 9.
-(pdftex.def)             Requested size: 369.88582pt x 221.93063pt.
-
-Overfull \hbox (9.88582pt too wide) in paragraph at lines 209--210
- [][] 
- []
-
-[6 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_01.pdf>] [7 <../scripts/fl
-ow/figs/llh_ALL.pdf>]
-<../scripts/flow/figs/llh_crossDataset.pdf, id=60, 722.7pt x 433.62pt>
+(pdftex.def)             Requested size: 227.62204pt x 151.74721pt.
+ [6 <../scripts/flow/figs/NparamsChagingOverSpace_ALL.pdf>] [7 <../scripts/flow
+/figs/llh_ALL.pdf>]
+<../scripts/flow/figs/llh_crossDataset.pdf, id=60, 578.16pt x 289.08pt>
 File: ../scripts/flow/figs/llh_crossDataset.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_crossDataset.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_crossDataset.pdf used on inpu
 t line 218.
-(pdftex.def)             Requested size: 369.88582pt x 221.93063pt.
-
-Overfull \hbox (9.88582pt too wide) in paragraph at lines 218--219
- [][] 
- []
-
-[8 <../scripts/flow/figs/llh_crossDataset.pdf>]
+(pdftex.def)             Requested size: 341.43306pt x 170.71451pt.
+ [8 <../scripts/flow/figs/llh_crossDataset.pdf>]
 <../scripts/flow/flowFigures/saccEndByX1Y4.pdf, id=71, 481.8pt x 481.8pt>
 File: ../scripts/flow/flowFigures/saccEndByX1Y4.pdf Graphic file (type pdf)
 
@@ -625,23 +615,24 @@ File: ../scripts/flow/flowFigures/saccEndByX4Y1.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../scripts/flow/flowFigures/saccEndByX4Y1.pdf used on 
 input line 260.
 (pdftex.def)             Requested size: 85.35826pt x 85.35284pt.
-
-<../scripts/heatmaps/centreadjustedheatmaps.pdf, id=88, 835.12pt x 532.99126pt>
+ [9 <../scripts/flow/flowFigures/saccEndByX1Y4.pdf> <../scripts/flow/flowFigure
+s/saccEndByX2Y4.pdf> <../scripts/flow/flowFigures/saccEndByX3Y4.pdf> <../script
+s/flow/flowFigures/saccEndByX4Y4.pdf> <../scripts/flow/flowFigures/saccEndByX1Y
+3.pdf> <../scripts/flow/flowFigures/saccEndByX2Y3.pdf> <../scripts/flow/flowFig
+ures/saccEndByX3Y3.pdf> <../scripts/flow/flowFigures/saccEndByX4Y3.pdf> <../scr
+ipts/flow/flowFigures/saccEndByX1Y2.pdf> <../scripts/flow/flowFigures/saccEndBy
+X2Y2.pdf> <../scripts/flow/flowFigures/saccEndByX3Y2.pdf> <../scripts/flow/flow
+Figures/saccEndByX4Y2.pdf> <../scripts/flow/flowFigures/saccEndByX1Y1.pdf> <../
+scripts/flow/flowFigures/saccEndByX2Y1.pdf> <../scripts/flow/flowFigures/saccEn
+dByX3Y1.pdf> <../scripts/flow/flowFigures/saccEndByX4Y1.pdf>]
+<../scripts/heatmaps/centreadjustedheatmaps.pdf, id=107, 835.12pt x 532.99126pt
+>
 File: ../scripts/heatmaps/centreadjustedheatmaps.pdf Graphic file (type pdf)
-<use ../scripts/heatmaps/centreadjustedheatmaps.pdf>
+ <use ../scripts/heatmaps/centreadjustedheatmaps.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/centreadjustedheatmaps.pdf used on
  input line 285.
 (pdftex.def)             Requested size: 360.0pt x 229.7592pt.
- [9] [10 <../scripts/flow/flowFigures/saccEndByX1Y4.pdf> <../scripts/flow/flowF
-igures/saccEndByX2Y4.pdf> <../scripts/flow/flowFigures/saccEndByX3Y4.pdf> <../s
-cripts/flow/flowFigures/saccEndByX4Y4.pdf> <../scripts/flow/flowFigures/saccEnd
-ByX1Y3.pdf> <../scripts/flow/flowFigures/saccEndByX2Y3.pdf> <../scripts/flow/fl
-owFigures/saccEndByX3Y3.pdf> <../scripts/flow/flowFigures/saccEndByX4Y3.pdf> <.
-./scripts/flow/flowFigures/saccEndByX1Y2.pdf> <../scripts/flow/flowFigures/sacc
-EndByX2Y2.pdf> <../scripts/flow/flowFigures/saccEndByX3Y2.pdf> <../scripts/flow
-/flowFigures/saccEndByX4Y2.pdf> <../scripts/flow/flowFigures/saccEndByX1Y1.pdf>
- <../scripts/flow/flowFigures/saccEndByX2Y1.pdf> <../scripts/flow/flowFigures/s
-accEndByX3Y1.pdf> <../scripts/flow/flowFigures/saccEndByX4Y1.pdf>]
+ [10 <../scripts/heatmaps/centreadjustedheatmaps.pdf>]
 
 Package natbib Warning: Citation `Stainer:2013ce' on page 11 undefined on input
  line 312.
@@ -651,7 +642,7 @@ LaTeX Font Info:    Try loading font information for T1+cmtl on input line 321.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/t1cmtl.fd
 File: t1cmtl.fd 2005/04/13 v8.1 (WaS)
 )
-(./saccadicBiases.bbl [11 <../scripts/heatmaps/centreadjustedheatmaps.pdf>]
+(./saccadicBiases.bbl
 LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <10> not available
 (Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/cmtl/m/it' in size <10> not available
@@ -669,15 +660,15 @@ Underfull \hbox (badness 4634) in paragraph at lines 15--20
 dova, Italia, 2015.  URL
  []
 
-[12])
+[11])
 
 Package natbib Warning: There were undefined citations.
 
-[13] (./saccadicBiases.aux) ) 
+[12] (./saccadicBiases.aux) ) 
 Here is how much of TeX's memory you used:
  3953 strings out of 493315
- 55647 string characters out of 6137905
- 120834 words of memory out of 5000000
+ 55632 string characters out of 6137905
+ 120833 words of memory out of 5000000
  7289 multiletter control sequences out of 15000+600000
  23767 words of font info for 70 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -696,10 +687,10 @@ fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb>
 sr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbmr17.pfb></usr/
 local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbtl10.pfb></usr/loc
 al/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbto10.pfb>
-Output written on saccadicBiases.pdf (13 pages, 1107940 bytes).
+Output written on saccadicBiases.pdf (12 pages, 1106880 bytes).
 PDF statistics:
- 176 PDF objects out of 1000 (max. 8388607)
- 100 compressed objects within 1 object stream
+ 172 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
