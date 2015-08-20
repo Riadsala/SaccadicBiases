@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex saccadicBiases"] 1436862999 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1439987284
+["bibtex saccadicBiases"] 1440085698 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1440085700
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "literature.bib" 1433926417 18495 7cabca77b2bf28bccb08a7dd4ab39cb5 ""
-  "saccadicBiases.aux" 1436863024 6802 8386e2dd3a65cf8d414a9ffd7e480b24 ""
+  "saccadicBiases.aux" 1440085699 7453 2bdcacc3701b6613aa05906c320b9990 ""
   "saccadicBiases.bcf" 0 -1 0 ""
   (generated)
-  "saccadicBiases.bbl"
   "saccadicBiases.blg"
-["pdflatex"] 1436863023 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1439987284
+  "saccadicBiases.bbl"
+["pdflatex"] 1440085698 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1440085700
   "../scripts/flow/figs/NparamsChagingOverSpace_ALL.pdf" 1436792957 42534 9aad62f9655b13fda039d1cfce06c3fc ""
   "../scripts/flow/figs/llh_ALL.pdf" 1436862960 5221 1f246102c86a7133c881ad79de7b81c0 ""
   "../scripts/flow/figs/llh_crossDataset.pdf" 1436862993 5748 ce26d46e46d1fde498c4c99cff6f91c6 ""
@@ -28,6 +28,10 @@
   "../scripts/flow/flowFigures/saccEndByX4Y3.pdf" 1434623406 26974 36b71cb23926c36a511122358bece6d8 ""
   "../scripts/flow/flowFigures/saccEndByX4Y4.pdf" 1434623408 27804 187056cec96342803baf45d4423dddcc ""
   "../scripts/heatmaps/centreadjustedheatmaps.pdf" 1435041732 579884 eae92d4c6b48d216963c5177e45e54a3 ""
+  "../scripts/leftVright/graphs/datasetComp.pdf" 1440085539 4952 9e2df3200a0386b70fc341486a0a1432 ""
+  "../scripts/leftVright/graphs/devRatio.pdf" 1440085538 4832 a0d057d1607c1ccd060183792103222a ""
+  "../scripts/leftVright/graphs/leftrightbias.pdf" 1440085537 10985 8fb6b2578aad8c32c0931220763b771e ""
+  "../scripts/leftVright/graphs/updownbias.pdf" 1440085538 10998 afcf2391fa69d22afe734a22ab69dcff ""
   "/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii" 1337017135 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel-english/english.ldf" 1367878877 6963 2e0cb3d93aa64508bdb0db58ae900d97 ""
   "/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.def" 1368743226 42950 b2c89311c96d7b70c24e1365a2fa51ee ""
@@ -77,10 +81,10 @@
   "/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty" 1254151720 13146 3e38b06d6e7ca62ce1bdb63b0d6148a5 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty" 1169481954 55224 a43bab84e0ac5e6efcaf9a98bde73a94 ""
   "figs/saccDistExample.pdf" 1436792957 17097 39898f7a65a4700bb4a3e602521aaf35 ""
-  "saccadicBiases.aux" 1436863024 6802 8386e2dd3a65cf8d414a9ffd7e480b24 ""
-  "saccadicBiases.bbl" 1436862999 3943 8876cb4a1b022ea1affd398e816a029f "bibtex saccadicBiases"
-  "saccadicBiases.tex" 1436863023 23266 0d13e4eef4c27c3c731df8253c93ee19 ""
+  "saccadicBiases.aux" 1440085699 7453 2bdcacc3701b6613aa05906c320b9990 ""
+  "saccadicBiases.bbl" 1440085698 3943 8876cb4a1b022ea1affd398e816a029f "bibtex saccadicBiases"
+  "saccadicBiases.tex" 1440085697 24503 902af128e281ff9076122791e96a7196 ""
   (generated)
-  "saccadicBiases.pdf"
   "saccadicBiases.aux"
+  "saccadicBiases.pdf"
   "saccadicBiases.log"

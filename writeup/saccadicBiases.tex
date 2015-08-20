@@ -163,8 +163,34 @@ We will model and discuss saccadic flow, coarse-to-fine, and left v right.
 
 \subsection{Left v Right}
 
-Initially more fixations to the left half of the image \citep{nuthmann-matthias2014}.
+Initially more fixations to the left half of the image \citep{nuthmann-matthias2014}. We replicate this here (Figure \ref{fig:leftrightDist}).
 
+\begin{figure}
+\centering
+\subfigure{\includegraphics[width=6cm]{../scripts/leftVright/graphs/leftrightbias.pdf}}
+\subfigure{\includegraphics[width=6cm]{../scripts/leftVright/graphs/updownbias.pdf}}
+\caption{Distribution of horizontal and vertical fixations by fixation number.}
+\label{fig:leftrightDist}
+\end{figure}
+
+\subsubsection{Modelling}
+
+However, it has only a very small effect on explaining the varition over whole datasets: Figure \ref{fig:leftrightModelling}.
+
+
+
+
+\begin{figure}
+\centering
+\subfigure[]{\includegraphics[width=4.1cm]{../scripts/leftVright/graphs/devRatio.pdf}}
+\subfigure[]{\includegraphics[width=8.2cm]{../scripts/leftVright/graphs/datasetComp.pdf}}
+\caption{Modelling results}
+\label{fig:leftrightModelling}
+\end{figure}
+
+\subsubsection{Discussion}
+
+Hence we will ignore this effect from now on. By treating everything as symmetrical, we lose very little explanitory power, while restricitng the number of parameters, or increasing the amount of data available (by mirroring fixations).
 
 \subsection{Saccadic Flow: Gaussian}
 
