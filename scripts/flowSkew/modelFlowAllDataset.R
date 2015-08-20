@@ -22,7 +22,7 @@ for (d in datasets)
 }
 	
 	
-m = 0.01
+m = 0.005
 n = 0.1
 
 listFits = calcFlowOverSpace(n)
@@ -40,8 +40,8 @@ for (mdl in names(listFits))
 
 	plt = ggplot(subsetParams, aes(x=x, y=value, colour=as.factor(y)))
 	plt = plt + geom_point() + geom_smooth(method='lm', formula=y~I(x)+I(x^2)+I(x^3)+I(x^4)) 
-	plt = plt + facet_wrap(~param, ncol=5, scales='free') + theme_minimal()
-	ggsave(paste('figs/NparamsChagingOverSpace_' mdl, n, '.pdf'), width=14, height=6)
+	plt = plt + facet_wrap(~param, nrow=1, scales='free_y') + theme_minimal()
+	ggsave(paste('figs/NparamsChagingOverSpace_', mdl, n, '.pdf'), width=14, height=6)
 	rm(subsetParams)
 	print('done plotting)')
 

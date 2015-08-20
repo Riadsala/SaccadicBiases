@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex saccadicBiases"] 1436862999 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1436863025
+["bibtex saccadicBiases"] 1436862999 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1439987284
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "literature.bib" 1433926417 18495 7cabca77b2bf28bccb08a7dd4ab39cb5 ""
   "saccadicBiases.aux" 1436863024 6802 8386e2dd3a65cf8d414a9ffd7e480b24 ""
   "saccadicBiases.bcf" 0 -1 0 ""
   (generated)
-  "saccadicBiases.blg"
   "saccadicBiases.bbl"
-["pdflatex"] 1436863023 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1436863025
+  "saccadicBiases.blg"
+["pdflatex"] 1436863023 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1439987284
   "../scripts/flow/figs/NparamsChagingOverSpace_ALL.pdf" 1436792957 42534 9aad62f9655b13fda039d1cfce06c3fc ""
   "../scripts/flow/figs/llh_ALL.pdf" 1436862960 5221 1f246102c86a7133c881ad79de7b81c0 ""
   "../scripts/flow/figs/llh_crossDataset.pdf" 1436862993 5748 ce26d46e46d1fde498c4c99cff6f91c6 ""
@@ -81,6 +81,6 @@
   "saccadicBiases.bbl" 1436862999 3943 8876cb4a1b022ea1affd398e816a029f "bibtex saccadicBiases"
   "saccadicBiases.tex" 1436863023 23266 0d13e4eef4c27c3c731df8253c93ee19 ""
   (generated)
-  "saccadicBiases.log"
-  "saccadicBiases.aux"
   "saccadicBiases.pdf"
+  "saccadicBiases.aux"
+  "saccadicBiases.log"

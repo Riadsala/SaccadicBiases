@@ -4,18 +4,18 @@ calcFlowOverSpace <- function(n)
 	snFitOverSpace = data.frame(x=numeric(), y=numeric(), z=factor(levels=c('xi_x', 'xi_y', 'Omega-xx','Omega-xy','Omega-yx','Omega-yy', 'alpha-x2', 'alpha-y2')), value=numeric())
 	nFitOverSpace =  data.frame(x=numeric(), y=numeric(), z=factor(levels=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yx', 'sigma_yy')), value=numeric())
 	# calcualte how distribution parameters vary over a sliding window
-	for (x in seq(-1+n, 1-n, m))
+	for (x in seq(-2+n, 2-n, m))
 	{
-		
-		for (y in round(seq(-.75+n, .75-n, m),4))
+		print(x)
+		for (y in round(seq(-.2+n, .2-n, m),4))
 		{	
 			idx = which(sacc$x1>(x-n) & sacc$x1<(x+n) & sacc$y1>(y-n) & sacc$y1<(y+n))
-
-			if (length(idx)>250)
+			t_saccs = unboundTransform(sacc[idx,])
+			if (length(idx)>1000)
 			{
-				stFitOverSpace = rbind(stFitOverSpace, 	calcSNdist(sacc[idx,], 'ST', x,y))
-				snFitOverSpace = rbind(snFitOverSpace, 	calcSNdist(sacc[idx,], 'SN',x,y))
-				nFitOverSpace  = rbind(nFitOverSpace, 	calcNdist(sacc[idx,], x, y))
+				stFitOverSpace = rbind(stFitOverSpace, 	calcSNdist(t_saccs, 'ST', x,y))
+				snFitOverSpace = rbind(snFitOverSpace, 	calcSNdist(t_saccs, 'SN',x,y))
+				nFitOverSpace  = rbind(nFitOverSpace, 	calcNdist(t_saccs, x, y))
 			}
 		}
 	}
@@ -25,7 +25,7 @@ calcFlowOverSpace <- function(n)
 calcSNdist <- function(saccs, distType, x0, y0)
 {	
 	
-	# saccs = unboundTransform(saccs)
+	
 	plot(saccs$x2, saccs$y2)
 	flow = (selm(data=saccs, formula= cbind(x2, y2)~1, family=distType))
 	flowDist = extractSECdistr(flow)
