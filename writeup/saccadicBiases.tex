@@ -161,6 +161,11 @@ When evaluating over the full dataset we will also explore the effect of window-
 
 We will model and discuss saccadic flow, coarse-to-fine, and left v right. 
 
+\subsection{Left v Right}
+
+Initially more fixations to the left half of the image \citep{nuthmann-matthias2014}.
+
+
 \subsection{Saccadic Flow: Gaussian}
 
 Saccadic flow can be thought of as a generalisation of the central bias. Instead of computing the distribution of all saccadic endpoints in a dataset, we look at the distribution of saccade endpoints given the start points. So for a saccade from $(x_0, y_0)$ to $(x_1, y1)$ we want to model $p(x_1,y_1|x_0, y0)$ This is illustrated in Figure \ref{fig:empiricalSaccadicFlow}.
@@ -262,15 +267,10 @@ An example of the the distributions vary with saccadic start point is showing in
 \label{fig:exampleSkewNormal}
 \end{figure}
 
+\subsection{Asymmetric flow}
 
+Section to look at what happens if we don't mirror the data.
 
-\subsection{Coarse-to-fine}
-
-People make shorter saccades over time. Include $1/f$ dynamics? 
-
-\subsection{Left v Right}
-
-Initially more fixations to the left half of the image \citep{nuthmann-matthias2014}.
 
 \section{Using Biases for Better Analysis}
 
@@ -291,6 +291,9 @@ Or do we call them hotspot maps?
 
 \subsection{ROC Analysis}
 
+BT to work on this section.
+ - by sampling for now. Start with C and T 2014 model then extend to flow model.
+
 Example of using our models rather than shuffle approaches.
 
 \subsection{Flow and Coarse to fine}
@@ -298,11 +301,15 @@ To what extent does saccadic flow account for coarse-to-fine dynamics
 
 \subsection{Inverse Yarbus}
 
+Probably drop this section.
+
 Do these biases allow us to improve inverse yarbus performance?
 
 \subsection{Salience}
 
 Does salience explain the less likely saccades? 
+
+Possible follow-up paper?
 
 \section{Discussion}
 
