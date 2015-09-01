@@ -86,3 +86,18 @@ z<-blank_image
 
 fixmap <- melt(z)
 fixmap$value2<-fixmap$value/max(fixmap$value)
+
+ggplot(fixmap, aes(x = Var2, y = Var1, fill = value2)) +
+  labs(x = "x", y = "y", fill = "density") +
+  geom_raster() +
+  theme_bw(20)+
+  ggtitle('Fixation map')+
+  #scale_fill_gradientn(colours = jet.colors(10))+
+  #scale_colour_gradientn(colours = jet.colors(10))+
+  scale_fill_continuous(low='black',high='white')+
+  theme(legend.position='none')+
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0))
+
+
+

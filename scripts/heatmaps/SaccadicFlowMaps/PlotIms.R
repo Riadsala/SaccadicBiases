@@ -63,7 +63,7 @@ fixmap$value3<-fixmap$value2*gaussmap$value3
 mypng[,,1]->r
 mypng[,,2]->g
 mypng[,,3]->b
-mypng[,,4]->l
+
 
 r<-melt(r)
 g<-melt(g)
