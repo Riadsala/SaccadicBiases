@@ -1,17 +1,21 @@
-calcFlowOverSpace <- function(n)
+calcFlowOverSpace <- function(win_i)
 {
 	stFitOverSpace = data.frame(x=numeric(), y=numeric(), z=factor(levels=c('xi_x', 'xi_y', 'Omega-xx','Omega-xy','Omega-yx','Omega-yy', 'alpha-x2', 'alpha-y2', 'nu')), value=numeric())
 	snFitOverSpace = data.frame(x=numeric(), y=numeric(), z=factor(levels=c('xi_x', 'xi_y', 'Omega-xx','Omega-xy','Omega-yx','Omega-yy', 'alpha-x2', 'alpha-y2')), value=numeric())
 	nFitOverSpace =  data.frame(x=numeric(), y=numeric(), z=factor(levels=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yx', 'sigma_yy')), value=numeric())
 	# calcualte how distribution parameters vary over a sliding window
-	for (x in seq(-2+n, 2-n, m))
+	for (x in seq(-1+win_i, 1-win_i, m))
 	{
 		print(x)
-		for (y in round(seq(-.2+n, .2-n, m),4))
+		y=0
+		# t_saccs = filter(sacc, x1>x-w, x1<x+w, y1>y-w, y1<y+w)
+		# plt = ggplot(t_saccs, aes(x=x2)) + geom_density()
+		# ggsave(paste('xDist', x, '.png'))
+		for (y in round(seq(-.5+win_i, .5-win_i, m),4))
 		{	
-			idx = which(sacc$x1>(x-n) & sacc$x1<(x+n) & sacc$y1>(y-n) & sacc$y1<(y+n))
-			t_saccs = unboundTransform(sacc[idx,])
-			if (length(idx)>1000)
+			t_saccs = filter(sacc, x1>(x-win_i), x1<(x+win_i), y1>(y-win_i), y1<(y+win_i))
+			print(summary(t_saccs))
+			if (nrow(t_saccs)>1000)
 			{
 				stFitOverSpace = rbind(stFitOverSpace, 	calcSNdist(t_saccs, 'ST', x,y))
 				snFitOverSpace = rbind(snFitOverSpace, 	calcSNdist(t_saccs, 'SN',x,y))

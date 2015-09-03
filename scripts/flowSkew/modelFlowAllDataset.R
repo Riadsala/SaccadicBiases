@@ -16,11 +16,14 @@ for (d in datasets)
 {
 	print(d)
 	# get saccade info
-	dsacc = read.csv(paste('saccs/', d, 'saccsMirrored.txt', sep=''), header=FALSE)
-	names(dsacc) = c("x1", "y1", "x2", "y2")
+	dsacc = read.csv(paste('../../data/saccs/', d, 'saccsMirrored.txt', sep=''), header=FALSE)
+	names(dsacc) = c("n", "x1", "y1", "x2", "y2")
 	sacc = rbind(sacc, dsacc)
+	rm(dsacc)
 }
 	
+sacc$x2 = unboundTransform(sacc$x2)
+sacc$y2 = unboundTransform(sacc$y2)	
 	
 m = 0.005
 n = 0.1
