@@ -10,8 +10,8 @@ source('gaussmap.R')
 source("http://peterhaschke.com/Code/multiplot.R")
 
 
-mypng <- readPNG('Image1.png')
-bg <- rasterGrob(mypng, interpolate=TRUE)
+mypng <- readPNG('ASHER.png')
+#bg <- rasterGrob(mypng, interpolate=F)
 # dumdat<-data.frame(x=1,y=1)
 # 
 # p<-ggplot(data=dumdat,aes(x=x,y=y)) + theme_bw()
@@ -84,7 +84,7 @@ jet.colors <-
   colorRampPalette(c("#00007F","#00007F", "blue", "#007FFF", "cyan",
                      "#7FFF7F", "yellow", "#FF7F00", "red", "#7F0000"))
 
-g1<-ggplot(fixmap2, aes(x = Var2, y = Var1, fill = newvals)) +
+g1<-ggplot(r, aes(x = Var2, y = Var1, fill = newvals)) +
   labs(x = "x", y = "y", fill = "density") +
   geom_raster() +
   theme_bw(20)+
