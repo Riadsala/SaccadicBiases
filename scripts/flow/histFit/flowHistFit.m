@@ -4,7 +4,7 @@ close all
 
 %  first import some data
 
-z = csvread('../saccs/Clarke2013saccs.txt');
+z = csvread('../../../data/saccs/Clarke2013saccs.txt');
 
 %  transform to 20x15 space (or whatever)
 z(:,1) = z(:,1) + 1;
@@ -18,7 +18,7 @@ z(z(:)==0) = 1;
 
 n1 = 2*sf; n2 = 1.5*sf;
 
-z = z(1:1000,:);
+z = z(1:100,:);
 
 nHist = 5;
 
@@ -30,8 +30,8 @@ p.n1 = n1;
 p.n2 = n2;
 
 options = optimoptions(@fminunc, 'PlotFcns', 'optimplotx', 'Display', 'iter');
-% x = fmincon(@(x)getHistLik(z,x, p), x0, [],[], [], [], eps*ones(1, nHist*n1*n2*2), ones(1, nHist*n1*n2*2), [], options);
-x = fminunc(@(x)getHistLik(z,x, p), x0, options);
+ x = fmincon(@(x)getHistLik(z,x, p), x0, [],[], [], [], eps*ones(1, nHist*n1*n2*2), ones(1, nHist*n1*n2*2), [], options);
+% x = fminunc(@(x)getHistLik(z,x, p), x0, options);
 figure
 for h = 1:p.nHist
     a = 1+(h-1)*p.n1*p.n2;
@@ -92,8 +92,6 @@ for f = 1:length(z)
     % add to cost function
     J = J - loglik + fixdistSumPenalty + fixdistRange;
 end
-
-
 
 
 end
