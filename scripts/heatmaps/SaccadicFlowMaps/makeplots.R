@@ -1,5 +1,6 @@
 rm(list = ls())
 
+library(mvtnorm)
 source('drawfixmap.R')
 source("http://peterhaschke.com/Code/multiplot.R")
 
@@ -33,11 +34,19 @@ llh = dmvnorm(fixs, mu, sigma)
 
 centweights=c(1-llh)
 
+
+##make saccadic bias weight
+
+
+
+
 drawfixmap(x = data$CURRENT_FIX_X,y=data$CURRENT_FIX_Y,x_width=1024,y_height=720,plot=T,weight = 1)->reg.map
 
 drawfixmap(x = data$CURRENT_FIX_X,y=data$CURRENT_FIX_Y,x_width=1024,y_height=720,plot=T,weight = 'dur',weights=data$dur)->dur.map
 
 drawfixmap(x = data$CURRENT_FIX_X,y=data$CURRENT_FIX_Y,weights=centweights,weight='cent',x_width=1024,y_height=720,plot=T)->cent.map
+
+source('biasmap.R')
 
 jet.colors <-
   colorRampPalette(c("#00007F", "blue", "#007FFF", "cyan",
@@ -78,7 +87,8 @@ g3<-ggplot(cent.map, aes(x = Var2, y = Var1, fill = value2)) +
   scale_x_continuous(expand = c(0, 0)) +
   scale_y_continuous(expand = c(0, 0))
 
-multiplot(g1,g2,g3,cols=3)
+
+multiplot(g1,g2,g3,g4,cols=2)
 
 
 
