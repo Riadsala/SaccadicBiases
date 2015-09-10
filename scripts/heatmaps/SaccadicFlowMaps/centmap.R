@@ -12,7 +12,7 @@ ptm <- proc.time()
 # 
 
 dset='asher'
-
+testx=c()
 
 d1<-read.csv('CNG_CG_S1.xls',header=T,sep='\t')
 d2<-read.csv('CNG_CG_S2.xls',header=T,sep='\t')
@@ -65,10 +65,11 @@ x=data$x
 y=y_height-data$y
 
 
-
-#####TO TEST
-# x=data.frame(test2[,1])
-# y=data.frame(test2[,1])
+# 
+# #####TO TEST IF IT KILLS IT!!!!!!
+#  test2<-((test+1)/2)*1024
+#  x=data.frame(test2[,1])
+#  y=data.frame(test2[,1])
 
 x<-round(x)
 y<-round(y)
@@ -97,9 +98,9 @@ for (f in 1:nrow(df)){
     xmax=xpos+(pix_per_degree/2)-1
     ymax=ypos+(pix_per_degree/2)-1
     
-    fix=c(xpos,ypos)/(x_width)-0.5
+    fix=(c(xpos,ypos)/(x_width)*2)-1
     llh = dmvnorm(fix, mu, sigma)
-    
+    testx<-c(testx,llh)
       
       blank_image[ymin:ymax,xmin:xmax]<-blank_image[ymin:ymax,xmin:xmax]+(gaussian*(1-llh))
     ##if error - uncomment print(f) to find the 'problem' data
