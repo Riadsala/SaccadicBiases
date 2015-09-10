@@ -16,16 +16,15 @@ for (d in datasets)
 {
 	print(d)
 	# get saccade info
-	dsacc = read.csv(paste('saccs/', d, 'saccsMirrored.txt', sep=''), header=FALSE)
-	names(dsacc) = c("x1", "y1", "x2", "y2")
+	dsacc = read.csv(paste('../../data/saccs/', d, 'saccsMirrored.txt', sep=''), header=FALSE)
+	names(dsacc) = c("n", "x1", "y1", "x2", "y2")
 	sacc = rbind(sacc, dsacc)
 }
 	
-	
 
 	
-m = 0.01
-for (n in c(0.05, 0.1, 0.2))
+m = 0.2
+for (n in c(0.1))
 {	
 	print(n)
 	nFitOverSpace = calcFlowOverSpace(n)
