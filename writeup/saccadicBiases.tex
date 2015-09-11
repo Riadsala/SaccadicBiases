@@ -303,14 +303,16 @@ Section to look at what happens if we don't mirror the data.
 We will use the the central bias \citep{clarke-tatler2014} and \textit{saccadic flow} in some different contexts to see what biases can do for vision research. :p
 
 
-\subsection{Attentional Landscapes}
+\subsection{Gaze landscapes}
 
-HELLO THERE MY FRIEND
+One technique that is commonly used to visualise the spatial allocation of gaze is to create 'heatmap' plots where colour or luminance are used to indicate the density of fixation on those locations (Figure ~\ref{fig:adjustedHeatmaps}, column 2). Some argue that one problem with visualising data in this way is that they represent all fixations as equal. For example, a fixated location with a fixation of a second would be weighted equally with fixations that lasted half that time. If we want to make an assumption that fixation duration is intimately linked with the importance of that fixation (i.e. we will look longer at more informative information) then we can change our visualisation to weight fixations by their duration (Figure ~\ref{fig:adjustedHeatmaps}, column 3).
+
+One advantage of the \citep{clarke-tatler2014} model, and the saccadic flow model here is that we can represent fixations by the likelihood that they would occur based on the predictions of the models. As there is an image independent tendency to fixate in the centre of the scene (for example), then we might consider that saccades to locations less predicted by these behavioural and oculomotor biases might involve more high-level mechanisms. In Figure ~\ref{fig:adjustedHeatmaps} (column 4 and 5) we present some overlaid heatmap data from the \citep{clarke2013} dataset, where fixations are weighted by the inverse probability of them occuring based on the models of central bias and saccadic flow. These figures reveal that representing data in this manner can allow us to visualise information that was important enough to break the biases of looking at the scene centre, or making saccades in line with our saccadic flow model. We can therefore use this to remove some of the image-independent biases, and reveal the more important image \emph{dependent} information.
 
 \begin{figure}
-\includegraphics[width=\textwidth]{../scripts/heatmaps/centreadjustedheatmaps.pdf}
+\includegraphics[width=\textwidth]{figs/adjustedheatmaps.pdf}
 \caption{Traditional 'heat map' plots of fixations normalised by the central bias. This method allows us to characterise fixations that are less accountable for by image-independent central biases.}
-\label{fig:centreAdjustedHeatmaps}
+\label{fig:adjustedHeatmaps}
 \end{figure}
 
 Or do we call them hotspot maps?
