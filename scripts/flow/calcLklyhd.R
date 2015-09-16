@@ -1,38 +1,9 @@
-library(mvtnorm)
+
 library(dplyr)
 library(ggplot2)
 
 
-	getParamPoly <- function(sacc)
-	{   
-		v = c(1, 
-			sacc$x1, sacc$x1^2, sacc$x1^3, sacc$x1^4, 
-			sacc$y1, sacc$y1^2, sacc$y1^3, sacc$y1^4)
-		return(v)
-	}
 
-
-	calcNormLLH <- function(sacc, v)
-	{
-		fix = cbind(sacc$x2, sacc$y2)
-
-		mu = c(v['mu_x'], v['mu_y'])
-		sigma = array(c(v['sigma_xx'], v['sigma_xy'], v['sigma_xy'], v['sigma_yy']), dim=c(2,2))
-		
-		llh = log(dmvnorm(fix, mu, sigma))
-		return(llh)
-	}
-
-	calcSkewNormalLLH <- function(sacc, v)
-	{		
-		fix = cbind(sacc$x2, sacc$y2)
-		# dmsn(x, xi=rep(0,length(alpha)), Omega, alpha, tau=0, dp=NULL, log=FALSE)
-		xi = c(v['xi_x'], v['xi_y'])
-		Omega = array(c(v['Omega-xx'],v['Omega-xy'],v['Omega-xy'],v['Omega-yy']), dim=c(2,2))
-		alpha = c(v['alpha-x2'], v['alpha-y2'])
-
-		llh = dmsn(fix, dp=list(xi=xi, Omega=Omega, alpha=alpha),log=T)
-	}
 
 datasets = c('Clarke2013', 'Einhauser2008', 'Tatler2005', 'Tatler2007freeview', 'Tatler2007search',
 	 'Judd2009', 'Yun2013SUN', 'Yun2013PASCAL')
@@ -91,33 +62,22 @@ for (d in datasets)
 	{
 		if (fm=="ALL")
 		{
-		biasParams = read.csv(paste('models/ALL_flowModels_0.1.txt', sep=''))
-		}
+			}
 		else
 		{
 			biasParams = read.csv(paste('models/', fm, 'flowModels.txt', sep=''))	
 		}
 
 
-		flowParams = filter(biasParams, biasModel==flow)
-		parameters = unique(flowParams$feat)
+		
+		
 
 		llh = rep(0, nrow(saccades))
 		for (ii in 1:nrow(saccades))
 		{
 			saccade = saccades[ii,]
 
-			valuesForDist = rep(0, length(parameters))
-			names(valuesForDist) = parameters
-
-			v = getParamPoly(saccade)
-
-			for (jj in 1:length(parameters))
-			{
-				parameter = parameters[jj]
-				polyCoefs = filter(flowParams, feat==parameters[jj])$coef
-				valuesForDist[as.character(parameter)] = v %*% polyCoefs
-			}
+			valuesForDist = getDistDefintion(saccade)
 
 			if (flow=='N') {
 				llh[ii] = calcNormLLH(saccade, valuesForDist) 
