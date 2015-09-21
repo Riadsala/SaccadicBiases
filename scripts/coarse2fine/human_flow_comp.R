@@ -65,7 +65,7 @@ for (sp in 1:nScanPaths)
 	simSaccs = rbind(simSaccs, generateScanPath(nFix=40))
 }
 
-
+simSaccs$amp = with(simSaccs, sqrt((x1-x2)^2+(y1-y2)^2))
 aggFlow = getAggStats(simSaccs)
 
 
@@ -77,3 +77,11 @@ plt = plt + scale_x_discrete(name="saccade number", breaks=seq(0,maxFix,5))
 plt = plt + scale_y_continuous(name="saccadic amplitude")
 ggsave('saccAmpOverTimeFlow.pdf')
 
+
+ampDat = data.frame(obs=c(rep('human', nrow(sacc)), rep('flow', nrow(simSaccs))), amp=c(sacc$amp, simSaccs$amp))
+ampPlt = ggplot(ampDat, aes(x=amp, fill=obs)) + geom_density(alpha=0.5)
+
+
+
+xDat = data.frame(obs=c(rep('human', nrow(sacc)), rep('flow', nrow(simSaccs))), x=c(sacc$x1, simSaccs$x1))
+xPlt = ggplot(filter(xDat,n>1), aes(x=x, fill=obs)) + geom_density(alpha=0.5)

@@ -56,8 +56,8 @@ calcTNdist <- function(fixations, x, y, aspect.ratio=0.75)
  startFrom = list(mu=colMeans(fixations), sigma=var(fixations))
  # now fit truncated normal
  m = mle.tmvnorm(fixations, 
- 	lower=c(-1,-0.75), 
- 	upper=c(1,0.75), 
+ 	lower=c(-1,-aspect.ratio), 
+ 	upper=c( 1, aspect.ratio), 
  	start=startFrom)
 
   tnParams = data.frame(flowModel='tN', x=x, y=y, param=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yy'),
@@ -66,14 +66,29 @@ calcTNdist <- function(fixations, x, y, aspect.ratio=0.75)
 	return(tnParams)
 }
 
+# calcTTdist <- function(fixations, x, y, aspect.ratio=0.75)
+# {
+#  # start by guessing an (un-truncated) normal distrubtion 
+#  startFrom = list(mu=colMeans(fixations), sigma=var(fixations))
+#  # now fit truncated normal
+#  m = mle.tmvtnorm(fixations, 
+#  	lower=c(-1, -aspect.ratio), 
+#  	upper=c( 1,  aspect.ratio), 
+#  	start=startFrom)
+
+#   ttParams = data.frame(flowModel='tT', x=x, y=y, param=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yy'),
+# 		value = c(coef(m)[1], coef(m)[2], coef(m)[3],coef(m)[4],coef(m)[5]), w=nrow(fixations))
+
+# 	return(ttParams)
+# }
+
 ########
 # sampling from flow distribution
 ########
 
-generateScanPath <- function(nFix=10, flowModel='tN', init.fix = c(0,0))
+generateScanPath <- function(nFix=10, flowModel='tN', init.fix = c(0,0), aspect.ratio = 0.75)
 {
-	aspect.ratio = 0.75
-
+	
 	fixations = data.frame(
 		n = 1:nFix,
 		x1=rep(init.fix[1],nFix), 
@@ -81,20 +96,20 @@ generateScanPath <- function(nFix=10, flowModel='tN', init.fix = c(0,0))
 		x2=rep(NaN,nFix), 
 		y2=rep(NaN,nFix))
 
-
+	# extract polynomial coefs that describe how mu, sigma, etc vary with saccadic start point
 	flowParams = loadFlowParams(flowModel)
 	
 	# generate fixations
 	for (ii in 1:(nFix-1))
 	{
 		# get distribution params for a saccade starting from this fixation
-		params = getDistDefintion(fixations[ii,],flowParams)
+		params = getDistDefintion(fixations[ii,], flowParams)
 		# sample next saccade
 		z = sampleSaccade(params)
 		fixations$x1[ii+1]  =z[1]
-		fixations$x2[ii]  =z[1]
+		fixations$x2[ii]    =z[1]
 		fixations$y1[ii+1]  =z[2]
-		fixations$y2[ii]  =z[2]
+		fixations$y2[ii]    =z[2]
 
 	}
 	return(fixations)
@@ -107,7 +122,7 @@ sampleSaccade <- function(params, flowModel='tN', aspect.ratio=0.75)
 	params['sigma_xx'] = max(params['sigma_xx'],0.05)
 	# now back to normal
 	sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'], params['sigma_yy']), dim=c(2,2))
-
+ 
 	z = rtmvt(
 		n=1,
 		mean=,
@@ -122,10 +137,11 @@ sampleSaccade <- function(params, flowModel='tN', aspect.ratio=0.75)
 # functions for getting distirbution for given fixation
 #######
 
-loadFlowParams <- function(flowModel)
+loadFlowParams <- function(flowModel, winSize=0.1)
 {
-	biasParams = read.csv(paste('../flow/models/ALL_flowModels_0.1.txt', sep=''))
+	biasParams = read.csv(paste('../flow/models/ALL_flowModels_', winSize, '.txt', sep=''))
 	flowParams = filter(biasParams, biasModel==flowModel)
+	rm(biasParams)
 	return(flowParams)
 }
 
@@ -147,8 +163,10 @@ getDistDefintion <- function(sacc, flowParams)
 	for (jj in 1:length(parameters))
 	{
 		parameter = parameters[jj]
+
 		polyCoefs = filter(flowParams, feat==parameters[jj])$coef
-		# print(polyCoefs)
+		print(parameters[jj])
+		print(polyCoefs)
 		valuesForDist[as.character(parameter)] = v %*% polyCoefs
 	}
 	return(valuesForDist)
@@ -161,7 +179,7 @@ getDistDefintion <- function(sacc, flowParams)
 calcNormLLH <- function(sacc, v)
 {
 	fix = cbind(sacc$x2, sacc$y2)
-		mu = c(v['mu_x'], v['mu_y'])
+	mu = c(v['mu_x'], v['mu_y'])
 	sigma = array(c(v['sigma_xx'], v['sigma_xy'], v['sigma_xy'], v['sigma_yy']), dim=c(2,2))
 	
 	llh = log(dmvnorm(fix, mu, sigma))

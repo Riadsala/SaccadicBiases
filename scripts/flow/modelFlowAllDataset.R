@@ -26,7 +26,7 @@ sacc = filter(sacc, n>1)
 sacc = filter(sacc, y1<0.75, y1>-0.75, y2<0.75, y2>-0.75)
 	
 # define window size	
-stepSize = 0.025
+stepSize = 0.05
 winSize=0.1
 
 # calculate flow
