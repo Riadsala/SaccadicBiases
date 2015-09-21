@@ -86,6 +86,8 @@ calcTNdist <- function(fixations, x, y, aspect.ratio=0.75)
 # sampling from flow distribution
 ########
 
+
+
 generateScanPath <- function(nFix=10, flowModel='tN', init.fix = c(0,0), aspect.ratio = 0.75)
 {
 	
@@ -103,7 +105,7 @@ generateScanPath <- function(nFix=10, flowModel='tN', init.fix = c(0,0), aspect.
 	for (ii in 1:(nFix-1))
 	{
 		# get distribution params for a saccade starting from this fixation
-		params = getDistDefintion(fixations[ii,], flowParams)
+		params = getDist(fixations[ii,], flowParams)
 		# sample next saccade
 		z = sampleSaccade(params)
 		fixations$x1[ii+1]  =z[1]
@@ -134,7 +136,7 @@ sampleSaccade <- function(params, flowModel='tN', aspect.ratio=0.75)
 }
 
 #######
-# functions for getting distirbution for given fixation
+# functions for getting distribution for given fixation
 #######
 
 loadFlowParams <- function(flowModel, winSize=0.1)
@@ -153,7 +155,7 @@ getParamPoly <- function(sacc)
 	return(v)
 }
 
-getDistDefintion <- function(sacc, flowParams)
+getDist <- function(sacc, flowParams)
 {
 	parameters = unique(flowParams$feat)
 	valuesForDist = rep(0, length(parameters))
@@ -165,8 +167,6 @@ getDistDefintion <- function(sacc, flowParams)
 		parameter = parameters[jj]
 
 		polyCoefs = filter(flowParams, feat==parameters[jj])$coef
-		print(parameters[jj])
-		print(polyCoefs)
 		valuesForDist[as.character(parameter)] = v %*% polyCoefs
 	}
 	return(valuesForDist)
@@ -176,23 +176,20 @@ getDistDefintion <- function(sacc, flowParams)
 # functions for calc LLH of sacc given flow model
 #######
 
-calcNormLLH <- function(sacc, v)
+calcLLHofSaccade <- function(saccade, flowModel, flowParams, aspect.ratio=0.75)
 {
-	fix = cbind(sacc$x2, sacc$y2)
-	mu = c(v['mu_x'], v['mu_y'])
-	sigma = array(c(v['sigma_xx'], v['sigma_xy'], v['sigma_xy'], v['sigma_yy']), dim=c(2,2))
+	# get distribution params for a saccade starting from this fixation
+	params = getDist(saccade, flowParams)
 	
-	llh = log(dmvnorm(fix, mu, sigma))
-	return(llh)
-}
+	mu = c(params['mu_x'], params['mu_y'])
+	# hack to make sigma diagonal >0
+	params['sigma_xx'] = max(params['sigma_xx'],0.05)
+	# now back to normal
+	sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'], params['sigma_yy']), dim=c(2,2))
 
-calcSkewNormalLLH <- function(sacc, v)
-{		
-	fix = cbind(sacc$x2, sacc$y2)
-	# dmsn(x, xi=rep(0,length(alpha)), Omega, alpha, tau=0, dp=NULL, log=FALSE)
-	xi = c(v['xi_x'], v['xi_y'])
-	Omega = array(c(v['Omega-xx'],v['Omega-xy'],v['Omega-xy'],v['Omega-yy']), dim=c(2,2))
-	alpha = c(v['alpha-x2'], v['alpha-y2'])
-	llh = dmsn(fix, dp=list(xi=xi, Omega=Omega, alpha=alpha),log=T)
+	llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2), 
+		mean=mu, sigma=sigma, 
+		lower=c(-1,-aspect.ratio),
+		upper=c(1,aspect.ratio), log=T)
 }
 
