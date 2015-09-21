@@ -74,10 +74,10 @@ for (im in imselect){
     return(v)
   }
   
-  saccades=data.frame(x1=data.sub$x[1:(nrow(data.sub)-1)],
-                      x2=data.sub$x[2:(nrow(data.sub))],
-                      y1=data.sub$y[1:(nrow(data.sub)-1)],
-                      y2=data.sub$y[2:(nrow(data.sub))])
+  saccades=data.frame(x1=data.sub$x[2:(nrow(data.sub))],
+                      x2=data.sub$x[1:(nrow(data.sub)-1)],
+                      y1=data.sub$y[2:(nrow(data.sub))],
+                      y2=data.sub$y[1:(nrow(data.sub)-1)])
   
   saccades=((saccades/x_width)*2)-1
   
@@ -114,7 +114,7 @@ for (im in imselect){
   }
   
   
-  data.sub$llh=c(llh,NA)
+  data.sub$llh=c(NaN,llh)
   refs<-which(data.sub$index==2)
   refs=refs-1
   refs=refs[2:length(refs)]
