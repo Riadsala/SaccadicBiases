@@ -27,7 +27,7 @@ calcFlowOverSpace <- function(winSize, stepSize)
 			fixations = filter(sacc, x1>x-winSize, x1<x+winSize, y1>y-winSize, y1<y+winSize)
 			fixations = as.matrix(select(fixations, x2, y2))
 
-			if (nrow(fixations)>1000)
+			if (nrow(fixations)>5000)
 			{
 
 				# stFitOverSpace = rbind(stFitOverSpace, 	calcSNdist(sacc[idx,], 'ST', x,y))
@@ -55,10 +55,9 @@ calcTNdist <- function(fixations, x, y, aspect.ratio=0.75)
  # start by guessing an (un-truncated) normal distrubtion 
  startFrom = list(mu=colMeans(fixations), sigma=var(fixations))
  # now fit truncated normal
- print(summary(fixations))
  m = mle.tmvnorm(fixations, 
- 	lower=c(-1,-1), 
- 	upper=c(1,1), 
+ 	lower=c(-1,-0.75), 
+ 	upper=c(1,0.75), 
  	start=startFrom)
 
   tnParams = data.frame(flowModel='tN', x=x, y=y, param=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yy'),
