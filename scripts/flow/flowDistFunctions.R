@@ -191,5 +191,7 @@ calcLLHofSaccade <- function(saccade, flowModel, flowParams, aspect.ratio=0.75)
 		mean=mu, sigma=sigma, 
 		lower=c(-1,-aspect.ratio),
 		upper=c(1,aspect.ratio), log=T)
+
+	return(llh)
 }
 

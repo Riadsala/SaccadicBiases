@@ -1,0 +1,754 @@
+
+R version 3.2.1 (2015-06-18) -- "World-Famous Astronaut"
+Copyright (C) 2015 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin13.4.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> dir()
+[1] "calcLklyhd.R"           "figs"                   "flowDistFunctions.R"   
+[4] "histFit"                "llhResults.txt"         "modelFlowAllDataset.R" 
+[7] "modelFlowEachDataset.R" "models"                 "p_f2_given_f1.R"       
+> source('flowDistFunctions')
+Error in file(filename, "r", encoding = encoding) : 
+  cannot open the connection
+In addition: Warning message:
+In file(filename, "r", encoding = encoding) :
+  cannot open file 'flowDistFunctions': No such file or directory
+> source('flowDistFunctions.R')
+
+Attaching package: 'dplyr'
+
+The following objects are masked from 'package:stats':
+
+    filter, lag
+
+The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union
+
+Loading required package: Matrix
+Loading required package: stats4
+Loading required package: gmm
+Loading required package: sandwich
+> generateScanPath(3)
+[1] mu_x
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1] -0.0001269098  0.1049359381  0.0021864161  1.3630927758 -0.0055983031
+[6]  0.3628031167  0.0019686795 -0.1564529611 -0.0076726796
+[1] mu_y
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  1.225290e-05  3.511523e-01  5.831787e-06 -8.892619e-02 -1.979936e-05
+[6]  3.445780e-01 -1.967828e-05  4.751949e-01 -5.805825e-05
+[1] sigma_xx
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  1.141966e-01  3.575078e-04 -2.685407e-01 -1.330610e-03  1.546847e+00
+[6] -1.307810e-07  1.079522e-03  4.534368e-07  9.246432e-01
+[1] sigma_xy
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1] -1.910263e-07  6.117754e-07  2.466070e-06 -2.321335e-06 -6.175596e-06
+[6] -1.840571e-05  2.392393e-06  9.261704e-05 -9.281219e-06
+[1] sigma_yy
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  3.937401e-02 -9.914199e-06  5.537002e-02  1.354020e-05  5.960820e-04
+[6] -1.514843e-07  1.165646e-01  8.658432e-07  5.232654e-01
+[1] mu_x
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1] -0.0001269098  0.1049359381  0.0021864161  1.3630927758 -0.0055983031
+[6]  0.3628031167  0.0019686795 -0.1564529611 -0.0076726796
+[1] mu_y
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  1.225290e-05  3.511523e-01  5.831787e-06 -8.892619e-02 -1.979936e-05
+[6]  3.445780e-01 -1.967828e-05  4.751949e-01 -5.805825e-05
+[1] sigma_xx
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  1.141966e-01  3.575078e-04 -2.685407e-01 -1.330610e-03  1.546847e+00
+[6] -1.307810e-07  1.079522e-03  4.534368e-07  9.246432e-01
+[1] sigma_xy
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1] -1.910263e-07  6.117754e-07  2.466070e-06 -2.321335e-06 -6.175596e-06
+[6] -1.840571e-05  2.392393e-06  9.261704e-05 -9.281219e-06
+[1] sigma_yy
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  3.937401e-02 -9.914199e-06  5.537002e-02  1.354020e-05  5.960820e-04
+[6] -1.514843e-07  1.165646e-01  8.658432e-07  5.232654e-01
+  n         x1         y1         x2         y2
+1 1 0.00000000  0.0000000 0.05814642  0.1390420
+2 2 0.05814642  0.1390420 0.83768550 -0.6635104
+3 3 0.83768550 -0.6635104        NaN        NaN
+> generateScanPath(3)
+[1] mu_x
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1] -0.0001269098  0.1049359381  0.0021864161  1.3630927758 -0.0055983031
+[6]  0.3628031167  0.0019686795 -0.1564529611 -0.0076726796
+[1] mu_y
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  1.225290e-05  3.511523e-01  5.831787e-06 -8.892619e-02 -1.979936e-05
+[6]  3.445780e-01 -1.967828e-05  4.751949e-01 -5.805825e-05
+[1] sigma_xx
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  1.141966e-01  3.575078e-04 -2.685407e-01 -1.330610e-03  1.546847e+00
+[6] -1.307810e-07  1.079522e-03  4.534368e-07  9.246432e-01
+[1] sigma_xy
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1] -1.910263e-07  6.117754e-07  2.466070e-06 -2.321335e-06 -6.175596e-06
+[6] -1.840571e-05  2.392393e-06  9.261704e-05 -9.281219e-06
+[1] sigma_yy
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  3.937401e-02 -9.914199e-06  5.537002e-02  1.354020e-05  5.960820e-04
+[6] -1.514843e-07  1.165646e-01  8.658432e-07  5.232654e-01
+[1] mu_x
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1] -0.0001269098  0.1049359381  0.0021864161  1.3630927758 -0.0055983031
+[6]  0.3628031167  0.0019686795 -0.1564529611 -0.0076726796
+[1] mu_y
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  1.225290e-05  3.511523e-01  5.831787e-06 -8.892619e-02 -1.979936e-05
+[6]  3.445780e-01 -1.967828e-05  4.751949e-01 -5.805825e-05
+[1] sigma_xx
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  1.141966e-01  3.575078e-04 -2.685407e-01 -1.330610e-03  1.546847e+00
+[6] -1.307810e-07  1.079522e-03  4.534368e-07  9.246432e-01
+[1] sigma_xy
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1] -1.910263e-07  6.117754e-07  2.466070e-06 -2.321335e-06 -6.175596e-06
+[6] -1.840571e-05  2.392393e-06  9.261704e-05 -9.281219e-06
+[1] sigma_yy
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  3.937401e-02 -9.914199e-06  5.537002e-02  1.354020e-05  5.960820e-04
+[6] -1.514843e-07  1.165646e-01  8.658432e-07  5.232654e-01
+  n          x1         y1          x2         y2
+1 1  0.00000000  0.0000000 -0.17558206  0.1412565
+2 2 -0.17558206  0.1412565 -0.03878908 -0.2940830
+3 3 -0.03878908 -0.2940830         NaN        NaN
+> generateScanPath(3)
+[1] mu_x
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1] -0.0001269098  0.1049359381  0.0021864161  1.3630927758 -0.0055983031
+[6]  0.3628031167  0.0019686795 -0.1564529611 -0.0076726796
+[1] mu_y
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  1.225290e-05  3.511523e-01  5.831787e-06 -8.892619e-02 -1.979936e-05
+[6]  3.445780e-01 -1.967828e-05  4.751949e-01 -5.805825e-05
+[1] sigma_xx
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  1.141966e-01  3.575078e-04 -2.685407e-01 -1.330610e-03  1.546847e+00
+[6] -1.307810e-07  1.079522e-03  4.534368e-07  9.246432e-01
+[1] sigma_xy
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1] -1.910263e-07  6.117754e-07  2.466070e-06 -2.321335e-06 -6.175596e-06
+[6] -1.840571e-05  2.392393e-06  9.261704e-05 -9.281219e-06
+[1] sigma_yy
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  3.937401e-02 -9.914199e-06  5.537002e-02  1.354020e-05  5.960820e-04
+[6] -1.514843e-07  1.165646e-01  8.658432e-07  5.232654e-01
+[1] mu_x
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1] -0.0001269098  0.1049359381  0.0021864161  1.3630927758 -0.0055983031
+[6]  0.3628031167  0.0019686795 -0.1564529611 -0.0076726796
+[1] mu_y
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  1.225290e-05  3.511523e-01  5.831787e-06 -8.892619e-02 -1.979936e-05
+[6]  3.445780e-01 -1.967828e-05  4.751949e-01 -5.805825e-05
+[1] sigma_xx
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  1.141966e-01  3.575078e-04 -2.685407e-01 -1.330610e-03  1.546847e+00
+[6] -1.307810e-07  1.079522e-03  4.534368e-07  9.246432e-01
+[1] sigma_xy
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1] -1.910263e-07  6.117754e-07  2.466070e-06 -2.321335e-06 -6.175596e-06
+[6] -1.840571e-05  2.392393e-06  9.261704e-05 -9.281219e-06
+[1] sigma_yy
+Levels: mu_x mu_y sigma_xx sigma_xy sigma_yy
+[1]  3.937401e-02 -9.914199e-06  5.537002e-02  1.354020e-05  5.960820e-04
+[6] -1.514843e-07  1.165646e-01  8.658432e-07  5.232654e-01
+  n         x1         y1         x2         y2
+1 1  0.0000000  0.0000000  0.2463548  0.3658518
+2 2  0.2463548  0.3658518 -0.6127076 -0.5193073
+3 3 -0.6127076 -0.5193073        NaN        NaN
+> source('flowDistFunctions.R')
+> generateScanPath(3)
+  n          x1         y1          x2         y2
+1 1 0.000000000  0.0000000 0.243536064 -0.1137195
+2 2 0.243536064 -0.1137195 0.009847589 -0.1911955
+3 3 0.009847589 -0.1911955         NaN        NaN
+> generateScanPath(3)
+  n          x1         y1          x2         y2
+1 1  0.00000000  0.0000000  0.01356731 -0.1343061
+2 2  0.01356731 -0.1343061 -0.37251076  0.1855304
+3 3 -0.37251076  0.1855304         NaN        NaN
+> generateScanPath(3)
+  n          x1         y1          x2         y2
+1 1  0.00000000 0.00000000 -0.05104248 0.02192173
+2 2 -0.05104248 0.02192173 -0.03058877 0.09727634
+3 3 -0.03058877 0.09727634         NaN        NaN
+> generateScanPath(30)
+    n          x1           y1          x2           y2
+1   1  0.00000000  0.000000000  0.12797216  0.232599769
+2   2  0.12797216  0.232599769 -0.42594489 -0.103223596
+3   3 -0.42594489 -0.103223596  0.21539839 -0.326205172
+4   4  0.21539839 -0.326205172 -0.52888958  0.110872425
+5   5 -0.52888958  0.110872425 -0.22107098  0.123407685
+6   6 -0.22107098  0.123407685  0.34726940  0.210035077
+7   7  0.34726940  0.210035077 -0.26335497  0.402786305
+8   8 -0.26335497  0.402786305 -0.05571639  0.115025842
+9   9 -0.05571639  0.115025842 -0.78819954 -0.127261177
+10 10 -0.78819954 -0.127261177 -0.04659262 -0.051259362
+11 11 -0.04659262 -0.051259362  0.13207877  0.148353973
+12 12  0.13207877  0.148353973 -0.39362848  0.098037988
+13 13 -0.39362848  0.098037988  0.50966439 -0.004267262
+14 14  0.50966439 -0.004267262 -0.24374341  0.157203103
+15 15 -0.24374341  0.157203103  0.15508450 -0.069924870
+16 16  0.15508450 -0.069924870 -0.99564688  0.420646712
+17 17 -0.99564688  0.420646712 -0.59033335  0.680042483
+18 18 -0.59033335  0.680042483  0.12045244 -0.035010909
+19 19  0.12045244 -0.035010909  0.66785034 -0.195277643
+20 20  0.66785034 -0.195277643  0.14310788  0.204991183
+21 21  0.14310788  0.204991183  0.27654639  0.224757989
+22 22  0.27654639  0.224757989  0.92047146 -0.582491129
+23 23  0.92047146 -0.582491129 -0.25435777  0.497773084
+24 24 -0.25435777  0.497773084  0.16246578  0.018702820
+25 25  0.16246578  0.018702820 -0.72599953  0.286501089
+26 26 -0.72599953  0.286501089  0.14938816  0.706210086
+27 27  0.14938816  0.706210086  0.62083947  0.179949012
+28 28  0.62083947  0.179949012  0.90506996 -0.165014654
+29 29  0.90506996 -0.165014654 -0.43054040  0.500544188
+30 30 -0.43054040  0.500544188         NaN          NaN
+> getDistDefinition(c(0,0))
+Error: could not find function "getDistDefinition"
+> getDist(c(0,0))
+Error: could not find function "getDist"
+> source('flowDistFunctions.R')
+> getDist(c(0,0))
+Error in unique(flowParams$feat) : 
+  argument "flowParams" is missing, with no default
+> flowParams = loadFlowParams(flowModel)
+Error in filter_impl(.data, dots) : object 'flowModel' not found
+> flowParams = loadFlowParams('tN')
+> flowParams
+    X biasModel     feat           z          coef
+1  46        tN     mu_x (Intercept) -1.269098e-04
+2  47        tN     mu_x           x  1.049359e-01
+3  48        tN     mu_x      I(x^2)  2.186416e-03
+4  49        tN     mu_x      I(x^3)  1.363093e+00
+5  50        tN     mu_x      I(x^4) -5.598303e-03
+6  51        tN     mu_x           y  3.628031e-01
+7  52        tN     mu_x      I(y^2)  1.968679e-03
+8  53        tN     mu_x      I(y^3) -1.564530e-01
+9  54        tN     mu_x      I(y^4) -7.672680e-03
+10 55        tN     mu_y (Intercept)  1.225290e-05
+11 56        tN     mu_y           x  3.511523e-01
+12 57        tN     mu_y      I(x^2)  5.831787e-06
+13 58        tN     mu_y      I(x^3) -8.892619e-02
+14 59        tN     mu_y      I(x^4) -1.979936e-05
+15 60        tN     mu_y           y  3.445780e-01
+16 61        tN     mu_y      I(y^2) -1.967828e-05
+17 62        tN     mu_y      I(y^3)  4.751949e-01
+18 63        tN     mu_y      I(y^4) -5.805825e-05
+19 64        tN sigma_xx (Intercept)  1.141966e-01
+20 65        tN sigma_xx           x  3.575078e-04
+21 66        tN sigma_xx      I(x^2) -2.685407e-01
+22 67        tN sigma_xx      I(x^3) -1.330610e-03
+23 68        tN sigma_xx      I(x^4)  1.546847e+00
+24 69        tN sigma_xx           y -1.307810e-07
+25 70        tN sigma_xx      I(y^2)  1.079522e-03
+26 71        tN sigma_xx      I(y^3)  4.534368e-07
+27 72        tN sigma_xx      I(y^4)  9.246432e-01
+28 73        tN sigma_xy (Intercept) -1.910263e-07
+29 74        tN sigma_xy           x  6.117754e-07
+30 75        tN sigma_xy      I(x^2)  2.466070e-06
+31 76        tN sigma_xy      I(x^3) -2.321335e-06
+32 77        tN sigma_xy      I(x^4) -6.175596e-06
+33 78        tN sigma_xy           y -1.840571e-05
+34 79        tN sigma_xy      I(y^2)  2.392393e-06
+35 80        tN sigma_xy      I(y^3)  9.261704e-05
+36 81        tN sigma_xy      I(y^4) -9.281219e-06
+37 82        tN sigma_yy (Intercept)  3.937401e-02
+38 83        tN sigma_yy           x -9.914199e-06
+39 84        tN sigma_yy      I(x^2)  5.537002e-02
+40 85        tN sigma_yy      I(x^3)  1.354020e-05
+41 86        tN sigma_yy      I(x^4)  5.960820e-04
+42 87        tN sigma_yy           y -1.514843e-07
+43 88        tN sigma_yy      I(y^2)  1.165646e-01
+44 89        tN sigma_yy      I(y^3)  8.658432e-07
+45 90        tN sigma_yy      I(y^4)  5.232654e-01
+> getDist(c(0,0), flowParams)
+Error in sacc$x1 : $ operator is invalid for atomic vectors
+> getDist(data.frame(x1=1, x2=1), flowParams)
+Error in v %*% polyCoefs : non-conformable arguments
+> getDist(data.frame(x1=1, y1=1), flowParams)
+        mu_x         mu_y     sigma_xx     sigma_xy     sigma_yy 
+1.665136e+00 1.081919e+00 2.317252e+00 6.171239e-05 7.351744e-01 
+> getDist(data.frame(x1=0, y1=0), flowParams)
+         mu_x          mu_y      sigma_xx      sigma_xy      sigma_yy 
+-1.269098e-04  1.225290e-05  1.141966e-01 -1.910263e-07  3.937401e-02 
+> 
+> 
+> library(dplyr)
+> library(mvtnorm)
+> library(tmvtnorm)
+> 
+> #######
+> # functions for fitting flow distribution
+> #######
+> 
+> calcFlowOverSpace <- function(winSize, stepSize)
++ {
++ # stFitOverSpace = data.frame(x=numeric(), y=numeric(), z=factor(levels=c('<rame(x=numeric(), y=numeric(), z=factor(levels=c('x                        i_x', 'xi_y', 'Omega-xx',<c(), z=factor(levels=c('xi_x', 'xi_y', 'Omega-xx','                        Omega-xy','Omega-yx','Ome<_x', 'xi_y', 'Omega-xx','Omega-xy','Omega-yx','Omeg                        a-yy', 'alpha-x2', 'alpha<mega-xy','Omega-yx','Omega-yy', 'alpha-x2', 'alpha-                        y2', 'nu')), value=numeri<-yy', 'alpha-x2', 'alpha-y2', 'nu')), value=numeric                        ())
++ # snFitOverSpace = data.frame(x=numeric(), y=numeric(), z=factor(levels=c('<rame(x=numeric(), y=numeric(), z=factor(levels=c('x                        i_x', 'xi_y', 'Omega-xx',<c(), z=factor(levels=c('xi_x', 'xi_y', 'Omega-xx','                        Omega-xy','Omega-yx','Ome<_x', 'xi_y', 'Omega-xx','Omega-xy','Omega-yx','Omeg                        a-yy', 'alpha-x2', 'alpha<mega-xy','Omega-yx','Omega-yy', 'alpha-x2', 'alpha-                        y2')), value=numeric())
++ nFitOverSpace =  data.frame(
++ x=numeric(), 
++ y=numeric(), 
++ z=factor(levels=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yx', 'sigm< 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yx', 'sigma                        _yy')), 
++ value=numeric(),
++ w=numeric())
++ # calcualte how distribution parameters vary over a sliding window
++ for (x in seq(-1+winSize, 1-winSize, stepSize))
++ {
++ print(x)
++ for (y in round(seq(-.75+winSize, .75-winSize, stepSize),4))
++ {
++ # get fixation that start in window
++ fixations = filter(sacc, x1>x-winSize, x1<x+winSize, y1>y-winSize, y1<y+win<x1>x-winSize, x1<x+winSize, y1>y-winSize, y1<y+winS                        ize)
++ fixations = as.matrix(select(fixations, x2, y2))
++ 
++ if (nrow(fixations)>5000)
++ {
++ 
++ # stFitOverSpace = rbind(stFitOverSpace, calcSNdist(sacc[idx,], 'ST', x,y))
++ # snFitOverSpace = rbind(snFitOverSpace, calcSNdist(sacc[idx,], 'SN',x,y))
++ nFitOverSpace  = rbind(nFitOverSpace, calcNdist(fixations, x, y))
++ nFitOverSpace  = rbind(nFitOverSpace, calcTNdist(fixations, x, y))
++ }
++ }
++ }
++ return(nFitOverSpace)
++ }
+> 
+> calcNdist <- function(fixations, x, y)
++ {
++ mu_x = mean(fixations[,2])
++ mu_y = mean(fixations[,1])
++ sigma = var(fixations)
++ nParams = data.frame(flowModel='N', x=x, y=y, param=c('mu_x', 'mu_y', 'sigm<Model='N', x=x, y=y, param=c('mu_x', 'mu_y', 'sigma                        _xx', 'sigma_xy', 'sigma_<=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_y                        y'),
++ value = c(mu_x, mu_y, sigma[1,1], sigma[1,2], sigma[2,2]), w=nrow(fixations<ma[1,1], sigma[1,2], sigma[2,2]), w=nrow(fixations)                        )
++ return(nParams)
++ }
+> 
+> calcTNdist <- function(fixations, x, y, aspect.ratio=0.75)
++ {
++  # start by guessing an (un-truncated) normal distrubtion 
++  startFrom = list(mu=colMeans(fixations), sigma=var(fixations))
++  # now fit truncated normal
++  m = mle.tmvnorm(fixations, 
++  lower=c(-1,-aspect.ratio), 
++  upper=c( 1, aspect.ratio), 
++  start=startFrom)
++ 
++   tnParams = data.frame(flowModel='tN', x=x, y=y, param=c('mu_x', 'mu_y', '<lowModel='tN', x=x, y=y, param=c('mu_x', 'mu_y', 's                        igma_xx', 'sigma_xy', 'si<aram=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sig                        ma_yy'),
++ value = c(coef(m)[1], coef(m)[2], coef(m)[3],coef(m)[4],coef(m)[5]), w=nrow<f(m)[2], coef(m)[3],coef(m)[4],coef(m)[5]), w=nrow(                        fixations))
++ 
++ return(tnParams)
++ }
+> 
+> # calcTTdist <- function(fixations, x, y, aspect.ratio=0.75)
+> # {
+> #  # start by guessing an (un-truncated) normal distrubtion 
+> #  startFrom = list(mu=colMeans(fixations), sigma=var(fixations))
+> #  # now fit truncated normal
+> #  m = mle.tmvtnorm(fixations, 
+> #  lower=c(-1, -aspect.ratio), 
+> #  upper=c( 1,  aspect.ratio), 
+> #  start=startFrom)
+> 
+> #   ttParams = data.frame(flowModel='tT', x=x, y=y, param=c('mu_x', 'mu_y',<(flowModel='tT', x=x, y=y, param=c('mu_x', 'mu_y',                         'sigma_xx', 'sigma_xy', '< param=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 's                        igma_yy'),
+> # value = c(coef(m)[1], coef(m)[2], coef(m)[3],coef(m)[4],coef(m)[5]), w=nr<oef(m)[2], coef(m)[3],coef(m)[4],coef(m)[5]), w=nro                        w(fixations))
+> 
+> # return(ttParams)
+> # }
+> 
+> ########
+> # sampling from flow distribution
+> ########
+> 
+> 
+> 
+> generateScanPath <- function(nFix=10, flowModel='tN', init.fix = c(0,0), as<ion(nFix=10, flowModel='tN', init.fix = c(0,0), asp                        ect.ratio = 0.75)
++ {
++ 
++ fixations = data.frame(
++ n = 1:nFix,
++ x1=rep(init.fix[1],nFix), 
++ y1=rep(init.fix[2],nFix), 
++ x2=rep(NaN,nFix), 
++ y2=rep(NaN,nFix))
++ 
++ # extract polynomial coefs that describe how mu, sigma, etc vary with sacca<s that describe how mu, sigma, etc vary with saccad                        ic start point
++ flowParams = loadFlowParams(flowModel)
++ 
++ # generate fixations
++ for (ii in 1:(nFix-1))
++ {
++ # get distribution params for a saccade starting from this fixation
++ params = getDist(fixations[ii,], flowParams)
++ # sample next saccade
++ z = sampleSaccade(params)
++ fixations$x1[ii+1]  =z[1]
++ fixations$x2[ii]    =z[1]
++ fixations$y1[ii+1]  =z[2]
++ fixations$y2[ii]    =z[2]
++ 
++ }
++ return(fixations)
++ }
+> 
+> sampleSaccade <- function(params, flowModel='tN', aspect.ratio=0.75)
++ {
++ mu = c(params['mu_x'], params['mu_y'])
++ # hack to make sigma diagonal >0
++ params['sigma_xx'] = max(params['sigma_xx'],0.05)
++ # now back to normal
++ sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'],<igma_xx'], params['sigma_xy'], params['sigma_xy'],                         params['sigma_yy']), dim=<y'], params['sigma_xy'], params['sigma_yy']), dim=c                        (2,2))
++  
++ z = rtmvt(
++ n=1,
++ mean=,
++ sigma=sigma,
++ lower=c(-1,-aspect.ratio),
++ upper=c(1,aspect.ratio))
++ 
++ return(z)
++ }
+> 
+> #######
+> # functions for getting distribution for given fixation
+> #######
+> 
+> loadFlowParams <- function(flowModel, winSize=0.1)
++ {
++ biasParams = read.csv(paste('../flow/models/ALL_flowModels_', winSize, '.tx<te('../flow/models/ALL_flowModels_', winSize, '.txt                        ', sep=''))
++ flowParams = filter(biasParams, biasModel==flowModel)
++ rm(biasParams)
++ return(flowParams)
++ }
+> 
+> getParamPoly <- function(sacc)
++ {   
++ v = c(1, 
++ sacc$x1, sacc$x1^2, sacc$x1^3, sacc$x1^4, 
++ sacc$y1, sacc$y1^2, sacc$y1^3, sacc$y1^4)
++ return(v)
++ }
+> 
+> getDist <- function(sacc, flowParams)
++ {
++ parameters = unique(flowParams$feat)
++ valuesForDist = rep(0, length(parameters))
++ names(valuesForDist) = parameters
++ 
++ v = getParamPoly(sacc)
++ for (jj in 1:length(parameters))
++ {
++ parameter = parameters[jj]
++ 
++ polyCoefs = filter(flowParams, feat==parameters[jj])$coef
++ valuesForDist[as.character(parameter)] = v %*% polyCoefs
++ }
++ return(valuesForDist)
++ }
+> 
+> #######
+> # functions for calc LLH of sacc given flow model
+> #######
+> 
+> calcLLHofSaccade <- function(saccade, flowModel, flowParams)
++ {
++ # get distribution params for a saccade starting from this fixation
++ params = getDist(saccade[ii,], flowParams)
++ 
++ }
+> 
+> 
+> calcLLHofSaccade(data.frame(x1=0,y1=0, x2=0.5, y2=0.5))
+Error in unique(flowParams$feat) : 
+  argument "flowParams" is missing, with no default
+> calcLLHofSaccade(data.frame(x1=0,y1=0, x2=0.5, y2=0.5), 'tN', flowParams)
+Error in `[.data.frame`(saccade, ii, ) : object 'ii' not found
+> 
+> library(dplyr)
+> library(mvtnorm)
+> library(tmvtnorm)
+> 
+> #######
+> # functions for fitting flow distribution
+> #######
+> 
+> calcFlowOverSpace <- function(winSize, stepSize)
++ {
++ # stFitOverSpace = data.frame(x=numeric(), y=numeric(), z=factor(levels=c('<rame(x=numeric(), y=numeric(), z=factor(levels=c('x                        i_x', 'xi_y', 'Omega-xx',<c(), z=factor(levels=c('xi_x', 'xi_y', 'Omega-xx','                        Omega-xy','Omega-yx','Ome<_x', 'xi_y', 'Omega-xx','Omega-xy','Omega-yx','Omeg                        a-yy', 'alpha-x2', 'alpha<mega-xy','Omega-yx','Omega-yy', 'alpha-x2', 'alpha-                        y2', 'nu')), value=numeri<-yy', 'alpha-x2', 'alpha-y2', 'nu')), value=numeric                        ())
++ # snFitOverSpace = data.frame(x=numeric(), y=numeric(), z=factor(levels=c('<rame(x=numeric(), y=numeric(), z=factor(levels=c('x                        i_x', 'xi_y', 'Omega-xx',<c(), z=factor(levels=c('xi_x', 'xi_y', 'Omega-xx','                        Omega-xy','Omega-yx','Ome<_x', 'xi_y', 'Omega-xx','Omega-xy','Omega-yx','Omeg                        a-yy', 'alpha-x2', 'alpha<mega-xy','Omega-yx','Omega-yy', 'alpha-x2', 'alpha-                        y2')), value=numeric())
++ nFitOverSpace =  data.frame(
++ x=numeric(), 
++ y=numeric(), 
++ z=factor(levels=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yx', 'sigm< 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yx', 'sigma                        _yy')), 
++ value=numeric(),
++ w=numeric())
++ # calcualte how distribution parameters vary over a sliding window
++ for (x in seq(-1+winSize, 1-winSize, stepSize))
++ {
++ print(x)
++ for (y in round(seq(-.75+winSize, .75-winSize, stepSize),4))
++ {
++ # get fixation that start in window
++ fixations = filter(sacc, x1>x-winSize, x1<x+winSize, y1>y-winSize, y1<y+win<x1>x-winSize, x1<x+winSize, y1>y-winSize, y1<y+winS                        ize)
++ fixations = as.matrix(select(fixations, x2, y2))
++ 
++ if (nrow(fixations)>5000)
++ {
++ 
++ # stFitOverSpace = rbind(stFitOverSpace, calcSNdist(sacc[idx,], 'ST', x,y))
++ # snFitOverSpace = rbind(snFitOverSpace, calcSNdist(sacc[idx,], 'SN',x,y))
++ nFitOverSpace  = rbind(nFitOverSpace, calcNdist(fixations, x, y))
++ nFitOverSpace  = rbind(nFitOverSpace, calcTNdist(fixations, x, y))
++ }
++ }
++ }
++ return(nFitOverSpace)
++ }
+> 
+> calcNdist <- function(fixations, x, y)
++ {
++ mu_x = mean(fixations[,2])
++ mu_y = mean(fixations[,1])
++ sigma = var(fixations)
++ nParams = data.frame(flowModel='N', x=x, y=y, param=c('mu_x', 'mu_y', 'sigm<Model='N', x=x, y=y, param=c('mu_x', 'mu_y', 'sigma                        _xx', 'sigma_xy', 'sigma_<=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_y                        y'),
++ value = c(mu_x, mu_y, sigma[1,1], sigma[1,2], sigma[2,2]), w=nrow(fixations<ma[1,1], sigma[1,2], sigma[2,2]), w=nrow(fixations)                        )
++ return(nParams)
++ }
+> 
+> calcTNdist <- function(fixations, x, y, aspect.ratio=0.75)
++ {
++  # start by guessing an (un-truncated) normal distrubtion 
++  startFrom = list(mu=colMeans(fixations), sigma=var(fixations))
++  # now fit truncated normal
++  m = mle.tmvnorm(fixations, 
++  lower=c(-1,-aspect.ratio), 
++  upper=c( 1, aspect.ratio), 
++  start=startFrom)
++ 
++   tnParams = data.frame(flowModel='tN', x=x, y=y, param=c('mu_x', 'mu_y', '<lowModel='tN', x=x, y=y, param=c('mu_x', 'mu_y', 's                        igma_xx', 'sigma_xy', 'si<aram=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sig                        ma_yy'),
++ value = c(coef(m)[1], coef(m)[2], coef(m)[3],coef(m)[4],coef(m)[5]), w=nrow<f(m)[2], coef(m)[3],coef(m)[4],coef(m)[5]), w=nrow(                        fixations))
++ 
++ return(tnParams)
++ }
+> 
+> # calcTTdist <- function(fixations, x, y, aspect.ratio=0.75)
+> # {
+> #  # start by guessing an (un-truncated) normal distrubtion 
+> #  startFrom = list(mu=colMeans(fixations), sigma=var(fixations))
+> #  # now fit truncated normal
+> #  m = mle.tmvtnorm(fixations, 
+> #  lower=c(-1, -aspect.ratio), 
+> #  upper=c( 1,  aspect.ratio), 
+> #  start=startFrom)
+> 
+> #   ttParams = data.frame(flowModel='tT', x=x, y=y, param=c('mu_x', 'mu_y',<(flowModel='tT', x=x, y=y, param=c('mu_x', 'mu_y',                         'sigma_xx', 'sigma_xy', '< param=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 's                        igma_yy'),
+> # value = c(coef(m)[1], coef(m)[2], coef(m)[3],coef(m)[4],coef(m)[5]), w=nr<oef(m)[2], coef(m)[3],coef(m)[4],coef(m)[5]), w=nro                        w(fixations))
+> 
+> # return(ttParams)
+> # }
+> 
+> ########
+> # sampling from flow distribution
+> ########
+> 
+> 
+> 
+> generateScanPath <- function(nFix=10, flowModel='tN', init.fix = c(0,0), as<ion(nFix=10, flowModel='tN', init.fix = c(0,0), asp                        ect.ratio = 0.75)
++ {
++ 
++ fixations = data.frame(
++ n = 1:nFix,
++ x1=rep(init.fix[1],nFix), 
++ y1=rep(init.fix[2],nFix), 
++ x2=rep(NaN,nFix), 
++ y2=rep(NaN,nFix))
++ 
++ # extract polynomial coefs that describe how mu, sigma, etc vary with sacca<s that describe how mu, sigma, etc vary with saccad                        ic start point
++ flowParams = loadFlowParams(flowModel)
++ 
++ # generate fixations
++ for (ii in 1:(nFix-1))
++ {
++ # get distribution params for a saccade starting from this fixation
++ params = getDist(fixations[ii,], flowParams)
++ # sample next saccade
++ z = sampleSaccade(params)
++ fixations$x1[ii+1]  =z[1]
++ fixations$x2[ii]    =z[1]
++ fixations$y1[ii+1]  =z[2]
++ fixations$y2[ii]    =z[2]
++ 
++ }
++ return(fixations)
++ }
+> 
+> sampleSaccade <- function(params, flowModel='tN', aspect.ratio=0.75)
++ {
++ mu = c(params['mu_x'], params['mu_y'])
++ # hack to make sigma diagonal >0
++ params['sigma_xx'] = max(params['sigma_xx'],0.05)
++ # now back to normal
++ sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'],<igma_xx'], params['sigma_xy'], params['sigma_xy'],                         params['sigma_yy']), dim=<y'], params['sigma_xy'], params['sigma_yy']), dim=c                        (2,2))
++  
++ z = rtmvt(
++ n=1,
++ mean=,
++ sigma=sigma,
++ lower=c(-1,-aspect.ratio),
++ upper=c(1,aspect.ratio))
++ 
++ return(z)
++ }
+> 
+> #######
+> # functions for getting distribution for given fixation
+> #######
+> 
+> loadFlowParams <- function(flowModel, winSize=0.1)
++ {
++ biasParams = read.csv(paste('../flow/models/ALL_flowModels_', winSize, '.tx<te('../flow/models/ALL_flowModels_', winSize, '.txt                        ', sep=''))
++ flowParams = filter(biasParams, biasModel==flowModel)
++ rm(biasParams)
++ return(flowParams)
++ }
+> 
+> getParamPoly <- function(sacc)
++ {   
++ v = c(1, 
++ sacc$x1, sacc$x1^2, sacc$x1^3, sacc$x1^4, 
++ sacc$y1, sacc$y1^2, sacc$y1^3, sacc$y1^4)
++ return(v)
++ }
+> 
+> getDist <- function(sacc, flowParams)
++ {
++ parameters = unique(flowParams$feat)
++ valuesForDist = rep(0, length(parameters))
++ names(valuesForDist) = parameters
++ 
++ v = getParamPoly(sacc)
++ for (jj in 1:length(parameters))
++ {
++ parameter = parameters[jj]
++ 
++ polyCoefs = filter(flowParams, feat==parameters[jj])$coef
++ valuesForDist[as.character(parameter)] = v %*% polyCoefs
++ }
++ return(valuesForDist)
++ }
+> 
+> #######
+> # functions for calc LLH of sacc given flow model
+> #######
+> 
+> calcLLHofSaccade <- function(saccade, flowModel, flowParams)
++ {
++ # get distribution params for a saccade starting from this fixation
++ params = getDist(saccade, flowParams)
++ 
++ }
+> 
+> 
+> calcLLHofSaccade(data.frame(x1=0,y1=0, x2=0.5, y2=0.5), 'tN', flowParams)
+> llh = dtmvn(x=cbind(saccade$x2, saccade$y2))
+Error: could not find function "dtmvn"
+> llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2))
+Error in diag(length(mean)) : 
+  error in evaluating the argument 'x' in selecting a method for function 'diag': Error: promise already under evaluation: recursive default argument reference or earlier problems?
+> llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2), mean=mu, sigma=sigma)
+Error in checkTmvArgs(mean = mean, sigma = sigma, lower = lower, upper = upper) : 
+  object 'mu' not found
+> 
+> params = getDist(saccade, flowParams)
+Error in getParamPoly(sacc) : object 'saccade' not found
+> 
+> mu = c(params['mu_x'], params['mu_y'])
+Error: object 'params' not found
+> # hack to make sigma diagonal >0
+> params['sigma_xx'] = max(params['sigma_xx'],0.05)
+Error: object 'params' not found
+> # now back to normal
+> sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'],<igma_xx'], params['sigma_xy'], params['sigma_xy'],                         params['sigma_yy']), dim=<y'], params['sigma_xy'], params['sigma_yy']), dim=c                        (2,2))
+Error in array(c(params["sigma_xx"], params["sigma_xy"], params["sigma_xy"],  : 
+  object 'params' not found
+> 
+> llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2), mean=mu, sigma=sigma
++ )
+Error in checkTmvArgs(mean = mean, sigma = sigma, lower = lower, upper = upper) : 
+  object 'mu' not found
+> saccade = data.frame(x1=0,y1=0, x2=0.5, y2=0.5)
+> params = getDist(saccade, flowParams)
+> mu = c(params['mu_x'], params['mu_y'])
+> # hack to make sigma diagonal >0
+> params['sigma_xx'] = max(params['sigma_xx'],0.05)
+> params 
+         mu_x          mu_y      sigma_xx      sigma_xy      sigma_yy 
+-1.269098e-04  1.225290e-05  1.141966e-01 -1.910263e-07  3.937401e-02 
+> sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'],<igma_xx'], params['sigma_xy'], params['sigma_xy'],                         params['sigma_yy']), dim=<y'], params['sigma_xy'], params['sigma_yy']), dim=c                        (2,2))
+> llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2), mean=mu, sigma=sigma)
+> llh 
+[1] 0.03319577
+> llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2), mean=mu, sigma=sigma, log=T<ccade$x2, saccade$y2), mean=mu, sigma=sigma, log=T)                        
+> llh 
+[1] -3.405333
+> saccade = data.frame(x1=0,y1=0, x2=0.5, y2=0.5)
+> calcLLHofSaccade(saccade, flowModel, flowParams, aspect.ratio=0.75)
+Error in calcLLHofSaccade(saccade, flowModel, flowParams, aspect.ratio = 0.75) : 
+  unused argument (aspect.ratio = 0.75)
+> calcLLHofSaccade(saccade, flowModel, flowParams)
+> calcLLHofSaccade <- function(saccade, flowModel, flowParams, aspect.ratio=0<ion(saccade, flowModel, flowParams, aspect.ratio=0.                        75)
++ {
++ # get distribution params for a saccade starting from this fixation
++ params = getDist(saccade, flowParams)
++ 
++ mu = c(params['mu_x'], params['mu_y'])
++ # hack to make sigma diagonal >0
++ params['sigma_xx'] = max(params['sigma_xx'],0.05)
++ # now back to normal
++ sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'],<igma_xx'], params['sigma_xy'], params['sigma_xy'],                         params['sigma_yy']), dim=<y'], params['sigma_xy'], params['sigma_yy']), dim=c                        (2,2))
++ 
++ llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2), 
++ mean=mu, sigma=sigma, 
++ lower=c(-1,-aspect.ratio),
++ upper=c(1,aspect.ratio), log=T)
++ 
++ return(llh)
++ }
+> calcLLHofSaccade(saccade, flowModel, flowParams)
+[1] -3.402087
+> saccade = data.frame(x1=0,y1=0, x2=0.5, y2=1.5)
+> calcLLHofSaccade(saccade, flowModel, flowParams)
+[1] -Inf
+> saccade = data.frame(x1=0,y1=0, x2=0.5, y2=0.7)
+> calcLLHofSaccade(saccade, flowModel, flowParams)
+[1] -6.449725
+> flowModel
+Error: object 'flowModel' not found
+> calcLLHofSaccade(saccade, 'tN', flowParams)
+[1] -6.449725
+> calcLLHofSaccade(saccade, 'tN', loadFlowParams('tN'))
+[1] -6.449725
+> 
