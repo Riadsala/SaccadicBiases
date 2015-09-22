@@ -186,12 +186,32 @@ calcLLHofSaccade <- function(saccade, flowModel, flowParams, aspect.ratio=0.75)
 	params['sigma_xx'] = max(params['sigma_xx'],0.05)
 	# now back to normal
 	sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'], params['sigma_yy']), dim=c(2,2))
-
-	llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2), 
-		mean=mu, sigma=sigma, 
-		lower=c(-1,-aspect.ratio),
-		upper=c(1,aspect.ratio), log=T)
+ 	
+ 	if (flowModel == 'tN')
+ 	{
+		llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2), 
+			mean=mu, sigma=sigma, 
+			lower=c(-1,-aspect.ratio),
+			upper=c(1,aspect.ratio), log=T)
+	}
+	else if (flowModel == 'N')
+	{
+		llh = dmvnorm(x=cbind(saccade$x2, saccade$y2), 
+			mean=mu, sigma=sigma, log=T)
+	}
 
 	return(llh)
+}
+
+calcLLHofSaccades <- function(saccades, flowModel, aspect.ratio=0.75)
+{
+	# extract polynomial coefs that describe how mu, sigma, etc vary with saccadic start point
+	flowParams = loadFlowParams(flowModel)
+
+	for (ii in 1:nrow(saccades))
+	{
+		saccades$llh[ii] = calcLLHofSaccade(saccades[ii,], flowModel, flowParams, aspect.ratio)
+	}
+	return(saccades)
 }
 

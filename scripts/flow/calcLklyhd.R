@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2)
 
 
-
+source('flowDistFunctions.R')
 
 datasets = c('Clarke2013', 'Einhauser2008', 'Tatler2005', 'Tatler2007freeview', 'Tatler2007search',
 	 'Judd2009', 'Yun2013SUN', 'Yun2013PASCAL')
@@ -11,20 +11,21 @@ datasets = c('Clarke2013', 'Einhauser2008', 'Tatler2005', 'Tatler2007freeview', 
 LLHresults = data.frame(
 	dataset=character(),
 	biasmodel=character(),
-	logLik=numeric())
+	logLik=numeric(),
+	llhFrac=numeric())
 
 for (d in datasets)
 {
 	print(d)
 	# get saccade info
-	saccades = read.csv(paste('saccs/', d, 'saccs.txt', sep=''), header=FALSE)
+	saccades = read.csv(paste('../../data/saccs/', d, 'saccs.txt', sep=''), header=FALSE)
 
 	# First transform fixations
 	# saccades[,5:6] = unboundTransform(saccades[,3:4])
-	names(saccades) = c("x1", "y1", "x2", "y2")
+	names(saccades) = c("n", "x1", "y1", "x2", "y2")
 	# saccades = saccades[which(is.finite(saccades$x2)),]
 	# saccades = saccades[which(is.finite(saccades$y2)),]
-	# saccades = filter(saccades, x2>-1, y2>-1, x2<1, y2<1)
+	 saccades = filter(saccades, x2>-1, y2>-0.75, x2<1, y2<0.75)
 
 	
 
@@ -39,15 +40,16 @@ for (d in datasets)
 	sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))
 	llh = sum(log(dmvnorm(fixs, mu, sigma)))
 	LLHresults = rbind(LLHresults, data.frame(
-		dataset=d, biasmodel='Clarke-Tatler2014', logLik = llh))
+		dataset=d, biasmodel='Clarke-Tatler2014', logLik = llh, llhFrac=1))
 	rm(llh, mu, sigma)
 
 
 	mu = c(mean(fixs[,1]), mean(fixs[,2]))
 	sigma = var(fixs)
-	llh = sum(log(dmvnorm(fixs, mu, sigma)))/filter(LLHresults, dataset==d, biasmodel=='Clarke-Tatler2014')$logLik
+	llh = sum(log(dmvnorm(fixs, mu, sigma)))
+	llhFrac = llh/filter(LLHresults, dataset==d, biasmodel=='Clarke-Tatler2014')$logLik
 	LLHresults = rbind(LLHresults, data.frame(
-		dataset=d, biasmodel='re-fit', logLik = llh))
+		dataset=d, biasmodel='re-fit', logLik = llh, llhFrac=llhFrac))
 	rm(llh, mu, sigma)
 	# LLHresults['best fit LM'] = logLik(lm(c(fixs$x2, fixs$y2)~1))
 	# LLHresults['central SN'] = logLik(selm(data=fixs, formula= cbind(x2,y2)~1, family='SN'))
@@ -57,52 +59,40 @@ for (d in datasets)
 	# now find out how much flow helps!
 	#####################################################################################
  
-	for (fm in c('ALL', 'Clarke2013', 'Einhauser2008', 'Tatler2005', 'Tatler2007freeview', 'Tatler2007search',
-	 'Judd2009', 'Yun2013SUN'))
-	{
-		if (fm=="ALL")
-		{
-			}
-		else
-		{
-			biasParams = read.csv(paste('models/', fm, 'flowModels.txt', sep=''))	
-		}
+	flowModel = 'tN'
+	trainedOn = 'All'
 
+	saccades = calcLLHofSaccades(saccades, flowModel)
 
-		
-		
+	LLHresults = rbind(LLHresults, data.frame(
+		dataset=d, 
+		biasmodel = paste(flowModel, trainedOn), 
+		logLik=sum(saccades$llh),
+		llhFrac=sum(saccades$llh/filter(LLHresults, dataset==d, biasmodel=='Clarke-Tatler2014')$logLik)))
 
-		llh = rep(0, nrow(saccades))
-		for (ii in 1:nrow(saccades))
-		{
-			saccade = saccades[ii,]
+ 	flowModel = 'N'
+ 	saccades = calcLLHofSaccades(saccades, flowModel)
 
-			valuesForDist = getDistDefintion(saccade)
+	LLHresults = rbind(LLHresults, data.frame(
+		dataset=d, 
+		biasmodel = paste(flowModel, trainedOn), 
+		logLik=sum(saccades$llh),
+		llhFrac=sum(saccades$llh/filter(LLHresults, dataset==d, biasmodel=='Clarke-Tatler2014')$logLik)))
 
-			if (flow=='N') {
-				llh[ii] = calcNormLLH(saccade, valuesForDist) 
-			}
-			else if (flow=='SN') {
-				llh[ii] = calcSkewNormalLLH(saccade, valuesForDist)
-			} 
-		}
-		llh = sum(llh[which(is.finite(llh))])/filter(LLHresults, dataset==d, biasmodel=='Clarke-Tatler2014')$logLik
-		LLHresults = rbind(LLHresults, data.frame(
-			dataset=d, biasmodel=paste('flow', fm, flow), logLik =llh))
-	
-		
-		
-	}
 }
 
-LLHresults$deviance = -2*LLHresults$logLik
 
 
-plt  = ggplot(filter(LLHresults, biasmodel %in% c('re-fit', 'flow ALL N')), aes(x=biasmodel, y=logLik, fill=dataset))
+pltDat = filter(LLHresults, biasmodel %in% c('re-fit', 'N All', 'tN All'))
+pltDat$biasmodel = factor(pltDat$biasmodel)
+levels(pltDat$biasmodel)=c('re-fit central', 'truncated gaussian', 'gaussian')
+pltDat$biasmodel = factor(pltDat$biasmodel, levels=c('re-fit central', 'gaussian', 'truncated gaussian'))
+
+plt  = ggplot(pltDat, aes(x=biasmodel, y=llhFrac, fill=dataset))
 plt = plt + geom_bar(stat='identity', position='dodge')
 plt = plt + scale_fill_brewer(palette="Set3") + theme_bw()
 plt = plt + scale_y_continuous(name='proportion of deviance', limits=c(0,1), expand=c(0,0))
-plt = plt + scale_x_discrete(name='bias model', labels=c('re-fit central bias','normal flow (all)'))
+plt = plt + scale_x_discrete(name='bias model')
 ggsave(paste('figs/llh_ALL.pdf', sep=''), width=6, height=4)
 
 
