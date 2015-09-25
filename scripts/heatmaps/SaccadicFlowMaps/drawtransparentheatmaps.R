@@ -7,6 +7,14 @@ source("http://peterhaschke.com/Code/multiplot.R")
 x_width=800
 y_height=600
 
+
+##this is a bit of a fudge as I don't know how to reference relative file sources
+setwd("/Users/matthewstainer/Documents/Work/Papers/SaccadicBiases/scripts/heatmaps/SaccadicFlowMaps")
+getwd()->mattwd
+setwd("/Users/matthewstainer/Documents/Work/Papers/SaccadicBiases/scripts/flow/")
+source('flowDistFunctions.R')
+alwd<-getwd()
+setwd(mattwd)
 # d1<-read.csv('Data/CNG_CG_S1.xls',header=T,sep='\t')
 # d2<-read.csv('Data/CNG_CG_S2.xls',header=T,sep='\t')
 # d3<-read.csv('Data/ENG_CG_S1.xls',header=T,sep='\t')
@@ -21,8 +29,8 @@ colnames(data)<-c('participant','image','index','fix.start','fix.end','x','y')
 data<-subset(data,index!=1)
 data$duration<-data$fix.end-data$fix.start
 
-#imselect=c(1,3,4,5,6,7,9,12)
-imselect=3
+imselect=c(1,3,4,5,6,7,9,12)
+#imselect=3
 for (im in imselect){
   imnum=im
   data.sub<-subset(data,image==imnum)
@@ -45,87 +53,54 @@ for (im in imselect){
   
   ##make saccadic bias weight
   
-  calcNormLLH <- function(sacc, v)
-  {
-    fix = cbind(sacc$x2, sacc$y2)
-    
-    mu = c(v['mu_x'], v['mu_y'])
-    sigma = array(c(v['sigma_xx'], v['sigma_xy'], v['sigma_xy'], v['sigma_yy']), dim=c(2,2))
-    
-    llh = log(dmvnorm(fix, mu, sigma))
-    return(llh)
-  }
-  calcSkewNormalLLH <- function(sacc, v)
-  {    
-    fix = cbind(sacc$x2, sacc$y2)
-    # dmsn(x, xi=rep(0,length(alpha)), Omega, alpha, tau=0, dp=NULL, log=FALSE)
-    xi = c(v['xi_x'], v['xi_y'])
-    Omega = array(c(v['Omega-xx'],v['Omega-xy'],v['Omega-xy'],v['Omega-yy']), dim=c(2,2))
-    alpha = c(v['alpha-x2'], v['alpha-y2'])
-    
-    llh = dmsn(fix, dp=list(xi=xi, Omega=Omega, alpha=alpha),log=T)
-  }
-  
-  getParamPoly <- function(sacc)
-  {   
-    v = c(1, 
-          sacc$x1, sacc$x1^2, sacc$x1^3, sacc$x1^4, 
-          sacc$y1, sacc$y1^2, sacc$y1^3, sacc$y1^4)
-    return(v)
-  }
-  
   saccades=data.frame(x1=data.sub$x[2:(nrow(data.sub))],
                       x2=data.sub$x[1:(nrow(data.sub)-1)],
                       y1=data.sub$y[2:(nrow(data.sub))],
                       y2=data.sub$y[1:(nrow(data.sub)-1)])
   
-  saccades=((saccades/x_width)*2)-1
   
   
-  biasParams = read.csv(paste('Models/ALL_flowModels_0.1.txt', sep=''))
   
-  flowParams = filter(biasParams, biasModel=='N')
-  flow='N'
-  parameters = unique(flowParams$feat)
-  llh = rep(0, nrow(saccades))
   
-  for (ii in 1:nrow(saccades))
-  {
-    saccade = saccades[ii,]
-    
-    valuesForDist = rep(0, length(parameters))
-    names(valuesForDist) = parameters
-    
-    v = getParamPoly(saccade)
-    
-    for (jj in 1:length(parameters))
-    {
-      parameter = parameters[jj]
-      polyCoefs = filter(flowParams, feat==parameters[jj])$coef
-      valuesForDist[as.character(parameter)] = v %*% polyCoefs
-    }
-    
-    if (flow=='N') {
-      llh[ii] = calcNormLLH(saccade, valuesForDist) 
-    }
-    else if (flow=='SN') {
-      llh[ii] = calcSkewNormalLLH(saccade, valuesForDist)
-    } 
+  # 
+  saccades$x1=((saccades$x1-1)/(x_width-1))*2-1
+  saccades$x2=((saccades$x2-1)/(x_width-1))*2-1
+  saccades$y1=(((saccades$y1-1)/(y_height-1))*2-1)*0.75
+  saccades$y2=(((saccades$y2-1)/(y_height-1))*2-1)*0.75
+  saccades[is.na(saccades)==T]<-(-5)
+  
+  
+  setwd(alwd)
+  llh=c()
+  progress_bar_text <- create_progress_bar("text")
+  progress_bar_text$init(nrow(saccades))
+  
+  for (i in 1:nrow(saccades)){
+    progress_bar_text$step()
+    saccade=saccades[i,]
+    llh<-c(llh,calcLLHofSaccade(saccade,'tN',loadFlowParams('tN')))
   }
   
+  setwd(mattwd)
   
-  data.sub$llh=c(NaN,llh)
+  data.sub$llh<-c(llh,NA)
+  #data.sub$llh<-data.sub$llh + min(data.sub$llh,na.rm=T)
+  
+  
   refs<-which(data.sub$index==2)
   refs=refs-1
   refs=refs[2:length(refs)]
   
   datax=data.sub[-refs,]
-  datax=datax[1:nrow(datax)-1,]
-  datax$llh<-sqrt(datax$llh^2)
+  datax=datax[1:(nrow(datax)-1),]
+  datax<-datax[datax$llh!='-Inf',]
   
-  datax<-datax[datax$llh!='Inf',]
-  datax<-datax[datax$llh!='NaN',]
-  datax$llh<-datax$llh
+  
+  datax$llh=datax$llh+min(datax$llh)
+  datax$llh<-sqrt(datax$llh^2)
+  datax$llh<-datax$llh-min(datax$llh)
+  datax$llh<-datax$llh/max(datax$llh)
+  datax$llh
   
   
   

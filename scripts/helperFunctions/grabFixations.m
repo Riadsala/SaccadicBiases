@@ -1,4 +1,4 @@
-function fix = grabFixations2(dataset)
+function fix = grabFixations(dataset)
 
 % Should return a data structure called fix with the following fields:
 % fix.person = person id number
@@ -99,6 +99,13 @@ switch dataset
         R(idx,:) = [];
         R(:,4:5) = centreAndScale(R(:, 4:5),[500, 333]);    
         fix = fixArrayToStruct(R, 2,1,4,5);
+        
+        
+     case 'Ehinger2007'
+        
+        R = dlmread('../../data/Ehinger2007/Ehinger2007fixationsTA.txt');
+        R(:,4:5) = centreAndScale(R(:, 4:5),[800, 600]);
+        fix = fixArrayToStruct(R, 1,2, 4,5);
 end
 
 end
