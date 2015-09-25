@@ -177,9 +177,6 @@ Initially more fixations to the left half of the image \citep{nuthmann-matthias2
 
 However, it has only a very small effect on explaining the varition over whole datasets: Figure \ref{fig:leftrightModelling}.
 
-
-
-
 \begin{figure}
 \centering
 \subfigure[]{\includegraphics[width=4.1cm]{../scripts/leftVright/graphs/devRatio.pdf}}
@@ -196,10 +193,9 @@ Hence we will ignore this effect from now on. By treating everything as symmetri
 
 Saccadic flow can be thought of as a generalisation of the central bias. Instead of computing the distribution of all saccadic endpoints in a dataset, we look at the distribution of saccade endpoints given the start points. So for a saccade from $(x_0, y_0)$ to $(x_1, y1)$ we want to model $p(x_1,y_1|x_0, y0)$ This is illustrated in Figure \ref{fig:empiricalSaccadicFlow}.
 
-
 \subsubsection{Modelling}
 
-To characterise how the distribution of saccadic endpoints varies with the start point, we used a sliding window approach. All saccades that originated in a $n\times n$ window were taken and used to fit a multivariate Gaussian distribution. This window was then moved over the stimuli in steps of $s=0.01$. Parameter sets estimated from windows containing less than 250 datapoints were removed. Multivariate polynomial regression was then used to fit 4-th order polynomials to each of the parameters. We experimented with varying the window size ($n\in\{0.05,0.1, 0.2\}$). However, as this parameter was found to have a negligible result, we only report the results for $n=0.1$.
+To characterise how the distribution of saccadic endpoints varies with the start point, we used a sliding window approach. All saccades that originated in a $n\times n$ window were taken and used to fit a multivariate Gaussian distribution. This window was then moved over the stimuli in steps of $s=0.01$. Parameter sets estimated from windows containing less than 250 datapoints were removed. Multivariate polynomial regression was then used to fit 4-th order polynomials to each of the parameters. Robust estimation was used (\texttt{rlm} from the texttt{MASS} library) to stop the model fits being overly infleunced by outlier points from the image boundary. We experimented with varying the window size ($n\in\{0.05,0.1, 0.2\}$). However, as this parameter was found to have a negligible result, we only report the results for $n=0.05$.
 
 \begin{figure}
 \centering
@@ -211,8 +207,6 @@ To characterise how the distribution of saccadic endpoints varies with the start
 \subsubsection{Results}
 
 Figure \ref{fig:nParamsOverSpace} shows how the parameters for the multivariate Gaussian distribution vary over horizontal position for a selection of vertical positions. The regression coefficients given in Table \ref{tab:nParamModel} allow us to estimate the conditional probability of a saccade to $(x_1, y1)$ given the starting fixation $(x_0, y_0)$.
-
-
 
 \begin{table}
 \centering
