@@ -1,9 +1,13 @@
 # Fdb version 3
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
 ["bibtex saccadicBiases"] 1443022551 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1443022553
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "literature.bib" 1433926417 18495 7cabca77b2bf28bccb08a7dd4ab39cb5 ""
   "saccadicBiases.aux" 1443022552 7504 56014c430632811aaac78647e60404f2 ""
+<<<<<<< HEAD
 =======
 ["bibtex saccadicBiases"] 1443184532 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1443184533
   "/usr/local/texlive/2015/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
@@ -14,17 +18,25 @@
   (generated)
   "saccadicBiases.blg"
 <<<<<<< HEAD
+=======
+  "saccadicBiases.bcf" 0 -1 0 ""
+  (generated)
+  "saccadicBiases.blg"
+>>>>>>> origin/master
   "saccadicBiases.bbl"
 ["pdflatex"] 1443022552 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1443022553
   "../scripts/flow/figs/NparamsChagingOverSpace_ALL.pdf" 0 -1 0 ""
   "../scripts/flow/figs/llh_ALL.pdf" 1442918469 5321 baf57cbdc9571335db9b89300627f8aa ""
   "../scripts/flow/figs/llh_crossDataset.pdf" 0 -1 0 ""
+<<<<<<< HEAD
 =======
 ["pdflatex"] 1443184532 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1443184533
   "../scripts/flow/figs/NparamsChagingOverSpace_ALL.pdf" 0 -1 0 ""
   "../scripts/flow/figs/llh_ALL.pdf" 1443175513 5321 baf57cbdc9571335db9b89300627f8aa ""
   "../scripts/flow/figs/llh_crossDataset.pdf" 1443175513 5020 2d5d6866b841727ca01dc3ab412beae0 ""
 >>>>>>> newbbias
+=======
+>>>>>>> origin/master
   "../scripts/flow/flowFigures/saccEndByX1Y1.pdf" 0 -1 0 ""
   "../scripts/flow/flowFigures/saccEndByX1Y2.pdf" 0 -1 0 ""
   "../scripts/flow/flowFigures/saccEndByX1Y3.pdf" 0 -1 0 ""
@@ -42,6 +54,9 @@
   "../scripts/flow/flowFigures/saccEndByX4Y3.pdf" 0 -1 0 ""
   "../scripts/flow/flowFigures/saccEndByX4Y4.pdf" 0 -1 0 ""
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
   "../scripts/leftVright/graphs/datasetComp.pdf" 1440085539 4952 9e2df3200a0386b70fc341486a0a1432 ""
   "../scripts/leftVright/graphs/devRatio.pdf" 1440085538 4832 a0d057d1607c1ccd060183792103222a ""
   "../scripts/leftVright/graphs/leftrightbias.pdf" 1440085537 10985 8fb6b2578aad8c32c0931220763b771e ""
@@ -99,6 +114,7 @@
   "saccadicBiases.aux" 1443022552 7504 56014c430632811aaac78647e60404f2 ""
   "saccadicBiases.bbl" 1443022552 3943 8876cb4a1b022ea1affd398e816a029f "bibtex saccadicBiases"
   "saccadicBiases.tex" 1443022546 26469 3d8173aeb4035efebd64feb1052f4058 ""
+<<<<<<< HEAD
 =======
   "../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf" 1443181901 129925 8db2a7eed00b2469f00f68144012a6db ""
   "../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf" 1443181897 104338 b604fe1652590a65f6dc45fb3aa0214c ""
@@ -166,6 +182,8 @@
   "saccadicBiases.bbl" 1443184532 3704 359ce9dc9cc7b00f1c25f75860cf0790 "bibtex saccadicBiases"
   "saccadicBiases.tex" 1443184530 27556 d2579aeff7a2e163b5ef7702621dc9ed ""
 >>>>>>> newbbias
+=======
+>>>>>>> origin/master
   (generated)
   "saccadicBiases.aux"
   "saccadicBiases.pdf"
