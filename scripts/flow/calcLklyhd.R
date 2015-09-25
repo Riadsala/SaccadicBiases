@@ -1,12 +1,12 @@
 
 library(dplyr)
 library(ggplot2)
-
+library(Matrix)
+library(matrixcalc)
 
 source('flowDistFunctions.R')
 
-datasets = c('Clarke2013', 'Einhauser2008', 'Tatler2005', 'Tatler2007freeview', 'Tatler2007search',
-	 'Judd2009', 'Yun2013SUN', 'Yun2013PASCAL')
+datasets = c('Clarke2013')#, 'Einhauser2008', 'Tatler2005', 'Tatler2007freeview', 'Tatler2007search') #'Judd2009', 'Yun2013SUN', 'Yun2013PASCAL'
 
 LLHresults = data.frame(
 	dataset=character(),
@@ -23,12 +23,13 @@ for (d in datasets)
 	# First transform fixations
 	# saccades[,5:6] = unboundTransform(saccades[,3:4])
 	names(saccades) = c("n", "x1", "y1", "x2", "y2")
-	# saccades = saccades[which(is.finite(saccades$x2)),]
-	# saccades = saccades[which(is.finite(saccades$y2)),]
-	 saccades = filter(saccades, x2>-1, y2>-0.75, x2<1, y2<0.75)
 
+	saccades = filter(saccades, x2>-1, y2>-0.75, x2<1, y2<0.75)
+	saccades = filter(saccades, x1>-1, y1>-0.75, x1<1, y1<0.75)
+	saccades = filter(saccades, n>1)
+
+	print(summary(saccades))
 	
-
 	######################################################################################
 	# first caculate log-likelihood of dataset given Clarke-Tatler 2014 central bias
 	# also use best fit gaussian
@@ -58,9 +59,10 @@ for (d in datasets)
 	######################################################################################
 	# now find out how much flow helps!
 	#####################################################################################
- 
+ 	 trainedOn = 'All'
+
 	flowModel = 'tN'
-	trainedOn = 'All'
+	
 
 	saccades = calcLLHofSaccades(saccades, flowModel)
 

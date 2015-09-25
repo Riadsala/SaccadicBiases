@@ -1,4 +1,4 @@
-function saccs = convertFixToSacc(fix)
+function saccs = convertFixToSacc(fix, aspectRatio)
 
 %% convert fixations to saccades
 saccs = [];
@@ -20,8 +20,15 @@ for p = 1:length(P)
 end
 
 for r  = 2:5
-    saccs(saccs(:,r)<= -1,:) = [];
-    saccs(saccs(:,r)>=  1,:) = [];
+    
     %     remove missing data
     saccs(isnan(saccs(:,r)),:) = [];
 end
+saccs(saccs(:,2)<= -1,:) = [];
+saccs(saccs(:,2)>=  1,:) = [];
+saccs(saccs(:,4)<= -1,:) = [];
+saccs(saccs(:,4)>=  1,:) = [];
+saccs(saccs(:,3)<= -aspectRatio,:) = [];
+saccs(saccs(:,3)>=  aspectRatio,:) = [];
+saccs(saccs(:,5)<= -aspectRatio,:) = [];
+saccs(saccs(:,5)>=  aspectRatio,:) = [];

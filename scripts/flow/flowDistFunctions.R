@@ -27,7 +27,7 @@ calcFlowOverSpace <- function(winSize, stepSize)
 			fixations = filter(sacc, x1>x-winSize, x1<x+winSize, y1>y-winSize, y1<y+winSize)
 			fixations = as.matrix(select(fixations, x2, y2))
 
-			if (nrow(fixations)>5000)
+			if (nrow(fixations)>2000)
 			{
 
 				# stFitOverSpace = rbind(stFitOverSpace, 	calcSNdist(sacc[idx,], 'ST', x,y))
@@ -42,8 +42,8 @@ calcFlowOverSpace <- function(winSize, stepSize)
 
 calcNdist <- function(fixations, x, y)
 {
-	mu_x = mean(fixations[,2])
-	mu_y = mean(fixations[,1])
+	mu_x = mean(fixations[,1])
+	mu_y = mean(fixations[,2])
 	sigma = var(fixations)
 	nParams = data.frame(flowModel='N', x=x, y=y, param=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yy'),
 		value = c(mu_x, mu_y, sigma[1,1], sigma[1,2], sigma[2,2]), w=nrow(fixations))
@@ -121,7 +121,7 @@ sampleSaccade <- function(params, flowModel='tN', aspect.ratio=0.75)
 {
 	mu = c(params['mu_x'], params['mu_y'])
 	# hack to make sigma diagonal >0
-	params['sigma_xx'] = max(params['sigma_xx'],0.05)
+	# params['sigma_xx'] = max(params['sigma_xx'],0.05)
 	# now back to normal
 	sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'], params['sigma_yy']), dim=c(2,2))
  
@@ -149,24 +149,34 @@ loadFlowParams <- function(flowModel, winSize=0.1)
 
 getParamPoly <- function(sacc)
 {   
-	v = c(1, 
-		sacc$x1, sacc$x1^2, sacc$x1^3, sacc$x1^4, 
-		sacc$y1, sacc$y1^2, sacc$y1^3, sacc$y1^4)
+	v = with(sacc, c(1, 
+		y1, x1, x1^2, x1^3, x1^4, 
+		y1^2, y1^3, y1^4,
+		 x1*y1, x1^2*y1, x1^3*y1, x1^4*y1,
+		        x1*y1^2, x1*y1^3, x1*y1^4))
 	return(v)
 }
 
-getDist <- function(sacc, flowParams)
+getDist <- function(sacc, flowParams, useRobust=FALSE)
 {
 	parameters = unique(flowParams$feat)
 	valuesForDist = rep(0, length(parameters))
 	names(valuesForDist) = parameters
 
 	v = getParamPoly(sacc)
+
 	for (jj in 1:length(parameters))
 	{
 		parameter = parameters[jj]
-
-		polyCoefs = filter(flowParams, feat==parameters[jj])$coef
+		
+		if (useRobust==TRUE)
+		{
+			polyCoefs = filter(flowParams, feat==parameters[jj])$coef_rlm
+		}
+		else
+			{
+			polyCoefs = filter(flowParams, feat==parameters[jj])$coef_lm
+		}
 		valuesForDist[as.character(parameter)] = v %*% polyCoefs
 	}
 	return(valuesForDist)
@@ -186,13 +196,26 @@ calcLLHofSaccade <- function(saccade, flowModel, flowParams, aspect.ratio=0.75)
 	params['sigma_xx'] = max(params['sigma_xx'],0.05)
 	# now back to normal
 	sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'], params['sigma_yy']), dim=c(2,2))
- 	
+ 	# 
+ 	if (is.positive.definite(sigma)==FALSE)
+	{
+		sigma = nearPD(sigma, corr=T)
+		# print(sigma)
+ 	# print(sigma$mat)
+ 		sigma = (as.array(sigma$mat))
+	}
+	# print(mu)
+	# print(sigma)
+	# print(is.positive.definite(sigma))
+
  	if (flowModel == 'tN')
  	{
+		
 		llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2), 
 			mean=mu, sigma=sigma, 
 			lower=c(-1,-aspect.ratio),
 			upper=c(1,aspect.ratio), log=T)
+		
 	}
 	else if (flowModel == 'N')
 	{
