@@ -3,7 +3,7 @@ rm(list = ls())
 library(mvtnorm)
 source('drawfixmap.R')
 source("http://peterhaschke.com/Code/multiplot.R")
-
+library(matrixcalc)
 x_width=800
 y_height=600
 
