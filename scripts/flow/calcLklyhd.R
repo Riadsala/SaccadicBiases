@@ -6,7 +6,17 @@ library(matrixcalc)
 
 source('flowDistFunctions.R')
 
-datasets = c('Clarke2013')#, 'Einhauser2008', 'Tatler2005', 'Tatler2007freeview', 'Tatler2007search') #'Judd2009', 'Yun2013SUN', 'Yun2013PASCAL'
+datasets = c(
+'Clarke2013', 
+'Einhauser2008', 
+'Tatler2005', 
+'Tatler2007freeview', 
+'Tatler2007search',
+'Judd2009', 
+'Yun2013SUN',
+ 'Yun2013PASCAL',
+ 'Clarke2009',
+ 'Asher2013') #
 
 LLHresults = data.frame(
 	dataset=character(),
@@ -28,7 +38,7 @@ for (d in datasets)
 	saccades = filter(saccades, x1>-1, y1>-0.75, x1<1, y1<0.75)
 	saccades = filter(saccades, n>1)
 
-	print(summary(saccades))
+	# print(summary(saccades))
 	
 	######################################################################################
 	# first caculate log-likelihood of dataset given Clarke-Tatler 2014 central bias
@@ -59,7 +69,7 @@ for (d in datasets)
 	######################################################################################
 	# now find out how much flow helps!
 	#####################################################################################
- 	 trainedOn = 'All'
+ 	trainedOn = 'All'
 
 	flowModel = 'tN'
 	

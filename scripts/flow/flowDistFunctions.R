@@ -27,7 +27,7 @@ calcFlowOverSpace <- function(winSize, stepSize)
 			fixations = filter(sacc, x1>x-winSize, x1<x+winSize, y1>y-winSize, y1<y+winSize)
 			fixations = as.matrix(select(fixations, x2, y2))
 
-			if (nrow(fixations)>2000)
+			if (nrow(fixations)>1000)
 			{
 
 				# stFitOverSpace = rbind(stFitOverSpace, 	calcSNdist(sacc[idx,], 'ST', x,y))
@@ -139,7 +139,7 @@ sampleSaccade <- function(params, flowModel='tN', aspect.ratio=0.75)
 # functions for getting distribution for given fixation
 #######
 
-loadFlowParams <- function(flowModel, winSize=0.1)
+loadFlowParams <- function(flowModel, winSize=0.05)
 {
 	biasParams = read.csv(paste('../flow/models/ALL_flowModels_', winSize, '.txt', sep=''))
 	flowParams = filter(biasParams, biasModel==flowModel)
@@ -157,7 +157,7 @@ getParamPoly <- function(sacc)
 	return(v)
 }
 
-getDist <- function(sacc, flowParams, useRobust=FALSE)
+getDist <- function(sacc, flowParams, useRobust=TRUE)
 {
 	parameters = unique(flowParams$feat)
 	valuesForDist = rep(0, length(parameters))

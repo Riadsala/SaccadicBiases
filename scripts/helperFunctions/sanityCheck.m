@@ -17,10 +17,42 @@ title('y distribution')
 
 
 
+
+%%calculate saccade amplitudes
+if strcmp(dataset, 'Asher2013')
+    aspRat= 0.8;
+else
+    aspRat = 0.75;
+end
+saccs = convertFixToSacc(fix, aspRat);
+saccs(:,6)=sqrt(((saccs(:,2)-saccs(:,4)).^2)+((saccs(:,3)-saccs(:,5)).^2));
+%%plot saccade amplitude dsitributions
+subplot(3,2,5)
+hist(saccs(:,6))
+title('saccade amplitude distribution')
+
+
+%%plot saccade amplitudes by index but only do up to when there are 10
+%%saccades (to avoid stupid error bars)
+
+%calculate frequencies of saccade index
+tbl = tabulate(saccs(:,1))
+%find times where there are less than 10 saccades
+remrefs=find(tbl(:,2)<10)
+%make subset of data with only these cases
+saccs2=saccs(saccs(:,1)<remrefs(1),:);
+%plot sac amps across fixation index
+subplot(3,2,6)
+grpstats(saccs2(:,6),saccs2(:,1),0.05)
+title('saccade amplitude with fixation index')
 % Estimate a continuous pdf from the discrete data
 %%just subset cases where x>-1 and x<1
-x=fix.x(find(fix.x<1 & fix.x>-1));
-y=fix.y(find(fix.y<0.75 & fix.y>-0.75));
+
+saccs3=saccs(saccs(:,1)~=1,:);
+x=saccs3(find(saccs3(:,2)<1 & saccs3(:,2)>-1));
+y=saccs3(find(saccs3(:,3)<0.75 & saccs3(:,3)>-0.75));
+clear saccs3
+
 [pdfx xi]= ksdensity(x);
 [pdfy yi]= ksdensity(y);
 % Create 2-d grid of coordinates and function values, suitable for 3-d plotting
@@ -43,29 +75,6 @@ title('fixation surface plot')
 
 
 
-
-%%calculate saccade amplitudes
-saccs = convertFixToSacc(fix);
-saccs(:,6)=sqrt(((saccs(:,2)-saccs(:,4)).^2)+((saccs(:,3)-saccs(:,5)).^2));
-%%plot saccade amplitude dsitributions
-subplot(3,2,5)
-hist(saccs(:,6))
-title('saccade amplitude distribution')
-
-
-%%plot saccade amplitudes by index but only do up to when there are 10
-%%saccades (to avoid stupid error bars)
-
-%calculate frequencies of saccade index
-tbl = tabulate(saccs(:,1))
-%find times where there are less than 10 saccades
-remrefs=find(tbl(:,2)<10)
-%make subset of data with only these cases
-saccs2=saccs(saccs(:,1)<remrefs(1),:);
-%plot sac amps across fixation index
-subplot(3,2,6)
-grpstats(saccs2(:,6),saccs2(:,1),0.05)
-title('saccade amplitude with fixation index')
 
 
 end
