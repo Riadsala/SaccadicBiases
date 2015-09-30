@@ -139,9 +139,9 @@ sampleSaccade <- function(params, flowModel='tN', aspect.ratio=0.75)
 # functions for getting distribution for given fixation
 #######
 
-loadFlowParams <- function(flowModel, winSize=0.05)
+loadFlowParams <- function(flowModel, trainedOn='All', winSize=0.05)
 {
-	biasParams = read.csv(paste('../flow/models/ALL_flowModels_', winSize, '.txt', sep=''))
+	biasParams = read.csv(paste('../flow/models/', trainedOn, '_flowModels_', winSize, '.txt', sep=''))
 	flowParams = filter(biasParams, biasModel==flowModel)
 	rm(biasParams)
 	return(flowParams)
@@ -226,10 +226,10 @@ calcLLHofSaccade <- function(saccade, flowModel, flowParams, aspect.ratio=0.75)
 	return(llh)
 }
 
-calcLLHofSaccades <- function(saccades, flowModel, aspect.ratio=0.75)
+calcLLHofSaccades <- function(saccades, flowModel, trainedOn='All', aspect.ratio=0.75)
 {
 	# extract polynomial coefs that describe how mu, sigma, etc vary with saccadic start point
-	flowParams = loadFlowParams(flowModel)
+	flowParams = loadFlowParams(flowModel, trainedOn)
 
 	for (ii in 1:nrow(saccades))
 	{
