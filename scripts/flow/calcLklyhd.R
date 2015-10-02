@@ -16,15 +16,10 @@ datasets = c(
 'Yun2013SUN',
  'Yun2013PASCAL',
  'Clarke2009',
- 'Asher2013') #
+ 'Asher2013',
+ 'Ehinger2007') #
 
-trainingSets =  c(
- 		'All', 'Einhauser2008', 
-		'Tatler2005', 
-		'Tatler2007freeview', 
-		'Tatler2007search',
-		'Yun2013SUN', 
-		'Yun2013PASCAL' 		)
+trainingSets =  c('All')
 
 # 'Clarke2013'
 

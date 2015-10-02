@@ -26,6 +26,10 @@ if iscell(dataset)
 end
 switch dataset
     
+    case 'Borji2015'
+        R = dlmread('../../data/Borji2015/allFixations.txt');
+        R(:,3:4) = centreAndScale(R(:,3:4), [1920, 1080]);
+        fix = fixArrayToStruct(R, 2,1,3,4);
     case 'Einhauser2008'
         
         R = dlmread('../../data/Einhauser2008/fixations.txt');

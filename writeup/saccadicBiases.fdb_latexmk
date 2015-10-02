@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex saccadicBiases"] 1443706319 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1443776266
+["bibtex saccadicBiases"] 1443777135 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1443777137
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "literature.bib" 1433926417 18495 7cabca77b2bf28bccb08a7dd4ab39cb5 ""
-  "saccadicBiases.aux" 1443706320 7034 dbbdd2d93407c6d9296ba25925be5500 ""
+  "saccadicBiases.aux" 1443777136 7039 9d60dafbf7176ffd0ddf0f757a36309e ""
   "saccadicBiases.bcf" 0 -1 0 ""
   (generated)
   "saccadicBiases.blg"
   "saccadicBiases.bcf"
   "saccadicBiases.bbl"
-["pdflatex"] 1443706319 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1443776266
-  "../scripts/flow/figs/NparamsChagingOverSpace_ALL_N.pdf" 1443434877 15448 5c843fde5a058250287cba9776544004 ""
+["pdflatex"] 1443777136 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1443777137
+  "../scripts/flow/figs/NparamsChagingOverSpace_ALL_N.pdf" 0 -1 0 ""
   "../scripts/flow/figs/llh_ALL.pdf" 1443615090 5451 a437c6c72035429e4b37d2d4ba7bbe8a ""
   "../scripts/flow/figs/llh_crossDataset.pdf" 1443615090 6531 230cf0f58a267f3375076c51ca1952cd ""
   "../scripts/leftVright/graphs/datasetComp.pdf" 1440085539 4952 9e2df3200a0386b70fc341486a0a1432 ""
@@ -65,10 +65,10 @@
   "/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty" 1254151720 13146 3e38b06d6e7ca62ce1bdb63b0d6148a5 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty" 1169481954 55224 a43bab84e0ac5e6efcaf9a98bde73a94 ""
   "figs/adjustedheatmaps.pdf" 1442843094 8037983 c0e60af0528b54d194f2441d6bea077f ""
-  "saccadicBiases.aux" 1443706320 7034 dbbdd2d93407c6d9296ba25925be5500 ""
-  "saccadicBiases.bbl" 1443706319 3704 359ce9dc9cc7b00f1c25f75860cf0790 "bibtex saccadicBiases"
-  "saccadicBiases.tex" 1443706318 28250 3120544662de6de3d797bdd5f0ab65a6 ""
+  "saccadicBiases.aux" 1443777136 7039 9d60dafbf7176ffd0ddf0f757a36309e ""
+  "saccadicBiases.bbl" 1443777136 3704 359ce9dc9cc7b00f1c25f75860cf0790 "bibtex saccadicBiases"
+  "saccadicBiases.tex" 1443777038 28246 77420f69fa7ff57db670118a4e705b30 ""
   (generated)
-  "saccadicBiases.log"
   "saccadicBiases.pdf"
+  "saccadicBiases.log"
   "saccadicBiases.aux"

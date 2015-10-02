@@ -17,9 +17,9 @@ datasets = c(
 'Tatler2007freeview', 
 'Tatler2007search',
 'Yun2013SUN', 
-'Yun2013PASCAL'
-)
-#'Judd2009'
+'Yun2013PASCAL',
+'Judd2009')
+
 
 source('flowDistFunctions.R')
 source('calcFlowFromDataSet.R')
@@ -32,7 +32,7 @@ for (d in datasets)
 	# get saccade info
 	dsacc = read.csv(paste('../../data/saccs/', d, 'saccsMirrored.txt', sep=''), header=FALSE)
 	names(dsacc) = c("n", "x1", "y1", "x2", "y2")
-	calcFlowFromDataSet(dsacc, d, winSize, stepSize)
+	# calcFlowFromDataSet(dsacc, d, winSize, stepSize)
 	sacc = rbind(sacc, dsacc)
 }
 
