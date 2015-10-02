@@ -1,5 +1,5 @@
 
-# library(sn)
+
 library(ggplot2)
 library(scales)
 library(dplyr)
@@ -17,7 +17,7 @@ datasets = c(
 'Tatler2007freeview', 
 'Tatler2007search',
 'Yun2013SUN', 
-'Yun2013PASCAL',
+'Yun2013PASCAL'
 )
 #'Judd2009'
 

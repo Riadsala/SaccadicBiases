@@ -71,20 +71,20 @@ Further to the observed bias towards the centre of images, it has been revealed 
 
 Foulsham and colleagues have presented two interesting exceptions to the horizontal direction bias. Foulsham, Kingstone and Underwood (2008) found that when the orientation of an image is rotated, the distribution of saccade directions follows the orientation of the scene. A second exception comes from using circular apertures (Foulsham \& Kingstone, 2010). When a scene is presented in a circular aperture, the tendency to make horizontal saccades disappears, being replaced by a tendency to make vertical saccades relative to the image orientation. However, when using fractal images (where images do not have an obvious orientation), observers tend make horizontal saccades, regardless of the angle that the image is presented.
 
-\begin{figure}
-\centering
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf}}
-\caption{Saccade landing positions from fixations that were in different sections of the screen. Data from each plot has been separated into fixations in 9 spatial bins, with the screen being divided into thirds in both horizontal and vertical aspects.}
-\label{fig:empiricalSaccadicFlow}
-\end{figure}
+% \begin{figure}
+% \centering
+% \subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf}}
+% \subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf}}
+% \subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf}}
+% \subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf}}
+% \subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf}}
+% \subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf}}
+% \subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf}}
+% \subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf}}
+% \subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf}}
+% \caption{Saccade landing positions from fixations that were in different sections of the screen. Data from each plot has been separated into fixations in 9 spatial bins, with the screen being divided into thirds in both horizontal and vertical aspects.}
+% \label{fig:empiricalSaccadicFlow}
+% \end{figure}
 
 
 %\begin{figure}
@@ -176,6 +176,10 @@ When evaluating over the full dataset we will also explore the effect of window-
 
 We will model and discuss saccadic flow, coarse-to-fine, and left v right. 
 
+\subsection{Truncated Central Bias}
+
+First, we will update the central bias from \cite{clarke-tatler2014} and use a truncated normal distribution. This is very straight forward. Re-fitting a multivariante gaussian to the data reduces the deviance in the central bias model by $0.06\%$. Usng a truncated Gaussian gives us an improvement of $7.28\%$. We can round the truncated Gaussian model to $\mu = (0,0)$, $\sigma=(0.3, 0; 0, 0.12)$ with no loss of precision. 
+
 \subsection{Left v Right}
 
 Initially more fixations to the left half of the image \citep{nuthmann-matthias2014}. We replicate this here (Figure \ref{fig:leftrightDist}).
@@ -214,7 +218,7 @@ To characterise how the distribution of saccadic endpoints varies with the start
 
 \begin{figure}
 \centering
- \includegraphics[width=13cm]{../scripts/flow/figs/NparamsChagingOverSpace_ALL.pdf}
+ \includegraphics[width=13cm]{../scripts/flow/figs/NparamsChagingOverSpace_ALL_N.pdf}
 \caption{Flow:normal parameters over space. Note this is only a place holder for now. }
 \label{fig:nParamsOverSpace}
 \end{figure}
@@ -280,27 +284,27 @@ for $z \in \mathbb{R}$. I think.
 
 An example of the the distributions vary with saccadic start point is showing in Figure \ref{fig:exampleSkewNormal}.
 
-\begin{figure}
-\centering
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y4.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y4.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y4.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y4.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y3.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y3.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y3.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y3.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y2.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y2.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y2.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y2.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y1.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y1.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y1.pdf}}
-\subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y1.pdf}}
-\caption{Multivariate skew-$t$ distributions fitted to fixation location, by saccade start point.}
-\label{fig:exampleSkewNormal}
-\end{figure}
+% \begin{figure}
+% \centering
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y4.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y4.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y4.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y4.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y3.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y3.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y3.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y3.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y2.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y2.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y2.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y2.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y1.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y1.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y1.pdf}}
+% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y1.pdf}}
+% \caption{Multivariate skew-$t$ distributions fitted to fixation location, by saccade start point.}
+% \label{fig:exampleSkewNormal}
+% \end{figure}
 
 \subsection{Asymmetric flow}
 

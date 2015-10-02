@@ -1,4 +1,4 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{12}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -33,11 +33,6 @@ Alasdair D.~F. Clarke, Moreno~I. Coco, and Frank Keller.
 Alasdair~DF Clarke and Benjamin~W Tatler.
 \newblock Deriving an appropriate baseline for describing fixation behaviour.
 \newblock \emph{Vision research}, 102:\penalty0 41--51, 2014.
-
-\bibitem[Clarke et~al.(2009)Clarke, Chantler, and Green]{clarke2009}
-Alasdair~DF Clarke, Mike~J Chantler, and Patrick~R Green.
-\newblock Modeling visual search on a rough surface.
-\newblock \emph{Journal of Vision}, 9\penalty0 (4), 2009.
 
 \bibitem[Ehinger et~al.(2009)Ehinger, Hidalgo-Sotelo, Torralba, and
   Oliva]{ehinger2009}

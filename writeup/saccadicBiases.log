@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  23 SEP 2015 16:35
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  1 OCT 2015 14:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -441,412 +441,113 @@ Package natbib Warning: Citation `Torralba:2006iq' on page 2 undefined on input
 Package natbib Warning: Citation `Ehinger:2009ji' on page 2 undefined on input 
 line 63.
 
-[2] <figs/saccDistExample.pdf, id=13, 465.74pt x 362.35374pt>
-File: figs/saccDistExample.pdf Graphic file (type pdf)
-
-<use figs/saccDistExample.pdf>
-Package pdftex.def Info: figs/saccDistExample.pdf used on input line 77.
-(pdftex.def)             Requested size: 284.52756pt x 221.37273pt.
- [3 <./figs/saccDistExample.pdf>]
-Overfull \hbox (145.54314pt too wide) in paragraph at lines 97--113
+[2]
+Overfull \hbox (145.54314pt too wide) in paragraph at lines 112--128
  [][] 
  []
 
 
-Overfull \hbox (117.25394pt too wide) in paragraph at lines 121--141
+Overfull \hbox (117.25394pt too wide) in paragraph at lines 136--156
  [] 
  []
 
-[4]
-<../scripts/leftVright/graphs/leftrightbias.pdf, id=27, 289.08pt x 289.08pt>
+[3] [4]
+<../scripts/leftVright/graphs/leftrightbias.pdf, id=23, 289.08pt x 289.08pt>
 File: ../scripts/leftVright/graphs/leftrightbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/leftrightbias.pdf>
 Package pdftex.def Info: ../scripts/leftVright/graphs/leftrightbias.pdf used on
- input line 170.
+ input line 189.
 (pdftex.def)             Requested size: 170.71652pt x 170.71451pt.
 
-<../scripts/leftVright/graphs/updownbias.pdf, id=28, 289.08pt x 289.08pt>
+<../scripts/leftVright/graphs/updownbias.pdf, id=24, 289.08pt x 289.08pt>
 File: ../scripts/leftVright/graphs/updownbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/updownbias.pdf>
 Package pdftex.def Info: ../scripts/leftVright/graphs/updownbias.pdf used on in
-put line 171.
+put line 190.
 (pdftex.def)             Requested size: 170.71652pt x 170.71451pt.
-
-<../scripts/leftVright/graphs/devRatio.pdf, id=29, 216.81pt x 216.81pt>
+ [5]
+<../scripts/leftVright/graphs/devRatio.pdf, id=28, 216.81pt x 216.81pt>
 File: ../scripts/leftVright/graphs/devRatio.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/devRatio.pdf>
 Package pdftex.def Info: ../scripts/leftVright/graphs/devRatio.pdf used on inpu
-t line 182.
+t line 201.
 (pdftex.def)             Requested size: 116.65646pt x 116.65881pt.
 
-<../scripts/leftVright/graphs/datasetComp.pdf, id=30, 433.62pt x 216.81pt>
+<../scripts/leftVright/graphs/datasetComp.pdf, id=29, 433.62pt x 216.81pt>
 File: ../scripts/leftVright/graphs/datasetComp.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/datasetComp.pdf>
 Package pdftex.def Info: ../scripts/leftVright/graphs/datasetComp.pdf used on i
-nput line 183.
+nput line 202.
 (pdftex.def)             Requested size: 233.3125pt x 116.65881pt.
- [5] [6 <../scripts/leftVright/graphs/leftrightbias.pdf> <../scripts/leftVright
-/graphs/updownbias.pdf> <../scripts/leftVright/graphs/devRatio.pdf> <../scripts
-/leftVright/graphs/datasetComp.pdf>]
-LaTeX Font Info:    Try loading font information for T1+cmtl on input line 198.
 
- (/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/t1cmtl.fd
+
+LaTeX Warning: Reference `fig:empiricalSaccadicFlow' on page 6 undefined on inp
+ut line 213.
+
+[6 <../scripts/leftVright/graphs/leftrightbias.pdf> <../scripts/leftVright/grap
+hs/updownbias.pdf> <../scripts/leftVright/graphs/devRatio.pdf> <../scripts/left
+Vright/graphs/datasetComp.pdf>]
+LaTeX Font Info:    Try loading font information for T1+cmtl on input line 217.
+
+
+(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/t1cmtl.fd
 File: t1cmtl.fd 2005/04/13 v8.1 (WaS)
 )
+<../scripts/flow/figs/NparamsChagingOverSpace_ALL_N.pdf, id=57, 1011.78pt x 433
+.62pt>
+File: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_N.pdf Graphic file (type
+ pdf)
+ <use ../scripts/flow/figs/NparamsChagingOverSpace_ALL_N.pdf>
+Package pdftex.def Info: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_N.pdf
+ used on input line 221.
+(pdftex.def)             Requested size: 369.88582pt x 158.52472pt.
 
-LaTeX Warning: File `../scripts/flow/figs/NparamsChagingOverSpace_ALL.pdf' not 
-found on input line 202.
-
-
-! Package pdftex.def Error: File `../scripts/flow/figs/NparamsChagingOverSpace_
-ALL.pdf' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.202 ...low/figs/NparamsChagingOverSpace_ALL.pdf}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (9.88582pt too wide) in paragraph at lines 202--203
+Overfull \hbox (9.88582pt too wide) in paragraph at lines 221--222
  [][] 
  []
 
-<../scripts/flow/figs/llh_ALL.pdf, id=64, 433.62pt x 289.08pt>
+[7 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_N.pdf>]
+<../scripts/flow/figs/llh_ALL.pdf, id=71, 433.62pt x 289.08pt>
 File: ../scripts/flow/figs/llh_ALL.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_ALL.pdf>
-Package pdftex.def Info: ../scripts/flow/figs/llh_ALL.pdf used on input line 23
-4.
+Package pdftex.def Info: ../scripts/flow/figs/llh_ALL.pdf used on input line 25
+3.
 (pdftex.def)             Requested size: 227.62204pt x 151.74721pt.
 
+<../scripts/flow/figs/llh_crossDataset.pdf, id=72, 578.16pt x 289.08pt>
+File: ../scripts/flow/figs/llh_crossDataset.pdf Graphic file (type pdf)
 
-LaTeX Warning: File `../scripts/flow/figs/llh_crossDataset.pdf' not found on in
-put line 243.
+<use ../scripts/flow/figs/llh_crossDataset.pdf>
+Package pdftex.def Info: ../scripts/flow/figs/llh_crossDataset.pdf used on inpu
+t line 262.
+(pdftex.def)             Requested size: 341.43306pt x 170.71451pt.
+ [8 <../scripts/flow/figs/llh_ALL.pdf>]
 
+LaTeX Warning: Reference `fig:empiricalSaccadicFlow' on page 9 undefined on inp
+ut line 273.
 
-! Package pdftex.def Error: File `../scripts/flow/figs/llh_crossDataset.pdf' no
-t found.
 
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.243 ..../scripts/flow/figs/llh_crossDataset.pdf}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+LaTeX Warning: Reference `fig:exampleSkewNormal' on page 9 undefined on input l
+ine 285.
 
-[7] [8] [9 <../scripts/flow/figs/llh_ALL.pdf>] [10]
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX1Y4.pdf' not found o
-n input line 270.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX1Y4.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.270 ...ipts/flow/flowFigures/saccEndByX1Y4.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX2Y4.pdf' not found o
-n input line 271.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX2Y4.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.271 ...ipts/flow/flowFigures/saccEndByX2Y4.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX3Y4.pdf' not found o
-n input line 272.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX3Y4.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.272 ...ipts/flow/flowFigures/saccEndByX3Y4.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX4Y4.pdf' not found o
-n input line 273.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX4Y4.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.273 ...ipts/flow/flowFigures/saccEndByX4Y4.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX1Y3.pdf' not found o
-n input line 274.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX1Y3.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.274 ...ipts/flow/flowFigures/saccEndByX1Y3.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX2Y3.pdf' not found o
-n input line 275.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX2Y3.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.275 ...ipts/flow/flowFigures/saccEndByX2Y3.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX3Y3.pdf' not found o
-n input line 276.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX3Y3.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.276 ...ipts/flow/flowFigures/saccEndByX3Y3.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX4Y3.pdf' not found o
-n input line 277.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX4Y3.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.277 ...ipts/flow/flowFigures/saccEndByX4Y3.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX1Y2.pdf' not found o
-n input line 278.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX1Y2.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.278 ...ipts/flow/flowFigures/saccEndByX1Y2.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX2Y2.pdf' not found o
-n input line 279.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX2Y2.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.279 ...ipts/flow/flowFigures/saccEndByX2Y2.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX3Y2.pdf' not found o
-n input line 280.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX3Y2.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.280 ...ipts/flow/flowFigures/saccEndByX3Y2.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX4Y2.pdf' not found o
-n input line 281.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX4Y2.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.281 ...ipts/flow/flowFigures/saccEndByX4Y2.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX1Y1.pdf' not found o
-n input line 282.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX1Y1.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.282 ...ipts/flow/flowFigures/saccEndByX1Y1.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX2Y1.pdf' not found o
-n input line 283.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX2Y1.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.283 ...ipts/flow/flowFigures/saccEndByX2Y1.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX3Y1.pdf' not found o
-n input line 284.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX3Y1.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.284 ...ipts/flow/flowFigures/saccEndByX3Y1.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: File `../scripts/flow/flowFigures/saccEndByX4Y1.pdf' not found o
-n input line 285.
-
-
-! Package pdftex.def Error: File `../scripts/flow/flowFigures/saccEndByX4Y1.pdf
-' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.285 ...ipts/flow/flowFigures/saccEndByX4Y1.pdf}}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-[11] <figs/adjustedheatmaps.pdf, id=91, 1739.49875pt x 827.09pt>
+[9 <../scripts/flow/figs/llh_crossDataset.pdf>]
+<figs/adjustedheatmaps.pdf, id=93, 1739.49875pt x 827.09pt>
 File: figs/adjustedheatmaps.pdf Graphic file (type pdf)
 
 <use figs/adjustedheatmaps.pdf>
-Package pdftex.def Info: figs/adjustedheatmaps.pdf used on input line 307.
+Package pdftex.def Info: figs/adjustedheatmaps.pdf used on input line 326.
 (pdftex.def)             Requested size: 360.0pt x 171.16995pt.
- [12]
+ [10]
 
-Package natbib Warning: Citation `Stainer:2013ce' on page 13 undefined on input
- line 341.
+Package natbib Warning: Citation `Stainer:2013ce' on page 11 undefined on input
+ line 360.
 
-(./saccadicBiases.bbl [13 <./figs/adjustedheatmaps.pdf>]
+[11 <./figs/adjustedheatmaps.pdf>] (./saccadicBiases.bbl
 LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <10> not available
 (Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 12.
 LaTeX Font Info:    Font shape `T1/cmtl/m/it' in size <10> not available
@@ -864,38 +565,42 @@ Underfull \hbox (badness 4634) in paragraph at lines 15--20
 dova, Italia, 2015.  URL
  []
 
-[14])
+[12])
 
 Package natbib Warning: There were undefined citations.
 
-[15] (./saccadicBiases.aux) ) 
+[13] (./saccadicBiases.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3905 strings out of 493315
- 52770 string characters out of 6137905
- 120851 words of memory out of 5000000
+ 3887 strings out of 493315
+ 52761 string characters out of 6137905
+ 123773 words of memory out of 5000000
  7236 multiletter control sequences out of 15000+600000
  24517 words of font info for 71 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,11n,35p,1505b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvip
-s/cm-super/cm-super-t1.enc}</usr/local/texlive/2013/texmf-dist/fonts/type1/publ
-ic/hfbright/hfbr10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/h
-fbright/hfbr8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbrig
-ht/hfbrbs10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright
-/hfbrmi10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/h
-fbrmi8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbr
-sy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbrsy
-8.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbbx10.p
-fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb>
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb></u
-sr/local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbmr17.pfb></usr/
-local/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbmr9.pfb></usr/loca
-l/texlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbtl10.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbto10.pfb>
-Output written on saccadicBiases.pdf (15 pages, 8250840 bytes).
+{/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb></us
+r/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/loc
+al/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbrbs10.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb></usr/local/t
+exlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb></usr/local/texlive/2
+013/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb></usr/local/texlive/2013/te
+xmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/cm-super/sfbmr17.pfb></usr/local/texlive/2013/texmf-di
+st/fonts/type1/public/cm-super/sfbmr9.pfb></usr/local/texlive/2013/texmf-dist/f
+onts/type1/public/cm-super/sfbtl10.pfb></usr/local/texlive/2013/texmf-dist/font
+s/type1/public/cm-super/sfbto10.pfb>
+Output written on saccadicBiases.pdf (13 pages, 8249080 bytes).
 PDF statistics:
- 265 PDF objects out of 1000 (max. 8388607)
- 173 compressed objects within 2 object streams
+ 267 PDF objects out of 1000 (max. 8388607)
+ 175 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
