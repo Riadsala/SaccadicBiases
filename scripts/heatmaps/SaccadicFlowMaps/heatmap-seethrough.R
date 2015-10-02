@@ -3,7 +3,7 @@ rm(list = ls())
 library(mvtnorm)
 source('drawfixmap.R')
 source("http://peterhaschke.com/Code/multiplot.R")
-
+library(matrixcalc)
 ##this is a bit of a fudge as I don't know how to reference relative file sources
 setwd("/Users/matthewstainer/Documents/Work/Papers/SaccadicBiases/scripts/heatmaps/SaccadicFlowMaps")
 getwd()->mattwd
@@ -47,7 +47,7 @@ for (im in imselect){
   
   llh = dmvnorm(fixs, mu, sigma)
   
-  centweights=c(1-llh)
+  centweights=c(max(llh,na.rm-T)-llh)
   
   
   ##make saccadic bias weight

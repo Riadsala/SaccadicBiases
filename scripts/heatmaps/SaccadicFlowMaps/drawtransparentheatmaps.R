@@ -29,8 +29,8 @@ colnames(data)<-c('participant','image','index','fix.start','fix.end','x','y')
 data<-subset(data,index!=1)
 data$duration<-data$fix.end-data$fix.start
 
-imselect=c(1,3,4,5,6,7,9,12)
-#imselect=3
+#imselect=c(1,3,4,5,6,7,9,12)
+imselect=3
 for (im in imselect){
   imnum=im
   data.sub<-subset(data,image==imnum)
@@ -48,7 +48,7 @@ for (im in imselect){
   
   llh = dmvnorm(fixs, mu, sigma)
   
-  centweights=c(1-llh)
+  centweights=c(max(llh,na.rm=T)-llh)
   
   
   ##make saccadic bias weight
@@ -94,13 +94,13 @@ for (im in imselect){
   datax=data.sub[-refs,]
   datax=datax[1:(nrow(datax)-1),]
   datax<-datax[datax$llh!='-Inf',]
-  
+  datax<-datax[datax$llh!='Inf',]
   
   datax$llh=datax$llh+min(datax$llh)
   datax$llh<-sqrt(datax$llh^2)
   datax$llh<-datax$llh-min(datax$llh)
   datax$llh<-datax$llh/max(datax$llh)
-  datax$llh
+  #datax$llh
   
   
   

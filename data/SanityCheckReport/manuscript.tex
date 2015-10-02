@@ -1,0 +1,43 @@
+\documentclass[doc]{apa6}
+%\documentclass{article}
+\usepackage{lipsum}
+\usepackage[american]{babel}
+\usepackage{csquotes}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{lineno}
+
+
+
+\usepackage[style=apa,sortcites=true,sorting=nyt,backend=biber, uniquename=false, uniquelist=false]{biblatex}
+\DeclareLanguageMapping{american}{american-apa}
+
+
+%\addbibresource{bibliography.bib}
+
+
+
+\title{Data Sanity-check Report}
+
+
+\author{People}
+
+\affiliation{Places}
+
+
+%\authornote{any notes here}
+
+\shorttitle{CRAAAAZY!!}
+
+
+
+
+%\linenumbers
+\begin{document}
+\maketitle
+\input{Data.tex}
+
+%\printbibliography
+ 
+\end{document}

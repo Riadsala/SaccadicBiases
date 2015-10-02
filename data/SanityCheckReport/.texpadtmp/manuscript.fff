@@ -1,0 +1,39 @@
+\begin{figure*}[ht]
+\centering
+\subfigure{\includegraphics[width=7cm]{Figs/Asher2013_xdist.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Asher2013_ydist.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Asher2013_sacampdist.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Asher2013_sacampindex.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Asher2013_heat.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Asher2013_3D.png}}
+\caption{Data from Matt Asher 2013}
+\label{fig:Asher2013}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[ht]
+\centering
+\subfigure{\includegraphics[width=7cm]{Figs/Clarke2013_xdist.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Clarke2013_ydist.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Clarke2013_sacampdist.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Clarke2013_sacampindex.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Clarke2013_heat.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Clarke2013_3D.png}}
+\caption{Some guy called Clark's data}
+\label{fig:Clarke2013}
+\end{figure*}
+\efloatseparator
+ 
+\begin{figure*}[ht]
+\centering
+\subfigure{\includegraphics[width=7cm]{Figs/Einhauser2008_xdist.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Einhauser2008_ydist.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Einhauser2008_sacampdist.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Einhauser2008_sacampindex.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Einhauser2008_heat.png}}
+\subfigure{\includegraphics[width=7cm]{Figs/Einhauser2008_3D.png}}
+\caption{Einhauser 2008 data}
+\label{fig:Einhauser2008}
+\end{figure*}
+\efloatseparator
+ 
