@@ -10,7 +10,7 @@ function fix = grabFixations(dataset)
 % remove NAs, out of bound fixations, etc, as this will result in false
 % saccades being calcualted.
 
-% also, intitla fixation is NOT removed at this stage.
+% also, initial fixation is NOT removed at this stage.
 
 % datasets to use:
 % Einhauser2008
@@ -27,9 +27,16 @@ end
 switch dataset
     
     case 'Borji2015'
-        R = dlmread('../../data/Borji2015/allFixations.txt');
-        R(:,3:4) = centreAndScale(R(:,3:4), [1920, 1080]);
-        fix = fixArrayToStruct(R, 2,1,3,4);
+        % this is treated as multiple datasets
+        sets = dir('../../data/Borji2015/*.txt');
+        
+        for cls = 1:length(sets)
+            R = dlmread(['../../data/Borji2015/' sets(cls).name]);
+            R(:,3:4) = centreAndScale(R(:,3:4), [1920, 1080]);
+            fix(cls) = fixArrayToStruct(R, 2,1,3,4);
+        end
+        
+       
     case 'Einhauser2008'
         
         R = dlmread('../../data/Einhauser2008/fixations.txt');
