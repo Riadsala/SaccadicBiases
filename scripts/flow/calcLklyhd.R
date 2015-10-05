@@ -19,16 +19,14 @@ datasets = c(
  'Asher2013',
  'Ehinger2007') #
 
-trainingSets =  c('All')
 
 # 'Clarke2013'
 
 LLHresults = data.frame(
 	dataset=character(),
 	biasmodel=character(),
-	trainOn=character(),
 	logLik=numeric(),
-	llhFrac=numeric())
+	llhImprovOverUni=numeric())
 
 for (d in datasets)
 {
@@ -37,9 +35,7 @@ for (d in datasets)
 	if (d == 'Asher2013')
 	{
 		asp.rat = 0.80
-	}
-	else
-	{
+	} else 	{
 		asp.rat = 0.75
 	}
 
@@ -58,83 +54,78 @@ for (d in datasets)
 	
 	######################################################################################
 	# first caculate log-likelihood of dataset given Clarke-Tatler 2014 central bias
-	# also use best fit gaussian
+	# also use best fit gaussian, and use uniform as baseline
 	#####################################################################################
 
 	fixs = select(saccades, x2, y2)
 
-	mu = c(0,0)
-	sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))
-	llh = sum(log(dmvnorm(fixs, mu, sigma)))
-	LLHresults = rbind(LLHresults, data.frame(
-		dataset=d, biasmodel='Clarke-Tatler2014', trainOn='-', logLik = llh, llhFrac=1))
-	rm(llh, mu, sigma)
+	uniformLLH = nrow(fixs)  * log(1/(4*asp.rat))
 
+	LLHresults = rbind(LLHresults, 
+		data.frame(dataset=d, biasmodel='uniform', logLik=uniformLLH, llhImprovOverUni=0, improvOverC=0))
+	
+
+	# re-fit (use ase baseline)
 	mu = c(mean(fixs[,1]), mean(fixs[,2]))
 	sigma = var(fixs)
 	llh = sum(log(dmvnorm(fixs, mu, sigma)))
-	llhFrac = llh/filter(LLHresults, dataset==d, trainOn=='-', biasmodel=='Clarke-Tatler2014')$logLik
+	improv = llh - uniformLLH
 	LLHresults = rbind(LLHresults, 
-		data.frame(dataset=d, biasmodel='re-fit', trainOn='-', logLik=llh, llhFrac=llhFrac))
+		data.frame(dataset=d, biasmodel='re-fit', logLik=llh, llhImprovOverUni=llh - uniformLLH, improvOverC=(llh-uniformLLH)/improv))
 	rm(llh, mu, sigma)
-	# LLHresults['best fit LM'] = logLik(lm(c(fixs$x2, fixs$y2)~1))
-	# LLHresults['central SN'] = logLik(selm(data=fixs, formula= cbind(x2,y2)~1, family='SN'))
-	# LLHresults['central ST'] = logLik(selm(data=fixs, formula= cbind(x2,y2)~1, family='ST'))
+
+	# CT2014
+	mu = c(0,0)
+	sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))
+	llh = sum(log(dmvnorm(fixs, mu, sigma)))
+
+	LLHresults = rbind(LLHresults, data.frame(
+		dataset=d, biasmodel='Clarke-Tatler2014', logLik = llh, llhImprovOverUni=llh - uniformLLH, improvOverC=(llh-uniformLLH)/improv))
+	rm(llh, mu, sigma)
+
+
+
 
 	######################################################################################
 	# now find out how much flow helps!
 	#####################################################################################
- 	for (trainedOn in trainingSets)
-	{
-		print(trainedOn)
+ 
+	trainedOn = 'All'
 		flowModel = 'tN'
 
 		saccades = calcLLHofSaccades(saccades, flowModel, trainedOn, asp.rat)
-
+		llh = sum(saccades$llh)
 		LLHresults = rbind(LLHresults, data.frame(
 			dataset=d, 
-			biasmodel = flowModel, 
-			trainOn = trainedOn, 
-			logLik=sum(saccades$llh),
-			llhFrac=sum(saccades$llh/filter(LLHresults, dataset==d, trainOn=='-', biasmodel=='Clarke-Tatler2014')$logLik)))
+			biasmodel = flowModel, 		
+			logLik=sum(saccades$llh), llhImprovOverUni=llh - uniformLLH, improvOverC=(llh-uniformLLH)/improv))
 
-	 	flowModel = 'N'
-	 	saccades = calcLLHofSaccades(saccades, flowModel, trainedOn, asp.rat)
+	#  	flowModel = 'N'
+	#  	saccades = calcLLHofSaccades(saccades, flowModel, trainedOn, asp.rat)
 
-		LLHresults = rbind(LLHresults, data.frame(
-			dataset=d, 
-			biasmodel = flowModel, 
-			trainOn = trainedOn,
-			logLik=sum(saccades$llh),
-			llhFrac=sum(saccades$llh/filter(LLHresults, dataset==d, trainOn=='-', biasmodel=='Clarke-Tatler2014')$logLik)))
-	}
+	# 	LLHresults = rbind(LLHresults, data.frame(
+	# 		dataset=d, 
+	# 		biasmodel = flowModel, 
+	# 		trainOn = trainedOn,
+	# 		logLik=sum(saccades$llh),
+	# 		llhFrac=sum(saccades$llh/filter(LLHresults, dataset==d, trainOn=='-', biasmodel=='Clarke-Tatler2014')$logLik)))
+
 }
 
 
 
-pltDat = filter(LLHresults, biasmodel %in% c('re-fit', 'N', 'tN'), trainOn %in% c('All', '-'))
+pltDat = filter(LLHresults, biasmodel %in% c('Clarke-Tatler2014', 're-fit', 'N', 'tN'))
 pltDat$biasmodel = factor(pltDat$biasmodel)
-levels(pltDat$biasmodel)=c('re-fit central', 'truncated gaussian', 'gaussian')
-pltDat$biasmodel = factor(pltDat$biasmodel, levels=c('re-fit central', 'gaussian', 'truncated gaussian'))
+levels(pltDat$biasmodel)=c('CT2014', 're-fit central', 'truncated gaussian')
+# pltDat$biasmodel = factor(pltDat$biasmodel, levels=c('re-fit central', 'gaussian', 'truncated gaussian'))
 
-plt  = ggplot(pltDat, aes(x=biasmodel, y=llhFrac, fill=dataset))
-plt = plt + geom_bar(stat='identity', position='dodge')
-plt = plt + scale_fill_brewer(palette="Set3") + theme_bw()
-plt = plt + scale_y_continuous(name='proportion of deviance', limits=c(0,1), expand=c(0,0))
+plt  = ggplot(LLHresults, aes(fill=biasmodel, y=logLik, x=biasmodel))
+plt = plt + geom_bar(stat='identity', position='dodge') + facet_wrap(~dataset, scales='free')
+plt = plt + scale_fill_brewer(palette="Set1") + theme_bw()
+# plt = plt + scale_y_continuous(name='proportion of deviance', limits=c(0,1), expand=c(0,0))
 plt = plt + scale_x_discrete(name='bias model')
 ggsave(paste('figs/llh_ALL.pdf', sep=''), width=6, height=4)
 
-
-pltDat = filter(LLHresults, !(biasmodel %in% c('Clarke-Tatler2014', 're-fit', 'flow ALL N')))
-pltDat$biasmodel = factor(pltDat$biasmodel)
-plt = ggplot(, pltDat
-	aes(x=trainOn, y=llhFrac, fill=dataset))
-plt = plt + geom_bar(stat='identity', position='dodge')
-plt = plt + scale_fill_brewer(palette="Set3") + theme_bw()
-plt = plt + scale_y_continuous(name='proportion of deviance', limits=c(0,1), expand=c(0,0))
-plt = plt + theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust=1))
-plt = plt + facet_grid(.~biasmodel)
-ggsave(paste('figs/llh_crossDataset.pdf', sep=''), width=8, height=4)
 
 write.csv(LLHresults, 'llhResults.txt', row.names=F)
 
