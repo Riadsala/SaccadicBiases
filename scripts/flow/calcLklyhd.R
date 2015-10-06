@@ -1,4 +1,4 @@
-
+i
 library(dplyr)
 library(ggplot2)
 library(Matrix)
@@ -122,7 +122,7 @@ plt = plt + geom_bar(stat='identity', position='dodge') + facet_wrap(~dataset, s
 plt = plt + scale_fill_brewer(palette="Set1") + theme_bw()
 # plt = plt + scale_y_continuous(name='proportion of deviance', limits=c(0,1), expand=c(0,0))
 plt = plt + scale_x_discrete(name='bias model', breaks=NULL)
-ggsave(paste('figs/llh_ALL.pdf', sep=''), width=6, height=4)
+ggsave(paste('figs/llh_ALL.pdf', sep=''), width=12, height=8)
 
 
 write.csv(LLHresults, 'llhResults.txt', row.names=F)
