@@ -1,17 +1,21 @@
 %%Run all sanity check and export images
+% 
+% datasets = {
+%     'Asher2013',...
+%     'Clarke2013', ...
+%     'Einhauser2008', ...
+%     'Tatler2005', ...
+%     'Tatler2007freeview', ...
+%     'Tatler2007search', ...
+%     'Judd2009',...
+%     'Yun2013SUN',...
+%     'Yun2013PASCAL',...
+%     'Clarke2009',...
+%     'GreeneData'}
 
-datasets = {
-    'Asher2013',...
-    'Clarke2013', ...
-    'Einhauser2008', ...
-    'Tatler2005', ...
-    'Tatler2007freeview', ...
-    'Tatler2007search', ...
-    'Judd2009',...
-    'Yun2013SUN',...
-    'Yun2013PASCAL',...
-    'Clarke2009'}
+%datasets={'GreeneData'}
 
+datasets={'Borji2015'}
 
 
 
@@ -29,6 +33,10 @@ fix=grabFixations(dataset);
 %%calculate saccade amplitudes
 if strcmp(dataset, 'Asher2013')
     aspRat= 0.8;
+elseif strcmp(dataset, 'GreeneData')
+    aspRat= 1;
+elseif strcmp(dataset, 'Clarke2009')
+    aspRat= 1;
 else
     aspRat = 0.75;
 end
@@ -56,9 +64,9 @@ saccs2=saccs(saccs(:,1)<remrefs(1),:);
 
 saccs3=saccs(saccs(:,1)~=1,:);
 x=saccs3(find(saccs3(:,2)<1 & saccs3(:,2)>-1),2);
-y=saccs3(find(saccs3(:,3)<0.75 & saccs3(:,3)>-0.75),3);
-sacamps=saccs2(find(saccs2(:,2)<1 & saccs2(:,2)>-1 & saccs2(:,3)<0.75 & saccs2(:,3)>-0.75 & saccs2(:,4)<1 & saccs2(:,4)>-1 & saccs2(:,5)<0.75 & saccs2(:,5)>-0.75),6)
-sacindex=saccs2(find(saccs2(:,2)<1 & saccs2(:,2)>-1 & saccs2(:,3)<0.75 & saccs2(:,3)>-0.75 & saccs2(:,4)<1 & saccs2(:,4)>-1 & saccs2(:,5)<0.75 & saccs2(:,5)>-0.75),1)
+y=saccs3(find(saccs3(:,3)<aspRat & saccs3(:,3)>-aspRat),3);
+sacamps=saccs2(find(saccs2(:,2)<1 & saccs2(:,2)>-1 & saccs2(:,3)<aspRat & saccs2(:,3)>-aspRat & saccs2(:,4)<1 & saccs2(:,4)>-1 & saccs2(:,5)<aspRat & saccs2(:,5)>-aspRat),6)
+sacindex=saccs2(find(saccs2(:,2)<1 & saccs2(:,2)>-1 & saccs2(:,3)<aspRat & saccs2(:,3)>-aspRat & saccs2(:,4)<1 & saccs2(:,4)>-1 & saccs2(:,5)<aspRat & saccs2(:,5)>-aspRat),1)
 clear saccs3
 
 
@@ -117,7 +125,7 @@ saveas(gcf,name)
 mesh(xxi,yyi,pdfxy)
 colormap('hot')
 set(gca,'XLim',[-1 1])
-set(gca,'YLim',[-0.75 0.75])
+set(gca,'YLim',[-aspRat aspRat])
 title('fixation surface plot')
 name=[dataset,'_3D.png'];
 saveas(gcf,name)

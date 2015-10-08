@@ -117,6 +117,13 @@ switch dataset
         R = dlmread('../../data/Ehinger2007/Ehinger2007fixationsTA.txt');
         R(:,4:5) = centreAndScale(R(:, 4:5),[800, 600]);
         fix = fixArrayToStruct(R, 1,2, 4,5);
+      
+    case 'GreeneData'
+        
+        R = dlmread('../../data/GreeneData/GreeneData60.csv');
+        R(:,3:4) = centreAndScale(R(:, 3:4),[800, 800]);
+        fix = fixArrayToStruct(R, 1,2, 3,4);
+        
 end
 
 end

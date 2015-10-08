@@ -21,6 +21,8 @@ title('y distribution')
 %%calculate saccade amplitudes
 if strcmp(dataset, 'Asher2013')
     aspRat= 0.8;
+elseif strcmp(dataset, 'GreeneData')
+    aspRat= 1;
 else
     aspRat = 0.75;
 end
