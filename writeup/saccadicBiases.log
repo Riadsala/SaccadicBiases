@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  2 OCT 2015 10:12
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  8 OCT 2015 10:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -23,89 +23,12 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/cmbright.sty
-Package: cmbright 2005/04/13 v8.1 (WaS)
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 29.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmbr/m/n on input line 29.
-LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmbr/m/n on input line 29.
-LaTeX Font Info:    Redeclaring symbol font `letters' on input line 30.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/cmbrm/m/it on input line 30.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/cmbrm/m/it on input line 30.
-LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmbrm/m/it --> OML/cmbrm/b/it on input line 31.
-LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 32.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> OMS/cmbrs/m/n on input line 32.
-LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> OMS/cmbrs/m/n on input line 32.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 33.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmbr/m/sl on input line 33.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmbr/m/sl on input line 33.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmbr/bx/n on input line 34.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmbr/bx/n on input line 34.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtl/m/n on input line 35.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtl/m/n on input line 35.
-LaTeX Font Info:    Redeclaring math symbol \alpha on input line 37.
-LaTeX Font Info:    Redeclaring math symbol \beta on input line 38.
-LaTeX Font Info:    Redeclaring math symbol \gamma on input line 39.
-LaTeX Font Info:    Redeclaring math symbol \delta on input line 40.
-LaTeX Font Info:    Redeclaring math symbol \epsilon on input line 41.
-LaTeX Font Info:    Redeclaring math symbol \zeta on input line 42.
-LaTeX Font Info:    Redeclaring math symbol \eta on input line 43.
-LaTeX Font Info:    Redeclaring math symbol \theta on input line 44.
-LaTeX Font Info:    Redeclaring math symbol \iota on input line 45.
-LaTeX Font Info:    Redeclaring math symbol \kappa on input line 46.
-LaTeX Font Info:    Redeclaring math symbol \lambda on input line 47.
-LaTeX Font Info:    Redeclaring math symbol \mu on input line 48.
-LaTeX Font Info:    Redeclaring math symbol \nu on input line 49.
-LaTeX Font Info:    Redeclaring math symbol \xi on input line 50.
-LaTeX Font Info:    Redeclaring math symbol \pi on input line 51.
-LaTeX Font Info:    Redeclaring math symbol \rho on input line 52.
-LaTeX Font Info:    Redeclaring math symbol \sigma on input line 53.
-LaTeX Font Info:    Redeclaring math symbol \tau on input line 54.
-LaTeX Font Info:    Redeclaring math symbol \upsilon on input line 55.
-LaTeX Font Info:    Redeclaring math symbol \phi on input line 56.
-LaTeX Font Info:    Redeclaring math symbol \chi on input line 57.
-LaTeX Font Info:    Redeclaring math symbol \psi on input line 58.
-LaTeX Font Info:    Redeclaring math symbol \omega on input line 59.
-LaTeX Font Info:    Redeclaring math symbol \varepsilon on input line 60.
-LaTeX Font Info:    Redeclaring math symbol \vartheta on input line 61.
-LaTeX Font Info:    Redeclaring math symbol \varpi on input line 62.
-LaTeX Font Info:    Redeclaring math symbol \varrho on input line 63.
-LaTeX Font Info:    Redeclaring math symbol \varsigma on input line 64.
-LaTeX Font Info:    Redeclaring math symbol \varphi on input line 65.
-LaTeX Info: Redefining \LaTeX on input line 129.
-LaTeX Info: Redefining \LaTeXe on input line 139.
-LaTeX Font Info:    Try loading font information for OT1+cmbr on input line 144
-.
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/ot1cmbr.fd
-File: ot1cmbr.fd 2005/04/13 v8.1 (WaS)
-))
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-)
-LaTeX Font Info:    Try loading font information for T1+cmbr on input line 100.
-
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/t1cmbr.fd
-File: t1cmbr.fd 2005/04/13 v8.1 (WaS)
 ))
 (/usr/local/texlive/2013/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2013/05/16 v3.9f The Babel package
@@ -263,7 +186,11 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 (/usr/local/texlive/2013/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(./saccadicBiases.aux)
+(./saccadicBiases.aux
+
+LaTeX Warning: Label `fig:nFlowDevAll' multiply defined.
+
+)
 \openout1 = `saccadicBiases.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
@@ -278,8 +205,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
 LaTeX Font Info:    ... okay on input line 40.
-
-(/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count96
 \scratchdimen=\dimen110
@@ -336,17 +262,15 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for OML+cmbrm on input line 42
-.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/omlcmbrm.fd
-File: omlcmbrm.fd 2005/04/13 v8.1 (WaS)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for OMS+cmbrs on input line 42
-.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
 
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/omscmbrs.fd
-File: omscmbrs.fd 2005/04/13 v8.1 (WaS)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 Package natbib Warning: Citation `Itti:2000te' on page 1 undefined on input lin
@@ -408,8 +332,6 @@ ine 61.
 Package natbib Warning: Citation `Tseng:2009jn' on page 1 undefined on input li
 ne 61.
 
-LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <10.95> not available
-(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 61.
 
 Package natbib Warning: Citation `Fuller:1996bx' on page 1 undefined on input l
 ine 61.
@@ -442,17 +364,105 @@ Package natbib Warning: Citation `Ehinger:2009ji' on page 2 undefined on input
 line 63.
 
 [2]
-Overfull \hbox (145.54314pt too wide) in paragraph at lines 112--128
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf, id=18, 578.16pt x 4
+33.62pt>
+File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf Graphic file (t
+ype pdf)
+ <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf>
+Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.
+pdf used on input line 76.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf, id=19, 578.16pt x 4
+33.62pt>
+File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf Graphic file (t
+ype pdf)
+ <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf>
+Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.
+pdf used on input line 77.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf, id=20, 578.16pt x 4
+33.62pt>
+File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf Graphic file (t
+ype pdf)
+ <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf>
+Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.
+pdf used on input line 78.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf, id=21, 578.16pt x 4
+33.62pt>
+File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf Graphic file (t
+ype pdf)
+ <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf>
+Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.
+pdf used on input line 79.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf, id=22, 578.16pt x 4
+33.62pt>
+File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf Graphic file (t
+ype pdf)
+ <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf>
+Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.
+pdf used on input line 80.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf, id=23, 578.16pt x 4
+33.62pt>
+File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf Graphic file (t
+ype pdf)
+ <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf>
+Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.
+pdf used on input line 81.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf, id=24, 578.16pt x 4
+33.62pt>
+File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf Graphic file (t
+ype pdf)
+ <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf>
+Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.
+pdf used on input line 82.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf, id=25, 578.16pt x 4
+33.62pt>
+File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf Graphic file (t
+ype pdf)
+ <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf>
+Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.
+pdf used on input line 83.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf, id=26, 578.16pt x 4
+33.62pt>
+File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf Graphic file (t
+ype pdf)
+ <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf>
+Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.
+pdf used on input line 84.
+(pdftex.def)             Requested size: 113.81102pt x 85.35284pt.
+
+Overfull \hbox (158.76028pt too wide) in paragraph at lines 112--128
  [][] 
  []
 
 
-Overfull \hbox (117.25394pt too wide) in paragraph at lines 136--156
+Overfull \hbox (122.81772pt too wide) in paragraph at lines 136--156
  [] 
  []
 
-[3] [4]
-<../scripts/leftVright/graphs/leftrightbias.pdf, id=23, 289.08pt x 289.08pt>
+[3] [4 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf> <../scripts/
+heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf> <../scripts/heatmaps/SaccadicFl
+owMaps/Figures/BBias_13.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBia
+s_21.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf> <../scrip
+ts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf> <../scripts/heatmaps/Saccadi
+cFlowMaps/Figures/BBias_31.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/B
+Bias_32.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf>]
+[5]
+<../scripts/leftVright/graphs/leftrightbias.pdf, id=77, 289.08pt x 289.08pt>
 File: ../scripts/leftVright/graphs/leftrightbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/leftrightbias.pdf>
@@ -460,15 +470,15 @@ Package pdftex.def Info: ../scripts/leftVright/graphs/leftrightbias.pdf used on
  input line 189.
 (pdftex.def)             Requested size: 170.71652pt x 170.71451pt.
 
-<../scripts/leftVright/graphs/updownbias.pdf, id=24, 289.08pt x 289.08pt>
+<../scripts/leftVright/graphs/updownbias.pdf, id=78, 289.08pt x 289.08pt>
 File: ../scripts/leftVright/graphs/updownbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/updownbias.pdf>
 Package pdftex.def Info: ../scripts/leftVright/graphs/updownbias.pdf used on in
 put line 190.
 (pdftex.def)             Requested size: 170.71652pt x 170.71451pt.
- [5]
-<../scripts/leftVright/graphs/devRatio.pdf, id=28, 216.81pt x 216.81pt>
+
+<../scripts/leftVright/graphs/devRatio.pdf, id=79, 216.81pt x 216.81pt>
 File: ../scripts/leftVright/graphs/devRatio.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/devRatio.pdf>
@@ -476,142 +486,106 @@ Package pdftex.def Info: ../scripts/leftVright/graphs/devRatio.pdf used on inpu
 t line 201.
 (pdftex.def)             Requested size: 116.65646pt x 116.65881pt.
 
-<../scripts/leftVright/graphs/datasetComp.pdf, id=29, 433.62pt x 216.81pt>
+<../scripts/leftVright/graphs/datasetComp.pdf, id=80, 433.62pt x 216.81pt>
 File: ../scripts/leftVright/graphs/datasetComp.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/datasetComp.pdf>
 Package pdftex.def Info: ../scripts/leftVright/graphs/datasetComp.pdf used on i
 nput line 202.
 (pdftex.def)             Requested size: 233.3125pt x 116.65881pt.
+ [6 <../scripts/leftVright/graphs/leftrightbias.pdf> <../scripts/leftVright/gra
+phs/updownbias.pdf>]
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 217.
 
 
-LaTeX Warning: Reference `fig:empiricalSaccadicFlow' on page 6 undefined on inp
-ut line 213.
-
-[6 <../scripts/leftVright/graphs/leftrightbias.pdf> <../scripts/leftVright/grap
-hs/updownbias.pdf> <../scripts/leftVright/graphs/devRatio.pdf> <../scripts/left
-Vright/graphs/datasetComp.pdf>]
-LaTeX Font Info:    Try loading font information for T1+cmtl on input line 217.
-
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/cmbright/t1cmtl.fd
-File: t1cmtl.fd 2005/04/13 v8.1 (WaS)
+(/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 
-LaTeX Warning: File `../scripts/flow/figs/NparamsChagingOverSpace_ALL_N.pdf' no
-t found on input line 221.
+LaTeX Warning: Reference `fig:nParamsOverSpace' on page 7 undefined on input li
+ne 228.
 
-
-! Package pdftex.def Error: File `../scripts/flow/figs/NparamsChagingOverSpace_
-ALL_N.pdf' not found.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.221 ...w/figs/NparamsChagingOverSpace_ALL_N.pdf}
-                                                  
-Using draft setting for this image.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (9.88582pt too wide) in paragraph at lines 221--222
- [][] 
- []
-
-<../scripts/flow/figs/llh_ALL.pdf, id=57, 433.62pt x 289.08pt>
+[7 <../scripts/leftVright/graphs/devRatio.pdf> <../scripts/leftVright/graphs/da
+tasetComp.pdf>]
+<../scripts/flow/figs/llh_ALL.pdf, id=113, 867.24pt x 578.16pt>
 File: ../scripts/flow/figs/llh_ALL.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_ALL.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_ALL.pdf used on input line 25
 3.
-(pdftex.def)             Requested size: 227.62204pt x 151.74721pt.
- [7] [8]
-<../scripts/flow/figs/llh_crossDataset.pdf, id=68, 578.16pt x 289.08pt>
-File: ../scripts/flow/figs/llh_crossDataset.pdf Graphic file (type pdf)
-
-<use ../scripts/flow/figs/llh_crossDataset.pdf>
-Package pdftex.def Info: ../scripts/flow/figs/llh_crossDataset.pdf used on inpu
-t line 262.
-(pdftex.def)             Requested size: 341.43306pt x 170.71451pt.
+(pdftex.def)             Requested size: 341.43306pt x 227.62523pt.
 
 
-LaTeX Warning: Reference `fig:empiricalSaccadicFlow' on page 9 undefined on inp
-ut line 273.
+Package natbib Warning: Citation `borji2015' on page 8 undefined on input line 
+258.
 
-[9 <../scripts/flow/figs/llh_ALL.pdf>]
+<../scripts/flow/figs/llh_Borji.pdf, id=114, 867.24pt x 578.16pt>
+File: ../scripts/flow/figs/llh_Borji.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:exampleSkewNormal' on page 10 undefined on input 
-line 285.
-
-[10 <../scripts/flow/figs/llh_crossDataset.pdf>]
-<figs/adjustedheatmaps.pdf, id=88, 1739.49875pt x 827.09pt>
+<use ../scripts/flow/figs/llh_Borji.pdf>
+Package pdftex.def Info: ../scripts/flow/figs/llh_Borji.pdf used on input line 
+263.
+(pdftex.def)             Requested size: 341.43306pt x 227.62523pt.
+ [8] [9 <../scripts/flow/figs/llh_ALL.pdf> <../scripts/flow/figs/llh_Borji.pdf>
+]
+<figs/adjustedheatmaps.pdf, id=138, 1739.49875pt x 827.09pt>
 File: figs/adjustedheatmaps.pdf Graphic file (type pdf)
 
 <use figs/adjustedheatmaps.pdf>
-Package pdftex.def Info: figs/adjustedheatmaps.pdf used on input line 326.
+Package pdftex.def Info: figs/adjustedheatmaps.pdf used on input line 296.
 (pdftex.def)             Requested size: 360.0pt x 171.16995pt.
- [11 <./figs/adjustedheatmaps.pdf>]
+ [10]
 
-Package natbib Warning: Citation `Stainer:2013ce' on page 12 undefined on input
- line 358.
+Package natbib Warning: Citation `Stainer:2013ce' on page 11 undefined on input
+ line 328.
 
-(./saccadicBiases.bbl
-LaTeX Font Info:    Font shape `T1/cmbr/m/it' in size <10> not available
-(Font)              Font shape `T1/cmbr/m/sl' tried instead on input line 12.
- [12]
-LaTeX Font Info:    Font shape `T1/cmtl/m/it' in size <10> not available
-(Font)              Font shape `T1/cmtl/m/sl' tried instead on input line 17.
-
-Underfull \hbox (badness 3396) in paragraph at lines 15--20
-[]\T1/cmbr/m/n/10 A. Az-za-lini.  \T1/cmbr/m/sl/10 The R pack-age \T1/cmtl/m/sl
-/10 sn\T1/cmbr/m/sl/10 : The skew-normal and skew-$\OML/cmbrm/m/it/10 t$ \T1/cm
-br/m/sl/10 dis-tri-
- []
-
-
-Underfull \hbox (badness 4634) in paragraph at lines 15--20
-\T1/cmbr/m/sl/10 bu-tions (ver-sion 1.2-2)\T1/cmbr/m/n/10 .  Uni-ver-sità di Pa
-dova, Italia, 2015.  URL
- []
-
-)
+[11 <./figs/adjustedheatmaps.pdf>] (./saccadicBiases.bbl)
 
 Package natbib Warning: There were undefined citations.
 
-[13] (./saccadicBiases.aux)
+[12] (./saccadicBiases.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 3883 strings out of 493315
- 52522 string characters out of 6137905
- 123774 words of memory out of 5000000
- 7232 multiletter control sequences out of 15000+600000
- 24517 words of font info for 71 fonts, out of 8000000 for 9000
+ 3850 strings out of 493315
+ 53294 string characters out of 6137905
+ 125266 words of memory out of 5000000
+ 7190 multiletter control sequences out of 15000+600000
+ 20928 words of font info for 59 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,11n,35p,1505b,326s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,35p,1505b,314s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-</usr/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbr10.pfb></us
-r/local/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbr8.pfb></usr/loc
-al/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbrbs10.pfb></usr/local
-/texlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbrmi10.pfb></usr/local/t
-exlive/2013/texmf-dist/fonts/type1/public/hfbright/hfbrmi8.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/hfbright/hfbrsy10.pfb></usr/local/texliv
-e/2013/texmf-dist/fonts/type1/public/hfbright/hfbrsy8.pfb></usr/local/texlive/2
-013/texmf-dist/fonts/type1/public/cm-super/sfbbx10.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/public/cm-super/sfbmo10.pfb></usr/local/texlive/2013/te
-xmf-dist/fonts/type1/public/cm-super/sfbmr10.pfb></usr/local/texlive/2013/texmf
--dist/fonts/type1/public/cm-super/sfbmr17.pfb></usr/local/texlive/2013/texmf-di
-st/fonts/type1/public/cm-super/sfbmr9.pfb></usr/local/texlive/2013/texmf-dist/f
-onts/type1/public/cm-super/sfbtl10.pfb></usr/local/texlive/2013/texmf-dist/font
-s/type1/public/cm-super/sfbto10.pfb>
-Output written on saccadicBiases.pdf (13 pages, 8241776 bytes).
+</usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></u
+sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
+/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/lo
+cal/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/te
+xlive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texliv
+e/2013/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/
+2013/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/20
+13/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2013
+/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2013/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2013/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2013/texmf-d
+ist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2013/texmf-dis
+t/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on saccadicBiases.pdf (12 pages, 9462524 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
+ 333 PDF objects out of 1000 (max. 8388607)
+ 208 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

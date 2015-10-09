@@ -30,7 +30,6 @@ aspect.ratio = 0.75
 sacc = filter(sacc, n>1)
 fixations = as.matrix(select(sacc, x2, y2))
 
-
 # Clarke-Tatler 2014
 mu = c(0,0)
 sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))

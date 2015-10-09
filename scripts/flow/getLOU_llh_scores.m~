@@ -1,0 +1,89 @@
+clear all
+close all
+addpath('../helperfunctions');
+
+
+sigma = 5;
+B = fspecial('gaussian', [15,15], sigma);
+
+
+
+datasets = {
+    'Asher2013',...
+    'Clarke2013', ...
+    'Einhauser2008', ...
+    'Tatler2005', ...
+    'Tatler2007freeview', ...
+    'Tatler2007search', ...
+    'Judd2009',...
+    'Yun2013SUN',...
+    'Yun2013PASCAL',...
+    'Clarke2009', ...
+    'Ehinger2007'}
+
+aspectRatio = 0.75;
+
+fid = fopen('LOU_Results.txt', 'w');
+fprintf(fid, 'dataset, score\n');
+for (d=datasets)
+    d
+    if strcmp(d, 'Asher2013')
+        aspectRatio=0.8;
+    elseif strcmp(d, 'Borji2015')
+        aspectRatio = 0.5625;
+    else
+        aspectRatio=0.75;
+    end
+    
+    
+    % import fixations
+    fix = grabFixations(d{1});
+    
+    results = [];
+    % for each trial
+    for tr = unique(fix.trial)'
+        
+        % for each person
+        for pp = unique(fix.person(fix.trial==tr))'
+            % get fixations of everybody else
+            idx = fix.person~=pp & fix.trial==tr & isfinite(fix.x) & isfinite(fix.y) & fix.x<=1 & fix.y<=aspectRatio & fix.x>-1 & fix.y>-aspectRatio;
+            lou_fix = [fix.x(idx), fix.y(idx)];
+            % make pdf
+            z = 0.01*ones(40, 40*aspectRatio);
+            lou_fix = ceil(20*lou_fix);
+            lou_fix(:,1) = lou_fix(:,1) + 20;
+            lou_fix(:,2) = lou_fix(:,2) + 20*aspectRatio;
+            lou_fix(lou_fix(:,1)==0,1)=1;
+            lou_fix(lou_fix(:,2)==0,2)=1;
+            
+            for f = 1:length(lou_fix)
+                z(lou_fix(f,1), lou_fix(f,2)) = z(lou_fix(f,1), lou_fix(f,2)) + 1;
+            end
+            z = imfilter(z, B);
+            z = z./sum(z(:));
+            
+            % now compute the llh of person pp's fixations given z
+            idx = fix.person==pp & fix.trial==tr & isfinite(fix.x) & isfinite(fix.y) & fix.x<=1 & fix.y<=aspectRatio & fix.x>-1 & fix.y>-aspectRatio;
+            pp_fix = [fix.x(idx), fix.y(idx)];
+            pp_fix = ceil(20*pp_fix);
+            pp_fix(:,1) = pp_fix(:,1) + 20;
+            pp_fix(:,2) = pp_fix(:,2) + 20*aspectRatio;
+            pp_fix(pp_fix(:,1)==0,1)=1;
+            pp_fix(pp_fix(:,2)==0,2)=1;
+            % calc llh
+            llh = 0;
+            for f = 1:size(pp_fix,1)
+                if z(pp_fix(f,1), pp_fix(f,2)) == 0
+                    
+                end
+                llh = llh + log(z(pp_fix(f,1), pp_fix(f,2)));
+                
+            end
+            results = [results; tr, pp, llh];
+            
+        end
+    end
+    fprintf(fid, '%s %d\n', d{1}, sum(results(:,3)));
+end
+
+

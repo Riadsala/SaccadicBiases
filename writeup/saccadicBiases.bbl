@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{10}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,18 +10,6 @@
 Matthew~F Asher, David~J Tolhurst, Tom Troscianko, and Iain~D Gilchrist.
 \newblock Regional effects of clutter on human target detection performance.
 \newblock \emph{Journal of vision}, 13\penalty0 (5):\penalty0 25:1--15, 2013.
-
-\bibitem[Azzalini(2015)]{azzalini2015}
-A.~Azzalini.
-\newblock \emph{The {R} package \texttt{sn}: The skew-normal and skew-$t$
-  distributions (version 1.2-2)}.
-\newblock Universit\`a di Padova, Italia, 2015.
-\newblock URL \url{http://azzalini.stat.unipd.it/SN}.
-
-\bibitem[Azzalini and Dalla~Valle(1996)]{azzalini1996}
-Adelchi Azzalini and Alessandra Dalla~Valle.
-\newblock The multivariate skew-normal distribution.
-\newblock \emph{Biometrika}, 83\penalty0 (4):\penalty0 715--726, 1996.
 
 \bibitem[Clarke et~al.(2013)Clarke, Coco, and Keller]{clarke2013}
 Alasdair D.~F. Clarke, Moreno~I. Coco, and Frank Keller.

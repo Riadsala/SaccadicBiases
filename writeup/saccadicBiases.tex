@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[a4paper, onecolumn, oneside, 11pt]{article}
-\usepackage{cmbright}
+
 \usepackage[T1]{fontenc}
 \usepackage[english]{babel}
 
@@ -73,15 +73,15 @@ Foulsham and colleagues have presented two interesting exceptions to the horizon
 
 \begin{figure}
 \centering
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf}}
-\subfigure[]{\includegraphics[width=3cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf}}
+\subfigure[]{\includegraphics[width=4cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf}}
+\subfigure[]{\includegraphics[width=4cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf}}
+\subfigure[]{\includegraphics[width=4cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf}}
+\subfigure[]{\includegraphics[width=4cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf}}
+\subfigure[]{\includegraphics[width=4cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf}}
+\subfigure[]{\includegraphics[width=4cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf}}
+\subfigure[]{\includegraphics[width=4cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf}}
+\subfigure[]{\includegraphics[width=4cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf}}
+\subfigure[]{\includegraphics[width=4cm]{../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf}}
 \caption{Saccade landing positions from fixations that were in different sections of the screen. Data from each plot has been separated into fixations in 9 spatial bins, with the screen being divided into thirds in both horizontal and vertical aspects.}
 \label{fig:empiricalSaccadicFlow}
 \end{figure}
@@ -208,7 +208,7 @@ However, it has only a very small effect on explaining the varition over whole d
 
 Hence we will ignore this effect from now on. By treating everything as symmetrical, we lose very little explanitory power, while restricitng the number of parameters, or increasing the amount of data available (by mirroring fixations).
 
-\subsection{Saccadic Flow: Gaussian}
+\subsection{Saccadic Flow}
 
 Saccadic flow can be thought of as a generalisation of the central bias. Instead of computing the distribution of all saccadic endpoints in a dataset, we look at the distribution of saccade endpoints given the start points. So for a saccade from $(x_0, y_0)$ to $(x_1, y1)$ we want to model $p(x_1,y_1|x_0, y0)$ This is illustrated in Figure \ref{fig:empiricalSaccadicFlow}.
 
@@ -216,12 +216,12 @@ Saccadic flow can be thought of as a generalisation of the central bias. Instead
 
 To characterise how the distribution of saccadic endpoints varies with the start point, we used a sliding window approach. All saccades that originated in a $n\times n$ window were taken and used to fit a multivariate Gaussian distribution. This window was then moved over the stimuli in steps of $s=0.01$. Parameter sets estimated from windows containing less than 250 datapoints were removed. Multivariate polynomial regression was then used to fit 4-th order polynomials to each of the parameters. Robust estimation was used (\texttt{rlm} from the texttt{MASS} library) to stop the model fits being overly infleunced by outlier points from the image boundary. We experimented with varying the window size ($n\in\{0.05,0.1, 0.2\}$). However, as this parameter was found to have a negligible result, we only report the results for $n=0.05$.
 
-\begin{figure}
-\centering
- \includegraphics[width=13cm]{../scripts/flow/figs/NparamsChagingOverSpace_ALL_N.pdf}
-\caption{Flow:normal parameters over space. Note this is only a place holder for now. }
-\label{fig:nParamsOverSpace}
-\end{figure}
+% \begin{figure}
+% \centering
+%  \includegraphics[width=13cm]{../scripts/flow/figs/NparamsChagingOverSpace_ALL_N.pdf}
+% \caption{Flow:normal parameters over space. Note this is only a place holder for now. }
+% \label{fig:nParamsOverSpace}
+% \end{figure}
 
 \subsubsection{Results}
 
@@ -250,19 +250,27 @@ How well does this model account for the fixations in our datasets? Figure \ref{
 
 \begin{figure}
 \centering
- \includegraphics[width=8cm]{../scripts/flow/figs/llh_ALL.pdf}
+ \includegraphics[width=12cm]{../scripts/flow/figs/llh_ALL.pdf}
+\caption{Flow:normal log likelihood results. We can see that re-fitting the central-bias to each specific dataset offers little improvement over using the Clarke-Tatler model, while the flow model offers a substantial improvement.}
+\label{fig:nFlowDevAll}
+\end{figure}
+
+As the flow:normal model is significantly more complex, requiring nine times as many parameters, it is important to test for robustness. We can test how well our model generalises on testing it on other datasets, for example, \cite{borji2015}. 
+
+
+\begin{figure}
+\centering
+ \includegraphics[width=12cm]{../scripts/flow/figs/llh_Borji.pdf}
 \caption{Flow:normal deviance results. We can see that re-fitting the central-bias to each specific dataset offers little improvement over using the Clarke-Tatler model, while the flow:normal model decreases the deviance by half.}
 \label{fig:nFlowDevAll}
 \end{figure}
 
-As the flow:normal model is significantly more complex, requiring nine times as many parameters, it is important to test for robustness. Rather than carrying out $k$-fold cross validation, as we have a large amount of data, we will use a more stringent test, and evaluate how well the flow:normal model trained on just one dataset can explain the variance on the others. These resutls are shown in Figure \ref{fig:nFlowDevCross}.
-
-\begin{figure}
-\centering
- \includegraphics[width=12cm]{../scripts/flow/figs/llh_crossDataset.pdf}
-\caption{Flow:normal deviance results over datasets. In general, we can see that bias models trained on different datasets all explain around the same amount of variance in the datasets.}
-\label{fig:nFlowDevCross}
-\end{figure}
+% \begin{figure}
+% \centering
+%  \includegraphics[width=12cm]{../scripts/flow/figs/llh_crossDataset.pdf}
+% \caption{Flow:normal deviance results over datasets. In general, we can see that bias models trained on different datasets all explain around the same amount of variance in the datasets.}
+% \label{fig:nFlowDevCross}
+% \end{figure}
 
 \subsubsection{Discussion}
 
@@ -271,44 +279,6 @@ We put the Flow:normal model forward as a robust prior for image-content indepen
 There are two main simplifications to our modelling work. First of all, we are using an unbounded distribution (ie, $(x,y)\in \mathbb{R}^2$) to model bounded data. While it is possible to deal with this issue, by either applying a transform $(-1,1)\rightarrow \mathbb{R}$ (such as $z=log(\frac{x'}{1-x'})$, where $x'=\frac{x+1}{2}$), or fitting a truncated multivariate Gaussian, we decided that given the good performance of the model as is, it was not worth adding the additional complexities to our model at this time. 
 
 The second simplification is that we are treating the data as normal. From Figure \ref{fig:empiricalSaccadicFlow} we can see that the data is clearly skewed, particularly in the corners. We will attempt to address these issues in the following section.
-
-\subsection{Saccadic Flow: Skew Normal}
-We will model saccadic flow using multivariate skew-$t$ distributions \citep{azzalini2015}. The multivariate skew-normal distribution \citep{azzalini1996} is given by:
-
-\begin{equation}
-\phi(z; \lambda) = 2\phi(z)\Phi(\lambda z) 
-\end{equation}
-
-for $z \in \mathbb{R}$. I think. 
-
-
-An example of the the distributions vary with saccadic start point is showing in Figure \ref{fig:exampleSkewNormal}.
-
-% \begin{figure}
-% \centering
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y4.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y4.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y4.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y4.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y3.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y3.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y3.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y3.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y2.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y2.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y2.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y2.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX1Y1.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX2Y1.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX3Y1.pdf}}
-% \subfigure{\includegraphics[width=3cm]{../scripts/flow/flowFigures/saccEndByX4Y1.pdf}}
-% \caption{Multivariate skew-$t$ distributions fitted to fixation location, by saccade start point.}
-% \label{fig:exampleSkewNormal}
-% \end{figure}
-
-\subsection{Asymmetric flow}
-
-Section to look at what happens if we don't mirror the data.
 
 
 \section{Using Biases for Better Analysis}

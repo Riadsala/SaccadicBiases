@@ -1,0 +1,12 @@
+dataset, score
+Asher2013, 1.369347e+04
+Clarke2013, 3.991972e+04
+Einhauser2008, 5.532306e+03
+Tatler2005, 4.740223e+03
+Tatler2007freeview, 2.345993e+04
+Tatler2007search, 9.923770e+03
+Judd2009, 8.118693e+04
+Yun2013SUN, 8.898200e+03
+Yun2013PASCAL, 2.299173e+03
+Clarke2009, 6.221235e+03
+Ehinger2007, 2.105699e+04
