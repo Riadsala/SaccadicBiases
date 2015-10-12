@@ -1,0 +1,1308 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lib",
+				"library"
+			],
+			[
+				"dat",
+				"datLOU"
+			],
+			[
+				"fac",
+				"facet_wrap"
+			],
+			[
+				"n",
+				"nTrials"
+			],
+			[
+				"prop",
+				"propHetro"
+			],
+			[
+				"fix",
+				"fixNum"
+			],
+			[
+				"slab",
+				"slabs_to_test"
+			],
+			[
+				"bean",
+				"beanbagdat"
+			],
+			[
+				"data",
+				"dataset"
+			],
+			[
+				"ll",
+				"lh-uniformLLH"
+			],
+			[
+				"imp",
+				"improvOfCT"
+			],
+			[
+				"un",
+				"uniformLLH"
+			],
+			[
+				"uni",
+				"uniformLLH"
+			],
+			[
+				"Clare",
+				"Clarke2013"
+			],
+			[
+				"train",
+				"trainedOn"
+			],
+			[
+				"sacc",
+				"saccades"
+			],
+			[
+				"llh",
+				"llhCT2014"
+			],
+			[
+				"tra",
+				"trainOn"
+			],
+			[
+				"na",
+				"names"
+			],
+			[
+				"plt",
+				"pltDat"
+			],
+			[
+				"res",
+				"resposneTime"
+			],
+			[
+				"flow",
+				"flowLabel"
+			],
+			[
+				"win",
+				"winSize"
+			],
+			[
+				"param",
+				"paramDF"
+			],
+			[
+				"sigma",
+				"sigma_xy"
+			],
+			[
+				"par",
+				"paramModel"
+			],
+			[
+				"model",
+				"modelData"
+			],
+			[
+				"acc",
+				"accPlt2"
+			],
+			[
+				"pltX",
+				"plotXY"
+			],
+			[
+				"fixD",
+				"fixdat"
+			],
+			[
+				"su",
+				"subjDat"
+			],
+			[
+				"subj",
+				"subjDat"
+			],
+			[
+				"targ",
+				"targSideRel"
+			],
+			[
+				"x",
+				"xFix"
+			],
+			[
+				"tri",
+				"trialNum"
+			],
+			[
+				"geom",
+				"geom_density"
+			],
+			[
+				"fixd",
+				"fixdat"
+			],
+			[
+				"gg",
+				"ggplot"
+			],
+			[
+				"saccA",
+				"saccAmp"
+			],
+			[
+				"sam",
+				"sampling"
+			],
+			[
+				"sig",
+				"sigma_yy"
+			],
+			[
+				"s",
+				"sigma_yx"
+			],
+			[
+				"sigm",
+				"sigma_yy"
+			],
+			[
+				"get",
+				"getParamPoly"
+			],
+			[
+				"mde",
+				"modelData"
+			],
+			[
+				"mean",
+				"meanAmp"
+			],
+			[
+				"agg",
+				"aggData"
+			],
+			[
+				"accPl",
+				"accPlt"
+			],
+			[
+				"ste",
+				"stepFunPlt"
+			],
+			[
+				"sp",
+				"split_point_error"
+			],
+			[
+				"spl",
+				"split_point"
+			],
+			[
+				"step",
+				"stepFunResults"
+			],
+			[
+				"part",
+				"participant"
+			],
+			[
+				"opt",
+				"optSplit"
+			],
+			[
+				"swi",
+				"switchPoint"
+			],
+			[
+				"hoo",
+				"hooppos"
+			],
+			[
+				"scal",
+				"scale_y_continuous"
+			],
+			[
+				"scale",
+				"scale_x_continuous"
+			],
+			[
+				"hoop",
+				"hoopPositions"
+			],
+			[
+				"sw",
+				"switchPoint"
+			],
+			[
+				"best",
+				"bestPos"
+			],
+			[
+				"h",
+				"hooppos"
+			],
+			[
+				"pa",
+				"participant"
+			],
+			[
+				"human",
+				"humanDat"
+			],
+			[
+				"st",
+				"strategy"
+			],
+			[
+				"t",
+				"t_saccs"
+			],
+			[
+				"theme",
+				"theme_minimal"
+			],
+			[
+				"m",
+				"m"
+			],
+			[
+				"Ta",
+				"TargetPresent"
+			],
+			[
+				"y",
+				"yesno"
+			],
+			[
+				"r",
+				"response"
+			],
+			[
+				"da",
+				"datYesNo"
+			],
+			[
+				"ga",
+				"gazeCat"
+			],
+			[
+				"for",
+				"forwards"
+			],
+			[
+				"gaze",
+				"gazeCat"
+			],
+			[
+				"self",
+				"selfDat"
+			],
+			[
+				"cod",
+				"condition"
+			],
+			[
+				"pred",
+				"prediction"
+			],
+			[
+				"run",
+				"runConf"
+			],
+			[
+				"tria",
+				"trial_cut"
+			],
+			[
+				"tr",
+				"tr_set"
+			],
+			[
+				"sc",
+				"sc"
+			],
+			[
+				"rA",
+				"rAmp2B"
+			],
+			[
+				"Amp2B",
+				"Amp2B"
+			],
+			[
+				"Amp1B",
+				"Amp1B"
+			],
+			[
+				"amp",
+				"amp2b"
+			],
+			[
+				"col",
+				"col_stderr"
+			],
+			[
+				"conf",
+				"runConf"
+			],
+			[
+				"Am",
+				"Amp2B"
+			],
+			[
+				"AMp",
+				"Amp1B"
+			],
+			[
+				"in",
+				"install	install r package"
+			],
+			[
+				"list",
+				"listFits"
+			],
+			[
+				"li",
+				"listFits"
+			],
+			[
+				"bia",
+				"biasmodel"
+			],
+			[
+				"bias",
+				"biasParams"
+			],
+			[
+				"bas",
+				"biasmodel"
+			],
+			[
+				"cl",
+				"rtClick"
+			],
+			[
+				"calc",
+				"calcFlowDists"
+			],
+			[
+				"sn",
+				"snFitOverSpace"
+			],
+			[
+				"re",
+				"re-fit"
+			],
+			[
+				"cli",
+				"clickX"
+			],
+			[
+				"ob",
+				"obsNumber"
+			],
+			[
+				"clic",
+				"clickX"
+			],
+			[
+				"bes",
+				"bestPos"
+			],
+			[
+				"S",
+				"SubjectPosition"
+			],
+			[
+				"all",
+				"alldat"
+			],
+			[
+				"Yun",
+				"Yun2013SUN"
+			],
+			[
+				"nu",
+				"numeric"
+			],
+			[
+				"pol",
+				"polyCoefs"
+			],
+			[
+				"Ho",
+				"HoopPos"
+			],
+			[
+				"ha",
+				"half1"
+			],
+			[
+				"ag",
+				"agDat"
+			],
+			[
+				"gem",
+				"geom_smooth"
+			],
+			[
+				"LLH",
+				"LLHresults"
+			],
+			[
+				"accO",
+				"accOpt3"
+			],
+			[
+				"accP",
+				"accPickTwo3"
+			],
+			[
+				"accOp",
+				"accOpt3"
+			],
+			[
+				"ac",
+				"accPickOne2"
+			],
+			[
+				"pick",
+				"pickone"
+			],
+			[
+				"pro",
+				"probGivenD"
+			],
+			[
+				"LL",
+				"LLHresults"
+			],
+			[
+				"Omega",
+				"Omega_yy"
+			],
+			[
+				"al",
+				"alpha"
+			],
+			[
+				"alp",
+				"alpha-x2"
+			],
+			[
+				"log",
+				"logLik"
+			],
+			[
+				"Cla",
+				"Clarke-Tatler2014"
+			],
+			[
+				"sac",
+				"saccades"
+			],
+			[
+				"para",
+				"paramDF"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "saccadicBiases.tex",
+			"settings":
+			{
+				"buffer_size": 10543,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "literature.bib",
+			"settings":
+			{
+				"buffer_size": 18639,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Dataset",
+			"settings":
+			{
+				"buffer_size": 2628,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "BiasModelling",
+			"settings":
+			{
+				"buffer_size": 7416,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Methods",
+			"settings":
+			{
+				"buffer_size": 2995,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "UsingFlow.tex",
+			"settings":
+			{
+				"buffer_size": 3620,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/LaTeXTools/LaTeX.sublime-build",
+					""
+				],
+				[
+					"Packages/SublimeREPL/sublimerepl_build_system_hack.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/LaTeXTools/LaTeX.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "R",
+		"selected_items":
+		[
+			[
+				"R",
+				"SublimeREPL: R"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"TR",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"fold",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"r",
+				"SublimeREPL: R"
+			],
+			[
+				"ip",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"R ",
+				"SublimeREPL: R"
+			],
+			[
+				"p",
+				"SublimeREPL: Python"
+			],
+			[
+				"py",
+				"SublimeREPL: Python"
+			],
+			[
+				"Py",
+				"SublimeREPL: Python"
+			],
+			[
+				"i",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"conv",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"R python",
+				"SublimeREPL: Python"
+			],
+			[
+				"pyth",
+				"SublimeREPL: Python"
+			],
+			[
+				"repl",
+				"SublimeREPL: R"
+			],
+			[
+				"snippet read",
+				"Snippet: Read From File"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"rep",
+				"SublimeREPL: R"
+			],
+			[
+				"pref",
+				"Preferences: Key Bindings - User"
+			],
+			[
+				"repl R",
+				"SublimeREPL: R"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"lat",
+				"LaTeXTools: Reconfigure and migrate settings"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 656.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flow/plotPreCalcLLH.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flow/calcLklyhd.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/ECVP2015/ECVP2015abstract",
+		"/Users/s09ac3/Documents/HalfScreenPopOut/scripts/lookAtSaccDirConfInterw2graphs5.R",
+		"/Users/s09ac3/Documents/GIT-general-private/throwingForWarren/L3Session1.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flow/calcLklyhd_borji2015.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flow/calcFlowFromDataSet.R",
+		"/Users/s09ac3/Documents/GIT-general-private/throwingForWarren/analysePart2.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flow/flowDistFunctions.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flow/modelFlowAllDataset.R",
+		"/Users/s09ac3/Documents/SearchVisualise/analysis/pilotAnalysis.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/heatmaps/SaccadicFlowMaps/drawtransparentheatmaps.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/writeup/saccadicBiases.tex",
+		"/Users/s09ac3/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/RefExpVisualSearch/WheresWally/VisualSearchStudy.m",
+		"/Users/s09ac3/Dropbox/Alasdair-Amelia/optDecisionMaking/ClarkeHunt2015/ourVersion/ClarkeHunt_decisionMaking.tex",
+		"/Users/s09ac3/Dropbox/Alasdair-Amelia/optDecisionMaking/ClarkeHunt2015/analysis/exp2_throwing/analysePart2.R",
+		"/Users/s09ac3/Dropbox/Alasdair-Amelia/optDecisionMaking/ClarkeHunt2015/analysis/exp3_memory/analysisPart2.R",
+		"/Users/s09ac3/Dropbox/Alasdair-Amelia/optDecisionMaking/ClarkeHunt2015/analysis/exp1_detection/analysePart2ac.R",
+		"/Users/s09ac3/Desktop/HalfPopOutAnalysisToday/scripts/lookAtSaccDirConfInterw2graphs6.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flow/*REPL* [r]",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/heatmaps/SaccadicFlowMaps/FixTest.R",
+		"/Users/s09ac3/Dropbox/Alasdair-Amelia/optDecisionMaking/ClarkeHunt2015/analysis/exp4_reaching/tablechairFigure.R",
+		"/Users/s09ac3/Documents/2014ObjSalPaper/writeup/ObjSal.tex",
+		"/Users/s09ac3/Dropbox/Alasdair-Amelia/optDecisionMaking/ClarkeHunt2015/ourVersion/literature.bib",
+		"/Users/s09ac3/Documents/My Papers/2014 CentralBias/revised/manuscript.tex",
+		"/Users/s09ac3/Documents/My Papers/phd/PhD.tex",
+		"/Users/s09ac3/Documents/My Papers/2011 SymmetricSimilarities/Paper(v2)/SymmetricSimilarities-v2.tex",
+		"/Users/s09ac3/Desktop/HalfPopOutAnalysis/scripts/lookAtSaccDirConfInterw2graphs6.R",
+		"/Users/s09ac3/Desktop/HalfPopOutAnalysis/scripts/InitialAnalysisAC_AN5.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/coarse2fine/coarse2fineAllDataset.R",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/level3eyetrack/analysePart1ac.R",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/level3eyetrack/analysePart2ac.R",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/level3hulahoops/analysePart2.R",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/level3hulahoops/L3Session1.R",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/tablechairFigure.R",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/memory/analysisPart2.R",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/primingStudy/analysis.R",
+		"/Users/s09ac3/Documents/GIT-general-private/2014 StochasticSearch/onceMore/literature.bib",
+		"/Users/s09ac3/Documents/GIT-general-private/2014 StochasticSearch/onceMore/StochasticSearch.tex",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flowSkew/modelFlowAllDataset_test.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flowSkew/calcFlowDists.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/writeup/eyemovementawareness.tex",
+		"/Users/s09ac3/Documents/GIT-general-private/2014 StochasticSearch/onceMore/StochasticSearchOLD.tex",
+		"/Users/s09ac3/Documents/My Papers/2014 CentralBias/revised/abstract.tex",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/writeup/literature.bib",
+		"/Users/s09ac3/Documents/My Papers/2014 CentralBias/revised/introduction.tex",
+		"/Users/s09ac3/Documents/My Papers/2014 CentralBias/revised/LatexDefinitions.tex",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/leftVright/modelAllDataset.R",
+		"/usr/local/texlive/2013/texmf-dist/tex/latex/natbib/natbib.sty",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/primingStudy/results.csv",
+		"/Users/s09ac3/Documents/GIT-general-private/2014 StochasticSearch/dprimeCheck2AFCExp/analysis/dprimeCalcs.R",
+		"/Users/s09ac3/Documents/GIT-general-private/2014 StochasticSearch/targetDetExp/fitTargDetectionModel2.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/TwoStep/analysis/analyseTwoStep.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/Objects/analysis/c_analysis.R",
+		"/Users/s09ac3/Desktop/Joe/readClassifierOutput.R",
+		"/Users/s09ac3/Desktop/Joe/logistic/mnlr.R",
+		"/Users/s09ac3/Desktop/Joe/logistic/mnlr.pdf",
+		"/Users/s09ac3/Documents/array-study/frontiersPaper/wallyRE_2015.tex",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flowSkew/modelFlowAllDataset.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flow/testTransformBestGain.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flow/modelFlowEachDataset.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flow/calcFlowDists.R",
+		"/Users/s09ac3/Documents/My Papers/2009 Modelling Visual Search on a Rough Surface/Experiment TP only/Roughness/Results/AnalysisDataFromRoughnessExperiment.m",
+		"/Users/s09ac3/Documents/SaccadicBiases/data/Clarke2009/clarke2009Fixations.txt",
+		"/Users/s09ac3/Desktop/inspections anna/inspections.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/RefExpVisualSearch/WheresWally/analysis/scanRecog.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flow/modelFlow.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/Objects/Experiment/scripts/stimulifinal.txt",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/Objects/analysis/a_parse_asc_file.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/RefExpVisualSearch/WheresWally/analysis/clickXY.R",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/level3hulahoops/timecoursePart2.R",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/1stJulyDemo/analysePart2.R",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/1stJulyDemo/analysePart1.R",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/1stJulyDemo/throwing1_1.txt",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/1stJulyDemo/throwing1_2.txt",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/1stJulyDemo/throwing2_1",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/1stJulyDemo/throwing2_2.txt",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/1stJulyDemo/throwing3_1.txt",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/1stJulyDemo/throwing3_2.txt",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/1stJulyDemo/throwingData.txt",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/1stJulyDemo/analysePart1_detection.R",
+		"/Users/s09ac3/Desktop/opt_acc_pred/opt_acc.R",
+		"/Users/s09ac3/Desktop/opt_acc_pred/opt_acc",
+		"/Users/s09ac3/Desktop/Joe/featurePlots.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/RefExpVisualSearch/WheresWally/analysis/simpleReactionTimes.R",
+		"/Users/s09ac3/Documents/MOVS/analysis/targSearchRunsFeatureAnalysis.R",
+		"/Users/s09ac3/Documents/MOVS/results/movs_10.asc",
+		"/Users/s09ac3/Documents/MOVS/analysis/targSearchRuns.R",
+		"/Users/s09ac3/Documents/MOVS/analysis/lookAtResponseData.R",
+		"/Users/s09ac3/Documents/MOVS/analysis/targetPreviewAnalysis.R",
+		"/Users/s09ac3/Documents/MOVS/writeup/movs_notes.tex",
+		"/Users/s09ac3/Documents/MOVS/analysis/initProcessing/run3_mergeFixations.R",
+		"/Users/s09ac3/Documents/MOVS/analysis/initProcessing/run3_removeInvalidTrials.R",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/level3hulahoops/GetSlabsToTest.R",
+		"/Users/s09ac3/Documents/MOVS/analysis/initProcessing/run1_initProcEyeMovements.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/Oculotor exps/1_Original Experiment/analysis/compareSaccAmp.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/Oculotor exps/1_Original Experiment/analysis/initProc.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/TwoStep/scripts/recordEyeMovement.m",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/TwoStep/scripts/setUpParams.m",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/TwoStep/TwoStepExp.m",
+		"/Users/s09ac3/Documents/vip-langvis/test.txt",
+		"/Users/s09ac3/Documents/vip-langvis/sentences.txt",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/TwoStep/analysis/ParseMatFiles.m",
+		"/Users/s09ac3/Documents/GIT-general-private/optDecisionMaking/writeup/figs/summaries/tablechairFigure.R",
+		"/Users/s09ac3/Documents/MOVS/analysis/initProcessing/run0_getTrialOrder.m",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/Objects/analysis/b_assignFixToAOI.m",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/Objects/results/Mat Files/pre_processing_alex.m",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/RefExpVisualSearch/WheresWally/results/reWW-35.asc",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/Objects/results/objscn3.asc",
+		"/Users/s09ac3/Documents/MOVS/analysis/simpleAOIfixationAnalysis.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/TwoStep/analysis/typeOfSaccade.R",
+		"/Users/s09ac3/Documents/SaccadicBiases/scripts/flow/displayFlow.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/Objects/analysis/parse_asc_file.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/Objects/Experiment/ImgObjCondition.txt",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/Objects/analysis/fixations.csv",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/Objects/results/objscn99.asc",
+		"/Users/s09ac3/Documents/SymStructure/SOCmodel/plotResponses.R",
+		"/Users/s09ac3/Documents/SymStructure/PhaseCongStatistics/plotDiffLogVarPhaseCong.R",
+		"/Users/s09ac3/Documents/SymStructure/LocalNbrHoodClassifier/LearnDict100n3/plotVZresults.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/AttentionalCapture/analysis/compareSaccAmp.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/AttentionalCapture/experiment1.m",
+		"/Users/s09ac3/Desktop/testingANOVA/analysis.R",
+		"/Users/s09ac3/Desktop/testingANOVA/createDatasets.R",
+		"/Users/s09ac3/Documents/GIT-general-private/lvl3tr2/analysis.R",
+		"/Users/s09ac3/Desktop/SimulatedHemLineSegm3/scripts/InitialAnalysisAC.R",
+		"/Users/s09ac3/Desktop/SimulatedHemLineSegm3/scripts/InitialAnalysis3.R",
+		"/Users/s09ac3/Documents/EyeMovementAwareness/ECVP2015abstract"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"empir",
+			"lower",
+			"beanbagdat",
+			"fixs",
+			"trainON",
+			"participant",
+			"alldat",
+			"a",
+			", ",
+			"getDistDefintion",
+			"4.5",
+			"[][]",
+			"5cm",
+			"itemize",
+			"(n",
+			"’",
+			"morva",
+			"FIgure",
+			" δ ",
+			"˚",
+			"malon",
+			"oruc",
+			"kording",
+			"&",
+			"kibbe",
+			"kibb",
+			"xFix",
+			"sight",
+			"blind",
+			"flowParams",
+			"split_point_error",
+			"split_point",
+			"allDat",
+			"alldat",
+			"stepFunResults",
+			"part1",
+			"sacc",
+			"saccades",
+			"2015",
+			"n",
+			"ii",
+			"w",
+			"x2",
+			"sacc$",
+			"&",
+			"tatler2011",
+			"%",
+			"\\cite{",
+			"citep",
+			"becker",
+			"bridge",
+			".  ",
+			"  ",
+			"land",
+			"flowFigures",
+			"subfig",
+			"table",
+			"figure",
+			"cite",
+			"•",
+			"”",
+			"“",
+			"➢",
+			"%",
+			"’",
+			"&",
+			"datYesNo",
+			"dat2afc",
+			"pltSelf",
+			"expand",
+			"EXPAND",
+			"selfBoxplot",
+			"Self",
+			"self",
+			"Self",
+			"resuts",
+			"nFitOverSpace",
+			"ss",
+			"s",
+			"response",
+			"&",
+			"mydat",
+			"dist",
+			"half1",
+			"allDat2",
+			"1",
+			"2",
+			"person",
+			"pdat",
+			"fixs",
+			",91)",
+			", 91)",
+			"rep(",
+			"[d]",
+			"targ2_",
+			"di",
+			"zy2",
+			"x3",
+			"saccs",
+			"sacc",
+			"x2",
+			"sacc",
+			"x",
+			"unboundTransform",
+			"stFitOverSpace",
+			"Omega_",
+			"exp",
+			"log",
+			"sacc",
+			"round(coef(paramModel),2)",
+			"x",
+			"trItems",
+			"_",
+			"prec",
+			"acc",
+			"nn",
+			"nplot",
+			"nrow(dat)",
+			"rt",
+			"nut",
+			"scanLengths",
+			"3.4",
+			"4cm",
+			"X3",
+			"Y3.pdf}}",
+			"3c",
+			"2.5",
+			"1.65"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			" ",
+			"\\textcite{",
+			"parencite",
+			"x"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "saccadicBiases.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								373,
+								373
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "latex",
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "literature.bib",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 18639,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								177,
+								177
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "bibtex",
+							"syntax": "Packages/LaTeX/Bibtex.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Dataset",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2628,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "plain text",
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "BiasModelling",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7416,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								34
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "plain text",
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Methods",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2995,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								440
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "plain text",
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "UsingFlow.tex",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3620,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3131,
+								3131
+							]
+						],
+						"settings":
+						{
+							"WordCountShouldRun": true,
+							"WordCountSyntax": "plain text",
+							"syntax": "Packages/LaTeX/LaTeX.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 241.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "writeup.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"r",
+				"~/Documents/MOVS/analysis/lookAtResponseData.R"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"R ",
+				"~/ObjectSalience/ObjSal.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+		"max_columns": 2
+	}
+}

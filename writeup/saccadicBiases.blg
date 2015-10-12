@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: saccadicBiases.aux
 The style file: plainnat.bst
 Database file #1: literature.bib
-I was expecting an "="---line 165 of file literature.bib
+I was expecting an "="---line 190 of file literature.bib
  :   journal 
  :           ] {MIT tech report:  http://hdl.handle.net/1721.1/68590}
 I'm skipping whatever remains of this entry
@@ -26,47 +26,46 @@ Warning--I didn't find a database entry for "Parkhurst:2002vo"
 Warning--I didn't find a database entry for "Birmingham:2009hl"
 Warning--I didn't find a database entry for "Torralba:2006iq"
 Warning--I didn't find a database entry for "Ehinger:2009ji"
-Warning--I didn't find a database entry for "borji2015"
-Warning--I didn't find a database entry for ""
-You've used 10 entries,
+Warning--I didn't find a database entry for "nuthmann-matthias"
+You've used 14 entries,
             2773 wiz_defined-function locations,
-            702 strings with 7265 characters,
-and the built_in function-call counts, 5343 in all, are:
-= -- 488
-> -- 307
-< -- 5
-+ -- 103
-- -- 93
-* -- 456
-:= -- 803
-add.period$ -- 32
-call.type$ -- 10
-change.case$ -- 61
-chr.to.int$ -- 10
-cite$ -- 20
-duplicate$ -- 233
-empty$ -- 429
-format.name$ -- 107
-if$ -- 1125
+            721 strings with 7807 characters,
+and the built_in function-call counts, 7056 in all, are:
+= -- 634
+> -- 427
+< -- 6
++ -- 143
+- -- 129
+* -- 598
+:= -- 1078
+add.period$ -- 44
+call.type$ -- 14
+change.case$ -- 85
+chr.to.int$ -- 14
+cite$ -- 28
+duplicate$ -- 313
+empty$ -- 558
+format.name$ -- 149
+if$ -- 1475
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 10
-newline$ -- 59
-num.names$ -- 40
-pop$ -- 112
+missing$ -- 14
+newline$ -- 79
+num.names$ -- 56
+pop$ -- 156
 preamble$ -- 1
-purify$ -- 51
+purify$ -- 71
 quote$ -- 0
-skip$ -- 183
+skip$ -- 246
 stack$ -- 0
-substring$ -- 269
-swap$ -- 32
+substring$ -- 290
+swap$ -- 36
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 110
+type$ -- 154
 warning$ -- 0
-while$ -- 50
+while$ -- 64
 width$ -- 0
-write$ -- 140
+write$ -- 190
 (There was 1 error message)

@@ -125,7 +125,7 @@ plt = plt + scale_x_discrete(name='bias model', breaks=NULL)
 ggsave(paste('figs/llh_ALL.pdf', sep=''), width=12, height=8)
 
 
-write.csv(LLHresults, 'llhResults.txt', row.names=F)
+
 
 
 

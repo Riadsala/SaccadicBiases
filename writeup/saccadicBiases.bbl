@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{14}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -11,6 +11,12 @@ Matthew~F Asher, David~J Tolhurst, Tom Troscianko, and Iain~D Gilchrist.
 \newblock Regional effects of clutter on human target detection performance.
 \newblock \emph{Journal of vision}, 13\penalty0 (5):\penalty0 25:1--15, 2013.
 
+\bibitem[Borji and Itti(2015)]{borji2015}
+Ali Borji and Laurent Itti.
+\newblock Cat2000: A large scale fixation dataset for boosting saliency
+  research.
+\newblock \emph{arXiv preprint arXiv:1505.03581}, 2015.
+
 \bibitem[Clarke et~al.(2013)Clarke, Coco, and Keller]{clarke2013}
 Alasdair D.~F. Clarke, Moreno~I. Coco, and Frank Keller.
 \newblock The impact of attentional, linguistic, and visual features during
@@ -21,6 +27,16 @@ Alasdair D.~F. Clarke, Moreno~I. Coco, and Frank Keller.
 Alasdair~DF Clarke and Benjamin~W Tatler.
 \newblock Deriving an appropriate baseline for describing fixation behaviour.
 \newblock \emph{Vision research}, 102:\penalty0 41--51, 2014.
+
+\bibitem[Clarke et~al.(2009)Clarke, Chantler, and Green]{clarke2009}
+Alasdair~DF Clarke, Mike~J Chantler, and Patrick~R Green.
+\newblock Modeling visual search on a rough surface.
+\newblock \emph{Journal of Vision}, 9\penalty0 (4), 2009.
+
+\bibitem[Clarke et~al.(2015)Clarke, Green, Chantler, and Hunt]{clarke2015}
+Alasdair~DF Clarke, Patrick~R Green, Mike~J Chantler, and Amelia~R Hunt.
+\newblock Stochastic search.
+\newblock \emph{submitted}, 2015.
 
 \bibitem[Ehinger et~al.(2009)Ehinger, Hidalgo-Sotelo, Torralba, and
   Oliva]{ehinger2009}
@@ -34,6 +50,12 @@ Krista~A Ehinger, Barbara Hidalgo-Sotelo, Antonio Torralba, and Aude Oliva.
 Wolfgang Einh{\"a}user, Merrielle Spain, and Pietro Perona.
 \newblock Objects predict fixations better than early saliency.
 \newblock \emph{Journal of Vision}, 8\penalty0 (14):\penalty0 18: 1--26, 2008.
+
+\bibitem[Greene et~al.(2012)Greene, Liu, and Wolfe]{greene-wolfe2012}
+Michelle~R Greene, Tommy Liu, and Jeremy~M Wolfe.
+\newblock Reconsidering yarbus: A failure to predict observers’ task from eye
+  movement patterns.
+\newblock \emph{Vision research}, 62:\penalty0 1--8, 2012.
 
 \bibitem[Judd et~al.(2009)Judd, Ehinger, Durand, and Torralba]{judd2009}
 Tilke Judd, Krista Ehinger, Fr{\'e}do Durand, and Antonio Torralba.

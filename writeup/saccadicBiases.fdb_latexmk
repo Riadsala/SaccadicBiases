@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex saccadicBiases"] 1444296578 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1444296580
+["bibtex saccadicBiases"] 1444403358 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1444403395
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "literature.bib" 1433926417 18495 7cabca77b2bf28bccb08a7dd4ab39cb5 ""
-  "saccadicBiases.aux" 1444296579 7665 322495b062dcaa121a8758a36de42f18 ""
+  "literature.bib" 1444402506 19161 1359a6f3ad03226fc6bba4e1ce03b74b ""
+  "saccadicBiases.aux" 1444403394 8177 c9f27c81c287f2c188920877f5af6e6d ""
   "saccadicBiases.bcf" 0 -1 0 ""
   (generated)
-  "saccadicBiases.bcf"
   "saccadicBiases.blg"
+  "saccadicBiases.bcf"
   "saccadicBiases.bbl"
-["pdflatex"] 1444296579 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1444296580
+["pdflatex"] 1444403393 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1444403395
   "../scripts/flow/figs/llh_ALL.pdf" 1444139082 7094 afa51d5c0ab77f1eae9b38c452fadd60 ""
   "../scripts/flow/figs/llh_Borji.pdf" 1444122382 8821 14e50a68ebe1f9b1626e88a5e17b9f1a ""
   "../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf" 1443434877 129925 8db2a7eed00b2469f00f68144012a6db ""
@@ -45,6 +45,7 @@
   "/usr/local/texlive/2013/texmf-dist/tex/latex/base/article.cls" 1254151887 20571 b8bd218bf2e18b4f5817ee643cd9c515 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/base/fontenc.sty" 1254151887 4435 b97063eb2f20be499e7725926af85c55 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/base/ifthen.sty" 1254151887 5022 2ec7815b07dc68e65542e23a180bc839 ""
+  "/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd" 1254151887 2109 c400bd6c901edc4a09e4d53fcffd3b3c ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/base/size11.clo" 1254151887 9058 640f9c40a6d912e30839a669c8a999ec ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1cmtt.fd" 1254151887 2083 a6bdb02552dfa1602e8c6cc47e0ba8cf ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1enc.def" 1254151887 9172 67c33288b50eb57eab968f345e8befb0 ""
@@ -69,11 +70,15 @@
   "/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.sty" 1167176009 15188 91281c7ddbccfa54a8e0c3b56ab5aa72 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty" 1254151720 13146 3e38b06d6e7ca62ce1bdb63b0d6148a5 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty" 1169481954 55224 a43bab84e0ac5e6efcaf9a98bde73a94 ""
+  "BiasModelling" 1444403354 7442 8941a2a1ad092f8967624a8c3fdbb177 ""
+  "Dataset" 1444400085 2633 c5a4b7db0229e5225d26e97065281835 ""
+  "Methods" 1444403342 3688 da217ff04565f936e206e2ed7bd062ef ""
+  "UsingFlow.tex" 1444398663 3620 df8b42144d51dfe26a902074ba67ceb7 ""
   "figs/adjustedheatmaps.pdf" 1442843094 8037983 c0e60af0528b54d194f2441d6bea077f ""
-  "saccadicBiases.aux" 1444296579 7665 322495b062dcaa121a8758a36de42f18 ""
-  "saccadicBiases.bbl" 1444296579 3216 d47a5daeaab7d389d8d0a0681a6bc43c "bibtex saccadicBiases"
-  "saccadicBiases.tex" 1444296576 26255 ecf2000e0f27c42bbc3585cd33dd378e ""
+  "saccadicBiases.aux" 1444403394 8177 c9f27c81c287f2c188920877f5af6e6d ""
+  "saccadicBiases.bbl" 1444403358 4159 6bd5af866bb6936a78886eab8e35d8a9 "bibtex saccadicBiases"
+  "saccadicBiases.tex" 1444403393 10562 e7dd002e2042fac22321e1a440f168bd ""
   (generated)
-  "saccadicBiases.log"
   "saccadicBiases.pdf"
   "saccadicBiases.aux"
+  "saccadicBiases.log"
