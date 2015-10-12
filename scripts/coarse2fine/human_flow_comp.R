@@ -74,14 +74,12 @@ scnPathN = sacc$n[c(which(sacc$n==1)[2:length(which(sacc$n==1))]-1, length(sacc$
 nScanPaths = length(scnPathN)
 
 
-simSaccs = data.frame()
+flowSacc = data.frame()
 for (sp in 1:nScanPaths)
 {
-	simSaccs = rbind(simSaccs, generateScanPath(nFix=scnPathN[sp]))
+	flowSacc = rbind(flowSacc, generateScanPath(nFix=scnPathN[sp], flowModel="tN"))
 }
 
-simSaccs$amp = with(simSaccs, sqrt((x1-x2)^2+(y1-y2)^2))
-aggFlow = getAggStats(rbind(simSaccs, sacc))
 
 # generate some points from central bias
 mu = c(0,0)
@@ -95,21 +93,29 @@ z = rtmvt(
 		lower=c(-1,-aspect.ratio),
 		upper=c(1,aspect.ratio))
 
+
+
  
-simSaccs$obs = "flow"
+flowSacc$obs = "flow"
 sacc$obs = "human"
 
-pltDat = rbind(select(simSaccs, x2, y2, obs), select(sacc, x2, y2, obs),
+
+flowSacc$amp = with(flowSacc, sqrt((x1-x2)^2+(y1-y2)^2))
+aggFlow = getAggStats(rbind(flowSacc, sacc))
+
+
+pltDat = rbind(select(flowSacc, x2, y2, obs), select(sacc, x2, y2, obs),
 	data.frame(obs="central", x2=z[,1], y2=z[,2]))
 pltX = ggplot(pltDat, aes(x=x2, colour=obs))
 pltX = pltX + geom_density() + theme_bw()
-pltX = pltX + scale_x_continuous(name='x', breaks=c(-1, 0,1))
+pltX = pltX + scale_x_continuous(name='x position', breaks=c(-1, 0,1))
 pltX = pltX + scale_y_continuous(breaks=c(0.,0.25, 0.5, 0.75, 1))
 ggsave('figs/xFixComparison.pdf')
 pltY = ggplot(pltDat, aes(x=y2, colour=obs))
 pltY = pltY + geom_density() + theme_bw()
-pltY = pltY + scale_x_continuous(name='x', breaks=c(-.75, 0,0.75))
+pltY = pltY + scale_x_continuous(name='y position', breaks=c(-.75, 0,0.75))
 pltY = pltY + scale_y_continuous(breaks=c(0.0, 0.5, 1, 1.5))
+plyY = pltY + coord_flip()
 ggsave('figs/yFixComparison.pdf')
 rm(pltDat, pltX, pltY, z, mu, sigma)
 
@@ -123,7 +129,7 @@ plt = plt + scale_y_continuous(name="saccadic amplitude")
 ggsave('figs/lsaccAmpOverTimeFlow.pdf')
 
 
-ampDat = data.frame(obs=c(rep('human', nrow(sacc)), rep('flow', nrow(simSaccs))), amp=c(sacc$amp, simSaccs$amp))
-ampPlt = ggplot(ampDat, aes(x=amp, fill=obs)) + geom_density(alpha=0.5)
+ampDat = data.frame(obs=c(rep('human', nrow(sacc)), rep('flow', nrow(flowSacc))), amp=c(sacc$amp, flowSacc$amp))
+ampPlt = ggplot(ampDat, aes(x=amp, colour=obs)) + geom_density(alpha=0.5)
 ampPlt = ampPlt + theme_bw() + scale_x_continuous(name="saccadic amplitude")
 ggsave('figs/ampSaccComparison.pdf')
