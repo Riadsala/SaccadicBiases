@@ -98,22 +98,32 @@ generateScanPath <- function(nFix=10, flowModel='tN', init.fix = c(0,0), aspect.
 		x2=rep(NaN,nFix), 
 		y2=rep(NaN,nFix))
 
+
 	# extract polynomial coefs that describe how mu, sigma, etc vary with saccadic start point
 	flowParams = loadFlowParams(flowModel)
 	
 	# generate fixations
-	for (ii in 1:(nFix-1))
+	if (nFix>1)
 	{
-		# get distribution params for a saccade starting from this fixation
-		params = getDist(fixations[ii,], flowParams)
-		# sample next saccade
-		z = sampleSaccade(params)
-		fixations$x1[ii+1]  =z[1]
-		fixations$x2[ii]    =z[1]
-		fixations$y1[ii+1]  =z[2]
-		fixations$y2[ii]    =z[2]
-
+		for (ii in 1:(nFix-1))
+		{
+			# get distribution params for a saccade starting from this fixation
+			params = getDist(fixations[ii,], flowParams)
+			# sample next saccade
+			z = sampleSaccade(params)
+			fixations$x1[ii+1]  =z[1]
+			fixations$x2[ii]    =z[1]
+			fixations$y1[ii+1]  =z[2]
+			fixations$y2[ii]    =z[2]
+		}
 	}
+	ii = nFix
+	# get distribution params for a saccade starting from this fixation
+	params = getDist(fixations[ii,], flowParams)
+	# sample next saccade
+	z = sampleSaccade(params)
+	fixations$x2[ii]    =z[1]
+	fixations$y2[ii]    =z[2]
 	return(fixations)
 }
 
@@ -127,7 +137,7 @@ sampleSaccade <- function(params, flowModel='tN', aspect.ratio=0.75)
  
 	z = rtmvt(
 		n=1,
-		mean=,
+		mean=mu,
 		sigma=sigma,
 		lower=c(-1,-aspect.ratio),
 		upper=c(1,aspect.ratio))

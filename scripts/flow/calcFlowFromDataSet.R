@@ -4,6 +4,7 @@ calcFlowFromDataSet <- function(sacc, flowLabel, winSize, stepSize)
 sacc = filter(sacc, n>1)
 # remove fixations falling outside window
 sacc = filter(sacc, y1<0.75, y1>-0.75, y2<0.75, y2>-0.75)
+sacc = filter(sacc, x1<1, x1>-1, x2<1, x2>-1)
 	
 
 
