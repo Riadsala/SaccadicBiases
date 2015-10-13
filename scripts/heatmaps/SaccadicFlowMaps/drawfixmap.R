@@ -6,7 +6,9 @@ drawfixmap=function(x,
                     weights=1,
                     x_width=1024,
                     y_height=720,
-                    plot=F){
+                    plot=F,
+                    reshape=T,
+                    pix_per_degree=100){
 
 require(ggplot2)
 require(reshape2)
@@ -30,7 +32,7 @@ require(beepr)
 #data<-subset(data,scene=='Image1A.jpg')
 
 
-pix_per_degree=100
+
 
 ##generate random fixs
 #x=rnorm(100000,mean=0.5,sd=0.4)*x_width
@@ -55,7 +57,7 @@ blank_image<-matrix(0,y_height,x_width)
 
 #####MAKE GAUSSIAN
 source('makegaussian.R')
-gaussian=makegaussian(pix_per_degree = 100)
+gaussian=makegaussian(pix_per_degree = pix_per_degree)
 ####OK now go through fixations and add a gaussian at each
 
 
@@ -100,10 +102,13 @@ z<-blank_image
 ##use ggplot - looks nicer, takes longer!
 
 fixmap <- melt(z)
-fixmap$value2<-fixmap$value/max(fixmap$value)
+fixmap$value2<-fixmap$value/sum(fixmap$value)
 
 beep(2)
-return(fixmap)
+
+if (reshape == T){return(fixmap)}
+if (reshape == F){return(z)}
+
 
 # 
 #plottrue=plotx

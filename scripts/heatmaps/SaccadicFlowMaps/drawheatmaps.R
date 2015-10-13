@@ -9,6 +9,7 @@ library(plyr)
 
 ##this is a bit of a fudge as I don't know how to reference relative file sources
 #setwd("/Users/matthewstainer/Documents/Work/Papers/SaccadicBiases/scripts/heatmaps/SaccadicFlowMaps")
+
 getwd()->mattwd
 setwd("../../../../SaccadicBiases/scripts/flow/")
 source('flowDistFunctions.R')
@@ -29,8 +30,12 @@ data$duration<-data$fix.end-data$fix.start
 
 #imselect=c(3,4,5,6,7,9,12)
 imselect=1
+#imselect=1
+inc=11
 for (im in imselect){
 imnum=im
+inc=inc+1
+print(paste('running image ',inc,' of ',max(imselect),'',sep=''))
 data.sub<-subset(data,image==imnum)
 
 ##make duration weight
@@ -47,8 +52,8 @@ fixs=cbind(fixs.x,fixs.y)
 
 llh = dmvnorm(fixs, mu, sigma)
 
-centweights=c(max(llh,na.rm=T)-llh)
-
+centweights=c(1.078428-llh)
+data.sub$cent<-centweights
 
 saccades=data.frame(x1=data.sub$x[2:(nrow(data.sub))],
                     x2=data.sub$x[1:(nrow(data.sub)-1)],
@@ -56,10 +61,6 @@ saccades=data.frame(x1=data.sub$x[2:(nrow(data.sub))],
                     y2=data.sub$y[1:(nrow(data.sub)-1)])
 
 
-
-
-
-# 
  saccades$x1=((saccades$x1-1)/(x_width-1))*2-1
  saccades$x2=((saccades$x2-1)/(x_width-1))*2-1
  saccades$y1=(((saccades$y1-1)/(y_height-1))*2-1)*0.75
@@ -81,7 +82,6 @@ for (i in 1:nrow(saccades)){
 setwd(mattwd)
 
 data.sub$llh<-c(llh,NA)
-#data.sub$llh<-data.sub$llh + min(data.sub$llh,na.rm=T)
 
 
 refs<-which(data.sub$index==2)
@@ -92,11 +92,12 @@ datax=data.sub[-refs,]
 datax=datax[1:(nrow(datax)-1),]
 datax<-datax[datax$llh!='-Inf',]
 datax<-datax[datax$llh!='Inf',]
-
-datax$llh=datax$llh+min(datax$llh)
+# 
+datax$llh=datax$llh-1.013675
 datax$llh<-sqrt(datax$llh^2)
-datax$llh<-datax$llh-min(datax$llh)
-datax$llh<-datax$llh/max(datax$llh)
+datax$llh<-datax$llh-min(datax$llh,na.rm=T)
+datax$llh<-datax$llh/sum(datax$llh,na.rm=T)
+
 datax$llh
 
 
@@ -113,39 +114,39 @@ drawfixmap(x = datax$x,y=datax$y,weights=datax$llh,weight='dur',x_width=800,y_he
 
 
 ##make images
-library(png)
-library(grid)
-##read in image and convert to grayscale
-imagename=paste('Images/Image',im,'.png',sep='')
-mypng <- readPNG(imagename)
-mypng[,,1]->r
-mypng[,,2]->g
-mypng[,,3]->b
-r<-melt(r)
-g<-melt(g)
-b<-melt(b)
-r$newvals<-(r$value+g$value+b$value)/3
-r$Var1<-y_height-r$Var1
-
-g0<-ggplot(r, aes(x = Var2, y = Var1, fill = newvals)) +
-  labs(x = "x", y = "y", fill = "density") +
-  geom_raster() +
-  theme_bw(20)+
-  #ggtitle('Original image')+
-  
-  scale_fill_continuous(low='black',high='white')+
-  theme(legend.position='none')+
-  scale_x_continuous(expand = c(0, 0)) +
-  scale_y_continuous(expand = c(0, 0)) +
-  theme(axis.text=element_blank(),
-        axis.title=element_blank(),
-        axis.ticks=element_blank())
-
-savename=paste('Im', im, '_0.pdf',sep='')
-ggsave(filename = savename,plot = g0, path = 'Heatmaps',width = 8,height=6,unit='in')
-
-
-
+# library(png)
+# library(grid)
+# ##read in image and convert to grayscale
+# imagename=paste('Images/Image',im,'.png',sep='')
+# mypng <- readPNG(imagename)
+# mypng[,,1]->r
+# mypng[,,2]->g
+# mypng[,,3]->b
+# r<-melt(r)
+# g<-melt(g)
+# b<-melt(b)
+# r$newvals<-(r$value+g$value+b$value)/3
+# r$Var1<-y_height-r$Var1
+# 
+# g0<-ggplot(r, aes(x = Var2, y = Var1, fill = newvals)) +
+#   labs(x = "x", y = "y", fill = "density") +
+#   geom_raster() +
+#   theme_bw(20)+
+#   #ggtitle('Original image')+
+#   
+#   scale_fill_continuous(low='black',high='white')+
+#   theme(legend.position='none')+
+#   scale_x_continuous(expand = c(0, 0)) +
+#   scale_y_continuous(expand = c(0, 0)) +
+#   theme(axis.text=element_blank(),
+#         axis.title=element_blank(),
+#         axis.ticks=element_blank())
+# 
+# savename=paste('Im', im, '_0.pdf',sep='')
+# ggsave(filename = savename,plot = g0, path = 'Heatmaps',width = 8,height=6,unit='in')
+# 
+# 
+# 
 
 
 
@@ -176,7 +177,7 @@ g1<-ggplot(reg.map, aes(x = Var2, y = Var1, fill = value2)) +
         axis.title=element_blank(),
         axis.ticks=element_blank())
 
-savename=paste('Im', im, '_1.pdf',sep='')
+savename=paste('Im', im, '_1.png',sep='')
 ggsave(filename = savename,plot = g1, path = 'Heatmaps',width = 8,height=6,unit='in')
 
 g2<-ggplot(dur.map, aes(x = Var2, y = Var1, fill = value2)) +
@@ -198,6 +199,7 @@ g2<-ggplot(dur.map, aes(x = Var2, y = Var1, fill = value2)) +
 savename=paste('Im', im, '_2.pdf',sep='')
 ggsave(filename = savename,plot = g2, path = 'Heatmaps',width = 8,height=6,unit='in')
 
+cent.map$value2<-cent.map$value2+((-1)*min(cent.map$value2))
 g3<-ggplot(cent.map, aes(x = Var2, y = Var1, fill = value2)) +
   labs(x = "x", y = "y", fill = "density") +
   geom_raster() +
