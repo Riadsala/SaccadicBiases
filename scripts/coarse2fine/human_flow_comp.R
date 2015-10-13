@@ -7,9 +7,7 @@ library(mvtnorm)
 
 getAggStats <- function(data)
 {
-	
 	data = filter(data, n<maxFix+1)
-	
 
 	aggData = (data 
 		%>% group_by(n, obs) 
@@ -45,7 +43,7 @@ for (d in datasets)
 	names(dsacc) = c("n", "x1", "y1", "x2", "y2")
 	sacc = rbind(sacc, dsacc)
 }
-sacc$amp = with(sacc, sqrt((x1-x2)^2+(y1-y2)^2))	
+sacc$amp = with(sacc, sqrt((x1-x2)^2+(y1-y2)^2))/2
 maxFix = 35
 
 # aggHuman = getAggStats(sacc)
@@ -55,13 +53,6 @@ maxFix = 35
 # p = predict(m, new=data.frame(n=1:(maxFix)))+0.31
 
 
-plt = ggplot(aggHuman, aes(x=n, y=meanAmp)) + geom_point()
-plt = plt + geom_errorbar(aes(ymin=lower, ymax=upper))
-plt = plt + geom_path(aes(x=1:maxFix, y=p ))
-plt = plt + theme_bw()
-plt = plt + scale_x_discrete(name="saccade number", breaks=seq(0,maxFix,5))
-plt = plt + scale_y_continuous(name="saccadic amplitude")
-ggsave('/figs/saccAmpOverTime.pdf')
 
 ### now compare to sampling from flow!!!
 
@@ -79,57 +70,53 @@ for (sp in 1:nScanPaths)
 {
 	flowSacc = rbind(flowSacc, generateScanPath(nFix=scnPathN[sp], flowModel="tN"))
 }
-
+flowSacc$amp = with(flowSacc, sqrt((x1-x2)^2+(y1-y2)^2))/2
 
 # generate some points from central bias
-mu = c(0,0)
-sigma = array(c(0.3,0,0,0.12), dim=c(2,2))
-aspect.ratio = 0.75
 
-z = rtmvt(
-		n=nrow(sacc),
-		mean=mu,
-		sigma=sigma,
-		lower=c(-1,-aspect.ratio),
-		upper=c(1,aspect.ratio))
-
-
+centSacc = data.frame()
+for (sp in 1:nScanPaths)
+{
+	centSacc = rbind(centSacc, generateScanPath(nFix=scnPathN[sp], flowModel="central"))
+}
+centSacc$amp = with(centSacc, sqrt((x1-x2)^2+(y1-y2)^2))/2
 
  
 flowSacc$obs = "flow"
+centSacc$obs = "central"
 sacc$obs = "human"
 
 
-flowSacc$amp = with(flowSacc, sqrt((x1-x2)^2+(y1-y2)^2))
-aggFlow = getAggStats(rbind(flowSacc, sacc))
+
+aggFlow = getAggStats(rbind(flowSacc, sacc, centSacc))
 
 
-pltDat = rbind(select(flowSacc, x2, y2, obs), select(sacc, x2, y2, obs),
-	data.frame(obs="central", x2=z[,1], y2=z[,2]))
+pltDat = rbind(select(flowSacc, x2, y2, obs), select(sacc, x2, y2, obs),select(centSacc, x2, y2, obs))
 pltX = ggplot(pltDat, aes(x=x2, colour=obs))
-pltX = pltX + geom_density() + theme_bw()
+pltX = pltX + geom_density() + theme_bw() + theme(legend.position="none")
 pltX = pltX + scale_x_continuous(name='x position', breaks=c(-1, 0,1))
 pltX = pltX + scale_y_continuous(breaks=c(0.,0.25, 0.5, 0.75, 1))
-ggsave('figs/xFixComparison.pdf')
+ggsave('figs/xFixComparison.pdf', width=3, height=3)
 pltY = ggplot(pltDat, aes(x=y2, colour=obs))
-pltY = pltY + geom_density() + theme_bw()
+pltY = pltY + geom_density() + theme_bw()+ theme(legend.position="none")
 pltY = pltY + scale_x_continuous(name='y position', breaks=c(-.75, 0,0.75))
 pltY = pltY + scale_y_continuous(breaks=c(0.0, 0.5, 1, 1.5))
 plyY = pltY + coord_flip()
-ggsave('figs/yFixComparison.pdf')
+ggsave('figs/yFixComparison.pdf', width=3, height=3)
 rm(pltDat, pltX, pltY, z, mu, sigma)
 
 
 plt = ggplot(filter(aggFlow, n<31), aes(x=n, y=meanAmp, colour=obs)) 
 plt = plt + geom_point()
 plt = plt + geom_errorbar(aes(ymin=lower, ymax=upper))
-plt = plt + theme_bw()
+plt = plt + theme_bw()+ theme(legend.position="none")
 plt = plt + scale_x_discrete(name="saccade number", breaks=seq(0,maxFix,5))
 plt = plt + scale_y_continuous(name="saccadic amplitude")
-ggsave('figs/lsaccAmpOverTimeFlow.pdf')
+ggsave('figs/saccAmpOverTimeFlow.pdf', width=3, height=3)
 
 
-ampDat = data.frame(obs=c(rep('human', nrow(sacc)), rep('flow', nrow(flowSacc))), amp=c(sacc$amp, flowSacc$amp))
+ampDat = rbind(flowSacc, sacc, centSacc)
 ampPlt = ggplot(ampDat, aes(x=amp, colour=obs)) + geom_density(alpha=0.5)
 ampPlt = ampPlt + theme_bw() + scale_x_continuous(name="saccadic amplitude")
-ggsave('figs/ampSaccComparison.pdf')
+ampPlt = ampPlt + theme(legend.position="none")
+ggsave('figs/ampSaccComparison.pdf', width=3, height=3)

@@ -99,18 +99,35 @@ generateScanPath <- function(nFix=10, flowModel='tN', init.fix = c(0,0), aspect.
 		y2=rep(NaN,nFix))
 
 
-	# extract polynomial coefs that describe how mu, sigma, etc vary with saccadic start point
-	flowParams = loadFlowParams(flowModel)
-	
+	if (flowModel!='central')
+	{
+		# extract polynomial coefs that describe how mu, sigma, etc vary with saccadic start point
+		flowParams = loadFlowParams(flowModel)
+	}
 	# generate fixations
 	if (nFix>1)
 	{
 		for (ii in 1:(nFix-1))
 		{
-			# get distribution params for a saccade starting from this fixation
-			params = getDist(fixations[ii,], flowParams)
-			# sample next saccade
-			z = sampleSaccade(params)
+			if (flowModel=='central')
+			{
+				mu = c(0,0)
+				sigma = array(c(0.3,0,0,0.12), dim=c(2,2))
+				z = rtmvt(
+					n=1,
+					mean=mu,
+					sigma=sigma,
+					lower=c(-1,-aspect.ratio),
+					upper=c(1,aspect.ratio))
+
+			} else {
+
+				# get distribution params for a saccade starting from this fixation
+				params = getDist(fixations[ii,], flowParams)
+				# sample next saccade
+				z = sampleSaccade(params, flowModel)
+			}
+			
 			fixations$x1[ii+1]  =z[1]
 			fixations$x2[ii]    =z[1]
 			fixations$y1[ii+1]  =z[2]
@@ -118,10 +135,24 @@ generateScanPath <- function(nFix=10, flowModel='tN', init.fix = c(0,0), aspect.
 		}
 	}
 	ii = nFix
-	# get distribution params for a saccade starting from this fixation
-	params = getDist(fixations[ii,], flowParams)
-	# sample next saccade
-	z = sampleSaccade(params)
+	if (flowModel=='central')
+			{
+				mu = c(0,0)
+				sigma = array(c(0.3,0,0,0.12), dim=c(2,2))
+				z = rtmvt(
+					n=1,
+					mean=mu,
+					sigma=sigma,
+					lower=c(-1,-aspect.ratio),
+					upper=c(1,aspect.ratio))
+
+			} else {
+
+				# get distribution params for a saccade starting from this fixation
+				params = getDist(fixations[ii,], flowParams)
+				# sample next saccade
+				z = sampleSaccade(params, flowModel)
+			}
 	fixations$x2[ii]    =z[1]
 	fixations$y2[ii]    =z[2]
 	return(fixations)
@@ -129,20 +160,36 @@ generateScanPath <- function(nFix=10, flowModel='tN', init.fix = c(0,0), aspect.
 
 sampleSaccade <- function(params, flowModel='tN', aspect.ratio=0.75)
 {
-	mu = c(params['mu_x'], params['mu_y'])
-	# hack to make sigma diagonal >0
-	# params['sigma_xx'] = max(params['sigma_xx'],0.05)
-	# now back to normal
-	sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'], params['sigma_yy']), dim=c(2,2))
- 
-	z = rtmvt(
-		n=1,
-		mean=mu,
-		sigma=sigma,
-		lower=c(-1,-aspect.ratio),
-		upper=c(1,aspect.ratio))
+	if (flowModel=='tN')
+	{
+		mu = c(params['mu_x'], params['mu_y'])
+		# hack to make sigma diagonal >0
+		# params['sigma_xx'] = max(params['sigma_xx'],0.05)
+		# now back to normal
+		sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'], params['sigma_yy']), dim=c(2,2))
+	 
+		z = rtmvt(
+			n=1,
+			mean=mu,
+			sigma=sigma,
+			lower=c(-1,-aspect.ratio),
+			upper=c(1,aspect.ratio))
+	}
+	else if (flowModel=='central')
+	{
+		mu = c(0,0)
+		sigma = array(c(0.3,0,0,0.12), dim=c(2,2))
 
+		z = rtmvt(
+			n=1,
+			mean=mu,
+			sigma=sigma,
+			lower=c(-1,-aspect.ratio),
+			upper=c(1,aspect.ratio))
+	}
+	
 	return(z)
+	
 }
 
 #######
@@ -219,8 +266,7 @@ calcLLHofSaccade <- function(saccade, flowModel, flowParams, aspect.ratio=0.75)
 	# print(is.positive.definite(sigma))
 
  	if (flowModel == 'tN')
- 	{
-		
+ 	{	
 		llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2), 
 			mean=mu, sigma=sigma, 
 			lower=c(-1,-aspect.ratio),

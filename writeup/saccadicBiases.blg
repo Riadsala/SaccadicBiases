@@ -7,7 +7,6 @@ I was expecting an "="---line 190 of file literature.bib
  :   journal 
  :           ] {MIT tech report:  http://hdl.handle.net/1721.1/68590}
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Itti:2000te"
 Warning--I didn't find a database entry for "Baddeley:2006wq"
 Warning--I didn't find a database entry for "Yarbus:1967wd"
 Warning--I didn't find a database entry for "Buswell:1935tf"
@@ -26,46 +25,45 @@ Warning--I didn't find a database entry for "Parkhurst:2002vo"
 Warning--I didn't find a database entry for "Birmingham:2009hl"
 Warning--I didn't find a database entry for "Torralba:2006iq"
 Warning--I didn't find a database entry for "Ehinger:2009ji"
-Warning--I didn't find a database entry for "nuthmann-matthias"
-You've used 14 entries,
+You've used 15 entries,
             2773 wiz_defined-function locations,
-            721 strings with 7807 characters,
-and the built_in function-call counts, 7056 in all, are:
-= -- 634
-> -- 427
-< -- 6
-+ -- 143
-- -- 129
-* -- 598
-:= -- 1078
-add.period$ -- 44
-call.type$ -- 14
-change.case$ -- 85
-chr.to.int$ -- 14
-cite$ -- 28
-duplicate$ -- 313
-empty$ -- 558
-format.name$ -- 149
-if$ -- 1475
+            725 strings with 7912 characters,
+and the built_in function-call counts, 7530 in all, are:
+= -- 680
+> -- 448
+< -- 7
++ -- 150
+- -- 135
+* -- 637
+:= -- 1148
+add.period$ -- 47
+call.type$ -- 15
+change.case$ -- 90
+chr.to.int$ -- 15
+cite$ -- 30
+duplicate$ -- 333
+empty$ -- 600
+format.name$ -- 158
+if$ -- 1575
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 14
-newline$ -- 79
-num.names$ -- 56
-pop$ -- 156
+missing$ -- 15
+newline$ -- 84
+num.names$ -- 60
+pop$ -- 164
 preamble$ -- 1
-purify$ -- 71
+purify$ -- 75
 quote$ -- 0
-skip$ -- 246
+skip$ -- 262
 stack$ -- 0
-substring$ -- 290
-swap$ -- 36
+substring$ -- 323
+swap$ -- 37
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 154
+type$ -- 165
 warning$ -- 0
-while$ -- 64
+while$ -- 69
 width$ -- 0
-write$ -- 190
+write$ -- 203
 (There was 1 error message)
