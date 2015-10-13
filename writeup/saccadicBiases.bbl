@@ -1,9 +1,16 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{20}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Abrams et~al.(2014)Abrams, Bradley, and Geisler]{abrams2014}
+Jared Abrams, Chris Bradley, and Wilson~S Geisler.
+\newblock Fixation search in natural scenes: a new role for contrast
+  normalization.
+\newblock \emph{Journal of Vision}, 14\penalty0 (10):\penalty0 1445--1445,
+  2014.
 
 \bibitem[Asher et~al.(2013)Asher, Tolhurst, Troscianko, and
   Gilchrist]{asher2013}
@@ -16,6 +23,12 @@ Ali Borji and Laurent Itti.
 \newblock Cat2000: A large scale fixation dataset for boosting saliency
   research.
 \newblock \emph{arXiv preprint arXiv:1505.03581}, 2015.
+
+\bibitem[Clarke and Hunt(2015)]{clarke-hunt2015}
+Alasdair D.~F. Clarke and Amelia~R. Hunt.
+\newblock Failure of intuition when presented with a choice between investing
+  in a single goal or splitting resources between two goals.
+\newblock \emph{Psychological Science}, 2015.
 
 \bibitem[Clarke et~al.(2013)Clarke, Coco, and Keller]{clarke2013}
 Alasdair D.~F. Clarke, Moreno~I. Coco, and Frank Keller.
@@ -51,6 +64,12 @@ Wolfgang Einh{\"a}user, Merrielle Spain, and Pietro Perona.
 \newblock Objects predict fixations better than early saliency.
 \newblock \emph{Journal of Vision}, 8\penalty0 (14):\penalty0 18: 1--26, 2008.
 
+\bibitem[Foulsham and Kingstone(2010)]{Foulsham-kingstone2010}
+Tom Foulsham and Alan Kingstone.
+\newblock Asymmetries in the direction of saccades during perception of scenes
+  and fractals: Effects of image type and image features.
+\newblock \emph{Vision Research}, 50\penalty0 (8):\penalty0 779--795, 2010.
+
 \bibitem[Greene et~al.(2012)Greene, Liu, and Wolfe]{greene-wolfe2012}
 Michelle~R Greene, Tommy Liu, and Jeremy~M Wolfe.
 \newblock Reconsidering yarbus: A failure to predict observers’ task from eye
@@ -68,6 +87,18 @@ Tilke Judd, Krista Ehinger, Fr{\'e}do Durand, and Antonio Torralba.
 \newblock Learning to predict where humans look.
 \newblock In \emph{Computer Vision, 2009 IEEE 12th international conference
   on}, pages 2106--2113. IEEE, 2009.
+
+\bibitem[Morvan and Maloney(2012)]{morvan-maloney2012}
+Camille Morvan and Laurence~T. Maloney.
+\newblock Human visual search does not maximize the post-saccadic probability
+  of identifying targets.
+\newblock \emph{PLOS Computational Biology}, 8\penalty0 (2), 2012.
+
+\bibitem[Najemnik and Geisler(2008)]{najemnik-geisler2008}
+Jiri Najemnik and Wilson~S Geisler.
+\newblock Eye movement statistics in humans are consistent with an optimal
+  search strategy.
+\newblock \emph{Journal of Vision}, 8\penalty0 (3), 2008.
 
 \bibitem[Nuthmann and Matthias(2014)]{nuthmann-matthias2014}
 Antje Nuthmann and Ellen Matthias.

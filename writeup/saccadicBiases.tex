@@ -3,15 +3,12 @@
 %% HEADER
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[a4paper, twocolumn, oneside, 11pt]{article}
+\documentclass[a4paper, twocolumn, oneside, 10pt]{article}
 
+\usepackage{fourier}
 \usepackage[T1]{fontenc}
-\usepackage[english]{babel}
 
-%\usepackage[dvips]{graphics} %%graphics and normal LaTeX
-%\usepackage{amsmath}
-%\usepackage{amsthm}
-%\usepackage{amsfonts}
+
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{rotating}
@@ -28,23 +25,19 @@
 
 %%% The "real" document content comes below...
 
-\title{Saccadic Biases}
+\title{Saccadic Flow, some other biases, and how to use them}
 
-\author{Alasdair D. F. Clarke, Matthew J. Stainer}
+\author{Alasdair D. F. Clarke, Matthew J. Stainer, Ben Tatler \& Amelia R. Hunt}
 
 
 \begin{document}
 
+\twocolumn[
 \maketitle
-
-\begin{abstract}
-More bias modelling! Cause who can be bothered running actual experiments?
-
-	
-Much effort has been made to attempting to explain eye guidance during natural scene viewing [Tatler, 2009 VIS RES special issue]. However, underlying fixation placement appears to be a set of consistent biases in eye movement behaviour (e.g. see Clarke and Tatler, 2014). We present a model that parametrically accounts for where saccades are directed dependent on where in the bounds of a scene an observer is currently fixating. We find... [some very interesting stuff]. Given that much of our understanding in eye guidance is derived from how people look at pictures on a computer screen, it is important that we use these biases to form a frame upon which to build more sophisticated models of eye guidance that can account for the allocation of gaze above oculomotor behaviours that are independent of the image.
-
-\end{abstract}
-
+\begin{onecolabstract}
+Much effort has been made to attempting to explain eye guidance during natural scene viewing. However, underlying fixation placement appears to be a set of consistent biases in eye movement behaviour. We introduce the concept of saccadic flow, a generalisation of the central bias that described the image-independent conditional probability of making a saccade to $(x_{i+1},y_{i+1})$ given a fixation at $(x_i,y_i)$. We suggest that saccadic flow can be used as a useful prior when carrying out analysis into fixation locations, and can be used as a sub-module in models of eye movements during scene viewing. We demonstrate the utility of this idea by presenting bias-weighted gaze landscapes, and re-analyse some previous results to demonstrate how these ideas can be used. We also present a minor improvement to the central bias (based on using a multivariate truncated Gaussian), and investigate the leftwards and coarse-to-find biases. 
+\end{onecolabstract}
+]
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -53,19 +46,14 @@ Improve on last year's \citep{clarke-tatler2014} effort. More sophisticated bias
 
 The human fovea provides a small window of high acuity vision to the world, and as such the locations that we select to view in the world can tell us about how we seek the information necessary to complete the task we are currently undertaking. Current understanding of eye guidance would suggest that fixation locations are selected based on a combination of low-level factors (such as visual salience \citep{itti-koch2000} or orientation information \citep{Baddeley:2006wq}) and high-level factors \citep{Yarbus:1967wd, Buswell:1935tf, Land:2001uc}. However, there are also strong observable biases in eye movement including directional and amplitudinal [XXis that a word?XX] biases in saccades \citep{Tatler:2008uu, Tatler:2009vp, Foulsham:2010fj}, and a strong tendency to fixate near to the centre of images \citep{Tatler:2007hk,Canosa:2003tu}. Importantly, these biases are independent of the viewed content. If we are to gain a complete understanding of the factors that govern eye movement, we must therefore build models of eye guidance on the framework of these underlying biases.
 
-\subsection{The central bias}
-There is a strong tendency for people to look close to the centre of pictures \citep{Tatler:2007hk,Tatler:2005bw, Canosa:2003tu, Clarke:2014km} and movies \citep{Tseng:2009jn} presented on computer screens. There have been a number of suggestions for why this might be. One possibility for this effect is that the muscles of the eye show a preference for the `straight ahead' position, re-centring in the orbit of the eye socket for most comfortable contraction of the ocular muscles (an \emph{orbital reserve} \citep{Fuller:1996bx}). As most scene viewing experimental set-ups stabilise the head to increase the accuracy of the eye tracking, and most scenes are presented in the centre of computer displays, such a re-centring mechanism would mean that the centre of images would indeed be preferentially selected. However, when scenes are scrambled into four quadrants, fixations are located near to the centre of each quadrant, rather than the display centre, suggesting that the central tendency is responsive to the viewed content \citep{Stainer:2013ce} rather than the frames of the computer monitor.
+\subsection{Eye movement heuristics}
 
-Another possibility for the central fixation bias is that it represents a \emph{photographer bias} as photographers tend to frame their shots to include the most important content in the centre of the scene. However, when \cite{Tatler:2007hk} presented scenes where the image features were biased towards the edge of the scene, the central fixation bias persisted. The final possibility is that as a consequence of repeated exposure to photographer bias, the centre of scenes is simply where people are \emph{trained} to look at images \citep{Parkhurst:2002vo}. Such learning of spatial probabilities of targets can explain why, for example, people tend to look around the horizon when searching for people in natural scenes \citep{Birmingham:2009hl, Torralba:2006iq, Ehinger:2009ji}. Expecting to find interesting content in the centre of scenes might be a consequence of this hypothesis typically being correct.
+One of the most influential models of eye movements of the last decade is the optimal search model \citep{najemnik-geisler2008}. The authors argue that human saccadic behaviour during visual search is consistent with predictions made by an ideal observer, and while the original work only address search for a target (a Gabor patch) in $1/f$-noise, a version of the model has been developed to work with photographs of natural scenes \citep{abrams2014}.[I need to re-read this paper]. \ldots details!
 
-\cite{clarke-tatler2014} revealed that the characteristics of the central bias is remarkably consistent across a series of eye movement databases.... [obviously you are in a better place than me to talk about this paper!]
+While this modelling framework is attractive, there are several issues. \cite{morvan-maloney2012} demonstrated using simple stimuli that human observers are not able to rationally plan a single saccade to the optimal location in a 2AFC target detection task. This failure of optimality is particularly striking and robust, having recently been replicated and generalised using a larger sample of participants \citep{clarke-hunt2015}.
 
-\subsection{Behavioural biases in saccades}
-Further to the observed bias towards the centre of images, it has been revealed that there are underlying biases in the characteristics of eye movement (in terms of the directions and amplitudes of saccades). It has been noted by several researchers that when viewing scenes, there is a higher proportion of eye movements in horizontal directions than vertical or oblique movements (Brandt, 1945; Crundall \& Underwood, 1998; Gilchrist \& Harvey, 2006; Foulsham, Kingstone \& Underwood, 2008; Tatler \& Vincent, 2008). There are a number of possibilities as to why this tendency exists (as discussed in Foulsham, Kingstone, \& Underwood, 2008). Firstly, there may be a muscular or neural dominance making oculomotor movements in the horizontal directions more likely. Secondly, the characteristics of photographic images may mean that content tends to be arranged horizontally by the photographer. In such situations, horizontal saccades may be the most efficient way to inspect scenes. Thirdly, using horizontal saccades in scene viewing might be a learned strategy. Observers may learn the natural characteristics of scenes based on previous experience, and therefore demonstrate an increased likelihood of moving in the horizontal direction. A final alternative explanation is that this tendency is a consequence of the aspect ratio of visual displays, which normally allow for larger amplitude saccades in the horizontal than vertical directions (Wartburg et al., 2007).
+An attempt to reconcile these two findings has made by \cite{clarke2015}, who demonstrate that a stochastic search model based on a memoryless random walk can find a target in noise in a similar number of fixations to human observers. The key component of this model was the use of the empirical distribution of saccades: for each saccade the model randomly samples a saccade from distributions estimating the likelihood a human observer made a saccade from $(x_{i+1},y_{i+1})$ to $(x_i,y_i)$. In this paper, we re-implement and generalise this model, named \textit{saccadic flow}, and examine the extent to which it is useful as a prior for analysing eye movements made with more natural stimuli. This concept is illustrated in Figure \ref{fig:empiricalSaccadicFlow}.
 
-Foulsham and colleagues have presented two interesting exceptions to the horizontal direction bias. Foulsham, Kingstone and Underwood (2008) found that when the orientation of an image is rotated, the distribution of saccade directions follows the orientation of the scene. A second exception comes from using circular apertures (Foulsham \& Kingstone, 2010). When a scene is presented in a circular aperture, the tendency to make horizontal saccades disappears, being replaced by a tendency to make vertical saccades relative to the image orientation. However, when using fractal images (where images do not have an obvious orientation), observers tend make horizontal saccades, regardless of the angle that the image is presented.
-
-An example of saccadic flow is given in Figure \ref{fig:empiricalSaccadicFlow}. A model based on this idea has been developed by \cite{clarke2015}
 
 \begin{figure*}[htb]
 \centering
@@ -83,9 +71,22 @@ An example of saccadic flow is given in Figure \ref{fig:empiricalSaccadicFlow}. 
 \end{figure*}
 
 
+\subsection{The central bias}s
+There is a strong tendency for people to look close to the centre of pictures \citep{Tatler:2007hk,Tatler:2005bw, Canosa:2003tu, clarke_tatler2014} and movies \citep{Tseng:2009jn} presented on computer screens. There have been a number of suggestions for why this might be. One possibility for this effect is that the muscles of the eye show a preference for the `straight ahead' position, re-centring in the orbit of the eye socket for most comfortable contraction of the ocular muscles (an \emph{orbital reserve} \citep{Fuller:1996bx}). As most scene viewing experimental set-ups stabilise the head to increase the accuracy of the eye tracking, and most scenes are presented in the centre of computer displays, such a re-centring mechanism would mean that the centre of images would indeed be preferentially selected. However, when scenes are scrambled into four quadrants, fixations are located near to the centre of each quadrant, rather than the display centre, suggesting that the central tendency is responsive to the viewed content \citep{Stainer:2013ce} rather than the frames of the computer monitor.
+
+Another possibility for the central fixation bias is that it represents a \emph{photographer bias} as photographers tend to frame their shots to include the most important content in the centre of the scene. However, when \cite{Tatler:2007hk} presented scenes where the image features were biased towards the edge of the scene, the central fixation bias persisted. The final possibility is that as a consequence of repeated exposure to photographer bias, the centre of scenes is simply where people are \emph{trained} to look at images \citep{Parkhurst:2002vo}. Such learning of spatial probabilities of targets can explain why, for example, people tend to look around the horizon when searching for people in natural scenes \citep{Birmingham:2009hl, Torralba:2006iq, Ehinger:2009ji}. Expecting to find interesting content in the centre of scenes might be a consequence of this hypothesis typically being correct.
+
+\cite{clarke-tatler2014} revealed that the characteristics of the central bias is remarkably consistent across a series of eye movement databases.... [obviously you are in a better place than me to talk about this paper!]
+
+\subsection{Behavioural biases in saccades}
+Further to the observed bias towards the centre of images, it has been revealed that there are underlying biases in the characteristics of eye movement (in terms of the directions and amplitudes of saccades). It has been noted by several researchers that when viewing scenes, there is a higher proportion of eye movements in horizontal directions than vertical or oblique movements (Brandt, 1945; Crundall \& Underwood, 1998; Gilchrist \& Harvey, 2006; Foulsham, Kingstone \& Underwood, 2008; Tatler \& Vincent, 2008). There are a number of possibilities as to why this tendency exists (as discussed in Foulsham, Kingstone, \& Underwood, 2008). Firstly, there may be a muscular or neural dominance making oculomotor movements in the horizontal directions more likely. Secondly, the characteristics of photographic images may mean that content tends to be arranged horizontally by the photographer. In such situations, horizontal saccades may be the most efficient way to inspect scenes. Thirdly, using horizontal saccades in scene viewing might be a learned strategy. Observers may learn the natural characteristics of scenes based on previous experience, and therefore demonstrate an increased likelihood of moving in the horizontal direction. A final alternative explanation is that this tendency is a consequence of the aspect ratio of visual displays, which normally allow for larger amplitude saccades in the horizontal than vertical directions (Wartburg et al., 2007).
+
+Foulsham and colleagues have presented two interesting exceptions to the horizontal direction bias. Foulsham, Kingstone and Underwood (2008) found that when the orientation of an image is rotated, the distribution of saccade directions follows the orientation of the scene. A second exception comes from using circular apertures \citep{Foulsham-kingstone2010}. When a scene is presented in a circular aperture, the tendency to make horizontal saccades disappears, being replaced by a tendency to make vertical saccades relative to the image orientation. However, when using fractal images (where images do not have an obvious orientation), observers tend make horizontal saccades, regardless of the angle that the image is presented.
+
 \subsection{The present study}
 The aim of the present study is to characterise the underlying biases of eye movement with which to understand fixation selection in natural scenes. We extend the previous work by examining [XXstuffXX] and 
 
+An example of saccadic flow is given in Figure \ref{fig:empiricalSaccadicFlow}. A model based on this idea has been developed by \cite{clarke2015}
 
 
 \input{UsingFlow}

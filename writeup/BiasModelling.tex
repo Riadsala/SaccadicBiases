@@ -1,4 +1,4 @@
-\section{Biases}
+\section{Modelling Biases}
 \label{sec:biases}
 
 In this section, we will present an updated central bias distribution (using a truncated Gaussian); explore the degree of asymmetry in viewing positions, and describe the saccadic flow model. 
@@ -39,8 +39,8 @@ The downside of mirroring saccades in this manner is that our model of saccadic 
 We will model and discuss saccadic flow, coarse-to-fine, and left v right. 
 
 \subsection{Truncated Central Bias}
-
-First, we will update the central bias from \cite{clarke-tatler2014} and use a truncated normal distribution. This is very straight forward. Re-fitting a multivariante gaussian to the data reduces the deviance in the central bias model by $0.06\%$. Usng a truncated Gaussian gives us an improvement of $7.28\%$. We can round the truncated Gaussian model to $\mu = (0,0)$, $\sigma=(0.3, 0; 0, 0.12)$ with no loss of precision. 
+\label{sec:truncatedCentral}
+First, we will update the central bias from \cite{clarke-tatler2014} and use a truncated normal distribution. This is very straight forward. Re-fitting a multivariante gaussian to the data reduces the deviance in the central bias model by $4.4\%$. Usng a truncated Gaussian gives us an improvement of $12\%$. We can round the truncated Gaussian model to $\mu = (0,0)$, with a covariance matrix of $(0.32, 0; 0, 0.144)$ with no loss of precision. i.e. this is identical to \cite{clarke-tatler2014} except with $\sigma=0.32$ rather than $0.22$
 
 \subsection{Left v Right}
 \label{sec:LeftRight}

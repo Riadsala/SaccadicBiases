@@ -33,7 +33,7 @@ fixations = as.matrix(select(sacc, x2, y2))
 # Clarke-Tatler 2014
 mu = c(0,0)
 sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))
-llhCT2014 = (dmvnorm(x=fixations, mu, sigma))
+llhCT2014 = sum(dmvnorm(x=fixations, mu, sigma, log=T))
 
 # refit guassian
 mu = c(mean(fixations[,1]), mean(fixations[,2]))
@@ -65,10 +65,19 @@ llhTNrounded = sum(dtmvnorm(x=cbind(sacc$x2, sacc$y2),
 			lower=c(-1,-aspect.ratio),
 			upper=c(1,aspect.ratio), log=T))
 
-dat = data.frame(
-	bias = c('Clarke Tatler (2014)', 're-fit to training data', 'truncated gaussian', 'rounded'),
-	llhFrac = c(1, llhReFit/llhCT2014, llhTN/llhCT2014, llhTNrounded/llhCT2014))
 
+sigma = array(c(0.32,0,0,0.45*0.32), dim=c(2,2))
+
+llhTNrounded2 = sum(dtmvnorm(x=cbind(sacc$x2, sacc$y2), 
+			mean=mu, sigma=sigma, 
+			lower=c(-1,-aspect.ratio),
+			upper=c(1,aspect.ratio), log=T))
+
+dat = data.frame(
+	bias = c('Clarke Tatler (2014)', 're-fit to training data', 'truncated gaussian', 'rounded', 'rounded2'),
+	llhFrac = c(1, llhReFit/llhCT2014, llhTN/llhCT2014, llhTNrounded/llhCT2014, llhTNrounded2/llhCT2014))
+
+dat$llhFrac = dat$llhFrac * 100
 
 library(ggplot2)
 

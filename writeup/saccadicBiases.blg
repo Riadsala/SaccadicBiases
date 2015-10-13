@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: saccadicBiases.aux
 The style file: plainnat.bst
 Database file #1: literature.bib
-I was expecting an "="---line 190 of file literature.bib
+I was expecting an "="---line 217 of file literature.bib
  :   journal 
  :           ] {MIT tech report:  http://hdl.handle.net/1721.1/68590}
 I'm skipping whatever remains of this entry
@@ -17,7 +17,7 @@ Warning--I didn't find a database entry for "Foulsham:2010fj"
 Warning--I didn't find a database entry for "Tatler:2007hk"
 Warning--I didn't find a database entry for "Canosa:2003tu"
 Warning--I didn't find a database entry for "Tatler:2005bw"
-Warning--I didn't find a database entry for "Clarke:2014km"
+Warning--I didn't find a database entry for "clarke_tatler2014"
 Warning--I didn't find a database entry for "Tseng:2009jn"
 Warning--I didn't find a database entry for "Fuller:1996bx"
 Warning--I didn't find a database entry for "Stainer:2013ce"
@@ -25,45 +25,45 @@ Warning--I didn't find a database entry for "Parkhurst:2002vo"
 Warning--I didn't find a database entry for "Birmingham:2009hl"
 Warning--I didn't find a database entry for "Torralba:2006iq"
 Warning--I didn't find a database entry for "Ehinger:2009ji"
-You've used 15 entries,
+You've used 20 entries,
             2773 wiz_defined-function locations,
-            725 strings with 7912 characters,
-and the built_in function-call counts, 7530 in all, are:
-= -- 680
-> -- 448
-< -- 7
-+ -- 150
-- -- 135
-* -- 637
-:= -- 1148
-add.period$ -- 47
-call.type$ -- 15
-change.case$ -- 90
-chr.to.int$ -- 15
-cite$ -- 30
-duplicate$ -- 333
-empty$ -- 600
-format.name$ -- 158
-if$ -- 1575
+            747 strings with 8787 characters,
+and the built_in function-call counts, 9617 in all, are:
+= -- 870
+> -- 562
+< -- 11
++ -- 188
+- -- 168
+* -- 801
+:= -- 1471
+add.period$ -- 62
+call.type$ -- 20
+change.case$ -- 116
+chr.to.int$ -- 20
+cite$ -- 40
+duplicate$ -- 431
+empty$ -- 775
+format.name$ -- 204
+if$ -- 2011
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 15
-newline$ -- 84
-num.names$ -- 60
-pop$ -- 164
+missing$ -- 20
+newline$ -- 109
+num.names$ -- 80
+pop$ -- 208
 preamble$ -- 1
-purify$ -- 75
+purify$ -- 96
 quote$ -- 0
-skip$ -- 262
+skip$ -- 343
 stack$ -- 0
-substring$ -- 323
-swap$ -- 37
+substring$ -- 389
+swap$ -- 42
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 165
+type$ -- 220
 warning$ -- 0
-while$ -- 69
+while$ -- 88
 width$ -- 0
-write$ -- 203
+write$ -- 267
 (There was 1 error message)
