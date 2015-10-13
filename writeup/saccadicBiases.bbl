@@ -1,4 +1,4 @@
-\begin{thebibliography}{20}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -99,6 +99,13 @@ Jiri Najemnik and Wilson~S Geisler.
 \newblock Eye movement statistics in humans are consistent with an optimal
   search strategy.
 \newblock \emph{Journal of Vision}, 8\penalty0 (3), 2008.
+
+\bibitem[Nuthmann and Einh{\"a}user(2015)]{nuthmann2015}
+Antje Nuthmann and Wolfgang Einh{\"a}user.
+\newblock A new approach to modeling the influence of image features on
+  fixation selection in scenes.
+\newblock \emph{Annals of the New York Academy of Sciences}, 1339\penalty0
+  (1):\penalty0 82--96, 2015.
 
 \bibitem[Nuthmann and Matthias(2014)]{nuthmann-matthias2014}
 Antje Nuthmann and Ellen Matthias.

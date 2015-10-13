@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex saccadicBiases"] 1444747158 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1444747160
+["bibtex saccadicBiases"] 1444748199 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1444748201
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "literature.bib" 1444745790 20048 38f7a663b0fd7a4116be382078a45d0a ""
-  "saccadicBiases.aux" 1444747159 8625 c5382da1801f7d0b74583c77dcc1fa68 ""
+  "literature.bib" 1444747942 20676 33c950237aa8dc419d654d91a4d26f06 ""
+  "saccadicBiases.aux" 1444748200 8663 187ed1fa7adb8b6674a0181d40166719 ""
   "saccadicBiases.bcf" 0 -1 0 ""
   (generated)
   "saccadicBiases.bbl"
   "saccadicBiases.blg"
-["pdflatex"] 1444747159 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1444747160
+["pdflatex"] 1444748200 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1444748201
   "../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf" 1444735977 7694 8f759aa7ecf3b44ef9de8435af4dc518 ""
   "../scripts/coarse2fine/figs/xFixComparison.pdf" 1444735976 14702 2d0c1940c7fcae4e8178b5dbbf0dddc2 ""
   "../scripts/coarse2fine/figs/yFixComparison.pdf" 1444735976 14344 ee66b94d02fad98140fc40f84d5235e8 ""
@@ -79,14 +79,14 @@
   "/usr/local/texlive/2013/texmf-dist/tex/latex/subfigure/subfigure.sty" 1167176009 15188 91281c7ddbccfa54a8e0c3b56ab5aa72 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/tools/array.sty" 1254151720 13146 3e38b06d6e7ca62ce1bdb63b0d6148a5 ""
   "/usr/local/texlive/2013/texmf-dist/tex/latex/xcolor/xcolor.sty" 1169481954 55224 a43bab84e0ac5e6efcaf9a98bde73a94 ""
-  "BiasModelling.tex" 1444747154 11173 0e7f9bfc704ca4a0e02e846100711074 ""
+  "BiasModelling.tex" 1444747174 11173 0e7f9bfc704ca4a0e02e846100711074 ""
   "Dataset.tex" 1444660553 2633 f5c962a08b38212897bacaceec163e0a ""
-  "UsingFlow.tex" 1444744711 5004 e3fec51261a97845dbc22bc9ba5c6c10 ""
+  "UsingFlow.tex" 1444747174 5004 e3fec51261a97845dbc22bc9ba5c6c10 ""
   "figs/adjustedheatmaps.pdf" 1442843094 8037983 c0e60af0528b54d194f2441d6bea077f ""
-  "saccadicBiases.aux" 1444747159 8625 c5382da1801f7d0b74583c77dcc1fa68 ""
-  "saccadicBiases.bbl" 1444747159 5804 a1d82188cf48668754863af778913b05 "bibtex saccadicBiases"
-  "saccadicBiases.tex" 1444747157 12292 f420200f647be2910876fd870ecd8ab7 ""
+  "saccadicBiases.aux" 1444748200 8663 187ed1fa7adb8b6674a0181d40166719 ""
+  "saccadicBiases.bbl" 1444748200 6114 7e56e0806c08d2cc6c7d5428bdfe305a "bibtex saccadicBiases"
+  "saccadicBiases.tex" 1444748192 12065 66c3d7e4edbd203521b5508bc7e5e9c7 ""
   (generated)
   "saccadicBiases.pdf"
-  "saccadicBiases.log"
   "saccadicBiases.aux"
+  "saccadicBiases.log"

@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: saccadicBiases.aux
 The style file: plainnat.bst
 Database file #1: literature.bib
-I was expecting an "="---line 217 of file literature.bib
+I was expecting an "="---line 239 of file literature.bib
  :   journal 
  :           ] {MIT tech report:  http://hdl.handle.net/1721.1/68590}
 I'm skipping whatever remains of this entry
@@ -25,45 +25,45 @@ Warning--I didn't find a database entry for "Parkhurst:2002vo"
 Warning--I didn't find a database entry for "Birmingham:2009hl"
 Warning--I didn't find a database entry for "Torralba:2006iq"
 Warning--I didn't find a database entry for "Ehinger:2009ji"
-You've used 20 entries,
+You've used 21 entries,
             2773 wiz_defined-function locations,
-            747 strings with 8787 characters,
-and the built_in function-call counts, 9617 in all, are:
-= -- 870
-> -- 562
-< -- 11
-+ -- 188
-- -- 168
-* -- 801
-:= -- 1471
-add.period$ -- 62
-call.type$ -- 20
-change.case$ -- 116
-chr.to.int$ -- 20
-cite$ -- 40
-duplicate$ -- 431
-empty$ -- 775
-format.name$ -- 204
-if$ -- 2011
+            754 strings with 9004 characters,
+and the built_in function-call counts, 10055 in all, are:
+= -- 912
+> -- 583
+< -- 12
++ -- 195
+- -- 174
+* -- 836
+:= -- 1537
+add.period$ -- 65
+call.type$ -- 21
+change.case$ -- 121
+chr.to.int$ -- 21
+cite$ -- 42
+duplicate$ -- 451
+empty$ -- 813
+format.name$ -- 213
+if$ -- 2103
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 20
-newline$ -- 109
-num.names$ -- 80
-pop$ -- 208
+missing$ -- 21
+newline$ -- 114
+num.names$ -- 84
+pop$ -- 216
 preamble$ -- 1
-purify$ -- 96
+purify$ -- 100
 quote$ -- 0
-skip$ -- 343
+skip$ -- 359
 stack$ -- 0
-substring$ -- 389
-swap$ -- 42
+substring$ -- 410
+swap$ -- 43
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 220
+type$ -- 231
 warning$ -- 0
-while$ -- 88
+while$ -- 93
 width$ -- 0
-write$ -- 267
+write$ -- 280
 (There was 1 error message)
