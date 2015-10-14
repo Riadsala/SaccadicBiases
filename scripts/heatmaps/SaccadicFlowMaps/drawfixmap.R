@@ -79,7 +79,7 @@ for (f in 1:nrow(df)){
     
     if (weight=='cent'){    fix=(c(xpos,ypos)/(x_width)*2)-1
                             llh = dmvnorm(fix, mu, sigma)
-                            multip=1-llh}
+                            multip=1.078428-llh}
     
     if (weight=='dur'){ multip=weightx}
     

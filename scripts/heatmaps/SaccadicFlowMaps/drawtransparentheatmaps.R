@@ -4,14 +4,15 @@ library(mvtnorm)
 source('drawfixmap.R')
 source("http://peterhaschke.com/Code/multiplot.R")
 library(matrixcalc)
+library(plyr)
 x_width=800
 y_height=600
 
 
 ##this is a bit of a fudge as I don't know how to reference relative file sources
-setwd("/Users/matthewstainer/Documents/Work/Papers/SaccadicBiases/scripts/heatmaps/SaccadicFlowMaps")
+#setwd("/Users/matthewstainer/Documents/Work/Papers/SaccadicBiases/scripts/heatmaps/SaccadicFlowMaps")
 getwd()->mattwd
-setwd("/Users/matthewstainer/Documents/Work/Papers/SaccadicBiases/scripts/flow/")
+setwd("../../../../SaccadicBiases/scripts/flow/")
 source('flowDistFunctions.R')
 alwd<-getwd()
 setwd(mattwd)
@@ -48,7 +49,7 @@ for (im in imselect){
   
   llh = dmvnorm(fixs, mu, sigma)
   
-  centweights=c(max(llh,na.rm=T)-llh)
+  centweights=c(1.078428-llh)
   
   
   ##make saccadic bias weight
@@ -96,10 +97,12 @@ for (im in imselect){
   datax<-datax[datax$llh!='-Inf',]
   datax<-datax[datax$llh!='Inf',]
   
-  datax$llh=datax$llh+min(datax$llh)
+  datax$llh=datax$llh-1.013675
   datax$llh<-sqrt(datax$llh^2)
-  datax$llh<-datax$llh-min(datax$llh)
-  datax$llh<-datax$llh/max(datax$llh)
+  datax$llh<-datax$llh-min(datax$llh,na.rm=T)
+  datax$llh<-datax$llh/sum(datax$llh,na.rm=T)
+  
+  datax$llh
   #datax$llh
   
   
@@ -180,7 +183,7 @@ for (im in imselect){
           axis.title=element_blank(),
           axis.ticks=element_blank())
   
-  savename=paste('Im', im, '_1.pdf',sep='')
+  savename=paste('Im', im, '_1.png',sep='')
   ggsave(filename = savename,plot = g1, path = 'Heatmaps2',width = 8,height=6,unit='in')
   
   g2<-ggplot(dur.map, aes(x = Var2, y = Var1, fill = value2)) +
@@ -200,8 +203,10 @@ for (im in imselect){
           axis.title=element_blank(),
           axis.ticks=element_blank())
   
-  savename=paste('Im', im, '_2.pdf',sep='')
+  savename=paste('Im', im, '_2.png',sep='')
   ggsave(filename = savename,plot = g2, path = 'Heatmaps2',width = 8,height=6,unit='in')
+  
+
   
   g3<-ggplot(cent.map, aes(x = Var2, y = Var1, fill = value2)) +
     labs(x = "x", y = "y", fill = "density") +
@@ -220,7 +225,7 @@ for (im in imselect){
           axis.title=element_blank(),
           axis.ticks=element_blank())
   
-  savename=paste('Im', im, '_3.pdf',sep='')
+  savename=paste('Im', im, '_3.png',sep='')
   ggsave(filename = savename,plot = g3, path = 'Heatmaps2',width = 8,height=6,unit='in')
   
   
@@ -241,7 +246,7 @@ for (im in imselect){
           axis.title=element_blank(),
           axis.ticks=element_blank())
   
-  savename=paste('Im', im, '_4.pdf',sep='')
+  savename=paste('Im', im, '_4.png',sep='')
   ggsave(filename = savename,plot = g4, path = 'Heatmaps2',width = 8,height=6,unit='in')
   
 }
