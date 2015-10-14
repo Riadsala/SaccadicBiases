@@ -30,7 +30,7 @@ colnames(data)<-c('participant','image','index','fix.start','fix.end','x','y')
 data<-subset(data,index!=1)
 data$duration<-data$fix.end-data$fix.start
 
-#imselect=c(1,3,4,5,6,7,9,12)
+#imselect=c(12,13,10,38,53,50,70,73,78,79,89,100,92,93,99,88,54)
 imselect=3
 for (im in imselect){
   imnum=im
@@ -44,7 +44,7 @@ for (im in imselect){
   sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))
   
   fixs.x=(round(c(data.sub$x))/(x_width)*2)-1
-  fixs.y=(round(c(data.sub$y))/(x_width)*2)-1
+  fixs.y=((round(c(data.sub$y))/(y_height)*2)-1)*0.75
   fixs=cbind(fixs.x,fixs.y)
   
   llh = dmvnorm(fixs, mu, sigma)
@@ -96,6 +96,8 @@ for (im in imselect){
   datax=datax[1:(nrow(datax)-1),]
   datax<-datax[datax$llh!='-Inf',]
   datax<-datax[datax$llh!='Inf',]
+  datax<-datax[datax$llh!='NaN',]
+  #datax<-datax[datax$llh!='Inf',]
   
   datax$llh=datax$llh-1.013675
   datax$llh<-sqrt(datax$llh^2)
@@ -122,15 +124,17 @@ for (im in imselect){
   library(png)
   library(grid)
   ##read in image and convert to grayscale
-  imagename=paste('Images/Image',im,'.png',sep='')
+  imagename=paste('contrasts/image',im,'.png',sep='')
   mypng <- readPNG(imagename)
-#   mypng[,,1]->r
-#   mypng[,,2]->g
-#   mypng[,,3]->b
-#   r<-melt(r)
-#   g<-melt(g)
-#   b<-melt(b)
-#   r$newvals<-(r$value+g$value+b$value)/3
+#    mypng[,,1]->r
+#    mypng[,,2]->g
+#    mypng[,,3]->b
+#    r<-melt(r)
+#    g<-melt(g)
+#    b<-melt(b)
+#    r$newvals<-(r$value+g$value+b$value)/3
+#    
+   
 #   r$Var1<-y_height-r$Var1
 #   
 #   g0<-ggplot(r, aes(x = Var2, y = Var1, fill = newvals)) +

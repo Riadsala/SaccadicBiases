@@ -77,7 +77,11 @@ for (f in 1:nrow(df)){
     ymax=ypos+(pix_per_degree/2)-1
     
     
-    if (weight=='cent'){    fix=(c(xpos,ypos)/(x_width)*2)-1
+    if (weight=='cent'){    
+      xpos=(round(c(xpos))/(x_width)*2)-1
+      ypos=((round(c(ypos))/(y_height)*2)-1)*0.75
+                            fix=(c(xpos,ypos))
+    
                             llh = dmvnorm(fix, mu, sigma)
                             multip=1.078428-llh}
     
