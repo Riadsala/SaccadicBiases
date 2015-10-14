@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  13 OCT 2015 15:56
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  14 OCT 2015 11:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -541,40 +541,28 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 45.
 
 
-Package natbib Warning: Citation `Baddeley:2006wq' on page 1 undefined on input
- line 45.
+Package natbib Warning: Citation `baddeley2006' on page 1 undefined on input li
+ne 45.
 
 
-Package natbib Warning: Citation `Yarbus:1967wd' on page 1 undefined on input l
-ine 45.
+Package natbib Warning: Citation `land2001' on page 1 undefined on input line 4
+5.
 
 
-Package natbib Warning: Citation `Buswell:1935tf' on page 1 undefined on input 
-line 45.
+Package natbib Warning: Citation `tatler2008' on page 1 undefined on input line
+ 45.
 
 
-Package natbib Warning: Citation `Land:2001uc' on page 1 undefined on input lin
-e 45.
+Package natbib Warning: Citation `tatler2009' on page 1 undefined on input line
+ 45.
 
 
-Package natbib Warning: Citation `Tatler:2008uu' on page 1 undefined on input l
-ine 45.
+Package natbib Warning: Citation `foulsham2010' on page 1 undefined on input li
+ne 45.
 
 
-Package natbib Warning: Citation `Tatler:2009vp' on page 1 undefined on input l
-ine 45.
-
-
-Package natbib Warning: Citation `Foulsham:2010fj' on page 1 undefined on input
- line 45.
-
-
-Package natbib Warning: Citation `Tatler:2007hk' on page 1 undefined on input l
-ine 45.
-
-
-Package natbib Warning: Citation `Canosa:2003tu' on page 1 undefined on input l
-ine 45.
+Package natbib Warning: Citation `canosa2003' on page 1 undefined on input line
+ 45.
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 47.
@@ -604,7 +592,7 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.
-pdf used on input line 58.
+pdf used on input line 57.
 (pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf, id=2, 578.16pt x 43
@@ -613,7 +601,7 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.
-pdf used on input line 59.
+pdf used on input line 58.
 (pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf, id=3, 578.16pt x 43
@@ -622,7 +610,7 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.
-pdf used on input line 60.
+pdf used on input line 59.
 (pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf, id=4, 578.16pt x 43
@@ -631,7 +619,7 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.
-pdf used on input line 61.
+pdf used on input line 60.
 (pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf, id=5, 578.16pt x 43
@@ -640,7 +628,7 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.
-pdf used on input line 62.
+pdf used on input line 61.
 (pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf, id=6, 578.16pt x 43
@@ -649,7 +637,7 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.
-pdf used on input line 63.
+pdf used on input line 62.
 (pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf, id=7, 578.16pt x 43
@@ -658,7 +646,7 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.
-pdf used on input line 64.
+pdf used on input line 63.
 (pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf, id=8, 578.16pt x 43
@@ -667,7 +655,7 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.
-pdf used on input line 65.
+pdf used on input line 64.
 (pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf, id=9, 578.16pt x 43
@@ -676,36 +664,24 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.
-pdf used on input line 66.
+pdf used on input line 65.
 (pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
 
 
-Package natbib Warning: Citation `Tatler:2007hk' on page 1 undefined on input l
-ine 73.
-
-
-Package natbib Warning: Citation `Tatler:2005bw' on page 1 undefined on input l
-ine 73.
-
-
 Package natbib Warning: Citation `Canosa:2003tu' on page 1 undefined on input l
-ine 73.
+ine 71.
 
 
 Package natbib Warning: Citation `clarke_tatler2014' on page 1 undefined on inp
-ut line 73.
+ut line 71.
 
 
-Package natbib Warning: Citation `Tseng:2009jn' on page 1 undefined on input li
-ne 73.
+Package natbib Warning: Citation `fuller1996' on page 1 undefined on input line
+ 71.
 
 
-Package natbib Warning: Citation `Fuller:1996bx' on page 1 undefined on input l
-ine 73.
-
-
-Package natbib Warning: Citation `Stainer:2013ce' on page 1 undefined on input 
-line 73.
+Package natbib Warning: Citation `stainer2013' on page 1 undefined on input lin
+e 71.
 
 
 Underfull \vbox (badness 3803) has occurred while \output is active []
@@ -718,38 +694,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-Package natbib Warning: Citation `Tatler:2007hk' on page 2 undefined on input l
-ine 75.
-
-
 Package natbib Warning: Citation `Parkhurst:2002vo' on page 2 undefined on inpu
-t line 75.
+t line 73.
 
 
 Package natbib Warning: Citation `Birmingham:2009hl' on page 2 undefined on inp
-ut line 75.
+ut line 73.
 
 
-Package natbib Warning: Citation `Torralba:2006iq' on page 2 undefined on input
- line 75.
+Underfull \vbox (badness 5756) has occurred while \output is active []
 
-
-Package natbib Warning: Citation `Ehinger:2009ji' on page 2 undefined on input 
-line 75.
-
-[2 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf> <../scripts/heat
-maps/SaccadicFlowMaps/Figures/BBias_12.pdf> <../scripts/heatmaps/SaccadicFlowMa
-ps/Figures/BBias_13.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21
-.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf> <../scripts/h
-eatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf> <../scripts/heatmaps/SaccadicFlo
-wMaps/Figures/BBias_31.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias
-_32.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf>]
-(./UsingFlow.tex
+ [2 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf> <../scripts/hea
+tmaps/SaccadicFlowMaps/Figures/BBias_12.pdf> <../scripts/heatmaps/SaccadicFlowM
+aps/Figures/BBias_13.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_2
+1.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf> <../scripts/
+heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf> <../scripts/heatmaps/SaccadicFl
+owMaps/Figures/BBias_31.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBia
+s_32.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf>] (./Using
+Flow.tex
+[3]
 Underfull \hbox (badness 1242) in paragraph at lines 11--12
 []\T1/futs/m/n/10 One ad-van-tage of the [Clarke and Tatler, 2014]
  []
 
-[3] <figs/adjustedheatmaps.pdf, id=61, 1739.49875pt x 827.09pt>
+<figs/adjustedheatmaps.pdf, id=61, 1739.49875pt x 827.09pt>
 File: figs/adjustedheatmaps.pdf Graphic file (type pdf)
 
 <use figs/adjustedheatmaps.pdf>
@@ -905,21 +873,21 @@ Underfull \hbox (badness 1052) in paragraph at lines 132--133
 )
 
 Package natbib Warning: Citation `Stainer:2013ce' on page 7 undefined on input 
-line 96.
+line 94.
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 96--97
+Underfull \hbox (badness 1253) in paragraph at lines 94--95
 \T1/futs/m/n/10 prob-lems for re-lat-ing find-ings of eye guid-ance in
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 96--97
+Underfull \hbox (badness 2503) in paragraph at lines 94--95
 \T1/futs/m/n/10 head po-si-tion [FOUL-SHAM WALK-ING, CRISTINO
  []
 
 (./Dataset.tex) (./saccadicBiases.bbl [7] [8 <../scripts/flow/figs/llh_ALL.pdf>
 ] [9 <../scripts/flow/figs/llh_Borji.pdf>]
-Underfull \hbox (badness 1509) in paragraph at lines 111--114
+Underfull \hbox (badness 1509) in paragraph at lines 117--120
 []\T1/futs/m/n/9 Antje Nuth-mann and Ellen Matthias.  Time course of
  []
 
@@ -933,10 +901,10 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4330 strings out of 493315
- 62312 string characters out of 6137905
- 126459 words of memory out of 5000000
- 7605 multiletter control sequences out of 15000+600000
+ 4341 strings out of 493315
+ 62487 string characters out of 6137905
+ 126659 words of memory out of 5000000
+ 7616 multiletter control sequences out of 15000+600000
  96980 words of font info for 114 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  41i,11n,35p,1505b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -950,7 +918,7 @@ ve/2013/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2013
 /texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2013/texmf-
 dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2013/texmf-dist/f
 onts/type1/public/cm-super/sftt1000.pfb>
-Output written on saccadicBiases.pdf (10 pages, 9309440 bytes).
+Output written on saccadicBiases.pdf (10 pages, 9310502 bytes).
 PDF statistics:
  296 PDF objects out of 1000 (max. 8388607)
  180 compressed objects within 2 object streams

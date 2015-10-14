@@ -7,63 +7,58 @@ I was expecting an "="---line 239 of file literature.bib
  :   journal 
  :           ] {MIT tech report:  http://hdl.handle.net/1721.1/68590}
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Baddeley:2006wq"
-Warning--I didn't find a database entry for "Yarbus:1967wd"
-Warning--I didn't find a database entry for "Buswell:1935tf"
-Warning--I didn't find a database entry for "Land:2001uc"
-Warning--I didn't find a database entry for "Tatler:2008uu"
-Warning--I didn't find a database entry for "Tatler:2009vp"
-Warning--I didn't find a database entry for "Foulsham:2010fj"
-Warning--I didn't find a database entry for "Tatler:2007hk"
+Warning--I didn't find a database entry for "baddeley2006"
+Warning--I didn't find a database entry for "land2001"
+Warning--I didn't find a database entry for "tatler2008"
+Warning--I didn't find a database entry for "tatler2009"
+Warning--I didn't find a database entry for "foulsham2010"
+Warning--I didn't find a database entry for "canosa2003"
 Warning--I didn't find a database entry for "Canosa:2003tu"
-Warning--I didn't find a database entry for "Tatler:2005bw"
 Warning--I didn't find a database entry for "clarke_tatler2014"
-Warning--I didn't find a database entry for "Tseng:2009jn"
-Warning--I didn't find a database entry for "Fuller:1996bx"
-Warning--I didn't find a database entry for "Stainer:2013ce"
+Warning--I didn't find a database entry for "fuller1996"
+Warning--I didn't find a database entry for "stainer2013"
 Warning--I didn't find a database entry for "Parkhurst:2002vo"
 Warning--I didn't find a database entry for "Birmingham:2009hl"
-Warning--I didn't find a database entry for "Torralba:2006iq"
-Warning--I didn't find a database entry for "Ehinger:2009ji"
-You've used 21 entries,
+Warning--I didn't find a database entry for "Stainer:2013ce"
+You've used 25 entries,
             2773 wiz_defined-function locations,
-            754 strings with 9004 characters,
-and the built_in function-call counts, 10055 in all, are:
-= -- 912
-> -- 583
-< -- 12
-+ -- 195
-- -- 174
-* -- 836
-:= -- 1537
-add.period$ -- 65
-call.type$ -- 21
-change.case$ -- 121
-chr.to.int$ -- 21
-cite$ -- 42
-duplicate$ -- 451
-empty$ -- 813
-format.name$ -- 213
-if$ -- 2103
+            758 strings with 9403 characters,
+and the built_in function-call counts, 11791 in all, are:
+= -- 1054
+> -- 690
+< -- 14
++ -- 232
+- -- 207
+* -- 979
+:= -- 1813
+add.period$ -- 77
+call.type$ -- 25
+change.case$ -- 142
+chr.to.int$ -- 25
+cite$ -- 50
+duplicate$ -- 533
+empty$ -- 959
+format.name$ -- 250
+if$ -- 2460
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 21
-newline$ -- 114
-num.names$ -- 84
-pop$ -- 216
+missing$ -- 27
+newline$ -- 134
+num.names$ -- 100
+pop$ -- 266
 preamble$ -- 1
-purify$ -- 100
+purify$ -- 119
 quote$ -- 0
-skip$ -- 359
+skip$ -- 416
 stack$ -- 0
-substring$ -- 410
-swap$ -- 43
+substring$ -- 464
+swap$ -- 47
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 231
+type$ -- 265
 warning$ -- 0
-while$ -- 93
+while$ -- 108
 width$ -- 0
-write$ -- 280
+write$ -- 330
 (There was 1 error message)

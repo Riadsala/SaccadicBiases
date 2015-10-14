@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex saccadicBiases"] 1444748199 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1444748201
+["bibtex saccadicBiases"] 1444818106 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1444818107
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "literature.bib" 1444747942 20676 33c950237aa8dc419d654d91a4d26f06 ""
-  "saccadicBiases.aux" 1444748200 8663 187ed1fa7adb8b6674a0181d40166719 ""
+  "saccadicBiases.aux" 1444818107 8898 015b3b1746e2a38e7dd6edec43e77787 ""
   "saccadicBiases.bcf" 0 -1 0 ""
   (generated)
-  "saccadicBiases.bbl"
   "saccadicBiases.blg"
-["pdflatex"] 1444748200 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1444748201
+  "saccadicBiases.bbl"
+["pdflatex"] 1444818106 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1444818107
   "../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf" 1444735977 7694 8f759aa7ecf3b44ef9de8435af4dc518 ""
   "../scripts/coarse2fine/figs/xFixComparison.pdf" 1444735976 14702 2d0c1940c7fcae4e8178b5dbbf0dddc2 ""
   "../scripts/coarse2fine/figs/yFixComparison.pdf" 1444735976 14344 ee66b94d02fad98140fc40f84d5235e8 ""
@@ -83,9 +83,9 @@
   "Dataset.tex" 1444660553 2633 f5c962a08b38212897bacaceec163e0a ""
   "UsingFlow.tex" 1444747174 5004 e3fec51261a97845dbc22bc9ba5c6c10 ""
   "figs/adjustedheatmaps.pdf" 1442843094 8037983 c0e60af0528b54d194f2441d6bea077f ""
-  "saccadicBiases.aux" 1444748200 8663 187ed1fa7adb8b6674a0181d40166719 ""
-  "saccadicBiases.bbl" 1444748200 6114 7e56e0806c08d2cc6c7d5428bdfe305a "bibtex saccadicBiases"
-  "saccadicBiases.tex" 1444748192 12065 66c3d7e4edbd203521b5508bc7e5e9c7 ""
+  "saccadicBiases.aux" 1444818107 8898 015b3b1746e2a38e7dd6edec43e77787 ""
+  "saccadicBiases.bbl" 1444818106 7143 e46465245f6199c1e6a66b7a95c80fe1 "bibtex saccadicBiases"
+  "saccadicBiases.tex" 1444818104 12013 cd961bbc75b176762995f7c5f5cb1ec1 ""
   (generated)
   "saccadicBiases.pdf"
   "saccadicBiases.aux"
