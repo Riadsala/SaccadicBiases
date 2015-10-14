@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  14 OCT 2015 11:21
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2014.4.4)  14 OCT 2015 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -392,50 +392,50 @@ Package: setspace 2011/12/19 v6.7a set line spacing
 (./saccadicBiases.aux)
 \openout1 = `saccadicBiases.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 33.
-LaTeX Font Info:    Try loading font information for FML+futm on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 32.
+LaTeX Font Info:    Try loading font information for FML+futm on input line 32.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 33.
-LaTeX Font Info:    Try loading font information for FMS+futm on input line 33.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for FMS/futm/m/n on input line 32.
+LaTeX Font Info:    Try loading font information for FMS+futm on input line 32.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/fourier/fmsfutm.fd
 File: fmsfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FMS/futm.
 )
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 33.
-LaTeX Font Info:    Try loading font information for FMX+futm on input line 33.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 32.
+LaTeX Font Info:    Try loading font information for FMX+futm on input line 32.
 
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 33.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 32.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Try loading font information for T1+futs on input line 33.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Try loading font information for T1+futs on input line 32.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/fourier/t1futs.fd
 File: t1futs.fd 2004/03/02 Fontinst v1.926 font definitions for T1/futs.
@@ -497,44 +497,44 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Try loading font information for FML+futmi on input line 40
+LaTeX Font Info:    Try loading font information for FML+futmi on input line 39
 .
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/fourier/fmlfutmi.fd
 File: fmlfutmi.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futmi.
 )
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 40.
+(Font)              scaled to size 11.03998pt on input line 39.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 40.
+(Font)              scaled to size 8.27998pt on input line 39.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 40.
+(Font)              scaled to size 6.43999pt on input line 39.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 40.
+(Font)              scaled to size 11.03998pt on input line 39.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 40.
+(Font)              scaled to size 8.27998pt on input line 39.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 40.
-LaTeX Font Info:    Try loading font information for U+msa on input line 40.
+(Font)              scaled to size 6.43999pt on input line 39.
+LaTeX Font Info:    Try loading font information for U+msa on input line 39.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 40.
+LaTeX Font Info:    Try loading font information for U+msb on input line 39.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <9> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 40.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 39.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 40.
+(Font)              scaled to size 6.99199pt on input line 39.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 40.
+(Font)              scaled to size 5.51999pt on input line 39.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.99199pt on input line 40.
+(Font)              scaled to size 6.99199pt on input line 39.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 5.51999pt on input line 40.
+(Font)              scaled to size 5.51999pt on input line 39.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 42.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
@@ -565,23 +565,23 @@ Package natbib Warning: Citation `canosa2003' on page 1 undefined on input line
  45.
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 47.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 48.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 49.
+(Font)              scaled to size 9.19998pt on input line 51.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 9.19998pt on input line 49.
+(Font)              scaled to size 9.19998pt on input line 51.
 
-Underfull \hbox (badness 2351) in paragraph at lines 51--52
+Underfull \hbox (badness 2351) in paragraph at lines 53--54
 \T1/futs/m/n/10 are sev-eral is-sues. Mor-van and Mal-oney [2012]
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 53--54
+Underfull \hbox (badness 1057) in paragraph at lines 55--56
 []\T1/futs/m/n/10 An at-tempt to rec-on-cile these two find-ings has
  []
 
 
-Underfull \hbox (badness 2080) in paragraph at lines 53--54
+Underfull \hbox (badness 2080) in paragraph at lines 55--56
 \T1/futs/m/n/10 who demon-strate that a stochas-tic search model
  []
 
@@ -592,8 +592,8 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.
-pdf used on input line 57.
-(pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
+pdf used on input line 59.
+(pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf, id=2, 578.16pt x 43
 3.62pt>
@@ -601,8 +601,8 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.
-pdf used on input line 58.
-(pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
+pdf used on input line 60.
+(pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf, id=3, 578.16pt x 43
 3.62pt>
@@ -610,8 +610,8 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.
-pdf used on input line 59.
-(pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
+pdf used on input line 61.
+(pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf, id=4, 578.16pt x 43
 3.62pt>
@@ -619,8 +619,8 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.
-pdf used on input line 60.
-(pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
+pdf used on input line 62.
+(pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf, id=5, 578.16pt x 43
 3.62pt>
@@ -628,8 +628,8 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.
-pdf used on input line 61.
-(pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
+pdf used on input line 63.
+(pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf, id=6, 578.16pt x 43
 3.62pt>
@@ -637,8 +637,8 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.
-pdf used on input line 62.
-(pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
+pdf used on input line 64.
+(pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf, id=7, 578.16pt x 43
 3.62pt>
@@ -646,8 +646,8 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.
-pdf used on input line 63.
-(pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
+pdf used on input line 65.
+(pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf, id=8, 578.16pt x 43
 3.62pt>
@@ -655,8 +655,8 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.
-pdf used on input line 64.
-(pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
+pdf used on input line 66.
+(pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf, id=9, 578.16pt x 43
 3.62pt>
@@ -664,24 +664,24 @@ File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.
-pdf used on input line 65.
-(pdftex.def)             Requested size: 128.0374pt x 96.02525pt.
+pdf used on input line 67.
+(pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
 
 Package natbib Warning: Citation `Canosa:2003tu' on page 1 undefined on input l
-ine 71.
+ine 76.
 
 
 Package natbib Warning: Citation `clarke_tatler2014' on page 1 undefined on inp
-ut line 71.
+ut line 76.
 
 
 Package natbib Warning: Citation `fuller1996' on page 1 undefined on input line
- 71.
+ 76.
 
 
 Package natbib Warning: Citation `stainer2013' on page 1 undefined on input lin
-e 71.
+e 76.
 
 
 Underfull \vbox (badness 3803) has occurred while \output is active []
@@ -690,19 +690,19 @@ Underfull \vbox (badness 3803) has occurred while \output is active []
 
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1348) has occurred while \output is active []
 
 
 
 Package natbib Warning: Citation `Parkhurst:2002vo' on page 2 undefined on inpu
-t line 73.
+t line 78.
 
 
-Package natbib Warning: Citation `Birmingham:2009hl' on page 2 undefined on inp
-ut line 73.
+Package natbib Warning: Citation `birmingham2009' on page 2 undefined on input 
+line 78.
 
 
-Underfull \vbox (badness 5756) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf> <../scripts/hea
 tmaps/SaccadicFlowMaps/Figures/BBias_12.pdf> <../scripts/heatmaps/SaccadicFlowM
@@ -710,9 +710,25 @@ aps/Figures/BBias_13.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_2
 1.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf> <../scripts/
 heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf> <../scripts/heatmaps/SaccadicFl
 owMaps/Figures/BBias_31.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBia
-s_32.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf>] (./Using
-Flow.tex
-[3]
+s_32.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf>]
+
+Package natbib Warning: Citation `brandt1945' on page 3 undefined on input line
+ 86.
+
+
+Package natbib Warning: Citation `crundeall-underwood1998' on page 3 undefined 
+on input line 86.
+
+
+Package natbib Warning: Citation `wartburg2007' on page 3 undefined on input li
+ne 86.
+
+
+Underfull \hbox (badness 3989) in paragraph at lines 98--99
+\T1/futs/m/n/10 2015, Nuth-mann and Matthias, 2014, Os-sandón,
+ []
+
+(./UsingFlow.tex [3]
 Underfull \hbox (badness 1242) in paragraph at lines 11--12
 []\T1/futs/m/n/10 One ad-van-tage of the [Clarke and Tatler, 2014]
  []
@@ -723,6 +739,9 @@ File: figs/adjustedheatmaps.pdf Graphic file (type pdf)
 <use figs/adjustedheatmaps.pdf>
 Package pdftex.def Info: figs/adjustedheatmaps.pdf used on input line 14.
 (pdftex.def)             Requested size: 452.0pt x 214.91211pt.
+
+Underfull \vbox (badness 1975) has occurred while \output is active []
+
 
 Underfull \hbox (badness 3229) in paragraph at lines 29--29
 []\T1/futs/b/n/12 Comparison be-tween syn-thetic and
@@ -766,13 +785,10 @@ Underfull \hbox (badness 3713) in paragraph at lines 16--17
 \T1/futs/m/n/10 We will uses a num-ber of pre-vi-ously pub-lished
  []
 
-[4 <../scripts/coarse2fine/figs/xFixComparison.pdf> <../scripts/coarse2fine/fig
-s/yFixComparison.pdf> <../scripts/coarse2fine/figs/ampSaccComparison.pdf> <../s
-cripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf>]
+[4]
 LaTeX Font Info:    Try loading font information for TS1+futs on input line 20.
 
-
-(/usr/local/texlive/2013/texmf-dist/tex/latex/fourier/ts1futs.fd
+ (/usr/local/texlive/2013/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
@@ -800,7 +816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--25
  []
 
 [5 <./figs/adjustedheatmaps.pdf>]
-<../scripts/leftVright/graphs/leftrightbias.pdf, id=206, 289.08pt x 289.08pt>
+<../scripts/leftVright/graphs/leftrightbias.pdf, id=184, 289.08pt x 289.08pt>
 File: ../scripts/leftVright/graphs/leftrightbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/leftrightbias.pdf>
@@ -808,7 +824,7 @@ Package pdftex.def Info: ../scripts/leftVright/graphs/leftrightbias.pdf used on
  input line 52.
 (pdftex.def)             Requested size: 102.43008pt x 102.42783pt.
 
-<../scripts/leftVright/graphs/updownbias.pdf, id=207, 289.08pt x 289.08pt>
+<../scripts/leftVright/graphs/updownbias.pdf, id=185, 289.08pt x 289.08pt>
 File: ../scripts/leftVright/graphs/updownbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/updownbias.pdf>
@@ -816,7 +832,7 @@ Package pdftex.def Info: ../scripts/leftVright/graphs/updownbias.pdf used on in
 put line 53.
 (pdftex.def)             Requested size: 102.43008pt x 102.42783pt.
 
-<../scripts/leftVright/graphs/devRatio.pdf, id=208, 216.81pt x 216.81pt>
+<../scripts/leftVright/graphs/devRatio.pdf, id=186, 216.81pt x 216.81pt>
 File: ../scripts/leftVright/graphs/devRatio.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/devRatio.pdf>
@@ -824,7 +840,7 @@ Package pdftex.def Info: ../scripts/leftVright/graphs/devRatio.pdf used on inpu
 t line 62.
 (pdftex.def)             Requested size: 116.65646pt x 116.65881pt.
 
-<../scripts/leftVright/graphs/datasetComp.pdf, id=209, 433.62pt x 216.81pt>
+<../scripts/leftVright/graphs/datasetComp.pdf, id=187, 433.62pt x 216.81pt>
 File: ../scripts/leftVright/graphs/datasetComp.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/datasetComp.pdf>
@@ -836,58 +852,77 @@ Overfull \hbox (12.3125pt too wide) in paragraph at lines 62--64
  [] 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 78.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 79.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-) [6 <../scripts/leftVright/graphs/leftrightbias.pdf> <../scripts/leftVright/gr
-aphs/updownbias.pdf> <../scripts/leftVright/graphs/devRatio.pdf> <../scripts/le
-ftVright/graphs/datasetComp.pdf>]
+) [6 <../scripts/coarse2fine/figs/xFixComparison.pdf> <../scripts/coarse2fine/f
+igs/yFixComparison.pdf> <../scripts/coarse2fine/figs/ampSaccComparison.pdf> <..
+/scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf> <../scripts/leftVright/graph
+s/leftrightbias.pdf> <../scripts/leftVright/graphs/updownbias.pdf>]
 
-LaTeX Warning: Reference `fig:nParamsOverSpace' on page 7 undefined on input li
-ne 83.
+LaTeX Warning: Reference `tab:nParamModel' on page 7 undefined on input line 83
+.
 
-<../scripts/flow/figs/llh_ALL.pdf, id=237, 867.24pt x 578.16pt>
+
+<../scripts/flow/figs/NparamsChagingOverSpaceALLtN.pdf, id=226, 1011.78pt x 433
+.62pt>
+File: ../scripts/flow/figs/NparamsChagingOverSpaceALLtN.pdf Graphic file (type 
+pdf)
+ <use ../scripts/flow/figs/NparamsChagingOverSpaceALLtN.pdf>
+Package pdftex.def Info: ../scripts/flow/figs/NparamsChagingOverSpaceALLtN.pdf 
+used on input line 87.
+(pdftex.def)             Requested size: 398.33858pt x 170.71892pt.
+
+<../scripts/flow/figs/llh_ALL.pdf, id=227, 867.24pt x 578.16pt>
 File: ../scripts/flow/figs/llh_ALL.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_ALL.pdf>
-Package pdftex.def Info: ../scripts/flow/figs/llh_ALL.pdf used on input line 10
-8.
+Package pdftex.def Info: ../scripts/flow/figs/llh_ALL.pdf used on input line 11
+5.
 (pdftex.def)             Requested size: 341.43306pt x 227.62523pt.
 
-Underfull \hbox (badness 1502) in paragraph at lines 113--114
+Underfull \hbox (badness 1502) in paragraph at lines 120--121
 []\T1/futs/m/n/10 As the flow:normal model is sig-nif-i-cantly more
  []
 
-<../scripts/flow/figs/llh_Borji.pdf, id=238, 867.24pt x 578.16pt>
+<../scripts/flow/figs/llh_Borji.pdf, id=228, 867.24pt x 578.16pt>
 File: ../scripts/flow/figs/llh_Borji.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_Borji.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_Borji.pdf used on input line 
-118.
+125.
 (pdftex.def)             Requested size: 341.43306pt x 227.62523pt.
 
-Underfull \hbox (badness 1052) in paragraph at lines 132--133
+Underfull \hbox (badness 1052) in paragraph at lines 139--140
 \T1/futs/m/n/10 prior for image-content in-de-pen-dent sac-cadic be-
  []
 
 )
 
 Package natbib Warning: Citation `Stainer:2013ce' on page 7 undefined on input 
-line 94.
+line 120.
 
 
-Underfull \hbox (badness 1253) in paragraph at lines 94--95
+Underfull \hbox (badness 1253) in paragraph at lines 120--121
 \T1/futs/m/n/10 prob-lems for re-lat-ing find-ings of eye guid-ance in
  []
 
 
-Underfull \hbox (badness 2503) in paragraph at lines 94--95
+Underfull \hbox (badness 2503) in paragraph at lines 120--121
 \T1/futs/m/n/10 head po-si-tion [FOUL-SHAM WALK-ING, CRISTINO
  []
 
-(./Dataset.tex) (./saccadicBiases.bbl [7] [8 <../scripts/flow/figs/llh_ALL.pdf>
-] [9 <../scripts/flow/figs/llh_Borji.pdf>]
-Underfull \hbox (badness 1509) in paragraph at lines 117--120
+[7 <../scripts/leftVright/graphs/devRatio.pdf> <../scripts/leftVright/graphs/da
+tasetComp.pdf>] [8 <../scripts/flow/figs/NparamsChagingOverSpaceALLtN.pdf> <../
+scripts/flow/figs/llh_ALL.pdf>] (./Dataset.tex) (./saccadicBiases.bbl [9 <../sc
+ripts/flow/figs/llh_Borji.pdf>] [10]
+Underfull \hbox (badness 1681) in paragraph at lines 130--134
+\T1/futs/m/n/9 search: An ethol-ogy.  \T1/futs/m/it/9 At-ten-tion, Per-cep-tion
+, & Psy-
+ []
+
+
+Underfull \hbox (badness 1509) in paragraph at lines 155--158
 []\T1/futs/m/n/9 Antje Nuth-mann and Ellen Matthias.  Time course of
  []
 
@@ -895,33 +930,32 @@ Underfull \hbox (badness 1509) in paragraph at lines 117--120
 
 Package natbib Warning: There were undefined citations.
 
-[10] (./saccadicBiases.aux)
+[11] (./saccadicBiases.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 4341 strings out of 493315
- 62487 string characters out of 6137905
- 126659 words of memory out of 5000000
- 7616 multiletter control sequences out of 15000+600000
- 96980 words of font info for 114 fonts, out of 8000000 for 9000
+ 4384 strings out of 493315
+ 63474 string characters out of 6137905
+ 120194 words of memory out of 5000000
+ 7659 multiletter control sequences out of 15000+600000
+ 96942 words of font info for 113 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 41i,11n,35p,1505b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,35p,1254b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2013/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texl
-ive/2013/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texli
-ve/2013/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2013
-/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2013/texmf-
-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2013/texmf-dist/f
-onts/type1/public/cm-super/sftt1000.pfb>
-Output written on saccadicBiases.pdf (10 pages, 9310502 bytes).
+ive/2013/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/tex
+live/2013/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texl
+ive/2013/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/201
+3/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2013/texmf
+-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2013/texmf-dist/
+fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on saccadicBiases.pdf (11 pages, 9325835 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
+ 303 PDF objects out of 1000 (max. 8388607)
+ 185 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 101 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

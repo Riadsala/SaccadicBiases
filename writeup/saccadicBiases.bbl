@@ -1,4 +1,4 @@
-\begin{thebibliography}{25}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -76,6 +76,30 @@ Tom Foulsham and Alan Kingstone.
   and fractals: Effects of image type and image features.
 \newblock \emph{Vision Research}, 50\penalty0 (8):\penalty0 779--795, 2010.
 
+\bibitem[Foulsham et~al.(2008)Foulsham, Kingstone, and Underwood]{Foulsham2008}
+Tom Foulsham, Alan Kingstone, and Geoffrey Underwood.
+\newblock {Turning the world around: Patterns in saccade direction vary with
+  picture orientation}.
+\newblock \emph{Vision Research}, 48\penalty0 (17):\penalty0 1777--1790, 2008.
+
+\bibitem[Friedrich and Elias(2014)]{friedrich2014}
+Trista~E Friedrich and Lorin~J Elias.
+\newblock Behavioural asymmetries on the greyscales task: The influence of
+  native reading direction.
+\newblock \emph{Culture and brain}, 2\penalty0 (2):\penalty0 161--172, 2014.
+
+\bibitem[Gilchrist and Harvey(2006)]{gilchrist2006}
+Iain~D Gilchrist and Monika Harvey.
+\newblock Evidence for a systematic component within scan paths in visual
+  search.
+\newblock \emph{Visual Cognition}, 14\penalty0 (4-8):\penalty0 704--715, 2006.
+
+\bibitem[Godwin et~al.(2014)Godwin, Reichle, and Menneer]{godwin2014}
+Hayward~J Godwin, Erik~D Reichle, and Tamaryn Menneer.
+\newblock Coarse-to-fine eye movement behavior during visual search.
+\newblock \emph{Psychonomic bulletin \& review}, 21\penalty0 (5):\penalty0
+  1244--1249, 2014.
+
 \bibitem[Greene et~al.(2012)Greene, Liu, and Wolfe]{greene-wolfe2012}
 Michelle~R Greene, Tommy Liu, and Jeremy~M Wolfe.
 \newblock Reconsidering yarbus: A failure to predict observers’ task from eye
@@ -93,6 +117,20 @@ Tilke Judd, Krista Ehinger, Fr{\'e}do Durand, and Antonio Torralba.
 \newblock Learning to predict where humans look.
 \newblock In \emph{Computer Vision, 2009 IEEE 12th international conference
   on}, pages 2106--2113. IEEE, 2009.
+
+\bibitem[Learmonth et~al.(2015)Learmonth, Gallagher, Gibson, Thut, and
+  Harvey]{learmonth2015}
+Gemma Learmonth, Aodhan Gallagher, Jamie Gibson, Gregor Thut, and Monika
+  Harvey.
+\newblock Intra-and inter-task reliability of spatial attention measures in
+  pseudoneglect.
+\newblock \emph{PloS one}, 10\penalty0 (9):\penalty0 e0138379, 2015.
+
+\bibitem[MacInnes et~al.(2014)MacInnes, Hunt, Hilchey, and Klein]{macinnes2014}
+W~Joseph MacInnes, Amelia~R Hunt, Matthew~D Hilchey, and Raymond~M Klein.
+\newblock Driving forces in free visual search: An ethology.
+\newblock \emph{Attention, Perception, \& Psychophysics}, 76\penalty0
+  (2):\penalty0 280--295, 2014.
 
 \bibitem[Morvan and Maloney(2012)]{morvan-maloney2012}
 Camille Morvan and Laurence~T. Maloney.
@@ -118,12 +156,29 @@ Antje Nuthmann and Ellen Matthias.
 \newblock Time course of pseudoneglect in scene viewing.
 \newblock \emph{Cortex}, 52:\penalty0 113--119, 2014.
 
+\bibitem[Ossand{\'o}n et~al.(2014)Ossand{\'o}n, Onat, and
+  K{\"o}nig]{ossandon2014}
+Jos{\'e}~P Ossand{\'o}n, Selim Onat, and Peter K{\"o}nig.
+\newblock Spatial biases in viewing behavior.
+\newblock \emph{Journal of vision}, 14\penalty0 (2):\penalty0 20, 2014.
+
+\bibitem[Over et~al.(2007)Over, Hooge, Vlaskamp, and Erkelens]{over2007}
+EAB Over, ITC Hooge, BNS Vlaskamp, and CJ~Erkelens.
+\newblock Coarse-to-fine eye movement strategy in visual search.
+\newblock \emph{Vision Research}, 47\penalty0 (17):\penalty0 2272--2280, 2007.
+
 \bibitem[Tatler(2007)]{tatler2007}
 Benjamin~W Tatler.
 \newblock The central fixation bias in scene viewing: Selecting an optimal
   viewing position independently of motor biases and image feature
   distributions.
 \newblock \emph{Journal of Vision}, 7\penalty0 (14):\penalty0 4: 1--17, 2007.
+
+\bibitem[Tatler and Vincent(2009)]{tatler-vincent2009}
+Benjamin~W Tatler and Benjamin~T Vincent.
+\newblock The prominence of behavioural biases in eye guidance.
+\newblock \emph{Visual Cognition}, 17\penalty0 (6-7):\penalty0 1029--1054,
+  2009.
 
 \bibitem[Tatler et~al.(2005)Tatler, Baddeley, and Gilchrist]{tatler2005}
 Benjamin~W Tatler, Roland~J Baddeley, and Iain~D Gilchrist.
