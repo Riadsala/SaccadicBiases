@@ -62,4 +62,4 @@ cd Clarke2013-reanalysis/
 save trial_data trial_data
 
 
-%%trial_data.trial(TRIAL NUMBER, 1-100).size(50, 100 and 200)
+%%trial_data.trial(TR
