@@ -70,7 +70,7 @@ for (f in 1:nrow(df)){
   if (weights[1]!=1){weightx=weights[f]}
   
   
-  if (xpos>(pix_per_degree/2) && xpos<x_width-(pix_per_degree/2) && ypos>(pix_per_degree/2) && ypos<y_height-(pix_per_degree/2)){
+  if (xpos>0 && xpos<x_width && ypos>0 && ypos<y_height){
     xmin=xpos-(pix_per_degree/2)
     ymin=ypos-(pix_per_degree/2)
     xmax=xpos+(pix_per_degree/2)-1
@@ -86,8 +86,37 @@ for (f in 1:nrow(df)){
                             multip=1.078428-llh}
     
     if (weight=='dur'){ multip=weightx}
+
     
-    blank_image[ymin:ymax,xmin:xmax]<-blank_image[ymin:ymax,xmin:xmax]+(gaussian*multip)
+        gaussadd<-gaussian
+     #   print(paste(ymin,ymax,xmin,xmax,ncol(gaussadd),nrow(gaussadd),sep='_'))
+    
+
+    if (ymin<1){
+      yrev=(-1)*ymin
+      gaussadd<-gaussadd[(yrev+2):nrow(gaussadd),]
+      
+      ymin=1}
+    
+    if (xmin<1){
+      xrev=(-1)*xmin
+      gaussadd<-gaussadd[,(xrev+2):ncol(gaussadd)]
+     xmin=1}
+    
+    if (ymax>y_height-1){
+      yrev=nrow(gaussadd)-(-1)*(y_height-ymax)
+      gaussadd<-gaussadd[1:yrev,]
+      ymax=y_height}
+        
+    if (xmax>x_width-1){
+      xrev=ncol(gaussadd)-(-1)*(x_width-xmax)
+      gaussadd<-gaussadd[,1:xrev]
+      
+    xmax=x_width}
+    #print(image(gaussadd))
+   
+    
+    blank_image[ymin:ymax,xmin:xmax]<-blank_image[ymin:ymax,xmin:xmax]+(gaussadd*multip)
     ##if error - uncomment print(f) to find the 'problem' data
     # print(f)
   }
@@ -108,7 +137,7 @@ z<-blank_image
 fixmap <- melt(z)
 fixmap$value2<-fixmap$value/sum(fixmap$value)
 
-beep(2)
+#beep(2)
 
 if (reshape == T){return(fixmap)}
 if (reshape == F){return(z)}
