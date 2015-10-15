@@ -19,7 +19,7 @@ One advantage of the \citep{clarke-tatler2014} model, and the saccadic flow mode
 Or do we call them hotspot maps?
 
 \subsection{Reanalysis of Clarke et al 2013}
-
+\label{sec:reanalysisClarke2013}
 Do the flow-weights offer an improvement on predicting named objects over the fixations-weights?
 
 \subsection{Reanalysis of Ehinger et al 2009}
@@ -34,11 +34,17 @@ We can see from Figure \ref{fig:flowHumanComp} that both the central bias and th
 
 \begin{figure*}[htb]
 \centering
-\subfigure{\includegraphics[width=3.6cm]{../scripts/coarse2fine/figs/xFixComparison}}
-\subfigure{\includegraphics[width=3.6cm]{../scripts/coarse2fine/figs/yFixComparison}}
-\subfigure{\includegraphics[width=3.6cm]{../scripts/coarse2fine/figs/ampSaccComparison}}
-\subfigure{\includegraphics[width=3.6cm]{../scripts/coarse2fine/figs/saccAmpOverTimeFlow}}
+\subfigure{\includegraphics[width=3.8cm]{../scripts/coarse2fine/figs/xFixComparison}}
+\subfigure{\includegraphics[width=3.8cm]{../scripts/coarse2fine/figs/yFixComparison}}
+\subfigure{\includegraphics[width=3.8cm]{../scripts/coarse2fine/figs/ampSaccComparison}}
+\subfigure{\includegraphics[width=3.8cm]{../scripts/coarse2fine/figs/saccAmpOverTimeFlow}}
 \caption{\textit{blue}: human, \textit{red}: central bias, \textit{green}: saccadic flow. \textit{top row}: Comparison of $x$ and $y$ fixation positions between human fixations and synthetic points generated from the central bias and flow model. \textit{bottom row}: We can see that the flow model consistently makes saccades with a slightly larger amplitude than human observers. Distances are expressed relative to the width of the image.}
 \label{fig:flowHumanComp}
 \end{figure*}
+
+\subsection{Discussion}
+
+We have presented how biases such as saccadic flow and the central bias can be used in different ways. They can be used as a prior on the probability of making saccades to different regions of the image, allowing us to then more clearly visualise the image-dependant behaviour. These bias-weighted gaze landscapes can then be used in analysis as demonstrated in Section \ref{sec:reanalysisClarke2013}.
+
+We can also use the bias distributions to generate data
 
