@@ -7,7 +7,6 @@
 \usepackage{fourier}
 \usepackage[T1]{fontenc}
 
-
 \usepackage{amssymb}
 \usepackage{graphicx}
 \usepackage{rotating}
@@ -110,7 +109,12 @@ This falls under the more general spatial attention bias of psuedoneglect, which
 These biases, in particular, the central bias, are important to take into account when evaluating the performance of models of fixation location, and investigating relationships between eye movement data and other factors. \textbf{more details and examples}. 
 
 \subsection{The present study}
-The aim of the present study is to characterise the underlying biases of eye movement with which to understand fixation selection in natural scenes. We extend the previous work by examining [XXstuffXX] and 
+
+One of the main contributions of this manuscript is to introduce the \textit{saccadic flow} model. This can be thought of as a generalisation of the central bias: instead of simply characterising the image-independent probability of fixating $(x_i, y_i)$ we model the conditional probabilities $p(x_i,y_i|x_{i-1}, y_{i-1})$. i.e. the probability of making a saccade from to $(x_i,y_i)$ given we are currently fixating $(x_{i-1}, y_{i-1})$.
+
+In Section \ref{sec:usingbiaes} we demonstrate how the central bias and saccadic flow can be used as priors and components of models to improve analysis and visualisation methods. In particular, we will present bias-weighted gaze landscapes, and reanalysis parts of two previously published papers \citep{clarke2013,ehinger2009}. Finally, we will investigate the short-comings of these generative models by comparing synthesised data to human eye movements. 
+
+In Section \ref{sec:biases} we will give full details of the saccadic flow model. Furthermore, we will present an improved central bias distribution and discuss the importance of the left-wards bias (pseudo-neglect).
 
 \input{UsingFlow}
 
