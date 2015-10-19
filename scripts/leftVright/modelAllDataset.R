@@ -36,6 +36,9 @@ plt = plt + scale_x_discrete(name="fixation number")
 plt = plt + theme_bw()
 plt = plt + geom_hline(yintercept=0, colour="red")
 ggsave("graphs/updownbias.pdf", height=3, width=3)
+
+
+summary(lm(data=filter(sacc, n<3), x1~as.factor(n)+0))
 	
 # propOfDev = data.frame(n=numeric(), devRatio=numeric())
 # llh = array()
