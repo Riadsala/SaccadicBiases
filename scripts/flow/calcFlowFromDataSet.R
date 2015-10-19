@@ -57,8 +57,9 @@ for (flowM in levels(nFitOverSpace$flowModel))
 	plt = plt + geom_point() 
 	plt= plt + geom_path(aes(y=Plm), linetype = 2)
 	plt = plt + geom_path(aes(y=Prlm))
+	plt = plt + scale_colour_discrete(name="y")
 	plt = plt + facet_wrap(~param, ncol=5, scales='free') + theme_bw()
-	ggsave(paste('figs/NparamsChagingOverSpace_', flowLabel, '_', flowM, '_', winSize, '.pdf', sep=''), width=14, height=6)
+	ggsave(paste('figs/NparamsChagingOverSpace_', flowLabel, '_', flowM,  '.pdf', sep=''), width=12, height=4)
 	rm(subsetParams, ys)
     
 # insert heatmap plots here

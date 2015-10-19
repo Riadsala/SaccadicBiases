@@ -1,4 +1,4 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -23,6 +23,11 @@ Ali Borji and Laurent Itti.
 \newblock Cat2000: A large scale fixation dataset for boosting saliency
   research.
 \newblock \emph{arXiv preprint arXiv:1505.03581}, 2015.
+
+\bibitem[Bowers and Heilman(1980)]{bowers-heilman1980}
+Dawn Bowers and Kenneth~M Heilman.
+\newblock Pseudoneglect: effects of hemispace on a tactile line bisection task.
+\newblock \emph{Neuropsychologia}, 18\penalty0 (4):\penalty0 491--498, 1980.
 
 \bibitem[Buswell(1935)]{buswell1935}
 Guy~Thomas Buswell.
@@ -56,6 +61,13 @@ Alasdair~DF Clarke, Mike~J Chantler, and Patrick~R Green.
 Alasdair~DF Clarke, Patrick~R Green, Mike~J Chantler, and Amelia~R Hunt.
 \newblock Stochastic search.
 \newblock \emph{submitted}, 2015.
+
+\bibitem[Dickinson and Intraub(2009)]{dickinson-intraub2009}
+Christopher~A Dickinson and Helene Intraub.
+\newblock Spatial asymmetries in viewing and remembering scenes: Consequences
+  of an attentional bias?
+\newblock \emph{Attention, Perception, \& Psychophysics}, 71\penalty0
+  (6):\penalty0 1251--1262, 2009.
 
 \bibitem[Ehinger et~al.(2009)Ehinger, Hidalgo-Sotelo, Torralba, and
   Oliva]{ehinger2009}
@@ -211,5 +223,10 @@ Kiwon Yun, Yifan Peng, D.~Samaras, G.J. Zelinsky, and T.L. Berg.
 \newblock In \emph{Computer Vision and Pattern Recognition (CVPR), 2013 IEEE
   Conference on}, pages 739--746, 2013.
 \newblock \doi{10.1109/CVPR.2013.101}.
+
+\bibitem[Zelinsky(1996)]{zelinsky1996}
+Gregory~J Zelinsky.
+\newblock Using eye saccades to assess the selectivity of search movements.
+\newblock \emph{Vision research}, 36\penalty0 (14):\penalty0 2177--2187, 1996.
 
 \end{thebibliography}
