@@ -4,7 +4,6 @@
 In this section, we will present an updated central bias distribution (using a truncated Gaussian); explore the degree of asymmetry in viewing positions, and describe the saccadic flow model. 
 
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Modelling Methods}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,16 +48,15 @@ Initially more fixations to the left half of the image \citep{nuthmann-matthias2
 
 \begin{figure}
 \centering
-\subfigure{\includegraphics[width=3.6cm]{../scripts/leftVright/graphs/leftrightbias.pdf}}
-\subfigure{\includegraphics[width=3.6cm]{../scripts/leftVright/graphs/updownbias.pdf}}
+\subfigure{\includegraphics[width=3.8cm]{../scripts/leftVright/graphs/leftrightbias.pdf}}
+\subfigure{\includegraphics[width=3.8cm]{../scripts/leftVright/graphs/updownbias.pdf}}
 \caption{Distribution of horizontal and vertical fixations by fixation number.}
 \label{fig:leftrightDist}
 \end{figure}
 
-However, it has only a very small effect on explaining the varition over whole datasets: give some numbers on deviance. 
+However, it has only a very small effect on explaining the varition over whole datasets: fitting an ANOVA to predict the $x$ coordinates of the fixations given the fixaiton number gives adjusted $R^2=0.004$. If we limit our analysis to the first 5 fixations in each scanpath, this only increases to adjusted $R^2=0.01$. 
 
-
-Hence we will ignore this effect from now on. By treating everything as symmetrical, we lose very little explanitory power, while restricitng the number of parameters, or increasing the amount of data available (by mirroring fixations).
+Hence we will ignore this effect from now on. By treating everything as symmetrical, we lose very little explanitory power, while restricitng the number of parameters, or increasing the amount of data available (by mirroring fixations). 
 
 \subsection{Saccadic Flow}
 \label{ModellingFlow}
@@ -76,7 +74,7 @@ Figure \ref{fig:nParamsOverSpace} shows how the parameters for the multivariate 
 
 \begin{figure*}
 \centering
-\includegraphics[width=14cm]{../scripts/flow/figs/NparamsChagingOverSpaceALLtN}
+\includegraphics[width=16cm]{../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN}
 \caption{How the truncated Gaussian parameters vary with saccadic starting location. Dotted line show polynomial regression fits, solid line shows robust polynomial regression.}
 \label{fig:nParamsOverSpace}
 \end{figure*}

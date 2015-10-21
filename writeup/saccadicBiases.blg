@@ -3,7 +3,7 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: saccadicBiases.aux
 The style file: plainnat.bst
 Database file #1: literature.bib
-I was expecting an "="---line 322 of file literature.bib
+I was expecting an "="---line 357 of file literature.bib
  :   journal 
  :           ] {MIT tech report:  http://hdl.handle.net/1721.1/68590}
 I'm skipping whatever remains of this entry
@@ -24,45 +24,45 @@ Warning--I didn't find a database entry for "crundeall-underwood1998"
 Warning--I didn't find a database entry for "wartburg2007"
 Warning--I didn't find a database entry for "tatler-vincent20xx"
 Warning--I didn't find a database entry for "Stainer:2013ce"
-You've used 34 entries,
+You've used 37 entries,
             2773 wiz_defined-function locations,
-            809 strings with 10875 characters,
-and the built_in function-call counts, 16405 in all, are:
-= -- 1470
-> -- 969
-< -- 17
-+ -- 325
-- -- 291
-* -- 1404
-:= -- 2517
-add.period$ -- 104
-call.type$ -- 34
-change.case$ -- 197
-chr.to.int$ -- 34
-cite$ -- 68
-duplicate$ -- 719
-empty$ -- 1329
-format.name$ -- 349
-if$ -- 3412
+            828 strings with 11306 characters,
+and the built_in function-call counts, 17744 in all, are:
+= -- 1600
+> -- 1021
+< -- 20
++ -- 343
+- -- 306
+* -- 1511
+:= -- 2716
+add.period$ -- 113
+call.type$ -- 37
+change.case$ -- 211
+chr.to.int$ -- 37
+cite$ -- 74
+duplicate$ -- 779
+empty$ -- 1453
+format.name$ -- 371
+if$ -- 3694
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 36
-newline$ -- 179
-num.names$ -- 136
-pop$ -- 358
+missing$ -- 39
+newline$ -- 194
+num.names$ -- 148
+pop$ -- 381
 preamble$ -- 1
-purify$ -- 165
+purify$ -- 176
 quote$ -- 0
-skip$ -- 558
+skip$ -- 603
 stack$ -- 0
-substring$ -- 711
-swap$ -- 56
+substring$ -- 804
+swap$ -- 59
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 364
+type$ -- 397
 warning$ -- 0
-while$ -- 151
+while$ -- 166
 width$ -- 0
-write$ -- 447
+write$ -- 486
 (There was 1 error message)
