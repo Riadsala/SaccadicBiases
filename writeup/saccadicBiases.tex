@@ -23,7 +23,7 @@
 
 %%% The "real" document content comes below...
 
-\title{Saccadic Flow, some other biases, and how to use them}
+\title{The saccadic flow baseline: Accounting for task- and image-independent biases in fixation behaviour }
 
 \author{Alasdair D. F. Clarke, Matthew J. Stainer, Ben Tatler \& Amelia R. Hunt}
 
@@ -32,7 +32,7 @@
 \twocolumn[
 \maketitle
 \begin{onecolabstract}
-Much effort has been made to attempting to explain eye guidance during natural scene viewing. However, underlying fixation placement appears to be a set of consistent biases in eye movement behaviour. We introduce the concept of saccadic flow, a generalisation of the central bias that described the image-independent conditional probability of making a saccade to $(x_{i+1},y_{i+1})$ given a fixation at $(x_i,y_i)$. We suggest that saccadic flow can be used as a useful prior when carrying out analysis into fixation locations, and can be used as a sub-module in models of eye movements during scene viewing. We demonstrate the utility of this idea by presenting bias-weighted gaze landscapes, and re-analyse some previous results to demonstrate how these ideas can be used. We also present a minor improvement to the central bias (based on using a multivariate truncated Gaussian), and investigate the leftwards and coarse-to-find biases. 
+Much effort has been made to explain eye guidance during natural scene viewing. However, a substantial component of fixation placement appears to be a set of consistent biases in eye movement behaviour. We introduce the concept of saccadic flow, a generalisation of the central bias that described the image-independent conditional probability of making a saccade to $(x_{i+1},y_{i+1})$ given a fixation at $(x_i,y_i)$. We suggest that saccadic flow can be used as a useful prior when carrying out analysis into fixation locations, and can be used as a sub-module in models of eye movements during scene viewing. We demonstrate the utility of this idea by presenting bias-weighted gaze landscapes, and re-analyse some previous results to demonstrate how these ideas can be used. We also present a minor improvement to the central bias (based on using a multivariate truncated Gaussian), and investigate the leftwards and coarse-to-fine biases. 
 \end{onecolabstract}
 ]
 
@@ -40,7 +40,7 @@ Much effort has been made to attempting to explain eye guidance during natural s
 \section{Introduction}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The human fovea provides a small window of high acuity vision to the world, and as such the locations that we select to view in the world can tell us about how we seek the information necessary to complete the task we are currently undertaking. Current understanding of eye guidance would suggest that fixation locations are selected based on a combination of low-level factors (such as visual salience \citep{itti-koch2000} or orientation information \citep{baddeley2006}) and high-level factors \citep{yarbus1967, buswell1935, land2001}. However, there are also strong observable biases in eye movement including directional and amplitudinal [XXis that a word?XX] biases in saccades \citep{tatler2008, tatler2009, foulsham2010}, and a strong tendency to fixate near to the centre of images \citep{tatler2007, canosa2003}. Importantly, these biases are independent of the viewed content. If we are to gain a complete understanding of the factors that govern eye movement, we must therefore build models of eye guidance on the framework of these underlying biases.
+The human fovea provides a small window of high acuity vision to the world, and as such the locations that we select to view in the world can tell us about how we seek the information necessary to complete the task we are currently undertaking. Fixation locations are selected based on a combination of low-level factors (such as visual salience \citep{itti-koch2000} or orientation information \citep{baddeley2006}) and high-level factors \citep{yarbus1967, buswell1935, land2001}. However, there are also strong observable biases in eye movement including directional and amplitudinal [XXis that a word?XX] biases in saccades \citep{tatler2008, tatler2009, foulsham2010}, and a strong tendency to fixate near to the centre of images \citep{tatler2007, canosa2003}. Importantly, these biases are independent of the viewed content. If we are to gain a complete understanding of the factors that govern eye movement, we must therefore build models of eye guidance on the framework of these underlying biases.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Eye movement heuristics}
