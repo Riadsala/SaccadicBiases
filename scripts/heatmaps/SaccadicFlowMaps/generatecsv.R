@@ -33,7 +33,7 @@ alldata<-c()
 
 #imselect=unique(data$image)
 #imselect=c(3,4,5,6,7,9,12)
-imselect=1:100
+imselect=1#:100
 for (im in imselect){
   imnum=im
   data.sub<-subset(data,image==imnum)
@@ -93,7 +93,7 @@ for (im in imselect){
   datax=datax[1:(nrow(datax)-1),]
   datax<-datax[datax$llh!='-Inf',]
   datax<-datax[datax$llh!='Inf',]
-  
+  datax<-datax[datax$llh!='NaN',]
   
   datax$llh=datax$llh-1.013675
   datax$llh<-sqrt(datax$llh^2)
@@ -104,23 +104,40 @@ for (im in imselect){
   alldata<-rbind(alldata,datax)
   for(pix_per_degree in c(50,100,200)){
 
-  drawfixmap(x = data.sub$x,y=data.sub$y,x_width=800,y_height=600,plot=F,weight = 1,reshape=F,pix_per_degree = pix_per_degree)->reg.map
-  drawfixmap(x = data.sub$x,y=data.sub$y,x_width=800,y_height=600,plot=F,weight = 'dur',weights=data$dur,reshape=F,pix_per_degree = pix_per_degree)->dur.map
+ # drawfixmap(x = data.sub$x,y=data.sub$y,x_width=800,y_height=600,plot=F,weight = 1,reshape=F,pix_per_degree = pix_per_degree)->reg.map
+#  drawfixmap(x = data.sub$x,y=data.sub$y,x_width=800,y_height=600,plot=F,weight = 'dur',weights=data$dur,reshape=F,pix_per_degree = pix_per_degree)->dur.map
   drawfixmap(x = data.sub$x,y=data.sub$y,x_width=800,y_height=600,plot=F,weights=centweights,weight='cent',reshape=F,pix_per_degree = pix_per_degree)->cent.map
-  drawfixmap(x = datax$x,y=datax$y,weights=datax$llh,weight='dur',x_width=800,y_height=600,plot=F,reshape=F,pix_per_degree = pix_per_degree)->bias.map
+ # drawfixmap(x = datax$x,y=datax$y,weights=datax$llh,weight='dur',x_width=800,y_height=600,plot=F,reshape=F,pix_per_degree = pix_per_degree)->bias.map
  
-  m1<-resizeImage(reg.map,200,150)
-  m2<-resizeImage(dur.map,200,150)
+  #m1<-resizeImage(reg.map,200,150)
+  #m2<-resizeImage(dur.map,200,150)
   m3<-resizeImage(cent.map,200,150)
-  m4<-resizeImage(bias.map,200,150)
+  #m4<-resizeImage(bias.map,200,150)
   image(m3,main=paste('image ',im,sep=''))
-  write.csv(x = m1,file=paste('CSVs/image',im,'_fixmap_',pix_per_degree,'.csv',sep=''),row.names=F)
-  write.csv(x = m2,file=paste('CSVs/image',im,'_durmap_',pix_per_degree,'.csv',sep=''),row.names=F)
-  write.csv(x = m3,file=paste('CSVs/image',im,'_centmap_',pix_per_degree,'.csv',sep=''),row.names=F)
-  write.csv(x = m4,file=paste('CSVs/image',im,'_flowmap_',pix_per_degree,'.csv',sep=''),row.names=F)
+  #write.csv(x = m1,file=paste('CSVs/image',im,'_fixmap_',pix_per_degree,'.csv',sep=''),row.names=F)
+  #write.csv(x = m2,file=paste('CSVs/image',im,'_durmap_',pix_per_degree,'.csv',sep=''),row.names=F)
+ # write.csv(x = m3,file=paste('CSVs/image',im,'_centmap_',pix_per_degree,'.csv',sep=''),row.names=F)
+  #write.csv(x = m4,file=paste('CSVs/image',im,'_flowmap_',pix_per_degree,'.csv',sep=''),row.names=F)
   }
 }
 
+
+
+
+g1<-ggplot(m4, aes(x = Var2, y = Var1, fill = value)) +
+  labs(x = "x", y = "y", fill = "density") +
+  geom_raster() +
+  theme_bw(20)+
+  # ggtitle('Fixation map')+
+  #scale_fill_gradientn(colours=pal.1(12))+
+  #   scale_fill_gradientn(colours = jet.colors(10))+
+  #   scale_colour_gradientn(colours = jet.colors(10))+
+  #scale_fill_continuous(low='black',high='white')+
+  theme(legend.position='none')+
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0))+
+  theme(axis.text=element_blank(),
+        axis.title=element_blank())
 
 
 

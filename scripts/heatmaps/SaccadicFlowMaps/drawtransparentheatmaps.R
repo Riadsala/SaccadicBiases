@@ -30,8 +30,8 @@ colnames(data)<-c('participant','image','index','fix.start','fix.end','x','y')
 data<-subset(data,index!=1)
 data$duration<-data$fix.end-data$fix.start
 
-#imselect=c(12,13,10,38,53,50,70,73,78,79,89,100,92,93,99,88,54)
-imselect=3
+imselect=c(3,4,6,54)
+#imselect=3
 for (im in imselect){
   imnum=im
   data.sub<-subset(data,image==imnum)
@@ -126,6 +126,9 @@ for (im in imselect){
   ##read in image and convert to grayscale
   imagename=paste('contrasts/image',im,'.png',sep='')
   mypng <- readPNG(imagename)
+  
+  imagenameO=paste('Images/Image',im,'.png',sep='')
+  mypngO <- readPNG(imagenameO)
 #    mypng[,,1]->r
 #    mypng[,,2]->g
 #    mypng[,,3]->b
@@ -169,6 +172,29 @@ for (im in imselect){
   jet.colors <-
     colorRampPalette(c("#00007F", "blue", "#007FFF", "cyan",
                        "#7FFF7F", "yellow", "#FF7F00", "red", "#7F0000"))
+  
+  g0<-ggplot(reg.map, aes(x = Var2, y = Var1, fill = value2)) +
+    labs(x = "x", y = "y", fill = "density") +
+    annotation_raster(mypngO, -Inf, Inf, -Inf, Inf, interpolate = TRUE)+
+   # geom_raster(alpha=0.7) +
+    theme_bw(20)+
+    # ggtitle('Fixation map')+
+    #scale_fill_gradientn(colours=pal.1(12))+
+    #   scale_fill_gradientn(colours = jet.colors(10))+
+    #   scale_colour_gradientn(colours = jet.colors(10))+
+    #scale_fill_continuous(low='black',high='white')+
+    theme(legend.position='none')+
+    scale_x_continuous(expand = c(0, 0)) +
+    scale_y_continuous(expand = c(0, 0))+
+    theme(axis.text=element_blank(),
+          axis.title=element_blank(),
+          axis.ticks=element_blank())
+  
+  savename=paste('Im', im, '_0.png',sep='')
+  ggsave(filename = savename,plot = g0, path = 'Heatmaps2',width = 8,height=6,unit='in')
+  
+  
+  
   
   g1<-ggplot(reg.map, aes(x = Var2, y = Var1, fill = value2)) +
     labs(x = "x", y = "y", fill = "density") +
