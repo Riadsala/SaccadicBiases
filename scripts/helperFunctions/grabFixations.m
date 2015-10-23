@@ -26,6 +26,18 @@ if iscell(dataset)
 end
 switch dataset
     
+    case 'Jiang2014'
+        load ../../data/Jiang2014/fixations.mat 
+        R = [];
+        for ii = 1:length(fixations)
+            tfix = fixations{ii};
+            for jj = 1:length(tfix.subjects)
+                n = size(tfix.subjects{jj}.fix_x,2);
+                R = [R; [repmat(ii, [n,1]),repmat(jj, [n,1]), tfix.subjects{jj}.fix_x' tfix.subjects{jj}.fix_y']];
+            end
+        end
+        R(:,3:4) = centreAndScale(R(:,3:4), [1024, 768]);
+        fix = fixArrayToStruct(R, 2,1,3,4);
     case 'Borji2015'
         % this is treated as multiple datasets
         sets = dir('../../data/Borji2015/*.txt');
