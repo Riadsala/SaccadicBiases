@@ -87,11 +87,17 @@ How well does this model account for the fixations in our datasets? Figure \ref{
 
 \begin{figure*}
 \centering
- \includegraphics[width=12cm]{../scripts/flow/figs/llh_ALL.pdf}
+ \includegraphics[width=12cm]{../scripts/flow/figs/llh_training.pdf}
 \caption{Flow:normal log likelihood results. We can see that re-fitting the central-bias to each specific dataset offers little improvement over using the Clarke-Tatler model, while the flow model offers a substantial improvement.}
 \label{fig:nFlowDevAll}
 \end{figure*}
 
+\begin{figure*}
+\centering
+\includegraphics[width=12cm]{../scripts/flow/figs/llh_testing.pdf}
+\caption{Doing the same but with some new testing datasets!}
+\label{fig:nFlowDevAll}
+\end{figure*}
 As the flow:normal model is significantly more complex, requiring nine times as many parameters, it is important to test for robustness. We can test how well our model generalises on testing it on other datasets, for example, \cite{borji2015}. 
 
 
