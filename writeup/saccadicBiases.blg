@@ -22,47 +22,52 @@ Warning--I didn't find a database entry for "birmingham2009"
 Warning--I didn't find a database entry for "brandt1945"
 Warning--I didn't find a database entry for "crundeall-underwood1998"
 Warning--I didn't find a database entry for "wartburg2007"
+Warning--I didn't find a database entry for "krueger-hunt2013"
+Warning--I didn't find a database entry for "wang2011"
+Warning--I didn't find a database entry for "dodd2009"
+Warning--I didn't find a database entry for "klein-macinnes1999"
+Warning--I didn't find a database entry for "takeda-yagi2000"
 Warning--I didn't find a database entry for "tatler-vincent20xx"
 Warning--I didn't find a database entry for "Stainer:2013ce"
-You've used 38 entries,
+You've used 37 entries,
             2773 wiz_defined-function locations,
-            832 strings with 11373 characters,
-and the built_in function-call counts, 18201 in all, are:
-= -- 1639
-> -- 1051
+            833 strings with 11292 characters,
+and the built_in function-call counts, 17677 in all, are:
+= -- 1591
+> -- 1021
 < -- 20
-+ -- 353
-- -- 315
-* -- 1547
-:= -- 2786
-add.period$ -- 117
-call.type$ -- 38
-change.case$ -- 217
-chr.to.int$ -- 38
-cite$ -- 76
-duplicate$ -- 803
-empty$ -- 1494
-format.name$ -- 381
-if$ -- 3793
++ -- 343
+- -- 306
+* -- 1497
+:= -- 2707
+add.period$ -- 114
+call.type$ -- 37
+change.case$ -- 211
+chr.to.int$ -- 37
+cite$ -- 74
+duplicate$ -- 782
+empty$ -- 1451
+format.name$ -- 371
+if$ -- 3685
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 40
-newline$ -- 199
-num.names$ -- 152
-pop$ -- 397
+missing$ -- 39
+newline$ -- 194
+num.names$ -- 148
+pop$ -- 387
 preamble$ -- 1
-purify$ -- 181
+purify$ -- 176
 quote$ -- 0
-skip$ -- 616
+skip$ -- 601
 stack$ -- 0
-substring$ -- 806
-swap$ -- 61
+substring$ -- 773
+swap$ -- 60
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 408
+type$ -- 397
 warning$ -- 0
-while$ -- 169
+while$ -- 164
 width$ -- 0
-write$ -- 499
+write$ -- 486
 (There was 1 error message)

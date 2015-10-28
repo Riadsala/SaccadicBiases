@@ -1,14 +1,13 @@
 # Fdb version 3
-["bibtex saccadicBiases"] 1445608756 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1445608758
+["bibtex saccadicBiases"] 1446043962 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1446043964
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "literature.bib" 1445421076 23845 52f68ef88327101f8682de85a7040637 ""
-  "saccadicBiases.aux" 1445608757 11596 5ceb7abea7e93bb2d017e1d7cdd9f0bb ""
+  "saccadicBiases.aux" 1446043963 11752 3795dbef8175896304c0ee25961c249b ""
   "saccadicBiases.bcf" 0 -1 0 ""
   (generated)
   "saccadicBiases.bbl"
   "saccadicBiases.blg"
-["pdflatex"] 1445608757 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1445608758
-  "../scripts/coarse2fine/figs/ampSaccComparison.pdf" 1444735978 13943 37ca4484142248334c2bc76743da202d ""
+["pdflatex"] 1446043963 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1446043964
   "../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf" 1444735977 7694 8f759aa7ecf3b44ef9de8435af4dc518 ""
   "../scripts/coarse2fine/figs/xFixComparison.pdf" 1444735976 14702 2d0c1940c7fcae4e8178b5dbbf0dddc2 ""
   "../scripts/coarse2fine/figs/yFixComparison.pdf" 1444735976 14344 ee66b94d02fad98140fc40f84d5235e8 ""
@@ -83,10 +82,10 @@
   "BiasModelling.tex" 1445608734 11064 f0669b2131a67fdaec43fe08141f4b0a ""
   "Dataset.tex" 1444660553 2633 f5c962a08b38212897bacaceec163e0a ""
   "figs/adjustedheatmaps.pdf" 1442843094 8037983 c0e60af0528b54d194f2441d6bea077f ""
-  "saccadicBiases.aux" 1445608757 11596 5ceb7abea7e93bb2d017e1d7cdd9f0bb ""
-  "saccadicBiases.bbl" 1445608757 10645 08a29f2d2a8fc14d765eee8bbbdcdb37 "bibtex saccadicBiases"
-  "saccadicBiases.tex" 1445501657 23650 c0684b8be1ef375bdcccb35ee5281240 ""
+  "saccadicBiases.aux" 1446043963 11752 3795dbef8175896304c0ee25961c249b ""
+  "saccadicBiases.bbl" 1446043963 10354 2b432cd5bd527361da592f508e8b4bb4 "bibtex saccadicBiases"
+  "saccadicBiases.tex" 1446043938 26866 73943147163fb23d56a412e98f077dc7 ""
   (generated)
-  "saccadicBiases.pdf"
   "saccadicBiases.aux"
+  "saccadicBiases.pdf"
   "saccadicBiases.log"
