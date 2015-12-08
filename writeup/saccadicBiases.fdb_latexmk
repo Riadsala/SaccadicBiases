@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex saccadicBiases"] 1449582907 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1449583951
+["bibtex saccadicBiases"] 1449582907 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1449586427
   "/usr/local/texlive/2013/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "literature.bib" 1449582850 23845 52f68ef88327101f8682de85a7040637 ""
-  "saccadicBiases.aux" 1449583950 11880 3932d21ff00169e67da16854a61a3130 ""
+  "saccadicBiases.aux" 1449586426 11880 3932d21ff00169e67da16854a61a3130 ""
   "saccadicBiases.bcf" 0 -1 0 ""
   (generated)
   "saccadicBiases.bbl"
   "saccadicBiases.blg"
-["pdflatex"] 1449583949 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1449583951
+["pdflatex"] 1449586426 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1449586427
   "../scripts/coarse2fine/figs/ampSaccComparison.pdf" 1444735978 13943 37ca4484142248334c2bc76743da202d ""
   "../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf" 1444735977 7694 8f759aa7ecf3b44ef9de8435af4dc518 ""
   "../scripts/coarse2fine/figs/xFixComparison.pdf" 1444735976 14702 2d0c1940c7fcae4e8178b5dbbf0dddc2 ""
@@ -127,12 +127,12 @@
   "/usr/local/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt" 1396624898 3827028 2ca046ef87e2cc0753ef5be1e7109eef ""
   "/usr/local/texlive/2013/texmf.cnf" 1369923207 577 cbc827f6294276973a1952e86e8ad73a ""
   "BiasModelling.tex" 1445608734 11064 f0669b2131a67fdaec43fe08141f4b0a ""
-  "Dataset.tex" 1449583946 3088 2ce3fb9e4d30b0d4a859eb503f09e9f8 ""
+  "Dataset.tex" 1449586425 3294 0e28600318981b98dcb4de4aee929edc ""
   "figs/adjustedheatmaps.pdf" 1442843094 8037983 c0e60af0528b54d194f2441d6bea077f ""
-  "saccadicBiases.aux" 1449583950 11880 3932d21ff00169e67da16854a61a3130 ""
+  "saccadicBiases.aux" 1449586426 11880 3932d21ff00169e67da16854a61a3130 ""
   "saccadicBiases.bbl" 1449582907 10354 2b432cd5bd527361da592f508e8b4bb4 "bibtex saccadicBiases"
-  "saccadicBiases.tex" 1449583949 26867 57629cef5ce49d11eec38d3c16539031 ""
+  "saccadicBiases.tex" 1449584108 26867 57629cef5ce49d11eec38d3c16539031 ""
   (generated)
+  "saccadicBiases.log"
   "saccadicBiases.aux"
   "saccadicBiases.pdf"
-  "saccadicBiases.log"
