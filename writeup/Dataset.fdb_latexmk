@@ -1,0 +1,12 @@
+# Fdb version 3
+["pdflatex"] 1449583555 "Dataset.tex" "Dataset.pdf" "Dataset" 1449583555
+  "/usr/local/texlive/2013/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
+  "/usr/local/texlive/2013/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
+  "/usr/local/texlive/2013/texmf-dist/web2c/texmf.cnf" 1366045088 31707 0953c15448e216a6585e92ee639d2dc2 ""
+  "/usr/local/texlive/2013/texmf-var/web2c/pdftex/pdflatex.fmt" 1396624898 3827028 2ca046ef87e2cc0753ef5be1e7109eef ""
+  "/usr/local/texlive/2013/texmf.cnf" 1369923207 577 cbc827f6294276973a1952e86e8ad73a ""
+  "Dataset.aux" 1449583555 8 a94a2480d3289e625eea47cd1b285758 ""
+  "Dataset.tex" 1449583555 3046 b353fb43dd9fdd0fb15cf7d62379ff8d ""
+  (generated)
+  "Dataset.pdf"
+  "Dataset.log"

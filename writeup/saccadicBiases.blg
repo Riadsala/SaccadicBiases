@@ -14,7 +14,6 @@ Warning--I didn't find a database entry for "tatler2009"
 Warning--I didn't find a database entry for "foulsham2010"
 Warning--I didn't find a database entry for "canosa2003"
 Warning--I didn't find a database entry for "Canosa:2003tu"
-Warning--I didn't find a database entry for "clarke_tatler2014"
 Warning--I didn't find a database entry for "fuller1996"
 Warning--I didn't find a database entry for "stainer2013"
 Warning--I didn't find a database entry for "Parkhurst:2002vo"
@@ -31,7 +30,7 @@ Warning--I didn't find a database entry for "tatler-vincent20xx"
 Warning--I didn't find a database entry for "Stainer:2013ce"
 You've used 37 entries,
             2773 wiz_defined-function locations,
-            833 strings with 11292 characters,
+            832 strings with 11275 characters,
 and the built_in function-call counts, 17677 in all, are:
 = -- 1591
 > -- 1021
