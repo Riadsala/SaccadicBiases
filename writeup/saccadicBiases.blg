@@ -1,22 +1,22 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: saccadicBiases.aux
+Case mismatch error between cite keys Foulsham2008 and foulsham2008
+---line 28 of file saccadicBiases.aux
+ : \citation{Foulsham2008
+ :                       }
+I'm skipping whatever remains of this command
 The style file: plainnat.bst
 Database file #1: literature.bib
 I was expecting an "="---line 365 of file literature.bib
  :   journal 
  :           ] {MIT tech report:  http://hdl.handle.net/1721.1/68590}
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "baddeley2006"
 Warning--I didn't find a database entry for "land2001"
-Warning--I didn't find a database entry for "tatler2008"
-Warning--I didn't find a database entry for "tatler2009"
 Warning--I didn't find a database entry for "foulsham2010"
 Warning--I didn't find a database entry for "canosa2003"
-Warning--I didn't find a database entry for "Canosa:2003tu"
-Warning--I didn't find a database entry for "fuller1996"
 Warning--I didn't find a database entry for "stainer2013"
-Warning--I didn't find a database entry for "Parkhurst:2002vo"
+Warning--I didn't find a database entry for "fuller1996"
 Warning--I didn't find a database entry for "birmingham2009"
 Warning--I didn't find a database entry for "brandt1945"
 Warning--I didn't find a database entry for "crundeall-underwood1998"
@@ -27,46 +27,45 @@ Warning--I didn't find a database entry for "dodd2009"
 Warning--I didn't find a database entry for "klein-macinnes1999"
 Warning--I didn't find a database entry for "takeda-yagi2000"
 Warning--I didn't find a database entry for "tatler-vincent20xx"
-Warning--I didn't find a database entry for "Stainer:2013ce"
-You've used 37 entries,
+You've used 39 entries,
             2773 wiz_defined-function locations,
-            832 strings with 11346 characters,
-and the built_in function-call counts, 17677 in all, are:
-= -- 1591
-> -- 1021
-< -- 20
-+ -- 343
-- -- 306
-* -- 1497
-:= -- 2707
-add.period$ -- 114
-call.type$ -- 37
-change.case$ -- 211
-chr.to.int$ -- 37
-cite$ -- 74
-duplicate$ -- 782
-empty$ -- 1451
-format.name$ -- 371
-if$ -- 3685
+            833 strings with 11583 characters,
+and the built_in function-call counts, 18885 in all, are:
+= -- 1691
+> -- 1117
+< -- 19
++ -- 375
+- -- 336
+* -- 1622
+:= -- 2897
+add.period$ -- 120
+call.type$ -- 39
+change.case$ -- 227
+chr.to.int$ -- 39
+cite$ -- 78
+duplicate$ -- 825
+empty$ -- 1535
+format.name$ -- 401
+if$ -- 3928
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 39
-newline$ -- 194
-num.names$ -- 148
-pop$ -- 387
+missing$ -- 41
+newline$ -- 204
+num.names$ -- 156
+pop$ -- 415
 preamble$ -- 1
-purify$ -- 176
+purify$ -- 190
 quote$ -- 0
-skip$ -- 601
+skip$ -- 633
 stack$ -- 0
-substring$ -- 773
-swap$ -- 60
+substring$ -- 826
+swap$ -- 62
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 397
+type$ -- 419
 warning$ -- 0
-while$ -- 164
+while$ -- 173
 width$ -- 0
-write$ -- 486
-(There was 1 error message)
+write$ -- 512
+(There were 2 error messages)

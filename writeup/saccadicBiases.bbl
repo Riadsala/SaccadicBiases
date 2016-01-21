@@ -1,4 +1,4 @@
-\begin{thebibliography}{37}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,12 @@
 Matthew~F Asher, David~J Tolhurst, Tom Troscianko, and Iain~D Gilchrist.
 \newblock Regional effects of clutter on human target detection performance.
 \newblock \emph{Journal of vision}, 13\penalty0 (5):\penalty0 25:1--15, 2013.
+
+\bibitem[Borji and Itti(2013)]{borji2013}
+A~Borji and L~Itti.
+\newblock {State-of-the-Art in Visual Attention Modeling}.
+\newblock \emph{Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 35\penalty0 (1):\penalty0 185--207, 2013.
 
 \bibitem[Borji and Itti(2015)]{borji2015}
 Ali Borji and Laurent Itti.
@@ -82,7 +88,7 @@ Tom Foulsham and Alan Kingstone.
   and fractals: Effects of image type and image features.
 \newblock \emph{Vision Research}, 50\penalty0 (8):\penalty0 779--795, 2010.
 
-\bibitem[Foulsham et~al.(2008)Foulsham, Kingstone, and Underwood]{Foulsham2008}
+\bibitem[Foulsham et~al.(2008)Foulsham, Kingstone, and Underwood]{foulsham2008}
 Tom Foulsham, Alan Kingstone, and Geoffrey Underwood.
 \newblock {Turning the world around: Patterns in saccade direction vary with
   picture orientation}.
@@ -112,12 +118,6 @@ Michelle~R Greene, Tommy Liu, and Jeremy~M Wolfe.
   movement patterns.
 \newblock \emph{Vision research}, 62:\penalty0 1--8, 2012.
 
-\bibitem[Itti and Koch(2000)]{itti-koch2000}
-Laurent Itti and Christof Koch.
-\newblock A saliency-based search mechanism for overt and covert shifts of
-  visual attention.
-\newblock \emph{Vision research}, 40\penalty0 (10):\penalty0 1489--1506, 2000.
-
 \bibitem[Jiang et~al.(2014)Jiang, Xu, and Zhao]{jiang2014}
 Ming Jiang, Juan Xu, and Qi~Zhao.
 \newblock Saliency in crowd.
@@ -137,6 +137,19 @@ Gemma Learmonth, Aodhan Gallagher, Jamie Gibson, Gregor Thut, and Monika
   pseudoneglect.
 \newblock \emph{PloS one}, 10\penalty0 (9):\penalty0 e0138379, 2015.
 
+\bibitem[Loschky et~al.(2015)Loschky, Larson, Magliano, and Smith]{loschky2015}
+Lester~C Loschky, Adam~M Larson, Joseph~P Magliano, and Tim~J Smith.
+\newblock What would jaws do? the tyranny of film and the relationship between
+  gaze and higher-level narrative film comprehension.
+\newblock \emph{PloS one}, 10\penalty0 (11):\penalty0 e0142474, 2015.
+
+\bibitem[Ma et~al.(2011)Ma, Navalpakkam, Beck, Van Den~Berg, and
+  Pouget]{ma2011}
+Wei~Ji Ma, Vidhya Navalpakkam, Jeffrey~M Beck, Ronald Van Den~Berg, and
+  Alexandre Pouget.
+\newblock Behavior and neural basis of near-optimal visual search.
+\newblock \emph{Nature neuroscience}, 14\penalty0 (6):\penalty0 783--790, 2011.
+
 \bibitem[MacInnes et~al.(2014)MacInnes, Hunt, Hilchey, and Klein]{macinnes2014}
 W~Joseph MacInnes, Amelia~R Hunt, Matthew~D Hilchey, and Raymond~M Klein.
 \newblock Driving forces in free visual search: An ethology.
@@ -155,13 +168,6 @@ Jiri Najemnik and Wilson~S Geisler.
   search strategy.
 \newblock \emph{Journal of Vision}, 8\penalty0 (3), 2008.
 
-\bibitem[Nuthmann and Einh{\"a}user(2015)]{nuthmann2015}
-Antje Nuthmann and Wolfgang Einh{\"a}user.
-\newblock A new approach to modeling the influence of image features on
-  fixation selection in scenes.
-\newblock \emph{Annals of the New York Academy of Sciences}, 1339\penalty0
-  (1):\penalty0 82--96, 2015.
-
 \bibitem[Nuthmann and Matthias(2014)]{nuthmann-matthias2014}
 Antje Nuthmann and Ellen Matthias.
 \newblock Time course of pseudoneglect in scene viewing.
@@ -177,6 +183,12 @@ Jos{\'e}~P Ossand{\'o}n, Selim Onat, and Peter K{\"o}nig.
 EAB Over, ITC Hooge, BNS Vlaskamp, and CJ~Erkelens.
 \newblock Coarse-to-fine eye movement strategy in visual search.
 \newblock \emph{Vision Research}, 47\penalty0 (17):\penalty0 2272--2280, 2007.
+
+\bibitem[Parkhurst et~al.(2002)Parkhurst, Law, and Niebur]{parkhurst2002}
+Derrick~J Parkhurst, K~Law, and E~Niebur.
+\newblock Modeling the role of salience in the allocation of overt visual
+  attention.
+\newblock \emph{Vision Research}, 42\penalty0 (1):\penalty0 107--123, 2002.
 
 \bibitem[Tatler(2007)]{tatler2007}
 Benjamin~W Tatler.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.9)  21 JAN 2016 14:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.9)  21 JAN 2016 15:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -390,11 +390,7 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 (/usr/local/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(./saccadicBiases.aux
-
-LaTeX Warning: Label `fig:nFlowDevAll' multiply defined.
-
-)
+(./saccadicBiases.aux)
 \openout1 = `saccadicBiases.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
@@ -412,7 +408,8 @@ LaTeX Font Info:    ... okay on input line 30.
 LaTeX Font Info:    Checking defaults for FML/futm/m/it on input line 30.
 LaTeX Font Info:    Try loading font information for FML+futm on input line 30.
 
- (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmlfutm.fd
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/fmlfutm.fd
 File: fmlfutm.fd 2004/10/30 Fontinst v1.926 font definitions for FML/futm.
 )
 LaTeX Font Info:    ... okay on input line 30.
@@ -545,20 +542,8 @@ LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 43.
 
 
-Package natbib Warning: Citation `baddeley2006' on page 1 undefined on input li
-ne 43.
-
-
 Package natbib Warning: Citation `land2001' on page 1 undefined on input line 4
 3.
-
-
-Package natbib Warning: Citation `tatler2008' on page 1 undefined on input line
- 43.
-
-
-Package natbib Warning: Citation `tatler2009' on page 1 undefined on input line
- 43.
 
 
 Package natbib Warning: Citation `foulsham2010' on page 1 undefined on input li
@@ -567,6 +552,10 @@ ne 43.
 
 Package natbib Warning: Citation `canosa2003' on page 1 undefined on input line
  43.
+
+
+Package natbib Warning: Citation `stainer2013' on page 1 undefined on input lin
+e 43.
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <12> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 46.
@@ -577,6 +566,11 @@ LaTeX Font Info:    Font shape `U/futm/m/n' will be
 
 Underfull \hbox (badness 1168) in paragraph at lines 49--50
 \T1/futs/m/n/10 of hu-man search (at least, in search for a Ga-bor
+ []
+
+
+Underfull \hbox (badness 1102) in paragraph at lines 49--50
+\T1/futs/m/n/10 a neu-ral net-work im-ple-men-ta-tion of near-optimal
  []
 
 
@@ -667,13 +661,13 @@ Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.
 pdf used on input line 64.
 (pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
-Underfull \hbox (badness 1009) in paragraph at lines 53--68
-[]\T1/futs/m/n/10 This idea has re-cently been for-malised and ex-
+Underfull \hbox (badness 2080) in paragraph at lines 53--68
+\T1/futs/m/n/10 who demon-strate that a stochas-tic search model
  []
 
 
-Package natbib Warning: Citation `Canosa:2003tu' on page 2 undefined on input l
-ine 73.
+Package natbib Warning: Citation `canosa2003' on page 2 undefined on input line
+ 73.
 
 
 Package natbib Warning: Citation `fuller1996' on page 2 undefined on input line
@@ -684,27 +678,29 @@ Package natbib Warning: Citation `stainer2013' on page 2 undefined on input lin
 e 73.
 
 
-Package natbib Warning: Citation `Parkhurst:2002vo' on page 2 undefined on inpu
-t line 75.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package natbib Warning: Citation `birmingham2009' on page 2 undefined on input 
 line 75.
 
+[2]
 
-Package natbib Warning: Citation `brandt1945' on page 2 undefined on input line
+Package natbib Warning: Citation `brandt1945' on page 3 undefined on input line
  83.
 
 
-Package natbib Warning: Citation `crundeall-underwood1998' on page 2 undefined 
+Package natbib Warning: Citation `crundeall-underwood1998' on page 3 undefined 
 on input line 83.
 
 
-Package natbib Warning: Citation `wartburg2007' on page 2 undefined on input li
+Package natbib Warning: Citation `wartburg2007' on page 3 undefined on input li
 ne 83.
 
-[2]
-Underfull \vbox (badness 1348) has occurred while \output is active []
+
+Package natbib Warning: Citation `Foulsham2008' on page 3 undefined on input li
+ne 85.
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -745,9 +741,6 @@ Package natbib Warning: Citation `tatler-vincent20xx' on page 4 undefined on in
 put line 107.
 
 
-Underfull \vbox (badness 1466) has occurred while \output is active []
-
-
 Underfull \hbox (badness 2582) in paragraph at lines 116--117
 \T1/futs/m/n/10 be thought of as a gen-er-al-i-sa-tion of the cen-tral
  []
@@ -777,12 +770,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 148--148
 []\T1/futs/b/n/12 Removing bi-ases when ex-am-in-ing
  []
 
-
+[5]
 Underfull \hbox (badness 2165) in paragraph at lines 151--152
 \T1/futs/m/n/10 mark that have open code - Ar-ti-fi-cial Whiten-ing
  []
 
-[5] <figs/salmaps.png, id=68, 1109.1036pt x 260.8947pt>
+<figs/salmaps.png, id=68, 1109.1036pt x 260.8947pt>
 File: figs/salmaps.png Graphic file (type png)
  <use figs/salmaps.png>
 Package pdftex.def Info: figs/salmaps.png used on input line 154.
@@ -820,9 +813,9 @@ f)
 Package pdftex.def Info: ../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf us
 ed on input line 200.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
+ [6 <./figs/heatmap_figure.pdf>] [7 <./figs/salmaps.png>]
 
-
-LaTeX Warning: Reference `sec:reanalysisClarke2013' on page 6 undefined on inpu
+LaTeX Warning: Reference `sec:reanalysisClarke2013' on page 8 undefined on inpu
 t line 207.
 
 
@@ -830,7 +823,7 @@ Underfull \hbox (badness 2027) in paragraph at lines 207--208
 \T1/futs/m/n/10 dependant be-haviour. These bias-weighted gaze
  []
 
-[6 <./figs/heatmap_figure.pdf>] [7 <./figs/salmaps.png>] (./BiasModelling.tex
+(./BiasModelling.tex
 Underfull \hbox (badness 3713) in paragraph at lines 15--16
 \T1/futs/m/n/10 We will uses a num-ber of pre-vi-ously pub-lished
  []
@@ -854,13 +847,8 @@ Underfull \hbox (badness 1024) in paragraph at lines 26--27
 \T1/futs/m/n/10 are pre-sented seper-ately, and split by stim-uli
  []
 
-[8 <../scripts/coarse2fine/figs/xFixComparison.pdf> <../scripts/coarse2fine/fig
-s/yFixComparison.pdf> <../scripts/coarse2fine/figs/ampSaccComparison.pdf> <../s
-cripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf>]
-Underfull \vbox (badness 4266) has occurred while \output is active []
-
-
-<../scripts/leftVright/graphs/leftrightbias.pdf, id=117, 216.81pt x 216.81pt>
+[8]
+<../scripts/leftVright/graphs/leftrightbias.pdf, id=96, 216.81pt x 216.81pt>
 File: ../scripts/leftVright/graphs/leftrightbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/leftrightbias.pdf>
@@ -868,7 +856,7 @@ Package pdftex.def Info: ../scripts/leftVright/graphs/leftrightbias.pdf used on
  input line 54.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
 
-<../scripts/leftVright/graphs/updownbias.pdf, id=118, 216.81pt x 216.81pt>
+<../scripts/leftVright/graphs/updownbias.pdf, id=97, 216.81pt x 216.81pt>
 File: ../scripts/leftVright/graphs/updownbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/updownbias.pdf>
@@ -879,8 +867,10 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 72.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [9 <../scripts/leftVright/graphs/leftrightbias.pdf> <../scripts/leftVright/gr
-aphs/updownbias.pdf>]
+) [9 <../scripts/coarse2fine/figs/xFixComparison.pdf> <../scripts/coarse2fine/f
+igs/yFixComparison.pdf> <../scripts/coarse2fine/figs/ampSaccComparison.pdf> <..
+/scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf> <../scripts/leftVright/graph
+s/leftrightbias.pdf> <../scripts/leftVright/graphs/updownbias.pdf>]
 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf, id=134, 867.24pt x 28
 9.08pt>
 File: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf Graphic file (typ
@@ -928,8 +918,8 @@ Underfull \hbox (badness 1052) in paragraph at lines 120--121
 
 )
 
-Package natbib Warning: Citation `Stainer:2013ce' on page 10 undefined on input
- line 219.
+Package natbib Warning: Citation `stainer2013' on page 10 undefined on input li
+ne 219.
 
 
 Underfull \hbox (badness 1253) in paragraph at lines 219--220
@@ -941,39 +931,43 @@ Underfull \hbox (badness 2503) in paragraph at lines 219--220
 \T1/futs/m/n/10 head po-si-tion [FOUL-SHAM WALK-ING, CRISTINO
  []
 
-(./Dataset.tex) (./saccadicBiases.bbl [10] [11 <../scripts/flow/figs/NparamsCha
-gingOverSpace_ALL_tN.pdf> <../scripts/flow/figs/llh_training.pdf> <../scripts/f
-low/figs/llh_testing.pdf>] [12 <../scripts/flow/figs/llh_Borji.pdf>] [13]
-Underfull \hbox (badness 1681) in paragraph at lines 141--145
+(./Dataset.tex [10] [11 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pd
+f> <../scripts/flow/figs/llh_training.pdf> <../scripts/flow/figs/llh_testing.pd
+f>]) (./saccadicBiases.bbl [12 <../scripts/flow/figs/llh_Borji.pdf>] [13]
+Underfull \hbox (badness 1681) in paragraph at lines 154--158
 \T1/futs/m/n/9 search: An ethol-ogy.  \T1/futs/m/it/9 At-ten-tion, Per-cep-tion
 , & Psy-
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 166--169
+Underfull \hbox (badness 1509) in paragraph at lines 172--175
 []\T1/futs/m/n/9 Antje Nuth-mann and Ellen Matthias.  Time course of
  []
 
-)
+[14])
 
 Package natbib Warning: There were undefined citations.
 
-[14] (./saccadicBiases.aux)
+[15
+
+] (./saccadicBiases.aux
+
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
+
+)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 4400 strings out of 493089
- 63719 string characters out of 6134842
- 128431 words of memory out of 5000000
- 7711 multiletter control sequences out of 15000+600000
+ 4405 strings out of 493089
+ 63788 string characters out of 6134842
+ 124608 words of memory out of 5000000
+ 7716 multiletter control sequences out of 15000+600000
  92710 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,35p,1974b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,11n,35p,1991b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texl
@@ -983,10 +977,10 @@ ive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on saccadicBiases.pdf (14 pages, 29027922 bytes).
+Output written on saccadicBiases.pdf (15 pages, 29029311 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
- 130 compressed objects within 2 object streams
+ 211 PDF objects out of 1000 (max. 8388607)
+ 132 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  106 words of extra memory for PDF output out of 10000 (max. 10000000)
 
