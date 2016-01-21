@@ -23,7 +23,7 @@
 
 %%% The "real" document content comes below...
 
-\title{The saccadic flow baseline: Accounting for task- and image-independent biases in fixation behaviour }
+\title{The saccadic flow baseline: Accounting for image-independent biases in fixation behaviour }
 
 \author{Alasdair D. F. Clarke, Matthew J. Stainer, Ben Tatler \& Amelia R. Hunt}
 
@@ -104,13 +104,14 @@ This falls under the more general spatial attention bias of psuedoneglect \citep
 
 Several studies have described sequential dependencies during free viewing that bias saccades to repeat the same vector and amplitude (known as saccadic momentum) and to bias saccades away from returning to previously-visited targets (known as inhibition of return). Although both of these phenomena bias fixations away from previously-fixated locations, they differ in that inhibition of return is bound to a location in the search array, i.e. it is coded in object-based or spatiotopic coordinates (e.g. \cite{krueger-hunt2013}), while saccadic momentum has been characterised as a basic tendency to repeat the same motor program \citep{wang2011}. Inhibition of return, unlike saccadic momentum, is task-dependent \citep{dodd2009} and is disrupted by removing the scene or inhibited object  \citep{klein-macinnes1999, takeda-yagi2000}.  \cite{macinnes2014} observed both of these mechanisms operating during free visual search of a complex scene, but presumably only saccadic momentum would be consistently observed for all tasks and images. 
 
- \cite{macinnes2014, tatler-vincent20xx}
+ \cite{tatler-vincent20xx}
 
-\subsection{Biases and Modelling/Analysis}
+
+
+\subsection{The present study}
 
 These biases, in particular, the central bias, are important to take into account when evaluating the performance of models of fixation location, and investigating relationships between eye movement data and other factors. \textbf{more details and examples}. 
 
-\subsection{The present study}
 
 One of the main contributions of this manuscript is to introduce the \textit{saccadic flow} model. This can be thought of as a generalisation of the central bias: instead of simply characterising the image-independent probability of fixating $(x_i, y_i)$ we model the conditional probabilities $p(x_i,y_i|x_{i-1}, y_{i-1})$. i.e. the probability of making a saccade from to $(x_i,y_i)$ given we are currently fixating $(x_{i-1}, y_{i-1})$.
 
@@ -120,10 +121,11 @@ In Section \ref{sec:biases} we will give full details of the saccadic flow model
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Using Biases}
-\label{sec:usingbiaes}
+\label{sec:usingbiases}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This section make use of an improved central bias model (similar to \cite{clarke-tatler2014} except uses a truncated Gaussian distribution to take the image boundaries into account: see Section \ref{sec:truncatedCentral}) and the \textit{saccadic flow} model (described in Section \ref{ModellingFlow}). We present three examples of how these bias models can be used as a prior in order to weight fixations. First of all, we will demonstrate how we can weight fixations in hotspot maps to reduce the noise and give an improved visualisation of the regions of the image that participants looked at more than expect. Secondly, we will re-analyse the effect of attention on object naming from \cite{clarke2013}.  Finally, we will demonstrate how these priors can be used in ROC analysis to improve results. We will re-analyse the effect of the scene context model developed by  \cite{ehinger2009} as an example. 
+This section make use of an improved central bias model (similar to \cite{clarke-tatler2014} except uses a truncated Gaussian distribution to take the image boundaries into account: see Section \ref{sec:truncatedCentral}) and the \textit{saccadic flow} model (described in Section \ref{ModellingFlow}). We present three examples of how these bias models can be used as a prior in order to weight fixations. First of all, we will demonstrate how we can weight fixations in hotspot maps to reduce the noise and give an improved visualisation of the regions of the image that participants looked at more than expect. Secondly, we examine whether saccadic flow can be used to better understand the contribution of low-level features on fixation selection, and potentially lead to better evaluation of such computational saliency models. Finally, we use flow to generate a series of saccades and compare these to observed human saccades. Being able to generate realistic synthetic datasets is useful to create an image-independent baseline with which to examine spatial maps of prediction using signal detection \citep[see][]{clarke-tatler2014}.
+
 
 \subsection{Gaze landscapes}
 
@@ -131,52 +133,60 @@ One technique that is commonly used to visualise the spatial allocation of gaze 
 
 One advantage of the \citep{clarke-tatler2014} model, and the saccadic flow model here is that we can represent fixations by the likelihood that they would occur based on the predictions of the models. As there is an image independent tendency to fixate in the centre of the scene (for example), then we might consider that saccades to locations less predicted by these behavioural and oculomotor biases might involve more high-level mechanisms. In Figure ~\ref{fig:adjustedHeatmaps} (column 4 and 5) we present some overlaid heatmap data from the \citep{clarke2013} dataset, where fixations are weighted by the inverse probability of them occurring based on the models of central bias and saccadic flow. These figures reveal that representing data in this manner can allow us to visualise information that was important enough to break the biases of looking at the scene centre, or making saccades in line with our saccadic flow model. We can therefore use this to remove some of the image-independent biases, and reveal the more important image \emph{dependent} information.
 
+The top row of Figure ~\ref{fig:adjustedHeatmaps} demonstrates that weighting the fixations by the central bias and flow model both reduce the \emph{importance} of some fixations. The central bias model punishes fixations near the center of the image, while the flow model punishes fixations that were well predicted by the oculomotor biases of the saccadic flow model. Conversely, the models reward unlikely fixations. The second row reveals an instance of where the car to the left received less fixations than the pub sign, but that these fixations are boosted in the central bias and saccadic flow models where 'unlikely' saccades were made to this location. In the third and fourth rows, there are examples of images with a photographer bias of content towards the centre of the photograph. This reveals an example of where down-weighting the central fixations might lose important content.
+where the central bias model reduces the influence fixations in the centre of pictures that have important content located there. Given the tendency for photographers to bias their photographs in the centre, reducing fixations to the castle in the painting (row 3) and the girl's face (row 4).
+
 \begin{figure*}
-\includegraphics[width=\textwidth]{figs/adjustedheatmaps.pdf}
-\caption{Traditional 'heat map' plots of fixations normalised by the central bias. This method allows us to characterise fixations that are less accountable for by image-independent central biases.}
+\centering
+\includegraphics[width=13cm]{figs/heatmap_figure.pdf}
+\caption{Examples of fixation heatmap plots from \cite{clarke2013}. The same fixations are presented where the Gaussian at each fixation is weighted by the duration of the fixation, the centre bias model from \citep{clarke-tatler2014} , and the saccadic flow model presented in this paper.}
 \label{fig:adjustedHeatmaps}
 \end{figure*}
 
-Or do we call them hotspot maps?
-
-\subsection{Reanalysis of Clarke et al 2013}
-\label{sec:reanalysisClarke2013}
-
-In this section we re-analyse the effect of attention on object naming descried in \cite{clarke2013}. In the original study, 24 observers were shown 100 images, with each image displayed for five seconds. After each image had been displayed, observers were asking to name as many objects as they could remember from the scene. The relationship between which objects were named, and where people looked was analysed, along with positional, salience and linguistic features. Several interesting and complex interactions between these different modalities were identified but of particular interest here is the negative interaction between attention and position. This interaction interpreted in terms of the central bias: objects that are central are likely to be looked at more often by default, and hence they will receive a larger attentional scores without actually being more likely to be named.
-
-One of the benefits of using bias functions as priors is that we can re-weight the attentional feature used by \cite{clarke2013} to decorrelate it from object position. By doing so, we can potentially simplify the model and have more intuitive results. 
-
-The attentional feature used by \cite{clarke2013} was based on hotspotmaps, similar to the gaze landscapes presented above. For each object, the attentional score was defined by simply taking the maxima of the pixels in the hotspotmap that fell within the objects boundary. in this reanalysis, we will explore how well attentional features that take the central bias and saccadic flow into account compare to unweighed and fixation duration weighted features. Following the original study, we will repeat our analysis over a range of kernel sizes. 
-
-\subsubsection{Methods}
-We will analyse the effect of the different attention features using a glmer.
-
-\subsubsection{Results}
-
- The results are shown ...
-
-interaction with position
-
-\subsubsection{Discussion}
-
-Discuss and conclude		
-
-\subsection{Reanalysis of Ehinger et al 2009}
-
-We will now explore how our bias distributions can be used to re-analyse the contextual guidance model presented by \cite{ehinger2009}. In their original paper, 14 observers carried out 912 visual searches for a pedestrian in a street scene. These data were used to evaluate computational models of search guidance based on salience, target features and scene context and when combined, these sources of guidance account for $94\%$ of human agreement. The authors also find that scene context offers the most explanatory power. 
-
-In the original analysis, a cross-image control set of fixations was used to account for all the biases within the dataset. While this method is common, there are several issues with it. To start with, we do not know which biases are present in the dataset, and how strong any of them are. The context model developed by \cite{ehinger2009} is based on predicting a horizontal band across the image, which is not all that dissimilar to the central bias disused \cite{clarke-tatler2014}. By taking the central bias into account directly, we can separate out its effects from those of contextual guidance. Finally, the cross-image control method potentially understates the strength of contextual guidance. Visual inspection of the stimuli used in this experiment suggests that most relatively similar to one another (urban street scenes) and one would expect that the context-model should return approximately the same region from one image to the next. If this is a case, this is a data-set wide bias which is of interest to the reader, yet has been removed from the analysis by using a cross-image control set. 
-
-In this section, we will reanalyse the effect of the oracle context maps using ROC curves with three different ways of constructing control points: using a cross-image method, sampling points from the central bias, and sampling points from the saccadic flow model. 
-
-\subsubsection{Methods}
-
-\subsubsection{Results}
-
-\subsubsection{Discussion}
 
 
-\subsection{Comparison between synthetic and real data}
+\subsection{Removing biases when examining image-dependent information}
+By considering saccades by the probability that they were generated by the non-image biases, we can gain further insights into the image-dependent features that are important in attracting fixation. One feature that has been shown to correlate highly with fixation is visual salience (e.g. Parkhurst?). However, others have argued that this tendency is driven by the correlation between salient objects and the central bias (XXHenderson?XX), and that the oculomotor biases which favour a central tendency would give same fixation placement regardless of saliency (TatlerVincent2009). Here, we can examine this question by looking at the relationship between saccade probability and salience at fixated locations. If salience does draw fixation then we would expect there to be no relationship between our models of oculomotor bias and salience at fixation. Conversely if the effect of salience is a by-product of oculomotor biases then we should find that saccades that occur with a high probability from oculomotor biases would have higher salience scores at fixation than fixations from saccades that are less likely to occur.
+
+We examined visual salience in the 1 degree area surrounding fixations from the XXCLARKE2013XX \& Tatler 2007 free-viewing condition using the top 2 performing salience models in the MIT Saliency Benchmark that have open code - Artificial Whitening Saliency (AWS; XXREFXX) and RARE (REFS). We also examined salience as measured by the Graph Based Visual Salience (GBVS) algorithm (REFS), as this way of calculating visual salience includes a central bias. Examples of the maps can be seen in Figure ~\ref{fig:salmaps} Maps were normalised to sum to 1, and data were analysed using linear mixed-effect models with the fixation weighting (duration, central bias or saccadic flow) as fixed effect factors, and image and participant as random effects. 
+
+\begin{figure*}
+\includegraphics[width=\textwidth]{figs/salmaps.png}
+\caption{Example image with saliency maps made with the AWS, RARE and GBVS salience algorithms.}
+\label{fig:salmaps}
+\end{figure*}
+
+
+\subsubsection{Clarke 2013}
+
+There was no relationship between the duration of a fixation and salience using any of the salience algorithms (all \emph{p}'s > .05). The relationship between the probability of saccades occuring based on the central bias model and salience did not quite reach significance using AWS (\emph{p}=.065), but was significant when using the RARE algorithm (\emph{p}<.001), with a strong positive correlation confirming that saccades that landed close to the image centre were also highly salient, whereas fixations that were further from the centre were less salient. This was supported when using a centrally-biased salience algorithm (GBVS) in which a stronger relationship was observed. Finally, saccadic flow was significantly related to salience in all models, with saccades that were unlikely to be driven by behavioural bias having much lower salience scores than saccades that could be explained by the flow model. 
+
+
+\begin{table*}
+    \centering
+    \caption{\label{tab:salienceAUC} Linear Mixed-effect model outputs for relationship between duration, central bias and saccadic flow salience at fixation in the Clarke et al., (2013) dataset.}
+    \begin{tabular}{cccccc}
+           Salience model 	& Fixation weighting 	& $\beta$ 		& SE 		& \emph{t} 	& \emph{p} \\ \hline
+           AWS	\\
+           	& Duration 				&  2.28e-09		& 2.95e-08 	& 0.08 		& .996 \\
+           					& Central bias 			&  5.5e-07 		& 2.71e-07	& 2.03		& .065 . \\
+          					& Saccadic flow 		&  1.82e-07		& 2.09e-08 	& 8.724     & <.001*** \\
+
+		   RARE \\
+		   	& Duration 				&  -1.52e-08 	& 3.82e-08 	& -0.4 		& .89 \\
+           				& Central bias 			&  1.39e-06 	& 3.95e-07 	& 3.51 		& <.001*** \\
+          				& Saccadic flow 		&  2.31e-07 	& 3.35e-08 	& 6.89 		& <.001*** \\
+
+           GBVS  \\
+           	& Duration 				&  -3.93e-09 	& 1.94e-08 	& -0.2 		& .973 \\
+           				& Central bias 			&  3.34e-06 	& 1.69e-07 	& 19.79 	& <.001*** \\
+          				& Saccadic flow 		&  1.29e-07 	& 1.83e-08 	& 7.03 		& <.001*** \\
+   \\ \hline         
+    \end{tabular}
+ \end{table*}
+
+
+\subsection{Saccadic Flow as a Generative Model}
 \label{sec:humanComp}
 To what extent does saccadic flow account for coarse-to-fine dynamics? Not that well. Not unexpected.
 
@@ -197,8 +207,6 @@ We can see from Figure \ref{fig:flowHumanComp} that both the central bias and th
 We have presented how biases such as saccadic flow and the central bias can be used in different ways. They can be used as a prior on the probability of making saccades to different regions of the image, allowing us to then more clearly visualise the image-dependant behaviour. These bias-weighted gaze landscapes can then be used in analysis as demonstrated in Section \ref{sec:reanalysisClarke2013}.
 
 We can also use the bias distributions to generate data
-
-
 
 \input{BiasModelling}
 
