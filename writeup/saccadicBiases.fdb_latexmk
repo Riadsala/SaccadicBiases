@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex saccadicBiases"] 1453391826 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1453391826
+["bibtex saccadicBiases"] 1453457462 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1453457462
   "/usr/local/texlive/2015/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "literature.bib" 1453391122 24624 79970572574a2ae2ee40234e0c424f64 ""
-  "saccadicBiases.aux" 1453391826 12025 34cb702b55cc0957a61445e8c05a1f54 ""
+  "literature.bib" 1453457453 25478 e09a99c2a00a9897648502069702e9a5 ""
+  "saccadicBiases.aux" 1453455781 12024 8492e7bd3b04ebc5c23cf2868e5cd5b1 ""
   "saccadicBiases.bcf" 0 -1 0 ""
   (generated)
   "saccadicBiases.bbl"
   "saccadicBiases.blg"
-["pdflatex"] 1453391824 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1453391824
+["pdflatex"] 1453455779 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1453455779
   "../scripts/coarse2fine/figs/ampSaccComparison.pdf" 1444735978 13943 37ca4484142248334c2bc76743da202d ""
   "../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf" 1444735977 7694 8f759aa7ecf3b44ef9de8435af4dc518 ""
   "../scripts/coarse2fine/figs/xFixComparison.pdf" 1444735976 14702 2d0c1940c7fcae4e8178b5dbbf0dddc2 ""
@@ -132,10 +132,10 @@
   "Dataset.tex" 1449586425 3294 0e28600318981b98dcb4de4aee929edc ""
   "figs/heatmap_figure.pdf" 1445421079 24728114 e5dceb938f0d91bf1cce19fe0608fc75 ""
   "figs/salmaps.png" 1453384031 2564262 cb128dda0a45c7743bcd06630b8ef334 ""
-  "saccadicBiases.aux" 1453391672 12094 ec352edccbf1e80cb8c1d37825dba3b5 ""
-  "saccadicBiases.bbl" 1453391672 11079 f921dbb6d4f471e179d75367b07b5027 "bibtex saccadicBiases"
-  "saccadicBiases.tex" 1453391824 28977 40cec48846a13909982777b44c0ff012 ""
+  "saccadicBiases.aux" 1453455633 12048 0fe4321d4c7c01fb0617261c7e41b052 ""
+  "saccadicBiases.bbl" 1453455633 11190 0923e6d2132f9d21312662d4715096ba "bibtex saccadicBiases"
+  "saccadicBiases.tex" 1453455779 28910 bf8ab97ec7f9d8ef715d98c4c1afb032 ""
   (generated)
-  "saccadicBiases.pdf"
-  "saccadicBiases.aux"
   "saccadicBiases.log"
+  "saccadicBiases.aux"
+  "saccadicBiases.pdf"

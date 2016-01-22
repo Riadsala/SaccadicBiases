@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{40}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -27,6 +27,11 @@ Ali Borji and Laurent Itti.
 Dawn Bowers and Kenneth~M Heilman.
 \newblock Pseudoneglect: effects of hemispace on a tactile line bisection task.
 \newblock \emph{Neuropsychologia}, 18\penalty0 (4):\penalty0 491--498, 1980.
+
+\bibitem[Brandt(1945)]{brandt1945}
+Herman~Francis Brandt.
+\newblock The psychology of seeing.
+\newblock 1945.
 
 \bibitem[Buswell(1935)]{buswell1935}
 Guy~Thomas Buswell.
@@ -82,7 +87,7 @@ Wolfgang Einh{\"a}user, Merrielle Spain, and Pietro Perona.
 \newblock Objects predict fixations better than early saliency.
 \newblock \emph{Journal of Vision}, 8\penalty0 (14):\penalty0 18: 1--26, 2008.
 
-\bibitem[Foulsham and Kingstone(2010)]{Foulsham-kingstone2010}
+\bibitem[Foulsham and Kingstone(2010)]{foulsham-kingstone2010}
 Tom Foulsham and Alan Kingstone.
 \newblock Asymmetries in the direction of saccades during perception of scenes
   and fractals: Effects of image type and image features.
