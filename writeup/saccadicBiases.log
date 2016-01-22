@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.6.12)  22 JAN 2016 09:50
+=======
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.9)  22 JAN 2016 09:42
+>>>>>>> origin/master
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -667,6 +671,7 @@ Underfull \hbox (badness 1472) in paragraph at lines 75--76
  []
 
 [2]
+<<<<<<< HEAD
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 82.
 
@@ -677,6 +682,16 @@ on input line 83.
 
 Package natbib Warning: Citation `Foulsham2008' on page 3 undefined on input li
 ne 85.
+=======
+
+Package natbib Warning: Citation `wartburg2007' on page 3 undefined on input li
+ne 83.
+
+
+Underfull \hbox (badness 1107) in paragraph at lines 83--84
+\T1/futs/m/n/10 scenes there is a higher pro-por-tion of eye move-
+ []
+>>>>>>> origin/master
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -688,10 +703,6 @@ aps/Figures/BBias_13.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_2
 heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf> <../scripts/heatmaps/SaccadicFl
 owMaps/Figures/BBias_31.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBia
 s_32.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf>]
-Underfull \hbox (badness 1163) in paragraph at lines 97--98
-[]\T1/futs/m/n/10 [Learmonth, Gal-lagher, Gib-son, Thut, and Har-
- []
-
 
 Package natbib Warning: Citation `krueger-hunt2013' on page 4 undefined on inpu
 t line 105.
@@ -792,9 +803,13 @@ f)
 Package pdftex.def Info: ../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf us
 ed on input line 200.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/master
 
 
-LaTeX Warning: Reference `sec:reanalysisClarke2013' on page 8 undefined on inpu
+LaTeX Warning: Reference `sec:reanalysisClarke2013' on page 6 undefined on inpu
 t line 207.
 
 
@@ -802,7 +817,7 @@ Underfull \hbox (badness 2027) in paragraph at lines 207--208
 \T1/futs/m/n/10 dependant be-haviour. These bias-weighted gaze
  []
 
-(./BiasModelling.tex
+[6 <./figs/heatmap_figure.pdf>] [7 <./figs/salmaps.png>] (./BiasModelling.tex
 Underfull \hbox (badness 3713) in paragraph at lines 15--16
 \T1/futs/m/n/10 We will uses a num-ber of pre-vi-ously pub-lished
  []
@@ -826,8 +841,10 @@ Underfull \hbox (badness 1024) in paragraph at lines 26--27
 \T1/futs/m/n/10 are pre-sented seper-ately, and split by stim-uli
  []
 
-[8]
-<../scripts/leftVright/graphs/leftrightbias.pdf, id=96, 216.81pt x 216.81pt>
+[8 <../scripts/coarse2fine/figs/xFixComparison.pdf> <../scripts/coarse2fine/fig
+s/yFixComparison.pdf> <../scripts/coarse2fine/figs/ampSaccComparison.pdf> <../s
+cripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf>]
+<../scripts/leftVright/graphs/leftrightbias.pdf, id=117, 216.81pt x 216.81pt>
 File: ../scripts/leftVright/graphs/leftrightbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/leftrightbias.pdf>
@@ -835,7 +852,7 @@ Package pdftex.def Info: ../scripts/leftVright/graphs/leftrightbias.pdf used on
  input line 54.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
 
-<../scripts/leftVright/graphs/updownbias.pdf, id=97, 216.81pt x 216.81pt>
+<../scripts/leftVright/graphs/updownbias.pdf, id=118, 216.81pt x 216.81pt>
 File: ../scripts/leftVright/graphs/updownbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/updownbias.pdf>
@@ -850,7 +867,12 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 72.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+<<<<<<< HEAD
 )
+=======
+) [9 <../scripts/leftVright/graphs/leftrightbias.pdf> <../scripts/leftVright/gr
+aphs/updownbias.pdf>]
+>>>>>>> origin/master
 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf, id=134, 867.24pt x 28
 9.08pt>
 File: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf Graphic file (typ
@@ -896,17 +918,43 @@ Underfull \hbox (badness 1052) in paragraph at lines 120--121
 \T1/futs/m/n/10 prior for image-content in-de-pen-dent sac-cadic be-
  []
 
+<<<<<<< HEAD
 ) [10] [11 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf> <../script
 s/flow/figs/llh_training.pdf> <../scripts/flow/figs/llh_testing.pdf>]
 (./Dataset.tex) (./saccadicBiases.bbl [12 <../scripts/flow/figs/llh_Borji.pdf>]
 [13]
 Underfull \hbox (badness 1681) in paragraph at lines 193--197
+=======
+)
+
+Package natbib Warning: Citation `stainer2013' on page 10 undefined on input li
+ne 219.
+
+
+Underfull \hbox (badness 1253) in paragraph at lines 219--220
+\T1/futs/m/n/10 prob-lems for re-lat-ing find-ings of eye guid-ance in
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 219--220
+\T1/futs/m/n/10 head po-si-tion [FOUL-SHAM WALK-ING, CRISTINO
+ []
+
+(./Dataset.tex [10] [11 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pd
+f> <../scripts/flow/figs/llh_training.pdf> <../scripts/flow/figs/llh_testing.pd
+f>]) (./saccadicBiases.bbl [12 <../scripts/flow/figs/llh_Borji.pdf>] [13]
+Underfull \hbox (badness 1681) in paragraph at lines 159--163
+>>>>>>> origin/master
 \T1/futs/m/n/9 search: An ethol-ogy.  \T1/futs/m/it/9 At-ten-tion, Per-cep-tion
 , & Psy-
  []
 
 
+<<<<<<< HEAD
 Underfull \hbox (badness 1509) in paragraph at lines 211--214
+=======
+Underfull \hbox (badness 1509) in paragraph at lines 177--180
+>>>>>>> origin/master
 []\T1/futs/m/n/9 Antje Nuth-mann and Ellen Matthias.  Time course of
  []
 
@@ -922,15 +970,28 @@ Package natbib Warning: There were undefined citations.
 [15
 
 ] (./saccadicBiases.aux)
+<<<<<<< HEAD
+=======
 
 LaTeX Warning: There were undefined references.
 
+>>>>>>> origin/master
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
+<<<<<<< HEAD
  4428 strings out of 493089
  64235 string characters out of 6134842
  123996 words of memory out of 5000000
  7739 multiletter control sequences out of 15000+600000
+=======
+ 4405 strings out of 493089
+ 63790 string characters out of 6134842
+ 124589 words of memory out of 5000000
+ 7716 multiletter control sequences out of 15000+600000
+>>>>>>> origin/master
  92710 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,11n,35p,1991b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -943,7 +1004,11 @@ ive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf
 -dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist/
 fonts/type1/public/cm-super/sftt1000.pfb>
+<<<<<<< HEAD
 Output written on saccadicBiases.pdf (15 pages, 29031054 bytes).
+=======
+Output written on saccadicBiases.pdf (15 pages, 29029380 bytes).
+>>>>>>> origin/master
 PDF statistics:
  211 PDF objects out of 1000 (max. 8388607)
  132 compressed objects within 2 object streams

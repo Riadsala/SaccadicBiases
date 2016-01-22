@@ -1,12 +1,20 @@
 # Fdb version 3
+<<<<<<< HEAD
 ["bibtex saccadicBiases"] 1453456224 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1453456224
   "/usr/local/texlive/2015/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "literature.bib" 1453456121 26823 206c35b46fa5b3898a2f23a56e725082 ""
   "saccadicBiases.aux" 1453456223 12634 c6fffe3886081f1f10dd03c52437cd67 ""
+=======
+["bibtex saccadicBiases"] 1453457462 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1453457462
+  "/usr/local/texlive/2015/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
+  "literature.bib" 1453457453 25478 e09a99c2a00a9897648502069702e9a5 ""
+  "saccadicBiases.aux" 1453455781 12024 8492e7bd3b04ebc5c23cf2868e5cd5b1 ""
+>>>>>>> origin/master
   "saccadicBiases.bcf" 0 -1 0 ""
   (generated)
   "saccadicBiases.bbl"
   "saccadicBiases.blg"
+<<<<<<< HEAD
 ["pdflatex"] 1453456210 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1453456210
   "../scripts/coarse2fine/figs/ampSaccComparison.pdf" 1453390476 13943 37ca4484142248334c2bc76743da202d ""
   "../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf" 1453390476 7694 8f759aa7ecf3b44ef9de8435af4dc518 ""
@@ -29,6 +37,30 @@
   "../scripts/leftVright/graphs/updownbias.pdf" 1453390703 14420 310bc61d7056387dea9f3b4fcda25d69 ""
   "./figs/heatmap_figure.pdf" 1453390706 24728114 e5dceb938f0d91bf1cce19fe0608fc75 ""
   "./figs/salmaps.png" 1453390708 2564262 cb128dda0a45c7743bcd06630b8ef334 ""
+=======
+["pdflatex"] 1453455779 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1453455779
+  "../scripts/coarse2fine/figs/ampSaccComparison.pdf" 1444735978 13943 37ca4484142248334c2bc76743da202d ""
+  "../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf" 1444735977 7694 8f759aa7ecf3b44ef9de8435af4dc518 ""
+  "../scripts/coarse2fine/figs/xFixComparison.pdf" 1444735976 14702 2d0c1940c7fcae4e8178b5dbbf0dddc2 ""
+  "../scripts/coarse2fine/figs/yFixComparison.pdf" 1444735976 14344 ee66b94d02fad98140fc40f84d5235e8 ""
+  "../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf" 1445247473 15083 ba1ec127653875bb0dd019cbd02e61a1 ""
+  "../scripts/flow/figs/llh_Borji.pdf" 1444122382 8821 14e50a68ebe1f9b1626e88a5e17b9f1a ""
+  "../scripts/flow/figs/llh_testing.pdf" 1445606934 5662 5bc9b1c28db3eb93ca3049c03a31aafb ""
+  "../scripts/flow/figs/llh_training.pdf" 1445606172 6453 abe6562b529b8bf2ee9ab2988cd93bbd ""
+  "../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf" 1443434877 129925 8db2a7eed00b2469f00f68144012a6db ""
+  "../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf" 1443434877 104338 b604fe1652590a65f6dc45fb3aa0214c ""
+  "../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf" 1443434877 136270 5ed8b2ecc7de942e5ef148d44e18382c ""
+  "../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf" 1443434877 124466 773015355df590ea67a42d8d2eca7fb6 ""
+  "../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf" 1443434877 91026 bc0e09071415fa784062218c1be4a5b5 ""
+  "../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf" 1443434877 111285 d532d14b63d6165387a80c144f1d0521 ""
+  "../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf" 1443434877 127120 88e3105cd8f4f7dbbf01529dfadbb404 ""
+  "../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf" 1443434877 112067 256479f6234e52437cff2bdf59eb4545 ""
+  "../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf" 1443434877 134122 7e0803f30828c85c552442c0577a8a58 ""
+  "../scripts/leftVright/graphs/leftrightbias.pdf" 1445265754 16081 a1ae51e6ae1bbb7d2fea9d97e8cdae8f ""
+  "../scripts/leftVright/graphs/updownbias.pdf" 1445265755 14420 310bc61d7056387dea9f3b4fcda25d69 ""
+  "./figs/heatmap_figure.pdf" 1445421079 24728114 e5dceb938f0d91bf1cce19fe0608fc75 ""
+  "./figs/salmaps.png" 1453384031 2564262 cb128dda0a45c7743bcd06630b8ef334 ""
+>>>>>>> origin/master
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -128,6 +160,7 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1434113776 3849859 e0ab6c9be2b5d0396126b33206d9c251 ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
+<<<<<<< HEAD
   "BiasModelling.tex" 1453455038 11065 a44d6b13922d11f051499053b4403338 ""
   "Dataset.tex" 1453390704 3294 0e28600318981b98dcb4de4aee929edc ""
   "figs/heatmap_figure.pdf" 1453390706 24728114 e5dceb938f0d91bf1cce19fe0608fc75 ""
@@ -135,7 +168,16 @@
   "saccadicBiases.aux" 1453456060 12633 fe988628eb848054dd59f8c16ce6da59 ""
   "saccadicBiases.bbl" 1453456063 13310 a210c6cdba93d05ba120994624f2f864 "bibtex saccadicBiases"
   "saccadicBiases.tex" 1453455055 28977 40cec48846a13909982777b44c0ff012 ""
+=======
+  "BiasModelling.tex" 1453387525 11065 a44d6b13922d11f051499053b4403338 ""
+  "Dataset.tex" 1449586425 3294 0e28600318981b98dcb4de4aee929edc ""
+  "figs/heatmap_figure.pdf" 1445421079 24728114 e5dceb938f0d91bf1cce19fe0608fc75 ""
+  "figs/salmaps.png" 1453384031 2564262 cb128dda0a45c7743bcd06630b8ef334 ""
+  "saccadicBiases.aux" 1453455633 12048 0fe4321d4c7c01fb0617261c7e41b052 ""
+  "saccadicBiases.bbl" 1453455633 11190 0923e6d2132f9d21312662d4715096ba "bibtex saccadicBiases"
+  "saccadicBiases.tex" 1453455779 28910 bf8ab97ec7f9d8ef715d98c4c1afb032 ""
+>>>>>>> origin/master
   (generated)
-  "saccadicBiases.pdf"
-  "saccadicBiases.aux"
   "saccadicBiases.log"
+  "saccadicBiases.aux"
+  "saccadicBiases.pdf"
