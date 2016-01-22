@@ -81,13 +81,13 @@
 \citation{borji2015}
 \citation{clarke-tatler2014}
 \citation{clarke-tatler2014}
-\citation{nuthmann-matthias2014}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Discussion}{8}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Modelling Biases}{8}}
 \newlabel{sec:biases}{{3}{8}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Modelling Methods}{8}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1}Datasets}{8}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.2}Pre-processing}{8}}
+\citation{nuthmann-matthias2014}
 \citation{clarke-tatler2014}
 \citation{clarke-tatler2014}
 \citation{nuthmann-matthias2014}
@@ -101,10 +101,20 @@
 \newlabel{fig:leftrightDist}{{5}{9}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Saccadic Flow}{9}}
 \newlabel{ModellingFlow}{{3.4}{9}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Modelling}{9}}
 \citation{borji2015}
 \citation{macinnes2014}
 \citation{stainer2013}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.1}Modelling}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Results}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Discussion}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Scenes and natural viewing behaviour}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces How the truncated Gaussian parameters vary with saccadic starting location. Dotted line show polynomial regression fits, solid line shows robust polynomial regression.}}{11}}
+\newlabel{fig:nParamsOverSpace}{{6}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Flow:normal log likelihood results. We can see that re-fitting the central-bias to each specific dataset offers little improvement over using the Clarke-Tatler model, while the flow model offers a substantial improvement.}}{11}}
+\newlabel{fig:nFlowDevAll}{{7}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Doing the same but with some new testing datasets!}}{11}}
+\newlabel{fig:nFlowDevAll2}{{8}{11}}
 \citation{clarke2013}
 \citation{yun2013}
 \citation{tatler2005}
@@ -118,17 +128,6 @@
 \citation{asher2013}
 \citation{jiang2014}
 \citation{borji2015}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.2}Results}{10}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.4.3}Discussion}{10}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{10}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Scenes and natural viewing behaviour}{10}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}Author Contribution}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces How the truncated Gaussian parameters vary with saccadic starting location. Dotted line show polynomial regression fits, solid line shows robust polynomial regression.}}{11}}
-\newlabel{fig:nParamsOverSpace}{{6}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Flow:normal log likelihood results. We can see that re-fitting the central-bias to each specific dataset offers little improvement over using the Clarke-Tatler model, while the flow model offers a substantial improvement.}}{11}}
-\newlabel{fig:nFlowDevAll}{{7}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Doing the same but with some new testing datasets!}}{11}}
-\newlabel{fig:nFlowDevAll2}{{8}{11}}
 \citation{tatler2005}
 \citation{tatler2007}
 \citation{tatler2007}
@@ -145,48 +144,57 @@
 \bibstyle{plainnat}
 \bibdata{literature}
 \bibcite{asher2013}{{1}{2013}{{Asher et~al.}}{{Asher, Tolhurst, Troscianko, and Gilchrist}}}
-\bibcite{borji2013}{{2}{2013}{{Borji and Itti}}{{}}}
-\bibcite{borji2015}{{3}{2015}{{Borji and Itti}}{{}}}
-\bibcite{bowers-heilman1980}{{4}{1980}{{Bowers and Heilman}}{{}}}
-\bibcite{buswell1935}{{5}{1935}{{Buswell}}{{}}}
-\bibcite{clarke-hunt2015}{{6}{2015}{{Clarke and Hunt}}{{}}}
-\bibcite{clarke2013}{{7}{2013}{{Clarke et~al.}}{{Clarke, Coco, and Keller}}}
-\bibcite{clarke-tatler2014}{{8}{2014}{{Clarke and Tatler}}{{}}}
-\bibcite{clarke2009}{{9}{2009}{{Clarke et~al.}}{{Clarke, Chantler, and Green}}}
-\bibcite{clarke2015}{{10}{submitted}{{Clarke et~al.}}{{Clarke, Green, Chantler, and Hunt}}}
-\bibcite{dickinson-intraub2009}{{11}{2009}{{Dickinson and Intraub}}{{}}}
-\bibcite{ehinger2009}{{12}{2009}{{Ehinger et~al.}}{{Ehinger, Hidalgo-Sotelo, Torralba, and Oliva}}}
+\bibcite{birmingham2009}{{2}{2009}{{Birmingham et~al.}}{{Birmingham, Bischof, and Kingstone}}}
+\bibcite{borji2013}{{3}{2013}{{Borji and Itti}}{{}}}
+\bibcite{borji2015}{{4}{2015}{{Borji and Itti}}{{}}}
+\bibcite{bowers-heilman1980}{{5}{1980}{{Bowers and Heilman}}{{}}}
+\bibcite{brandt1945}{{6}{1945}{{Brandt}}{{}}}
+\bibcite{buswell1935}{{7}{1935}{{Buswell}}{{}}}
+\bibcite{canosa2003}{{8}{2003}{{Canosa et~al.}}{{Canosa, Pelz, Mennie, and Peak}}}
+\bibcite{clarke-hunt2015}{{9}{2015}{{Clarke and Hunt}}{{}}}
+\bibcite{clarke2013}{{10}{2013}{{Clarke et~al.}}{{Clarke, Coco, and Keller}}}
+\bibcite{clarke-tatler2014}{{11}{2014}{{Clarke and Tatler}}{{}}}
 \@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces Flow:normal deviance results. We can see that re-fitting the central-bias to each specific dataset offers little improvement over using the Clarke-Tatler model, while the flow:normal model decreases the deviance by half.}}{12}}
 \newlabel{fig:nFlowDevBorji}{{9}{12}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Author Contribution}{12}}
 \@writefile{toc}{\contentsline {section}{\numberline {A}Dataset Details}{12}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Summary of the 13 datasets used throughout this study.}}{13}}
 \newlabel{tab:datasets}{{2}{13}}
 \@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Details of the experimental setups in each of the 10 datasets analysed in the present study. We provide only information reported in the original articles. Question marks indicate information not reported in the original article. *For the Judd et al dataset images varied in pixel dimensions but the majority were at 1024 x 768.}}{13}}
 \newlabel{tab:setuptable}{{3}{13}}
-\bibcite{einhauser2008}{{13}{2008}{{Einh{\"a}user et~al.}}{{Einh{\"a}user, Spain, and Perona}}}
-\bibcite{Foulsham-kingstone2010}{{14}{2010}{{Foulsham and Kingstone}}{{}}}
-\bibcite{foulsham2008}{{15}{2008}{{Foulsham et~al.}}{{Foulsham, Kingstone, and Underwood}}}
-\bibcite{friedrich2014}{{16}{2014}{{Friedrich and Elias}}{{}}}
-\bibcite{gilchrist2006}{{17}{2006}{{Gilchrist and Harvey}}{{}}}
-\bibcite{godwin2014}{{18}{2014}{{Godwin et~al.}}{{Godwin, Reichle, and Menneer}}}
-\bibcite{greene-wolfe2012}{{19}{2012}{{Greene et~al.}}{{Greene, Liu, and Wolfe}}}
-\bibcite{jiang2014}{{20}{2014}{{Jiang et~al.}}{{Jiang, Xu, and Zhao}}}
-\bibcite{judd2009}{{21}{2009}{{Judd et~al.}}{{Judd, Ehinger, Durand, and Torralba}}}
-\bibcite{learmonth2015}{{22}{2015}{{Learmonth et~al.}}{{Learmonth, Gallagher, Gibson, Thut, and Harvey}}}
-\bibcite{loschky2015}{{23}{2015}{{Loschky et~al.}}{{Loschky, Larson, Magliano, and Smith}}}
-\bibcite{ma2011}{{24}{2011}{{Ma et~al.}}{{Ma, Navalpakkam, Beck, Van Den~Berg, and Pouget}}}
-\bibcite{macinnes2014}{{25}{2014}{{MacInnes et~al.}}{{MacInnes, Hunt, Hilchey, and Klein}}}
-\bibcite{morvan-maloney2012}{{26}{2012}{{Morvan and Maloney}}{{}}}
-\bibcite{najemnik-geisler2008}{{27}{2008}{{Najemnik and Geisler}}{{}}}
-\bibcite{nuthmann-matthias2014}{{28}{2014}{{Nuthmann and Matthias}}{{}}}
-\bibcite{ossandon2014}{{29}{2014}{{Ossand{\'o}n et~al.}}{{Ossand{\'o}n, Onat, and K{\"o}nig}}}
-\bibcite{over2007}{{30}{2007}{{Over et~al.}}{{Over, Hooge, Vlaskamp, and Erkelens}}}
-\bibcite{parkhurst2002}{{31}{2002}{{Parkhurst et~al.}}{{Parkhurst, Law, and Niebur}}}
-\bibcite{tatler2007}{{32}{2007}{{Tatler}}{{}}}
-\bibcite{tatler-vincent2009}{{33}{2009}{{Tatler and Vincent}}{{}}}
-\bibcite{tatler2005}{{34}{2005}{{Tatler et~al.}}{{Tatler, Baddeley, and Gilchrist}}}
-\bibcite{torralba2006}{{35}{2006}{{Torralba et~al.}}{{Torralba, Oliva, Castelhano, and Henderson}}}
-\bibcite{tseng2009}{{36}{2009}{{Tseng et~al.}}{{Tseng, Carmi, Cameron, Munoz, and Itti}}}
-\bibcite{yarbus1967}{{37}{1967}{{Yarbus}}{{}}}
-\bibcite{yun2013}{{38}{2013}{{Yun et~al.}}{{Yun, Peng, Samaras, Zelinsky, and Berg}}}
-\bibcite{zelinsky1996}{{39}{1996}{{Zelinsky}}{{}}}
+\bibcite{clarke2009}{{12}{2009}{{Clarke et~al.}}{{Clarke, Chantler, and Green}}}
+\bibcite{clarke2015}{{13}{submitted}{{Clarke et~al.}}{{Clarke, Green, Chantler, and Hunt}}}
+\bibcite{dickinson-intraub2009}{{14}{2009}{{Dickinson and Intraub}}{{}}}
+\bibcite{ehinger2009}{{15}{2009}{{Ehinger et~al.}}{{Ehinger, Hidalgo-Sotelo, Torralba, and Oliva}}}
+\bibcite{einhauser2008}{{16}{2008}{{Einh{\"a}user et~al.}}{{Einh{\"a}user, Spain, and Perona}}}
+\bibcite{Foulsham-kingstone2010}{{17}{2010{a}}{{Foulsham and Kingstone}}{{}}}
+\bibcite{foulsham2010}{{18}{2010{b}}{{Foulsham and Kingstone}}{{}}}
+\bibcite{foulsham2008}{{19}{2008}{{Foulsham et~al.}}{{Foulsham, Kingstone, and Underwood}}}
+\bibcite{friedrich2014}{{20}{2014}{{Friedrich and Elias}}{{}}}
+\bibcite{fuller1996}{{21}{1996}{{Fuller}}{{}}}
+\bibcite{gilchrist2006}{{22}{2006}{{Gilchrist and Harvey}}{{}}}
+\bibcite{godwin2014}{{23}{2014}{{Godwin et~al.}}{{Godwin, Reichle, and Menneer}}}
+\bibcite{greene-wolfe2012}{{24}{2012}{{Greene et~al.}}{{Greene, Liu, and Wolfe}}}
+\bibcite{jiang2014}{{25}{2014}{{Jiang et~al.}}{{Jiang, Xu, and Zhao}}}
+\bibcite{judd2009}{{26}{2009}{{Judd et~al.}}{{Judd, Ehinger, Durand, and Torralba}}}
+\bibcite{land2001}{{27}{2001}{{Land and Hayhoe}}{{}}}
+\bibcite{learmonth2015}{{28}{2015}{{Learmonth et~al.}}{{Learmonth, Gallagher, Gibson, Thut, and Harvey}}}
+\bibcite{loschky2015}{{29}{2015}{{Loschky et~al.}}{{Loschky, Larson, Magliano, and Smith}}}
+\bibcite{ma2011}{{30}{2011}{{Ma et~al.}}{{Ma, Navalpakkam, Beck, Van Den~Berg, and Pouget}}}
+\bibcite{macinnes2014}{{31}{2014}{{MacInnes et~al.}}{{MacInnes, Hunt, Hilchey, and Klein}}}
+\bibcite{morvan-maloney2012}{{32}{2012}{{Morvan and Maloney}}{{}}}
+\bibcite{najemnik-geisler2008}{{33}{2008}{{Najemnik and Geisler}}{{}}}
+\bibcite{nuthmann-matthias2014}{{34}{2014}{{Nuthmann and Matthias}}{{}}}
+\bibcite{ossandon2014}{{35}{2014}{{Ossand{\'o}n et~al.}}{{Ossand{\'o}n, Onat, and K{\"o}nig}}}
+\bibcite{over2007}{{36}{2007}{{Over et~al.}}{{Over, Hooge, Vlaskamp, and Erkelens}}}
+\bibcite{parkhurst2002}{{37}{2002}{{Parkhurst et~al.}}{{Parkhurst, Law, and Niebur}}}
+\bibcite{stainer2013}{{38}{2013}{{Stainer et~al.}}{{Stainer, Scott-Brown, and Tatler}}}
+\bibcite{tatler2007}{{39}{2007}{{Tatler}}{{}}}
+\bibcite{tatler-vincent2009}{{40}{2009}{{Tatler and Vincent}}{{}}}
+\bibcite{tatler2005}{{41}{2005}{{Tatler et~al.}}{{Tatler, Baddeley, and Gilchrist}}}
+\bibcite{torralba2006}{{42}{2006}{{Torralba et~al.}}{{Torralba, Oliva, Castelhano, and Henderson}}}
+\bibcite{tseng2009}{{43}{2009}{{Tseng et~al.}}{{Tseng, Carmi, Cameron, Munoz, and Itti}}}
+\bibcite{wartburg2007}{{44}{2007}{{von Wartburg et~al.}}{{von Wartburg, Wurtz, Pflugshaupt, Nyffeler, Luthi, and Muri}}}
+\bibcite{yarbus1967}{{45}{1967}{{Yarbus}}{{}}}
+\bibcite{yun2013}{{46}{2013}{{Yun et~al.}}{{Yun, Peng, Samaras, Zelinsky, and Berg}}}
+\bibcite{zelinsky1996}{{47}{1996}{{Zelinsky}}{{}}}

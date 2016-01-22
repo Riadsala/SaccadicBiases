@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{47}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,13 @@
 Matthew~F Asher, David~J Tolhurst, Tom Troscianko, and Iain~D Gilchrist.
 \newblock Regional effects of clutter on human target detection performance.
 \newblock \emph{Journal of vision}, 13\penalty0 (5):\penalty0 25:1--15, 2013.
+
+\bibitem[Birmingham et~al.(2009)Birmingham, Bischof, and
+  Kingstone]{birmingham2009}
+Elina Birmingham, Walter~F Bischof, and Alan~A Kingstone.
+\newblock {Get real! Resolving the debate about equivalent social stimuli}.
+\newblock \emph{Visual Cognition}, 17\penalty0 (6-7):\penalty0 904--924, August
+  2009.
 
 \bibitem[Borji and Itti(2013)]{borji2013}
 A~Borji and L~Itti.
@@ -28,11 +35,23 @@ Dawn Bowers and Kenneth~M Heilman.
 \newblock Pseudoneglect: effects of hemispace on a tactile line bisection task.
 \newblock \emph{Neuropsychologia}, 18\penalty0 (4):\penalty0 491--498, 1980.
 
+\bibitem[Brandt(1945)]{brandt1945}
+Herman~Francis Brandt.
+\newblock The psychology of seeing.
+\newblock 1945.
+
 \bibitem[Buswell(1935)]{buswell1935}
 Guy~Thomas Buswell.
 \newblock \emph{How people look at pictures: a study of the psychology and
   perception in art.}
 \newblock Univ. Chicago Press, 1935.
+
+\bibitem[Canosa et~al.(2003)Canosa, Pelz, Mennie, and Peak]{canosa2003}
+R.L. Canosa, Jeff~B Pelz, N.R. Mennie, and J.~Peak.
+\newblock {High-level aspects of oculomotor control during viewing of
+  natural-task images}.
+\newblock \emph{Proc. SPIE Human Vision and Electronic Imaging VIII},
+  5007:\penalty0 240--251, 2003.
 
 \bibitem[Clarke and Hunt(2015)]{clarke-hunt2015}
 Alasdair D.~F. Clarke and Amelia~R. Hunt.
@@ -82,11 +101,19 @@ Wolfgang Einh{\"a}user, Merrielle Spain, and Pietro Perona.
 \newblock Objects predict fixations better than early saliency.
 \newblock \emph{Journal of Vision}, 8\penalty0 (14):\penalty0 18: 1--26, 2008.
 
-\bibitem[Foulsham and Kingstone(2010)]{Foulsham-kingstone2010}
+\bibitem[Foulsham and Kingstone(2010{\natexlab{a}})]{Foulsham-kingstone2010}
 Tom Foulsham and Alan Kingstone.
 \newblock Asymmetries in the direction of saccades during perception of scenes
   and fractals: Effects of image type and image features.
-\newblock \emph{Vision Research}, 50\penalty0 (8):\penalty0 779--795, 2010.
+\newblock \emph{Vision Research}, 50\penalty0 (8):\penalty0 779--795,
+  2010{\natexlab{a}}.
+
+\bibitem[Foulsham and Kingstone(2010{\natexlab{b}})]{foulsham2010}
+Tom Foulsham and Alan Kingstone.
+\newblock Asymmetries in the direction of saccades during perception of scenes
+  and fractals: Effects of image type and image features.
+\newblock \emph{Vision Research}, 50\penalty0 (8):\penalty0 779--795,
+  2010{\natexlab{b}}.
 
 \bibitem[Foulsham et~al.(2008)Foulsham, Kingstone, and Underwood]{foulsham2008}
 Tom Foulsham, Alan Kingstone, and Geoffrey Underwood.
@@ -99,6 +126,13 @@ Trista~E Friedrich and Lorin~J Elias.
 \newblock Behavioural asymmetries on the greyscales task: The influence of
   native reading direction.
 \newblock \emph{Culture and brain}, 2\penalty0 (2):\penalty0 161--172, 2014.
+
+\bibitem[Fuller(1996)]{fuller1996}
+James~H Fuller.
+\newblock {Eye position and target amplitude effects on human visual saccadic
+  latencies}.
+\newblock \emph{Experimental brain research}, 109\penalty0 (3):\penalty0
+  457--466, 1996.
 
 \bibitem[Gilchrist and Harvey(2006)]{gilchrist2006}
 Iain~D Gilchrist and Monika Harvey.
@@ -128,6 +162,11 @@ Tilke Judd, Krista Ehinger, Fr{\'e}do Durand, and Antonio Torralba.
 \newblock Learning to predict where humans look.
 \newblock In \emph{Computer Vision, 2009 IEEE 12th international conference
   on}, pages 2106--2113. IEEE, 2009.
+
+\bibitem[Land and Hayhoe(2001)]{land2001}
+Michael~F Land and Mary Hayhoe.
+\newblock In what ways do eye movements contribute to everyday activities?
+\newblock \emph{Vision research}, 41\penalty0 (25):\penalty0 3559--3565, 2001.
 
 \bibitem[Learmonth et~al.(2015)Learmonth, Gallagher, Gibson, Thut, and
   Harvey]{learmonth2015}
@@ -190,6 +229,12 @@ Derrick~J Parkhurst, K~Law, and E~Niebur.
   attention.
 \newblock \emph{Vision Research}, 42\penalty0 (1):\penalty0 107--123, 2002.
 
+\bibitem[Stainer et~al.(2013)Stainer, Scott-Brown, and Tatler]{stainer2013}
+Matthew~J Stainer, Kenneth~C Scott-Brown, and Benjamin~W Tatler.
+\newblock {Behavioral biases when viewing multiplexed scenes: scene structure
+  and frames of reference for inspection}.
+\newblock \emph{Frontiers in Psychology}, 4:\penalty0 624, 2013.
+
 \bibitem[Tatler(2007)]{tatler2007}
 Benjamin~W Tatler.
 \newblock The central fixation bias in scene viewing: Selecting an optimal
@@ -221,6 +266,13 @@ Po-He Tseng, Ran Carmi, Ian~GM Cameron, Douglas~P Munoz, and Laurent Itti.
 \newblock Quantifying center bias of observers in free viewing of dynamic
   natural scenes.
 \newblock \emph{Journal of vision}, 9\penalty0 (7):\penalty0 4: 1--16, 2009.
+
+\bibitem[von Wartburg et~al.(2007)von Wartburg, Wurtz, Pflugshaupt, Nyffeler,
+  Luthi, and Muri]{wartburg2007}
+Roman von Wartburg, Pascal Wurtz, Tobias Pflugshaupt, Thomas Nyffeler, Mathias
+  Luthi, and RM~Muri.
+\newblock Size matters: Saccades during scene perception.
+\newblock \emph{Perception}, 36\penalty0 (3):\penalty0 355, 2007.
 
 \bibitem[Yarbus(1967)]{yarbus1967}
 Alfred~L Yarbus.

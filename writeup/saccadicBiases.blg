@@ -8,64 +8,57 @@ Case mismatch error between cite keys Foulsham2008 and foulsham2008
 I'm skipping whatever remains of this command
 The style file: plainnat.bst
 Database file #1: literature.bib
-I was expecting an "="---line 365 of file literature.bib
+I was expecting an "="---line 452 of file literature.bib
  :   journal 
  :           ] {MIT tech report:  http://hdl.handle.net/1721.1/68590}
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "land2001"
-Warning--I didn't find a database entry for "foulsham2010"
-Warning--I didn't find a database entry for "canosa2003"
-Warning--I didn't find a database entry for "stainer2013"
-Warning--I didn't find a database entry for "fuller1996"
-Warning--I didn't find a database entry for "birmingham2009"
-Warning--I didn't find a database entry for "brandt1945"
 Warning--I didn't find a database entry for "crundeall-underwood1998"
-Warning--I didn't find a database entry for "wartburg2007"
 Warning--I didn't find a database entry for "krueger-hunt2013"
 Warning--I didn't find a database entry for "wang2011"
 Warning--I didn't find a database entry for "dodd2009"
 Warning--I didn't find a database entry for "klein-macinnes1999"
 Warning--I didn't find a database entry for "takeda-yagi2000"
 Warning--I didn't find a database entry for "tatler-vincent20xx"
-You've used 39 entries,
+Warning--empty journal in brandt1945
+You've used 47 entries,
             2773 wiz_defined-function locations,
-            833 strings with 11583 characters,
-and the built_in function-call counts, 18885 in all, are:
-= -- 1691
-> -- 1117
-< -- 19
-+ -- 375
-- -- 336
-* -- 1622
-:= -- 2897
-add.period$ -- 120
-call.type$ -- 39
-change.case$ -- 227
-chr.to.int$ -- 39
-cite$ -- 78
-duplicate$ -- 825
-empty$ -- 1535
-format.name$ -- 401
-if$ -- 3928
-int.to.chr$ -- 1
+            866 strings with 12621 characters,
+and the built_in function-call counts, 22625 in all, are:
+= -- 2024
+> -- 1335
+< -- 23
++ -- 450
+- -- 402
+* -- 1948
+:= -- 3476
+add.period$ -- 144
+call.type$ -- 47
+change.case$ -- 273
+chr.to.int$ -- 46
+cite$ -- 95
+duplicate$ -- 988
+empty$ -- 1841
+format.name$ -- 479
+if$ -- 4697
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 41
-newline$ -- 204
-num.names$ -- 156
-pop$ -- 415
+missing$ -- 49
+newline$ -- 244
+num.names$ -- 188
+pop$ -- 497
 preamble$ -- 1
-purify$ -- 190
+purify$ -- 228
 quote$ -- 0
-skip$ -- 633
+skip$ -- 751
 stack$ -- 0
-substring$ -- 826
-swap$ -- 62
+substring$ -- 991
+swap$ -- 72
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 419
-warning$ -- 0
-while$ -- 173
+type$ -- 507
+warning$ -- 1
+while$ -- 209
 width$ -- 0
-write$ -- 512
+write$ -- 614
 (There were 2 error messages)

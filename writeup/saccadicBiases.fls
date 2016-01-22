@@ -1,4 +1,4 @@
-PWD /Users/s09ac3/Documents/SaccadicBiases/writeup
+PWD /Users/matthewstainer/Documents/Work/Papers/SaccadicBiases/writeup
 INPUT /usr/local/texlive/2015/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -162,7 +162,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futr8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futmii.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futsy.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-mex.tfm
@@ -210,9 +209,6 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futb8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futb8t.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futmii.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
@@ -246,6 +242,10 @@ INPUT ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf
 INPUT ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futri8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt-ita.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futb8t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futsy.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
@@ -295,12 +295,12 @@ INPUT ../scripts/flow/figs/llh_testing.pdf
 INPUT ../scripts/flow/figs/llh_Borji.pdf
 INPUT ../scripts/flow/figs/llh_Borji.pdf
 INPUT ../scripts/flow/figs/llh_Borji.pdf
-INPUT Dataset.tex
-INPUT Dataset.tex
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futsy.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futr8r.tfm
+INPUT Dataset.tex
+INPUT Dataset.tex
 INPUT saccadicBiases.bbl
 INPUT saccadicBiases.bbl
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futsy.vf
