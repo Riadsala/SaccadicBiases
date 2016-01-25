@@ -157,7 +157,6 @@ plt2 = plt2 + facet_wrap(~participantNumber)#
 ggsave("eccAccPltByPerson.pdf")#
 #
 m2 <- glm(data=targPres, response ~ beta * (x2+y2), family="binomial")
-setwd("Documents/SaccadicBiases/scripts/coarse2fine/")
 setwd("Documents/SaccadicBiases/scripts/coarse2fine/")#
 library(ggplot2)#
 library(scales)#
@@ -212,43 +211,7 @@ maxFix = 35#
 # first get list of scanpath lengths#
 #
 scnPathN = sacc$n[c(which(sacc$n==1)[2:length(which(sacc$n==1))]-1, length(sacc$n))]#
-nScanPaths = length(scnPathN)#
-flowSacc = data.frame()#
-for (sp in 1:nScanPaths)#
-{#
-    flowSacc = rbind(flowSacc, generateScanPath(nFix=scnPathN[sp], flowModel="tN"))#
-}#
-flowSacc$amp = with(flowSacc, sqrt((x1-x2)^2+(y1-y2)^2))/2#
-#
-# generate some points from central bias#
-#
-centSacc = data.frame()#
-for (sp in 1:nScanPaths)#
-{#
-    centSacc = rbind(centSacc, generateScanPath(nFix=scnPathN[sp], flowModel="central"))#
-}#
-centSacc$amp = with(centSacc, sqrt((x1-x2)^2+(y1-y2)^2))/2#
-flowSacc$obs = "flow"#
-centSacc$obs = "central"#
-sacc$obs = "human"#
-aggFlow = getAggStats(rbind(flowSacc, sacc, centSacc))
-plt = ggplot(filter(aggFlow, n<16), aes(x=n, y=meanAmp, colour=obs)) #
-plt = plt + geom_point()#
-plt = plt + geom_errorbar(aes(ymin=lower, ymax=upper))#
-plt = plt + theme_bw()+ theme(legend.position="none")#
-plt = plt + scale_x_discrete(name="saccade number", breaks=seq(0,maxFix,5))#
-plt = plt + scale_y_continuous(name="saccadic amplitude")#
-ggsave('figs/saccAmpOverTimeFlow.pdf', width=3, height=3)
-plt = ggplot(filter(aggFlow, n<16), aes(x=n, y=meanAmp, colour=obs)) #
-plt = plt + geom_point()#
-plt = plt + geom_errorbar(aes(ymin=lower, ymax=upper)) + geom_smooth(se=F)#
-plt = plt + theme_bw()+ theme(legend.position="none")#
-plt = plt + scale_x_discrete(name="saccade number", breaks=seq(0,maxFix,5))#
-plt = plt + scale_y_continuous(name="saccadic amplitude")#
-ggsave('figs/saccAmpOverTimeFlow.pdf', width=3, height=3)
-summary(ampdat)
-summary(ampDat)
-summary(aggFlow)
-aggregate(data=aggFlow, meanAmp ~ obs)
-aggregate(data=aggFlow, meanAmp ~ obs, FUN=median)
-aggregate(data=aggFlow, meanAmp ~ obs, FUN=mean)
+nScanPaths = length(scnPathN)
+nScanPaths
+nrow(sacc)
+head(sacc)

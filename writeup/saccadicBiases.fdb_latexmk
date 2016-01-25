@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex saccadicBiases"] 1453720840 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1453722979
+["bibtex saccadicBiases"] 1453734777 "saccadicBiases.aux" "saccadicBiases.bbl" "saccadicBiases" 1453735683
   "/usr/local/texlive/2015/texmf-dist/bibtex/bst/natbib/plainnat.bst" 1233624470 26816 ffe5423d2019860bad9f54bc402fac15 ""
   "literature.bib" 1453714376 30490 30aef2d68c5823124b1ee5e3768c7a84 ""
-  "saccadicBiases.aux" 1453722979 13184 f579cbe59a5a454540942e600ce3fe4e ""
+  "saccadicBiases.aux" 1453735683 13281 40e9a06544c2c001acd4f06d74602bbb ""
   "saccadicBiases.bcf" 0 -1 0 ""
   (generated)
-  "saccadicBiases.bbl"
   "saccadicBiases.blg"
-["pdflatex"] 1453722978 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1453722979
+  "saccadicBiases.bbl"
+["pdflatex"] 1453735681 "saccadicBiases.tex" "saccadicBiases.pdf" "saccadicBiases" 1453735683
   "../scripts/coarse2fine/figs/ampSaccComparison.pdf" 1444735978 13943 37ca4484142248334c2bc76743da202d ""
   "../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf" 1453714376 6459 112ed65e9c3b9483a995265d2fe739ae ""
   "../scripts/coarse2fine/figs/xFixComparison.pdf" 1444735976 14702 2d0c1940c7fcae4e8178b5dbbf0dddc2 ""
@@ -62,7 +62,6 @@
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb" 1164221255 36507 bc28f9f0cdba50a8a348a6e4dc8a5378 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb" 1164221255 37756 112837e95d30cb64c320437ea63bd4d6 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb" 1215737283 169201 9ebf99020dde51a5086e186761a34e8f ""
-  "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb" 1136849748 6232 c3fc7954848548c26c82678efc1400a6 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb" 1136849748 13137 9cf0e1f3fa8b74ec708377d745022d53 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb" 1136849748 22192 22800790ceca09b5f3b0be051c1e852e ""
   "/usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futb8t.vf" 1136768653 2168 d2ac693e07cd79dbc2b914caee3e8df0 ""
@@ -128,13 +127,13 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1449667628 3849859 1596dd4bb30ae34710f9566589c53331 ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "Dataset.tex" 1453719217 3400 06ae1b2b9c2a4153b29f3a952b91b3c2 ""
+  "Dataset.tex" 1453723193 3400 06ae1b2b9c2a4153b29f3a952b91b3c2 ""
   "figs/heatmap_figure.pdf" 1445421079 24728114 e5dceb938f0d91bf1cce19fe0608fc75 ""
   "figs/salmaps.png" 1453384031 2564262 cb128dda0a45c7743bcd06630b8ef334 ""
-  "saccadicBiases.aux" 1453722979 13184 f579cbe59a5a454540942e600ce3fe4e ""
-  "saccadicBiases.bbl" 1453720840 16847 496bf67e2745b5c00d407a587c7982f1 "bibtex saccadicBiases"
-  "saccadicBiases.tex" 1453722978 42669 a339041b23e039222cef62d7c9afb878 ""
+  "saccadicBiases.aux" 1453735683 13281 40e9a06544c2c001acd4f06d74602bbb ""
+  "saccadicBiases.bbl" 1453734777 16847 496bf67e2745b5c00d407a587c7982f1 "bibtex saccadicBiases"
+  "saccadicBiases.tex" 1453735681 43381 904d4a74f10996cdd2bb848b96ca9fba ""
   (generated)
-  "saccadicBiases.log"
   "saccadicBiases.pdf"
   "saccadicBiases.aux"
+  "saccadicBiases.log"

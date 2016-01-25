@@ -108,14 +108,16 @@ This section make use of an improved central bias model the \textit{saccadic flo
 
 One technique that is commonly used to visualise the spatial allocation of gaze is to create 'heatmap' plots where colour or luminance are used to indicate the density of fixation on those locations (Figure ~\ref{fig:adjustedHeatmaps}, column 2). A potential problem with visualising data in this way is that they represent all fixations as equal. For example, a fixated location with a fixation of a second would be weighted equally with fixations that lasted half that time. If we want to make an assumption that fixation duration is intimately linked with the importance of that fixation (i.e. we will look longer at more informative information) then we can change our visualisation to weight fixations by their duration (Figure ~\ref{fig:adjustedHeatmaps}, column 3).
 
-One advantage of the \citep{clarke-tatler2014} model, and the saccadic flow model here is that we can represent fixations by the likelihood that they would occur based on the predictions of the models. As there is an image independent tendency to fixate in the centre of the scene (for example), then we might consider that saccades to locations less predicted by these behavioural and oculomotor biases might involve more high-level mechanisms. In Figure ~\ref{fig:adjustedHeatmaps} (column 4 and 5) we present some overlaid heatmap data from the \citep{clarke2013} dataset, where fixations are weighted by the inverse probability of them occurring based on the models of central bias and saccadic flow. These figures reveal that representing data in this manner can allow us to visualise information that was important enough to break the biases of looking at the scene centre, or making saccades in line with our saccadic flow model. We can therefore use this to remove some of the image-independent biases, and reveal the more important image \emph{dependent} information.
-
 \begin{figure*}
 \centering
-\includegraphics[width=\textwidth]{figs/heatmap_figure.pdf}
+\includegraphics[width=13cm]{figs/heatmap_figure.pdf}
 \caption{Examples of fixation heatmap plots from \cite{clarke2013}. The same fixations are presented where the Gaussian at each fixation is weighted by the duration of the fixation, the centre bias model from \citep{clarke-tatler2014} , and the saccadic flow model presented in this paper.}
 \label{fig:adjustedHeatmaps}
 \end{figure*}
+
+One advantage of the \citep{clarke-tatler2014} model, and the saccadic flow model here is that we can represent fixations by the likelihood that they would occur based on the predictions of the models. As there is an image independent tendency to fixate in the centre of the scene (for example), then we might consider that saccades to locations less predicted by these behavioural and oculomotor biases might involve more high-level mechanisms. In Figure ~\ref{fig:adjustedHeatmaps} (column 4 and 5) we present some overlaid heatmap data from the \citep{clarke2013} dataset, where fixations are weighted by the inverse probability of them occurring based on the models of central bias and saccadic flow. These figures reveal that representing data in this manner can allow us to visualise information that was important enough to break the biases of looking at the scene centre, or making saccades in line with our saccadic flow model. We can therefore use this to remove some of the image-independent biases, and reveal the more important image \emph{dependent} information.
+
+
 
 The top row of Figure ~\ref{fig:adjustedHeatmaps} demonstrates that weighting the fixations by the central bias and flow model both reduce the \emph{importance} of some fixations. The central bias model punishes fixations near the center of the image, while the flow model punishes fixations that were well predicted by the oculomotor biases of the saccadic flow model. Conversely, the models reward unlikely fixations. The second row reveals an instance of where the car to the left received less fixations than the pub sign, but that these fixations are boosted in the central bias and saccadic flow models where 'unlikely' saccades were made to this location. In the third and fourth rows, there are examples of images with a photographer bias of content towards the centre of the photograph. This reveals an example of where down-weighting the central fixations might lose important content.
 where the central bias model reduces the influence fixations in the centre of pictures that have important content located there. Given the tendency for photographers to bias their photographs in the centre, reducing fixations to the castle in the painting (row 3) and the girl's face (row 4).
@@ -129,7 +131,8 @@ We examined visual salience in the 1 degree area surrounding fixations using Art
 Examples of the maps can be seen in Figure \ref{fig:salmaps}. Salience maps were normalised to sum to 1, and data were analysed using linear mixed-effect models with the fixation weighting (duration, central bias or saccadic flow) as fixed effect factors, and image and participant as random effects. 
 
 \begin{figure*}
-\includegraphics[width=\textwidth]{figs/salmaps.png}
+\centering
+\includegraphics[width=12cm]{figs/salmaps.png}
 \caption{Example image with saliency maps made with the AWS, RARE and GBVS salience algorithms.}
 \label{fig:salmaps}
 \end{figure*}
@@ -238,33 +241,32 @@ First, we will update the central bias from \cite{clarke-tatler2014} and use a t
 \subsection{Left v Right}
 \label{sec:LeftRight}
 
-Initially more fixations to the left half of the image \citep{nuthmann-matthias2014}. We replicate this here (Figure \ref{fig:leftrightDist}).
+As mentioned above, the downside of mirroring the saccades in our dataset is that our bias model will be symmetric and will be unable to exhibit the leftwards bias observer in human fixation data. Here, we investigate the size of the leftwards bias. Figure \ref{fig:leftrightDist}) shows that while we do have a leftwards bias in our data, it is apparently a small effect that only last for the first five fixations after scene onset. Furthermore, there is no sign of an asymmetry in the vertical direction.
 
 \begin{figure}
 \centering
 \subfigure{\includegraphics[width=3.8cm]{../scripts/leftVright/graphs/leftrightbias.pdf}}
 \subfigure{\includegraphics[width=3.8cm]{../scripts/leftVright/graphs/updownbias.pdf}}
-\caption{Distribution of horizontal and vertical fixations by fixation number.}
+\caption{Boxplots showing the distribution of horizontal and vertical fixations by fixation number in the merged training set}
 \label{fig:leftrightDist}
 \end{figure}
 
-However, it has only a very small effect on explaining the varition over whole datasets: fitting an ANOVA to predict the $x$ coordinates of the fixations given the fixaiton number gives adjusted $R^2=0.004$. If we limit our analysis to the first 5 fixations in each scanpath, this only increases to adjusted $R^2=0.01$. 
-
-Hence we will ignore this effect from now on. By treating everything as symmetrical, we lose very little explanitory power, while restricitng the number of parameters, or increasing the amount of data available (by mirroring fixations). 
+Fitting an ANOVA to predict the $x$-coordinates of the fixations given the fixation number gives adjusted $R^2=0.004$. If we limit our analysis to the first five fixations in each scanpath, this only increases to adjusted $R^2=0.01$. This suggests that by treating everything as symmetrical, we lose little explanatory power, while restricting the number of parameters, or increasing the amount of data available (by mirroring fixations). 
 
 \subsection{Saccadic Flow}
 \label{ModellingFlow}
 
-Saccadic flow can be thought of as a generalisation of the central bias. Instead of computing the distribution of all saccadic endpoints in a dataset, we look at the distribution of saccade endpoints given the start points. So for a saccade from $(x_0, y_0)$ to $(x_1, y_1)$ we want to model $p(x_1,y_1|x_0, y_0)$ This is illustrated in Figure \ref{fig:empiricalSaccadicFlow}.
+Saccadic flow can be thought of as a generalisation of the central bias., and is illustrated in Figure \ref{fig:empiricalSaccadicFlow}. Instead of computing the distribution of all saccadic endpoints in a dataset, we look at the distribution of saccade endpoints given the start points. I.e.,for a saccade from $(x_0, y_0)$ to $(x_1, y_1)$ we want to model $p(x_1,y_1|x_0, y_0)$.
 
 \subsubsection{Modelling}
 
+To characterise how the distribution of saccadic endpoints varies with the start point, we used a sliding window approach. All saccades that originated from a $n\times n$ window were taken and used to fit a truncated multivariate Gaussian distribution using the \texttt{tmvtnorm} library for \texttt{R}. This window was moved in steps of $s=0.01$ from $[-1,-0.75]$ to $[1-n, a-n]$. Windows containing less than 250 datapoints were discarded. We experimented with varying the window size ($n\in\{0.05,0.1, 0.2\}$). However, as this parameter was found to have a negligible result, we only report the results for $n=0.05$.
 
-To characterise how the distribution of saccadic endpoints varies with the start point, we used a sliding window approach. All saccades that originated in a $n\times n$ window were taken and used to fit a multivariate Gaussian distribution. This window was then moved over the stimuli in steps of $s=0.01$. Parameter sets estimated from windows containing less than 250 datapoints were removed. Multivariate polynomial regression was then used to fit 4-th order polynomials to each of the parameters. Robust estimation was used (\texttt{rlm} from the texttt{MASS} library) to stop the model fits being overly infleunced by outlier points from the image boundary. We experimented with varying the window size ($n\in\{0.05,0.1, 0.2\}$). However, as this parameter was found to have a negligible result, we only report the results for $n=0.05$.
+Multivariate polynomial regression was then used to fit 4-th order polynomials to each of the parameters. As polynomial regression performs poorly in the presence of outliers, we will also use robust estimation (\texttt{rlm} from the \texttt{MASS} library). This will the model fits being overly influenced by outlier points from the image boundary. 
 
 \subsubsection{Results}
 
-Figure \ref{fig:nParamsOverSpace} shows how the parameters for the multivariate Gaussian distribution vary over horizontal position for a selection of vertical positions. The regression coefficients (given in supplementary materials) allow us to estimate the conditional probability of a saccade to $(x_1, y1)$ given the starting fixation $(x_0, y_0)$.
+Figure \ref{fig:nParamsOverSpace} shows how the parameters for the truncated multivariate Gaussian distributions vary over horizontal position for a selection of vertical positions. The regression coefficients (given in supplementary materials) allow us to estimate the conditional probability of a saccade to $(x_1, y_1)$ given the starting fixation $(x_0, y_0)$. As the robust estimation methods give a far better fit to the data, we will use this version of the model and discard the polynomial regression version.
 
 \begin{figure*}
 \centering
@@ -274,7 +276,9 @@ Figure \ref{fig:nParamsOverSpace} shows how the parameters for the multivariate 
 \end{figure*}
 
 
-How well does this model account for the fixations in our datasets? Figure \ref{fig:nFlowDevAll} shows the deviance of the flow model expressed as a proportion of the deviance of the Clarke-Tatler central bias. For reference, we also show the results for re-fitting the central bias to each dataset. From this figure, we can see that the flow-normal model approximately halves the deviance. 
+How well does this model account for the fixations in our datasets? Figures \ref{fig:nFlowDevAll}, \ref{fig:nFlowDevAll2} and \ref{fig:nFlowDevBorji} compared the log-likelihood of the flow model compared to the \cite{clarke-tatler2014} central baseline and a uniform distribution. We can see that in all cases, the log likelihood for the data under the flow model is a lot higher the central baseline and the uniform distribution. It is interesting to note that this holds even for datasets (those involving visual search) in which the central bias is outperformed (terms of log-likelihood) by the uniform distribution: chiefly the data from \cite{clarke2009,asher2013,tatler2007}. 
+
+
 
 \begin{figure*}
 \centering
@@ -289,8 +293,6 @@ How well does this model account for the fixations in our datasets? Figure \ref{
 \caption{Doing the same but with some new testing datasets!}
 \label{fig:nFlowDevAll2}
 \end{figure*}
-As the flow:normal model is significantly more complex, requiring nine times as many parameters, it is important to test for robustness. We can test how well our model generalises on testing it on other datasets, for example, \cite{borji2015}. 
-
 
 \begin{figure*}
 \centering
@@ -308,11 +310,9 @@ As the flow:normal model is significantly more complex, requiring nine times as 
 
 \subsubsection{Discussion}
 
-We put the Flow:normal model forward as a robust prior for image-content independent saccadic behaviour. This model can be thought of as as partner of the Clarke-Tater central bias, and we expect that in some cases, the simpler central bias will be more appropriate, while in others, the more complex flow model is a better choice. We have demonstrated that although this model requires more parameters, it generalises well from one dataset to another and is a far better baseline for modelling a scan-path than the central bias.
+We put the saccadic flow model forward as a robust prior for image-content independent saccadic behaviour. This model can be thought of as a partner to the \cite{clarke-tatler2014} central bias, and we expect that in some cases, the simpler central bias will be more appropriate. However we have demonstrated that while the flow model requires more parameters (we use 16 coefficients to track how each of the five truncated Gaussian parameters vary as as a function of $(x,y)$), it generalises well from one dataset to another and is a far better baseline for modelling a scan-path than the central bias.
 
-There are two main simplifications to our modelling work. First of all, we are using an unbounded distribution (ie, $(x,y)\in \mathbb{R}^2$) to model bounded data. While it is possible to deal with this issue, by either applying a transform $(-1,1)\rightarrow \mathbb{R}$ (such as $z=log(\frac{x'}{1-x'})$, where $x'=\frac{x+1}{2}$), or fitting a truncated multivariate Gaussian, we decided that given the good performance of the model as is, it was not worth adding the additional complexities to our model at this time. 
-
-The second simplification is that we are treating the data as normal. From Figure \ref{fig:empiricalSaccadicFlow} we can see that the data is clearly skewed, particularly in the corners. We will attempt to address these issues in the following section.
+There are two main limitations to our modelling work. Firstly, by using a truncated Gaussian we are unable to capture the skewed nature of the distribution of saccades originating from the corners (see Figure \ref{fig:empiricalSaccadicFlow}). We experimented with fitting a skew-normal distribution using the \texttt{sn} package for \texttt{R}, but met with limited success due to having to deal with the image boundaries. We expect this is one of the main reasons why our saccadic flow model generates saccades with on average greater amplitudes than those seen in empirical distributions. The second simplification is that by not taking the leftwards or coarse-to-fine biases into account, we are limiting the degree to which we can model the dynamics of human scan-paths.
 
 \section{Discussion}
 
