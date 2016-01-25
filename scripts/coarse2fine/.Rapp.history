@@ -1,0 +1,254 @@
+install.packages("lme4")
+install.packeges("car")
+install.packages("car")
+install.packages("Hmci")
+install.packages("Hmisc")
+install.packages("mnormt")
+install.packages("psyhpy")
+install.packages("psyphy")
+install.packages("plyr")
+install.packages("pdyphy")
+install.packages("phyphy")
+install.packages("psyphy")
+q()
+install.packages("psyphy")
+setInternet2(use = TRUE)
+install.packages("psyphy",repos="http://R-Forge.R-project.org", type="source")
+install.packages("psyphy")
+install.packages("ggplot2")
+internet2
+install.packages("httr")
+capabilities()["libcurl"]
+setInternet2(TRUE)
+install.packages("httr")
+install.packages("swirl", repos="http://cran.rstudio.com/", dependencies=TRUE)
+install.packages("nnet", repos="http://cran.rstudio.com/", dependencies=TRUE)
+install.packages("ggplot2")
+install.packages("ggplot2", dependencies=TRUE)
+install.packages("stringr")
+2+2
+library(ggplot2)
+library(ggplot2)#
+library(dplyr)#
+#
+people = 11#c(1,2,3,4,5,11)#
+dat = data.frame()#
+for (person in people)#
+{#
+    pdat = rbind(read.csv(paste('../results/', person, 'results.txt', sep='')),read.csv('../results/2results.txt')) #
+    dat = rbind(dat, pdat)#
+    rm(pdat)#
+}#
+# tell R that person and targetPresent are categorical factors#
+dat$person = as.factor(dat$person)#
+dat$targetPresent = as.factor(dat$targetPresent)#
+levels(dat$block) = c("coloured", "uncoloured")#
+#
+# remove response = 3 (timed out?)#
+dat = filter(dat, response!=3)#
+#
+# display number of incorrect trials - should be low!#
+print(paste("misses:", 100*nrow(filter(dat, targetPresent==1, response==-1))/nrow(dat)))#
+print(paste("false pos:", 100*nrow(filter(dat, targetPresent==0, response==1))/nrow(dat)))#
+#
+# remove incorrect trials from data#
+dat = rbind(filter(dat, targetPresent==1, response==1), filter(dat, targetPresent==0, response==-1))#
+#
+dat$trialNumber = as.factor(dat$trialNumber)#
+dat = filter(dat, block=='coloured')#
+#
+# dat$responseTime = log(dat$responseTime)#
+# compute mean of median and 95% CI#
+aggData = (dat #
+  %>% group_by(person, block, visualise, trialNumber) #
+    %>% summarise(#
+     nTrials = length(responseTime),#
+     meanRT     = mean(responseTime),#
+     medianRT   = median(responseTime), #
+     stddev     = sd(responseTime),#
+     stderr=stddev/sqrt(nTrials),#
+     lower=meanRT-1.96*stderr,#
+     upper=meanRT+1.96*stderr))#
+#
+# plot! #
+#
+plt = ggplot(aggData, aes(x=trialNumber, y=meanRT, ymin=lower, ymax=upper, colour=visualise, group=visualise))#
+plt = plt + geom_path() + geom_errorbar()#
+plt = plt + geom_path(aes(y=medianRT), linetype=2)#
+plt = plt + facet_wrap(~person, scales='free_y') + theme_bw()#
+plt = plt +  scale_colour_brewer(palette="Set1")#
+ggsave("pilotResults.pdf", height=4, width=8)#
+plt#
+# # sample to get CI estimates #
+# ii = 0#
+# for (n in seq(6,72,6))#
+# {#
+#     ii = ii + 1#
+# sdat = dat[sample(x=nrow(dat), size=n),]#
+# m[ii] = mean(sdat$responseTime)#
+# stderr[ii] = sd(sdat$responseTime)/sqrt(n)#
+#
+# }#
+# plt = ggplot(data.frame(m = m, n=seq(6,72,6), lower=m-1.96*stderr, upper=m+1.96*stderr), aes(x=n, y=m, ymin=lower, ymax=upper))#
+# plt = plt + geom_errorbar() + geom_point() + scale_y_continuous(limits=c(0.3,0.7))#
+# plt
+install.packages("dplyr")
+library(lme4)
+library(ggplot2)#
+library(lme4)#
+library(car)#
+people = c(1,2,3,4,5,6,7,8,9,11)#
+alldat = data.frame(participantNumber=character(), trialNum=numeric(), TargetPresent=numeric(), beta=numeric(), seed=numeric(), r=numeric(), phi=numeric(), response=numeric()) #
+for (person in people)#
+{#
+    dat = read.csv(paste("../results/ac_", person, "_td.txt", sep=""))#
+    if (person == 7)#
+    {#
+        # there's a bug in the data causing participantNumber to = 6 for particiapnt 7!#
+        dat$participantNumber = 7#
+    }#
+    if (person == 4)#
+    {#
+        # they got their numbers the wrong way around#
+        dat$respose = 1-dat$respose#
+    }#
+#
+    names(dat)[8] = "response"#
+    alldat = rbind(alldat, dat)#
+}#
+#
+visdeg = 60*tan(54.2/57)/(1920*pi)#
+#
+alldat$beta <- factor(as.numeric(alldat$beta), labels =c("rough", "medium", "smooth"))#
+alldat$phi <- pi/180 * alldat$phi#
+alldat$r <- alldat$r * visdeg#
+alldat$x <- alldat$r*sin(alldat$phi)#
+alldat$y <- alldat$r*cos(alldat$phi)#
+alldat$x2 <- alldat$x^2#
+alldat$y2 <- alldat$y^2#
+alldat$participantNumber = as.factor(alldat$participantNumber)#
+alldat$TargetPresent = as.factor(alldat$TargetPresent)#
+alldat$rejTrial = as.numeric(alldat$response == -1)#
+summary((aggregate(data=alldat, rejTrial~participantNumber, FUN=mean)))#
+alldat = alldat[-which(alldat$response==-1),]#
+alldat = alldat[-which(alldat$response==2),]#
+accdat = aggregate(data=alldat, response~participantNumber+beta+TargetPresent, FUN=mean)#
+summary(aggregate(data=alldat[which(alldat$TargetPresent==0),], response~participantNumber, FUN=mean))#
+levels(accdat$TargetPresent) = c("target absent", "target present")#
+accdat$response[which(accdat$TargetPresent=="target absent")] = 1- accdat$response[which(accdat$TargetPresent=="target absent")] #
+fpplt = ggplot(accdat, aes(x=participantNumber, y=response, fill=beta)) + geom_bar(stat="identity", position=position_dodge())+facet_wrap(~TargetPresent)#
+fpplt = fpplt + scale_y_continuous(name="accuracy",breaks=c(seq(0,1,0.1))) + theme_bw()#
+fpplt = fpplt + scale_x_discrete(name="participant ID")#
+ggsave("targDetFalsePositive.pdf", width=10, height=4)#
+#
+targPres = subset(alldat, TargetPresent==1 & response!=-1 & response!=2)#
+#
+targPres2 <- aggregate(response ~ participantNumber+ beta+r, targPres, FUN="mean")#
+tmp <- aggregate(response ~ beta+r, targPres, FUN="var")#
+targPres2$stderr = sqrt(tmp$response/9)#
+plt1 <- ggplot(targPres2, aes(x=r, y=response, colour=beta)) + geom_smooth(method="glm", family="binomial", se=F) + geom_point(position = position_jitter(w = 0.15, h = 0.0))#
+plt1 <- plt1 + scale_y_continuous(name="p(target detected)")  +scale_x_continuous(name="eccentricity (degrees of visual angle)") + theme_bw()#
+plt1#
+ggsave("targDetModelEccOnly.pdf", width=10, height=5)#
+#
+plt2 <- ggplot(targPres2, aes(x=r, y=response, colour=beta)) + geom_smooth(method="glm", family="binomial", se=F) + geom_point(position = position_jitter(w = 0.15, h = 0.0))#
+plt2 <- plt2 + scale_y_continuous(name="p(target detected)")  +scale_x_continuous(name="eccentricity (degrees of visual angle)") + theme_bw()#
+plt2 = plt2 + facet_wrap(~participantNumber)#
+ggsave("eccAccPltByPerson.pdf")#
+#
+m2 <- glm(data=targPres, response ~ beta * (x2+y2), family="binomial")
+setwd("Documents/SaccadicBiases/scripts/coarse2fine/")
+setwd("Documents/SaccadicBiases/scripts/coarse2fine/")#
+library(ggplot2)#
+library(scales)#
+library(dplyr)#
+library(mvtnorm)#
+#
+getAggStats <- function(data)#
+{#
+    data = filter(data, n<maxFix+1)#
+#
+    aggData = (data #
+        %>% group_by(n, obs) #
+        %>% summarise(#
+            meanAmp=mean(amp), #
+            nSaccs=length(amp), #
+            sdDev=sd(amp), #
+            sdErr=sdDev/sqrt(nSaccs),#
+            lower = meanAmp-1.96*sdErr,#
+            upper = meanAmp+1.96*sdErr))#
+    return(aggData)#
+}#
+#
+datasets = c(#
+'Clarke2013', #
+'Einhauser2008', #
+'Tatler2005', #
+'Tatler2007freeview', #
+'Tatler2007search',#
+'Yun2013SUN', #
+'Yun2013PASCAL',#
+'Judd2009')#
+#
+source('../flow/flowDistFunctions.R')#
+#
+sacc = data.frame(x1=numeric(), y1=numeric(), x2=numeric(), y2=numeric())#
+#
+for (d in datasets)#
+{#
+    print(d)#
+    # get saccade info#
+    dsacc = read.csv(paste('../../data/saccs/', d, 'saccs.txt', sep=''), header=FALSE)#
+    names(dsacc) = c("n", "x1", "y1", "x2", "y2")#
+    sacc = rbind(sacc, dsacc)#
+}#
+sacc$amp = with(sacc, sqrt((x1-x2)^2+(y1-y2)^2))/2#
+maxFix = 35#
+#
+# aggHuman = getAggStats(sacc)#
+# m=nls(data=sacc, amp-0.31~u/(u-v) * (exp(-v*(n-1)) - exp(-u*(n-1))), start=c(u=1, v=2))#
+# p = predict(m, new=data.frame(n=1:(maxFix)))+0.31#
+### now compare to sampling from flow!!!#
+# first get list of scanpath lengths#
+#
+scnPathN = sacc$n[c(which(sacc$n==1)[2:length(which(sacc$n==1))]-1, length(sacc$n))]#
+nScanPaths = length(scnPathN)#
+flowSacc = data.frame()#
+for (sp in 1:nScanPaths)#
+{#
+    flowSacc = rbind(flowSacc, generateScanPath(nFix=scnPathN[sp], flowModel="tN"))#
+}#
+flowSacc$amp = with(flowSacc, sqrt((x1-x2)^2+(y1-y2)^2))/2#
+#
+# generate some points from central bias#
+#
+centSacc = data.frame()#
+for (sp in 1:nScanPaths)#
+{#
+    centSacc = rbind(centSacc, generateScanPath(nFix=scnPathN[sp], flowModel="central"))#
+}#
+centSacc$amp = with(centSacc, sqrt((x1-x2)^2+(y1-y2)^2))/2#
+flowSacc$obs = "flow"#
+centSacc$obs = "central"#
+sacc$obs = "human"#
+aggFlow = getAggStats(rbind(flowSacc, sacc, centSacc))
+plt = ggplot(filter(aggFlow, n<16), aes(x=n, y=meanAmp, colour=obs)) #
+plt = plt + geom_point()#
+plt = plt + geom_errorbar(aes(ymin=lower, ymax=upper))#
+plt = plt + theme_bw()+ theme(legend.position="none")#
+plt = plt + scale_x_discrete(name="saccade number", breaks=seq(0,maxFix,5))#
+plt = plt + scale_y_continuous(name="saccadic amplitude")#
+ggsave('figs/saccAmpOverTimeFlow.pdf', width=3, height=3)
+plt = ggplot(filter(aggFlow, n<16), aes(x=n, y=meanAmp, colour=obs)) #
+plt = plt + geom_point()#
+plt = plt + geom_errorbar(aes(ymin=lower, ymax=upper)) + geom_smooth(se=F)#
+plt = plt + theme_bw()+ theme(legend.position="none")#
+plt = plt + scale_x_discrete(name="saccade number", breaks=seq(0,maxFix,5))#
+plt = plt + scale_y_continuous(name="saccadic amplitude")#
+ggsave('figs/saccAmpOverTimeFlow.pdf', width=3, height=3)
+summary(ampdat)
+summary(ampDat)
+summary(aggFlow)
+aggregate(data=aggFlow, meanAmp ~ obs)
+aggregate(data=aggFlow, meanAmp ~ obs, FUN=median)
+aggregate(data=aggFlow, meanAmp ~ obs, FUN=mean)

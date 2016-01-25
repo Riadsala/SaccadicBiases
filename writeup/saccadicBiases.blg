@@ -1,0 +1,63 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: saccadicBiases.aux
+The style file: plainnat.bst
+Database file #1: literature.bib
+I was expecting a `,' or a `}'---line 411 of file literature.bib
+ :   
+ :   year = {2016},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 437 of file literature.bib
+ : @article{dodd2009
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 949 of file literature.bib
+ : @article{brandt1945
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in brandt1945
+Warning--empty year in mit-saliency-benchmark
+Warning--can't use both volume and number fields in lee2002
+You've used 59 entries,
+            2773 wiz_defined-function locations,
+            924 strings with 14664 characters,
+and the built_in function-call counts, 28491 in all, are:
+= -- 2542
+> -- 1711
+< -- 30
++ -- 576
+- -- 516
+* -- 2465
+:= -- 4381
+add.period$ -- 181
+call.type$ -- 59
+change.case$ -- 347
+chr.to.int$ -- 58
+cite$ -- 121
+duplicate$ -- 1239
+empty$ -- 2297
+format.name$ -- 611
+if$ -- 5914
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 59
+newline$ -- 304
+num.names$ -- 236
+pop$ -- 631
+preamble$ -- 1
+purify$ -- 290
+quote$ -- 0
+skip$ -- 948
+stack$ -- 0
+substring$ -- 1196
+swap$ -- 95
+text.length$ -- 5
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 639
+warning$ -- 3
+while$ -- 262
+width$ -- 0
+write$ -- 771
+(There were 3 error messages)

@@ -1,0 +1,376 @@
+\begin{thebibliography}{59}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Antes(1974)]{antes1974}
+James~R Antes.
+\newblock The time course of picture viewing.
+\newblock \emph{Journal of experimental psychology}, 103\penalty0 (1):\penalty0
+  62, 1974.
+
+\bibitem[Asher et~al.(2013)Asher, Tolhurst, Troscianko, and
+  Gilchrist]{asher2013}
+Matthew~F Asher, David~J Tolhurst, Tom Troscianko, and Iain~D Gilchrist.
+\newblock Regional effects of clutter on human target detection performance.
+\newblock \emph{Journal of vision}, 13\penalty0 (5):\penalty0 25:1--15, 2013.
+
+\bibitem[Birmingham et~al.(2009)Birmingham, Bischof, and
+  Kingstone]{birmingham2009}
+Elina Birmingham, Walter~F Bischof, and Alan~A Kingstone.
+\newblock {Get real! Resolving the debate about equivalent social stimuli}.
+\newblock \emph{Visual Cognition}, 17\penalty0 (6-7):\penalty0 904--924, 2009.
+
+\bibitem[Borji and Itti(2013)]{borji2013}
+A~Borji and L~Itti.
+\newblock {State-of-the-Art in Visual Attention Modeling}.
+\newblock \emph{Pattern Analysis and Machine Intelligence, IEEE Transactions
+  on}, 35\penalty0 (1):\penalty0 185--207, 2013.
+
+\bibitem[Borji and Itti(2015)]{borji2015}
+Ali Borji and Laurent Itti.
+\newblock Cat2000: A large scale fixation dataset for boosting saliency
+  research.
+\newblock \emph{arXiv preprint arXiv:1505.03581}, 2015.
+
+\bibitem[Bowers and Heilman(1980)]{bowers-heilman1980}
+Dawn Bowers and Kenneth~M Heilman.
+\newblock Pseudoneglect: effects of hemispace on a tactile line bisection task.
+\newblock \emph{Neuropsychologia}, 18\penalty0 (4):\penalty0 491--498, 1980.
+
+\bibitem[Brandt(1945)]{brandt1945}
+Herman~Francis Brandt.
+\newblock The psychology of seeing.
+\newblock 1945.
+
+\bibitem[Buswell(1935)]{buswell1935}
+Guy~Thomas Buswell.
+\newblock \emph{How people look at pictures: a study of the psychology and
+  perception in art.}
+\newblock Univ. Chicago Press, 1935.
+
+\bibitem[Bylinskii et~al.()Bylinskii, Judd, Borji, Itti, Durand, Oliva, and
+  Torralba]{mit-saliency-benchmark}
+Zoya Bylinskii, Tilke Judd, Ali Borji, Laurent Itti, Fr{\'e}do Durand, Aude
+  Oliva, and Antonio Torralba.
+\newblock Mit saliency benchmark.
+\newblock http://saliency.mit.edu/.
+
+\bibitem[Canosa et~al.(2003)Canosa, Pelz, Mennie, and Peak]{canosa2003}
+R.L. Canosa, Jeff~B Pelz, N.R. Mennie, and J.~Peak.
+\newblock {High-level aspects of oculomotor control during viewing of
+  natural-task images}.
+\newblock \emph{Proc. SPIE Human Vision and Electronic Imaging VIII},
+  5007:\penalty0 240--251, 2003.
+
+\bibitem[Clarke and Hunt(2015)]{clarke-hunt2015}
+Alasdair D.~F. Clarke and Amelia~R. Hunt.
+\newblock Failure of intuition when presented with a choice between investing
+  in a single goal or splitting resources between two goals.
+\newblock \emph{Psychological Science}, 2015.
+
+\bibitem[Clarke et~al.(2013)Clarke, Coco, and Keller]{clarke2013}
+Alasdair D.~F. Clarke, Moreno~I. Coco, and Frank Keller.
+\newblock The impact of attentional, linguistic, and visual features during
+  object naming.
+\newblock \emph{Frontiers in psychology}, 4:\penalty0 927, 2013.
+
+\bibitem[Clarke and Tatler(2014)]{clarke-tatler2014}
+Alasdair~DF Clarke and Benjamin~W Tatler.
+\newblock Deriving an appropriate baseline for describing fixation behaviour.
+\newblock \emph{Vision research}, 102:\penalty0 41--51, 2014.
+
+\bibitem[Clarke et~al.(2009)Clarke, Chantler, and Green]{clarke2009}
+Alasdair~DF Clarke, Mike~J Chantler, and Patrick~R Green.
+\newblock Modeling visual search on a rough surface.
+\newblock \emph{Journal of Vision}, 9\penalty0 (4), 2009.
+
+\bibitem[Clarke et~al.(submitted)Clarke, Green, Chantler, and Hunt]{clarke2015}
+Alasdair~DF Clarke, Patrick~R Green, Mike~J Chantler, and Amelia~R Hunt.
+\newblock Human search for a target on a textured background is consistent with
+  a stochastic model.
+\newblock \emph{submitted}, submitted.
+
+\bibitem[Dickinson and Intraub(2009)]{dickinson-intraub2009}
+Christopher~A Dickinson and Helene Intraub.
+\newblock Spatial asymmetries in viewing and remembering scenes: Consequences
+  of an attentional bias?
+\newblock \emph{Attention, Perception, \& Psychophysics}, 71\penalty0
+  (6):\penalty0 1251--1262, 2009.
+
+\bibitem[Dodd et~al.(2009)Dodd, Van~der Stigchel, and Hollingworth]{dodd2009}
+Michael~D Dodd, Stefan Van~der Stigchel, and Andrew Hollingworth.
+\newblock Novelty is not always the best policy inhibition of return and
+  facilitation of return as a function of visual task.
+\newblock \emph{Psychological Science}, 20\penalty0 (3):\penalty0 333--339,
+  2009.
+
+\bibitem[Ehinger et~al.(2009)Ehinger, Hidalgo-Sotelo, Torralba, and
+  Oliva]{ehinger2009}
+Krista~A Ehinger, Barbara Hidalgo-Sotelo, Antonio Torralba, and Aude Oliva.
+\newblock Modelling search for people in 900 scenes: A combined source model of
+  eye guidance.
+\newblock \emph{Visual Cognition}, 17\penalty0 (6-7):\penalty0 945--978, 2009.
+
+\bibitem[Einh{\"a}user et~al.(2008)Einh{\"a}user, Spain, and
+  Perona]{einhauser2008}
+Wolfgang Einh{\"a}user, Merrielle Spain, and Pietro Perona.
+\newblock Objects predict fixations better than early saliency.
+\newblock \emph{Journal of Vision}, 8\penalty0 (14):\penalty0 18: 1--26, 2008.
+
+\bibitem[Follet et~al.(2011)Follet, Le~Meur, and Baccino]{follet2011}
+Brice Follet, Olivier Le~Meur, and Thierry Baccino.
+\newblock New insights into ambient and focal visual fixations using an
+  automatic classification algorithm.
+\newblock \emph{i-Perception}, 2\penalty0 (6):\penalty0 592, 2011.
+
+\bibitem[Foulsham and Kingstone(2010{\natexlab{a}})]{foulsham-kingstone2010}
+Tom Foulsham and Alan Kingstone.
+\newblock Asymmetries in the direction of saccades during perception of scenes
+  and fractals: Effects of image type and image features.
+\newblock \emph{Vision Research}, 50\penalty0 (8):\penalty0 779--795,
+  2010{\natexlab{a}}.
+
+\bibitem[Foulsham and Kingstone(2010{\natexlab{b}})]{foulsham2010}
+Tom Foulsham and Alan Kingstone.
+\newblock Asymmetries in the direction of saccades during perception of scenes
+  and fractals: Effects of image type and image features.
+\newblock \emph{Vision Research}, 50\penalty0 (8):\penalty0 779--795,
+  2010{\natexlab{b}}.
+
+\bibitem[Foulsham et~al.(2008)Foulsham, Kingstone, and Underwood]{foulsham2008}
+Tom Foulsham, Alan Kingstone, and Geoffrey Underwood.
+\newblock {Turning the world around: Patterns in saccade direction vary with
+  picture orientation}.
+\newblock \emph{Vision Research}, 48\penalty0 (17):\penalty0 1777--1790, 2008.
+
+\bibitem[Friedrich and Elias(2014)]{friedrich2014}
+Trista~E Friedrich and Lorin~J Elias.
+\newblock Behavioural asymmetries on the greyscales task: The influence of
+  native reading direction.
+\newblock \emph{Culture and brain}, 2\penalty0 (2):\penalty0 161--172, 2014.
+
+\bibitem[Fuller(1996)]{fuller1996}
+James~H Fuller.
+\newblock {Eye position and target amplitude effects on human visual saccadic
+  latencies}.
+\newblock \emph{Experimental brain research}, 109\penalty0 (3):\penalty0
+  457--466, 1996.
+
+\bibitem[Gilchrist and Harvey(2006)]{gilchrist2006}
+Iain~D Gilchrist and Monika Harvey.
+\newblock Evidence for a systematic component within scan paths in visual
+  search.
+\newblock \emph{Visual Cognition}, 14\penalty0 (4-8):\penalty0 704--715, 2006.
+
+\bibitem[Godwin et~al.(2014)Godwin, Reichle, and Menneer]{godwin2014}
+Hayward~J Godwin, Erik~D Reichle, and Tamaryn Menneer.
+\newblock Coarse-to-fine eye movement behavior during visual search.
+\newblock \emph{Psychonomic bulletin \& review}, 21\penalty0 (5):\penalty0
+  1244--1249, 2014.
+
+\bibitem[Greene et~al.(2012)Greene, Liu, and Wolfe]{greene-wolfe2012}
+Michelle~R Greene, Tommy Liu, and Jeremy~M Wolfe.
+\newblock Reconsidering yarbus: A failure to predict observers’ task from eye
+  movement patterns.
+\newblock \emph{Vision research}, 62:\penalty0 1--8, 2012.
+
+\bibitem[Jiang et~al.(2014)Jiang, Xu, and Zhao]{jiang2014}
+Ming Jiang, Juan Xu, and Qi~Zhao.
+\newblock Saliency in crowd.
+\newblock In \emph{ECCV}. IEEE, 2014.
+
+\bibitem[Judd et~al.(2012)Judd, Durand, and Torralba]{judd2012}
+T~Judd, F~Durand, and A~Torralba.
+\newblock {A benchmark of computational models of saliency to predict human
+  fixations}.
+\newblock Technical Report MIT-CSAIL-TR-2012-001, MIT Computer Science and
+  Artificial Intelligence Laboratory, Cambridge, MA, 2012.
+
+\bibitem[Judd et~al.(2009)Judd, Ehinger, Durand, and Torralba]{judd2009}
+Tilke Judd, Krista Ehinger, Fr{\'e}do Durand, and Antonio Torralba.
+\newblock Learning to predict where humans look.
+\newblock In \emph{Computer Vision, 2009 IEEE 12th international conference
+  on}, pages 2106--2113. IEEE, 2009.
+
+\bibitem[Klein and MacInnes(1999)]{klein-macinnes1999}
+Raymond~M Klein and W~Joseph MacInnes.
+\newblock Inhibition of return is a foraging facilitator in visual search.
+\newblock \emph{Psychological science}, 10\penalty0 (4):\penalty0 346--352,
+  1999.
+
+\bibitem[Kr{\"u}ger and Hunt(2013)]{krueger-hunt2013}
+Hannah~M Kr{\"u}ger and Amelia~R Hunt.
+\newblock Inhibition of return across eye and object movements: The role of
+  prediction.
+\newblock \emph{Journal of Experimental Psychology: Human Perception and
+  Performance}, 39\penalty0 (3):\penalty0 735, 2013.
+
+\bibitem[Land and Hayhoe(2001)]{land2001}
+Michael~F Land and Mary Hayhoe.
+\newblock In what ways do eye movements contribute to everyday activities?
+\newblock \emph{Vision research}, 41\penalty0 (25):\penalty0 3559--3565, 2001.
+
+\bibitem[Lappe et~al.(1998)Lappe, Pekel, and Hoffmann]{lappe1998}
+Markus Lappe, Martin Pekel, and Klaus-Peter Hoffmann.
+\newblock Optokinetic eye movements elicited by radial optic flow in the
+  macaque monkey.
+\newblock \emph{Journal of neurophysiology}, 79\penalty0 (3):\penalty0
+  1461--1480, 1998.
+
+\bibitem[Learmonth et~al.(2015)Learmonth, Gallagher, Gibson, Thut, and
+  Harvey]{learmonth2015}
+Gemma Learmonth, Aodhan Gallagher, Jamie Gibson, Gregor Thut, and Monika
+  Harvey.
+\newblock Intra-and inter-task reliability of spatial attention measures in
+  pseudoneglect.
+\newblock \emph{PloS one}, 10\penalty0 (9):\penalty0 e0138379, 2015.
+
+\bibitem[Lee et~al.(2002)Lee, Badler, and Badler]{lee2002}
+Sooha~Park Lee, Jeremy~B Badler, and Norman~I Badler.
+\newblock Eyes alive.
+\newblock In \emph{ACM Transactions on Graphics (TOG)}, volume~21, pages
+  637--644. ACM, 2002.
+
+\bibitem[Loschky et~al.(2015)Loschky, Larson, Magliano, and Smith]{loschky2015}
+Lester~C Loschky, Adam~M Larson, Joseph~P Magliano, and Tim~J Smith.
+\newblock What would jaws do? the tyranny of film and the relationship between
+  gaze and higher-level narrative film comprehension.
+\newblock \emph{PloS one}, 10\penalty0 (11):\penalty0 e0142474, 2015.
+
+\bibitem[Ma et~al.(2011)Ma, Navalpakkam, Beck, Van Den~Berg, and
+  Pouget]{ma2011}
+Wei~Ji Ma, Vidhya Navalpakkam, Jeffrey~M Beck, Ronald Van Den~Berg, and
+  Alexandre Pouget.
+\newblock Behavior and neural basis of near-optimal visual search.
+\newblock \emph{Nature neuroscience}, 14\penalty0 (6):\penalty0 783--790, 2011.
+
+\bibitem[MacInnes et~al.(2014)MacInnes, Hunt, Hilchey, and Klein]{macinnes2014}
+W~Joseph MacInnes, Amelia~R Hunt, Matthew~D Hilchey, and Raymond~M Klein.
+\newblock Driving forces in free visual search: An ethology.
+\newblock \emph{Attention, Perception, \& Psychophysics}, 76\penalty0
+  (2):\penalty0 280--295, 2014.
+
+\bibitem[Morvan and Maloney(2012)]{morvan-maloney2012}
+Camille Morvan and Laurence~T. Maloney.
+\newblock Human visual search does not maximize the post-saccadic probability
+  of identifying targets.
+\newblock \emph{PLOS Computational Biology}, 8\penalty0 (2), 2012.
+
+\bibitem[Najemnik and Geisler(2008)]{najemnik-geisler2008}
+Jiri Najemnik and Wilson~S Geisler.
+\newblock Eye movement statistics in humans are consistent with an optimal
+  search strategy.
+\newblock \emph{Journal of Vision}, 8\penalty0 (3), 2008.
+
+\bibitem[Nuthmann and Matthias(2014)]{nuthmann-matthias2014}
+Antje Nuthmann and Ellen Matthias.
+\newblock Time course of pseudoneglect in scene viewing.
+\newblock \emph{Cortex}, 52:\penalty0 113--119, 2014.
+
+\bibitem[Ossand{\'o}n et~al.(2014)Ossand{\'o}n, Onat, and
+  K{\"o}nig]{ossandon2014}
+Jos{\'e}~P Ossand{\'o}n, Selim Onat, and Peter K{\"o}nig.
+\newblock Spatial biases in viewing behavior.
+\newblock \emph{Journal of vision}, 14\penalty0 (2):\penalty0 20, 2014.
+
+\bibitem[Over et~al.(2007)Over, Hooge, Vlaskamp, and Erkelens]{over2007}
+EAB Over, ITC Hooge, BNS Vlaskamp, and CJ~Erkelens.
+\newblock Coarse-to-fine eye movement strategy in visual search.
+\newblock \emph{Vision Research}, 47\penalty0 (17):\penalty0 2272--2280, 2007.
+
+\bibitem[Pannasch et~al.(2008)Pannasch, Helmert, Roth, Herbold, and
+  Walter]{pannasch2008}
+Sebastian Pannasch, Jens~R Helmert, Katharina Roth, Ann-Katrin Herbold, and
+  Henrik Walter.
+\newblock Visual fixation durations and saccade amplitudes: Shifting
+  relationship in a variety of conditions.
+\newblock \emph{Journal of Eye Movement Research}, 2\penalty0 (2):\penalty0 4,
+  2008.
+
+\bibitem[Parkhurst et~al.(2002)Parkhurst, Law, and Niebur]{parkhurst2002}
+Derrick~J Parkhurst, K~Law, and E~Niebur.
+\newblock Modeling the role of salience in the allocation of overt visual
+  attention.
+\newblock \emph{Vision Research}, 42\penalty0 (1):\penalty0 107--123, 2002.
+
+\bibitem[Stainer et~al.(2013)Stainer, Scott-Brown, and Tatler]{stainer2013}
+Matthew~J Stainer, Kenneth~C Scott-Brown, and Benjamin~W Tatler.
+\newblock {Behavioral biases when viewing multiplexed scenes: scene structure
+  and frames of reference for inspection}.
+\newblock \emph{Frontiers in Psychology}, 4:\penalty0 624, 2013.
+
+\bibitem[Takeda and Yagi(2000)]{takeda-yagi2000}
+Yuji Takeda and Akihiro Yagi.
+\newblock Inhibitory tagging in visual search can be found if search stimuli
+  remain visible.
+\newblock \emph{Perception \& Psychophysics}, 62\penalty0 (5):\penalty0
+  927--934, 2000.
+
+\bibitem[Tatler(2007)]{tatler2007}
+Benjamin~W Tatler.
+\newblock The central fixation bias in scene viewing: Selecting an optimal
+  viewing position independently of motor biases and image feature
+  distributions.
+\newblock \emph{Journal of Vision}, 7\penalty0 (14):\penalty0 4: 1--17, 2007.
+
+\bibitem[Tatler and Vincent(2009)]{tatler-vincent2009}
+Benjamin~W Tatler and Benjamin~T Vincent.
+\newblock The prominence of behavioural biases in eye guidance.
+\newblock \emph{Visual Cognition}, 17\penalty0 (6-7):\penalty0 1029--1054,
+  2009.
+
+\bibitem[Tatler et~al.(2005)Tatler, Baddeley, and Gilchrist]{tatler2005}
+Benjamin~W Tatler, Roland~J Baddeley, and Iain~D Gilchrist.
+\newblock Visual correlates of fixation selection: Effects of scale and time.
+\newblock \emph{Vision research}, 45\penalty0 (5):\penalty0 643--659, 2005.
+
+\bibitem[Torralba et~al.(2006)Torralba, Oliva, Castelhano, and
+  Henderson]{torralba2006}
+Antonio Torralba, Aude Oliva, Monica~S Castelhano, and John~M Henderson.
+\newblock Contextual guidance of eye movements and attention in real-world
+  scenes: the role of global features in object search.
+\newblock \emph{Psychological review}, 113\penalty0 (4):\penalty0 766--786,
+  2006.
+
+\bibitem[Tseng et~al.(2009)Tseng, Carmi, Cameron, Munoz, and Itti]{tseng2009}
+Po-He Tseng, Ran Carmi, Ian~GM Cameron, Douglas~P Munoz, and Laurent Itti.
+\newblock Quantifying center bias of observers in free viewing of dynamic
+  natural scenes.
+\newblock \emph{Journal of vision}, 9\penalty0 (7):\penalty0 4: 1--16, 2009.
+
+\bibitem[von Wartburg et~al.(2007)von Wartburg, Wurtz, Pflugshaupt, Nyffeler,
+  Luthi, and Muri]{wartburg2007}
+Roman von Wartburg, Pascal Wurtz, Tobias Pflugshaupt, Thomas Nyffeler, Mathias
+  Luthi, and RM~Muri.
+\newblock Size matters: Saccades during scene perception.
+\newblock \emph{Perception}, 36\penalty0 (3):\penalty0 355, 2007.
+
+\bibitem[Wang et~al.(2011)Wang, Satel, Trappenberg, and Klein]{wang2011}
+Zhiguo Wang, Jason Satel, Thomas~P Trappenberg, and Raymond~M Klein.
+\newblock Aftereffects of saccades explored in a dynamic neural field model of
+  the superior colliculus.
+\newblock \emph{Journal of Eye Movement Research}, 4\penalty0 (2):\penalty0
+  1--16, 2011.
+
+\bibitem[Yarbus(1967)]{yarbus1967}
+Alfred~L Yarbus.
+\newblock \emph{Eye movements and vision}.
+\newblock Plenum Press New York, 1967.
+
+\bibitem[Yun et~al.(2013)Yun, Peng, Samaras, Zelinsky, and Berg]{yun2013}
+Kiwon Yun, Yifan Peng, D.~Samaras, G.J. Zelinsky, and T.L. Berg.
+\newblock Studying relationships between human gaze, description, and computer
+  vision.
+\newblock In \emph{Computer Vision and Pattern Recognition (CVPR), 2013 IEEE
+  Conference on}, pages 739--746, 2013.
+\newblock \doi{10.1109/CVPR.2013.101}.
+
+\bibitem[Zelinsky(1996)]{zelinsky1996}
+Gregory~J Zelinsky.
+\newblock Using eye saccades to assess the selectivity of search movements.
+\newblock \emph{Vision research}, 36\penalty0 (14):\penalty0 2177--2187, 1996.
+
+\end{thebibliography}

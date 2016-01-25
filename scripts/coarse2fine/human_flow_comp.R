@@ -1,5 +1,6 @@
+setwd("Documents/SaccadicBiases/scripts/coarse2fine/")
 
-library(sn)
+
 library(ggplot2)
 library(scales)
 library(dplyr)
@@ -106,9 +107,9 @@ ggsave('figs/yFixComparison.pdf', width=3, height=3)
 rm(pltDat, pltX, pltY, z, mu, sigma)
 
 
-plt = ggplot(filter(aggFlow, n<31), aes(x=n, y=meanAmp, colour=obs)) 
+plt = ggplot(filter(aggFlow, n<16), aes(x=n, y=meanAmp, colour=obs)) 
 plt = plt + geom_point()
-plt = plt + geom_errorbar(aes(ymin=lower, ymax=upper))
+plt = plt + geom_errorbar(aes(ymin=lower, ymax=upper)) + geom_smooth(se=F)
 plt = plt + theme_bw()+ theme(legend.position="none")
 plt = plt + scale_x_discrete(name="saccade number", breaks=seq(0,maxFix,5))
 plt = plt + scale_y_continuous(name="saccadic amplitude")
