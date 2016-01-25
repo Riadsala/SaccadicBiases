@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.9)  22 JAN 2016 16:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.9)  25 JAN 2016 11:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -752,45 +752,28 @@ f)
 Package pdftex.def Info: ../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf us
 ed on input line 184.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
-LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 191.
-
-
-LaTeX Warning: Reference `sec:reanalysisClarke2013' on page 7 undefined on inpu
-t line 191.
-
-
-Underfull \hbox (badness 2027) in paragraph at lines 191--192
-\T1/futs/m/n/10 dependant be-haviour. These bias-weighted gaze
- []
-
-(./BiasModelling.tex
-Underfull \vbox (badness 4013) has occurred while \output is active []
-
  [7 <../scripts/coarse2fine/figs/xFixComparison.pdf> <../scripts/coarse2fine/fi
 gs/yFixComparison.pdf> <../scripts/coarse2fine/figs/ampSaccComparison.pdf> <../
 scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf>]
-Underfull \hbox (badness 3713) in paragraph at lines 15--16
-\T1/futs/m/n/10 We will uses a num-ber of pre-vi-ously pub-lished
+LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10> not available
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 206.
+
+Underfull \hbox (badness 5475) in paragraph at lines 208--209
+\T1/futs/m/n/10 We will use a num-ber of pre-vi-ously pub-lished
  []
 
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 20.
-
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 215
+.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
-Underfull \hbox (badness 5519) in paragraph at lines 24--25
+Underfull \hbox (badness 5519) in paragraph at lines 219--220
 \T1/futs/m/n/10 of ob-servers view-ing square greyscale pho-
  []
 
 
-Underfull \hbox (badness 2165) in paragraph at lines 26--27
+Underfull \hbox (badness 2165) in paragraph at lines 221--222
 \T1/futs/m/n/10 col-lected over twenty dif-fer-ent stim-uli types.
- []
-
-
-Underfull \hbox (badness 1024) in paragraph at lines 26--27
-\T1/futs/m/n/10 are pre-sented seper-ately, and split by stim-uli
  []
 
 [8]
@@ -799,7 +782,7 @@ File: ../scripts/leftVright/graphs/leftrightbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/leftrightbias.pdf>
 Package pdftex.def Info: ../scripts/leftVright/graphs/leftrightbias.pdf used on
- input line 54.
+ input line 245.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
 
 <../scripts/leftVright/graphs/updownbias.pdf, id=118, 216.81pt x 216.81pt>
@@ -807,9 +790,10 @@ File: ../scripts/leftVright/graphs/updownbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/updownbias.pdf>
 Package pdftex.def Info: ../scripts/leftVright/graphs/updownbias.pdf used on in
-put line 55.
+put line 246.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 72.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 263.
+
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -821,10 +805,10 @@ File: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf Graphic file (typ
 e pdf)
  <use ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pd
-f used on input line 80.
+f used on input line 271.
 (pdftex.def)             Requested size: 455.24408pt x 151.74721pt.
 
-Overfull \hbox (3.24408pt too wide) in paragraph at lines 80--81
+Overfull \hbox (3.24408pt too wide) in paragraph at lines 271--272
  [][] 
  []
 
@@ -833,7 +817,7 @@ File: ../scripts/flow/figs/llh_training.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_training.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_training.pdf used on input li
-ne 90.
+ne 281.
 (pdftex.def)             Requested size: 341.43306pt x 170.71892pt.
 
 <../scripts/flow/figs/llh_testing.pdf, id=137, 867.24pt x 216.81pt>
@@ -841,10 +825,10 @@ File: ../scripts/flow/figs/llh_testing.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_testing.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_testing.pdf used on input lin
-e 97.
+e 288.
 (pdftex.def)             Requested size: 341.43306pt x 85.35945pt.
 
-Underfull \hbox (badness 1502) in paragraph at lines 101--102
+Underfull \hbox (badness 1502) in paragraph at lines 292--293
 []\T1/futs/m/n/10 As the flow:normal model is sig-nif-i-cantly more
  []
 
@@ -853,14 +837,14 @@ File: ../scripts/flow/figs/llh_Borji.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_Borji.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_Borji.pdf used on input line 
-106.
+297.
 (pdftex.def)             Requested size: 341.43306pt x 227.62523pt.
 
-Underfull \hbox (badness 1052) in paragraph at lines 120--121
+Underfull \hbox (badness 1052) in paragraph at lines 311--312
 \T1/futs/m/n/10 prior for image-content in-de-pen-dent sac-cadic be-
  []
 
-)
+
 Underfull \vbox (badness 1205) has occurred while \output is active []
 
 
@@ -887,29 +871,25 @@ Underfull \hbox (badness 2582) in paragraph at lines 300--304
 []\T1/futs/m/n/9 Matthew J Stainer, Ken-neth C Scott-Brown, and Ben-
  []
 
-) [15] (./saccadicBiases.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+) [15] (./saccadicBiases.aux) ) 
 Here is how much of TeX's memory you used:
- 4470 strings out of 493089
- 65007 string characters out of 6134842
- 128666 words of memory out of 5000000
+ 4467 strings out of 493089
+ 64954 string characters out of 6134842
+ 129676 words of memory out of 5000000
  7779 multiletter control sequences out of 15000+600000
  97359 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,11n,35p,1991b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on saccadicBiases.pdf (15 pages, 29034798 bytes).
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dv
+ips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvip
+s/base/8r.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fo
+urier-bb.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fou
+rier-mlit.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fo
+urier-ms.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8
+a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/l
+ocal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
+Output written on saccadicBiases.pdf (15 pages, 29035107 bytes).
 PDF statistics:
  211 PDF objects out of 1000 (max. 8388607)
  132 compressed objects within 2 object streams
