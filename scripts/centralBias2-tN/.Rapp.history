@@ -1,0 +1,239 @@
+install.packages("lme4")
+install.packeges("car")
+install.packages("car")
+install.packages("Hmci")
+install.packages("Hmisc")
+install.packages("mnormt")
+install.packages("psyhpy")
+install.packages("psyphy")
+install.packages("plyr")
+install.packages("pdyphy")
+install.packages("phyphy")
+install.packages("psyphy")
+q()
+install.packages("psyphy")
+setInternet2(use = TRUE)
+install.packages("psyphy",repos="http://R-Forge.R-project.org", type="source")
+install.packages("psyphy")
+install.packages("ggplot2")
+internet2
+install.packages("httr")
+capabilities()["libcurl"]
+setInternet2(TRUE)
+install.packages("httr")
+install.packages("swirl", repos="http://cran.rstudio.com/", dependencies=TRUE)
+install.packages("nnet", repos="http://cran.rstudio.com/", dependencies=TRUE)
+install.packages("ggplot2")
+install.packages("ggplot2", dependencies=TRUE)
+install.packages("stringr")
+2+2
+library(ggplot2)
+library(ggplot2)#
+library(dplyr)#
+#
+people = 11#c(1,2,3,4,5,11)#
+dat = data.frame()#
+for (person in people)#
+{#
+    pdat = rbind(read.csv(paste('../results/', person, 'results.txt', sep='')),read.csv('../results/2results.txt')) #
+    dat = rbind(dat, pdat)#
+    rm(pdat)#
+}#
+# tell R that person and targetPresent are categorical factors#
+dat$person = as.factor(dat$person)#
+dat$targetPresent = as.factor(dat$targetPresent)#
+levels(dat$block) = c("coloured", "uncoloured")#
+#
+# remove response = 3 (timed out?)#
+dat = filter(dat, response!=3)#
+#
+# display number of incorrect trials - should be low!#
+print(paste("misses:", 100*nrow(filter(dat, targetPresent==1, response==-1))/nrow(dat)))#
+print(paste("false pos:", 100*nrow(filter(dat, targetPresent==0, response==1))/nrow(dat)))#
+#
+# remove incorrect trials from data#
+dat = rbind(filter(dat, targetPresent==1, response==1), filter(dat, targetPresent==0, response==-1))#
+#
+dat$trialNumber = as.factor(dat$trialNumber)#
+dat = filter(dat, block=='coloured')#
+#
+# dat$responseTime = log(dat$responseTime)#
+# compute mean of median and 95% CI#
+aggData = (dat #
+  %>% group_by(person, block, visualise, trialNumber) #
+    %>% summarise(#
+     nTrials = length(responseTime),#
+     meanRT     = mean(responseTime),#
+     medianRT   = median(responseTime), #
+     stddev     = sd(responseTime),#
+     stderr=stddev/sqrt(nTrials),#
+     lower=meanRT-1.96*stderr,#
+     upper=meanRT+1.96*stderr))#
+#
+# plot! #
+#
+plt = ggplot(aggData, aes(x=trialNumber, y=meanRT, ymin=lower, ymax=upper, colour=visualise, group=visualise))#
+plt = plt + geom_path() + geom_errorbar()#
+plt = plt + geom_path(aes(y=medianRT), linetype=2)#
+plt = plt + facet_wrap(~person, scales='free_y') + theme_bw()#
+plt = plt +  scale_colour_brewer(palette="Set1")#
+ggsave("pilotResults.pdf", height=4, width=8)#
+plt#
+# # sample to get CI estimates #
+# ii = 0#
+# for (n in seq(6,72,6))#
+# {#
+#     ii = ii + 1#
+# sdat = dat[sample(x=nrow(dat), size=n),]#
+# m[ii] = mean(sdat$responseTime)#
+# stderr[ii] = sd(sdat$responseTime)/sqrt(n)#
+#
+# }#
+# plt = ggplot(data.frame(m = m, n=seq(6,72,6), lower=m-1.96*stderr, upper=m+1.96*stderr), aes(x=n, y=m, ymin=lower, ymax=upper))#
+# plt = plt + geom_errorbar() + geom_point() + scale_y_continuous(limits=c(0.3,0.7))#
+# plt
+install.packages("dplyr")
+library(lme4)
+library(ggplot2)#
+library(lme4)#
+library(car)#
+people = c(1,2,3,4,5,6,7,8,9,11)#
+alldat = data.frame(participantNumber=character(), trialNum=numeric(), TargetPresent=numeric(), beta=numeric(), seed=numeric(), r=numeric(), phi=numeric(), response=numeric()) #
+for (person in people)#
+{#
+    dat = read.csv(paste("../results/ac_", person, "_td.txt", sep=""))#
+    if (person == 7)#
+    {#
+        # there's a bug in the data causing participantNumber to = 6 for particiapnt 7!#
+        dat$participantNumber = 7#
+    }#
+    if (person == 4)#
+    {#
+        # they got their numbers the wrong way around#
+        dat$respose = 1-dat$respose#
+    }#
+#
+    names(dat)[8] = "response"#
+    alldat = rbind(alldat, dat)#
+}#
+#
+visdeg = 60*tan(54.2/57)/(1920*pi)#
+#
+alldat$beta <- factor(as.numeric(alldat$beta), labels =c("rough", "medium", "smooth"))#
+alldat$phi <- pi/180 * alldat$phi#
+alldat$r <- alldat$r * visdeg#
+alldat$x <- alldat$r*sin(alldat$phi)#
+alldat$y <- alldat$r*cos(alldat$phi)#
+alldat$x2 <- alldat$x^2#
+alldat$y2 <- alldat$y^2#
+alldat$participantNumber = as.factor(alldat$participantNumber)#
+alldat$TargetPresent = as.factor(alldat$TargetPresent)#
+alldat$rejTrial = as.numeric(alldat$response == -1)#
+summary((aggregate(data=alldat, rejTrial~participantNumber, FUN=mean)))#
+alldat = alldat[-which(alldat$response==-1),]#
+alldat = alldat[-which(alldat$response==2),]#
+accdat = aggregate(data=alldat, response~participantNumber+beta+TargetPresent, FUN=mean)#
+summary(aggregate(data=alldat[which(alldat$TargetPresent==0),], response~participantNumber, FUN=mean))#
+levels(accdat$TargetPresent) = c("target absent", "target present")#
+accdat$response[which(accdat$TargetPresent=="target absent")] = 1- accdat$response[which(accdat$TargetPresent=="target absent")] #
+fpplt = ggplot(accdat, aes(x=participantNumber, y=response, fill=beta)) + geom_bar(stat="identity", position=position_dodge())+facet_wrap(~TargetPresent)#
+fpplt = fpplt + scale_y_continuous(name="accuracy",breaks=c(seq(0,1,0.1))) + theme_bw()#
+fpplt = fpplt + scale_x_discrete(name="participant ID")#
+ggsave("targDetFalsePositive.pdf", width=10, height=4)#
+#
+targPres = subset(alldat, TargetPresent==1 & response!=-1 & response!=2)#
+#
+targPres2 <- aggregate(response ~ participantNumber+ beta+r, targPres, FUN="mean")#
+tmp <- aggregate(response ~ beta+r, targPres, FUN="var")#
+targPres2$stderr = sqrt(tmp$response/9)#
+plt1 <- ggplot(targPres2, aes(x=r, y=response, colour=beta)) + geom_smooth(method="glm", family="binomial", se=F) + geom_point(position = position_jitter(w = 0.15, h = 0.0))#
+plt1 <- plt1 + scale_y_continuous(name="p(target detected)")  +scale_x_continuous(name="eccentricity (degrees of visual angle)") + theme_bw()#
+plt1#
+ggsave("targDetModelEccOnly.pdf", width=10, height=5)#
+#
+plt2 <- ggplot(targPres2, aes(x=r, y=response, colour=beta)) + geom_smooth(method="glm", family="binomial", se=F) + geom_point(position = position_jitter(w = 0.15, h = 0.0))#
+plt2 <- plt2 + scale_y_continuous(name="p(target detected)")  +scale_x_continuous(name="eccentricity (degrees of visual angle)") + theme_bw()#
+plt2 = plt2 + facet_wrap(~participantNumber)#
+ggsave("eccAccPltByPerson.pdf")#
+#
+m2 <- glm(data=targPres, response ~ beta * (x2+y2), family="binomial")
+setwd("Documents/SaccadicBiases/scripts/centralBias2-tN/")
+library(dplyr)#
+#
+setwd("Documents/SaccadicBiases/scripts/centralBias2-tN/")#
+source('../flow/flowDistFunctions.R')#
+datasets = c(#
+'Clarke2013', #
+'Einhauser2008', #
+'Tatler2005', #
+'Tatler2007freeview', #
+'Tatler2007search',#
+'Yun2013SUN', #
+'Yun2013PASCAL'#
+)#
+# load in data#
+sacc = data.frame(x1=numeric(), y1=numeric(), x2=numeric(), y2=numeric())#
+for (d in datasets)#
+{#
+    print(d)#
+    # get saccade info#
+    dsacc = read.csv(paste('../../data/saccs/', d, 'saccsMirrored.txt', sep=''), header=FALSE)#
+    names(dsacc) = c("n", "x1", "y1", "x2", "y2")#
+    sacc = rbind(sacc, dsacc)#
+}#
+#
+aspect.ratio = 0.75#
+sacc = filter(sacc, n>1)#
+fixations = as.matrix(select(sacc, x2, y2))#
+#
+# Clarke-Tatler 2014#
+mu = c(0,0)#
+sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))#
+llhCT2014 = sum(dmvnorm(x=fixations, mu, sigma, log=T))#
+#
+# refit guassian#
+mu = c(mean(fixations[,1]), mean(fixations[,2]))#
+sigma = var(fixations)#
+llhReFit = sum(dmvnorm(x=fixations, mu, sigma, log=T))#
+#
+# truncated normal#
+ntParams = calcTNdist(fixations, NaN, NaN)#
+#
+mu = c(filter(ntParams, param=='mu_x')$value, filter(ntParams, param=='mu_y')$value)#
+#
+sigma = array(c(#
+        filter(ntParams, param=='sigma_xx')$value, #
+        filter(ntParams, param=='sigma_xy')$value,#
+        filter(ntParams, param=='sigma_xy')$value,#
+        filter(ntParams, param=='sigma_yy')$value),#
+        dim=c(2,2))#
+#
+llhTN = sum(dtmvnorm(x=cbind(sacc$x2, sacc$y2), #
+            mean=mu, sigma=sigma, #
+            lower=c(-1,-aspect.ratio),#
+            upper=c(1,aspect.ratio), log=T))#
+#
+# truncated normal rounded#
+mu = c(0,0)#
+sigma = round(sigma,2)#
+llhTNrounded = sum(dtmvnorm(x=cbind(sacc$x2, sacc$y2), #
+            mean=mu, sigma=sigma, #
+            lower=c(-1,-aspect.ratio),#
+            upper=c(1,aspect.ratio), log=T))#
+sigma = array(c(0.32,0,0,0.45*0.32), dim=c(2,2))#
+#
+llhTNrounded2 = sum(dtmvnorm(x=cbind(sacc$x2, sacc$y2), #
+            mean=mu, sigma=sigma, #
+            lower=c(-1,-aspect.ratio),#
+            upper=c(1,aspect.ratio), log=T))#
+#
+dat = data.frame(#
+    bias = c('Clarke Tatler (2014)', 're-fit to training data', 'truncated gaussian', 'rounded', 'rounded2'),#
+    llhFrac = c(1, llhReFit/llhCT2014, llhTN/llhCT2014, llhTNrounded/llhCT2014, llhTNrounded2/llhCT2014))#
+#
+dat$llhFrac = dat$llhFrac * 100#
+#
+library(ggplot2)#
+#
+plt = ggplot(dat, aes(x=bias, y=llhFrac)) + geom_bar(stat='identity')
+plt
