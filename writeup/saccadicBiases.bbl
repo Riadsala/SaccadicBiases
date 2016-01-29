@@ -1,4 +1,4 @@
-\begin{thebibliography}{59}
+\begin{thebibliography}{62}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -159,6 +159,14 @@ James~H Fuller.
 \newblock \emph{Experimental brain research}, 109\penalty0 (3):\penalty0
   457--466, 1996.
 
+\bibitem[Garcia-Diaz et~al.(2012)Garcia-Diaz, Lebor{\'a}n, Fdez-Vidal, and
+  Pardo]{garciadiaz2012}
+Ant{\'o}n~A Garcia-Diaz, V{\'\i}ctor~V Lebor{\'a}n, Xos{\'e} R~XR Fdez-Vidal,
+  and Xos{\'e} M~XM Pardo.
+\newblock {On the relationship between optical variability, visual saliency,
+  and eye fixations: a computational approach.}
+\newblock \emph{Journal of Vision}, 12\penalty0 (6):\penalty0 17--17, 2012.
+
 \bibitem[Gilchrist and Harvey(2006)]{gilchrist2006}
 Iain~D Gilchrist and Monika Harvey.
 \newblock Evidence for a systematic component within scan paths in visual
@@ -176,6 +184,12 @@ Michelle~R Greene, Tommy Liu, and Jeremy~M Wolfe.
 \newblock Reconsidering yarbus: A failure to predict observers’ task from eye
   movement patterns.
 \newblock \emph{Vision research}, 62:\penalty0 1--8, 2012.
+
+\bibitem[Harel et~al.(2006)Harel, Koch, and Perona]{harel2006}
+J~Harel, C~Koch, and P~Perona.
+\newblock {Graph-based visual saliency}.
+\newblock \emph{Advances in Neural Information Processing Systems}, pages
+  545--552, 2006.
 
 \bibitem[Jiang et~al.(2014)Jiang, Xu, and Zhao]{jiang2014}
 Ming Jiang, Juan Xu, and Qi~Zhao.
@@ -295,6 +309,15 @@ Derrick~J Parkhurst, K~Law, and E~Niebur.
 \newblock Modeling the role of salience in the allocation of overt visual
   attention.
 \newblock \emph{Vision Research}, 42\penalty0 (1):\penalty0 107--123, 2002.
+
+\bibitem[Riche et~al.(2013)Riche, Mancas, Duvinage, Mibulumukini, Gosselin, and
+  Dutoit]{riche2013}
+Nicolas Riche, Matei Mancas, Matthieu Duvinage, Makiese Mibulumukini, Bernard
+  Gosselin, and Thierry Dutoit.
+\newblock {RARE2012: A multi-scale rarity-based saliency detection with its
+  comparative statistical analysis}.
+\newblock \emph{Signal Processing: Image Communication}, 28\penalty0
+  (6):\penalty0 642--658, 2013.
 
 \bibitem[Stainer et~al.(2013)Stainer, Scott-Brown, and Tatler]{stainer2013}
 Matthew~J Stainer, Kenneth~C Scott-Brown, and Benjamin~W Tatler.
