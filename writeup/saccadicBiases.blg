@@ -20,12 +20,13 @@ Repeated entry---line 983 of file literature.bib.bib
  : @article{brandt1945
  :                    ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "XXHendersonXX"
 Warning--empty journal in brandt1945
 Warning--empty year in mit-saliency-benchmark
 Warning--can't use both volume and number fields in lee2002
 You've used 62 entries,
             2773 wiz_defined-function locations,
-            940 strings with 15320 characters,
+            942 strings with 15346 characters,
 and the built_in function-call counts, 30282 in all, are:
 = -- 2702
 > -- 1837

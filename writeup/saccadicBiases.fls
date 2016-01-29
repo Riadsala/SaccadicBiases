@@ -1,4 +1,4 @@
-PWD /Users/matthewstainer/Documents/Work/Papers/SaccadicBiases/writeup
+PWD /Users/s09ac3/Documents/SaccadicBiases/writeup
 INPUT /usr/local/texlive/2015/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt
@@ -248,9 +248,13 @@ INPUT ./figs/heatmap_figure.pdf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futsy.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT figs/SaccadeSaliency.pdf
 INPUT ./figs/SaccadeSaliency.pdf
 INPUT ./figs/SaccadeSaliency.pdf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futb8t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
 INPUT ../scripts/coarse2fine/figs/xFixComparison.pdf
 INPUT ../scripts/coarse2fine/figs/xFixComparison.pdf
 INPUT ../scripts/coarse2fine/figs/xFixComparison.pdf
@@ -267,13 +271,9 @@ INPUT ../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futr8t.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futr8r.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/fourier/ts1futs.fd
 INPUT /usr/local/texlive/2015/texmf-dist/tex/latex/fourier/ts1futs.fd
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futr8c.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futb8t.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futr8c.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-orns.tfm
 INPUT ../scripts/leftVright/graphs/leftrightbias.pdf
