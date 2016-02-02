@@ -1,5 +1,5 @@
 
-function getFlowMap
+function llmap = getFlowMap(fx, fy)
 
 fid = fopen('models/ALL_flowModels_0.05.txt');
 % column names
@@ -10,7 +10,8 @@ txt = textscan(fid, '%s %s %s %s %f %f',80, 'Delimiter', ',', 'Whitespace', '"')
 txt = textscan(fid, '%s %s %s %s %f %f',80, 'Delimiter', ',', 'Whitespace', '"');
 fclose(fid);
 
-fx = 0.5; fy = 0;
+
+
 flow_params = getFlowParams(fx,fy,txt);
 
 mu = [flow_params(1), flow_params(2)];
