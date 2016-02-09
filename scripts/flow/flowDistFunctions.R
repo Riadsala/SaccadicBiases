@@ -257,7 +257,7 @@ calcLLHofSaccade <- function(saccade, flowModel, flowParams, aspect.ratio=0.75)
  	if (is.positive.definite(sigma)==FALSE)
 	{
 		sigma = nearPD(sigma, corr=T)
-		# print(sigma)
+		print(sigma)
  	# print(sigma$mat)
  		sigma = (as.array(sigma$mat))
 	}

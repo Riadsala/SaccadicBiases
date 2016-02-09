@@ -9,11 +9,10 @@ library(tmvtnorm)
 
 calcFlowOverSpace <- function(winSize, stepSize)
 {
-	# stFitOverSpace = data.frame(x=numeric(), y=numeric(), z=factor(levels=c('xi_x', 'xi_y', 'Omega-xx','Omega-xy','Omega-yx','Omega-yy', 'alpha-x2', 'alpha-y2', 'nu')), value=numeric())
-	# snFitOverSpace = data.frame(x=numeric(), y=numeric(), z=factor(levels=c('xi_x', 'xi_y', 'Omega-xx','Omega-xy','Omega-yx','Omega-yy', 'alpha-x2', 'alpha-y2')), value=numeric())
 	nFitOverSpace =  data.frame(
+		n=numeric(),
 		x=numeric(), 
-		y=numeric(), 
+		y=numeric(),
 		z=factor(levels=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yx', 'sigma_yy')), 
 		value=numeric(),
 		w=numeric())
@@ -23,17 +22,16 @@ calcFlowOverSpace <- function(winSize, stepSize)
 		print(x)
 		for (y in round(seq(-.75+winSize, .75-winSize, stepSize),4))
 		{	
-			# get fixation that start in window
-			fixations = filter(sacc, x1>x-winSize, x1<x+winSize, y1>y-winSize, y1<y+winSize)
-			fixations = as.matrix(select(fixations, x2, y2))
-
-			if (nrow(fixations)>1000)
+			for (ni in seq(1, 10))
 			{
+				# get fixation that start in window
+				fixations = filter(sacc, x1>x-winSize, x1<x+winSize, y1>y-winSize, y1<y+winSize, n==ni)
+				fixations = as.matrix(select(fixations, x2, y2))
 
-				# stFitOverSpace = rbind(stFitOverSpace, 	calcSNdist(sacc[idx,], 'ST', x,y))
-				# snFitOverSpace = rbind(snFitOverSpace, 	calcSNdist(sacc[idx,], 'SN',x,y))
-				nFitOverSpace  = rbind(nFitOverSpace, 	calcNdist(fixations, x, y))
-				nFitOverSpace  = rbind(nFitOverSpace, 	calcTNdist(fixations, x, y))
+				if (nrow(fixations)>500)
+				{
+					nFitOverSpace  = rbind(nFitOverSpace, 	calcTNdist(fixations, x, y))
+				}
 			}
 		}
 	}
@@ -59,8 +57,8 @@ calcTNdist <- function(fixations, x, y, aspect.ratio=0.75)
  	lower=c(-1,-aspect.ratio), 
  	upper=c( 1, aspect.ratio), 
  	start=startFrom)
-
-  tnParams = data.frame(flowModel='tN', x=x, y=y, param=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yy'),
+coef(m)
+  tnParams = data.frame(flowModel='tN', n=n, x=x, y=y, param=c('mu_x', 'mu_y', 'sigma_xx', 'sigma_xy', 'sigma_yy'),
 		value = c(coef(m)[1], coef(m)[2], coef(m)[3],coef(m)[4],coef(m)[5]), w=nrow(fixations))
 
 	return(tnParams)
