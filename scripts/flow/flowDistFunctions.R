@@ -1,4 +1,4 @@
-
+library(matrixcalc)
 library(dplyr)
 library(mvtnorm)
 library(tmvtnorm)
