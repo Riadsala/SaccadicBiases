@@ -1,4 +1,4 @@
-\begin{thebibliography}{62}
+\begin{thebibliography}{65}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -339,6 +339,11 @@ Benjamin~W Tatler.
   distributions.
 \newblock \emph{Journal of Vision}, 7\penalty0 (14):\penalty0 4: 1--17, 2007.
 
+\bibitem[Tatler and Vincent(2008)]{tatler2008}
+Benjamin~W Tatler and B~T Vincent.
+\newblock {Systematic tendencies in scene viewing}.
+\newblock \emph{Journal of Eye Movement Research}, 2008.
+
 \bibitem[Tatler and Vincent(2009)]{tatler-vincent2009}
 Benjamin~W Tatler and Benjamin~T Vincent.
 \newblock The prominence of behavioural biases in eye guidance.
@@ -363,6 +368,21 @@ Po-He Tseng, Ran Carmi, Ian~GM Cameron, Douglas~P Munoz, and Laurent Itti.
 \newblock Quantifying center bias of observers in free viewing of dynamic
   natural scenes.
 \newblock \emph{Journal of vision}, 9\penalty0 (7):\penalty0 4: 1--16, 2009.
+
+\bibitem[Unema et~al.(2005)Unema, Pannasch, Joos, and Velichkovsky]{unema2005}
+Pieter J~A Unema, Sebastian Pannasch, Markus Joos, and Boris~M Velichkovsky.
+\newblock {Time course of information processing during scene perception: The
+  relationship between saccade amplitude and fixation duration}.
+\newblock \emph{Visual Cognition}, 12\penalty0 (3):\penalty0 473--494, 2005.
+
+\bibitem[Velichkovsky et~al.(2002)Velichkovsky, Rothert, Kopf, Dornh{\"o}fer,
+  and Joos]{velichkovsky2002}
+Boris~M Velichkovsky, Alexandra Rothert, Mathias Kopf, Sascha~M Dornh{\"o}fer,
+  and Markus Joos.
+\newblock {Towards an express-diagnostics for level of processing and hazard
+  perception}.
+\newblock \emph{Transportation Research Part F: Traffic Psychology and
+  Behaviour}, 5\penalty0 (2):\penalty0 145--156, 2002.
 
 \bibitem[von Wartburg et~al.(2007)von Wartburg, Wurtz, Pflugshaupt, Nyffeler,
   Luthi, and Muri]{wartburg2007}
