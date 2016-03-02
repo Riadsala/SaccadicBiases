@@ -1,5 +1,5 @@
 
-function llmap = getFlowMap(fx, fy)
+function llmap_large = getFlowMap(fx, fy)
 
 fid = fopen('models/ALL_flowModels_0.05.txt');
 % column names
