@@ -1,4 +1,4 @@
-\begin{thebibliography}{65}
+\begin{thebibliography}{66}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -87,11 +87,11 @@ Alasdair~DF Clarke, Mike~J Chantler, and Patrick~R Green.
 \newblock Modeling visual search on a rough surface.
 \newblock \emph{Journal of Vision}, 9\penalty0 (4), 2009.
 
-\bibitem[Clarke et~al.(submitted)Clarke, Green, Chantler, and Hunt]{clarke2015}
+\bibitem[Clarke et~al.(in press)Clarke, Green, Chantler, and Hunt]{clarke2016}
 Alasdair~DF Clarke, Patrick~R Green, Mike~J Chantler, and Amelia~R Hunt.
 \newblock Human search for a target on a textured background is consistent with
   a stochastic model.
-\newblock \emph{submitted}, submitted.
+\newblock \emph{Journal of Vision}, in press.
 
 \bibitem[Dickinson and Intraub(2009)]{dickinson-intraub2009}
 Christopher~A Dickinson and Helene Intraub.
@@ -233,6 +233,12 @@ Markus Lappe, Martin Pekel, and Klaus-Peter Hoffmann.
   macaque monkey.
 \newblock \emph{Journal of neurophysiology}, 79\penalty0 (3):\penalty0
   1461--1480, 1998.
+
+\bibitem[Le~Meur and Coutrot(2016)]{leMeur-coutrot2016}
+Olivier Le~Meur and Antoine Coutrot.
+\newblock Introducing context-dependent and spatially-variant viewing biases in
+  saccadic models.
+\newblock \emph{Vision Research}, 121:\penalty0 72--84, 2016.
 
 \bibitem[Learmonth et~al.(2015)Learmonth, Gallagher, Gibson, Thut, and
   Harvey]{learmonth2015}

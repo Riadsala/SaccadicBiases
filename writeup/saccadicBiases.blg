@@ -3,20 +3,20 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: saccadicBiases.aux
 The style file: plainnat.bst
 Database file #1: literature.bib.bib
-I was expecting a `,' or a `}'---line 472 of file literature.bib.bib
+I was expecting a `,' or a `}'---line 483 of file literature.bib.bib
  :   
  :   year = {2016},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 498 of file literature.bib.bib
+Repeated entry---line 509 of file literature.bib.bib
  : @article{dodd2009
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 889 of file literature.bib.bib
+Repeated entry---line 900 of file literature.bib.bib
  : @inproceedings{harel2006
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1010 of file literature.bib.bib
+Repeated entry---line 1021 of file literature.bib.bib
  : @article{brandt1945
  :                    ,
 I'm skipping whatever remains of this entry
@@ -24,45 +24,45 @@ Warning--I didn't find a database entry for "XXHendersonXX"
 Warning--empty journal in brandt1945
 Warning--empty year in mit-saliency-benchmark
 Warning--can't use both volume and number fields in lee2002
-You've used 65 entries,
+You've used 66 entries,
             2773 wiz_defined-function locations,
-            954 strings with 15934 characters,
-and the built_in function-call counts, 31807 in all, are:
-= -- 2835
-> -- 1945
-< -- 32
-+ -- 654
-- -- 588
-* -- 2765
-:= -- 4891
-add.period$ -- 199
-call.type$ -- 65
-change.case$ -- 389
-chr.to.int$ -- 64
-cite$ -- 133
-duplicate$ -- 1372
-empty$ -- 2535
-format.name$ -- 691
-if$ -- 6598
+            961 strings with 16104 characters,
+and the built_in function-call counts, 32240 in all, are:
+= -- 2877
+> -- 1966
+< -- 33
++ -- 661
+- -- 594
+* -- 2797
+:= -- 4957
+add.period$ -- 202
+call.type$ -- 66
+change.case$ -- 394
+chr.to.int$ -- 65
+cite$ -- 135
+duplicate$ -- 1392
+empty$ -- 2572
+format.name$ -- 700
+if$ -- 6689
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 65
-newline$ -- 334
-num.names$ -- 260
-pop$ -- 707
+missing$ -- 66
+newline$ -- 339
+num.names$ -- 264
+pop$ -- 715
 preamble$ -- 1
-purify$ -- 326
+purify$ -- 330
 quote$ -- 0
-skip$ -- 1058
+skip$ -- 1074
 stack$ -- 0
-substring$ -- 1334
-swap$ -- 110
+substring$ -- 1355
+swap$ -- 111
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 705
+type$ -- 716
 warning$ -- 3
-while$ -- 291
+while$ -- 296
 width$ -- 0
-write$ -- 848
+write$ -- 861
 (There were 4 error messages)
