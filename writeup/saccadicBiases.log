@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.2)  2 MAR 2016 15:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.2)  2 MAR 2016 16:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -903,8 +903,24 @@ Underfull \hbox (badness 2591) in paragraph at lines 69--43
  []
 
 [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \hbox (badness 1642) in paragraph at lines 51--52
+\T1/futs/m/n/10.95 that avoids coarsely par-tion-ing the data into
+ []
 
+
+Underfull \hbox (badness 1603) in paragraph at lines 51--52
+\T1/futs/m/n/10.95 cadic Flow model gen-er-alises well to un-seen
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 51--52
+\T1/futs/m/n/10.95 nat-u-ral and man-made scenes). As we move
+ []
+
+
+Underfull \hbox (badness 1210) in paragraph at lines 51--52
+\T1/futs/m/n/10.95 as com-puter in-ter-faces, we would ex-pect the
+ []
 
 (./Dataset.tex
 Overfull \hbox (40.57927pt too wide) in paragraph at lines 9--27
@@ -922,12 +938,12 @@ Underfull \hbox (badness 1057) in paragraph at lines 112--116
 []\T1/futs/m/n/10 Krista A Ehinger, Bar-bara Hidalgo-Sotelo, An-to-nio
  []
 
-
+[16]
 Underfull \hbox (badness 1584) in paragraph at lines 183--187
 \T1/futs/m/n/10 Re-con-sid-er-ing yarbus: A fail-ure to pre-dict ob-
  []
 
-[16]
+
 Underfull \hbox (badness 1009) in paragraph at lines 238--242
 \T1/futs/m/n/10 context-dependent and spatially-variant view-ing
  []
@@ -957,7 +973,7 @@ Underfull \hbox (badness 1509) in paragraph at lines 271--275
 []\T1/futs/m/n/10 W Joseph MacInnes, Amelia R Hunt, Matthew D
  []
 
-
+[17]
 Underfull \hbox (badness 1014) in paragraph at lines 321--327
 []\T1/futs/m/n/10 Nicolas Riche, Matei Man-cas, Matthieu Duvinage,
  []
@@ -967,7 +983,7 @@ Underfull \hbox (badness 2689) in paragraph at lines 321--327
 \T1/futs/m/n/10 Makiese Mibu-lu-mukini, Bernard Gos-selin, and
  []
 
-[17]
+
 Underfull \hbox (badness 1337) in paragraph at lines 386--392
 []\T1/futs/m/n/10 Boris M Velichkovsky, Alexan-dra Rothert, Math-ias
  []
@@ -990,11 +1006,7 @@ Package natbib Warning: There were undefined citations.
 
  <../scripts/coarse2fine/figs/xFixComparison.pdf> <../scripts/coarse2fine/figs/
 yFixComparison.pdf> <../scripts/coarse2fine/figs/ampSaccComparison.pdf> <../scr
-ipts/coarse2fine/figs/saccAmpOverTimeFlow.pdf>] (./saccadicBiases.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+ipts/coarse2fine/figs/saccAmpOverTimeFlow.pdf>] (./saccadicBiases.aux) ) 
 Here is how much of TeX's memory you used:
  4524 strings out of 493089
  65978 string characters out of 6134843
@@ -1002,16 +1014,17 @@ Here is how much of TeX's memory you used:
  7823 multiletter control sequences out of 15000+600000
  109651 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,35p,2010b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
-live/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/tex
-live/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/20
-15/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on saccadicBiases.pdf (19 pages, 26061967 bytes).
+ 41i,11n,35p,2010b,315s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/l
+ocal/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/loc
+al/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
+pe1/public/cm-super/sftt1095.pfb>
+Output written on saccadicBiases.pdf (19 pages, 26062727 bytes).
 PDF statistics:
  224 PDF objects out of 1000 (max. 8388607)
  142 compressed objects within 2 object streams
