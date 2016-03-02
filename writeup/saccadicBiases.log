@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.2)  2 MAR 2016 13:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.3.2)  2 MAR 2016 15:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -563,101 +563,108 @@ Underfull \hbox (badness 1983) in paragraph at lines 13--14
  []
 
 
-<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf, id=10, 578.16pt x 4
+Underfull \hbox (badness 1661) in paragraph at lines 17--18
+\T1/futs/m/n/10.95 to Clarke et al. [in press] while in-ves-ti-gat-ing
+ []
+
+
+Underfull \hbox (badness 1178) in paragraph at lines 17--18
+\T1/futs/m/n/10.95 bi-ases. Both their model and the Stochas-tic
+ []
+
+[2]
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf, id=13, 578.16pt x 4
 33.62pt>
 File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_11.
-pdf used on input line 25.
+pdf used on input line 22.
 (pdftex.def)             Requested size: 71.13188pt x 53.34883pt.
 
-<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf, id=11, 578.16pt x 4
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf, id=14, 578.16pt x 4
 33.62pt>
 File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_12.
-pdf used on input line 26.
+pdf used on input line 23.
 (pdftex.def)             Requested size: 71.13188pt x 53.34883pt.
 
-<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf, id=12, 578.16pt x 4
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf, id=15, 578.16pt x 4
 33.62pt>
 File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_13.
-pdf used on input line 27.
+pdf used on input line 24.
 (pdftex.def)             Requested size: 71.13188pt x 53.34883pt.
 
-<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf, id=13, 578.16pt x 4
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf, id=16, 578.16pt x 4
 33.62pt>
 File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21.
-pdf used on input line 28.
+pdf used on input line 25.
 (pdftex.def)             Requested size: 71.13188pt x 53.34883pt.
 
-<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf, id=14, 578.16pt x 4
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf, id=17, 578.16pt x 4
 33.62pt>
 File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_22.
-pdf used on input line 29.
+pdf used on input line 26.
 (pdftex.def)             Requested size: 71.13188pt x 53.34883pt.
 
-<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf, id=15, 578.16pt x 4
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf, id=18, 578.16pt x 4
 33.62pt>
 File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_23.
-pdf used on input line 30.
+pdf used on input line 27.
 (pdftex.def)             Requested size: 71.13188pt x 53.34883pt.
 
-<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf, id=16, 578.16pt x 4
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf, id=19, 578.16pt x 4
 33.62pt>
 File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_31.
-pdf used on input line 31.
+pdf used on input line 28.
 (pdftex.def)             Requested size: 71.13188pt x 53.34883pt.
 
-<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf, id=17, 578.16pt x 4
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf, id=20, 578.16pt x 4
 33.62pt>
 File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.
-pdf used on input line 32.
+pdf used on input line 29.
 (pdftex.def)             Requested size: 71.13188pt x 53.34883pt.
 
-<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf, id=18, 578.16pt x 4
+<../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf, id=21, 578.16pt x 4
 33.62pt>
 File: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf Graphic file (t
 ype pdf)
  <use ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf>
 Package pdftex.def Info: ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.
-pdf used on input line 33.
+pdf used on input line 30.
 (pdftex.def)             Requested size: 71.13188pt x 53.34883pt.
 
-Underfull \hbox (badness 5681) in paragraph at lines 42--43
+Underfull \hbox (badness 5681) in paragraph at lines 39--40
 \T1/futs/m/n/10.95 2003, Clarke and Tatler, 2014, Tatler, 2007,
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [2]
-Underfull \hbox (badness 1043) in paragraph at lines 44--45
+Underfull \hbox (badness 1043) in paragraph at lines 41--42
 \T1/futs/m/n/10.95 fea-tures were bi-ased to-wards the edge of the
  []
 
 
-Underfull \hbox (badness 1237) in paragraph at lines 44--45
+Underfull \hbox (badness 1237) in paragraph at lines 41--42
 \T1/futs/m/n/10.95 and King-stone, 2009, Ehinger, Hidalgo-Sotelo,
  []
 
@@ -668,22 +675,22 @@ ps/Figures/BBias_13.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_21
 eatmaps/SaccadicFlowMaps/Figures/BBias_23.pdf> <../scripts/heatmaps/SaccadicFlo
 wMaps/Figures/BBias_31.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias
 _32.pdf> <../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf>]
-Underfull \hbox (badness 1997) in paragraph at lines 51--52
+Underfull \hbox (badness 1997) in paragraph at lines 48--49
 \T1/futs/m/n/10.95 Foul-sham, King-stone, and Un-der-wood, 2008,
  []
 
 
-Underfull \hbox (badness 1019) in paragraph at lines 51--52
+Underfull \hbox (badness 1019) in paragraph at lines 48--49
 \T1/futs/m/n/10.95 ex-pe-ri-ence, and there-fore demon-strate an in-
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 53--54
+Underfull \hbox (badness 1009) in paragraph at lines 50--51
 \T1/futs/m/n/10.95 a marked ef-fect on sac-cade di-rec-tions dur-ing
  []
 
 
-Underfull \hbox (badness 2680) in paragraph at lines 55--56
+Underfull \hbox (badness 2680) in paragraph at lines 52--53
 \T1/futs/m/n/10.95 by an in-crease in fix-a-tion du-ra-tions, and is
  []
 
@@ -716,7 +723,10 @@ Underfull \hbox (badness 3815) in paragraph at lines 31--32
 []\T1/futs/m/n/10.95 This gives us a rel-a-tively ho-mo-ge-neous
  []
 
-[6]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
 <../scripts/leftVright/graphs/leftrightbias.pdf, id=71, 216.81pt x 216.81pt>
 File: ../scripts/leftVright/graphs/leftrightbias.pdf Graphic file (type pdf)
 
@@ -737,9 +747,6 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 69.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Underfull \vbox (badness 1990) has occurred while \output is active []
-
-
 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf, id=73, 867.24pt x 289
 .08pt>
 File: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf Graphic file (typ
@@ -895,7 +902,11 @@ Underfull \hbox (badness 2591) in paragraph at lines 69--43
 \T1/futs/m/n/10.95 We have demon-strated dif-fer-ent ways bi-ases
  []
 
-[13] (./Dataset.tex
+[13]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+(./Dataset.tex
 Overfull \hbox (40.57927pt too wide) in paragraph at lines 9--27
  [][] 
  []
@@ -979,7 +990,11 @@ Package natbib Warning: There were undefined citations.
 
  <../scripts/coarse2fine/figs/xFixComparison.pdf> <../scripts/coarse2fine/figs/
 yFixComparison.pdf> <../scripts/coarse2fine/figs/ampSaccComparison.pdf> <../scr
-ipts/coarse2fine/figs/saccAmpOverTimeFlow.pdf>] (./saccadicBiases.aux) ) 
+ipts/coarse2fine/figs/saccAmpOverTimeFlow.pdf>] (./saccadicBiases.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
  4524 strings out of 493089
  65978 string characters out of 6134843
@@ -987,17 +1002,16 @@ Here is how much of TeX's memory you used:
  7823 multiletter control sequences out of 15000+600000
  109651 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,35p,2010b,325s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/l
-ocal/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/loc
-al/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2015
-/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2015
-/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/ty
-pe1/public/cm-super/sftt1095.pfb>
-Output written on saccadicBiases.pdf (19 pages, 26061459 bytes).
+ 41i,11n,35p,2010b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on saccadicBiases.pdf (19 pages, 26061967 bytes).
 PDF statistics:
  224 PDF objects out of 1000 (max. 8388607)
  142 compressed objects within 2 object streams
