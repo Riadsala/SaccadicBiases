@@ -3,20 +3,20 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: saccadicBiases.aux
 The style file: plainnat.bst
 Database file #1: literature.bib.bib
-I was expecting a `,' or a `}'---line 445 of file literature.bib.bib
+I was expecting a `,' or a `}'---line 472 of file literature.bib.bib
  :   
  :   year = {2016},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 471 of file literature.bib.bib
+Repeated entry---line 498 of file literature.bib.bib
  : @article{dodd2009
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 862 of file literature.bib.bib
+Repeated entry---line 889 of file literature.bib.bib
  : @inproceedings{harel2006
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 983 of file literature.bib.bib
+Repeated entry---line 1010 of file literature.bib.bib
  : @article{brandt1945
  :                    ,
 I'm skipping whatever remains of this entry
@@ -24,45 +24,45 @@ Warning--I didn't find a database entry for "XXHendersonXX"
 Warning--empty journal in brandt1945
 Warning--empty year in mit-saliency-benchmark
 Warning--can't use both volume and number fields in lee2002
-You've used 62 entries,
+You've used 65 entries,
             2773 wiz_defined-function locations,
-            942 strings with 15346 characters,
-and the built_in function-call counts, 30282 in all, are:
-= -- 2702
-> -- 1837
-< -- 31
-+ -- 618
-- -- 555
-* -- 2628
-:= -- 4652
-add.period$ -- 190
-call.type$ -- 62
-change.case$ -- 369
-chr.to.int$ -- 61
-cite$ -- 127
-duplicate$ -- 1311
-empty$ -- 2423
-format.name$ -- 653
-if$ -- 6287
+            954 strings with 15934 characters,
+and the built_in function-call counts, 31807 in all, are:
+= -- 2835
+> -- 1945
+< -- 32
++ -- 654
+- -- 588
+* -- 2765
+:= -- 4891
+add.period$ -- 199
+call.type$ -- 65
+change.case$ -- 389
+chr.to.int$ -- 64
+cite$ -- 133
+duplicate$ -- 1372
+empty$ -- 2535
+format.name$ -- 691
+if$ -- 6598
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 62
-newline$ -- 319
-num.names$ -- 248
-pop$ -- 671
+missing$ -- 65
+newline$ -- 334
+num.names$ -- 260
+pop$ -- 707
 preamble$ -- 1
-purify$ -- 309
+purify$ -- 326
 quote$ -- 0
-skip$ -- 1009
+skip$ -- 1058
 stack$ -- 0
-substring$ -- 1278
-swap$ -- 107
+substring$ -- 1334
+swap$ -- 110
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 672
+type$ -- 705
 warning$ -- 3
-while$ -- 278
+while$ -- 291
 width$ -- 0
-write$ -- 810
+write$ -- 848
 (There were 4 error messages)
