@@ -4,8 +4,7 @@
 \label{sec:usingbiases}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-This section make use of an improved central bias model the \textit{saccadic flow} model (described in Section \ref{ModellingFlow}). The new central bias model is similar to the model presented by \cite{clarke-tatler2014} except for using a truncated Gaussian distribution to take the image boundaries into account. We present three examples of how these bias models can be used as a prior in order to weight fixations. First of all, we will demonstrate how we can weight fixations in gaze landscapes (also known as hotspot maps) to reduce noise and to give an improved visualisation of the image regions participants looked at more than expected. Secondly, we examine whether saccadic flow can be used to better understand the contribution of low-level features on fixation selection, and potentially lead to better evaluation of such computational saliency models. Finally, we use flow to generate a series of saccades and compare these to observed human saccades. Being able to generate realistic synthetic datasets is useful to create an image-independent baseline with which to examine spatial maps of prediction using signal detection theory \citep[see][]{clarke-tatler2014}.
-
+This section makes use of an improved central bias model and the \textit{saccadic flow} model (described in Section \ref{ModellingFlow}). The new central bias model is similar to the model presented by \cite{clarke-tatler2014} except for using a truncated Gaussian distribution to take the image boundaries into account. We present three examples of how these bias models can be used as a prior in order to weight fixations, based on the fact that Flow produces likelihoods for any given fixation given the current fixation. First of all, we will demonstrate how we can weight fixations in gaze landscapes (also known as hotspot maps) to reduce noise and to give an improved visualisation of the image regions participants looked at more than expected. Secondly, we examine whether saccadic flow can be used to better understand the contribution of low-level features on fixation selection, and potentially lead to better evaluation of such computational saliency models. Finally, we demonstrate how flow can be used to generate a series of saccades, and compare these to observed human saccades. Being able to generate realistic synthetic datasets is useful to create an image-independent baseline with which to examine spatial maps of prediction using signal detection theory \citep[see][]{clarke-tatler2014}.
 
 \subsection{Gaze landscapes}
 
@@ -45,7 +44,16 @@ Figure ~\ref{fig:salmaps} reveals that the likelihood of making a saccade based 
 \subsection{Saccadic Flow as a Generative Model}
 \label{sec:humanComp}
 
-Another use of the saccadic flow model is to generate sequences of synthetic scan-paths. We can then compare the distributions with empirical scan-paths to determine which aspects of human saccadic behaviour are not captured by our model. To do this, we will create a merged dataset of fixations from the eight training datasets (175 000 fixations, including initial fixations, in total over 16 000 trials), and then generate a matched synthetic dataset such that the number of fixations in each trial is identical. 
+Another use of the saccadic flow model is that it allows us to make spatial maps that relate to the probability of \emph{all saccades within a scene} based on the current position. For example, Figure~\ref{fig:flowPredict} shows that for three fixations in different locations within a scene, flow will make different spatial predictions of the next saccadic landing position. We can use this method to generate sequences of synthetic scan-paths. Here, we compare the distributions of these generated scan-paths with empirical scan-paths to determine which aspects of human saccadic behaviour are not captured by our model. To do this, we will create a merged dataset of fixations from the eight training datasets (175 000 fixations, including initial fixations, in total over 16 000 trials), and then generate a matched synthetic dataset such that the number of fixations in each trial is identical. 
+
+\begin{figure*}[htb]
+\centering
+\subfigure[]{\includegraphics[width=4.2cm]{figs/DownLeft.png}}
+\subfigure[]{\includegraphics[width=4.2cm]{figs/Center.png}}
+\subfigure[]{\includegraphics[width=4.2cm]{figs/UpRight.png}}
+\caption[]{Example spatial prediction maps for all potential saccade locations from 3 different fixation positions (black circles), to demonstrate how flow's predictions differ across the extent of a scene.}
+\label{fig:flowPredict}
+\end{figure*}
 
 We can see from Figure \ref{fig:flowHumanComp}(a) and (b) that both the central bias and the saccadic flow model do an good job of capturing the distribution of fixation locations over the $x$ and $y$ axes. While it is not surprising that the central bias closely matches the empirical distributions (as this is exactly what it has been fitted to), it is interesting that saccadic flow does just as good a job. Hence, the central bias can be thought of as a property of saccadic flow, and does not need to be accounted for separately. 
 
@@ -63,6 +71,10 @@ Another discrepancy between the synthetic and empirical distributions can be see
 \caption[]{\textit{blue}: human, \textit{red}: central bias, \textit{green}: saccadic flow. \textit{top row}: Comparison of $x$ and $y$ fixation positions between human fixations and synthetic points generated from the central bias and flow model. \textit{bottom row}: We can see that the flow model consistently makes saccades with a slightly larger amplitude than human observers. Distances are expressed relative to the width of the image. Best fit line in (d) fitted with loess regression. All distances are given in normalised units in which the width of an image is 2 (see Section \ref{sec:modellingMethods}).}
 \label{fig:flowHumanComp}
 \end{figure}
+
+
+\subsection{Saccadic Flow across different tasks}
+
 
 \subsection{Discussion}
 
