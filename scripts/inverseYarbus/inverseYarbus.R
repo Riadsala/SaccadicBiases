@@ -35,6 +35,14 @@ for (person in levels(dat$Sub))
 dat = filter(dat, is.finite(dat$llh))
 
 
+
+dat2 = aggregate(llh ~ Sub + Image + Cond, dat, "median")
+dat3 = aggregate(llh ~ Cond, dat2, "mean")
+
+plt  = ggplot(dat2, aes(x=llh, fill=Cond)) + geom_density(alpha=0.5)
+plt = plt + geom_vline(xintercept=dat3$llh, colour=dat3$Cond)
+
+
 #  only keep least likely 50% of saccades (by flow)
 datM = filter(dat, Cond=="M")
 datM = filter(dat, llh<quantile(datM$llh, 0.75))

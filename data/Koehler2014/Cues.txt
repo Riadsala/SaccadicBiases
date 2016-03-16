@@ -1,0 +1,801 @@
+Image No.	Cue
+1	fire
+2	door handle
+3	wall clock
+4	pillow
+5	hat
+6	milk
+7	light switch
+8	magazine
+9	outlet
+10	shot glass
+11	bike lock
+12	movie
+13	pot
+14	belt
+15	key hole
+16	towel
+17	pillow
+18	leash
+19	antenna
+20	key
+21	webcam
+22	speakers
+23	curtains
+24	hand soap
+25	painting 
+26	light switch
+27	pillow
+28	door handle
+29	stroller
+30	ambulance
+31	bumper sticker
+32	helicopter
+33	hydrant
+34	motorcylce
+35	walk sign
+36	bus
+37	jet
+38	skateboarder
+39	parking ticket
+40	motorcylce
+41	parking meter
+42	ceiling fan
+43	chimney
+44	pedestrian
+45	bus stop
+46	exhaust pipe
+47	garbage can 
+48	cap
+49	duck
+50	helmet
+51	pedestrian
+52	airplane
+53	car
+54	traffic light
+55	chimney
+56	antenna
+57	pizza
+58	cap
+59	tv satellite
+60	window
+61	gate buzzer
+62	squirrel
+63	daffodil
+64	sunglass
+65	license plate
+66	watch
+67	purse
+68	backpack
+69	welcome mat
+70	vest
+71	graffiti
+72	bumper sticker
+73	parking ticket
+74	boat
+75	moped
+76	gondola
+77	plate
+78	light switch
+79	flag
+80	knife
+81	fruit
+82	anchor
+83	painting 
+84	car
+85	child car seat
+86	child car seat
+87	mailbag
+88	scooter
+89	truck
+90	bell tower
+91	toilet paper
+92	plane
+93	pillow
+94	fire wood
+95	coin slot
+96	door handle
+97	boat
+98	trash can
+99	surfer
+100	ipod
+101	bike
+102	pedestrian
+103	cup
+104	graffiti
+105	poster
+106	license plate
+107	tulip
+108	windchime
+109	shampoo
+110	toilet paper
+111	toilet paper
+112	toilet paper
+113	loofah
+114	toothbrush
+115	surfer
+116	alarm clock
+117	pillow
+118	blanket
+119	pajamas
+120	pillow
+121	ashtray
+122	blanket
+123	fire wood
+124	handrail
+125	blinds
+126	minivan
+127	fridge magnet
+128	fridge magnet
+129	sponge
+130	spoon
+131	salad bowl
+132	screen door
+133	blanket
+134	blanket
+135	curtains
+136	VCR
+137	alarm clock
+138	water
+139	cup
+140	VCR
+141	laptop
+142	fork
+143	kettle
+144	antenna
+145	electrical outlet
+146	x-ray
+147	dolphin
+148	boat
+149	sailboat
+150	hat
+151	kayak
+152	chimney
+153	rock climber
+154	fox
+155	sailboat
+156	hiker
+157	cooler
+158	bumble bee
+159	stereo
+160	soccer ball
+161	belt
+162	bicycle
+163	photographer
+164	skateboarder
+165	swimmer
+166	pillow
+167	mouse pad
+168	blanket
+169	ashtray
+170	carkeys
+171	stroller
+172	nest
+173	ignition
+174	pillow
+175	toilet seat cover
+176	train
+177	bicycle
+178	sailboat
+179	pedestrian
+180	person
+181	rug
+182	cloud
+183	nest
+184	squirrel
+185	hiker
+186	fish
+187	jeep
+188	fox
+189	cup
+190	raft
+191	car
+192	motorcylce
+193	helmet
+194	bicycle
+195	antenna
+196	chimney
+197	blinds
+198	pedestrian
+199	motorcylce
+200	helmet
+201	ambulance
+202	power outlet
+203	exit sign
+204	person
+205	toothbrush
+206	toilet paper
+207	curtains
+208	hand soap
+209	trash can
+210	curtains
+211	poster
+212	plate
+213	fruit
+214	cup
+215	pot
+216	dirty plate
+217	CD
+218	fridge magnet
+219	dish soap
+220	banana
+221	curtains
+222	rug
+223	blinds
+224	milk
+225	teapot
+226	pants
+227	blanket
+228	bottle
+229	flag
+230	plate
+231	hot chocolate
+232	plane
+233	fish
+234	cactus
+235	ship
+236	flower
+237	umbrella
+238	boat
+239	fishing pole
+240	towel
+241	shampoo
+242	toothpaste
+243	fish
+244	seat cover
+245	soap
+246	kettle
+247	power cord
+248	toaster
+249	headboard
+250	lamp
+251	towel
+252	car
+253	nest
+254	chimney
+255	computer
+256	toilet paper
+257	poster
+258	pan
+259	floatie
+260	wallet
+261	glass
+262	skateboard
+263	toilet paper
+264	cushion
+265	trash
+266	paper
+267	textbook
+268	carpet
+269	scooter
+270	can
+271	water
+272	tourist
+273	skateboard
+274	boat
+275	toast
+276	dolphin
+277	mouse pad
+278	nest
+279	can
+280	scooter
+281	napkin
+282	soup
+283	juice
+284	ashtray
+285	toilet paper
+286	seat cushion
+287	toothpaste
+288	trash
+289	car
+290	umbrella
+291	car
+292	lawn mower
+293	raft
+294	hat
+295	helmet
+296	plane
+297	car
+298	remote
+299	pencil
+300	knife
+301	cable
+302	toast
+303	shirt
+304	battery
+305	fuse
+306	car
+307	sweater
+308	blinds
+309	marker
+310	eraser
+311	towel
+312	stop sign
+313	foil
+314	coals
+315	steak
+316	trash can
+317	light house
+318	salsa
+319	handicap sign
+320	milk
+321	marker
+322	key
+323	books
+324	clock
+325	toaster
+326	coffee
+327	coffee maker
+328	toilet paper
+329	poster
+330	toothpaste
+331	pan
+332	bulb
+333	trash
+334	cord
+335	poster
+336	fish
+337	remote
+338	blinds
+339	toothpaste
+340	skillet
+341	flower
+342	charcoal
+343	envelope
+344	cup
+345	tray
+346	milk
+347	sink
+348	fire extinguisher
+349	push pin
+350	toilet paper
+351	bowl
+352	fan
+353	toilet paper
+354	meter
+355	dog
+356	clothes
+357	hose
+358	cigarette
+359	leaves
+360	coffee
+361	shower curtain
+362	milk
+363	books
+364	flower
+365	soda
+366	laptop
+367	trashbag
+368	trashbag
+369	pizza
+370	coffee
+371	ice
+372	toothbrush
+373	light bulb
+374	jacket
+375	blinds
+376	pillow
+377	popcorn
+378	coffee
+379	bulb
+380	newspaper
+381	gasoline
+382	snake
+383	flowers
+384	beer
+385	knife
+386	tea
+387	tea
+388	toilet paper
+389	mouse
+390	flames
+391	mailbox
+392	fire hydrant
+393	marker
+394	hairbrush
+395	biker
+396	trash
+397	magazine
+398	bicycle
+399	soda
+400	pillow
+401	hedge
+402	bush
+403	one way sign
+404	fire hydrant
+405	fire hydrant
+406	trash can
+407	pedestrian
+408	taxi
+409	fire hydrant
+410	comforter
+411	truck
+412	crosswalk
+413	ATV
+414	flowers
+415	bus
+416	powerline
+417	coke machine
+418	closet
+419	bowl
+420	jacket
+421	tray
+422	kitkat
+423	iPod
+424	light
+425	pillow
+426	bowl
+427	rock
+428	backpack
+429	goal post
+430	red vase
+431	toaster oven
+432	tea pot
+433	waves
+434	lamp
+435	flower
+436	bike 
+437	tree
+438	magazine
+439	door
+440	bar stool
+441	clothes
+442	poster
+443	telephone
+444	table
+445	power outlet
+446	shelf
+447	ocean
+448	ocean
+449	bike
+450	window
+451	tree
+452	table
+453	cart
+454	car 
+455	swimming pool
+456	blinds
+457	monitor
+458	staircase
+459	curtain
+460	mountain
+461	mirror
+462	washing machine
+463	blinds
+464	sink
+465	television
+466	television
+467	bottle
+468	mattress
+469	speedometer
+470	monitor
+471	window
+472	door
+473	microwave
+474	bath tub
+475	ball
+476	window
+477	mirror
+478	toilet paper
+479	sink
+480	bath towel
+481	toothbrush
+482	towel
+483	mirror
+484	pillow
+485	lamp
+486	plant
+487	headboard
+488	painting
+489	pillow
+490	picture
+491	painting
+492	dining room table
+493	fridge
+494	coffee maker
+495	window
+496	dish washer
+497	microwave
+498	foot stool
+499	couch
+500	plant
+501	fish
+502	coffee table
+503	bench
+504	lamp post
+505	stairs
+506	sunglasses
+507	bicycle
+508	moped
+509	laundry
+510	umbrella
+511	boat
+512	leaves
+513	chair
+514	poster
+515	plant
+516	spoons
+517	lamp
+518	door
+519	salt
+520	tree
+521	glass
+522	shrub
+523	trash can
+524	window
+525	tree trunk
+526	soda machine
+527	tree
+528	book shelf
+529	towel
+530	mug
+531	woodchips
+532	keyboard
+533	gumballs
+534	shoes
+535	dresser
+536	soda machine
+537	desk
+538	handrail
+539	trash can
+540	door
+541	shower
+542	mirror
+543	boat
+544	boat
+545	moon
+546	couch
+547	window
+548	brochure
+549	ribbon
+550	building
+551	rock
+552	street
+553	pier
+554	staircase
+555	purse
+556	car
+557	napkin
+558	bathroom
+559	controller
+560	fish
+561	pepper
+562	trash can
+563	strings
+564	bush
+565	bread
+566	paint
+567	tea bag
+568	boat
+569	tray
+570	palm tree
+571	plant
+572	tape
+573	desk
+574	fire
+575	window
+576	fire extinguisher
+577	spoon
+578	coffee
+579	sewing machine
+580	blinds
+581	faucet
+582	bicycle
+583	bathmat
+584	shampoo
+585	ac control
+586	charcoal
+587	chimney
+588	balcony
+589	chair
+590	cards
+591	tea pot
+592	plate
+593	window
+594	doorknob
+595	lightswitch
+596	peep hole
+597	door
+598	cup
+599	mail
+600	light
+601	chair
+602	billboard
+603	street
+604	thermos
+605	flower
+606	security camera
+607	ambulance
+608	pole
+609	trash
+610	light
+611	newspaper stand
+612	lightswitch
+613	globe
+614	curtain
+615	sewing machine
+616	bulletin board
+617	cup
+618	bird cage
+619	microwave
+620	cat
+621	books
+622	spotlight?
+623	chair
+624	toaster
+625	flower
+626	tv
+627	patio
+628	laptop
+629	wine
+630	chandelier
+631	corkboard
+632	trash
+633	tv
+634	mixer
+635	chair
+636	laptop
+637	toaster
+638	kettle
+639	basket
+640	trash
+641	car
+642	flowers
+643	blender
+644	kettle
+645	chair
+646	painting
+647	chair
+648	sugar
+649	clock
+650	bar
+651	computer
+652	dog bowl
+653	dumbell
+654	boat
+655	lamp
+656	towel
+657	futon
+658	gate
+659	glasses
+660	flower pot
+661	hangers
+662	blinds
+663	hat
+664	boot
+665	guitar
+666	paper towel
+667	boat
+668	dresser
+669	keyboard
+670	umbrella
+671	mailbox
+672	chair
+673	oranges
+674	cat
+675	painting
+676	calendar
+677	flower pot
+678	paper towel
+679	couch
+680	flowers
+681	bulletin board
+682	cat
+683	screen
+684	bowl
+685	slide
+686	book
+687	stairs
+688	pepper
+689	hoop
+690	window
+691	table
+692	faucet
+693	guitar
+694	chair
+695	vase
+696	chair
+697	purse
+698	alcohol
+699	plates
+700	plant
+701	door
+702	rock
+703	curtain
+704	salad
+705	ice
+706	candle
+707	pillow
+708	bookshelf
+709	purse
+710	card
+711	christmas tree
+712	chair
+713	cup
+714	stapler
+715	postcard
+716	chair
+717	stairs
+718	cookbook
+719	radio
+720	alarm clock
+721	dress
+722	bowl
+723	doorknob
+724	radio
+725	bathmat
+726	candy
+727	posters
+728	towel
+729	faucet
+730	desk
+731	faucet
+732	doorknob
+733	fireplace
+734	curtain
+735	flowers
+736	mirror
+737	flowers
+738	tv
+739	football
+740	chair
+741	refrigerator
+742	car
+743	sky
+744	tv
+745	kettle
+746	laptop
+747	picture frame
+748	building
+749	lamp
+750	flowers
+751	lamp
+752	pillow
+753	steering wheel
+754	sign
+755	tree
+756	door
+757	mirror
+758	umbrella
+759	blinds
+760	lamp
+761	bottle
+762	side table
+763	painting
+764	faucet
+765	gear shift
+766	door
+767	pillow
+768	lamp
+769	pillow
+770	mirror
+771	window
+772	books
+773	plant
+774	lamp
+775	books
+776	trashbag
+777	purse
+778	toilet paper
+779	sink
+780	globe
+781	sink
+782	book
+783	soap
+784	window
+785	tissue box
+786	dish towel
+787	tv 
+788	mirror
+789	vase
+790	vase
+791	boombox
+792	rug
+793	flowers
+794	pillow
+795	window
+796	books
+797	shoes
+798	sink
+799	window
+800	side table
