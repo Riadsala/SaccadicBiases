@@ -51,8 +51,12 @@ for (person in levels(dat$Sub))
 
 dat = filter(dat, is.finite(dat$llh))
 
-dat2 = aggregate(llh ~ Sub + Image + task, dat, "median")
+
+library(ggplot2)
+dat2 = aggregate(llh ~ Sub + Image + task, dat, "mean")
 dat3 = aggregate(llh ~ task, dat2, "mean")
 
-plt  = ggplot(dat2, aes(x=llh, fill=task)) + geom_density(alpha=0.5)
-plt = plt + geom_vline(xintercept=dat3$llh, colour=dat3$task)
+plt  = ggplot(dat2, aes(y=llh, x=task)) + geom_boxplot(notch=T, fill="gray")
+plt = plt + theme_bw() + scale_y_continuous("mean log likelihood")
+plt = plt + scale_x_discrete("task")
+ggsave("kLLH.pdf", width=5, height=5)

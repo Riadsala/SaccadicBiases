@@ -107,9 +107,25 @@ How well does this model account for the fixations in our datasets? Figures \ref
 \label{fig:nFlowDevBorji}
 \end{figure*}
 
+
+
 % \begin{figure}
 % \centering
 %  \includegraphics[width=12cm]{../scripts/flow/figs/llh_crossDataset.pdf}
 % \caption{Flow:normal deviance results over datasets. In general, we can see that bias models trained on different datasets all explain around the same amount of variance in the datasets.}
 % \label{fig:nFlowDevCross}
 % \end{figure}
+
+\subsubsection{The effect of Task}
+
+We now examine how the ability of saccadic flow to explain different scanpaths depends on the observers task. We will make use of datasets from \cite{mills2011} and \cite{koehler2014}. To look at this we computed the mean log likelihood over each scan-path in these datasets. The distributions of scan-path log likelihoods are shown in Figure \ref{fig:taskLLH}. We can see that while task has a slight influence over the mean log likelihood for a scan-path, there is a large degree of overlap in the distributions. Additionally, we can see that the relative likelihood of scan-paths made during visual search compared to other tasks varies between datasets.
+
+
+\begin{figure*}
+\centering
+ \subfigure[][]{\includegraphics[width=5cm]{../scripts/inverseYarbus/kLLH.pdf}}
+ \subfigure[][]{\includegraphics[width=5cm]{../scripts/inverseYarbus/millsLLH.pdf}}
+\caption{The influence of task on the extent to which saccadic flow can explain scan-paths for the (a) \cite{koehler2014} and (b) \cite{mills2011} datasets.}
+\label{fig:taskLLH}
+\end{figure*}
+

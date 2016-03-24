@@ -306,8 +306,17 @@ INPUT ../scripts/flow/figs/llh_testing.pdf
 INPUT ../scripts/flow/figs/llh_Borji.pdf
 INPUT ../scripts/flow/figs/llh_Borji.pdf
 INPUT ../scripts/flow/figs/llh_Borji.pdf
+INPUT ../scripts/inverseYarbus/kLLH.pdf
+INPUT ../scripts/inverseYarbus/kLLH.pdf
+INPUT ../scripts/inverseYarbus/kLLH.pdf
+INPUT ../scripts/inverseYarbus/millsLLH.pdf
+INPUT ../scripts/inverseYarbus/millsLLH.pdf
+INPUT ../scripts/inverseYarbus/millsLLH.pdf
 INPUT UsingFlow.tex
 INPUT UsingFlow.tex
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futr8t.vf
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futr8r.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tfm
 INPUT figs/heatmap_figure.pdf
 INPUT ./figs/heatmap_figure.pdf
 INPUT ./figs/heatmap_figure.pdf
@@ -333,9 +342,7 @@ INPUT saccadicBiases.bbl
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futsy.vf
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/vf/public/fourier/futr8t.vf
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/futr8r.tfm
-INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tfm
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
 INPUT saccadicBiases.aux
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc
@@ -344,4 +351,5 @@ INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/fourier/fourier-ms.p
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb
+INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb
 INPUT /usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb

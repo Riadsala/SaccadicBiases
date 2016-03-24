@@ -1,4 +1,4 @@
-\begin{thebibliography}{66}
+\begin{thebibliography}{68}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -215,6 +215,13 @@ Raymond~M Klein and W~Joseph MacInnes.
 \newblock \emph{Psychological science}, 10\penalty0 (4):\penalty0 346--352,
   1999.
 
+\bibitem[Koehler et~al.(2014)Koehler, Guo, Zhang, and Eckstein]{koehler2014}
+Kathryn Koehler, Fei Guo, Sheng Zhang, and Miguel~P. Eckstein.
+\newblock What do saliency models predict?
+\newblock \emph{Journal of Vision}, 14\penalty0 (3):\penalty0 14, 2014.
+\newblock \doi{10.1167/14.3.14}.
+\newblock URL \url{+ http://dx.doi.org/10.1167/14.3.14}.
+
 \bibitem[Kr{\"u}ger and Hunt(2013)]{krueger-hunt2013}
 Hannah~M Kr{\"u}ger and Amelia~R Hunt.
 \newblock Inhibition of return across eye and object movements: The role of
@@ -272,6 +279,13 @@ W~Joseph MacInnes, Amelia~R Hunt, Matthew~D Hilchey, and Raymond~M Klein.
 \newblock Driving forces in free visual search: An ethology.
 \newblock \emph{Attention, Perception, \& Psychophysics}, 76\penalty0
   (2):\penalty0 280--295, 2014.
+
+\bibitem[Mills et~al.(2011)Mills, Hollingworth, Van~der Stigchel, Hoffman, and
+  Dodd]{mills2011}
+Mark Mills, Andrew Hollingworth, Stefan Van~der Stigchel, Lesa Hoffman, and
+  Michael~D Dodd.
+\newblock Examining the influence of task set on eye movements and fixations.
+\newblock \emph{Journal of vision}, 11\penalty0 (8):\penalty0 17--17, 2011.
 
 \bibitem[Morvan and Maloney(2012)]{morvan-maloney2012}
 Camille Morvan and Laurence~T. Maloney.
