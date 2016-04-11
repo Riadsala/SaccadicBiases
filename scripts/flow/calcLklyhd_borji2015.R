@@ -101,16 +101,21 @@ for (d in datasets)
 
 
 
+levels(LLHresults$biasmodel)[4] = "flow"
+
+LLHresults$biasmodel = factor(LLHresults$biasmodel, levels(LLHresults$biasmodel)[c(1,3,2,4)])
+
 pltDat = filter(LLHresults, biasmodel %in% c('Clarke-Tatler2014', 're-fit', 'N', 'tN'))
 pltDat$biasmodel = factor(pltDat$biasmodel)
 levels(pltDat$biasmodel)=c('CT2014', 're-fit central', 'truncated gaussian')
 # pltDat$biasmodel = factor(pltDat$biasmodel, levels=c('re-fit central', 'gaussian', 'truncated gaussian'))
 
 plt  = ggplot(LLHresults, aes(fill=biasmodel, y=logLik, x=biasmodel))
-plt = plt + geom_bar(stat='identity', position='dodge') + facet_wrap(~dataset, scales='free')
-plt = plt + scale_fill_brewer(palette="Set1") + theme_bw()
-# plt = plt + scale_y_continuous(name='proportion of deviance', limits=c(0,1), expand=c(0,0))
+plt = plt + geom_bar(stat='identity', position='dodge') + facet_wrap(~dataset)#, scales='free'
+plt = plt + scale_fill_brewer(palette="Set2") + theme_bw()
+plt = plt + scale_y_continuous(name='log likelihood')
 plt = plt + scale_x_discrete(name='bias model', breaks=NULL)
+plt = plt + guides(fill=guide_legend(title="bias model"))
 ggsave(paste('figs/llh_Borji.pdf', sep=''), width=12, height=8)
 
 
