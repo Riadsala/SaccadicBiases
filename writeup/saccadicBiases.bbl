@@ -1,4 +1,4 @@
-\begin{thebibliography}{68}
+\begin{thebibliography}{69}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -190,6 +190,14 @@ J~Harel, C~Koch, and P~Perona.
 \newblock {Graph-based visual saliency}.
 \newblock \emph{Advances in Neural Information Processing Systems}, pages
   545--552, 2006.
+
+\bibitem[Henderson et~al.(2007)Henderson, Brockmole, and Mack]{henderson2007}
+J~M Henderson, Castelhano M~S Brockmole, J~R, and M~Mack.
+\newblock {Visual saliency does not account for eye movements during visual
+  search in real-world scenes}.
+\newblock In Roger P~G van Gompel, M~H Fischer, Wayne~S Murray, and Robin~L
+  Hill, editors, \emph{Eye Movements: a window on mind and brain}, pages
+  537--562. Elsevier, Oxford, UK, 2007.
 
 \bibitem[Jiang et~al.(2014)Jiang, Xu, and Zhao]{jiang2014}
 Ming Jiang, Juan Xu, and Qi~Zhao.
