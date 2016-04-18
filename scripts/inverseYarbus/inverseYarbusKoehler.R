@@ -56,7 +56,7 @@ library(ggplot2)
 dat2 = aggregate(llh ~ Sub + Image + task, dat, "mean")
 dat3 = aggregate(llh ~ task, dat2, "mean")
 
-plt  = ggplot(dat2, aes(y=llh, x=task)) + geom_boxplot(notch=T, fill="gray")
+plt  = ggplot(dat2, aes(y=llh, x=task)) + geom_boxplot(notch=T)
 plt = plt + theme_bw() + scale_y_continuous("mean log likelihood")
 plt = plt + scale_x_discrete("task")
 ggsave("kLLH.pdf", width=5, height=5)

@@ -7,7 +7,7 @@ dat = read.csv("../../data/Dodd/Saccades-pupZ-clust-cont.dat", sep='\t')
 # dat = select(dat, Sub, Image, Cond, X1, Y1, X2, Y2)
 names(dat)[1:7] = c("Sub", "Image", "Cond", "x1", "y1", "x2", "y2")
 
-levels(dat$Cond) = c("Freeview", "Memorize", "Preference", "Search")
+levels(dat$Cond) = c("freeview", "memorize", "preference", "search")
 
 dat$x1 = (dat$x1-500)/500
 dat$y1 = (dat$y1-400)/500
@@ -43,7 +43,7 @@ library(ggplot2)
 dat2 = aggregate(llh ~ Sub + Image + Cond, dat, "mean")
 dat3 = aggregate(llh ~ Cond, dat2, "mean")
 
-plt  = ggplot(dat2, aes(y=llh, x=Cond)) + geom_boxplot(notch=T, fill="gray")
+plt  = ggplot(dat2, aes(y=llh, x=Cond)) + geom_boxplot(notch=T)
 plt = plt + theme_bw() + scale_y_continuous("mean log likelihood")
 plt = plt + scale_x_discrete("task")
 ggsave("millsLLH.pdf", width=5, height=5)
