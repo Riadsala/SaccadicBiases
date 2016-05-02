@@ -27,15 +27,15 @@ We also add four new datasets to the ten used by \cite{clarke-tatler2014}. These
 \item \cite{greene-wolfe2012} released a dataset of observers viewing square greyscale photographs.
 
 \item \cite{borji2015} recently released a very large ($\approx 0.625$million fixations, 2000 images) dataset collected over twenty different stimuli types. Given the size of this dataset, and the wide-screen 16:9 aspect ratio, the evaluations on this dataset are presented separately, and split by stimuli class.
+%"0.625 million"? why not 625,000?
 
-This gives us a relatively homogeneous training test, and a more heterogeneous test set. Hence, good performance on the test sets will likely be indicative of a generalisable result. An overview of the datasets used is given in Appendix Tables \ref{tab:datasets} and \ref{tab:setuptable}. 
 
 \end{itemize}
-
+This gives us a relatively homogeneous training test, and a more heterogeneous test set. Hence, good performance on the test sets will likely be indicative of a generalisable result. An overview of the datasets used is given in Appendix Tables \ref{tab:datasets} and \ref{tab:setuptable}. 
 
 \subsubsection{Pre-processing}
 
-As with \cite{clarke-tatler2014}, normalised all fixations to the image frame, keeping the aspect ratio constant. i.e., $(x,y)\in (-1.-1)\times(-a,a)$ with typically $a=0.75$. The initial saccades after image onset ($9.1\%$ of the data) were excluded, giving us a total of 159,226 saccades. Saccades with a start or end point falling outside of the image frame were also removed. 
+As with \cite{clarke-tatler2014}, we normalised all fixations to the image frame, keeping the aspect ratio constant. i.e., $(x,y)\in (-1.-1)\times(-a,a)$ with typically $a=0.75$. The initial saccades after image onset ($9.1\%$ of the data) were excluded, giving us a total of 159,226 saccades. Saccades with a start or end point falling outside of the image frame were also removed. 
 
 When fitting saccadic flow models, we \textit{mirrored} the set of fixations, by adding in horizontally and vertically reflected copies of the data. This has two advantages. (i) It is an easy way to make the saccadic flow bias symmetric in the horizontal or vertical directions. This is similar to how the central bias was defined \cite{clarke-tatler2014}. (ii) It increases the amount of data available for fitting by a factor of four. This is important as (due to the central bias) there are relatively few saccades that originate from the corners of the images. By equating all corners, we can pool the data and obtain more stable estimates for the underlying distribution. The downside of mirroring saccades in this manner is that our model of saccadic flow will be insensitive to the \textit{leftwards} bias in natural scene viewing \citep{nuthmann-matthias2014}. However, as this acocunts for a relatively small proportion of the overall variance in the data (Section \ref{sec:LeftRight}), we view this as an acceptable trade-off. Similarly, as we do not factor in the timecourse of the scanpath, we will not capture \textit{coarse-to-fine} dynamics (saccadic amplitude tends to decrease with time from stimulus onset).
 
@@ -43,12 +43,12 @@ When fitting saccadic flow models, we \textit{mirrored} the set of fixations, by
 \subsection{Truncated Central Bias}
 \label{sec:truncatedCentral}
 
-First, we will update the central bias from \cite{clarke-tatler2014} and use a truncated normal distribution. This is very straight forward. Re-fitting a multivariate Gaussian to the data reduces the deviance in the central bias model by $4.4\%$. Using a truncated Gaussian gives us an improvement of $12\%$. We can round the truncated Gaussian model to $\mu = (0,0)$, with a covariance matrix of $(0.32, 0; 0, 0.144)$ with no loss of precision. i.e. this is identical to \cite{clarke-tatler2014} except with $\sigma=0.32$ rather than $0.22$.
-
+As the first step in modelling saccadic flow, we will update the central bias from \cite{clarke-tatler2014} and use a truncated normal distribution. This is very straightforward. Re-fitting a multivariate Gaussian to the data reduces the deviance in the central bias model by $4.4\%$. Using a truncated Gaussian gives us an improvement of $12\%$. We can round the truncated Gaussian model to $\mu = (0,0)$, with a covariance matrix of $(0.32, 0; 0, 0.144)$ with no loss of precision. i.e. this is identical to \cite{clarke-tatler2014} except with $\sigma=0.32$ rather than $0.22$.
+%why didn't Clarke and Tatler (2014) do this?
 \subsection{Left v Right}
 \label{sec:LeftRight}
 
-As mentioned above, the downside of mirroring the saccades in our dataset is that our bias model will be symmetric and will be unable to exhibit the leftward bias observed in human fixation data. Here, we investigate the size of the leftwards bias by plotting how the distribution of horizontal fixation location varies with fixation number (Figure \ref{fig:leftrightDist}). We can see that while we do have a leftwards bias in our data, it is a small effect that only last for the first five fixations after scene onset. Furthermore, there is no sign of an asymmetry in the vertical direction. Fitting an ANOVA to predict the $x$-coordinates of the fixations given the fixation number gives adjusted $R^2=0.004$. If we limit our analysis to the first five fixations in each scanpath, this only increases to adjusted $R^2=0.01$. This suggests that by treating everything as symmetrical, we lose little explanatory power, while restricting the number of parameters, or increasing the amount of data available (by mirroring fixations). 
+As mentioned above, the downside of mirroring the saccades in our dataset is that our bias model will be symmetric and will be unable to exhibit the leftward bias observed in human fixation data. Here, we investigate the size of the leftwards bias by plotting how the distribution of horizontal fixation location varies with fixation number (Figure \ref{fig:leftrightDist}). We can see that while we do have a leftwards bias in our data, it is a small effect that only last for the first five fixations after scene onset. Furthermore, there is no sign of an asymmetry in the vertical direction. Fitting an ANOVA to predict the $x$-coordinates of the fixations given the fixation number gives adjusted $R^2=0.004$. If we limit our analysis to the first five fixations in each scanpath, this only increases to adjusted $R^2=0.01$. The small size of the $R^2$ in both instances suggests that by treating everything as symmetrical, we lose little explanatory power, while restricting the number of parameters, or increasing the amount of data available (by mirroring fixations). 
 
 \begin{figure}
 \centering
@@ -82,7 +82,7 @@ Figure \ref{fig:nParamsOverSpace} shows how the parameters for the truncated mul
 \end{figure*}
 
 
-How well does this model account for the fixations in our datasets? Figures \ref{fig:nFlowDevAll}, \ref{fig:nFlowDevAll2} and \ref{fig:nFlowDevBorji} compared the log-likelihood of the flow model compared to the \cite{clarke-tatler2014} central baseline and a uniform distribution. We can see that in all cases, the log likelihood for the data under the flow model is higher than the central baseline and the uniform distribution. It is interesting to note that this holds even for datasets (those involving visual search) in which the central bias is outperformed (terms of log-likelihood) by the uniform distribution: chiefly the data from \cite{clarke2009,asher2013,tatler2007}. 
+How well does this model account for the fixations in our datasets? Figures \ref{fig:nFlowDevAll}, \ref{fig:nFlowDevAll2} and \ref{fig:nFlowDevBorji} compared the log-likelihood of the flow model compared to the \cite{clarke-tatler2014} central baseline and a uniform distribution. We can see that in all cases, the log likelihood for the data under the flow model is higher than the central baseline and the uniform distribution. It is interesting to note that this holds even for datasets (those involving visual search) in which the central bias is outperformed (in terms of log-likelihood) by the uniform distribution: chiefly the data from \cite{clarke2009,asher2013,tatler2007}. 
 
 
 
@@ -118,7 +118,7 @@ How well does this model account for the fixations in our datasets? Figures \ref
 
 \subsubsection{The Effect of Task}
 
-We now examine how the ability of saccadic flow to explain different scanpaths depends on the observers task. We will make use of datasets from \cite{mills2011} and \cite{koehler2014}. To look at this we computed the mean log likelihood over each scan-path in these datasets (see Figure \ref{fig:taskLLH}). We can see that while task has a slight influence over the mean log likelihood for a scan-path, there is a large degree of overlap in the distributions. Additionally, we can see that the relative likelihood of scan-paths made during visual search compared to other tasks varies between datasets.
+We now examine how the ability of saccadic flow to explain different scanpaths depends on the observers' task. We will make use of datasets from \cite{mills2011} and \cite{koehler2014}. To look at this we computed the mean log likelihood over each scan-path in these datasets (see Figure \ref{fig:taskLLH}). We can see that while task has a slight influence over the mean log likelihood for a scan-path, there is a large degree of overlap in the distributions. Additionally, we can see that the relative likelihood of scan-paths made during visual search compared to other tasks varies between datasets.
 
 
 \begin{figure*}
