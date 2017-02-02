@@ -39,7 +39,7 @@ makeLLHfig <- function(datasets, nr)
 		saccades = filter(saccades, n>1)
 
 		# sample n saccades 
-		N = 10 # for bootstrapping
+		N = 1000 # for bootstrapping
 		n_Rep = 10
 
 		for (kk in 1:n_Rep)
@@ -112,14 +112,14 @@ makeLLHfig <- function(datasets, nr)
 		%>%	summarise(
 			meanLLH = mean(deltaLogLik),
 			stddev = sd(deltaLogLik),
-			stderr = sd(deltaLogLik)/sqrt(N),
+			stderr = sd(deltaLogLik)/sqrt(n_Rep),
 			upper = meanLLH+1.96*stderr,
 			lower = meanLLH-1.96*stderr))	
+print(LLHresults2$stddev)
 
+	levels(LLHresults2$biasmodel)[3] = "flow"
 
-	levels(LLHresults2$biasmodel)[4] = "flow"
-
-	LLHresults2$biasmodel = factor(LLHresults2$biasmodel, levels(LLHresults2$biasmodel)[c(3,2,4)])
+	LLHresults2$biasmodel = factor(LLHresults2$biasmodel, levels(LLHresults2$biasmodel)[c(2,1,3)])
 
 
 	pltDat = filter(LLHresults2, biasmodel %in% c('Clarke-Tatler2014', 're-fit', 'N', 'tN'))
@@ -127,12 +127,13 @@ makeLLHfig <- function(datasets, nr)
 	levels(pltDat$biasmodel)=c('CT2014', 're-fit central', 'truncated gaussian')
 	# pltDat$biasmodel = factor(pltDat$biasmodel, levels=c('re-fit central', 'gaussian', 'truncated gaussian'))
 
-	plt  = ggplot(LLHresults2, aes(fill=biasmodel, y=meanLLH, x=biasmodel, ymin=lower, ymax=upper))
+	plt  = ggplot(LLHresults2, aes(y=meanLLH, x=biasmodel, ymin=lower, ymax=upper))
 	plt = plt + geom_point() + geom_errorbar()
 	plt = plt + facet_wrap(~dataset, nrow=nr)
 	plt = plt + scale_fill_brewer(palette="Set2") + theme_bw()
-    plt = plt + scale_y_continuous(name= paste(expression(delta LLH)))
+    plt = plt + scale_y_continuous(name= paste(expression(Delta, 'LLH')))
 	plt = plt + scale_x_discrete(name='bias model')
+	plt = plt + geom_hline(yintercept=0)
 	# plt = plt + guides(fill=guide_legend(title="bias model"))
 
 	return(plt)
