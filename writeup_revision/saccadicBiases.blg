@@ -1,0 +1,73 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: saccadicBiases.aux
+The style file: plainnat.bst
+Database file #1: literature.bib.bib
+I was expecting a `,' or a `}'---line 508 of file literature.bib.bib
+ :   
+ :   year = {2016},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 534 of file literature.bib.bib
+ : @article{dodd2009
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 925 of file literature.bib.bib
+ : @inproceedings{harel2006
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1046 of file literature.bib.bib
+ : @article{brandt1945
+ :                    ,
+I'm skipping whatever remains of this entry
+Too many commas in name 2 of "Henderson, J M and Brockmole, J R, Castelhano, M S and Mack, M" for entry henderson2007
+while executing---line 1347 of file plainnat.bst
+Warning--empty journal in brandt1945
+Warning--empty year in mit-saliency-benchmark
+Too many commas in name 2 of "Henderson, J M and Brockmole, J R, Castelhano, M S and Mack, M" for entry henderson2007
+while executing---line 1429 of file plainnat.bst
+Too many commas in name 2 of "Henderson, J M and Brockmole, J R, Castelhano, M S and Mack, M" for entry henderson2007
+while executing---line 1429 of file plainnat.bst
+Warning--can't use both volume and number fields in lee2002
+You've used 69 entries,
+            2773 wiz_defined-function locations,
+            975 strings with 16779 characters,
+and the built_in function-call counts, 34063 in all, are:
+= -- 3038
+> -- 2097
+< -- 34
++ -- 704
+- -- 634
+* -- 2965
+:= -- 5240
+add.period$ -- 214
+call.type$ -- 69
+change.case$ -- 415
+chr.to.int$ -- 68
+cite$ -- 141
+duplicate$ -- 1468
+empty$ -- 2702
+format.name$ -- 743
+if$ -- 7072
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 69
+newline$ -- 356
+num.names$ -- 278
+pop$ -- 753
+preamble$ -- 1
+purify$ -- 348
+quote$ -- 0
+skip$ -- 1133
+stack$ -- 0
+substring$ -- 1418
+swap$ -- 123
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 749
+warning$ -- 3
+while$ -- 312
+width$ -- 0
+write$ -- 906
+(There were 7 error messages)
