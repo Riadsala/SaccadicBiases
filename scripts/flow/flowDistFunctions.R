@@ -243,7 +243,7 @@ getDist <- function(sacc, flowParams, useRobust=TRUE)
 # functions for calc LLH of sacc given flow model
 #######
 
-calcLLHofSaccade <- function(saccade, flowModel, flowParams, aspect.ratio=0.75)
+calcLLHofSaccade <- function(saccade, flowModel, flowParams, aspect.ratio=0.75, pRegThreshold=NaN, uniform_samples=numeric())
 {
 	# get distribution params for a saccade starting from this fixation
 	params = getDist(saccade, flowParams)
@@ -253,43 +253,53 @@ calcLLHofSaccade <- function(saccade, flowModel, flowParams, aspect.ratio=0.75)
 	params['sigma_xx'] = max(params['sigma_xx'],0.05)
 	# now back to normal
 	sigma = array(c(params['sigma_xx'], params['sigma_xy'], params['sigma_xy'], params['sigma_yy']), dim=c(2,2))
- 	# 
+
  	if (is.positive.definite(sigma)==FALSE)
 	{
 		sigma = nearPD(sigma, corr=T)
 		print(sigma)
- 	# print(sigma$mat)
  		sigma = (as.array(sigma$mat))
 	}
-	# print(mu)
-	# print(sigma)
-	# print(is.positive.definite(sigma))
 
- 	if (flowModel == 'tN')
- 	{	
-		llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2), 
-			mean=mu, sigma=sigma, 
-			lower=c(-1,-aspect.ratio),
-			upper=c(1,aspect.ratio), log=T)
+ 	
+	 	# calculate LLH as usual
+	 	if (flowModel == 'tN')
+	 	{	
+			llh = dtmvnorm(x=cbind(saccade$x2, saccade$y2), 
+				mean=mu, sigma=sigma, 
+				lower=c(-1,-aspect.ratio),
+				upper=c(1,aspect.ratio), log=T)
+			
+		}
+		else if (flowModel == 'N')
+		{
+			llh = dmvnorm(x=cbind(saccade$x2, saccade$y2), 
+				mean=mu, sigma=sigma, log=T)
+		}
+
 		
-	}
-	else if (flowModel == 'N')
-	{
-		llh = dmvnorm(x=cbind(saccade$x2, saccade$y2), 
-			mean=mu, sigma=sigma, log=T)
-	}
+		if (!is.nan(pRegThreshold)){
+			# aswell as calculating LLH return 0 or 1 to 
+			# indicate if fixation lands inside likely region or not
+			reg_llh = quantile(dtmvnorm(uniform_samples, mu, sigma, log=F), 1-pRegThreshold)
+			regAcc = dtmvnorm(x=cbind(saccade$x2, saccade$y2), mu, sigma)>reg_llh
+		}
+		else {regAcc = NaN}
 
-	return(llh)
+		return(list(llh=llh, regAcc=regAcc))
+
 }
 
-calcLLHofSaccades <- function(saccades, flowModel, trainedOn='All', aspect.ratio=0.75)
+calcLLHofSaccades <- function(saccades, flowModel, trainedOn='All', aspect.ratio=0.75, pRegThreshold=NaN, uniform_samples=numeric())
 {
 	# extract polynomial coefs that describe how mu, sigma, etc vary with saccadic start point
 	flowParams = loadFlowParams(flowModel, trainedOn)
 
 	for (ii in 1:nrow(saccades))
 	{
-		saccades$llh[ii] = calcLLHofSaccade(saccades[ii,], flowModel, flowParams, aspect.ratio)
+		dat = calcLLHofSaccade(saccades[ii,], flowModel, flowParams, aspect.ratio, pRegThreshold, uniform_samples)
+		saccades$llh[ii] = dat$llh
+		saccades$acc[ii] = dat$regAcc
 	}
 	return(saccades)
 }

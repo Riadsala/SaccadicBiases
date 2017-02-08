@@ -1,4 +1,4 @@
-\begin{thebibliography}{69}
+\begin{thebibliography}{70}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -178,6 +178,10 @@ Hayward~J Godwin, Erik~D Reichle, and Tamaryn Menneer.
 \newblock Coarse-to-fine eye movement behavior during visual search.
 \newblock \emph{Psychonomic bulletin \& review}, 21\penalty0 (5):\penalty0
   1244--1249, 2014.
+
+\bibitem[Green and Swets(1966)]{green-swets1966}
+D.~M. Green and J.~A. Swets.
+\newblock Wiley, 1966.
 
 \bibitem[Greene et~al.(2012)Greene, Liu, and Wolfe]{greene-wolfe2012}
 Michelle~R Greene, Tommy Liu, and Jeremy~M Wolfe.

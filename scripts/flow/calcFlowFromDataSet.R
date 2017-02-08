@@ -19,7 +19,7 @@ for (flowM in levels(nFitOverSpace$flowModel))
 {
 	modelData = filter(nFitOverSpace, flowModel==flowM)
 	modelData$Plm  = NaN
-	modelData$Prlm = NaN
+	modelData$Prlm = AnA
 
 	# Try and model how these parameters vary over space
 	for (feat in levels(modelData$param))

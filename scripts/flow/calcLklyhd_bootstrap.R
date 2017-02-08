@@ -44,55 +44,54 @@ makeLLHfig <- function(datasets, nr)
 
 		for (kk in 1:n_Rep)
 		{
-		saccades_samples = saccades[sample(nrow(saccades), N),]
+			saccades_samples = saccades[sample(nrow(saccades), N),]
 
-		######################################################################################
-		# first caculate log-likelihood of dataset given Clarke-Tatler 2014 central bias
-		# also use best fit gaussian, and use uniform as baseline
-		#####################################################################################
+			######################################################################################
+			# first caculate log-likelihood of dataset given Clarke-Tatler 2014 central bias
+			# also use best fit gaussian, and use uniform as baseline
+			#####################################################################################
 
-		fixs = select(saccades_samples, x2, y2)
+			fixs = select(saccades_samples, x2, y2)
 
-		uniformLLH = nrow(fixs)  * log(1/(4*asp.rat))
+			uniformLLH = nrow(fixs)  * log(1/(4*asp.rat))
 
-		# LLHresults = rbind(LLHresults, 
-		# 	data.frame(
-		# 		dataset=d, 
-		# 		biasmodel='uniform', 
-		# 		logLik=uniformLLH,
-		# 		deltaLogLik=0))
+			# LLHresults = rbind(LLHresults, 
+			# 	data.frame(
+			# 		dataset=d, 
+			# 		biasmodel='uniform', 
+			# 		logLik=uniformLLH,
+			# 		deltaLogLik=0))
 
-		# re-fit (use ase baseline)
-		mu = c(mean(fixs[,1]), mean(fixs[,2]))
-		sigma = var(fixs)
-		llh = sum(log(dmvnorm(fixs, mu, sigma)))
-		improv = llh - uniformLLH
-		LLHresults = rbind(LLHresults, 
-			data.frame(
+			# re-fit (use ase baseline)
+			mu = c(mean(fixs[,1]), mean(fixs[,2]))
+			sigma = var(fixs)
+			llh = sum(log(dmvnorm(fixs, mu, sigma)))
+			LLHresults = rbind(LLHresults, 
+				data.frame(
+					dataset=d, 
+					biasmodel='re-fit', 
+					logLik=llh,
+					deltaLogLik=llh-uniformLLH))
+			rm(llh, mu, sigma)
+
+			# CT2014
+			mu = c(0,0)
+			sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))
+			llh = sum(log(dmvnorm(fixs, mu, sigma)))
+
+			LLHresults = rbind(LLHresults, data.frame(
 				dataset=d, 
-				biasmodel='re-fit', 
-				logLik=llh,
-				deltaLogLik=llh-uniformLLH))
-		rm(llh, mu, sigma)
-
-		# CT2014
-		mu = c(0,0)
-		sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))
-		llh = sum(log(dmvnorm(fixs, mu, sigma)))
-
-		LLHresults = rbind(LLHresults, data.frame(
-			dataset=d, 
-			biasmodel='Clarke-Tatler2014', 
-			logLik = llh,
-			deltaLogLik = llh-uniformLLH))
-		rm(llh, mu, sigma)
+				biasmodel='Clarke-Tatler2014', 
+				logLik = llh,
+				deltaLogLik = llh-uniformLLH))
+			rm(llh, mu, sigma)
 
 
-		######################################################################################
-		# now find out how much flow helps!
-		#####################################################################################
-	 
-		trainedOn = 'All'
+			######################################################################################
+			# now find out how much flow helps!
+			#####################################################################################
+		 
+			trainedOn = 'All'
 			flowModel = 'tN'
 
 			saccades_samples = calcLLHofSaccades(saccades_samples, flowModel, trainedOn, asp.rat)
@@ -104,7 +103,6 @@ makeLLHfig <- function(datasets, nr)
 				deltaLogLik = sum(saccades_samples$llh)-uniformLLH))
 		}
 	}
-
 
 	# aggregate over bootstraps
 	LLHresults2 = (LLHresults 

@@ -3,71 +3,84 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: saccadicBiases.aux
 The style file: plainnat.bst
 Database file #1: literature.bib.bib
-I was expecting a `,' or a `}'---line 508 of file literature.bib.bib
+I was expecting a `,' or a `}'---line 517 of file literature.bib.bib
  :   
  :   year = {2016},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 534 of file literature.bib.bib
+Repeated entry---line 543 of file literature.bib.bib
  : @article{dodd2009
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 925 of file literature.bib.bib
+Repeated entry---line 647 of file literature.bib.bib
+ : @book{green-swets1966
+ :                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 934 of file literature.bib.bib
  : @inproceedings{harel2006
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1046 of file literature.bib.bib
+Repeated entry---line 1055 of file literature.bib.bib
  : @article{brandt1945
  :                    ,
 I'm skipping whatever remains of this entry
+Name 1 in "Green, D. M., and Swets, J. A." has a comma at the end for entry green-swets1966
+while executing---line 1347 of file plainnat.bst
+Name 1 in "Green, D. M., and Swets, J. A." has a comma at the end for entry green-swets1966
+while executing---line 1347 of file plainnat.bst
 Too many commas in name 2 of "Henderson, J M and Brockmole, J R, Castelhano, M S and Mack, M" for entry henderson2007
 while executing---line 1347 of file plainnat.bst
 Warning--empty journal in brandt1945
 Warning--empty year in mit-saliency-benchmark
+Name 1 in "Green, D. M., and Swets, J. A." has a comma at the end for entry green-swets1966
+while executing---line 1429 of file plainnat.bst
+Name 1 in "Green, D. M., and Swets, J. A." has a comma at the end for entry green-swets1966
+while executing---line 1429 of file plainnat.bst
+Warning--empty title in green-swets1966
 Too many commas in name 2 of "Henderson, J M and Brockmole, J R, Castelhano, M S and Mack, M" for entry henderson2007
 while executing---line 1429 of file plainnat.bst
 Too many commas in name 2 of "Henderson, J M and Brockmole, J R, Castelhano, M S and Mack, M" for entry henderson2007
 while executing---line 1429 of file plainnat.bst
 Warning--can't use both volume and number fields in lee2002
-You've used 69 entries,
+You've used 70 entries,
             2773 wiz_defined-function locations,
-            975 strings with 16779 characters,
-and the built_in function-call counts, 34063 in all, are:
-= -- 3038
-> -- 2097
-< -- 34
-+ -- 704
-- -- 634
-* -- 2965
-:= -- 5240
-add.period$ -- 214
-call.type$ -- 69
-change.case$ -- 415
-chr.to.int$ -- 68
-cite$ -- 141
-duplicate$ -- 1468
-empty$ -- 2702
-format.name$ -- 743
-if$ -- 7072
+            980 strings with 16874 characters,
+and the built_in function-call counts, 34414 in all, are:
+= -- 3064
+> -- 2118
+< -- 35
++ -- 711
+- -- 640
+* -- 2989
+:= -- 5295
+add.period$ -- 216
+call.type$ -- 70
+change.case$ -- 419
+chr.to.int$ -- 69
+cite$ -- 144
+duplicate$ -- 1488
+empty$ -- 2734
+format.name$ -- 752
+if$ -- 7145
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 69
-newline$ -- 356
-num.names$ -- 278
-pop$ -- 753
+missing$ -- 71
+newline$ -- 360
+num.names$ -- 282
+pop$ -- 768
 preamble$ -- 1
-purify$ -- 348
+purify$ -- 352
 quote$ -- 0
-skip$ -- 1133
+skip$ -- 1148
 stack$ -- 0
-substring$ -- 1418
+substring$ -- 1420
 swap$ -- 123
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 749
-warning$ -- 3
-while$ -- 312
+type$ -- 755
+warning$ -- 4
+while$ -- 315
 width$ -- 0
-write$ -- 906
-(There were 7 error messages)
+write$ -- 916
+(There were 12 error messages)
