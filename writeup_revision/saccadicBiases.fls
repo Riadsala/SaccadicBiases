@@ -412,9 +412,12 @@ INPUT ../scripts/flow/figs/llh_training.pdf
 INPUT ../scripts/flow/figs/llh_testing.pdf
 INPUT ../scripts/flow/figs/llh_testing.pdf
 INPUT ../scripts/flow/figs/llh_testing.pdf
-INPUT ../scripts/flow/figs/llh_Borji.pdf
-INPUT ../scripts/flow/figs/llh_Borji.pdf
-INPUT ../scripts/flow/figs/llh_Borji.pdf
+INPUT ../scripts/flow/figs/llh_training_ROC.pdf
+INPUT ../scripts/flow/figs/llh_training_ROC.pdf
+INPUT ../scripts/flow/figs/llh_training_ROC.pdf
+INPUT ../scripts/flow/figs/llh_testing_ROC.pdf
+INPUT ../scripts/flow/figs/llh_testing_ROC.pdf
+INPUT ../scripts/flow/figs/llh_testing_ROC.pdf
 INPUT ../scripts/inverseYarbus/kLLH.pdf
 INPUT ../scripts/inverseYarbus/kLLH.pdf
 INPUT ../scripts/inverseYarbus/kLLH.pdf
@@ -455,6 +458,9 @@ INPUT ../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf
 INPUT ../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf
 INPUT Dataset.tex
 INPUT Dataset.tex
+INPUT ../scripts/flow/figs/llh_Borji.pdf
+INPUT ../scripts/flow/figs/llh_Borji.pdf
+INPUT ../scripts/flow/figs/llh_Borji.pdf
 INPUT saccadicBiases.bbl
 INPUT saccadicBiases.bbl
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/fourier/futsy.vf

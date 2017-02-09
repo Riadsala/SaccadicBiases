@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  8 FEB 2017 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  9 FEB 2017 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1118,60 +1118,69 @@ e pdf)
 Package pdftex.def Info: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pd
 f used on input line 73.
 (pdftex.def)             Requested size: 369.88582pt x 123.29626pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 78.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
 (Font)              Font shape `T1/futs/b/n' tried instead on input line 78.
-[7 <../scripts/leftVright/graphs/leftrightbias.pdf> <../scripts/leftVright/grap
-hs/updownbias.pdf>]
-<../scripts/flow/figs/llh_training.pdf, id=94, 867.24pt x 433.62pt>
+ [7 <../scripts/leftVright/graphs/leftrightbias.pdf> <../scripts/leftVright/gra
+phs/updownbias.pdf>]
+Underfull \hbox (badness 1194) in paragraph at lines 82--83
+\T1/futs/b/n/10.95 pare how well the dif-fer-ent mod-els out per-
+ []
+
+<../scripts/flow/figs/llh_training.pdf, id=94, 433.62pt x 650.43pt>
 File: ../scripts/flow/figs/llh_training.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_training.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_training.pdf used on input li
 ne 88.
-(pdftex.def)             Requested size: 369.88582pt x 184.9444pt.
+(pdftex.def)             Requested size: 199.16928pt x 298.7548pt.
 
-<../scripts/flow/figs/llh_testing.pdf, id=95, 867.24pt x 216.81pt>
+<../scripts/flow/figs/llh_testing.pdf, id=95, 433.62pt x 325.215pt>
 File: ../scripts/flow/figs/llh_testing.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_testing.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_testing.pdf used on input lin
-e 95.
-(pdftex.def)             Requested size: 369.88582pt x 92.4722pt.
+e 89.
+(pdftex.def)             Requested size: 199.16928pt x 149.3774pt.
 
-<../scripts/flow/figs/llh_Borji.pdf, id=96, 867.24pt x 578.16pt>
-File: ../scripts/flow/figs/llh_Borji.pdf Graphic file (type pdf)
+<../scripts/flow/figs/llh_training_ROC.pdf, id=96, 722.7pt x 433.62pt>
+File: ../scripts/flow/figs/llh_training_ROC.pdf Graphic file (type pdf)
 
-<use ../scripts/flow/figs/llh_Borji.pdf>
-Package pdftex.def Info: ../scripts/flow/figs/llh_Borji.pdf used on input line 
-102.
-(pdftex.def)             Requested size: 369.88582pt x 246.59253pt.
+<use ../scripts/flow/figs/llh_training_ROC.pdf>
+Package pdftex.def Info: ../scripts/flow/figs/llh_training_ROC.pdf used on inpu
+t line 96.
+(pdftex.def)             Requested size: 341.43306pt x 204.86006pt.
 
-<../scripts/inverseYarbus/kLLH.pdf, id=97, 361.35pt x 361.35pt>
+<../scripts/flow/figs/llh_testing_ROC.pdf, id=97, 722.7pt x 216.81pt>
+File: ../scripts/flow/figs/llh_testing_ROC.pdf Graphic file (type pdf)
+
+<use ../scripts/flow/figs/llh_testing_ROC.pdf>
+Package pdftex.def Info: ../scripts/flow/figs/llh_testing_ROC.pdf used on input
+ line 97.
+(pdftex.def)             Requested size: 341.43306pt x 102.43002pt.
+
+<../scripts/inverseYarbus/kLLH.pdf, id=98, 361.35pt x 361.35pt>
 File: ../scripts/inverseYarbus/kLLH.pdf Graphic file (type pdf)
 
 <use ../scripts/inverseYarbus/kLLH.pdf>
 Package pdftex.def Info: ../scripts/inverseYarbus/kLLH.pdf used on input line 1
-14.
+10.
 (pdftex.def)             Requested size: 142.26378pt x 142.26578pt.
 
-<../scripts/inverseYarbus/millsLLH.pdf, id=98, 361.35pt x 361.35pt>
+<../scripts/inverseYarbus/millsLLH.pdf, id=99, 361.35pt x 361.35pt>
 File: ../scripts/inverseYarbus/millsLLH.pdf Graphic file (type pdf)
 
 <use ../scripts/inverseYarbus/millsLLH.pdf>
 Package pdftex.def Info: ../scripts/inverseYarbus/millsLLH.pdf used on input li
-ne 115.
+ne 111.
 (pdftex.def)             Requested size: 142.26378pt x 142.26578pt.
-) (./UsingFlow.tex [8 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf>
-] [9 <../scripts/flow/figs/llh_training.pdf> <../scripts/flow/figs/llh_testing.
-pdf>] [10 <../scripts/flow/figs/llh_Borji.pdf> <../scripts/inverseYarbus/kLLH.p
-df> <../scripts/inverseYarbus/millsLLH.pdf>] <figs/heatmap_figure.pdf, id=144, 
-1462.26305pt x 943.36443pt>
+ [8 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf>]) (./UsingFlow.te
+x [9 <../scripts/flow/figs/llh_training.pdf> <../scripts/flow/figs/llh_testing.
+pdf>] [10 <../scripts/flow/figs/llh_training_ROC.pdf> <../scripts/flow/figs/llh
+_testing_ROC.pdf> <../scripts/inverseYarbus/kLLH.pdf> <../scripts/inverseYarbus
+/millsLLH.pdf>]
+<figs/heatmap_figure.pdf, id=150, 1462.26305pt x 943.36443pt>
 File: figs/heatmap_figure.pdf Graphic file (type pdf)
 
 <use figs/heatmap_figure.pdf>
@@ -1182,7 +1191,7 @@ Underfull \hbox (badness 1675) in paragraph at lines 23--24
 \T1/futs/m/n/10.95 ever, these ar-eas are still rep-re-sented as ob-
  []
 
-[11]
+
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
 []\T1/futs/b/n/12 Removing bi-ases when ex-am-in-ing
  []
@@ -1197,31 +1206,35 @@ Underfull \hbox (badness 1831) in paragraph at lines 29--30
 \T1/futs/m/n/10.95 per-form-ing salience mod-els ac-cord-ing to the
  []
 
-[12 <./figs/heatmap_figure.pdf>]
+[11]
 Underfull \hbox (badness 1490) in paragraph at lines 31--32
 \T1/futs/m/n/10.95 cades be-ing less likely to be to a salient re-
  []
 
-<figs/SaccadeSaliency.pdf, id=161, 289.08pt x 505.89pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./figs/heatmap_figure.pdf>] <figs/SaccadeSaliency.pdf, id=167, 289.08pt x
+ 505.89pt>
 File: figs/SaccadeSaliency.pdf Graphic file (type pdf)
 
 <use figs/SaccadeSaliency.pdf>
 Package pdftex.def Info: figs/SaccadeSaliency.pdf used on input line 37.
 (pdftex.def)             Requested size: 221.0pt x 386.74985pt.
- [13 <./figs/SaccadeSaliency.pdf>]
-<figs/DownLeft.png, id=172, 578.16pt x 433.62pt>
+
+<figs/DownLeft.png, id=168, 578.16pt x 433.62pt>
 File: figs/DownLeft.png Graphic file (type png)
  <use figs/DownLeft.png>
 Package pdftex.def Info: figs/DownLeft.png used on input line 51.
 (pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
-<figs/Center.png, id=173, 578.16pt x 433.62pt>
+<figs/Center.png, id=169, 578.16pt x 433.62pt>
 File: figs/Center.png Graphic file (type png)
  <use figs/Center.png>
 Package pdftex.def Info: figs/Center.png used on input line 52.
 (pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
-<figs/UpRight.png, id=174, 578.16pt x 433.62pt>
+<figs/UpRight.png, id=170, 578.16pt x 433.62pt>
 File: figs/UpRight.png Graphic file (type png)
  <use figs/UpRight.png>
 Package pdftex.def Info: figs/UpRight.png used on input line 53.
@@ -1231,12 +1244,12 @@ Underfull \hbox (badness 1838) in paragraph at lines 60--61
 []\T1/futs/m/n/10.95 When com-pared to the em-pir-i-cal dis-tri-bu-
  []
 
-
+[13 <./figs/SaccadeSaliency.pdf>]
 Underfull \hbox (badness 1490) in paragraph at lines 62--63
 []\T1/futs/m/n/10.95 Another dis-crep-ancy be-tween the syn-thetic
  []
 
-<../scripts/coarse2fine/figs/xFixComparison.pdf, id=175, 216.81pt x 216.81pt>
+<../scripts/coarse2fine/figs/xFixComparison.pdf, id=181, 216.81pt x 216.81pt>
 File: ../scripts/coarse2fine/figs/xFixComparison.pdf Graphic file (type pdf)
 
 <use ../scripts/coarse2fine/figs/xFixComparison.pdf>
@@ -1244,7 +1257,7 @@ Package pdftex.def Info: ../scripts/coarse2fine/figs/xFixComparison.pdf used on
  input line 67.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
 
-<../scripts/coarse2fine/figs/yFixComparison.pdf, id=176, 216.81pt x 216.81pt>
+<../scripts/coarse2fine/figs/yFixComparison.pdf, id=182, 216.81pt x 216.81pt>
 File: ../scripts/coarse2fine/figs/yFixComparison.pdf Graphic file (type pdf)
 
 <use ../scripts/coarse2fine/figs/yFixComparison.pdf>
@@ -1252,7 +1265,7 @@ Package pdftex.def Info: ../scripts/coarse2fine/figs/yFixComparison.pdf used on
  input line 68.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
 
-<../scripts/coarse2fine/figs/ampSaccComparison.pdf, id=177, 216.81pt x 216.81pt
+<../scripts/coarse2fine/figs/ampSaccComparison.pdf, id=183, 216.81pt x 216.81pt
 >
 File: ../scripts/coarse2fine/figs/ampSaccComparison.pdf Graphic file (type pdf)
 
@@ -1261,7 +1274,7 @@ Package pdftex.def Info: ../scripts/coarse2fine/figs/ampSaccComparison.pdf used
  on input line 69.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
 
-<../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf, id=178, 216.81pt x 216.81
+<../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf, id=184, 216.81pt x 216.81
 pt>
 File: ../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf Graphic file (type pd
 f)
@@ -1284,7 +1297,11 @@ Underfull \hbox (badness 1881) in paragraph at lines 50--51
 \T1/futs/m/n/10.95 as a ro-bust prior for the image-independent
  []
 
-[14]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 <./figs/DownLeft.png (PNG copy)> <./figs/Center.png (PNG copy)> <./figs/Up
+Right.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 58--59
 \T1/futs/m/n/10.95 Tatler and Vin-cent [2009] have pre-vi-ously
  []
@@ -1314,8 +1331,7 @@ Underfull \hbox (badness 1038) in paragraph at lines 58--59
 \T1/futs/m/n/10.95 same cen-trally bi-ased ten-den-cies as ob-served
  []
 
-[15 <./figs/DownLeft.png (PNG copy)> <./figs/Center.png (PNG copy)> <./figs/UpR
-ight.png (PNG copy)>]
+
 Underfull \hbox (badness 1603) in paragraph at lines 60--61
 \T1/futs/m/n/10.95 cadic Flow model gen-er-alises well to un-seen
  []
@@ -1330,16 +1346,19 @@ Underfull \hbox (badness 1210) in paragraph at lines 60--61
 \T1/futs/m/n/10.95 as com-puter in-ter-faces, we would ex-pect the
  []
 
-(./Dataset.tex
+[15] (./Dataset.tex
 Overfull \hbox (40.57927pt too wide) in paragraph at lines 9--30
  [][] 
  []
 
+) <../scripts/flow/figs/llh_Borji.pdf, id=192, 867.24pt x 578.16pt>
+File: ../scripts/flow/figs/llh_Borji.pdf Graphic file (type pdf)
 
-Underfull \vbox (badness 1838) has occurred while \output is active []
-
- [16])
-(./saccadicBiases.bbl
+<use ../scripts/flow/figs/llh_Borji.pdf>
+Package pdftex.def Info: ../scripts/flow/figs/llh_Borji.pdf used on input line 
+87.
+(pdftex.def)             Requested size: 369.88582pt x 246.59253pt.
+ (./saccadicBiases.bbl [16] [17]
 Underfull \hbox (badness 1281) in paragraph at lines 97--102
 \T1/futs/m/n/10 Con-se-quences of an at-ten-tional bias?  \T1/futs/m/it/10 At-t
 en-
@@ -1350,12 +1369,12 @@ Underfull \hbox (badness 1057) in paragraph at lines 112--116
 []\T1/futs/m/n/10 Krista A Ehinger, Bar-bara Hidalgo-Sotelo, An-to-nio
  []
 
-[17] [18]
+
 Underfull \hbox (badness 1584) in paragraph at lines 187--191
 \T1/futs/m/n/10 Re-con-sid-er-ing yarbus: A fail-ure to pre-dict ob-
  []
 
-
+[18]
 Underfull \hbox (badness 1009) in paragraph at lines 257--261
 \T1/futs/m/n/10 context-dependent and spatially-variant view-ing
  []
@@ -1365,7 +1384,7 @@ Underfull \hbox (badness 1400) in paragraph at lines 271--275
 []\T1/futs/m/n/10 Sooha Park Lee, Jeremy B Badler, and Nor-man I
  []
 
-[19]
+
 Underfull \hbox (badness 1371) in paragraph at lines 277--281
 \T1/futs/m/n/10 of film and the re-la-tion-ship be-tween gaze and
  []
@@ -1390,7 +1409,7 @@ Underfull \hbox (badness 1173) in paragraph at lines 297--301
 []\T1/futs/m/n/10 Mark Mills, An-drew Holling-worth, Ste-fan Van der
  []
 
-
+[19]
 Underfull \hbox (badness 1014) in paragraph at lines 347--353
 []\T1/futs/m/n/10 Nicolas Riche, Matei Man-cas, Matthieu Duvinage,
  []
@@ -1400,7 +1419,7 @@ Underfull \hbox (badness 2689) in paragraph at lines 347--353
 \T1/futs/m/n/10 Makiese Mibu-lu-mukini, Bernard Gos-selin, and
  []
 
-[20]
+
 Underfull \hbox (badness 1337) in paragraph at lines 412--418
 []\T1/futs/m/n/10 Boris M Velichkovsky, Alexan-dra Rothert, Math-ias
  []
@@ -1415,31 +1434,33 @@ Underfull \hbox (badness 6204) in paragraph at lines 421--425
 \T1/futs/m/n/10 Pflugshaupt, Thomas Nyf-feler, Math-ias Luthi,
  []
 
-) [21 <../scripts/coarse2fine/figs/xFixComparison.pdf> <../scripts/coarse2fine/
-figs/yFixComparison.pdf> <../scripts/coarse2fine/figs/ampSaccComparison.pdf> <.
-./scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf>] (./saccadicBiases.aux) ) 
+) [20] [21
+
+ <../scripts/coarse2fine/figs/xFixComparison.pdf> <../scripts/coarse2fine/figs/
+yFixComparison.pdf> <../scripts/coarse2fine/figs/ampSaccComparison.pdf> <../scr
+ipts/coarse2fine/figs/saccAmpOverTimeFlow.pdf>] [22 <../scripts/flow/figs/llh_B
+orji.pdf>] (./saccadicBiases.aux) ) 
 Here is how much of TeX's memory you used:
- 15050 strings out of 493014
- 289750 string characters out of 6133351
- 329149 words of memory out of 5000000
- 18160 multiletter control sequences out of 15000+600000
+ 15060 strings out of 493014
+ 290147 string characters out of 6133351
+ 328150 words of memory out of 5000000
+ 18168 multiletter control sequences out of 15000+600000
  118164 words of font info for 138 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,11n,56p,2010b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/
-usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/us
-r/local/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2016/t
-exmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-di
-st/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/cm-super/sftt1095.pfb>
-Output written on saccadicBiases.pdf (21 pages, 26172430 bytes).
+ 62i,11n,56p,2010b,336s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/en
+c/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/
+dvips/base/8r.enc}</usr/local/texlive/2016/texmf-dist/fonts/type1/public/fourie
+r/fourier-mlit.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/fouri
+er/fourier-ms.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/utopia/
+putb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/utopia/putr8a.
+pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
+Output written on saccadicBiases.pdf (22 pages, 26187955 bytes).
 PDF statistics:
- 253 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
+ 268 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 143 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 153 words of extra memory for PDF output out of 10000 (max. 10000000)
 

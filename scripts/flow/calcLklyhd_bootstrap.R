@@ -3,7 +3,9 @@ library(ggplot2)
 library(Matrix)
 library(matrixcalc)
 
-
+# sample n saccades 
+		N = 1000 # for bootstrapping
+		n_Rep = 10
 
 
 source('flowDistFunctions.R')
@@ -38,9 +40,7 @@ makeLLHfig <- function(datasets, nr)
 		saccades = filter(saccades, x1>-1, y1>-asp.rat, x1<1, y1<asp.rat)
 		saccades = filter(saccades, n>1)
 
-		# sample n saccades 
-		N = 1000 # for bootstrapping
-		n_Rep = 10
+		
 
 		for (kk in 1:n_Rep)
 		{
@@ -62,29 +62,33 @@ makeLLHfig <- function(datasets, nr)
 			# 		logLik=uniformLLH,
 			# 		deltaLogLik=0))
 
-			# re-fit (use ase baseline)
-			mu = c(mean(fixs[,1]), mean(fixs[,2]))
-			sigma = var(fixs)
-			llh = sum(log(dmvnorm(fixs, mu, sigma)))
-			LLHresults = rbind(LLHresults, 
-				data.frame(
-					dataset=d, 
-					biasmodel='re-fit', 
-					logLik=llh,
-					deltaLogLik=llh-uniformLLH))
-			rm(llh, mu, sigma)
-
 			# CT2014
 			mu = c(0,0)
 			sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))
-			llh = sum(log(dmvnorm(fixs, mu, sigma)))
+			llh = sum(dmvnorm(fixs, mu, sigma, log=T))
 
 			LLHresults = rbind(LLHresults, data.frame(
 				dataset=d, 
-				biasmodel='Clarke-Tatler2014', 
+				biasmodel='CT2014', 
 				logLik = llh,
 				deltaLogLik = llh-uniformLLH))
 			rm(llh, mu, sigma)
+
+			# CT2017
+			mu = c(0,0)
+			sigma = array(c(0.32,0,0,0.45*0.32), dim=c(2,2))
+			llh = sum(dtmvnorm(cbind(fixs$x2, fixs$y2), mu, sigma,
+				lower=c(-1,-asp.rat),
+				upper=c(1,asp.rat), log=T))
+
+			LLHresults = rbind(LLHresults, data.frame(
+				dataset=d, 
+				biasmodel='CT2017', 
+				logLik = llh,
+				deltaLogLik = llh-uniformLLH))
+			rm(llh, mu, sigma)
+
+			
 
 
 			######################################################################################
@@ -113,18 +117,13 @@ makeLLHfig <- function(datasets, nr)
 			stderr = sd(deltaLogLik)/sqrt(n_Rep),
 			upper = meanLLH+1.96*stderr,
 			lower = meanLLH-1.96*stderr))	
-print(LLHresults2$stddev)
 
 	levels(LLHresults2$biasmodel)[3] = "flow"
 
-	LLHresults2$biasmodel = factor(LLHresults2$biasmodel, levels(LLHresults2$biasmodel)[c(2,1,3)])
+	# LLHresults2$biasmodel = factor(LLHresults2$biasmodel, levels(LLHresults2$biasmodel)[c(2,1,3)])
 
 
-	pltDat = filter(LLHresults2, biasmodel %in% c('Clarke-Tatler2014', 're-fit', 'N', 'tN'))
-	pltDat$biasmodel = factor(pltDat$biasmodel)
-	levels(pltDat$biasmodel)=c('CT2014', 're-fit central', 'truncated gaussian')
-	# pltDat$biasmodel = factor(pltDat$biasmodel, levels=c('re-fit central', 'gaussian', 'truncated gaussian'))
-
+	
 	plt  = ggplot(LLHresults2, aes(y=meanLLH, x=biasmodel, ymin=lower, ymax=upper))
 	plt = plt + geom_point() + geom_errorbar()
 	plt = plt + facet_wrap(~dataset, nrow=nr)
@@ -150,8 +149,8 @@ datasets = c(
  'Yun2013PASCAL') #
 
 
-plt = makeLLHfig(datasets,2)
-ggsave(paste('figs/llh_Training.pdf', sep=''), width=12, height=6)
+plt = makeLLHfig(datasets,4)
+ggsave(paste('figs/llh_Training.pdf', sep=''), width=6, height=9)
 
 
 
@@ -161,8 +160,8 @@ datasets = c(
  'Asher2013',
  'Ehinger2007') #
 
-plt = makeLLHfig(datasets, 1)
-ggsave(paste('figs/llh_Testing.pdf', sep=''), width=12, height=3)
+plt = makeLLHfig(datasets, 2)
+ggsave(paste('figs/llh_Testing.pdf', sep=''), width=6, height=4.5)
 
 
 
