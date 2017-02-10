@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  9 FEB 2017 12:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  10 FEB 2017 11:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1048,41 +1048,41 @@ Underfull \hbox (badness 2680) in paragraph at lines 52--53
 \T1/futs/m/n/10.95 by an in-crease in fix-a-tion du-ra-tions, and is
  []
 
-[4]) (./ModellingFlow.tex
-Underfull \hbox (badness 1038) in paragraph at lines 63--1
+[4])
+Underfull \hbox (badness 1038) in paragraph at lines 63--45
 []\T1/futs/m/n/10.95 In Sec-tion 2[] we de-scribe the sac-cadic flow
  []
 
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 15.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 61.
 [5]
-LaTeX Font Info:    Try loading font information for TS1+futs on input line 23.
+LaTeX Font Info:    Try loading font information for TS1+futs on input line 69.
 
  (/usr/local/texlive/2016/texmf-dist/tex/latex/fourier/ts1futs.fd
 File: ts1futs.fd 2004/03/26 Fontinst v1.926 font definitions for TS1/futs.
 )
-Underfull \hbox (badness 5970) in paragraph at lines 23--24
+Underfull \hbox (badness 5970) in paragraph at lines 69--70
 \T1/futs/m/n/10.95 from 16 ob-servers view-ing 500 nat-u-ral
  []
 
 
-Underfull \hbox (badness 4156) in paragraph at lines 27--28
+Underfull \hbox (badness 4156) in paragraph at lines 73--74
 []\T1/futs/m/n/10.95 Greene, Liu, and Wolfe [2012] re-leased
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
+Underfull \hbox (badness 10000) in paragraph at lines 73--74
 \T1/futs/m/n/10.95 a dataset of ob-servers view-ing square
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 29--31
+Underfull \hbox (badness 2326) in paragraph at lines 75--77
 \T1/futs/m/n/10.95 large ($\FMS/futm/m/n/10.95 ^^Y \T1/futs/m/n/10.95 650\FML/f
 utmi/m/it/10.95 ; \T1/futs/m/n/10.95 000$ fix-a-tions, 2000 im-ages)
  []
 
 
-Underfull \hbox (badness 1337) in paragraph at lines 44--46
+Underfull \hbox (badness 1337) in paragraph at lines 90--92
 \T1/futs/m/n/10.95 will up-date the cen-tral bias from Clarke and
  []
 
@@ -1092,7 +1092,7 @@ File: ../scripts/leftVright/graphs/leftrightbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/leftrightbias.pdf>
 Package pdftex.def Info: ../scripts/leftVright/graphs/leftrightbias.pdf used on
- input line 53.
+ input line 99.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
 
 <../scripts/leftVright/graphs/updownbias.pdf, id=75, 216.81pt x 216.81pt>
@@ -1100,12 +1100,13 @@ File: ../scripts/leftVright/graphs/updownbias.pdf Graphic file (type pdf)
 
 <use ../scripts/leftVright/graphs/updownbias.pdf>
 Package pdftex.def Info: ../scripts/leftVright/graphs/updownbias.pdf used on in
-put line 54.
+put line 100.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
 
 Underfull \vbox (badness 1990) has occurred while \output is active []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 67.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 113.
+
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
@@ -1116,15 +1117,15 @@ File: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf Graphic file (typ
 e pdf)
  <use ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pd
-f used on input line 73.
+f used on input line 119.
 (pdftex.def)             Requested size: 369.88582pt x 123.29626pt.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <8.3> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 78.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 124.
 LaTeX Font Info:    Font shape `T1/futs/bx/n' in size <6> not available
-(Font)              Font shape `T1/futs/b/n' tried instead on input line 78.
+(Font)              Font shape `T1/futs/b/n' tried instead on input line 124.
  [7 <../scripts/leftVright/graphs/leftrightbias.pdf> <../scripts/leftVright/gra
 phs/updownbias.pdf>]
-Underfull \hbox (badness 1194) in paragraph at lines 82--83
+Underfull \hbox (badness 1194) in paragraph at lines 128--129
 \T1/futs/b/n/10.95 pare how well the dif-fer-ent mod-els out per-
  []
 
@@ -1133,7 +1134,7 @@ File: ../scripts/flow/figs/llh_training.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_training.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_training.pdf used on input li
-ne 88.
+ne 134.
 (pdftex.def)             Requested size: 199.16928pt x 298.7548pt.
 
 <../scripts/flow/figs/llh_testing.pdf, id=95, 433.62pt x 325.215pt>
@@ -1141,7 +1142,7 @@ File: ../scripts/flow/figs/llh_testing.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_testing.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_testing.pdf used on input lin
-e 89.
+e 135.
 (pdftex.def)             Requested size: 199.16928pt x 149.3774pt.
 
 <../scripts/flow/figs/llh_training_ROC.pdf, id=96, 722.7pt x 433.62pt>
@@ -1149,7 +1150,7 @@ File: ../scripts/flow/figs/llh_training_ROC.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_training_ROC.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_training_ROC.pdf used on inpu
-t line 96.
+t line 142.
 (pdftex.def)             Requested size: 341.43306pt x 204.86006pt.
 
 <../scripts/flow/figs/llh_testing_ROC.pdf, id=97, 722.7pt x 216.81pt>
@@ -1157,7 +1158,7 @@ File: ../scripts/flow/figs/llh_testing_ROC.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_testing_ROC.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_testing_ROC.pdf used on input
- line 97.
+ line 143.
 (pdftex.def)             Requested size: 341.43306pt x 102.43002pt.
 
 <../scripts/inverseYarbus/kLLH.pdf, id=98, 361.35pt x 361.35pt>
@@ -1165,7 +1166,7 @@ File: ../scripts/inverseYarbus/kLLH.pdf Graphic file (type pdf)
 
 <use ../scripts/inverseYarbus/kLLH.pdf>
 Package pdftex.def Info: ../scripts/inverseYarbus/kLLH.pdf used on input line 1
-10.
+56.
 (pdftex.def)             Requested size: 142.26378pt x 142.26578pt.
 
 <../scripts/inverseYarbus/millsLLH.pdf, id=99, 361.35pt x 361.35pt>
@@ -1173,13 +1174,13 @@ File: ../scripts/inverseYarbus/millsLLH.pdf Graphic file (type pdf)
 
 <use ../scripts/inverseYarbus/millsLLH.pdf>
 Package pdftex.def Info: ../scripts/inverseYarbus/millsLLH.pdf used on input li
-ne 111.
+ne 157.
 (pdftex.def)             Requested size: 142.26378pt x 142.26578pt.
- [8 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf>]) (./UsingFlow.te
-x [9 <../scripts/flow/figs/llh_training.pdf> <../scripts/flow/figs/llh_testing.
-pdf>] [10 <../scripts/flow/figs/llh_training_ROC.pdf> <../scripts/flow/figs/llh
-_testing_ROC.pdf> <../scripts/inverseYarbus/kLLH.pdf> <../scripts/inverseYarbus
-/millsLLH.pdf>]
+ [8 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf>] (./UsingFlow.tex
+ [9 <../scripts/flow/figs/llh_training.pdf> <../scripts/flow/figs/llh_testing.p
+df>] [10 <../scripts/flow/figs/llh_training_ROC.pdf> <../scripts/flow/figs/llh_
+testing_ROC.pdf> <../scripts/inverseYarbus/kLLH.pdf> <../scripts/inverseYarbus/
+millsLLH.pdf>]
 <figs/heatmap_figure.pdf, id=150, 1462.26305pt x 943.36443pt>
 File: figs/heatmap_figure.pdf Graphic file (type pdf)
 
@@ -1283,17 +1284,17 @@ Package pdftex.def Info: ../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf us
 ed on input line 70.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
 )
-Underfull \hbox (badness 2591) in paragraph at lines 81--47
+Underfull \hbox (badness 2591) in paragraph at lines 81--165
 \T1/futs/m/n/10.95 We have demon-strated dif-fer-ent ways bi-ases
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 50--51
+Underfull \hbox (badness 1377) in paragraph at lines 168--169
 \T1/futs/m/n/10.95 2009]. We pro-pose the sac-cadic flow model
  []
 
 
-Underfull \hbox (badness 1881) in paragraph at lines 50--51
+Underfull \hbox (badness 1881) in paragraph at lines 168--169
 \T1/futs/m/n/10.95 as a ro-bust prior for the image-independent
  []
 
@@ -1302,47 +1303,47 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [14 <./figs/DownLeft.png (PNG copy)> <./figs/Center.png (PNG copy)> <./figs/Up
 Right.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 176--177
 \T1/futs/m/n/10.95 Tatler and Vin-cent [2009] have pre-vi-ously
  []
 
 
-Underfull \hbox (badness 3417) in paragraph at lines 58--59
+Underfull \hbox (badness 3417) in paragraph at lines 176--177
 \T1/futs/m/n/10.95 move-ments can ac-count for hu-man fix-a-tion
  []
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 58--59
+Underfull \hbox (badness 2452) in paragraph at lines 176--177
 \T1/futs/m/n/10.95 cen-tral bias [Tatler, 2007], whereby sac-cades
  []
 
 
-Underfull \hbox (badness 2903) in paragraph at lines 58--59
+Underfull \hbox (badness 2903) in paragraph at lines 176--177
 \T1/futs/m/n/10.95 are likely to be di-rected to-wards the cen-tre
  []
 
 
-Underfull \hbox (badness 1342) in paragraph at lines 58--59
+Underfull \hbox (badness 1342) in paragraph at lines 176--177
 \T1/futs/m/n/10.95 tends to lie), and sets of sac-cades gen-er-ated
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 58--59
+Underfull \hbox (badness 1038) in paragraph at lines 176--177
 \T1/futs/m/n/10.95 same cen-trally bi-ased ten-den-cies as ob-served
  []
 
 
-Underfull \hbox (badness 1603) in paragraph at lines 60--61
+Underfull \hbox (badness 1603) in paragraph at lines 178--179
 \T1/futs/m/n/10.95 cadic Flow model gen-er-alises well to un-seen
  []
 
 
-Underfull \hbox (badness 1158) in paragraph at lines 60--61
+Underfull \hbox (badness 1158) in paragraph at lines 178--179
 \T1/futs/m/n/10.95 nat-u-ral and man-made scenes). As we move
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 60--61
+Underfull \hbox (badness 1210) in paragraph at lines 178--179
 \T1/futs/m/n/10.95 as com-puter in-ter-faces, we would ex-pect the
  []
 
@@ -1356,7 +1357,7 @@ File: ../scripts/flow/figs/llh_Borji.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_Borji.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_Borji.pdf used on input line 
-87.
+205.
 (pdftex.def)             Requested size: 369.88582pt x 246.59253pt.
  (./saccadicBiases.bbl [16] [17]
 Underfull \hbox (badness 1281) in paragraph at lines 97--102
@@ -1441,8 +1442,8 @@ yFixComparison.pdf> <../scripts/coarse2fine/figs/ampSaccComparison.pdf> <../scr
 ipts/coarse2fine/figs/saccAmpOverTimeFlow.pdf>] [22 <../scripts/flow/figs/llh_B
 orji.pdf>] (./saccadicBiases.aux) ) 
 Here is how much of TeX's memory you used:
- 15060 strings out of 493014
- 290147 string characters out of 6133351
+ 15057 strings out of 493014
+ 290098 string characters out of 6133351
  328150 words of memory out of 5000000
  18168 multiletter control sequences out of 15000+600000
  118164 words of font info for 138 fonts, out of 8000000 for 9000

@@ -381,8 +381,6 @@ INPUT ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_32.pdf
 INPUT ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf
 INPUT ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf
 INPUT ../scripts/heatmaps/SaccadicFlowMaps/Figures/BBias_33.pdf
-INPUT ModellingFlow.tex
-INPUT ModellingFlow.tex
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/fourier/futb8t.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm

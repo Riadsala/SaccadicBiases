@@ -3,7 +3,7 @@ library(ggplot2)
 library(Matrix)
 library(matrixcalc)
 
-pRegThreshold = seq(0, 1, 0.05)
+pRegThreshold = seq(0, 1, 0.025)
 regTresh_N_samples = 1000
 
 N = 1000 # for bootstrapping
@@ -169,8 +169,8 @@ datasets = c(
 
 
 dat = makeLLHdat(datasets)
-plt = pltResults(dat,2)
-ggsave(paste('figs/llh_Training_ROC.pdf', sep=''), width=12, height=6)
+plt = pltResults(dat,4)
+ggsave(paste('figs/llh_Training_ROC.pdf', sep=''), width=6, height=9)
 
 
 
@@ -181,8 +181,8 @@ datasets = c(
  'Ehinger2007') #
 
 dat = makeLLHdat(datasets)
-plt = pltResults(dat,1)
-ggsave(paste('figs/llh_Testing_ROC.pdf', sep=''), width=12, height=3)
+plt = pltResults(dat,2)
+ggsave(paste('figs/llh_Testing_ROC.pdf', sep=''), width=6, height=4.5)
 
 
 

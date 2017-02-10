@@ -40,8 +40,6 @@ makeLLHfig <- function(datasets, nr)
 		saccades = filter(saccades, x1>-1, y1>-asp.rat, x1<1, y1<asp.rat)
 		saccades = filter(saccades, n>1)
 
-		
-
 		for (kk in 1:n_Rep)
 		{
 			saccades_samples = saccades[sample(nrow(saccades), N),]
@@ -89,8 +87,6 @@ makeLLHfig <- function(datasets, nr)
 			rm(llh, mu, sigma)
 
 			
-
-
 			######################################################################################
 			# now find out how much flow helps!
 			#####################################################################################
@@ -102,7 +98,7 @@ makeLLHfig <- function(datasets, nr)
 			llh = sum(saccades_samples$llh)
 			LLHresults = rbind(LLHresults, data.frame(
 				dataset=d, 
-				biasmodel = flowModel, 		
+				biasmodel = "Flow", 		
 				logLik=sum(saccades_samples$llh),
 				deltaLogLik = sum(saccades_samples$llh)-uniformLLH))
 		}
@@ -118,17 +114,12 @@ makeLLHfig <- function(datasets, nr)
 			upper = meanLLH+1.96*stderr,
 			lower = meanLLH-1.96*stderr))	
 
-	levels(LLHresults2$biasmodel)[3] = "flow"
 
-	# LLHresults2$biasmodel = factor(LLHresults2$biasmodel, levels(LLHresults2$biasmodel)[c(2,1,3)])
-
-
-	
 	plt  = ggplot(LLHresults2, aes(y=meanLLH, x=biasmodel, ymin=lower, ymax=upper))
 	plt = plt + geom_point() + geom_errorbar()
 	plt = plt + facet_wrap(~dataset, nrow=nr)
 	plt = plt + scale_fill_brewer(palette="Set2") + theme_bw()
-    plt = plt + scale_y_continuous(name= paste(expression(Delta, 'LLH')))
+    plt = plt + scale_y_continuous(name= 'log likelihood ratio', limits=c(-200,1000))
 	plt = plt + scale_x_discrete(name='bias model')
 	plt = plt + geom_hline(yintercept=0)
 	# plt = plt + guides(fill=guide_legend(title="bias model"))
