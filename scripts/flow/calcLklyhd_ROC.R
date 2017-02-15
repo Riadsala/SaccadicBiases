@@ -7,7 +7,7 @@ pRegThreshold = seq(0, 1, 0.025)
 regTresh_N_samples = 1000
 
 N = 1000 # for bootstrapping
-n_Rep = 10
+n_Rep = 1
 
 source('flowDistFunctions.R')
 
@@ -74,21 +74,31 @@ makeLLHdat <- function(datasets, nr)
 					
 					# determind LLH for which > values are in most likely region
 					reg_llh = quantile(dmvnorm(uniform_samples, mu, sigma), 1-pReg)
+							
+					# CT2014
+					mu = c(0,0)
+					sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))
+		
+					# determind LLH for which > values are in most likely region
+					reg_llh = quantile(dtmvnorm(cbind(uniform_samples[,1], uniform_samples[,2]), mu, sigma,
+				lower=c(-1,-asp.rat),
+				upper=c(1,asp.rat), log=T), 1-pReg)
 					# how many of our fixations fell inside this region?
-					regAcc = mean(dmvnorm(fixs, mu, sigma)>reg_llh)
+					regAcc = mean(dtmvnorm(cbind(fixs$x2, fixs$y2), mu, sigma,
+				lower=c(-1,-asp.rat),
+				upper=c(1,asp.rat), log=T)>reg_llh)
 		
 					ClassAccResults = rbind(ClassAccResults, 
 						data.frame(
 							dataset=d, 
-							biasmodel='re-fit',
-							pReg = pReg, 
+							biasmodel='CT2014', 
+							pReg = pReg,
 							acc = regAcc))
 		
-					rm(mu, sigma, reg_llh)
-		
-					# CT2014
+
+					# CT2017
 					mu = c(0,0)
-					sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))
+					sigma = array(c(0.32,0,0,0.45*0.32), dim=c(2,2))
 		
 					# determind LLH for which > values are in most likely region
 					reg_llh = quantile(dmvnorm(uniform_samples, mu, sigma), 1-pReg)
@@ -101,7 +111,9 @@ makeLLHdat <- function(datasets, nr)
 							biasmodel='CT2014', 
 							pReg = pReg,
 							acc = regAcc))
-		
+
+
+
 					rm(mu, sigma, reg_llh)
 		
 		

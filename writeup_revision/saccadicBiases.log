@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  10 FEB 2017 11:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  15 FEB 2017 13:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1145,21 +1145,21 @@ Package pdftex.def Info: ../scripts/flow/figs/llh_testing.pdf used on input lin
 e 135.
 (pdftex.def)             Requested size: 199.16928pt x 149.3774pt.
 
-<../scripts/flow/figs/llh_training_ROC.pdf, id=96, 722.7pt x 433.62pt>
+<../scripts/flow/figs/llh_training_ROC.pdf, id=96, 433.62pt x 650.43pt>
 File: ../scripts/flow/figs/llh_training_ROC.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_training_ROC.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_training_ROC.pdf used on inpu
 t line 142.
-(pdftex.def)             Requested size: 341.43306pt x 204.86006pt.
+(pdftex.def)             Requested size: 199.16928pt x 298.7548pt.
 
-<../scripts/flow/figs/llh_testing_ROC.pdf, id=97, 722.7pt x 216.81pt>
+<../scripts/flow/figs/llh_testing_ROC.pdf, id=97, 433.62pt x 325.215pt>
 File: ../scripts/flow/figs/llh_testing_ROC.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_testing_ROC.pdf>
 Package pdftex.def Info: ../scripts/flow/figs/llh_testing_ROC.pdf used on input
  line 143.
-(pdftex.def)             Requested size: 341.43306pt x 102.43002pt.
+(pdftex.def)             Requested size: 199.16928pt x 149.3774pt.
 
 <../scripts/inverseYarbus/kLLH.pdf, id=98, 361.35pt x 361.35pt>
 File: ../scripts/inverseYarbus/kLLH.pdf Graphic file (type pdf)
@@ -1176,12 +1176,11 @@ File: ../scripts/inverseYarbus/millsLLH.pdf Graphic file (type pdf)
 Package pdftex.def Info: ../scripts/inverseYarbus/millsLLH.pdf used on input li
 ne 157.
 (pdftex.def)             Requested size: 142.26378pt x 142.26578pt.
- [8 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf>] (./UsingFlow.tex
- [9 <../scripts/flow/figs/llh_training.pdf> <../scripts/flow/figs/llh_testing.p
-df>] [10 <../scripts/flow/figs/llh_training_ROC.pdf> <../scripts/flow/figs/llh_
-testing_ROC.pdf> <../scripts/inverseYarbus/kLLH.pdf> <../scripts/inverseYarbus/
-millsLLH.pdf>]
-<figs/heatmap_figure.pdf, id=150, 1462.26305pt x 943.36443pt>
+ [8 <../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf>] [9 <../scripts/f
+low/figs/llh_training.pdf> <../scripts/flow/figs/llh_testing.pdf> <../scripts/f
+low/figs/llh_training_ROC.pdf> <../scripts/flow/figs/llh_testing_ROC.pdf>] (./U
+singFlow.tex
+<figs/heatmap_figure.pdf, id=135, 1462.26305pt x 943.36443pt>
 File: figs/heatmap_figure.pdf Graphic file (type pdf)
 
 <use figs/heatmap_figure.pdf>
@@ -1192,7 +1191,8 @@ Underfull \hbox (badness 1675) in paragraph at lines 23--24
 \T1/futs/m/n/10.95 ever, these ar-eas are still rep-re-sented as ob-
  []
 
-
+[10] [11 <../scripts/inverseYarbus/kLLH.pdf> <../scripts/inverseYarbus/millsLLH
+.pdf> <./figs/heatmap_figure.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 25--25
 []\T1/futs/b/n/12 Removing bi-ases when ex-am-in-ing
  []
@@ -1207,16 +1207,12 @@ Underfull \hbox (badness 1831) in paragraph at lines 29--30
 \T1/futs/m/n/10.95 per-form-ing salience mod-els ac-cord-ing to the
  []
 
-[11]
+
 Underfull \hbox (badness 1490) in paragraph at lines 31--32
 \T1/futs/m/n/10.95 cades be-ing less likely to be to a salient re-
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [12 <./figs/heatmap_figure.pdf>] <figs/SaccadeSaliency.pdf, id=167, 289.08pt x
- 505.89pt>
+[12] <figs/SaccadeSaliency.pdf, id=167, 289.08pt x 505.89pt>
 File: figs/SaccadeSaliency.pdf Graphic file (type pdf)
 
 <use figs/SaccadeSaliency.pdf>
@@ -1245,11 +1241,12 @@ Underfull \hbox (badness 1838) in paragraph at lines 60--61
 []\T1/futs/m/n/10.95 When com-pared to the em-pir-i-cal dis-tri-bu-
  []
 
-[13 <./figs/SaccadeSaliency.pdf>]
+
 Underfull \hbox (badness 1490) in paragraph at lines 62--63
 []\T1/futs/m/n/10.95 Another dis-crep-ancy be-tween the syn-thetic
  []
 
+[13 <./figs/SaccadeSaliency.pdf>]
 <../scripts/coarse2fine/figs/xFixComparison.pdf, id=181, 216.81pt x 216.81pt>
 File: ../scripts/coarse2fine/figs/xFixComparison.pdf Graphic file (type pdf)
 
@@ -1298,11 +1295,8 @@ Underfull \hbox (badness 1881) in paragraph at lines 168--169
 \T1/futs/m/n/10.95 as a ro-bust prior for the image-independent
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [14 <./figs/DownLeft.png (PNG copy)> <./figs/Center.png (PNG copy)> <./figs/Up
-Right.png (PNG copy)>]
+[14 <./figs/DownLeft.png (PNG copy)> <./figs/Center.png (PNG copy)> <./figs/UpR
+ight.png (PNG copy)>]
 Underfull \hbox (badness 10000) in paragraph at lines 176--177
 \T1/futs/m/n/10.95 Tatler and Vin-cent [2009] have pre-vi-ously
  []
@@ -1458,7 +1452,7 @@ putb8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/utopia/putr8a.
 pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on saccadicBiases.pdf (22 pages, 26187955 bytes).
+Output written on saccadicBiases.pdf (22 pages, 26191419 bytes).
 PDF statistics:
  268 PDF objects out of 1000 (max. 8388607)
  171 compressed objects within 2 object streams

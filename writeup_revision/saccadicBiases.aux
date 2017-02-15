@@ -89,23 +89,25 @@
 \newlabel{fig:nParamsOverSpace}{{3}{8}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Results}{8}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}The Effect of Task}{8}}
-\citation{clarke-tatler2014}
-\citation{clarke-tatler2014}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Modeling results. We can see that the the flow model offers a much larger improvement in terms of log-likelihood than either of the central bias models. This holds even in datasets which do not show a strong central bias.}}{9}}
 \newlabel{fig:nFlowDevAll}{{4}{9}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}Using Biases}{9}}
-\newlabel{sec:usingbiases}{{3}{9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Gaze landscapes}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces ROC analysis.}}{10}}
-\newlabel{fig:nFlowROC}{{5}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The influence of task on the extent to which saccadic flow can explain scan-paths for the (a) \cite  {koehler2014} and (b) \cite  {mills2011} datasets.}}{10}}
-\newlabel{fig:taskLLH}{{6}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces ROC analysis for training and tests sets. We can see that in all cases, the flow model outperforms the central bias models.}}{9}}
+\newlabel{fig:nFlowROC}{{5}{9}}
+\citation{clarke-tatler2014}
+\citation{clarke-tatler2014}
 \citation{clarke2013}
 \citation{clarke-tatler2014}
 \citation{clarke2013}
 \citation{clarke-tatler2014}
 \citation{clarke-tatler2014}
 \citation{clarke2013}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Using Biases}{10}}
+\newlabel{sec:usingbiases}{{3}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Gaze landscapes}{10}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The influence of task on the extent to which saccadic flow can explain scan-paths for the (a) \cite  {koehler2014} and (b) \cite  {mills2011} datasets.}}{11}}
+\newlabel{fig:taskLLH}{{6}{11}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Examples of fixation heatmap plots from \cite  {clarke2013}. The same fixations are presented where the Gaussian at each fixation is weighted by the duration of the fixation, the centre bias model from \cite  {clarke-tatler2014} , and the saccadic flow model presented in this paper.}}{11}}
+\newlabel{fig:adjustedHeatmaps}{{7}{11}}
 \citation{parkhurst2002}
 \citation{henderson2007}
 \citation{tatler2007}
@@ -114,10 +116,8 @@
 \citation{riche2013}
 \citation{harel2006}
 \citation{mit-saliency-benchmark,judd2012}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Removing biases when examining image-dependent information}{11}}
 \citation{clarke-tatler2014}
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces Examples of fixation heatmap plots from \cite  {clarke2013}. The same fixations are presented where the Gaussian at each fixation is weighted by the duration of the fixation, the centre bias model from \cite  {clarke-tatler2014} , and the saccadic flow model presented in this paper.}}{12}}
-\newlabel{fig:adjustedHeatmaps}{{7}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Removing biases when examining image-dependent information}{12}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Saccadic Flow as a Generative Model}{13}}
 \newlabel{sec:humanComp}{{3.3}{13}}
 \@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces Saccades binned by probability of them occurring in 5\% bins against the proportion of those fixations that fell in a 20\% thresholded region of AWS, RARE and GBVS salience maps.}}{13}}
@@ -134,6 +134,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Saccadic Flow across different tasks}{14}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Discussion}{14}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{14}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Using Saccadic Flow}{14}}
 \citation{clarke-tatler2014}
 \citation{tatler-vincent2009}
 \citation{tatler2007}
@@ -141,7 +142,6 @@
 \citation{leMeur-coutrot2016}
 \citation{antes1974}
 \citation{tatler2008}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Using Saccadic Flow}{15}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Comparisons to existing models}{15}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Limitations of Saccadic Flow}{15}}
 \citation{clarke2013}
@@ -188,6 +188,7 @@
 \bibcite{brandt1945}{{7}{1945}{{Brandt}}{{}}}
 \bibcite{buswell1935}{{8}{1935}{{Buswell}}{{}}}
 \bibcite{mit-saliency-benchmark}{{9}{}{{Bylinskii et~al.}}{{Bylinskii, Judd, Borji, Itti, Durand, Oliva, and Torralba}}}
+\bibcite{canosa2003}{{10}{2003}{{Canosa et~al.}}{{Canosa, Pelz, Mennie, and Peak}}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Conclusions}{16}}
 \@writefile{toc}{\contentsline {section}{\numberline {A}Dataset Details}{16}}
 \@writefile{toc}{\contentsline {section}{\numberline {B}Analysis of \cite  {borji2015} dataset}{16}}
@@ -195,7 +196,6 @@
 \newlabel{tab:datasets}{{1}{17}}
 \@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Details of the experimental setups in each of the 10 datasets analysed in the present study. We provide only information reported in the original articles. Question marks indicate information not reported in the original article. *For the Judd et al dataset images varied in pixel dimensions but the majority were at 1024 x 768.}}{17}}
 \newlabel{tab:setuptable}{{2}{17}}
-\bibcite{canosa2003}{{10}{2003}{{Canosa et~al.}}{{Canosa, Pelz, Mennie, and Peak}}}
 \bibcite{clarke-hunt2015}{{11}{2015}{{Clarke and Hunt}}{{}}}
 \bibcite{clarke2013}{{12}{2013}{{Clarke et~al.}}{{Clarke, Coco, and Keller}}}
 \bibcite{clarke-tatler2014}{{13}{2014}{{Clarke and Tatler}}{{}}}
