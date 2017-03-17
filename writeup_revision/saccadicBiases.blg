@@ -24,6 +24,8 @@ Repeated entry---line 1055 of file literature.bib.bib
  : @article{brandt1945
  :                    ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "smit1987parametric"
+Warning--I didn't find a database entry for "viviani1977curvature"
 Name 1 in "Green, D. M., and Swets, J. A." has a comma at the end for entry green-swets1966
 while executing---line 1347 of file plainnat.bst
 Name 1 in "Green, D. M., and Swets, J. A." has a comma at the end for entry green-swets1966
@@ -42,45 +44,45 @@ while executing---line 1429 of file plainnat.bst
 Too many commas in name 2 of "Henderson, J M and Brockmole, J R, Castelhano, M S and Mack, M" for entry henderson2007
 while executing---line 1429 of file plainnat.bst
 Warning--can't use both volume and number fields in lee2002
-You've used 70 entries,
+You've used 71 entries,
             2773 wiz_defined-function locations,
-            980 strings with 16874 characters,
-and the built_in function-call counts, 34414 in all, are:
-= -- 3064
-> -- 2118
+            987 strings with 17063 characters,
+and the built_in function-call counts, 34970 in all, are:
+= -- 3113
+> -- 2157
 < -- 35
-+ -- 711
-- -- 640
-* -- 2989
-:= -- 5295
-add.period$ -- 216
-call.type$ -- 70
-change.case$ -- 419
-chr.to.int$ -- 69
-cite$ -- 144
-duplicate$ -- 1488
-empty$ -- 2734
-format.name$ -- 752
-if$ -- 7145
++ -- 724
+- -- 652
+* -- 3043
+:= -- 5381
+add.period$ -- 219
+call.type$ -- 71
+change.case$ -- 426
+chr.to.int$ -- 70
+cite$ -- 146
+duplicate$ -- 1509
+empty$ -- 2775
+format.name$ -- 765
+if$ -- 7258
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 71
-newline$ -- 360
-num.names$ -- 282
-pop$ -- 768
+missing$ -- 72
+newline$ -- 365
+num.names$ -- 286
+pop$ -- 780
 preamble$ -- 1
-purify$ -- 352
+purify$ -- 358
 quote$ -- 0
-skip$ -- 1148
+skip$ -- 1164
 stack$ -- 0
-substring$ -- 1420
-swap$ -- 123
+substring$ -- 1447
+swap$ -- 124
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 755
+type$ -- 766
 warning$ -- 4
-while$ -- 315
+while$ -- 320
 width$ -- 0
-write$ -- 916
+write$ -- 929
 (There were 12 error messages)

@@ -30,7 +30,7 @@
 
 \title{The saccadic flow baseline: Accounting for image-independent biases in fixation behaviour }
 
-\author{Alasdair D. F. Clarke, Matthew J. Stainer, Ben Tatler \& Amelia R. Hunt}
+\author{Alasdair D. F. Clarke, Matthew J. Stainer, Benjamin W. Tatler \& Amelia R. Hunt}
 
 \begin{document}
 
@@ -75,7 +75,7 @@ We also add four new datasets to the ten used by \cite{clarke-tatler2014}. These
 \item \cite{borji2015} recently released a very large ($\approx 650,000$ fixations, 2000 images) dataset collected over twenty different stimuli types. Given the size of this dataset, and the wide-screen 16:9 aspect ratio, the evaluations on this dataset are presented separately, and split by stimuli class.
 s
 \end{itemize}
-This gives us a relatively homogeneous training test, and a more heterogeneous test set. Hence, good performance on the test sets will likely be indicative of a generalisable result. An overview of the datasets used is given in Appendix Tables \ref{tab:datasets} and \ref{tab:setuptable}. 
+This gives us a relatively homogeneous training set, and a more heterogeneous test set. Hence, good performance on the test sets will likely be indicative of a generalisable result. An overview of the datasets used is given in Appendix Tables \ref{tab:datasets} and \ref{tab:setuptable}. 
 
 \subsubsection{Pre-processing}
 
@@ -92,7 +92,7 @@ As the first step in modelling saccadic flow, we will update the central bias fr
 \subsection{Left v Right}
 \label{sec:LeftRight}
 
-As mentioned above, the downside of mirroring the saccades in our dataset is that our bias model will be symmetric and will be unable to exhibit the leftward bias observed in human fixation data. Here, we investigate the size of the leftwards bias \textbf{(in the unmirrored data)} by plotting how the distribution of horizontal fixation location varies with fixation number (Figure \ref{fig:leftrightDist}). We can see that while we do have a leftwards bias in our data, it is a small effect that only last for the first five fixations after scene onset. Furthermore, there is no sign of an asymmetry in the vertical direction. Fitting an ANOVA to predict the $x$-coordinates of the fixations given the fixation number gives adjusted $R^2=0.004$. If we limit our analysis to the first five fixations in each scanpath, this only increases to adjusted $R^2=0.01$. The small size of the $R^2$ in both instances suggests that \textbf{by ignoring the leftwards bias, we lose little we lose little explanatory power. This brings the advantage of then allowing us to treat everything as symmetrical, which simplifies the model and} increases the amount of data available (by mirroring fixations). 
+As mentioned above, the downside of mirroring the saccades in our dataset is that our bias model will be symmetric and will be unable to exhibit the leftward bias observed in human fixation data. Here, we investigate the size of the leftwards bias \textbf{(in the unmirrored data)} by plotting how the distribution of horizontal fixation location varies with fixation number (Figure \ref{fig:leftrightDist}). We can see that while we do have a leftwards bias in our data, it is a small effect that only last for the first five fixations after scene onset. Furthermore, there is no sign of an asymmetry in the vertical direction. Fitting an ANOVA to predict the $x$-coordinates of the fixations given the fixation number gives adjusted $R^2=0.004$. If we limit our analysis to the first five fixations in each scanpath, this only increases to adjusted $R^2=0.01$. The small size of the $R^2$ in both instances suggests that \textbf{by ignoring the leftwards bias, we lose little explanatory power. This brings the advantage of then allowing us to treat everything as symmetrical, which simplifies the model and} increases the amount of data available (by mirroring fixations). 
 
 \begin{figure}
 \centering
@@ -106,7 +106,7 @@ As mentioned above, the downside of mirroring the saccades in our dataset is tha
 \subsection{Saccadic Flow}
 \label{ModellingFlow}
 
-Saccadic flow can be thought of as a generalisation of the central bias., and is illustrated in Figure \ref{fig:empiricalSaccadicFlow}. Instead of computing the distribution of all saccadic endpoints in a dataset, we look at the distribution of saccade endpoints given the start points. i.e.,for a saccade from $(x_0, y_0)$ to $(x_1, y_1)$ we want to model $p(x_1,y_1|x_0, y_0)$.
+Saccadic flow can be thought of as a generalisation of the central bias, and is illustrated in Figure \ref{fig:empiricalSaccadicFlow}. Instead of computing the distribution of all saccadic endpoints in a dataset, we look at the distribution of saccade endpoints given the start points. i.e.,for a saccade from $(x_0, y_0)$ to $(x_1, y_1)$ we want to model $p(x_1,y_1|x_0, y_0)$.
 
 \subsubsection{Modelling}
 
@@ -121,7 +121,7 @@ Multivariate polynomial regression was then used to fit 4-th order polynomials t
 \label{fig:nParamsOverSpace}
 \end{figure*}
 
-\textbf{Evaluation will be done using bootstrapping (10 repetitions with $N=1000$). Not only does  this allow for confidence intervals to be estimated for our result, but it also allows us to sidestep the problems us using datasets of very different sizes: likelihood scores are heavily influenced by the number of points included in the analysis, so having this fixed at $N=1000$ means we can compare across datasets more meaningfully. We chose to evaluate how well the various models work by simply calculating the likelihood, $p(\text{data}|\text{model})$, for each dataset, and reporting the difference in log likelihood between a uniform distribution and our models. As the number of datapoints is much larger than the number of parameters, log likelihood appropriates AIC. We also report an receiver operator curve \citep{green-swets1966} analysis in which we look at how often saccades land within the most likely $x\%$ of the prediction maps from the different bias models.}
+\textbf{Evaluation will be done using bootstrapping (10 repetitions with $N=1000$). Not only does  this allow for confidence intervals to be estimated for our result, but it also allows us to sidestep the problems of using datasets of very different sizes: likelihood scores are heavily influenced by the number of points included in the analysis, so having this fixed at $N=1000$ means we can compare across datasets more meaningfully. We chose to evaluate how well the various models work by simply calculating the likelihood, $p(\text{data}|\text{model})$, for each dataset, and reporting the difference in log likelihood between a uniform distribution and our models. As the number of datapoints is much larger than the number of parameters, log likelihood approximates AIC. We also report a receiver operator curve \citep{green-swets1966} analysis in which we look at how often saccades land within the most likely $x\%$ of the prediction maps from the different bias models.}
 
 \subsubsection{Results}
 
@@ -137,18 +137,18 @@ It is interesting to note that \textbf{the flow model still does a good job of a
 \label{fig:nFlowDevAll}
 \end{figure}
 
-\begin{figure}
+\begin{figure*}
 \centering
-\subfigure[][Training datasets]{ \includegraphics[width=7cm]{../scripts/flow/figs/llh_training_ROC.pdf}}
-\subfigure[][Test datasets]{ \includegraphics[width=7cm]{../scripts/flow/figs/llh_testing_ROC.pdf}}
-\caption{ROC analysis for training and tests sets. We can see that in all cases, the flow model outperforms the central bias models.}
+\subfigure[][Training datasets]{ \includegraphics[width=12cm]{../scripts/flow/figs/llh_training_ROC.pdf}}
+\subfigure[][Test datasets]{ \includegraphics[width=12cm]{../scripts/flow/figs/llh_testing_ROC.pdf}}
+\caption{ROC analysis.}
 \label{fig:nFlowROC}
-\end{figure}
+\end{figure*}
 
 
 \subsubsection{The Effect of Task}
 
-We now examine how the ability of saccadic flow to explain different scanpaths depends on the observers' task. We will make use of datasets from \cite{mills2011} and \cite{koehler2014}. To look at this we computed the mean log likelihood over each scan-path in these datasets (see Figure \ref{fig:taskLLH}). We can see that while task has a slight influence over the mean log likelihood for a scan-path, there is a large degree of overlap in the distributions. Additionally, we can see that the relative likelihood of scan-paths made during visual search compared to other tasks varies between datasets.
+We now examine how the ability of saccadic flow to explain different scanpaths depends on the observers' task. We will make use of datasets from \cite{mills2011} and \cite{koehler2014}. To look at this we computed the mean log likelihood over each scan-path in these datasets (see Figure \ref{fig:taskLLH}). We can see that while task has a slight influence over the mean log likelihood for a scan-path, there is a large degree of overlap in the distributions. Additionally, we can see that the relative likelihood of scan-paths made during visual search compared to other tasks varies between datasets. \textbf{These results suggest that at least for the datasets considered here, the extent to which saccadic flow is able to explain the observed scan paths is not strongly influenced by the observer's task.}
 
 
 \begin{figure*}
@@ -159,7 +159,8 @@ We now examine how the ability of saccadic flow to explain different scanpaths d
 \label{fig:taskLLH}
 \end{figure*}
 
-
+\subsubsection{Saccadic flow and underlying physiology}
+\textbf{The saccadic flow model that we develop and evaluate here is a statistical model developed based on fitting empirical data. As such it does not make explicit any underlying physiological constraints or neurophysiological architecture. However, by constructing the model from observed data, these underlying constraints are necessarily present in the statistical model that we present here. The anisotropies in saccade directions that underlie the construction of the saccadic flow model are likely to reflect a combination of responses to the image and physiological constraints imposed by the arrangement and action of oculomotor muscles \cite{smit1987parametric,viviani1977curvature}. Similarly, the skew in saccade amplitudes toward favouring small amplitude saccades may reflect aspects of the drop-off in acuity limits with distance into the peripheral retina. Thus while these biomechanics and neurophysiological factors are not explicit in saccadic flow they necessarily inform the construction and thus any predictions arising from the model.}
 
 \input{UsingFlow}
 
@@ -171,6 +172,8 @@ There has been much effort to generate a predictive model of human eye movements
 There are two ways in which models of eye movements may benefit from including such information. First, models may include saccadic flow in their calculation of spatial prediction. Understanding where someone is currently fixating in an image appears to dramatically influence where they will go next; as this saccadic flow can be parametrically estimated from any point on an image, it can be used to weight models of low-level (i.e. visual conspicuity) and high-level (i.e. semantic interest) features. Thus, whether someone fixates one of two equally conspicuous, equally interesting objects may be simply determined by the way that the eyes \textit{tend} to move. 
 
 The second potential utility of saccadic flow is to generate realistic control fixations with which to evaluate observed fixation data. In this way, saccadic flow can be thought of as a partner to the \cite{clarke-tatler2014} central bias, and we expect that in some cases, the simpler central bias will be sufficient (for example, when examining the overall distribution of fixations rather than the sequence of saccades). However we have demonstrated that while the flow model requires more parameters (we use 16 coefficients to track how each of the five truncated Gaussian parameters vary as as a function of $(x,y)$ - although many of them are $\approx 0$), it generalises well from one dataset to another and is a far better baseline for modelling a scan-path than the central bias.
+
+\textbf{In the present paper we have provided illustrative examples of how saccadic flow can be used to improve our understanding of eye guidance in scene viewing. By producing heatmaps that reflect fixation likelihood under the behaviour biases captured in saccadic flow we can produce landscapes that better reflect the image-dependent biases. Using these to base subsequent analysis of scene content at these locations or of differences in fixation behaviour under different tasks allows the researcher to focus analytical efforts on the viewing behaviour that is unlikely to arise from image-independent biases in how observers move their eyes. Given the prominence of image-independent biases in observed eye movement behaviour \cite{tatler-vincent2009}, removing these biases appropriately from analyses is important for effective evaluation of changes in behaviour arising from viewed content or behavioural task. Similarly, any attempt to model the involvement of factors such as image salience in eye guidance, should remove image-independent biases from modelling efforts in order to appropriately evaluate the role of any features under investigation. At present removing the central bias from such modelling efforts is widely recognised \cite{borji2013,Tatler2011}, but we have shown in the present work that saccadic flow offers a better explanation of underlying biases in fixation behaviour and therefore using saccadic flow to remove image-independent biases form datasets of eye movements will be an important improvement for testing existing models of fixation selection, and for better developing new models. Thus while the present work does not provide a direct answer to what factors govern scene inspection it provides a vital tool for the field to allow this question to be addressed more effectively and appropriately than is currently possible.}
 
 \subsection{Comparisons to existing models}
 \citet{tatler-vincent2009} have previously demonstrated that representing saccade probabilities based on the oculomotor biases in eye movements can account for human fixation behaviour during free-viewing reasonably well. Here we extend this concept to spatially adapt the prediction of saccade depending on where in a scene the preceding fixation lies. This is an important step, as it aligns the concept of behavioural biases in eye movement with the central bias \citep{tatler2007}, whereby saccades are likely to be directed towards the centre of the image. An advantage over the simpler central bias of Clarke and Tatler (2014) is that Saccadic Flow does not suppress fixations in the centre of the screen (where interesting content tends to lie), and sets of saccades generated from the Saccadic Flow model will produce the same centrally biased tendencies as observed fixations.
@@ -191,7 +194,7 @@ And mention grants.
 
 \section*{Author Contribution}
 
-All authors co-wrote the paper. The saccadic flow model was developed by ADFC. The gaze landscapes and saliency analysis were done by MJS.
+All authors were involved in developing the ideas behind this work and co-wrote the paper. The saccadic flow model was developed by ADFC. The gaze landscapes and saliency analysis were done by MJS.
 
 \appendix
 \input{Dataset}

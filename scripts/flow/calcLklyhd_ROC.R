@@ -7,7 +7,7 @@ pRegThreshold = seq(0, 1, 0.025)
 regTresh_N_samples = 1000
 
 N = 1000 # for bootstrapping
-n_Rep = 1
+n_Rep = 10
 
 source('flowDistFunctions.R')
 
@@ -163,7 +163,8 @@ pltResults <- function(dat, nr)
 	plt = plt + scale_fill_brewer(palette="Set2") + theme_bw()
     plt = plt + scale_y_continuous(name= 'prop fixations falling inside predicted area', expand=c(0,0))
 	plt = plt + scale_x_continuous(name='prop of stimulus area predicted', expand=c(0,0))
-	plt = plt + geom_abline(slope=1, linetype=2)
+	plt = plt + geom_abline(slope=1, linetype=2) + theme(legend.justification=c(1,0), legend.position=c(1,0))
+
 	# plt = plt + guides(fill=guide_legend(title="bias model"))
 
 
