@@ -34,17 +34,25 @@ dat = filter(dat, n<15, is.finite(x1), is.finite(y1), is.finite(x2), is.finite(y
 asp.rat = 1
 
 
+# CT2017
+mu = c(0,0)
+sigma = array(c(0.32,0,0,0.45*0.32), dim=c(2,2))
+dat$llhCT2017 = (dtmvnorm(cbind(dat$x2, dat$y2), mu, sigma,
+lower=c(-1,-asp.rat),
+upper=c(1,asp.rat), log=T))
+
 # get flow over scanpaths
 dat$llh= 0
 for (person in levels(dat$Sub))
 {
 	for (image in levels(dat$Image))
 	{
+		
 		scanpath = filter(dat, Sub==person, Image==image)
 		if (nrow(scanpath)>0)
 		{
 			scanpath = calcLLHofSaccades(scanpath, flowModel='tN')
-			dat$llh[which(dat$Sub==person & dat$Image==image)] = scanpath$llh
+			dat$llhFlow[which(dat$Sub==person & dat$Image==image)] = scanpath$llh
 		}
 	}
 }

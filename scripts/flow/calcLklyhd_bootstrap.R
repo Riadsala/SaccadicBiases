@@ -5,7 +5,7 @@ library(matrixcalc)
 
 # sample n saccades 
 		N = 1000 # for bootstrapping
-		n_Rep = 10
+		n_Rep = 100
 
 
 source('flowDistFunctions.R')
@@ -119,7 +119,7 @@ makeLLHfig <- function(datasets, nr)
 	plt = plt + geom_point() + geom_errorbar()
 	plt = plt + facet_wrap(~dataset, nrow=nr)
 	plt = plt + scale_fill_brewer(palette="Set2") + theme_bw()
-    plt = plt + scale_y_continuous(name= 'log likelihood ratio', limits=c(-200,1000))
+    plt = plt + scale_y_continuous(name= 'log likelihood ratio')
 	plt = plt + scale_x_discrete(name='bias model')
 	plt = plt + geom_hline(yintercept=0)
 	# plt = plt + guides(fill=guide_legend(title="bias model"))

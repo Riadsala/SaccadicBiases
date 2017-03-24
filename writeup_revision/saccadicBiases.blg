@@ -3,29 +3,27 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: saccadicBiases.aux
 The style file: plainnat.bst
 Database file #1: literature.bib.bib
-I was expecting a `,' or a `}'---line 517 of file literature.bib.bib
+I was expecting a `,' or a `}'---line 540 of file literature.bib.bib
  :   
  :   year = {2016},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 543 of file literature.bib.bib
+Repeated entry---line 566 of file literature.bib.bib
  : @article{dodd2009
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 647 of file literature.bib.bib
+Repeated entry---line 670 of file literature.bib.bib
  : @book{green-swets1966
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 934 of file literature.bib.bib
+Repeated entry---line 957 of file literature.bib.bib
  : @inproceedings{harel2006
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1055 of file literature.bib.bib
+Repeated entry---line 1078 of file literature.bib.bib
  : @article{brandt1945
  :                    ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "smit1987parametric"
-Warning--I didn't find a database entry for "viviani1977curvature"
 Name 1 in "Green, D. M., and Swets, J. A." has a comma at the end for entry green-swets1966
 while executing---line 1347 of file plainnat.bst
 Name 1 in "Green, D. M., and Swets, J. A." has a comma at the end for entry green-swets1966
@@ -44,45 +42,45 @@ while executing---line 1429 of file plainnat.bst
 Too many commas in name 2 of "Henderson, J M and Brockmole, J R, Castelhano, M S and Mack, M" for entry henderson2007
 while executing---line 1429 of file plainnat.bst
 Warning--can't use both volume and number fields in lee2002
-You've used 71 entries,
+You've used 73 entries,
             2773 wiz_defined-function locations,
-            987 strings with 17063 characters,
-and the built_in function-call counts, 34970 in all, are:
-= -- 3113
-> -- 2157
+            995 strings with 17287 characters,
+and the built_in function-call counts, 36000 in all, are:
+= -- 3207
+> -- 2217
 < -- 35
-+ -- 724
-- -- 652
-* -- 3043
-:= -- 5381
-add.period$ -- 219
-call.type$ -- 71
-change.case$ -- 426
-chr.to.int$ -- 70
-cite$ -- 146
-duplicate$ -- 1509
-empty$ -- 2775
-format.name$ -- 765
-if$ -- 7258
++ -- 744
+- -- 670
+* -- 3141
+:= -- 5537
+add.period$ -- 225
+call.type$ -- 73
+change.case$ -- 438
+chr.to.int$ -- 72
+cite$ -- 150
+duplicate$ -- 1551
+empty$ -- 2859
+format.name$ -- 785
+if$ -- 7470
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 72
-newline$ -- 365
-num.names$ -- 286
-pop$ -- 780
+missing$ -- 74
+newline$ -- 375
+num.names$ -- 294
+pop$ -- 800
 preamble$ -- 1
-purify$ -- 358
+purify$ -- 368
 quote$ -- 0
-skip$ -- 1164
+skip$ -- 1194
 stack$ -- 0
-substring$ -- 1447
-swap$ -- 124
+substring$ -- 1507
+swap$ -- 126
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 766
+type$ -- 788
 warning$ -- 4
-while$ -- 320
+while$ -- 330
 width$ -- 0
-write$ -- 929
+write$ -- 955
 (There were 12 error messages)

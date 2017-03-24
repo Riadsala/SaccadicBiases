@@ -7,7 +7,7 @@ pRegThreshold = seq(0, 1, 0.025)
 regTresh_N_samples = 1000
 
 N = 1000 # for bootstrapping
-n_Rep = 10
+n_Rep = 1
 
 source('flowDistFunctions.R')
 
@@ -152,7 +152,7 @@ pltResults <- function(dat, nr)
 			upper = meanAcc+1.96*stderr,
 			lower = meanAcc-1.96*stderr))	
 
-	levels(ClassAccResults2$biasmodel)[3] = "flow"
+	levels(ClassAccResults2$biasmodel)[2] = "flow"
 
 	ClassAccResults2$biasmodel = factor(ClassAccResults2$biasmodel, levels(ClassAccResults2$biasmodel)[c(2,1,3)])
 

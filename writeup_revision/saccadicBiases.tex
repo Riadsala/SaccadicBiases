@@ -87,7 +87,7 @@ When fitting saccadic flow models, we \textit{mirrored} the set of fixations, by
 \subsection{Truncated Central Bias}
 \label{sec:truncatedCentral}
 
-As the first step in modelling saccadic flow, we will update the central bias from \cite{clarke-tatler2014} and use a truncated normal distribution. This is very straightforward. Re-fitting a multivariate Gaussian to the data reduces the deviance in the central bias model by $4.4\%$. Using a truncated Gaussian gives us an improvement of $12\%$. We can round the truncated Gaussian model to $\mu = (0,0)$, with a covariance matrix of $(0.32, 0; 0, 0.144)$ with no loss of precision. i.e. this is identical to \cite{clarke-tatler2014} except with $\sigma=0.32$ rather than $0.22$.
+As the first step in modelling saccadic flow, we will update the central bias from \cite{clarke-tatler2014} and use a truncated normal distribution. This is straightforward. Re-fitting a multivariate Gaussian to the data reduces the deviance in the central bias model by $4.4\%$. Using a truncated Gaussian gives us an improvement of $12\%$. We can round the truncated Gaussian model to $\mu = (0,0)$, with a covariance matrix of $(0.32, 0; 0, 0.144)$ with no loss of precision. i.e. this is identical to \cite{clarke-tatler2014} except with $\sigma=0.32$ rather than $0.22$. \textbf{We will use the abbreviations CT2014 and CT2017 to refer to these models.}
 %why didn't Clarke and Tatler (2014) do this?
 \subsection{Left v Right}
 \label{sec:LeftRight}
@@ -121,7 +121,7 @@ Multivariate polynomial regression was then used to fit 4-th order polynomials t
 \label{fig:nParamsOverSpace}
 \end{figure*}
 
-\textbf{Evaluation will be done using bootstrapping (10 repetitions with $N=1000$). Not only does  this allow for confidence intervals to be estimated for our result, but it also allows us to sidestep the problems of using datasets of very different sizes: likelihood scores are heavily influenced by the number of points included in the analysis, so having this fixed at $N=1000$ means we can compare across datasets more meaningfully. We chose to evaluate how well the various models work by simply calculating the likelihood, $p(\text{data}|\text{model})$, for each dataset, and reporting the difference in log likelihood between a uniform distribution and our models. As the number of datapoints is much larger than the number of parameters, log likelihood approximates AIC. We also report a receiver operator curve \citep{green-swets1966} analysis in which we look at how often saccades land within the most likely $x\%$ of the prediction maps from the different bias models.}
+\textbf{Evaluation will be done using bootstrapping (100 repetitions with $N=1000$). Not only does  this allow for confidence intervals to be estimated for our result, but it also allows us to sidestep the problems of using datasets of very different sizes: likelihood scores are heavily influenced by the number of points included in the analysis, so having this fixed at $N=1000$ means we can compare across datasets more meaningfully. We chose to evaluate how well the various models work by simply calculating the likelihood, $p(\text{data}|\text{model})$, for each dataset, and reporting the difference in log likelihood between a uniform distribution and our models. As the number of datapoints is much larger than the number of parameters, log likelihood approximates AIC. We also report a receiver operator curve (ROC) \citep{green-swets1966} analysis in which we look at how often saccades land within the most likely $x\%$ of the prediction maps from the different bias models. This analysis was done on the complete datasetsm without bootstrapping.}
 
 \subsubsection{Results}
 
@@ -137,13 +137,13 @@ It is interesting to note that \textbf{the flow model still does a good job of a
 \label{fig:nFlowDevAll}
 \end{figure}
 
-\begin{figure*}
+\begin{figure}
 \centering
-\subfigure[][Training datasets]{ \includegraphics[width=12cm]{../scripts/flow/figs/llh_training_ROC.pdf}}
-\subfigure[][Test datasets]{ \includegraphics[width=12cm]{../scripts/flow/figs/llh_testing_ROC.pdf}}
-\caption{ROC analysis.}
+\subfigure[][Training datasets]{ \includegraphics[width=7cm]{../scripts/flow/figs/llh_training_ROC.pdf}}
+\subfigure[][Test datasets]{ \includegraphics[width=7cm]{../scripts/flow/figs/llh_testing_ROC.pdf}}
+\caption{ROC analysis comparing the flow model to the central bias.}
 \label{fig:nFlowROC}
-\end{figure*}
+\end{figure}
 
 
 \subsubsection{The Effect of Task}
@@ -181,11 +181,15 @@ The second potential utility of saccadic flow is to generate realistic control f
 The work presented here improves on recent models by \cite{clarke2016,leMeur-coutrot2016} by offering a parametric model that avoids coarsely partitioning the data into large bins. We have demonstrated that the Saccadic Flow model generalises well to unseen test datasets, although this is likely to hold only for stimuli that are broadly similar to the images used to train the model (photographs of natural and manmade scenes). As we move away from photographic images to stimuli such as computer interfaces, we would expect the Flow model to offer a poor account of the data \citep{leMeur-coutrot2016}. While we have shown that the model performs well over a small range of tasks (free-viewing, scene description, object naming and visual search), we do observe differences in the log-likelihood when different tasks are carried out while viewing the same images. 
 
 \subsection{Limitations of Saccadic Flow}
+<<<<<<< Updated upstream
 There are four main limitations to our modelling work. Firstly, by using a truncated Gaussian we are unable to capture the skewed nature of the distribution of saccades originating from the corners (see Figure  \ref{fig:empiricalSaccadicFlow}). We experimented with fitting a skew-normal distribution using the \texttt{sn} package for \texttt{R}, but met with limited success due to having to deal with the image boundaries. We expect this is one of the reasons why our saccadic flow model generates saccades with, on average, greater amplitudes than those seen in empirical distributions.  The second simplification we make is to not include the leftwards biases in saccadic behaviour. However, our results suggest that this factor has a relatively small effect on saccades, and is important only for the first couple of saccades. Similarly, our model does not take into account coarse-to-fine biases. Across scene viewing, human fixations tend to increase in duration, and saccade amplitudes tend to decrease as the observer's understanding of the image changes \citep{antes1974}. Finally, Saccadic Flow does not take into account the systematic relationship between successive fixations \citep{tatler2008}. For example, people tend to make consecutive saccades of similar amplitudes, consecutive fixations of similar durations, and tend to make movements in the same direction as the previous saccade \citep{macinnes2014}.
+=======
+There are five main limitations to our modelling work. Firstly, by using a truncated Gaussian we are unable to capture the skewed nature of the distribution of saccades originating from the corners (see Figure  \ref{fig:empiricalSaccadicFlow}). We experimented with fitting a skew-normal distribution using the \texttt{sn} package for \texttt{R}, but met with limited success due to having to deal with the image boundaries. We expect this is one of the reasons why our saccadic flow model generates saccades with an average greater amplitudes than those seen in empirical distributions.  The second simplification we make is to not take the leftwards biases in saccadic behaviour. However, our results suggest that this factor has a relatively small effect on saccades, and is important only for the first couple of saccades. Similarly, our model does not take into account coarse-to-fine biases. Across scene viewing, human fixations tend to increase in duration, and saccade amplitudes tend to decrease as the observer's understanding of the image changes \citep{antes1974}. Finally, Saccadic Flow works does not take into account the systematic relationship between successive fixations \citep{tatler2008}. For example, people tend to make consecutive saccades of similar amplitudes, consecutive fixations of similar durations and tend to make movements in the same direction as the previous saccade. \textbf{Finally our model only considers the immediately preceding fixation as having an effect. However, with sufficient data, the modelling framework here could be extended to take the previous $n$ fixations into account. Furthermore, evidence from the visual search literature suggests that this limitation is not important for modelling some aspects of human behaviour:  while both \cite{clarke2016}.}
+>>>>>>> Stashed changes
 
 
 \subsection{Conclusions}
-Behavioural biases in eye movement are prevalent during scene viewing. Our saccadic flow model allows calculation of saccade likelihood across an image based on empirical data of how the eye tends to move in many different scene viewing conditions, with flow providing a strong fit to several datasets. There are a number of ways that flow can be developed, and we propose that gaining a better understanding of the saccadic biases underlying fixation behaviour can only be a positive for our search to understand why people look where they look. Saccadic flow consistently explains more variance than uniform and central bias models. This suggests that our model is robust, generalisable and should be of use to researchers interested in eye movements in a variety of scene-viewing paradigms. 
+Behavioural biases in eye movement are prevalent during scene viewing. Our saccadic flow model allows calculation of saccade likelihood across an image based on empirical data of how the eye tends to move in many different scene viewing conditions, with flow providing a strong fit to several datasets. There are a number of ways that flow can be developed, and we propose that gaining a better understanding of the saccadic biases underlying fixation behaviour can only be a positive for our search to understand why people look where they look. \textbf{While the central bias model may be a better choice in some contexts, (i.e., when the analysis is in terms of unordered fixation coordinates), we recommend that using saccadic flow were possible. Flow consistently explains more variance than uniform and CT2014/17 models while also accounting for the central bias.} This suggests that our model is robust, generalisable and should be of use to researchers interested in eye movements in a variety of scene-viewing paradigms. 
 
 
 \section*{Acknowledgements}
@@ -202,10 +206,11 @@ All authors were involved in developing the ideas behind this work and co-wrote 
 
 \section{Analysis of \cite{borji2015} dataset}
 
+Here (Figure \ref{fig:nFlowDevBorji}) are the results for evaluating the flow model on the dataset from \cite{borji2015}.
 
 \begin{figure*}
 \centering
- \includegraphics[width=13cm]{../scripts/flow/figs/llh_Borji.pdf}
+ \includegraphics[width=13cm]{../scripts/flow/figs/llh_trainingBorji.pdf}
 \caption{Modeling results for the \cite{borji2015} data. We can see that the the flow model offers a much larger improvement in terms of log-likelihood than either of the central bias models.}
 \label{fig:nFlowDevBorji}
 \end{figure*}

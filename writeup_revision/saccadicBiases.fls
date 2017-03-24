@@ -427,9 +427,9 @@ INPUT UsingFlow.tex
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/fourier/futr8t.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/futr8r.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tfm
-INPUT figs/heatmap_figure.pdf
-INPUT ./figs/heatmap_figure.pdf
-INPUT ./figs/heatmap_figure.pdf
+INPUT figs/heatmap_figure.png
+INPUT ./figs/heatmap_figure.png
+INPUT ./figs/heatmap_figure.png
 INPUT figs/SaccadeSaliency.pdf
 INPUT ./figs/SaccadeSaliency.pdf
 INPUT ./figs/SaccadeSaliency.pdf
@@ -456,9 +456,9 @@ INPUT ../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf
 INPUT ../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf
 INPUT Dataset.tex
 INPUT Dataset.tex
-INPUT ../scripts/flow/figs/llh_Borji.pdf
-INPUT ../scripts/flow/figs/llh_Borji.pdf
-INPUT ../scripts/flow/figs/llh_Borji.pdf
+INPUT ../scripts/flow/figs/llh_trainingBorji.pdf
+INPUT ../scripts/flow/figs/llh_trainingBorji.pdf
+INPUT ../scripts/flow/figs/llh_trainingBorji.pdf
 INPUT saccadicBiases.bbl
 INPUT saccadicBiases.bbl
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/fourier/futsy.vf

@@ -1,4 +1,4 @@
-\begin{thebibliography}{71}
+\begin{thebibliography}{73}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -87,11 +87,11 @@ Alasdair~DF Clarke, Mike~J Chantler, and Patrick~R Green.
 \newblock Modeling visual search on a rough surface.
 \newblock \emph{Journal of Vision}, 9\penalty0 (4), 2009.
 
-\bibitem[Clarke et~al.(in press)Clarke, Green, Chantler, and Hunt]{clarke2016}
+\bibitem[Clarke et~al.(2016)Clarke, Green, Chantler, and Hunt]{clarke2016}
 Alasdair~DF Clarke, Patrick~R Green, Mike~J Chantler, and Amelia~R Hunt.
 \newblock Human search for a target on a textured background is consistent with
   a stochastic model.
-\newblock \emph{Journal of Vision}, in press.
+\newblock \emph{Journal of Vision}, 2016.
 
 \bibitem[Dickinson and Intraub(2009)]{dickinson-intraub2009}
 Christopher~A Dickinson and Helene Intraub.
@@ -351,6 +351,12 @@ Nicolas Riche, Matei Mancas, Matthieu Duvinage, Makiese Mibulumukini, Bernard
 \newblock \emph{Signal Processing: Image Communication}, 28\penalty0
   (6):\penalty0 642--658, 2013.
 
+\bibitem[Smit et~al.(1987)Smit, Van~Gisbergen, and Cools]{smit1987parametric}
+AC~Smit, JAM Van~Gisbergen, and AR~Cools.
+\newblock A parametric analysis of human saccades in different experimental
+  paradigms.
+\newblock \emph{Vision research}, 27\penalty0 (10):\penalty0 1745--1762, 1987.
+
 \bibitem[Stainer et~al.(2013)Stainer, Scott-Brown, and Tatler]{stainer2013}
 Matthew~J Stainer, Kenneth~C Scott-Brown, and Benjamin~W Tatler.
 \newblock {Behavioral biases when viewing multiplexed scenes: scene structure
@@ -420,6 +426,12 @@ Boris~M Velichkovsky, Alexandra Rothert, Mathias Kopf, Sascha~M Dornh{\"o}fer,
   perception}.
 \newblock \emph{Transportation Research Part F: Traffic Psychology and
   Behaviour}, 5\penalty0 (2):\penalty0 145--156, 2002.
+
+\bibitem[Viviani et~al.(1977)Viviani, Berthoz, and
+  Tracey]{viviani1977curvature}
+Paolo Viviani, Alain Berthoz, and David Tracey.
+\newblock The curvature of oblique saccades.
+\newblock \emph{Vision research}, 17\penalty0 (5):\penalty0 661--664, 1977.
 
 \bibitem[von Wartburg et~al.(2007)von Wartburg, Wurtz, Pflugshaupt, Nyffeler,
   Luthi, and Muri]{wartburg2007}
