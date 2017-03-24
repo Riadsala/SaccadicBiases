@@ -42,20 +42,9 @@ lower=c(-1,-asp.rat),
 upper=c(1,asp.rat), log=T))
 
 # get flow over scanpaths
-dat$llh= 0
-for (person in levels(dat$Sub))
-{
-	for (image in levels(dat$Image))
-	{
-		
-		scanpath = filter(dat, Sub==person, Image==image)
-		if (nrow(scanpath)>0)
-		{
-			scanpath = calcLLHofSaccades(scanpath, flowModel='tN')
-			dat$llhFlow[which(dat$Sub==person & dat$Image==image)] = scanpath$llh
-		}
-	}
-}
+
+flow = calcLLHofSaccades(dat, flowModel='tN')
+
 
 dat = filter(dat, is.finite(dat$llh))
 
