@@ -1,6 +1,7 @@
 library(nnet)
 library(dplyr)
 library(ggplot2)
+library(tidyr)
 
 source('../flow/flowDistFunctions.R')
 
@@ -46,14 +47,32 @@ upper=c(1,asp.rat), log=T))
 flow = calcLLHofSaccades(dat, flowModel='tN')
 
 
-dat = filter(dat, is.finite(dat$llh))
+dat = filter(flow, is.finite(flow$llh))
+names(dat)[10] = "llhFlow"
+dat = select(dat, Sub, Image, task, llhCT2017, llhFlow)
 
 
-library(ggplot2)
-dat2 = aggregate(llh ~ Sub + Image + task, dat, "mean")
-dat3 = aggregate(llh ~ task, dat2, "mean")
 
-plt  = ggplot(dat2, aes(y=llh, x=task)) + geom_boxplot(notch=T)
+
+dat2 = (dat 
+		%>% group_by(Sub, Image, task) 
+		%>%	summarise(
+			meanCT2017 = mean(llhCT2017),
+			meanFlow   = mean(llhFlow)))
+
+dat3 = dat2
+names(dat3)[4:5] = c("llh", "model")
+dat3[,5] = "CT2017"
+
+dat4 = dat2
+dat4[,4] = dat4[,5]
+names(dat4)[4:5] = c("llh", "model")
+dat4[,5] = "Flow"
+
+dat5 = rbind(dat3,dat4)
+
+
+plt  = ggplot(dat5, aes(y=llh, x=task, fill=model)) + geom_boxplot(notch=T)
 plt = plt + theme_bw() + scale_y_continuous("mean log likelihood")
 plt = plt + scale_x_discrete("task")
 ggsave("kLLH.pdf", width=5, height=5)

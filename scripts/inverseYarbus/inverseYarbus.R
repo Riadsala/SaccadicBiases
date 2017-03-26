@@ -40,6 +40,10 @@ dat = filter(dat, is.finite(dat$llh))
 
 
 library(ggplot2)
+
+
+
+
 dat2 = aggregate(llh ~ Sub + Image + Cond, dat, "mean")
 dat3 = aggregate(llh ~ Cond, dat2, "mean")
 

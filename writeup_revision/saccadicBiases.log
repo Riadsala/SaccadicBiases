@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  24 MAR 2017 14:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.12.5)  26 MAR 2017 13:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1261,26 +1261,26 @@ Underfull \hbox (badness 1490) in paragraph at lines 32--33
 \T1/futs/m/n/10.95 cades be-ing less likely to be to a salient re-
  []
 
-<figs/SaccadeSaliency.pdf, id=158, 289.08pt x 505.89pt>
+<figs/SaccadeSaliency.pdf, id=159, 289.08pt x 505.89pt>
 File: figs/SaccadeSaliency.pdf Graphic file (type pdf)
 
 <use figs/SaccadeSaliency.pdf>
 Package pdftex.def Info: figs/SaccadeSaliency.pdf used on input line 38.
 (pdftex.def)             Requested size: 221.0pt x 386.74985pt.
  [13 <./figs/SaccadeSaliency.pdf>]
-<figs/DownLeft.png, id=169, 578.16pt x 433.62pt>
+<figs/DownLeft.png, id=170, 578.16pt x 433.62pt>
 File: figs/DownLeft.png Graphic file (type png)
  <use figs/DownLeft.png>
 Package pdftex.def Info: figs/DownLeft.png used on input line 52.
 (pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
-<figs/Center.png, id=170, 578.16pt x 433.62pt>
+<figs/Center.png, id=171, 578.16pt x 433.62pt>
 File: figs/Center.png Graphic file (type png)
  <use figs/Center.png>
 Package pdftex.def Info: figs/Center.png used on input line 53.
 (pdftex.def)             Requested size: 119.50148pt x 89.62048pt.
 
-<figs/UpRight.png, id=171, 578.16pt x 433.62pt>
+<figs/UpRight.png, id=172, 578.16pt x 433.62pt>
 File: figs/UpRight.png Graphic file (type png)
  <use figs/UpRight.png>
 Package pdftex.def Info: figs/UpRight.png used on input line 54.
@@ -1295,7 +1295,7 @@ Underfull \hbox (badness 1490) in paragraph at lines 63--64
 []\T1/futs/m/n/10.95 Another dis-crep-ancy be-tween the syn-thetic
  []
 
-<../scripts/coarse2fine/figs/xFixComparison.pdf, id=172, 216.81pt x 216.81pt>
+<../scripts/coarse2fine/figs/xFixComparison.pdf, id=173, 216.81pt x 216.81pt>
 File: ../scripts/coarse2fine/figs/xFixComparison.pdf Graphic file (type pdf)
 
 <use ../scripts/coarse2fine/figs/xFixComparison.pdf>
@@ -1303,7 +1303,7 @@ Package pdftex.def Info: ../scripts/coarse2fine/figs/xFixComparison.pdf used on
  input line 68.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
 
-<../scripts/coarse2fine/figs/yFixComparison.pdf, id=173, 216.81pt x 216.81pt>
+<../scripts/coarse2fine/figs/yFixComparison.pdf, id=174, 216.81pt x 216.81pt>
 File: ../scripts/coarse2fine/figs/yFixComparison.pdf Graphic file (type pdf)
 
 <use ../scripts/coarse2fine/figs/yFixComparison.pdf>
@@ -1311,7 +1311,7 @@ Package pdftex.def Info: ../scripts/coarse2fine/figs/yFixComparison.pdf used on
  input line 69.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
 
-<../scripts/coarse2fine/figs/ampSaccComparison.pdf, id=174, 216.81pt x 216.81pt
+<../scripts/coarse2fine/figs/ampSaccComparison.pdf, id=175, 216.81pt x 216.81pt
 >
 File: ../scripts/coarse2fine/figs/ampSaccComparison.pdf Graphic file (type pdf)
 
@@ -1320,7 +1320,7 @@ Package pdftex.def Info: ../scripts/coarse2fine/figs/ampSaccComparison.pdf used
  on input line 70.
 (pdftex.def)             Requested size: 108.12054pt x 108.12021pt.
 
-<../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf, id=175, 216.81pt x 216.81
+<../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf, id=176, 216.81pt x 216.81
 pt>
 File: ../scripts/coarse2fine/figs/saccAmpOverTimeFlow.pdf Graphic file (type pd
 f)
@@ -1437,7 +1437,7 @@ Overfull \hbox (40.57927pt too wide) in paragraph at lines 9--30
  [][] 
  []
 
-) <../scripts/flow/figs/llh_trainingBorji.pdf, id=185, 722.7pt x 650.43pt>
+) <../scripts/flow/figs/llh_trainingBorji.pdf, id=186, 722.7pt x 650.43pt>
 File: ../scripts/flow/figs/llh_trainingBorji.pdf Graphic file (type pdf)
 
 <use ../scripts/flow/figs/llh_trainingBorji.pdf>
@@ -1549,10 +1549,10 @@ be/utopia/putr8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/adobe/utop
 ia/putri8a.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/
 sftt1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sf
 tt1095.pfb>
-Output written on saccadicBiases.pdf (23 pages, 6209041 bytes).
+Output written on saccadicBiases.pdf (23 pages, 6216840 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 167 compressed objects within 2 object streams
+ 264 PDF objects out of 1000 (max. 8388607)
+ 168 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  153 words of extra memory for PDF output out of 10000 (max. 10000000)
 
