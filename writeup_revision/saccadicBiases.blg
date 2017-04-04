@@ -3,27 +3,28 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: saccadicBiases.aux
 The style file: plainnat.bst
 Database file #1: literature.bib.bib
-I was expecting a `,' or a `}'---line 540 of file literature.bib.bib
+I was expecting a `,' or a `}'---line 557 of file literature.bib.bib
  :   
  :   year = {2016},
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Repeated entry---line 566 of file literature.bib.bib
+Repeated entry---line 583 of file literature.bib.bib
  : @article{dodd2009
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 670 of file literature.bib.bib
+Repeated entry---line 687 of file literature.bib.bib
  : @book{green-swets1966
  :                      ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 957 of file literature.bib.bib
+Repeated entry---line 974 of file literature.bib.bib
  : @inproceedings{harel2006
  :                         ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 1078 of file literature.bib.bib
+Repeated entry---line 1095 of file literature.bib.bib
  : @article{brandt1945
  :                    ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "nowakowaka2017"
 Name 1 in "Green, D. M., and Swets, J. A." has a comma at the end for entry green-swets1966
 while executing---line 1347 of file plainnat.bst
 Name 1 in "Green, D. M., and Swets, J. A." has a comma at the end for entry green-swets1966
@@ -44,7 +45,7 @@ while executing---line 1429 of file plainnat.bst
 Warning--can't use both volume and number fields in lee2002
 You've used 73 entries,
             2773 wiz_defined-function locations,
-            995 strings with 17287 characters,
+            996 strings with 17301 characters,
 and the built_in function-call counts, 36000 in all, are:
 = -- 3207
 > -- 2217
