@@ -24,7 +24,6 @@ Repeated entry---line 1095 of file literature.bib.bib
  : @article{brandt1945
  :                    ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "nowakowaka2017"
 Name 1 in "Green, D. M., and Swets, J. A." has a comma at the end for entry green-swets1966
 while executing---line 1347 of file plainnat.bst
 Name 1 in "Green, D. M., and Swets, J. A." has a comma at the end for entry green-swets1966
@@ -43,45 +42,45 @@ while executing---line 1429 of file plainnat.bst
 Too many commas in name 2 of "Henderson, J M and Brockmole, J R, Castelhano, M S and Mack, M" for entry henderson2007
 while executing---line 1429 of file plainnat.bst
 Warning--can't use both volume and number fields in lee2002
-You've used 73 entries,
+You've used 74 entries,
             2773 wiz_defined-function locations,
-            996 strings with 17301 characters,
-and the built_in function-call counts, 36000 in all, are:
-= -- 3207
-> -- 2217
+            1006 strings with 17599 characters,
+and the built_in function-call counts, 36463 in all, are:
+= -- 3251
+> -- 2247
 < -- 35
-+ -- 744
-- -- 670
-* -- 3141
-:= -- 5537
-add.period$ -- 225
-call.type$ -- 73
-change.case$ -- 438
-chr.to.int$ -- 72
-cite$ -- 150
-duplicate$ -- 1551
-empty$ -- 2859
-format.name$ -- 785
-if$ -- 7470
++ -- 754
+- -- 679
+* -- 3184
+:= -- 5614
+add.period$ -- 231
+call.type$ -- 74
+change.case$ -- 444
+chr.to.int$ -- 73
+cite$ -- 152
+duplicate$ -- 1571
+empty$ -- 2891
+format.name$ -- 795
+if$ -- 7565
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 74
-newline$ -- 375
-num.names$ -- 294
-pop$ -- 800
+missing$ -- 75
+newline$ -- 383
+num.names$ -- 298
+pop$ -- 807
 preamble$ -- 1
-purify$ -- 368
+purify$ -- 373
 quote$ -- 0
-skip$ -- 1194
+skip$ -- 1210
 stack$ -- 0
-substring$ -- 1507
-swap$ -- 126
+substring$ -- 1509
+swap$ -- 127
 text.length$ -- 7
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 788
+type$ -- 799
 warning$ -- 4
-while$ -- 330
+while$ -- 333
 width$ -- 0
-write$ -- 955
+write$ -- 974
 (There were 12 error messages)

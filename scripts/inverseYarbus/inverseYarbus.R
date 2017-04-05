@@ -21,33 +21,45 @@ saccades = dat
 saccades = filter(saccades, x2>-1, y2>-asp.rat, x2<1, y2<asp.rat)
 saccades = filter(saccades, x1>-1, y1>-asp.rat, x1<1, y1<asp.rat)
 
+
+# CT2017
+mu = c(0,0)
+sigma = array(c(0.32,0,0,0.45*0.32), dim=c(2,2))
+dat$llhCT2017 = (dtmvnorm(cbind(dat$x2, dat$y2), mu, sigma,
+lower=c(-1,-asp.rat),
+upper=c(1,asp.rat), log=T))
+
 # get flow over scanpaths
-dat$llh= 0
-for (person in levels(dat$Sub))
-{
-	for (image in levels(dat$Image))
-	{
-		scanpath = filter(dat, Sub==person, Image==image)
-		if (nrow(scanpath)>0)
-		{
-			scanpath = calcLLHofSaccades(scanpath, flowModel='tN')
-			dat$llh[which(dat$Sub==person & dat$Image==image)] = scanpath$llh
-		}
-	}
-}
 
-dat = filter(dat, is.finite(dat$llh))
+flow = calcLLHofSaccades(dat, flowModel='tN')
 
-
-library(ggplot2)
+names(dat)[3] = 'task'
+dat = filter(flow, is.finite(flow$llh))
+names(dat)[27] = "llhFlow"
+dat = select(dat, Sub, Image, task, llhCT2017, llhFlow)
 
 
 
 
-dat2 = aggregate(llh ~ Sub + Image + Cond, dat, "mean")
-dat3 = aggregate(llh ~ Cond, dat2, "mean")
+dat2 = (dat 
+		%>% group_by(Sub, Image, task) 
+		%>%	summarise(
+			meanCT2017 = mean(llhCT2017),
+			meanFlow   = mean(llhFlow)))
 
-plt  = ggplot(dat2, aes(y=llh, x=Cond)) + geom_boxplot(notch=T)
+dat3 = dat2
+names(dat3)[4:5] = c("llh", "model")
+dat3[,5] = "CT2017"
+
+dat4 = dat2
+dat4[,4] = dat4[,5]
+names(dat4)[4:5] = c("llh", "model")
+dat4[,5] = "Flow"
+
+dat5 = rbind(dat3,dat4)
+
+
+plt  = ggplot(dat5, aes(y=llh, x=task, fill=model)) + geom_boxplot(notch=T)
 plt = plt + theme_bw() + scale_y_continuous("mean log likelihood")
 plt = plt + scale_x_discrete("task")
 ggsave("millsLLH.pdf", width=5, height=5)

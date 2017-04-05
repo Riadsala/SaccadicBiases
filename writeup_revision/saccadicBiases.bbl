@@ -1,4 +1,4 @@
-\begin{thebibliography}{73}
+\begin{thebibliography}{74}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -310,6 +310,16 @@ Jiri Najemnik and Wilson~S Geisler.
 \newblock Eye movement statistics in humans are consistent with an optimal
   search strategy.
 \newblock \emph{Journal of Vision}, 8\penalty0 (3), 2008.
+
+\bibitem[Nowakowska et~al.(2017)Nowakowska, Clarke, and Hunt]{nowakowska2017}
+Anna Nowakowska, Alasdair D.~F. Clarke, and Amelia~R. Hunt.
+\newblock Human visual search behaviour is far from ideal.
+\newblock \emph{Proceedings of the Royal Society of London B: Biological
+  Sciences}, 284\penalty0 (1849), 2017.
+\newblock ISSN 0962-8452.
+\newblock \doi{10.1098/rspb.2016.2767}.
+\newblock URL
+  \url{http://rspb.royalsocietypublishing.org/content/284/1849/20162767}.
 
 \bibitem[Nuthmann and Matthias(2014)]{nuthmann-matthias2014}
 Antje Nuthmann and Ellen Matthias.
