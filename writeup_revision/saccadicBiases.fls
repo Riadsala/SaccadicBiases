@@ -334,14 +334,10 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-alt.tf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/fourier/futb8t.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/fourier/futmii.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/futri8r.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/fourier/futb8t.vf
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/fourier/futmii.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
@@ -385,9 +381,13 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/fourier/futri8t.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-alt-ita.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fourier/ts1futs.fd
 INPUT /usr/local/texlive/2016/texmf-dist/tex/latex/fourier/ts1futs.fd
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/futr8c.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/fourier/futb8t.vf
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/futb8r.tfm
+INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-alt-bold.tfm
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/vf/public/fourier/futr8c.vf
 INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/fourier-orns.tfm
 INPUT ../scripts/leftVright/graphs/leftrightbias.pdf
@@ -402,8 +402,6 @@ INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/jknappen/ec/ectt1095.tfm
 INPUT ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf
 INPUT ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf
 INPUT ../scripts/flow/figs/NparamsChagingOverSpace_ALL_tN.pdf
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
-INPUT /usr/local/texlive/2016/texmf-dist/fonts/tfm/public/fourier/futb8t.tfm
 INPUT ../scripts/flow/figs/llh_training.pdf
 INPUT ../scripts/flow/figs/llh_training.pdf
 INPUT ../scripts/flow/figs/llh_training.pdf

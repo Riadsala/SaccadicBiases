@@ -2,6 +2,7 @@ library(dplyr)
 library(ggplot2)
 library(Matrix)
 library(matrixcalc)
+library(tmvtnorm)
 
 pRegThreshold = seq(0, 1, 0.025)
 regTresh_N_samples = 1000
@@ -68,14 +69,9 @@ makeLLHdat <- function(datasets, nr)
 					# 		logLik=uniformLLH,
 					# 		deltaLogLik=0))
 		
-					# re-fit (use ase baseline)
-					mu = c(mean(fixs[,1]), mean(fixs[,2]))
-					sigma = var(fixs)
-					
-					# determind LLH for which > values are in most likely region
-					reg_llh = quantile(dmvnorm(uniform_samples, mu, sigma), 1-pReg)
+	
 							
-					# CT2014
+					# CT2017
 					mu = c(0,0)
 					sigma = array(c(0.22,0,0,0.45*0.22), dim=c(2,2))
 		
@@ -91,26 +87,26 @@ makeLLHdat <- function(datasets, nr)
 					ClassAccResults = rbind(ClassAccResults, 
 						data.frame(
 							dataset=d, 
-							biasmodel='CT2014', 
+							biasmodel='CT2017', 
 							pReg = pReg,
 							acc = regAcc))
 		
 
-					# CT2017
-					mu = c(0,0)
-					sigma = array(c(0.32,0,0,0.45*0.32), dim=c(2,2))
+					# # CT2014
+					# mu = c(0,0)
+					# sigma = array(c(0.32,0,0,0.45*0.32), dim=c(2,2))
 		
-					# determind LLH for which > values are in most likely region
-					reg_llh = quantile(dmvnorm(uniform_samples, mu, sigma), 1-pReg)
-					# how many of our fixations fell inside this region?
-					regAcc = mean(dmvnorm(fixs, mu, sigma)>reg_llh)
+					# # determind LLH for which > values are in most likely region
+					# reg_llh = quantile(dmvnorm(uniform_samples, mu, sigma), 1-pReg)
+					# # how many of our fixations fell inside this region?
+					# regAcc = mean(dmvnorm(fixs, mu, sigma)>reg_llh)
 		
-					ClassAccResults = rbind(ClassAccResults, 
-						data.frame(
-							dataset=d, 
-							biasmodel='CT2014', 
-							pReg = pReg,
-							acc = regAcc))
+					# ClassAccResults = rbind(ClassAccResults, 
+					# 	data.frame(
+					# 		dataset=d, 
+					# 		biasmodel='CT2014', 
+					# 		pReg = pReg,
+					# 		acc = regAcc))
 
 
 
@@ -129,7 +125,7 @@ makeLLHdat <- function(datasets, nr)
 					ClassAccResults = rbind(ClassAccResults, 
 						data.frame(
 							dataset=d, 
-							biasmodel=flowModel, 
+							biasmodel='flow', 
 							pReg = pReg,
 							acc = regAcc))
 				}
@@ -152,7 +148,7 @@ pltResults <- function(dat, nr)
 			upper = meanAcc+1.96*stderr,
 			lower = meanAcc-1.96*stderr))	
 
-	levels(ClassAccResults2$biasmodel)[2] = "flow"
+	# levels(ClassAccResults2$biasmodel)[2] = "flow"
 
 	ClassAccResults2$biasmodel = factor(ClassAccResults2$biasmodel, levels(ClassAccResults2$biasmodel)[c(2,1,3)])
 
