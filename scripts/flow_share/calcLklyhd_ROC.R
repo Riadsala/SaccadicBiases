@@ -168,13 +168,8 @@ pltResults <- function(dat, nr)
 
 datasets = c(
 'Clarke2013', 
-'Einhauser2008',
-'Tatler2005', 
 'Tatler2007freeview', 
-'Tatler2007search',
-'Judd2009', 
-'Yun2013SUN',
- 'Yun2013PASCAL') #
+'Tatler2007search') #
 
 
 dat = makeLLHdat(datasets)
@@ -183,11 +178,7 @@ ggsave(paste('figs/llh_Training_ROC.pdf', sep=''), width=6, height=9)
 
 
 
-datasets = c(
-	'Jiang2014',
- 'Clarke2009',
- 'Asher2013',
- 'Ehinger2007') #
+datasets = c('Clarke2009') #
 
 dat = makeLLHdat(datasets)
 plt = pltResults(dat,2)

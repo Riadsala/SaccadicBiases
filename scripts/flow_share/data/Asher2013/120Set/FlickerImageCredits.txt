@@ -1,0 +1,72 @@
+Important information about the data 
+
+The Scenes are defined by a Matlab structure stored in the file '120set.m'. The structer contains details of how to extract the Scene, present-target and absent-target from the image files present in this folder. the structer 'SceneList' is a 120 item list of structers witht he folowing feilds.
+
+SceneList = 
+
+1x120 struct array with fields:
+    SceneID				The ID of the Scene used as the referenc number for that scene, such as in the list of flicker images
+    Block				The experimental group in which the scene was presented in the target absent condition (is mod(SceneID,5))
+    SourceFile				The name of the image file that contains the whole Image.
+    SceneRect				The [Top,Left,bottom,Right] location of the corner pixels of the Scene, inside the file Image
+    Targ				The [Top,Left,Height,Width] location of the present-Target, with refrence to location inside the SCENE
+    EntropyClutterValue			Not used
+    FeatCClutterValue			Not Used
+    NonTarg				The [Top,Left,Height,Width] location of the absent-Target, with refrence to location inside the Image
+
+Note that the .Targ is the position reletive to the Scene defined by .SceneRect, so that the coordinates refer to the position in the feild of veiw on the displayed Scene. The .NonTarg is given reletive to the file Image because it will be outside the Scene.
+
+
+Important:
+Scene 89: The absent-target has been mistankenly selected to be inside the Scene, so must be discounted from any anaylisis. 
+
+
+
+These images are list by the Scene ID as found in the 
+1 : Cruel Joke by jwgreen; Attribution-NonCommercial-ShareAlike License 
+
+2 : River Ashop and Blackden Brook by John Clift; Attribution-NonCommercial-ShareAlike License 
+
+3 : Untitled by MissTessmacher; Attribution-NonCommercial-ShareAlike License 
+
+4 : Camp site_080609561 by Michael Dawes; Attribution-NonCommercial-ShareAlike License 
+
+5 : cheetah in camouflage by dmitri_66; Attribution-NonCommercial-ShareAlike License 
+
+6 : on the up and up by optimal tweezers; Attribution-NonCommercial-ShareAlike License 
+
+7 : Montejaque by Greta Hughson; Attribution-NonCommercial-ShareAlike License 
+
+8 : DSCN7206 by TomFlemming; Attribution-NonCommercial-ShareAlike License 
+
+9 : DSCN7202 by TomFlemming; Attribution-NonCommercial-ShareAlike License 
+
+10 : Umiats by Travis S.; Attribution-NonCommercial-ShareAlike License 
+
+11 : Austin City Hall at the End of a Sunny Day by tx_shooter; All Rights Reserved 
+
+12 : The Tolkienesque Bridge by Stuck in Customs; All Rights Reserved 
+
+13 : Remnant of the Past: Tanjong Pagar Railway Station by lipjin; Attribution-NonCommercial-ShareAlike License 
+
+18 : Camouflage by Anne With An "E"; Attribution-NonCommercial-ShareAlike License 
+
+60 : Kitty Camouflage by +++CoolValley+++; Attribution-NonCommercial-ShareAlike License 
+
+61 : Zambia Woodlands by travfotos; Attribution-NonCommercial-ShareAlike License 
+
+62 : That 70's place front hall by larkspurlazuli; Attribution-NonCommercial-ShareAlike License 
+
+63 : That 70's place basement by larkspurlazuli; Attribution-NonCommercial-ShareAlike License 
+
+64 : That 70's Place dining room by larkspurlazuli; Attribution-NonCommercial-ShareAlike License 
+
+65 : this is a house. old lady being helped get back indoors by Marco di Pisa; Attribution-NonCommercial-ShareAlike License 
+
+66 : studio 0.9 by jmtosses; Attribution-NonCommercial-ShareAlike License 
+
+67 : Jeffrey Street by angus mcdiarmid; Attribution-NonCommercial-ShareAlike License 
+
+68 : Hide House Lofts 3 by davereid2; Attribution-NonCommercial-ShareAlike License 
+
+69 : FireTap by Travis S.; Attribution-NonCommercial-ShareAlike License 
