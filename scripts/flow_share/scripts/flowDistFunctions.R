@@ -12,7 +12,7 @@ library(tmvtnorm)
 # functions for fitting flow distribution
 ##################################################
 
-calcFlowOverSpace <- function(winSize, stepSize)
+calcFlowOverSpace <- function(sacc, winSize, stepSize)
 {
 	# create empty data.frame
 	nFitOverSpace =  data.frame(
